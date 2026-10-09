@@ -1,0 +1,237 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+  Palette: ink indigo for the app, a seal red for the brand mark only, and
+  orange reserved exclusively for Start (practice, test). Green and red are
+  kept for right and wrong answers, so neither may be used decoratively.
+*/
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-fira-sans);
+  --font-mono: var(--font-fira-code);
+  --font-heading: var(--font-fira-sans);
+  --font-hanzi: var(--font-noto-sc);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+
+  /* Mock-test sections: listening 1, reading 3, writing 5. 2 is orange and
+     stays unused, because orange means Start. */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+
+  /* The single action colour. */
+  --color-cta: var(--cta);
+  --color-cta-foreground: var(--cta-foreground);
+
+  /* Brand mark only. */
+  --color-seal: var(--seal);
+
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  --background: oklch(0.99 0.005 265);
+  --foreground: oklch(0.25 0.03 265);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.25 0.03 265);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.25 0.03 265);
+
+  --primary: oklch(0.48 0.16 268);
+  --primary-foreground: oklch(0.99 0.01 265);
+
+  --secondary: oklch(0.96 0.012 265);
+  --secondary-foreground: oklch(0.3 0.04 265);
+
+  --muted: oklch(0.96 0.008 265);
+  --muted-foreground: oklch(0.5 0.025 265);
+
+  --accent: oklch(0.95 0.022 265);
+  --accent-foreground: oklch(0.3 0.04 265);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --success: oklch(0.62 0.15 155);
+  --warning: oklch(0.72 0.16 75);
+
+  --cta: oklch(0.66 0.2 44);
+  --cta-foreground: oklch(0.99 0.01 60);
+
+  --seal: oklch(0.55 0.2 27);
+
+  --border: oklch(0.9 0.012 265);
+  --input: oklch(0.9 0.012 265);
+  --ring: oklch(0.6 0.14 268);
+
+  --chart-1: oklch(0.48 0.16 268);
+  --chart-2: oklch(0.66 0.2 44);
+  --chart-3: oklch(0.6 0.11 190);
+  --chart-4: oklch(0.62 0.16 237.323);
+  --chart-5: oklch(0.58 0.2 340);
+
+
+  --sidebar: oklch(0.975 0.008 265);
+  --sidebar-foreground: oklch(0.25 0.03 265);
+  --sidebar-primary: oklch(0.48 0.16 268);
+  --sidebar-primary-foreground: oklch(0.99 0.01 265);
+  --sidebar-accent: oklch(0.94 0.02 265);
+  --sidebar-accent-foreground: oklch(0.3 0.04 265);
+  --sidebar-border: oklch(0.9 0.012 265);
+  --sidebar-ring: oklch(0.6 0.14 268);
+}
+
+.dark {
+  /*
+    Not pure black. Pure black behind bright text causes halation, where the
+    text smears for anyone even slightly astigmatic, which is most people. This
+    is an app you stare at for hours, often late. A very dark desaturated ink
+    reads as black on OLED while staying kind at 1am.
+  */
+  --background: oklch(0.16 0.014 265);
+  --foreground: oklch(0.96 0.008 265);
+
+  --card: oklch(0.2 0.016 265);
+  --card-foreground: oklch(0.96 0.008 265);
+  --popover: oklch(0.22 0.016 265);
+  --popover-foreground: oklch(0.96 0.008 265);
+
+  --primary: oklch(0.74 0.12 270);
+  --primary-foreground: oklch(0.19 0.03 265);
+
+  --secondary: oklch(0.26 0.02 265);
+  --secondary-foreground: oklch(0.96 0.008 265);
+
+  --muted: oklch(0.25 0.018 265);
+  --muted-foreground: oklch(0.72 0.022 265);
+
+  --accent: oklch(0.29 0.028 265);
+  --accent-foreground: oklch(0.96 0.008 265);
+
+  --destructive: oklch(0.704 0.191 22.216);
+  --success: oklch(0.72 0.16 155);
+  --warning: oklch(0.8 0.16 78);
+
+  --cta: oklch(0.75 0.183 55.934);
+  --cta-foreground: oklch(0.2 0.04 50);
+
+  --seal: oklch(0.62 0.19 27);
+
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.65 0.13 270);
+
+  --chart-1: oklch(0.74 0.12 270);
+  --chart-2: oklch(0.75 0.183 55.934);
+  --chart-3: oklch(0.75 0.12 190);
+  --chart-4: oklch(0.7 0.15 237.323);
+  --chart-5: oklch(0.72 0.16 340);
+
+
+  --sidebar: oklch(0.185 0.015 265);
+  --sidebar-foreground: oklch(0.96 0.008 265);
+  --sidebar-primary: oklch(0.74 0.12 270);
+  --sidebar-primary-foreground: oklch(0.19 0.03 265);
+  --sidebar-accent: oklch(0.27 0.024 265);
+  --sidebar-accent-foreground: oklch(0.96 0.008 265);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.65 0.13 270);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    /* Body copy at 1.6; headings tighten this themselves. */
+    line-height: 1.6;
+  }
+
+  html {
+    @apply font-sans;
+  }
+}
+
+@layer utilities {
+  /*
+    Any digit that updates in place, such as timer readouts, KPI counters and
+    duration columns, must not reflow as its value changes.
+  */
+  .font-numeric {
+    font-family: var(--font-fira-code), ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum", "zero";
+  }
+
+  /* Hanzi everywhere they are the thing being studied. */
+  .font-hanzi {
+    font-family: var(--font-noto-sc), "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+}
+
+/*
+  Honour the OS setting. Motion is decoration here; the app stays fully usable
+  with all of it switched off.
+*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

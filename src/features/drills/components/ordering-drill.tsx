@@ -1,0 +1,173 @@
+"use client";
+
+import { Check, RotateCcw, X } from "lucide-react";
+import { useState } from "react";
+
+import { Button } from "@/components/ui/button";
+import { orderingItems } from "@/content/ordering";
+import { seededRng, shuffle } from "@/lib/random";
+import { cn } from "@/lib/utils";
+
+import { DRILL_ITEM_IDS } from "../lib/items";
+import { isCorrectOrder, sentenceOf } from "../lib/ordering";
+import { type ItemStat, practiceOrder, summarize, withSession } from "../lib/stats";
+import { DrillHeader } from "./drill-header";
+import { useRecord } from "./use-record";
+
+/** Chunks are tracked by position, since an item may repeat a chunk string. */
+type Placed = number[];
+
+/**
+ * The shuffled chunk positions for one item. Seeded, so it is the same on
+ * every render while you work on it — and never the answer itself.
+ */
+function chunkOrder(count: number, seed: number): number[] {
+  const order = shuffle(
+    Array.from({ length: count }, (_, i) => i),
+    seededRng(seed),
+  );
+  if (count > 1 && order.every((v, i) => v === i)) order.reverse();
+  return order;
+}
+
+export function OrderingDrill({ stats, seed }: { stats: Record<string, ItemStat>; seed: number }) {
+  const record = useRecord();
+  // Fixed at mount from a server-chosen seed, so server and client render the
+  // same queue and a stats refresh never reshuffles a drill in progress.
+  const [queue] = useState(() => practiceOrder(orderingItems, (i) => i.id, stats, seededRng(seed)));
+  const [summaryBase] = useState(stats);
+  const [index, setIndex] = useState(0);
+  const [placed, setPlaced] = useState<Placed>([]);
+  const [checked, setChecked] = useState<boolean | null>(null);
+  const [session, setSession] = useState({ answered: 0, right: 0 });
+  const [results, setResults] = useState<Record<string, boolean>>({});
+
+  const item = queue[index % queue.length];
+  const order = chunkOrder(item.chunks.length, seed + index);
+
+  const summary = summarize(DRILL_ITEM_IDS.ordering, withSession(summaryBase, results));
+
+  function place(chunkIndex: number) {
+    if (checked !== null) return;
+    setPlaced((p) => [...p, chunkIndex]);
+  }
+
+  function unplace(position: number) {
+    if (checked !== null) return;
+    setPlaced((p) => p.filter((_, i) => i !== position));
+  }
+
+  function check() {
+    const ok = isCorrectOrder(
+      item,
+      placed.map((i) => item.chunks[i]),
+    );
+    setChecked(ok);
+    setSession((s) => ({ answered: s.answered + 1, right: s.right + (ok ? 1 : 0) }));
+    setResults((r) => ({ ...r, [item.id]: ok }));
+    record("ordering", item.id, ok);
+  }
+
+  function next() {
+    setIndex((i) => i + 1);
+    setPlaced([]);
+    setChecked(null);
+  }
+
+  const remaining = order.filter((i) => !placed.includes(i));
+  const complete = placed.length === item.chunks.length;
+
+  return (
+    <div className="mx-auto max-w-3xl space-y-5">
+      <DrillHeader summary={summary} session={session} />
+
+      <section className="bg-card space-y-6 rounded-2xl border p-5 sm:p-6">
+        <div className="flex items-center justify-between gap-3">
+          <span className="text-muted-foreground text-sm">
+            Put the words in order. Tap a placed word to take it back.
+          </span>
+          <Button
+            variant="ghost"
+            size="sm"
+            className="cursor-pointer"
+            onClick={() => setPlaced([])}
+            disabled={placed.length === 0 || checked !== null}
+          >
+            <RotateCcw aria-hidden /> Reset
+          </Button>
+        </div>
+
+        {/* The sentence being built */}
+        <div
+          aria-label="Your sentence"
+          className={cn(
+            "flex min-h-20 flex-wrap items-center gap-2 rounded-xl border-2 border-dashed p-3",
+            checked === true && "border-success bg-success/5 border-solid",
+            checked === false && "border-destructive bg-destructive/5 border-solid",
+          )}
+        >
+          {placed.length === 0 ? (
+            <span className="text-muted-foreground px-2 text-sm">Tap the words below…</span>
+          ) : (
+            placed.map((chunkIndex, position) => (
+              <button
+                key={`${chunkIndex}`}
+                type="button"
+                onClick={() => unplace(position)}
+                disabled={checked !== null}
+                className="bg-primary/10 text-foreground font-hanzi hover:bg-primary/20 cursor-pointer rounded-lg px-3 py-2 text-xl transition-colors disabled:cursor-default"
+              >
+                {item.chunks[chunkIndex]}
+              </button>
+            ))
+          )}
+          {complete ? <span className="font-hanzi text-xl">{item.end ?? "。"}</span> : null}
+        </div>
+
+        {/* Chunks still to place */}
+        <div className="flex min-h-14 flex-wrap gap-2" aria-label="Words to place">
+          {remaining.map((chunkIndex) => (
+            <button
+              key={chunkIndex}
+              type="button"
+              onClick={() => place(chunkIndex)}
+              className="bg-secondary hover:border-primary/50 font-hanzi cursor-pointer rounded-lg border px-3 py-2 text-xl transition-colors"
+            >
+              {item.chunks[chunkIndex]}
+            </button>
+          ))}
+        </div>
+
+        {checked === null ? (
+          <Button size="lg" className="cursor-pointer" disabled={!complete} onClick={check}>
+            Check
+          </Button>
+        ) : (
+          <div className="space-y-4">
+            <div className="flex items-start gap-3">
+              {checked ? (
+                <Check aria-hidden className="text-success mt-1 size-5 shrink-0" />
+              ) : (
+                <X aria-hidden className="text-destructive mt-1 size-5 shrink-0" />
+              )}
+              <div className="space-y-1">
+                <p className={cn("text-sm font-medium", checked ? "text-success" : "text-destructive")}>
+                  {checked ? "Correct" : "Not quite. The answer:"}
+                </p>
+                <p className="font-hanzi text-2xl">{sentenceOf(item.chunks, item.end)}</p>
+                <p className="text-muted-foreground text-sm">{item.translation}</p>
+              </div>
+            </div>
+            <div className="bg-muted/50 space-y-1 rounded-xl p-4 text-sm">
+              <p className="font-medium">{item.point}</p>
+              <p className="text-muted-foreground">{item.explanation}</p>
+            </div>
+            <Button size="lg" className="cursor-pointer" onClick={next}>
+              Next sentence
+            </Button>
+          </div>
+        )}
+      </section>
+    </div>
+  );
+}

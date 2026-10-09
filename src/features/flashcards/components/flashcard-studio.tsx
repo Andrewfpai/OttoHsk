@@ -1,0 +1,743 @@
+"use client";
+
+import {
+  ArrowLeft,
+  ArrowRight,
+  Check,
+  Clock,
+  Loader2,
+  Lock,
+  RotateCcw,
+  X,
+} from "lucide-react";
+import { useEffect, useEffectEvent, useMemo, useRef, useState, useTransition } from "react";
+import { toast } from "sonner";
+
+import { Button } from "@/components/ui/button";
+import { type Word, getWord, words } from "@/content/words";
+import { formatCountdown, useNow } from "@/hooks/use-now";
+import { cn } from "@/lib/utils";
+
+import { DECK_SIZES, buildDeck, isDue } from "../lib/deck";
+import { FAIL_WRONG_RATIO, GUESS_MS, MAX_LOCK_MS, formatLock, lockDurationMs } from "../lib/lockout";
+import { GAP_BY_STRENGTH, KNOWN_STRENGTH, WRONG_PENALTY, statusOf } from "../lib/schedule";
+import { type Question, buildQuestions } from "../lib/questions";
+import { type TestResult, submitTest } from "../server/actions";
+import type { FlashcardInfo, ProgressRow, TestSummary } from "../server/queries";
+
+/** Practice gets this long per card before the test starts on its own. */
+const PRACTICE_MS_PER_CARD = 15_000;
+
+type Answer = { wordId: string; chosenId: string; ms: number };
+
+type Phase =
+  | { name: "setup" }
+  | { name: "practice"; deck: Word[]; startedAt: number; durationMs: number }
+  | { name: "test"; deck: Word[]; questions: Question[] }
+  | { name: "results"; result: TestResult; answers: Answer[] };
+
+export function FlashcardStudio({
+  progress,
+  info,
+  recentTests,
+}: {
+  progress: ProgressRow[];
+  info: FlashcardInfo;
+  recentTests: TestSummary[];
+}) {
+  const [phase, setPhase] = useState<Phase>({ name: "setup" });
+  const [size, setSize] = useState<number>(20);
+  // The server's answer after a test, in case it lands before the refreshed
+  // props do.
+  const [resultLock, setResultLock] = useState<number | null>(null);
+  const lockedUntil = Math.max(info.lockedUntil ?? 0, resultLock ?? 0) || null;
+
+  const now = useNow();
+  const locked = now !== null && lockedUntil !== null && lockedUntil > now;
+  const isLockedNow = () => lockedUntil !== null && lockedUntil > Date.now();
+
+  function startPractice() {
+    const deck = buildDeck(words, progress, info.nextTest, size);
+    if (deck.words.length === 0) {
+      toast.info("Nothing to study right now: every word is waiting for its next review.");
+      return;
+    }
+    setPhase({
+      name: "practice",
+      deck: deck.words,
+      startedAt: Date.now(),
+      durationMs: deck.words.length * PRACTICE_MS_PER_CARD,
+    });
+  }
+
+  function startTest(deck: Word[]) {
+    if (isLockedNow()) {
+      toast.error("Tests are locked for now. Keep practising.");
+      return;
+    }
+    setPhase({ name: "test", deck, questions: buildQuestions(deck, words, Math.random) });
+  }
+
+  if (phase.name === "practice") {
+    return (
+      <Practice
+        key={phase.startedAt}
+        deck={phase.deck}
+        startedAt={phase.startedAt}
+        durationMs={phase.durationMs}
+        locked={locked}
+        lockedUntil={lockedUntil}
+        now={now}
+        isLockedNow={isLockedNow}
+        onStartTest={() => startTest(phase.deck)}
+        onQuit={() => setPhase({ name: "setup" })}
+      />
+    );
+  }
+
+  if (phase.name === "test") {
+    return (
+      <Test
+        questions={phase.questions}
+        onDone={(result, answers) => {
+          setResultLock(result.lockedUntil);
+          setPhase({ name: "results", result, answers });
+        }}
+        onLocked={() => setPhase({ name: "setup" })}
+      />
+    );
+  }
+
+  if (phase.name === "results") {
+    return (
+      <Results
+        result={phase.result}
+        answers={phase.answers}
+        lockedUntil={lockedUntil}
+        now={now}
+        onAgain={() => setPhase({ name: "setup" })}
+      />
+    );
+  }
+
+  return (
+    <Setup
+      progress={progress}
+      info={info}
+      locked={locked}
+      lockedUntil={lockedUntil}
+      now={now}
+      size={size}
+      onSize={setSize}
+      onStart={startPractice}
+      recentTests={recentTests}
+    />
+  );
+}
+
+/* ─────────────────────────────── Setup ─────────────────────────────── */
+
+function Setup({
+  progress,
+  info,
+  locked,
+  lockedUntil,
+  now,
+  size,
+  onSize,
+  onStart,
+  recentTests,
+}: {
+  progress: ProgressRow[];
+  info: FlashcardInfo;
+  locked: boolean;
+  lockedUntil: number | null;
+  now: number | null;
+  size: number;
+  onSize: (n: number) => void;
+  onStart: () => void;
+  recentTests: TestSummary[];
+}) {
+  const stats = useMemo(() => {
+    let due = 0;
+    let known = 0;
+    for (const p of progress) {
+      if (isDue(p, info.nextTest)) due++;
+      if (statusOf(p.strength) === "known") known++;
+    }
+    return { due, known, fresh: words.length - progress.length };
+  }, [progress, info.nextTest]);
+
+  return (
+    <div className="grid gap-6 lg:grid-cols-[1fr_20rem]">
+      <section className="bg-card space-y-6 rounded-2xl border p-5 sm:p-6">
+        <dl className="grid grid-cols-3 gap-3">
+          <Stat label="Due this test" value={stats.due} />
+          <Stat label="Not started" value={stats.fresh} />
+          <Stat label="Known" value={stats.known} />
+        </dl>
+
+        {locked && lockedUntil !== null && now !== null ? (
+          <div
+            role="status"
+            className="border-warning/40 bg-warning/10 flex items-start gap-3 rounded-xl border p-4 text-sm"
+          >
+            <Lock aria-hidden className="text-warning mt-0.5 size-4 shrink-0" />
+            <div>
+              <p className="font-medium">
+                Tests locked for{" "}
+                <span className="font-numeric">{formatCountdown(lockedUntil - now)}</span>
+              </p>
+              <p className="text-muted-foreground">
+                {info.lockLevel > 1 ? `${info.lockLevel} failed tests in a row. ` : ""}
+                Practice is still open. Use the time to go through the cards slowly.
+              </p>
+            </div>
+          </div>
+        ) : null}
+
+        <div className="space-y-3">
+          <h2 className="text-sm font-medium">Cards per session</h2>
+          <div role="radiogroup" aria-label="Cards per session" className="flex flex-wrap gap-2">
+            {DECK_SIZES.map((n) => (
+              <button
+                key={n}
+                type="button"
+                role="radio"
+                aria-checked={size === n}
+                onClick={() => onSize(n)}
+                className={cn(
+                  "focus-visible:ring-ring min-w-24 cursor-pointer rounded-xl border px-4 py-3 text-left transition-colors focus-visible:ring-2 focus-visible:outline-none",
+                  size === n ? "border-primary bg-primary/10" : "hover:bg-muted",
+                )}
+              >
+                <span className="font-numeric block text-lg font-semibold">{n}</span>
+                <span className="text-muted-foreground block text-xs">
+                  {formatCountdown(n * PRACTICE_MS_PER_CARD)} practice
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <Button size="lg" variant="cta" className="h-11 w-full cursor-pointer sm:w-auto sm:px-6" onClick={onStart}>
+          Start practice
+        </Button>
+      </section>
+
+      <aside className="space-y-6">
+        <section className="bg-card rounded-2xl border p-5 text-sm">
+          <h2 className="mb-3 font-medium">How it works</h2>
+          <ol className="text-muted-foreground list-decimal space-y-2 pl-4">
+            <li>
+              <span className="text-foreground">Practice</span> against a timer. Tap each card to see
+              its pinyin and meaning.
+            </li>
+            <li>
+              <span className="text-foreground">Test</span> once you have flipped every card, or when
+              time runs out. Each question is one of three kinds: what a word means, which word
+              matches a meaning, or how a word is read.
+            </li>
+            <li>
+              Every word stays in rotation. A right answer raises its strength by 1 and sends it
+              further out; a wrong one brings it back in the very next test and lowers its strength
+              by {WRONG_PENALTY}, so one slip on a strong word costs a little, not everything.
+              Strength {KNOWN_STRENGTH} counts as known:
+              <ScheduleTable />
+            </li>
+            <li>
+              Get more than {Math.round(FAIL_WRONG_RATIO * 100)}% wrong and tests lock for{" "}
+              {formatLock(lockDurationMs(0))}. Each failed test in a row doubles the lock, up to{" "}
+              {formatLock(MAX_LOCK_MS)}. Passing a test resets it.
+            </li>
+          </ol>
+        </section>
+
+        {recentTests.length > 0 ? (
+          <section className="bg-card rounded-2xl border p-5 text-sm">
+            <h2 className="mb-3 font-medium">Recent tests</h2>
+            <ul className="space-y-2">
+              {recentTests.slice(0, 6).map((t) => (
+                <li key={t.id} className="flex items-center justify-between gap-3">
+                  <span className="text-muted-foreground">
+                    <span className="font-numeric">#{t.testNumber}</span> ·{" "}
+                    {new Date(t.takenAt).toLocaleDateString(undefined, {
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </span>
+                  <span className="font-numeric">
+                    {t.correct}/{t.total}
+                  </span>
+                  <span
+                    className={cn(
+                      "w-12 text-right text-xs font-medium",
+                      t.passed ? "text-success" : "text-destructive",
+                    )}
+                  >
+                    {t.passed ? "Pass" : "Fail"}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+      </aside>
+    </div>
+  );
+}
+
+/** The strength → gap table from lib/schedule.ts, so the copy never drifts. */
+function ScheduleTable() {
+  const rows = [
+    ...GAP_BY_STRENGTH.map((gap, strength) => ({ strength: String(strength), gap })),
+  ];
+  return (
+    <table className="mt-2 w-full text-xs">
+      <thead>
+        <tr className="text-left">
+          <th className="py-1 font-medium">Strength</th>
+          <th className="py-1 text-right font-medium">Back after</th>
+        </tr>
+      </thead>
+      <tbody className="font-numeric">
+        {rows.map((r) => (
+          <tr key={r.strength} className={cn(Number(r.strength) === KNOWN_STRENGTH && "text-success")}>
+            <td className="py-0.5">{r.strength}</td>
+            <td className="py-0.5 text-right">
+              {r.gap === 1 ? "next test" : `${r.gap} tests`}
+              {Number(r.strength) === KNOWN_STRENGTH ? " · known" : ""}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function Stat({ label, value }: { label: string; value: number | string }) {
+  return (
+    <div className="bg-muted/50 rounded-xl p-3">
+      <dt className="text-muted-foreground text-xs">{label}</dt>
+      <dd className="font-numeric text-2xl font-semibold">{value}</dd>
+    </div>
+  );
+}
+
+/* ────────────────────────────── Practice ───────────────────────────── */
+
+function Practice({
+  deck,
+  startedAt,
+  durationMs,
+  locked,
+  lockedUntil,
+  now,
+  isLockedNow,
+  onStartTest,
+  onQuit,
+}: {
+  deck: Word[];
+  startedAt: number;
+  durationMs: number;
+  locked: boolean;
+  lockedUntil: number | null;
+  now: number | null;
+  isLockedNow: () => boolean;
+  onStartTest: () => void;
+  onQuit: () => void;
+}) {
+  const [index, setIndex] = useState(0);
+  const [flipped, setFlipped] = useState<ReadonlySet<string>>(() => new Set());
+  const [showBack, setShowBack] = useState(false);
+  const [timeUp, setTimeUp] = useState(false);
+
+  const word = deck[index];
+  const allFlipped = flipped.size === deck.length;
+  const canTest = (allFlipped || timeUp) && !locked;
+  const remaining = now === null ? durationMs : startedAt + durationMs - now;
+
+  function flip() {
+    setShowBack((b) => !b);
+    setFlipped((s) => (s.has(word.id) ? s : new Set(s).add(word.id)));
+  }
+
+  function go(delta: number) {
+    setIndex((i) => Math.min(deck.length - 1, Math.max(0, i + delta)));
+    setShowBack(false);
+  }
+
+  // When time runs out the test starts by itself — unless tests are locked,
+  // in which case practice simply carries on.
+  const onTimeUp = useEffectEvent(() => {
+    setTimeUp(true);
+    if (!isLockedNow()) onStartTest();
+  });
+  useEffect(() => {
+    const t = setTimeout(onTimeUp, Math.max(0, startedAt + durationMs - Date.now()));
+    return () => clearTimeout(t);
+  }, [startedAt, durationMs]);
+
+  const onKey = useEffectEvent((e: KeyboardEvent) => {
+    if (e.target instanceof HTMLElement && e.target.closest("input, textarea")) return;
+    if (e.key === " " || e.key === "Enter") {
+      e.preventDefault();
+      flip();
+    } else if (e.key === "ArrowRight") go(1);
+    else if (e.key === "ArrowLeft") go(-1);
+  });
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => onKey(e);
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, []);
+
+  return (
+    <div className="mx-auto max-w-2xl space-y-5">
+      <div className="flex items-center justify-between gap-3">
+        <Button variant="ghost" className="cursor-pointer" onClick={onQuit}>
+          <ArrowLeft aria-hidden /> End session
+        </Button>
+        <span
+          className={cn(
+            "font-numeric inline-flex items-center gap-1.5 rounded-lg px-3 py-1 text-sm",
+            remaining <= 30_000 ? "bg-warning/15 text-warning" : "bg-muted",
+          )}
+          aria-label="Practice time left"
+        >
+          <Clock aria-hidden className="size-4" />
+          {timeUp ? "Time's up" : formatCountdown(remaining)}
+        </span>
+      </div>
+
+      <div className="text-muted-foreground flex items-center justify-between text-sm">
+        <span>
+          Card <span className="font-numeric">{index + 1}</span> of{" "}
+          <span className="font-numeric">{deck.length}</span>
+        </span>
+        <span>
+          Flipped <span className="font-numeric">{flipped.size}</span>/
+          <span className="font-numeric">{deck.length}</span>
+        </span>
+      </div>
+
+      <button
+        type="button"
+        onClick={flip}
+        aria-label={showBack ? "Hide answer" : "Show answer"}
+        className="bg-card hover:border-primary/40 focus-visible:ring-ring flex min-h-72 w-full cursor-pointer flex-col items-center justify-center gap-4 rounded-2xl border p-8 text-center transition-colors focus-visible:ring-2 focus-visible:outline-none"
+      >
+        <span className="font-hanzi text-6xl leading-tight sm:text-7xl">{word.hanzi}</span>
+        {showBack ? (
+          <span className="space-y-2">
+            <span className="text-primary block text-xl">{word.pinyin}</span>
+            <span className="block text-lg">{word.gloss}</span>
+            {word.pos.length ? (
+              <span className="text-muted-foreground block text-xs">{word.pos.join(" · ")}</span>
+            ) : null}
+          </span>
+        ) : (
+          <span className="text-muted-foreground text-sm">Tap or press Space to flip</span>
+        )}
+      </button>
+
+      <div className="flex items-center justify-between gap-3">
+        <Button
+          variant="outline"
+          size="lg"
+          className="cursor-pointer"
+          onClick={() => go(-1)}
+          disabled={index === 0}
+          aria-label="Previous card"
+        >
+          <ArrowLeft aria-hidden />
+        </Button>
+        <div className="flex flex-wrap justify-center gap-1" aria-hidden>
+          {deck.map((w, i) => (
+            <span
+              key={w.id}
+              className={cn(
+                "size-1.5 rounded-full",
+                i === index ? "bg-primary" : flipped.has(w.id) ? "bg-primary/40" : "bg-muted-foreground/20",
+              )}
+            />
+          ))}
+        </div>
+        <Button
+          variant="outline"
+          size="lg"
+          className="cursor-pointer"
+          onClick={() => go(1)}
+          disabled={index === deck.length - 1}
+          aria-label="Next card"
+        >
+          <ArrowRight aria-hidden />
+        </Button>
+      </div>
+
+      <div className="space-y-2 text-center">
+        <Button
+          variant="cta"
+          size="lg"
+          className="h-11 w-full cursor-pointer sm:w-auto sm:px-8"
+          disabled={!canTest}
+          onClick={onStartTest}
+        >
+          Start test
+        </Button>
+        <p className="text-muted-foreground text-xs">
+          {locked && lockedUntil !== null && now !== null ? (
+            <>
+              Tests unlock in{" "}
+              <span className="font-numeric">{formatCountdown(lockedUntil - now)}</span>.
+            </>
+          ) : canTest ? (
+            "Ready when you are."
+          ) : (
+            "Flip every card to unlock the test, or wait for the timer."
+          )}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+/* ──────────────────────────────── Test ─────────────────────────────── */
+
+const PROMPT: Record<Question["kind"], string> = {
+  meaning: "What does it mean?",
+  hanzi: "Which word means this?",
+  pinyin: "How is it read?",
+};
+
+function Test({
+  questions,
+  onDone,
+  onLocked,
+}: {
+  questions: Question[];
+  onDone: (result: TestResult, answers: Answer[]) => void;
+  onLocked: () => void;
+}) {
+  const [index, setIndex] = useState(0);
+  const [answers, setAnswers] = useState<Answer[]>([]);
+  const [pending, startTransition] = useTransition();
+  // When the current question appeared, to time the answer. Set by events,
+  // never during render.
+  const shownAt = useRef<number | null>(null);
+
+  const q = questions[index];
+  const word = getWord(q.wordId)!;
+  const picked = answers[index]?.chosenId ?? null;
+  const last = index === questions.length - 1;
+
+  function pick(optionId: string) {
+    if (picked !== null) return;
+    const ms = shownAt.current === null ? 60_000 : Math.round(performance.now() - shownAt.current);
+    setAnswers((a) => [...a, { wordId: q.wordId, chosenId: optionId, ms }]);
+  }
+
+  function next() {
+    if (picked === null || pending) return;
+    if (!last) {
+      setIndex((i) => i + 1);
+      shownAt.current = performance.now();
+      return;
+    }
+    startTransition(async () => {
+      const res = await submitTest(answers);
+      if (res.ok) onDone(res.data, answers);
+      else {
+        toast.error(res.error);
+        if (res.code === "LOCKED") onLocked();
+      }
+    });
+  }
+
+  // The first question's clock starts when the test mounts.
+  useEffect(() => {
+    shownAt.current = performance.now();
+  }, []);
+
+  const onKey = useEffectEvent((e: KeyboardEvent) => {
+    const n = Number(e.key);
+    if (n >= 1 && n <= q.options.length) pick(q.options[n - 1]);
+    else if (e.key === "Enter") next();
+  });
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => onKey(e);
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, []);
+
+  function optionLabel(id: string) {
+    const w = getWord(id)!;
+    if (q.kind === "meaning") return <span>{w.gloss}</span>;
+    if (q.kind === "pinyin") return <span className="text-lg">{w.pinyin}</span>;
+    return <span className="font-hanzi text-2xl">{w.hanzi}</span>;
+  }
+
+  return (
+    <div className="mx-auto max-w-2xl space-y-5">
+      <div className="text-muted-foreground flex items-center justify-between text-sm">
+        <span>
+          Question <span className="font-numeric">{index + 1}</span> of{" "}
+          <span className="font-numeric">{questions.length}</span>
+        </span>
+        <span>{PROMPT[q.kind]}</span>
+      </div>
+      <div className="bg-muted h-1 overflow-hidden rounded-full">
+        <div
+          className="bg-primary h-full transition-[width]"
+          style={{ width: `${(index / questions.length) * 100}%` }}
+        />
+      </div>
+
+      <div className="bg-card flex min-h-44 items-center justify-center rounded-2xl border p-8 text-center">
+        {q.kind === "hanzi" ? (
+          <span className="text-2xl">{word.gloss}</span>
+        ) : (
+          <span className="font-hanzi text-6xl leading-tight">{word.hanzi}</span>
+        )}
+      </div>
+
+      <div className="grid gap-2 sm:grid-cols-2">
+        {q.options.map((id, i) => {
+          const isAnswer = id === q.wordId;
+          const isPicked = id === picked;
+          return (
+            <button
+              key={id}
+              type="button"
+              onClick={() => pick(id)}
+              disabled={picked !== null}
+              className={cn(
+                "focus-visible:ring-ring flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 text-left transition-colors focus-visible:ring-2 focus-visible:outline-none disabled:cursor-default",
+                picked === null && "hover:border-primary/50 hover:bg-muted/50",
+                picked !== null && isAnswer && "border-success bg-success/10",
+                picked !== null && isPicked && !isAnswer && "border-destructive bg-destructive/10",
+                picked !== null && !isAnswer && !isPicked && "opacity-50",
+              )}
+            >
+              <span className="text-muted-foreground font-numeric bg-muted flex size-6 shrink-0 items-center justify-center rounded-md text-xs">
+                {i + 1}
+              </span>
+              <span className="min-w-0 flex-1">{optionLabel(id)}</span>
+              {picked !== null && isAnswer ? (
+                <Check aria-label="Correct answer" className="text-success size-5" />
+              ) : null}
+              {picked !== null && isPicked && !isAnswer ? (
+                <X aria-label="Your answer" className="text-destructive size-5" />
+              ) : null}
+            </button>
+          );
+        })}
+      </div>
+
+      {picked !== null ? (
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <p className="text-sm">
+            <span className="font-hanzi text-base">{word.hanzi}</span>{" "}
+            <span className="text-primary">{word.pinyin}</span>{" "}
+            <span className="text-muted-foreground">· {word.gloss}</span>
+          </p>
+          <Button size="lg" className="cursor-pointer" onClick={next} disabled={pending}>
+            {pending ? <Loader2 aria-hidden className="animate-spin" /> : null}
+            {last ? "Finish test" : "Next"}
+          </Button>
+        </div>
+      ) : (
+        <p className="text-muted-foreground text-center text-xs">Press 1–4 to answer, Enter for next.</p>
+      )}
+    </div>
+  );
+}
+
+/* ────────────────────────────── Results ────────────────────────────── */
+
+function Results({
+  result,
+  answers,
+  lockedUntil,
+  now,
+  onAgain,
+}: {
+  result: TestResult;
+  answers: Answer[];
+  lockedUntil: number | null;
+  now: number | null;
+  onAgain: () => void;
+}) {
+  const wrong = answers.filter((a) => a.chosenId !== a.wordId);
+  const pct = Math.round((result.correct / result.total) * 100);
+
+  return (
+    <div className="mx-auto max-w-2xl space-y-6">
+      <section
+        className={cn(
+          "rounded-2xl border p-6 text-center",
+          result.passed ? "border-success/40 bg-success/5" : "border-destructive/40 bg-destructive/5",
+        )}
+      >
+        <p className={cn("text-sm font-medium", result.passed ? "text-success" : "text-destructive")}>
+          Test <span className="font-numeric">#{result.testNumber}</span> ·{" "}
+          {result.passed ? "Passed" : "Not passed"}
+        </p>
+        <p className="font-numeric mt-1 text-5xl font-semibold">
+          {result.correct}/{result.total}
+        </p>
+        <p className="text-muted-foreground mt-1 text-sm">
+          <span className="font-numeric">{pct}%</span> correct
+        </p>
+
+        {!result.passed && lockedUntil !== null && now !== null && lockedUntil > now ? (
+          <p className="mt-4 text-sm">
+            Tests are locked for{" "}
+            <span className="font-numeric font-medium">{formatCountdown(lockedUntil - now)}</span>.
+            Practice is still open.
+          </p>
+        ) : null}
+
+        {result.guesses > 0 ? (
+          <p className="text-warning mt-3 text-sm">
+            {result.guesses} wrong answer{result.guesses === 1 ? " was" : "s were"} given in under{" "}
+            {GUESS_MS / 1000}s. Slow down and read every option.
+          </p>
+        ) : null}
+      </section>
+
+      {wrong.length > 0 ? (
+        <section className="space-y-3">
+          <h2 className="text-sm font-medium">
+            To review <span className="text-muted-foreground font-numeric">({wrong.length})</span>
+          </h2>
+          <ul className="bg-card divide-y rounded-xl border">
+            {wrong.map((a) => {
+              const w = getWord(a.wordId)!;
+              const chosen = getWord(a.chosenId)!;
+              return (
+                <li key={a.wordId} className="flex items-center gap-4 px-4 py-3">
+                  <span className="font-hanzi w-20 shrink-0 text-2xl">{w.hanzi}</span>
+                  <span className="min-w-0 flex-1 text-sm">
+                    <span className="text-primary block">{w.pinyin}</span>
+                    <span className="block">{w.gloss}</span>
+                    <span className="text-muted-foreground block text-xs">
+                      You picked {chosen.hanzi} ({chosen.gloss})
+                    </span>
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+          <p className="text-muted-foreground text-xs">These come back in your very next test.</p>
+        </section>
+      ) : null}
+
+      <div className="flex justify-center">
+        <Button size="lg" variant="outline" className="cursor-pointer" onClick={onAgain}>
+          <RotateCcw aria-hidden /> New session
+        </Button>
+      </div>
+    </div>
+  );
+}
