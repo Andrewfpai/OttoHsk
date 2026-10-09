@@ -49,6 +49,17 @@ const globalForDb = globalThis as unknown as {
 
 const pool = globalForDb.__hskPool ?? new Pool({ connectionString: resolveConnectionString() });
 
+// Neon closes idle connections. The pool reports that as an "error" event,
+// and an event emitter with no "error" listener crashes the process. The
+// pool discards the dead connection and opens a new one on the next query,
+// so logging is all there is to do. Guarded so dev reloads, which reuse the
+// pool, do not stack listeners.
+if (pool.listenerCount("error") === 0) {
+  pool.on("error", (error: Error) => {
+    console.warn(`[db] idle connection closed: ${error.message || "connection lost"}`);
+  });
+}
+
 export type Db = NeonDatabase<typeof schema>;
 
 export const db: Db = globalForDb.__hskDb ?? drizzle(pool, { schema });

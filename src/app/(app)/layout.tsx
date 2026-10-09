@@ -11,6 +11,9 @@ import { requireUser } from "@/lib/auth-guard";
  */
 export default async function AppLayout({ children }: LayoutProps<"/">) {
   const user = await requireUser();
+  // Everyone sets a password once, after their first Google sign-in, so they
+  // can also sign in with email and password.
+  if (!user.hasPassword) redirect("/set-password");
 
   async function signOutAction() {
     "use server";

@@ -20,7 +20,7 @@ import { WordsTabs } from "@/features/words/components/words-tabs";
 
 import { sampleData } from "../sample";
 
-const USER = { id: "preview", email: "preview@example.com", name: "Preview Learner", image: null };
+const USER = { id: "preview", email: "preview@example.com", name: "Preview Learner", image: null, hasPassword: true };
 
 export default async function PreviewPage({ params }: PageProps<"/zz-preview/[view]">) {
   if (process.env.NODE_ENV === "production") notFound();

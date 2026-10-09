@@ -1,9 +1,10 @@
 /**
  * Auth.js (NextAuth v5) configuration.
  *
- * Invite-only: the Google accounts listed in ALLOWED_EMAILS, nobody else.
- * Every study table carries `user_id`, so each person keeps their own
- * progress.
+ * Invite-only, the same way as OttoLabs. Owners are named in ALLOWED_EMAILS;
+ * anyone else must be on the invite list owners manage in Settings → Access
+ * (`allowed_emails`), or arrive through a one-time invite link. Every study
+ * table carries `user_id`, so each person keeps their own progress.
  *
  * Route protection lives in `src/app/(app)/layout.tsx` and in every Server
  * Action via `requireUser()`, not in a proxy.
@@ -11,10 +12,15 @@
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import NextAuth from "next-auth";
 import Google from "next-auth/providers/google";
+import { cookies } from "next/headers";
 
 import { db } from "@/db";
 import { accounts, sessions, users, verificationTokens } from "@/db/schema";
-import { isAllowedEmail, allowedEmails } from "@/lib/access";
+import { INVITE_COOKIE } from "@/features/access/lib/invite-links";
+import { hasAccess } from "@/features/access/server/check";
+import { redeemInvite } from "@/features/access/server/invite-links";
+import { ownerEmails } from "@/lib/access";
+import { SESSION_COOKIE, SESSION_COOKIE_OPTIONS } from "@/lib/session-cookie";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: DrizzleAdapter(db, {
@@ -24,9 +30,14 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     verificationTokensTable: verificationTokens,
   }),
 
-  // Database sessions, so removing someone from ALLOWED_EMAILS can end their
-  // login by deleting rows (see auth-guard) rather than waiting out a JWT.
+  // Database sessions, so removing someone's access can end their login by
+  // deleting rows (see auth-guard) rather than waiting out a JWT.
   session: { strategy: "database" },
+
+  // Its own cookie name, shared with the password sign-in; see session-cookie.ts.
+  cookies: {
+    sessionToken: { name: SESSION_COOKIE, options: SESSION_COOKIE_OPTIONS },
+  },
 
   pages: {
     signIn: "/sign-in",
@@ -36,20 +47,38 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [Google],
 
   callbacks: {
-    signIn({ user }) {
-      if (allowedEmails().length === 0) {
-        // Fail closed. An unset ALLOWED_EMAILS must not mean "the internet
-        // may log in".
+    async signIn({ user }) {
+      if (ownerEmails().length === 0) {
+        // Fail closed for owners. An unset ALLOWED_EMAILS must not mean "the
+        // internet may log in"; invited addresses can still get in.
         console.error(
-          "[auth] ALLOWED_EMAILS is empty, so nobody can sign in. " +
-            "Set it to the Google addresses allowed in, in .env.local and in Vercel.",
+          "[auth] ALLOWED_EMAILS is empty, so nobody is an owner. " +
+            "Set it to your Google address in .env.local and in Vercel.",
         );
       }
-      return isAllowedEmail(user.email);
+      // Owners from the environment, everyone else from the invite list.
+      if (await hasAccess(user.email)) return true;
+
+      // Or a one-time invite link, carried through Google in a cookie by
+      // /invite/[token]. Whichever Google account comes back spends it.
+      const jar = await cookies();
+      const token = jar.get(INVITE_COOKIE)?.value;
+      if (!token || !user.email) return false;
+      const granted = await redeemInvite(token, user.email);
+      try {
+        jar.delete(INVITE_COOKIE);
+      } catch {
+        // Read-only here in some contexts; it expires within minutes anyway.
+      }
+      return granted;
     },
 
     session({ session, user }) {
-      if (session.user) session.user.id = user.id;
+      if (session.user) {
+        session.user.id = user.id;
+        // Whether one is set, never the hash itself.
+        session.user.hasPassword = Boolean((user as { passwordHash?: string | null }).passwordHash);
+      }
       return session;
     },
   },

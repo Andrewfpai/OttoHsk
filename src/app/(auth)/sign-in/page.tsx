@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 
 import { GoogleSignInButton } from "@/components/auth/google-sign-in-button";
 import { SealMark } from "@/components/layout/brand";
+import { PasswordSignInForm } from "@/features/account/components/password-sign-in-form";
 import { auth, signIn } from "@/lib/auth";
 
 export const metadata: Metadata = { title: "Sign in" };
@@ -53,7 +54,18 @@ export default async function SignInPage({ searchParams }: PageProps<"/sign-in">
           <GoogleSignInButton />
         </form>
 
-        <p className="text-muted-foreground mt-6 text-center text-xs">Access is by invitation.</p>
+        <div className="text-muted-foreground my-6 flex items-center gap-3 text-xs">
+          <span className="bg-border h-px flex-1" />
+          or with your password
+          <span className="bg-border h-px flex-1" />
+        </div>
+
+        <PasswordSignInForm />
+
+        <p className="text-muted-foreground mt-6 text-center text-xs">
+          Access is by invitation. Your password is the one you set after your first Google
+          sign-in.
+        </p>
       </div>
     </main>
   );

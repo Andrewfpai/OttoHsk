@@ -1,10 +1,8 @@
-import { eq } from "drizzle-orm";
 import { redirect } from "next/navigation";
 import { cache } from "react";
 
-import { db } from "@/db";
-import { sessions } from "@/db/schema";
-import { isAllowedEmail } from "@/lib/access";
+import { hasAccess, signOutEverywhere } from "@/features/access/server/check";
+import { isOwnerEmail } from "@/lib/access";
 import { auth } from "@/lib/auth";
 
 export type AuthedUser = {
@@ -12,6 +10,7 @@ export type AuthedUser = {
   email: string;
   name: string | null;
   image: string | null;
+  hasPassword: boolean;
 };
 
 /**
@@ -30,11 +29,12 @@ export const requireUser = cache(async (): Promise<AuthedUser> => {
     redirect("/sign-in");
   }
 
-  // Re-checked on every request, so removing someone from ALLOWED_EMAILS
-  // takes effect immediately. Their login sessions go first: with one still
-  // alive, the sign-in page would send them straight back here, in a loop.
-  if (!isAllowedEmail(session.user.email)) {
-    await db.delete(sessions).where(eq(sessions.userId, session.user.id));
+  // Access is re-checked on every request, not just at sign-in, so removing
+  // an invite (or an owner from ALLOWED_EMAILS) takes effect immediately.
+  // Signing them out first matters: with the login session still alive the
+  // sign-in page would send them straight back here, in a loop.
+  if (!(await hasAccess(session.user.email))) {
+    await signOutEverywhere(session.user.email);
     redirect("/sign-in?error=AccessDenied");
   }
 
@@ -43,5 +43,12 @@ export const requireUser = cache(async (): Promise<AuthedUser> => {
     email: session.user.email,
     name: session.user.name ?? null,
     image: session.user.image ?? null,
+    hasPassword: session.user.hasPassword ?? false,
   };
 });
+
+/** Owners manage the invite list. Server Actions must check this themselves. */
+export async function isOwner(): Promise<boolean> {
+  const user = await requireUser();
+  return isOwnerEmail(user.email);
+}

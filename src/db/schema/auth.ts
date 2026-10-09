@@ -16,6 +16,11 @@ export const users = pgTable("users", {
   email: text("email").notNull().unique(),
   emailVerified: timestamp("email_verified", { mode: "date", withTimezone: true }),
   image: text("image"),
+  /**
+   * Ours, not the adapter's: a scrypt hash (`lib/password.ts`) for signing in
+   * with email and password. Null until set after the first Google sign-in.
+   */
+  passwordHash: text("password_hash"),
 });
 
 export const accounts = pgTable(

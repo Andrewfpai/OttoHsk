@@ -4,7 +4,13 @@ import { ArrowUpRight, Timer } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { NAV_ITEMS, OTTOLABS_URL, isActivePath, type NavItem } from "@/components/layout/nav-items";
+import {
+  NAV_ITEMS,
+  OTTOLABS_URL,
+  SECONDARY_NAV_ITEMS,
+  isActivePath,
+  type NavItem,
+} from "@/components/layout/nav-items";
 import { cn } from "@/lib/utils";
 
 const ROW =
@@ -81,6 +87,15 @@ export function SidebarNav({ onNavigate }: { onNavigate?: () => void }) {
           <ArrowUpRight aria-hidden className="size-3.5 opacity-60" />
         </a>
       ) : null}
+
+      {SECONDARY_NAV_ITEMS.map((item) => (
+        <NavLink
+          key={item.href}
+          item={item}
+          active={isActivePath(pathname, item.href)}
+          onNavigate={onNavigate}
+        />
+      ))}
     </nav>
   );
 }

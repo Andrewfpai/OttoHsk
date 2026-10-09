@@ -13,7 +13,9 @@ export const DAILY_ESSAY_LIMIT = 30;
 export type AiConfig = { baseUrl: string; apiKey: string; models: string[] };
 
 export function aiConfig(): AiConfig | null {
-  const apiKey = process.env.AI_API_KEY?.trim();
+  // Tolerate a key pasted together with its header prefix ("Bearer sk-…"):
+  // sent as-is it would become "Bearer Bearer sk-…" and every model would 401.
+  const apiKey = process.env.AI_API_KEY?.trim().replace(/^bearer\s+/i, "");
   if (!apiKey) return null;
   const models = (process.env.AI_MODELS ?? "")
     .split(",")

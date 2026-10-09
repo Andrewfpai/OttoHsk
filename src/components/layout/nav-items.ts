@@ -5,6 +5,7 @@ import {
   LayoutDashboard,
   ListOrdered,
   PenLine,
+  Settings,
   TextCursorInput,
   type LucideIcon,
 } from "lucide-react";
@@ -24,6 +25,10 @@ export const NAV_ITEMS: NavItem[] = [
   { href: "/ordering", label: "Sentence order", icon: ListOrdered },
   { href: "/essays", label: "Essays", icon: PenLine },
   { href: "/mocks", label: "Mock tests", icon: ClipboardCheck },
+];
+
+export const SECONDARY_NAV_ITEMS: NavItem[] = [
+  { href: "/settings", label: "Settings", icon: Settings },
 ];
 
 export function isActivePath(pathname: string, href: string): boolean {
