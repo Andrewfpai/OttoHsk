@@ -35,13 +35,19 @@ function passageStats(stats: Record<string, ItemStat>): Record<string, ItemStat>
   return out;
 }
 
-/** The passage with each {{n}} drawn as a numbered gap, filled once answered. */
+/**
+ * The passage with each {{n}} drawn as a numbered gap. Before checking, a
+ * gap shows your pick in a neutral colour; after, the right answer, green
+ * if you had it and red if not.
+ */
 function PassageText({
   passage,
   picked,
+  checked,
 }: {
   passage: ClozePassage;
   picked: Record<number, string>;
+  checked: boolean;
 }) {
   const byNumber = new Map(passage.blanks.map((b) => [b.number, b]));
   return (
@@ -54,18 +60,24 @@ function PassageText({
             const n = Number(m[1]);
             const blank = byNumber.get(n);
             const choice = picked[n];
-            const right = blank && choice === blank.options[blank.answer];
+            const right = blank !== undefined && choice === blank.options[blank.answer];
             return (
               <span
                 key={j}
                 className={cn(
                   "mx-1 inline-block min-w-14 border-b-2 px-1 text-center indent-0 leading-normal",
-                  choice === undefined && "border-primary text-primary",
-                  choice !== undefined && right && "border-success text-success",
-                  choice !== undefined && !right && "border-destructive text-destructive",
+                  !checked && "border-primary text-primary",
+                  checked && right && "border-success text-success",
+                  checked && !right && "border-destructive text-destructive",
                 )}
               >
-                {choice !== undefined && blank ? blank.options[blank.answer] : <span className="font-numeric text-sm">{n}</span>}
+                {checked && blank ? (
+                  blank.options[blank.answer]
+                ) : choice !== undefined ? (
+                  choice
+                ) : (
+                  <span className="font-numeric text-sm">{n}</span>
+                )}
               </span>
             );
           })}
@@ -83,7 +95,9 @@ export function ClozeDrill({ stats, seed }: { stats: Record<string, ItemStat>; s
     practiceOrder(clozePassages, (p) => p.id, passageStats(stats), seededRng(seed)),
   );
   const [position, setPosition] = useState(0);
+  // Picks can change freely until the passage is checked, as on the exam.
   const [picked, setPicked] = useState<Record<number, string>>({});
+  const [checked, setChecked] = useState(false);
   const [session, setSession] = useState<Record<string, boolean>>({});
   const [tally, setTally] = useState({ answered: 0, right: 0 });
 
@@ -97,21 +111,34 @@ export function ClozeDrill({ stats, seed }: { stats: Record<string, ItemStat>; s
 
   const passage = queue[position % queue.length];
   const summary = summarize(DRILL_ITEM_IDS.cloze, withSession(stats, session));
-  const done = passage.blanks.every((b) => picked[b.number] !== undefined);
+  const answeredCount = passage.blanks.filter((b) => picked[b.number] !== undefined).length;
+  const allAnswered = answeredCount === passage.blanks.length;
 
   function pick(blank: ClozePassage["blanks"][number], option: string) {
-    if (picked[blank.number] !== undefined) return;
-    const right = option === blank.options[blank.answer];
-    const id = questionId(passage.id, blank.number);
+    if (checked) return;
     setPicked((p) => ({ ...p, [blank.number]: option }));
-    setSession((s) => ({ ...s, [id]: right }));
-    setTally((t) => ({ answered: t.answered + 1, right: t.right + (right ? 1 : 0) }));
-    record("cloze", id, right);
+  }
+
+  /** Reveal every answer at once, and only then save the results. */
+  function check() {
+    if (!allAnswered || checked) return;
+    const results: Record<string, boolean> = {};
+    let right = 0;
+    for (const b of passage.blanks) {
+      const ok = picked[b.number] === b.options[b.answer];
+      results[questionId(passage.id, b.number)] = ok;
+      if (ok) right++;
+    }
+    setChecked(true);
+    setSession((s) => ({ ...s, ...results }));
+    setTally((t) => ({ answered: t.answered + passage.blanks.length, right: t.right + right }));
+    for (const [id, ok] of Object.entries(results)) record("cloze", id, ok);
   }
 
   function next() {
     setPosition((p) => p + 1);
     setPicked({});
+    setChecked(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -132,7 +159,7 @@ export function ClozeDrill({ stats, seed }: { stats: Record<string, ItemStat>; s
           </span>
         </div>
 
-        <PassageText passage={passage} picked={picked} />
+        <PassageText passage={passage} picked={picked} checked={checked} />
 
         <ol className="space-y-5 border-t pt-5">
           {passage.blanks.map((b) => {
@@ -145,6 +172,7 @@ export function ClozeDrill({ stats, seed }: { stats: Record<string, ItemStat>; s
                   options={b.options}
                   answer={answer}
                   picked={choice}
+                  revealed={checked}
                   onPick={(o) => pick(b, o)}
                   render={(o) => (
                     <span>
@@ -155,7 +183,7 @@ export function ClozeDrill({ stats, seed }: { stats: Record<string, ItemStat>; s
                     </span>
                   )}
                 />
-                {choice !== null ? (
+                {checked ? (
                   <p className="text-sm">
                     <span className={cn("font-medium", choice === answer ? "text-success" : "text-destructive")}>
                       {choice === answer ? "Right. " : `Answer: ${LETTERS[b.answer]} ${answer}. `}
@@ -170,7 +198,7 @@ export function ClozeDrill({ stats, seed }: { stats: Record<string, ItemStat>; s
 
         <div className="flex flex-wrap items-center justify-between gap-3 border-t pt-5">
           <span className="text-muted-foreground text-sm">
-            {done ? (
+            {checked ? (
               <>
                 This passage:{" "}
                 <span className="text-foreground font-numeric">
@@ -178,12 +206,31 @@ export function ClozeDrill({ stats, seed }: { stats: Record<string, ItemStat>; s
                 </span>
               </>
             ) : (
-              "Answer every blank, or skip to the next passage."
+              <>
+                Answered{" "}
+                <span className="text-foreground font-numeric">
+                  {answeredCount}/{passage.blanks.length}
+                </span>
+                . Answers show once every blank has one.
+              </>
             )}
           </span>
-          <Button size="lg" variant={done ? "default" : "ghost"} className="cursor-pointer" onClick={next}>
-            {done ? "Next passage" : "Skip"} <ArrowRight aria-hidden />
-          </Button>
+          <div className="flex gap-2">
+            {checked ? (
+              <Button size="lg" className="cursor-pointer" onClick={next}>
+                Next passage <ArrowRight aria-hidden />
+              </Button>
+            ) : (
+              <>
+                <Button size="lg" variant="ghost" className="cursor-pointer" onClick={next}>
+                  Skip
+                </Button>
+                <Button size="lg" className="cursor-pointer" disabled={!allAnswered} onClick={check}>
+                  Check answers
+                </Button>
+              </>
+            )}
+          </div>
         </div>
       </section>
     </div>

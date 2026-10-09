@@ -88,10 +88,10 @@ export function EssayStudio({
     setResult(null);
   }
 
-  function newWords(from: WordSource = source) {
+  /** Five new words from the current pool. Only the shuffle button does this. */
+  function newWords() {
     resetFor(() => {
-      setSource(from);
-      if (from !== "custom") setGiven(pickFive(from === "mine" ? minePool : allIds, Math.random));
+      if (source !== "custom") setGiven(pickFive(source === "mine" ? minePool : allIds, Math.random));
     });
   }
 
@@ -143,7 +143,9 @@ export function EssayStudio({
                     variant={source === s ? "secondary" : "ghost"}
                     aria-pressed={source === s}
                     className="cursor-pointer"
-                    onClick={() => source !== s && newWords(s)}
+                    // Only picks the pool the shuffle button draws from; the
+                    // words on screen stay until you shuffle.
+                    onClick={() => setSource(s)}
                   >
                     {SOURCE_LABEL[s]}
                   </Button>

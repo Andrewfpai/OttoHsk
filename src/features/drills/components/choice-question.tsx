@@ -36,7 +36,12 @@ export function BlankSentence({
   );
 }
 
-/** A row of answer buttons that lock and colour themselves once answered. */
+/**
+ * A row of answer buttons. By default the answer shows as soon as one is
+ * picked and the row locks. With `revealed={false}` the pick stays neutral
+ * and changeable until the caller reveals it — for answering a whole
+ * passage before seeing any answers.
+ */
 export function Choices({
   options,
   answer,
@@ -44,14 +49,17 @@ export function Choices({
   onPick,
   render = (o) => o,
   hanzi = true,
+  revealed,
 }: {
-  options: string[];
+  options: readonly string[];
   answer: string;
   picked: string | null;
   onPick: (option: string) => void;
   render?: (option: string) => React.ReactNode;
   hanzi?: boolean;
+  revealed?: boolean;
 }) {
+  const shown = revealed ?? picked !== null;
   return (
     <div className="flex flex-wrap gap-2">
       {options.map((o) => {
@@ -61,22 +69,24 @@ export function Choices({
           <button
             key={o}
             type="button"
-            disabled={picked !== null}
+            disabled={shown}
+            aria-pressed={!shown ? isPicked : undefined}
             onClick={() => onPick(o)}
             className={cn(
               "focus-visible:ring-ring inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-xl border px-4 py-2 transition-colors focus-visible:ring-2 focus-visible:outline-none disabled:cursor-default",
               hanzi && "font-hanzi text-lg",
-              picked === null && "hover:border-primary/50 hover:bg-muted/50",
-              picked !== null && isAnswer && "border-success bg-success/10",
-              picked !== null && isPicked && !isAnswer && "border-destructive bg-destructive/10",
-              picked !== null && !isAnswer && !isPicked && "opacity-50",
+              !shown && !isPicked && "hover:border-primary/50 hover:bg-muted/50",
+              !shown && isPicked && "border-primary bg-primary/10",
+              shown && isAnswer && "border-success bg-success/10",
+              shown && isPicked && !isAnswer && "border-destructive bg-destructive/10",
+              shown && !isAnswer && !isPicked && "opacity-50",
             )}
           >
             {render(o)}
-            {picked !== null && isAnswer ? (
+            {shown && isAnswer ? (
               <Check aria-label="Correct answer" className="text-success size-4" />
             ) : null}
-            {picked !== null && isPicked && !isAnswer ? (
+            {shown && isPicked && !isAnswer ? (
               <X aria-label="Your answer" className="text-destructive size-4" />
             ) : null}
           </button>

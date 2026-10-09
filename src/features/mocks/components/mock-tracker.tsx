@@ -125,21 +125,20 @@ export function MockTracker({ mocks, today }: { mocks: MockRow[]; today: string 
         ))}
 
         <div className="flex gap-2 pt-1">
-          <Button type="submit" size="lg" className="cursor-pointer" disabled={pending}>
-            {pending ? <Loader2 aria-hidden className="animate-spin" /> : null}
-            {editing ? "Save changes" : "Save"}
-          </Button>
           {editing ? (
             <Button
               type="button"
-              size="lg"
-              variant="ghost"
-              className="cursor-pointer"
+              variant="outline"
+              className="h-11 flex-1 cursor-pointer"
               onClick={() => setEditing(null)}
             >
               Cancel
             </Button>
           ) : null}
+          <Button type="submit" className="h-11 flex-1 cursor-pointer text-sm" disabled={pending}>
+            {pending ? <Loader2 aria-hidden className="animate-spin" /> : null}
+            {editing ? "Save changes" : "Save mock test"}
+          </Button>
         </div>
         <p className="text-muted-foreground text-xs">
           Writing counts the 8 sentence-ordering questions. The two essays have no answer key, so
