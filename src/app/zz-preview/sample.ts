@@ -43,7 +43,7 @@ export function sampleData() {
     drills: {
       confusable: { total: 177, tried: 30, mastered: 22 },
       ordering: { total: 60, tried: 12, mastered: 9 },
-      grammar: { total: 90, tried: 20, mastered: 14 },
+      cloze: { total: 150, tried: 30, mastered: 21 },
     },
     latestMock: mocks[2],
   };

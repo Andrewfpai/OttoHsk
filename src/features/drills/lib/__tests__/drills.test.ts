@@ -4,7 +4,7 @@ import type { OrderingItem } from "@/content/types";
 import { seededRng } from "@/lib/random";
 
 import { isCorrectOrder, sentenceOf } from "../ordering";
-import { practiceOrder, summarize, withSession } from "../stats";
+import { interleave, practiceOrder, summarize, withSession } from "../stats";
 
 const item: OrderingItem = {
   id: "t",
@@ -40,6 +40,15 @@ describe("drill stats", () => {
     expect(order[0]).toBe("b");
     expect(order.slice(1, 3).sort()).toEqual(["c", "d"]);
     expect(order[3]).toBe("a");
+  });
+
+  it("interleaves 60/40: three of every five from the first queue", () => {
+    const a = ["a1", "a2", "a3", "a4", "a5", "a6"];
+    const b = ["b1", "b2", "b3", "b4"];
+    expect(interleave(a, b, 0.6)).toEqual(["a1", "b1", "a2", "b2", "a3", "a4", "b3", "a5", "b4", "a6"]);
+    // One queue running dry leaves the other to finish alone, order intact.
+    expect(interleave(["a1"], ["b1", "b2", "b3"], 0.6)).toEqual(["a1", "b1", "b2", "b3"]);
+    expect(interleave([], ["b1"], 0.6)).toEqual(["b1"]);
   });
 
   it("counts mastered by the latest attempt, session answers on top", () => {

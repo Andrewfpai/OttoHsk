@@ -4,7 +4,7 @@ import { words } from "@/content/words";
 import { seededRng } from "@/lib/random";
 
 import { buildDeck } from "../deck";
-import { afterTest, isLocked, isPass, lockDurationMs, MAX_LOCK_MS } from "../lockout";
+import { afterTest, failAt, isLocked, isPass, lockDurationMs, MAX_LOCK_MS } from "../lockout";
 import { buildQuestions } from "../questions";
 import { KNOWN_STRENGTH, gapFor, nextSchedule, statusOf } from "../schedule";
 
@@ -59,6 +59,15 @@ describe("lockout", () => {
     expect(isPass(8, 20)).toBe(true); // 60% wrong exactly
     expect(isPass(7, 20)).toBe(false); // 65% wrong
     expect(isPass(0, 0)).toBe(false);
+  });
+
+  it("names the exact wrong count that fails, matching isPass for every size", () => {
+    expect([10, 20, 30].map(failAt)).toEqual([7, 13, 19]);
+    for (let total = 1; total <= 50; total++) {
+      const n = failAt(total);
+      expect(isPass(total - (n - 1), total), `${n - 1} wrong of ${total}`).toBe(true);
+      expect(isPass(total - n, total), `${n} wrong of ${total}`).toBe(false);
+    }
   });
 
   it("doubles from 1 minute and caps at 1 hour", () => {

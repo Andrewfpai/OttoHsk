@@ -1,6 +1,6 @@
 /**
  * A learner's results. The study material itself (words, confusables,
- * ordering items, grammar) is static content in `src/content/` and is never
+ * ordering items, cloze passages) is static content in `src/content/` and is never
  * stored here — rows reference it by its stable id.
  */
 import { sql } from "drizzle-orm";
@@ -117,11 +117,12 @@ export const mockTests = pgTable(
   ],
 );
 
-export const drillKind = pgEnum("drill_kind", ["confusable", "ordering", "grammar"]);
+export const drillKind = pgEnum("drill_kind", ["confusable", "ordering", "cloze"]);
 
 /**
- * Every answer in the confusables, ordering and grammar drills. `item_id` is
- * the content id, with "#n" for the n-th question of a set or pattern.
+ * Every answer in the confusables, ordering and fill-in (cloze) drills.
+ * `item_id` is the content id, with "#n" for a question inside a set or
+ * passage (for cloze, n is the exam question number, e.g. "d-2012-1-46#47").
  */
 export const drillAttempts = pgTable(
   "drill_attempts",

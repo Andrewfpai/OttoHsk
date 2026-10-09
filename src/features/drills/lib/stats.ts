@@ -25,6 +25,22 @@ export function practiceOrder<T>(
   return [...shuffle(missed, rng), ...shuffle(fresh, rng), ...shuffle(rest, rng)];
 }
 
+/**
+ * Merge two queues so `shareA` of every stretch comes from `a`: at 0.6 the
+ * pattern is a b a b a — three of every five from `a`. When one runs out
+ * the other continues alone. Each queue keeps its own order.
+ */
+export function interleave<T>(a: readonly T[], b: readonly T[], shareA: number): T[] {
+  const out: T[] = [];
+  let i = 0;
+  let j = 0;
+  while (i < a.length || j < b.length) {
+    const wantA = j >= b.length || (i < a.length && i < Math.round((out.length + 1) * shareA));
+    out.push(wantA ? a[i++] : b[j++]);
+  }
+  return out;
+}
+
 /** Stored stats with this session's answers applied on top. */
 export function withSession(
   stats: Record<string, ItemStat>,

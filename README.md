@@ -5,13 +5,13 @@ sibling to OttoLabs: same stack, separate site, linked both ways.
 
 | Page | What it does |
 |---|---|
-| Dashboard | Days left, words known / learning / not started, new words per day needed, due reviews, drill progress, latest mock |
+| Dashboard | Days left, words known / learning / not started, new words per day needed, words due in the next test, drill progress, latest mock |
 | Words → Word list | All 1,298 HSK 2.0 level-5 words. Search by 汉字, toneless pinyin or English; filter by status |
 | Words → Flashcards | Timed practice → test → spaced repetition, with a lockout for guessing (below) |
-| Confusables | 45 near-synonym sets, 177 fill-the-blank questions (Reading Part 1 style) |
-| Sentence order | 60 Writing Part 1 items with an explanation of each word-order rule |
+| Confusables | 45 near-synonym sets, 177 fill-the-blank questions |
+| Fill in 填空 | Reading Part 1 (46–60) passages from your own papers ("mengisi" d and E), four options per blank |
+| Sentence order | Writing Part 1: items from your own papers (组词成句 A–M) mixed 60/40 with 60 built-in items, each with the word-order rule |
 | Essays | Q99 (five words) and Q100 (a described picture): 15-min timer, character count, word-use check, AI feedback naming the model that answered |
-| Grammar | 45 HSK 5 patterns, each with examples and 2 quiz questions |
 | Mock tests | Log correct answers per section (L /45, R /45, W Part 1 /8) and see the trend |
 
 ## Flashcards
@@ -50,7 +50,10 @@ database, keyed by content id. **Never change a published id.**
 - `words.json` is built by `npm run words:build` from
   [complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary)
   (MIT); definitions are CC-CEDICT (CC BY-SA 4.0).
-- `confusables.ts`, `ordering.ts`, `grammar.ts` are hand-written. Tests in
+- `ordering-papers-*.ts` and `cloze-*.ts` are transcribed from the learner's
+  own papers, which have no answer keys: the answers were worked out and
+  should be checked against a teacher's key where one exists.
+- `confusables.ts` and `ordering.ts` are hand-written. Tests in
   `src/content/__tests__` check their structure (one blank, answer among the
   options, unique ids), not the Chinese — a native-speaker read is worthwhile.
 
@@ -91,7 +94,7 @@ Opens on <http://localhost:3100> (3000 is OttoLabs).
 
 Without a database or login, `/zz-preview/<view>` shows every page with sample
 data in development (`dashboard`, `words`, `flashcards`, `flashcards-locked`,
-`confusables`, `ordering`, `essays`, `grammar`, `mocks`). It 404s in production.
+`confusables`, `cloze`, `ordering`, `essays`, `mocks`). It 404s in production.
 
 ## Deploy (Vercel)
 

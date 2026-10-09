@@ -13,6 +13,11 @@ export const MAX_LOCK_MS = 60 * 60_000;
 /** Wrong answers given faster than this are counted as guesses. */
 export const GUESS_MS = 1500;
 
+/** The fewest wrong answers that fail a test of `total`: 13 of 20, 7 of 10. */
+export function failAt(total: number): number {
+  return Math.floor(total * FAIL_WRONG_RATIO) + 1;
+}
+
 export function isPass(correct: number, total: number): boolean {
   if (total <= 0) return false;
   return (total - correct) / total <= FAIL_WRONG_RATIO;

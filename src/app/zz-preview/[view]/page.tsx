@@ -10,7 +10,7 @@ import { PageContainer, PageHeader } from "@/components/layout/page-header";
 import { DashboardView } from "@/features/dashboard/components/dashboard-view";
 import { ConfusablesDrill } from "@/features/drills/components/confusables-drill";
 import { EssayStudio } from "@/features/essays/components/essay-studio";
-import { GrammarBank } from "@/features/drills/components/grammar-bank";
+import { ClozeDrill } from "@/features/drills/components/cloze-drill";
 import { NoRecording } from "@/features/drills/components/use-record";
 import { OrderingDrill } from "@/features/drills/components/ordering-drill";
 import { FlashcardStudio } from "@/features/flashcards/components/flashcard-studio";
@@ -77,10 +77,10 @@ export default async function PreviewPage({ params }: PageProps<"/zz-preview/[vi
         />
       </PageContainer>
     ),
-    grammar: (
+    cloze: (
       <PageContainer>
-        <PageHeader title="Grammar" />
-        <GrammarBank stats={{}} />
+        <PageHeader title="Fill in 填空" />
+        <ClozeDrill stats={{}} seed={s.seed} />
       </PageContainer>
     ),
     mocks: (

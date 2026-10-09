@@ -12,8 +12,8 @@ import { cn } from "@/lib/utils";
 
 const DRILLS = [
   { kind: "confusable", label: "Confusables", href: "/confusables" },
+  { kind: "cloze", label: "Fill in", href: "/cloze" },
   { kind: "ordering", label: "Sentence order", href: "/ordering" },
-  { kind: "grammar", label: "Grammar", href: "/grammar" },
 ] as const;
 
 /** Pure presentation, so the dev preview can render it with sample data. */

@@ -18,18 +18,18 @@ export type Dashboard = {
   due: number;
   /** Epoch ms while tests are locked, else null. */
   lockedUntil: number | null;
-  drills: { confusable: DrillSummary; ordering: DrillSummary; grammar: DrillSummary };
+  drills: { confusable: DrillSummary; cloze: DrillSummary; ordering: DrillSummary };
   latestMock: MockRow | null;
 };
 
 export async function getDashboard(): Promise<Dashboard> {
-  const [progress, info, mocks, confusable, ordering, grammar] = await Promise.all([
+  const [progress, info, mocks, confusable, ordering, cloze] = await Promise.all([
     getProgress(),
     getFlashcardInfo(),
     getMocks(),
     getItemStats("confusable"),
     getItemStats("ordering"),
-    getItemStats("grammar"),
+    getItemStats("cloze"),
   ]);
 
   const now = new Date();
@@ -52,8 +52,8 @@ export async function getDashboard(): Promise<Dashboard> {
     lockedUntil: isLocked(lockedUntil, now) ? info.lockedUntil : null,
     drills: {
       confusable: summarize(DRILL_ITEM_IDS.confusable, confusable),
+      cloze: summarize(DRILL_ITEM_IDS.cloze, cloze),
       ordering: summarize(DRILL_ITEM_IDS.ordering, ordering),
-      grammar: summarize(DRILL_ITEM_IDS.grammar, grammar),
     },
     latestMock: mocks.at(-1) ?? null,
   };

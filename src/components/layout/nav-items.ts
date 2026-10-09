@@ -5,7 +5,7 @@ import {
   LayoutDashboard,
   ListOrdered,
   PenLine,
-  Puzzle,
+  TextCursorInput,
   type LucideIcon,
 } from "lucide-react";
 
@@ -20,9 +20,9 @@ export const NAV_ITEMS: NavItem[] = [
   // Covers both tabs: the word list and /words/flashcards.
   { href: "/words", label: "Words", icon: BookOpenText },
   { href: "/confusables", label: "Confusables", icon: GitCompareArrows },
+  { href: "/cloze", label: "Fill in", icon: TextCursorInput },
   { href: "/ordering", label: "Sentence order", icon: ListOrdered },
   { href: "/essays", label: "Essays", icon: PenLine },
-  { href: "/grammar", label: "Grammar", icon: Puzzle },
   { href: "/mocks", label: "Mock tests", icon: ClipboardCheck },
 ];
 

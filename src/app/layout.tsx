@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     default: "OttoHSK",
     template: "%s · OttoHSK",
   },
-  description: "HSK 5 prep: words, flashcards, confusables, sentence order, grammar and mock scores.",
+  description: "HSK 5 prep: words, flashcards, confusables, fill-in passages, sentence order, essays and mock scores.",
   applicationName: "OttoHSK",
 };
 

@@ -37,33 +37,32 @@ export type OrderingItem = {
   point: string;
   /** Why the words go in this order. 1–3 sentences. */
   explanation: string;
+  /** Where it came from, e.g. "组词成句 (A) 1", for items from your own papers. */
+  source?: string;
 };
 
-export type GrammarCategory =
-  | "connector"
-  | "structure"
-  | "adverb"
-  | "complement"
-  | "preposition"
-  | "expression";
-
-export type GrammarPattern = {
-  /** Stable kebab-case id, e.g. "yuqi-buru". */
+/**
+ * One HSK 5 Reading Part 1 passage (questions 46–60): a text with numbered
+ * blanks, four options per blank.
+ */
+export type ClozePassage = {
+  /** Stable id, e.g. "d-2012-1-46". */
   id: string;
-  /** As learners write it, e.g. "与其……不如……". */
-  pattern: string;
-  pinyin: string;
-  category: GrammarCategory;
-  /** Short English meaning, e.g. "rather than A, better B". */
-  meaning: string;
-  /** How and when to use it. 2–4 sentences. */
-  explanation: string;
-  examples: { zh: string; pinyin: string; en: string }[];
-  quiz: {
-    /** The sentence with exactly one blank written as ＿＿. */
-    prompt: string;
-    options: string[];
-    /** Must be one of `options`. */
-    answer: string;
+  /** Where it came from, e.g. "HSK 5 (A) 2012 (I) · 46–48". */
+  source: string;
+  /**
+   * The passage. Each blank is written as {{n}} with its question number,
+   * e.g. "有个女人一直{{46}}住在对面的女人". Paragraphs are separated by a newline.
+   */
+  text: string;
+  blanks: {
+    /** The question number, matching a {{n}} in `text`. */
+    number: number;
+    /** Exactly four options, in A–D order. */
+    options: [string, string, string, string];
+    /** Index of the right option: 0 = A … 3 = D. */
+    answer: 0 | 1 | 2 | 3;
+    /** One English sentence on why it is right and the others are not. */
+    why: string;
   }[];
 };

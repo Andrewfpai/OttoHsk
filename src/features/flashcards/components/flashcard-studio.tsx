@@ -19,8 +19,8 @@ import { formatCountdown, useNow } from "@/hooks/use-now";
 import { cn } from "@/lib/utils";
 
 import { DECK_SIZES, buildDeck, isDue } from "../lib/deck";
-import { FAIL_WRONG_RATIO, GUESS_MS, MAX_LOCK_MS, formatLock, lockDurationMs } from "../lib/lockout";
-import { GAP_BY_STRENGTH, KNOWN_STRENGTH, WRONG_PENALTY, statusOf } from "../lib/schedule";
+import { FAIL_WRONG_RATIO, GUESS_MS, MAX_LOCK_MS, failAt, formatLock, lockDurationMs } from "../lib/lockout";
+import { statusOf } from "../lib/schedule";
 import { type Question, buildQuestions } from "../lib/questions";
 import { type TestResult, submitTest } from "../server/actions";
 import type { FlashcardInfo, ProgressRow, TestSummary } from "../server/queries";
@@ -220,39 +220,27 @@ function Setup({
           </div>
         </div>
 
-        <Button size="lg" variant="cta" className="h-11 w-full cursor-pointer sm:w-auto sm:px-6" onClick={onStart}>
-          Start practice
-        </Button>
+        <div className="space-y-2">
+          <Button size="lg" variant="cta" className="h-11 w-full cursor-pointer sm:w-auto sm:px-6" onClick={onStart}>
+            Start practice
+          </Button>
+          <p className="text-muted-foreground flex items-start gap-2 text-sm">
+            <Lock aria-hidden className="mt-0.5 size-4 shrink-0" />
+            <span>
+              Get <span className="text-foreground font-numeric font-medium">{failAt(size)}</span> or
+              more of <span className="font-numeric">{size}</span> wrong (over{" "}
+              {Math.round(FAIL_WRONG_RATIO * 100)}%) and the test locks for{" "}
+              <span className="text-foreground font-medium">{formatLock(lockDurationMs(info.lockLevel))}</span>
+              {info.lockLevel > 0
+                ? `, because you failed the last ${info.lockLevel === 1 ? "test" : `${info.lockLevel} tests`}. It doubles each time, up to ${formatLock(MAX_LOCK_MS)}`
+                : ""}
+              .
+            </span>
+          </p>
+        </div>
       </section>
 
       <aside className="space-y-6">
-        <section className="bg-card rounded-2xl border p-5 text-sm">
-          <h2 className="mb-3 font-medium">How it works</h2>
-          <ol className="text-muted-foreground list-decimal space-y-2 pl-4">
-            <li>
-              <span className="text-foreground">Practice</span> against a timer. Tap each card to see
-              its pinyin and meaning.
-            </li>
-            <li>
-              <span className="text-foreground">Test</span> once you have flipped every card, or when
-              time runs out. Each question is one of three kinds: what a word means, which word
-              matches a meaning, or how a word is read.
-            </li>
-            <li>
-              Every word stays in rotation. A right answer raises its strength by 1 and sends it
-              further out; a wrong one brings it back in the very next test and lowers its strength
-              by {WRONG_PENALTY}, so one slip on a strong word costs a little, not everything.
-              Strength {KNOWN_STRENGTH} counts as known:
-              <ScheduleTable />
-            </li>
-            <li>
-              Get more than {Math.round(FAIL_WRONG_RATIO * 100)}% wrong and tests lock for{" "}
-              {formatLock(lockDurationMs(0))}. Each failed test in a row doubles the lock, up to{" "}
-              {formatLock(MAX_LOCK_MS)}. Passing a test resets it.
-            </li>
-          </ol>
-        </section>
-
         {recentTests.length > 0 ? (
           <section className="bg-card rounded-2xl border p-5 text-sm">
             <h2 className="mb-3 font-medium">Recent tests</h2>
@@ -284,34 +272,6 @@ function Setup({
         ) : null}
       </aside>
     </div>
-  );
-}
-
-/** The strength → gap table from lib/schedule.ts, so the copy never drifts. */
-function ScheduleTable() {
-  const rows = [
-    ...GAP_BY_STRENGTH.map((gap, strength) => ({ strength: String(strength), gap })),
-  ];
-  return (
-    <table className="mt-2 w-full text-xs">
-      <thead>
-        <tr className="text-left">
-          <th className="py-1 font-medium">Strength</th>
-          <th className="py-1 text-right font-medium">Back after</th>
-        </tr>
-      </thead>
-      <tbody className="font-numeric">
-        {rows.map((r) => (
-          <tr key={r.strength} className={cn(Number(r.strength) === KNOWN_STRENGTH && "text-success")}>
-            <td className="py-0.5">{r.strength}</td>
-            <td className="py-0.5 text-right">
-              {r.gap === 1 ? "next test" : `${r.gap} tests`}
-              {Number(r.strength) === KNOWN_STRENGTH ? " · known" : ""}
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
   );
 }
 

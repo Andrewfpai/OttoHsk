@@ -7,8 +7,9 @@
 import { describe, expect, it } from "vitest";
 
 import { confusables } from "../confusables";
-import { grammarPatterns } from "../grammar";
+import { clozePassages } from "../cloze";
 import { orderingItems } from "../ordering";
+import { orderingPapers } from "../ordering-papers";
 import { words } from "../words";
 
 const BLANK = "＿＿";
@@ -44,28 +45,38 @@ describe("confusables", () => {
   });
 });
 
-describe("grammar", () => {
+describe("cloze", () => {
   it("has unique ids", () => {
-    expect(unique(grammarPatterns.map((p) => p.id))).toBe(true);
+    expect(unique(clozePassages.map((p) => p.id))).toBe(true);
   });
 
-  it.each(grammarPatterns.map((p) => [p.id, p] as const))("%s is well-formed", (_, p) => {
-    expect(p.examples.length).toBeGreaterThan(0);
-    expect(p.quiz.length).toBeGreaterThan(0);
-    for (const q of p.quiz) {
-      expect(blanks(q.prompt), q.prompt).toBe(1);
-      expect(unique(q.options), q.prompt).toBe(true);
-      expect(q.options, q.prompt).toContain(q.answer);
+  it.each(clozePassages.map((p) => [p.id, p] as const))("%s is well-formed", (_, p) => {
+    const marked = [...p.text.matchAll(/\{\{(\d+)\}\}/g)].map((m) => Number(m[1]));
+    // Every {{n}} has exactly one blank, in the same order, and vice versa.
+    expect(marked).toEqual(p.blanks.map((b) => b.number));
+    for (const b of p.blanks) {
+      expect(b.number, p.id).toBeGreaterThanOrEqual(46);
+      expect(b.number, p.id).toBeLessThanOrEqual(60);
+      expect(b.options, `${p.id} #${b.number}`).toHaveLength(4);
+      expect(unique(b.options), `${p.id} #${b.number}`).toBe(true);
+      expect([0, 1, 2, 3]).toContain(b.answer);
+      expect(b.why.trim(), `${p.id} #${b.number}`).not.toBe("");
     }
   });
 });
 
 describe("ordering", () => {
-  it("has unique ids", () => {
-    expect(unique(orderingItems.map((i) => i.id))).toBe(true);
+  const all = [...orderingPapers, ...orderingItems];
+
+  it("has unique ids across your papers and the built-in set", () => {
+    expect(unique(all.map((i) => i.id))).toBe(true);
   });
 
-  it.each(orderingItems.map((i) => [i.id, i] as const))("%s is well-formed", (_, item) => {
+  it("marks every item from your papers with its source", () => {
+    for (const item of orderingPapers) expect(item.source, item.id).toBeTruthy();
+  });
+
+  it.each(all.map((i) => [i.id, i] as const))("%s is well-formed", (_, item) => {
     expect(item.chunks.length).toBeGreaterThanOrEqual(3);
     for (const c of item.chunks) {
       expect(c.trim(), item.id).not.toBe("");

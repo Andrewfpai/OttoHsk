@@ -5,14 +5,28 @@ import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { orderingItems } from "@/content/ordering";
+import { orderingPapers } from "@/content/ordering-papers";
+import type { OrderingItem } from "@/content/types";
 import { seededRng, shuffle } from "@/lib/random";
 import { cn } from "@/lib/utils";
 
 import { DRILL_ITEM_IDS } from "../lib/items";
 import { isCorrectOrder, sentenceOf } from "../lib/ordering";
-import { type ItemStat, practiceOrder, summarize, withSession } from "../lib/stats";
+import { type ItemStat, interleave, practiceOrder, summarize, withSession } from "../lib/stats";
 import { DrillHeader } from "./drill-header";
 import { useRecord } from "./use-record";
+
+/** Share of each drill taken from your own papers; the rest is built-in. */
+const PAPERS_SHARE = 0.6;
+
+function buildQueue(stats: Record<string, ItemStat>, seed: number): OrderingItem[] {
+  const id = (i: OrderingItem) => i.id;
+  return interleave(
+    practiceOrder(orderingPapers, id, stats, seededRng(seed)),
+    practiceOrder(orderingItems, id, stats, seededRng(seed + 1)),
+    PAPERS_SHARE,
+  );
+}
 
 /** Chunks are tracked by position, since an item may repeat a chunk string. */
 type Placed = number[];
@@ -34,7 +48,7 @@ export function OrderingDrill({ stats, seed }: { stats: Record<string, ItemStat>
   const record = useRecord();
   // Fixed at mount from a server-chosen seed, so server and client render the
   // same queue and a stats refresh never reshuffles a drill in progress.
-  const [queue] = useState(() => practiceOrder(orderingItems, (i) => i.id, stats, seededRng(seed)));
+  const [queue] = useState(() => buildQueue(stats, seed));
   const [summaryBase] = useState(stats);
   const [index, setIndex] = useState(0);
   const [placed, setPlaced] = useState<Placed>([]);
@@ -85,6 +99,9 @@ export function OrderingDrill({ stats, seed }: { stats: Record<string, ItemStat>
         <div className="flex items-center justify-between gap-3">
           <span className="text-muted-foreground text-sm">
             Put the words in order. Tap a placed word to take it back.
+            <span className="bg-muted text-foreground ml-2 inline-block rounded-md px-1.5 py-0.5 text-xs whitespace-nowrap">
+              {item.source ? `Your papers · ${item.source}` : "Built-in"}
+            </span>
           </span>
           <Button
             variant="ghost"

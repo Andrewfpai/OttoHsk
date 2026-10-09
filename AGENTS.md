@@ -7,7 +7,7 @@ as OttoLabs (Next.js 16, Drizzle, Neon, Auth.js) — read the relevant guide in
 ## Non-negotiables
 
 1. **Study content is static; results are not.** Words, confusables,
-   ordering items and grammar live in `src/content/`. The database only holds
+   cloze passages and ordering items live in `src/content/`. The database only holds
    results, keyed by content id. Never change a published id.
 2. **Every Server Action calls `requireUser()` itself.** They are reachable
    by direct POST, so a protected layout is not protection.
