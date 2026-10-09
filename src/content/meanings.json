@@ -1,0 +1,5202 @@
+{
+  "唉": {
+    "gloss": "sigh; alas; oh dear",
+    "indonesian": "ah (desahan); aduh"
+  },
+  "爱心": {
+    "gloss": "compassion; kindness; care for others",
+    "indonesian": "welas asih; kepedulian; kasih sayang"
+  },
+  "安慰": {
+    "gloss": "to comfort; to console; comfort",
+    "indonesian": "menghibur; menenangkan"
+  },
+  "岸": {
+    "gloss": "bank (of a river); shore; coast",
+    "indonesian": "tepi (sungai); pantai"
+  },
+  "熬夜": {
+    "gloss": "to stay up late; to stay up all night",
+    "indonesian": "begadang"
+  },
+  "包含": {
+    "gloss": "to contain; to include",
+    "indonesian": "mengandung; mencakup; termasuk"
+  },
+  "宝贵": {
+    "gloss": "valuable; precious",
+    "indonesian": "berharga"
+  },
+  "保存": {
+    "gloss": "to keep; to preserve; to save (a file)",
+    "indonesian": "menyimpan; mengawetkan; menyimpan berkas"
+  },
+  "保留": {
+    "gloss": "to keep; to retain; to reserve",
+    "indonesian": "mempertahankan; menyimpan; menyisakan"
+  },
+  "报到": {
+    "gloss": "to report for duty; to check in; to register",
+    "indonesian": "lapor diri; mendaftar ulang"
+  },
+  "报告": {
+    "gloss": "report; to report; talk, lecture",
+    "indonesian": "laporan; melapor; ceramah"
+  },
+  "悲观": {
+    "gloss": "pessimistic",
+    "indonesian": "pesimis"
+  },
+  "背景": {
+    "gloss": "background; context; backing",
+    "indonesian": "latar belakang"
+  },
+  "被子": {
+    "gloss": "quilt",
+    "indonesian": "selimut"
+  },
+  "本科": {
+    "gloss": "undergraduate (bachelor's) course",
+    "indonesian": "program sarjana; S1"
+  },
+  "本领": {
+    "gloss": "skill; ability",
+    "indonesian": "kemampuan; keahlian"
+  },
+  "比例": {
+    "gloss": "proportion; ratio; scale",
+    "indonesian": "proporsi; perbandingan; skala"
+  },
+  "必然": {
+    "gloss": "inevitable; certain; necessarily",
+    "indonesian": "sudah pasti; tak terelakkan"
+  },
+  "必要": {
+    "gloss": "necessary; essential; need",
+    "indonesian": "perlu; penting; keperluan"
+  },
+  "鞭炮": {
+    "gloss": "firecrackers",
+    "indonesian": "petasan; mercon"
+  },
+  "辩论": {
+    "gloss": "debate; argument; to argue over",
+    "indonesian": "debat; berdebat"
+  },
+  "标志": {
+    "gloss": "sign; symbol; logo",
+    "indonesian": "tanda; simbol; logo"
+  },
+  "表达": {
+    "gloss": "to express; to convey",
+    "indonesian": "mengungkapkan; mengekspresikan"
+  },
+  "表面": {
+    "gloss": "surface; on the surface; outward appearance",
+    "indonesian": "permukaan; secara lahiriah; penampilan luar"
+  },
+  "表情": {
+    "gloss": "facial expression; expression",
+    "indonesian": "ekspresi wajah; raut muka"
+  },
+  "表现": {
+    "gloss": "to perform, behave; performance; to show, display",
+    "indonesian": "tampil, bersikap; penampilan, kinerja; menunjukkan"
+  },
+  "冰激凌": {
+    "gloss": "ice cream",
+    "indonesian": "es krim"
+  },
+  "玻璃": {
+    "gloss": "glass",
+    "indonesian": "kaca"
+  },
+  "博物馆": {
+    "gloss": "museum",
+    "indonesian": "museum"
+  },
+  "不断": {
+    "gloss": "continuously; constantly; unceasing",
+    "indonesian": "terus-menerus; tiada henti"
+  },
+  "不见得": {
+    "gloss": "not necessarily",
+    "indonesian": "belum tentu"
+  },
+  "不耐烦": {
+    "gloss": "impatient",
+    "indonesian": "tidak sabar"
+  },
+  "补充": {
+    "gloss": "to supplement; to replenish; to add",
+    "indonesian": "menambah; melengkapi; mengisi kembali"
+  },
+  "不然": {
+    "gloss": "otherwise; or else; not so",
+    "indonesian": "kalau tidak; jika tidak"
+  },
+  "不足": {
+    "gloss": "not enough; insufficient; shortcoming",
+    "indonesian": "tidak cukup; kurang; kekurangan"
+  },
+  "部门": {
+    "gloss": "department; section; branch",
+    "indonesian": "departemen; bagian"
+  },
+  "财产": {
+    "gloss": "property; assets; wealth",
+    "indonesian": "harta; aset; kekayaan"
+  },
+  "踩": {
+    "gloss": "to step on; to tread",
+    "indonesian": "menginjak"
+  },
+  "采取": {
+    "gloss": "to adopt (measures); to take (action)",
+    "indonesian": "mengambil (tindakan); menerapkan"
+  },
+  "参考": {
+    "gloss": "to refer to; to consult; reference",
+    "indonesian": "merujuk; referensi; acuan"
+  },
+  "操场": {
+    "gloss": "sports field; playground",
+    "indonesian": "lapangan olahraga (sekolah)"
+  },
+  "插": {
+    "gloss": "to insert; to stick in; to put (flowers) in",
+    "indonesian": "menancapkan; menyisipkan; merangkai (bunga)"
+  },
+  "叉子": {
+    "gloss": "fork",
+    "indonesian": "garpu"
+  },
+  "拆": {
+    "gloss": "to tear down; to take apart; to open (a letter)",
+    "indonesian": "membongkar; merobohkan; membuka (surat)"
+  },
+  "产生": {
+    "gloss": "to give rise to, produce; to arise, emerge",
+    "indonesian": "menimbulkan; menghasilkan; muncul"
+  },
+  "常识": {
+    "gloss": "common sense; general knowledge",
+    "indonesian": "pengetahuan umum; akal sehat"
+  },
+  "潮湿": {
+    "gloss": "damp; humid; moist",
+    "indonesian": "lembap"
+  },
+  "吵": {
+    "gloss": "noisy; to quarrel; to disturb with noise",
+    "indonesian": "ribut; berisik; bertengkar"
+  },
+  "车库": {
+    "gloss": "garage",
+    "indonesian": "garasi"
+  },
+  "彻底": {
+    "gloss": "thorough; thoroughly; complete",
+    "indonesian": "tuntas; sepenuhnya; menyeluruh"
+  },
+  "趁": {
+    "gloss": "while (the chance lasts); to take advantage of",
+    "indonesian": "selagi; memanfaatkan (kesempatan)"
+  },
+  "称": {
+    "gloss": "to call; to be known as; to weigh",
+    "indonesian": "menyebut; disebut; menimbang"
+  },
+  "称赞": {
+    "gloss": "to praise; to acclaim; to commend",
+    "indonesian": "memuji; pujian"
+  },
+  "承担": {
+    "gloss": "to bear; to undertake; to take on (responsibility)",
+    "indonesian": "memikul; menanggung"
+  },
+  "承受": {
+    "gloss": "to bear; to endure; to withstand",
+    "indonesian": "menanggung; menahan; memikul"
+  },
+  "程序": {
+    "gloss": "procedure; process; computer program",
+    "indonesian": "prosedur; tahapan; program komputer"
+  },
+  "成立": {
+    "gloss": "to establish; to set up; to hold true",
+    "indonesian": "mendirikan; didirikan; berlaku"
+  },
+  "成人": {
+    "gloss": "adult; grown-up",
+    "indonesian": "orang dewasa"
+  },
+  "成语": {
+    "gloss": "idiom (usually four characters); set phrase",
+    "indonesian": "peribahasa; idiom empat karakter"
+  },
+  "诚恳": {
+    "gloss": "sincere; earnest",
+    "indonesian": "tulus; sungguh-sungguh"
+  },
+  "持续": {
+    "gloss": "to continue; to last; to persist",
+    "indonesian": "berlanjut; berlangsung terus"
+  },
+  "尺子": {
+    "gloss": "ruler (for measuring)",
+    "indonesian": "penggaris"
+  },
+  "冲": {
+    "gloss": "to rush, dash; to rinse; to make (coffee) with water",
+    "indonesian": "menerobos, menyerbu; membilas; menyeduh"
+  },
+  "充分": {
+    "gloss": "sufficient; full; fully",
+    "indonesian": "cukup; sepenuhnya"
+  },
+  "重复": {
+    "gloss": "to repeat; to duplicate",
+    "indonesian": "mengulang; mengulangi"
+  },
+  "宠物": {
+    "gloss": "pet",
+    "indonesian": "hewan peliharaan"
+  },
+  "抽象": {
+    "gloss": "abstract",
+    "indonesian": "abstrak"
+  },
+  "丑": {
+    "gloss": "ugly; shameful; disgraceful",
+    "indonesian": "jelek; memalukan"
+  },
+  "出口": {
+    "gloss": "to export; exit; export",
+    "indonesian": "ekspor; pintu keluar"
+  },
+  "出示": {
+    "gloss": "to show (a ticket, ID, etc.); to present",
+    "indonesian": "menunjukkan (tiket, identitas)"
+  },
+  "出席": {
+    "gloss": "to attend; to be present",
+    "indonesian": "hadir; menghadiri"
+  },
+  "除非": {
+    "gloss": "unless; only if",
+    "indonesian": "kecuali; hanya jika"
+  },
+  "除夕": {
+    "gloss": "Chinese New Year's Eve",
+    "indonesian": "malam Tahun Baru Imlek"
+  },
+  "处理": {
+    "gloss": "to handle; to deal with; to process",
+    "indonesian": "menangani; mengurus; menyelesaikan"
+  },
+  "传染": {
+    "gloss": "to infect; contagious",
+    "indonesian": "menular; menularkan"
+  },
+  "传统": {
+    "gloss": "traditional; tradition; conventional",
+    "indonesian": "tradisional; tradisi"
+  },
+  "闯": {
+    "gloss": "to rush; to break through; to venture out",
+    "indonesian": "menerobos; menyerbu; merantau"
+  },
+  "吹": {
+    "gloss": "to blow; to play (a wind instrument); to boast",
+    "indonesian": "meniup; bertiup; membual"
+  },
+  "此外": {
+    "gloss": "besides; in addition; moreover",
+    "indonesian": "selain itu; di samping itu"
+  },
+  "次要": {
+    "gloss": "secondary; less important",
+    "indonesian": "sekunder; kurang penting"
+  },
+  "匆忙": {
+    "gloss": "hurried; hasty",
+    "indonesian": "tergesa-gesa; terburu-buru"
+  },
+  "从而": {
+    "gloss": "thus; thereby",
+    "indonesian": "dengan demikian; sehingga"
+  },
+  "从前": {
+    "gloss": "before; formerly; once upon a time",
+    "indonesian": "dulu; sebelumnya; dahulu kala"
+  },
+  "粗糙": {
+    "gloss": "rough; coarse; crude (of workmanship)",
+    "indonesian": "kasar; tidak halus; asal-asalan"
+  },
+  "醋": {
+    "gloss": "vinegar; jealousy (in love rivalry)",
+    "indonesian": "cuka; cemburu"
+  },
+  "促使": {
+    "gloss": "to prompt; to urge; to spur",
+    "indonesian": "mendorong; menyebabkan"
+  },
+  "措施": {
+    "gloss": "measure; step (action taken)",
+    "indonesian": "tindakan; langkah"
+  },
+  "打工": {
+    "gloss": "to work a part-time or temporary job",
+    "indonesian": "kerja paruh waktu; kerja sambilan"
+  },
+  "大厦": {
+    "gloss": "large building; tower; mansion",
+    "indonesian": "gedung besar; gedung bertingkat"
+  },
+  "大象": {
+    "gloss": "elephant",
+    "indonesian": "gajah"
+  },
+  "代表": {
+    "gloss": "to represent; on behalf of; representative",
+    "indonesian": "mewakili; atas nama; wakil"
+  },
+  "待遇": {
+    "gloss": "pay and benefits; treatment",
+    "indonesian": "gaji dan tunjangan; perlakuan"
+  },
+  "单调": {
+    "gloss": "monotonous; dull",
+    "indonesian": "monoton; membosankan"
+  },
+  "单位": {
+    "gloss": "workplace; organization; unit (of measure)",
+    "indonesian": "unit kerja; instansi; satuan"
+  },
+  "担任": {
+    "gloss": "to serve as; to hold (a post)",
+    "indonesian": "menjabat sebagai; memegang jabatan"
+  },
+  "耽误": {
+    "gloss": "to delay; to hold up; to waste time",
+    "indonesian": "menunda; menghambat; menyita (waktu)"
+  },
+  "淡": {
+    "gloss": "bland; light (in taste or color); weak",
+    "indonesian": "tawar; hambar; pucat (warna)"
+  },
+  "倒霉": {
+    "gloss": "unlucky; to have bad luck",
+    "indonesian": "sial; apes"
+  },
+  "道理": {
+    "gloss": "reason; sense; principle",
+    "indonesian": "alasan; logika; prinsip"
+  },
+  "登记": {
+    "gloss": "to register; to check in",
+    "indonesian": "mendaftar; registrasi"
+  },
+  "等于": {
+    "gloss": "to equal; to amount to",
+    "indonesian": "sama dengan; sama saja dengan"
+  },
+  "滴": {
+    "gloss": "drop; measure word for drops; to drip",
+    "indonesian": "tetes; menetes"
+  },
+  "敌人": {
+    "gloss": "enemy",
+    "indonesian": "musuh"
+  },
+  "递": {
+    "gloss": "to hand over; to pass on; to deliver",
+    "indonesian": "memberikan; menyerahkan"
+  },
+  "地毯": {
+    "gloss": "carpet; rug",
+    "indonesian": "karpet"
+  },
+  "地震": {
+    "gloss": "earthquake",
+    "indonesian": "gempa bumi"
+  },
+  "电池": {
+    "gloss": "battery",
+    "indonesian": "baterai"
+  },
+  "顶": {
+    "gloss": "measure word for hats; top, peak; to prop up",
+    "indonesian": "kata satuan untuk topi; puncak"
+  },
+  "冻": {
+    "gloss": "to freeze; to feel very cold",
+    "indonesian": "membeku; kedinginan"
+  },
+  "动画片": {
+    "gloss": "cartoon; animated film",
+    "indonesian": "film kartun; film animasi"
+  },
+  "逗": {
+    "gloss": "to amuse; to tease; funny",
+    "indonesian": "menghibur; menggoda; lucu"
+  },
+  "独特": {
+    "gloss": "unique; distinctive",
+    "indonesian": "unik; khas"
+  },
+  "度过": {
+    "gloss": "to spend (time); to get through",
+    "indonesian": "melewati; menghabiskan (waktu)"
+  },
+  "对比": {
+    "gloss": "to compare; to contrast; contrast",
+    "indonesian": "membandingkan; perbandingan; kontras"
+  },
+  "对待": {
+    "gloss": "to treat; to handle; treatment",
+    "indonesian": "memperlakukan; menyikapi"
+  },
+  "对手": {
+    "gloss": "opponent; rival; match",
+    "indonesian": "lawan; saingan"
+  },
+  "吨": {
+    "gloss": "ton (unit of weight)",
+    "indonesian": "ton"
+  },
+  "顿": {
+    "gloss": "measure word for meals, scoldings, beatings; to pause",
+    "indonesian": "kata satuan untuk makan, omelan; berhenti sejenak"
+  },
+  "多亏": {
+    "gloss": "thanks to; luckily",
+    "indonesian": "berkat; untung ada"
+  },
+  "朵": {
+    "gloss": "measure word for flowers and clouds",
+    "indonesian": "kuntum (kata satuan untuk bunga, awan)"
+  },
+  "发表": {
+    "gloss": "to publish; to announce; to express (views)",
+    "indonesian": "menerbitkan; mengumumkan; menyampaikan (pendapat)"
+  },
+  "发达": {
+    "gloss": "developed; advanced; flourishing",
+    "indonesian": "maju; berkembang"
+  },
+  "发挥": {
+    "gloss": "to bring into play; to perform (well); to make full use of",
+    "indonesian": "mengerahkan (kemampuan); tampil; memaksimalkan"
+  },
+  "发票": {
+    "gloss": "invoice; official receipt",
+    "indonesian": "faktur; kuitansi resmi"
+  },
+  "发言": {
+    "gloss": "to speak (at a meeting); statement; speech",
+    "indonesian": "berbicara (di rapat); pernyataan"
+  },
+  "罚款": {
+    "gloss": "to fine; penalty; fine (monetary)",
+    "indonesian": "mendenda; denda"
+  },
+  "法院": {
+    "gloss": "court (of law)",
+    "indonesian": "pengadilan"
+  },
+  "繁荣": {
+    "gloss": "prosperous; booming (economy)",
+    "indonesian": "makmur; berkembang pesat"
+  },
+  "反而": {
+    "gloss": "instead; on the contrary",
+    "indonesian": "malah; sebaliknya"
+  },
+  "反应": {
+    "gloss": "reaction; response; to react",
+    "indonesian": "reaksi; respons; bereaksi"
+  },
+  "反正": {
+    "gloss": "anyway; in any case",
+    "indonesian": "lagi pula; bagaimanapun juga"
+  },
+  "范围": {
+    "gloss": "scope; range; extent",
+    "indonesian": "ruang lingkup; cakupan; batasan"
+  },
+  "方案": {
+    "gloss": "plan; scheme; proposal",
+    "indonesian": "rencana; skema; usulan"
+  },
+  "方式": {
+    "gloss": "way; manner; mode",
+    "indonesian": "cara"
+  },
+  "妨碍": {
+    "gloss": "to hinder; to obstruct",
+    "indonesian": "mengganggu; menghalangi"
+  },
+  "肥皂": {
+    "gloss": "soap",
+    "indonesian": "sabun"
+  },
+  "分布": {
+    "gloss": "to be distributed; to be spread over; distribution",
+    "indonesian": "tersebar; persebaran"
+  },
+  "分手": {
+    "gloss": "to break up; to part ways",
+    "indonesian": "putus (hubungan); berpisah"
+  },
+  "风景": {
+    "gloss": "scenery; landscape",
+    "indonesian": "pemandangan"
+  },
+  "风险": {
+    "gloss": "risk; hazard",
+    "indonesian": "risiko"
+  },
+  "讽刺": {
+    "gloss": "to satirize; to mock; satire",
+    "indonesian": "menyindir; satire; sindiran"
+  },
+  "否认": {
+    "gloss": "to deny",
+    "indonesian": "menyangkal; tidak mengakui"
+  },
+  "扶": {
+    "gloss": "to support with one's hand; to help sb up",
+    "indonesian": "memapah; menopang; membantu berdiri"
+  },
+  "复制": {
+    "gloss": "to copy; to duplicate; to reproduce",
+    "indonesian": "menyalin; menggandakan"
+  },
+  "改进": {
+    "gloss": "to improve; improvement",
+    "indonesian": "memperbaiki; meningkatkan; perbaikan"
+  },
+  "改正": {
+    "gloss": "to correct; to put right",
+    "indonesian": "membetulkan; memperbaiki (kesalahan)"
+  },
+  "概括": {
+    "gloss": "to summarize; to sum up",
+    "indonesian": "merangkum; meringkas"
+  },
+  "感想": {
+    "gloss": "thoughts; impressions; reflections",
+    "indonesian": "kesan; pemikiran"
+  },
+  "赶快": {
+    "gloss": "quickly; at once; hurry",
+    "indonesian": "cepat-cepat; segera"
+  },
+  "干活儿": {
+    "gloss": "to work; to do a job",
+    "indonesian": "bekerja"
+  },
+  "高级": {
+    "gloss": "advanced; high-level; high-end",
+    "indonesian": "tingkat tinggi; lanjutan; mewah"
+  },
+  "告别": {
+    "gloss": "to say goodbye; to bid farewell; to leave",
+    "indonesian": "berpamitan; mengucapkan selamat tinggal"
+  },
+  "隔壁": {
+    "gloss": "next door; neighbor",
+    "indonesian": "sebelah; tetangga sebelah"
+  },
+  "个人": {
+    "gloss": "personal; individual; oneself",
+    "indonesian": "pribadi; perorangan"
+  },
+  "各自": {
+    "gloss": "each; respective; on one's own",
+    "indonesian": "masing-masing"
+  },
+  "根本": {
+    "gloss": "(not) at all; simply; fundamental",
+    "indonesian": "sama sekali (tidak); mendasar"
+  },
+  "公开": {
+    "gloss": "to make public; open; public",
+    "indonesian": "mengumumkan ke publik; terbuka; umum"
+  },
+  "公平": {
+    "gloss": "fair; impartial",
+    "indonesian": "adil"
+  },
+  "公寓": {
+    "gloss": "apartment; flat",
+    "indonesian": "apartemen"
+  },
+  "工厂": {
+    "gloss": "factory",
+    "indonesian": "pabrik"
+  },
+  "工具": {
+    "gloss": "tool; instrument; means",
+    "indonesian": "alat; peralatan; sarana"
+  },
+  "工业": {
+    "gloss": "industry",
+    "indonesian": "industri"
+  },
+  "功能": {
+    "gloss": "function; feature",
+    "indonesian": "fungsi; fitur"
+  },
+  "沟通": {
+    "gloss": "to communicate; to connect",
+    "indonesian": "berkomunikasi; menghubungkan"
+  },
+  "姑娘": {
+    "gloss": "girl; young woman",
+    "indonesian": "gadis; nona"
+  },
+  "古代": {
+    "gloss": "ancient times",
+    "indonesian": "zaman kuno; zaman dahulu"
+  },
+  "鼓掌": {
+    "gloss": "to applaud; to clap",
+    "indonesian": "bertepuk tangan"
+  },
+  "骨头": {
+    "gloss": "bone",
+    "indonesian": "tulang"
+  },
+  "乖": {
+    "gloss": "well-behaved (of a child); good; clever",
+    "indonesian": "penurut; manis (anak); pintar"
+  },
+  "怪不得": {
+    "gloss": "no wonder!; so that's why!",
+    "indonesian": "pantas saja; tidak heran"
+  },
+  "观察": {
+    "gloss": "to observe; to watch closely",
+    "indonesian": "mengamati; mengobservasi"
+  },
+  "观念": {
+    "gloss": "idea; concept; way of thinking",
+    "indonesian": "pandangan; konsep; cara berpikir"
+  },
+  "冠军": {
+    "gloss": "champion; first place",
+    "indonesian": "juara"
+  },
+  "光滑": {
+    "gloss": "smooth; glossy; sleek",
+    "indonesian": "halus; licin; mengilap"
+  },
+  "光明": {
+    "gloss": "bright (future); light; open-hearted",
+    "indonesian": "cerah; terang; cahaya"
+  },
+  "广大": {
+    "gloss": "vast; extensive; numerous (of people)",
+    "indonesian": "luas; banyak (orang)"
+  },
+  "规律": {
+    "gloss": "regular pattern; law; regularity",
+    "indonesian": "pola; keteraturan; hukum (alam)"
+  },
+  "规则": {
+    "gloss": "rule; regulation",
+    "indonesian": "aturan; peraturan"
+  },
+  "滚": {
+    "gloss": "to roll; to boil; get lost!",
+    "indonesian": "menggelinding; mendidih; pergi sana!"
+  },
+  "国庆节": {
+    "gloss": "National Day (October 1st)",
+    "indonesian": "Hari Nasional Tiongkok (1 Oktober)"
+  },
+  "果实": {
+    "gloss": "fruit (of a plant); fruits (of success)",
+    "indonesian": "buah; hasil"
+  },
+  "过敏": {
+    "gloss": "allergic; allergy; oversensitive",
+    "indonesian": "alergi; terlalu sensitif"
+  },
+  "海鲜": {
+    "gloss": "seafood",
+    "indonesian": "makanan laut; seafood"
+  },
+  "豪华": {
+    "gloss": "luxurious",
+    "indonesian": "mewah"
+  },
+  "好奇": {
+    "gloss": "curious; curiosity",
+    "indonesian": "penasaran; ingin tahu"
+  },
+  "何必": {
+    "gloss": "there is no need; why should",
+    "indonesian": "buat apa; tidak perlu"
+  },
+  "合法": {
+    "gloss": "legal; lawful; legitimate",
+    "indonesian": "legal; sah; sesuai hukum"
+  },
+  "合理": {
+    "gloss": "reasonable; rational; fair",
+    "indonesian": "masuk akal; wajar; rasional"
+  },
+  "合同": {
+    "gloss": "contract",
+    "indonesian": "kontrak"
+  },
+  "合作": {
+    "gloss": "to cooperate; to work together; cooperation",
+    "indonesian": "bekerja sama; kerja sama"
+  },
+  "恨": {
+    "gloss": "to hate; to regret",
+    "indonesian": "benci; menyesal"
+  },
+  "猴子": {
+    "gloss": "monkey",
+    "indonesian": "monyet"
+  },
+  "后背": {
+    "gloss": "back (of the body)",
+    "indonesian": "punggung"
+  },
+  "忽视": {
+    "gloss": "to ignore; to neglect; to overlook",
+    "indonesian": "mengabaikan"
+  },
+  "壶": {
+    "gloss": "pot; kettle; measure word for a pot of (tea, etc.)",
+    "indonesian": "teko; ceret"
+  },
+  "胡说": {
+    "gloss": "to talk nonsense; nonsense",
+    "indonesian": "bicara ngawur; omong kosong"
+  },
+  "糊涂": {
+    "gloss": "muddled; silly; confused",
+    "indonesian": "bingung; linglung; bodoh"
+  },
+  "花生": {
+    "gloss": "peanut; groundnut",
+    "indonesian": "kacang tanah"
+  },
+  "划": {
+    "gloss": "to row; to paddle; to scratch",
+    "indonesian": "mendayung; menggores"
+  },
+  "话题": {
+    "gloss": "topic; subject (of conversation)",
+    "indonesian": "topik; pokok pembicaraan"
+  },
+  "怀念": {
+    "gloss": "to miss; to cherish the memory of; to reminisce",
+    "indonesian": "merindukan; mengenang; bernostalgia"
+  },
+  "怀孕": {
+    "gloss": "to be pregnant; pregnancy",
+    "indonesian": "hamil; kehamilan"
+  },
+  "慌张": {
+    "gloss": "flustered; in a panic; nervous",
+    "indonesian": "panik; gugup"
+  },
+  "黄金": {
+    "gloss": "gold; golden (opportunity, time)",
+    "indonesian": "emas"
+  },
+  "灰": {
+    "gloss": "dust; ash; grey",
+    "indonesian": "debu; abu; abu-abu"
+  },
+  "灰心": {
+    "gloss": "to lose heart; discouraged",
+    "indonesian": "putus asa; patah semangat"
+  },
+  "婚礼": {
+    "gloss": "wedding; wedding ceremony",
+    "indonesian": "pernikahan; upacara pernikahan"
+  },
+  "活跃": {
+    "gloss": "active; lively; to liven up",
+    "indonesian": "aktif; lincah; menghidupkan (suasana)"
+  },
+  "伙伴": {
+    "gloss": "partner; companion",
+    "indonesian": "rekan; mitra; teman"
+  },
+  "或许": {
+    "gloss": "perhaps; maybe",
+    "indonesian": "mungkin; barangkali"
+  },
+  "基本": {
+    "gloss": "basic; fundamental; basically",
+    "indonesian": "dasar; pokok; pada dasarnya"
+  },
+  "机器": {
+    "gloss": "machine",
+    "indonesian": "mesin"
+  },
+  "及格": {
+    "gloss": "to pass (an exam or test)",
+    "indonesian": "lulus (ujian); mencapai nilai minimal"
+  },
+  "集合": {
+    "gloss": "to gather; to assemble",
+    "indonesian": "berkumpul; mengumpulkan"
+  },
+  "集中": {
+    "gloss": "to concentrate; to focus; to gather together",
+    "indonesian": "memusatkan; berkonsentrasi; terpusat"
+  },
+  "急诊": {
+    "gloss": "emergency treatment; emergency room",
+    "indonesian": "gawat darurat; UGD"
+  },
+  "记忆": {
+    "gloss": "memory; to remember; to recall",
+    "indonesian": "ingatan; kenangan; mengingat"
+  },
+  "纪录": {
+    "gloss": "record (e.g. a world record)",
+    "indonesian": "rekor"
+  },
+  "纪念": {
+    "gloss": "to commemorate; souvenir; memento",
+    "indonesian": "memperingati; kenang-kenangan; suvenir"
+  },
+  "家务": {
+    "gloss": "household duties; housework",
+    "indonesian": "pekerjaan rumah tangga"
+  },
+  "嘉宾": {
+    "gloss": "honored guest; guest (on a show)",
+    "indonesian": "tamu kehormatan; bintang tamu"
+  },
+  "甲": {
+    "gloss": "first (in a series); A; party A (in a contract)",
+    "indonesian": "pertama (dalam urutan); A; pihak pertama (dalam kontrak)"
+  },
+  "假如": {
+    "gloss": "if; supposing",
+    "indonesian": "jika; seandainya; misalkan"
+  },
+  "假装": {
+    "gloss": "to pretend; to feign",
+    "indonesian": "berpura-pura"
+  },
+  "驾驶": {
+    "gloss": "to drive; to pilot (a plane, ship)",
+    "indonesian": "mengemudi; menyetir"
+  },
+  "坚强": {
+    "gloss": "strong; tough; resilient",
+    "indonesian": "tegar; kuat"
+  },
+  "艰苦": {
+    "gloss": "difficult; hard; arduous",
+    "indonesian": "sulit; berat; serba kekurangan"
+  },
+  "捡": {
+    "gloss": "to pick up; to collect",
+    "indonesian": "memungut; mengambil"
+  },
+  "简直": {
+    "gloss": "simply; practically; just (emphatic)",
+    "indonesian": "benar-benar; sungguh; nyaris"
+  },
+  "健身": {
+    "gloss": "to work out; to keep fit; fitness",
+    "indonesian": "berolahraga (fitness); menjaga kebugaran"
+  },
+  "建设": {
+    "gloss": "to build; to construct; construction",
+    "indonesian": "membangun; pembangunan"
+  },
+  "建筑": {
+    "gloss": "building; architecture; to construct",
+    "indonesian": "bangunan; arsitektur; membangun"
+  },
+  "键盘": {
+    "gloss": "keyboard",
+    "indonesian": "keyboard; papan ketik"
+  },
+  "讲座": {
+    "gloss": "lecture; talk; course of lectures",
+    "indonesian": "kuliah umum; ceramah; seminar"
+  },
+  "酱油": {
+    "gloss": "soy sauce",
+    "indonesian": "kecap asin"
+  },
+  "浇": {
+    "gloss": "to water (plants); to pour (liquid) on",
+    "indonesian": "menyiram"
+  },
+  "交换": {
+    "gloss": "to exchange; to swap",
+    "indonesian": "bertukar; menukar"
+  },
+  "交往": {
+    "gloss": "to associate with; to socialize; to date",
+    "indonesian": "bergaul; berhubungan; berpacaran"
+  },
+  "角度": {
+    "gloss": "angle; point of view",
+    "indonesian": "sudut; sudut pandang"
+  },
+  "教材": {
+    "gloss": "teaching materials; textbook",
+    "indonesian": "bahan ajar; buku pelajaran"
+  },
+  "教训": {
+    "gloss": "lesson (learned); to teach sb a lesson; to lecture",
+    "indonesian": "pelajaran; memberi pelajaran; menegur"
+  },
+  "接待": {
+    "gloss": "to receive (guests); to host",
+    "indonesian": "menerima (tamu); menyambut; menjamu"
+  },
+  "结实": {
+    "gloss": "sturdy; strong; durable",
+    "indonesian": "kokoh; kuat; tahan lama"
+  },
+  "节省": {
+    "gloss": "to save; to economize; to use sparingly",
+    "indonesian": "menghemat"
+  },
+  "结构": {
+    "gloss": "structure; composition",
+    "indonesian": "struktur; susunan"
+  },
+  "结合": {
+    "gloss": "to combine; to integrate; to link",
+    "indonesian": "menggabungkan; memadukan"
+  },
+  "结论": {
+    "gloss": "conclusion; verdict",
+    "indonesian": "kesimpulan"
+  },
+  "结账": {
+    "gloss": "to pay the bill; to settle accounts",
+    "indonesian": "membayar tagihan; bayar"
+  },
+  "届": {
+    "gloss": "measure word for sessions, events, graduating classes",
+    "indonesian": "kata satuan untuk angkatan, sesi, penyelenggaraan"
+  },
+  "借口": {
+    "gloss": "excuse; pretext; to use as an excuse",
+    "indonesian": "dalih; alasan"
+  },
+  "戒": {
+    "gloss": "to quit (a habit); to give up; to guard against",
+    "indonesian": "berhenti (kebiasaan); menghentikan"
+  },
+  "紧急": {
+    "gloss": "urgent; emergency",
+    "indonesian": "darurat; mendesak"
+  },
+  "尽快": {
+    "gloss": "as soon as possible; as quickly as possible",
+    "indonesian": "sesegera mungkin; secepatnya"
+  },
+  "谨慎": {
+    "gloss": "cautious; careful; prudent",
+    "indonesian": "hati-hati; berhati-hati"
+  },
+  "进步": {
+    "gloss": "progress; to improve; progressive",
+    "indonesian": "kemajuan; maju"
+  },
+  "近代": {
+    "gloss": "modern times (mid-1800s to 1919); recent history",
+    "indonesian": "zaman modern awal (pertengahan 1800-an–1919); sejarah modern"
+  },
+  "尽量": {
+    "gloss": "as much as possible; to the best of one's ability",
+    "indonesian": "semaksimal mungkin; sebisa mungkin"
+  },
+  "精神": {
+    "gloss": "spirit; mind; vigor",
+    "indonesian": "semangat; jiwa; mental"
+  },
+  "经典": {
+    "gloss": "classic; classical; the classics",
+    "indonesian": "klasik"
+  },
+  "救": {
+    "gloss": "to save; to rescue",
+    "indonesian": "menyelamatkan; menolong"
+  },
+  "舅舅": {
+    "gloss": "uncle (mother's brother)",
+    "indonesian": "paman (saudara laki-laki ibu)"
+  },
+  "桔子": {
+    "gloss": "tangerine; mandarin orange",
+    "indonesian": "jeruk"
+  },
+  "具备": {
+    "gloss": "to have; to possess (qualities, conditions)",
+    "indonesian": "memiliki; memenuhi (syarat)"
+  },
+  "巨大": {
+    "gloss": "huge; enormous; tremendous",
+    "indonesian": "sangat besar; raksasa"
+  },
+  "决赛": {
+    "gloss": "final (of a competition)",
+    "indonesian": "final; pertandingan final"
+  },
+  "绝对": {
+    "gloss": "absolutely; absolute",
+    "indonesian": "pasti; sama sekali; mutlak"
+  },
+  "军事": {
+    "gloss": "military affairs; military",
+    "indonesian": "militer; urusan militer"
+  },
+  "开放": {
+    "gloss": "open (to the public); open-minded; to bloom",
+    "indonesian": "terbuka (untuk umum); berpikiran terbuka; mekar"
+  },
+  "开水": {
+    "gloss": "boiled water; boiling water",
+    "indonesian": "air matang; air mendidih"
+  },
+  "砍": {
+    "gloss": "to chop; to cut down",
+    "indonesian": "menebang; memotong (dengan kapak)"
+  },
+  "看不起": {
+    "gloss": "to look down on; to despise",
+    "indonesian": "memandang rendah; meremehkan"
+  },
+  "可见": {
+    "gloss": "it is clear that; it shows that; visible",
+    "indonesian": "terlihat jelas bahwa; dapat dilihat"
+  },
+  "可怕": {
+    "gloss": "scary; terrible; awful",
+    "indonesian": "menakutkan; mengerikan"
+  },
+  "克": {
+    "gloss": "gram; to overcome",
+    "indonesian": "gram; mengatasi"
+  },
+  "客观": {
+    "gloss": "objective; impartial",
+    "indonesian": "objektif"
+  },
+  "控制": {
+    "gloss": "to control",
+    "indonesian": "mengendalikan; mengontrol"
+  },
+  "口味": {
+    "gloss": "taste; flavor; personal preference",
+    "indonesian": "selera; rasa"
+  },
+  "夸": {
+    "gloss": "to praise; to boast; to exaggerate",
+    "indonesian": "memuji; membual; melebih-lebihkan"
+  },
+  "扩大": {
+    "gloss": "to expand; to enlarge; to broaden",
+    "indonesian": "memperluas; memperbesar"
+  },
+  "辣椒": {
+    "gloss": "hot pepper; chili",
+    "indonesian": "cabai"
+  },
+  "烂": {
+    "gloss": "rotten; mushy; worn out",
+    "indonesian": "busuk; lembek; rusak"
+  },
+  "劳动": {
+    "gloss": "physical labor; work; to labor",
+    "indonesian": "kerja fisik; bekerja"
+  },
+  "老板": {
+    "gloss": "boss; shop owner",
+    "indonesian": "bos; pemilik usaha"
+  },
+  "老鼠": {
+    "gloss": "mouse; rat",
+    "indonesian": "tikus"
+  },
+  "姥姥": {
+    "gloss": "grandmother (mother's mother)",
+    "indonesian": "nenek (ibu dari ibu)"
+  },
+  "理论": {
+    "gloss": "theory",
+    "indonesian": "teori"
+  },
+  "理由": {
+    "gloss": "reason; grounds; justification",
+    "indonesian": "alasan"
+  },
+  "立刻": {
+    "gloss": "immediately; at once; right away",
+    "indonesian": "segera; seketika"
+  },
+  "力量": {
+    "gloss": "strength; power; force",
+    "indonesian": "kekuatan; tenaga"
+  },
+  "利息": {
+    "gloss": "interest (on a loan)",
+    "indonesian": "bunga (uang)"
+  },
+  "利用": {
+    "gloss": "to make use of; to use; to take advantage of",
+    "indonesian": "memanfaatkan; menggunakan"
+  },
+  "连忙": {
+    "gloss": "promptly; hurriedly; at once",
+    "indonesian": "segera; buru-buru"
+  },
+  "联合": {
+    "gloss": "to unite; to join together; alliance",
+    "indonesian": "bersatu; bergabung; gabungan"
+  },
+  "了不起": {
+    "gloss": "amazing; terrific; extraordinary",
+    "indonesian": "hebat; luar biasa"
+  },
+  "列车": {
+    "gloss": "train",
+    "indonesian": "kereta api"
+  },
+  "临时": {
+    "gloss": "at the last minute; temporary",
+    "indonesian": "mendadak; sementara"
+  },
+  "灵活": {
+    "gloss": "flexible; nimble; agile",
+    "indonesian": "fleksibel; lincah"
+  },
+  "领域": {
+    "gloss": "field; domain; territory",
+    "indonesian": "bidang; ranah; wilayah"
+  },
+  "流传": {
+    "gloss": "to spread; to circulate; to hand down",
+    "indonesian": "tersebar; diwariskan turun-temurun"
+  },
+  "浏览": {
+    "gloss": "to skim over; to browse",
+    "indonesian": "menjelajah (internet); membaca sekilas"
+  },
+  "龙": {
+    "gloss": "dragon",
+    "indonesian": "naga"
+  },
+  "漏": {
+    "gloss": "to leak; to leave out; to let slip",
+    "indonesian": "bocor; terlewat; membocorkan"
+  },
+  "陆地": {
+    "gloss": "land; dry land",
+    "indonesian": "daratan"
+  },
+  "录取": {
+    "gloss": "to admit (a student); to hire (an applicant)",
+    "indonesian": "menerima (siswa, pelamar); diterima"
+  },
+  "论文": {
+    "gloss": "thesis; paper; dissertation",
+    "indonesian": "tesis, skripsi; makalah; disertasi"
+  },
+  "落后": {
+    "gloss": "backward; to fall behind; to lag",
+    "indonesian": "terbelakang; tertinggal"
+  },
+  "骂": {
+    "gloss": "to scold; to curse; to swear at",
+    "indonesian": "memarahi; memaki"
+  },
+  "麦克风": {
+    "gloss": "microphone",
+    "indonesian": "mikrofon"
+  },
+  "满足": {
+    "gloss": "to satisfy; to meet (needs); satisfied",
+    "indonesian": "memenuhi; memuaskan; puas"
+  },
+  "冒险": {
+    "gloss": "to take risks; risky; adventure",
+    "indonesian": "mengambil risiko; berisiko; petualangan"
+  },
+  "眉毛": {
+    "gloss": "eyebrow",
+    "indonesian": "alis"
+  },
+  "美术": {
+    "gloss": "art; fine arts; painting",
+    "indonesian": "seni rupa"
+  },
+  "秘密": {
+    "gloss": "secret; confidential",
+    "indonesian": "rahasia"
+  },
+  "面对": {
+    "gloss": "to face; to confront",
+    "indonesian": "menghadapi"
+  },
+  "面临": {
+    "gloss": "to face; to be confronted with",
+    "indonesian": "menghadapi"
+  },
+  "苗条": {
+    "gloss": "slim; slender",
+    "indonesian": "langsing"
+  },
+  "明确": {
+    "gloss": "clear; definite; to make clear",
+    "indonesian": "jelas; tegas; memperjelas"
+  },
+  "明显": {
+    "gloss": "obvious; clear; noticeable",
+    "indonesian": "jelas; nyata; kentara"
+  },
+  "名牌": {
+    "gloss": "famous brand; nameplate; name tag",
+    "indonesian": "merek terkenal"
+  },
+  "名胜古迹": {
+    "gloss": "famous scenic spots and historic sites",
+    "indonesian": "tempat wisata terkenal dan situs bersejarah"
+  },
+  "命令": {
+    "gloss": "order; command; to order",
+    "indonesian": "perintah; memerintah"
+  },
+  "摸": {
+    "gloss": "to touch; to feel (with the hand); to stroke",
+    "indonesian": "meraba; menyentuh; mengelus"
+  },
+  "模糊": {
+    "gloss": "blurry; vague; unclear",
+    "indonesian": "kabur; buram; samar"
+  },
+  "摩托车": {
+    "gloss": "motorcycle; motorbike",
+    "indonesian": "sepeda motor"
+  },
+  "某": {
+    "gloss": "a certain; some",
+    "indonesian": "suatu; tertentu"
+  },
+  "目标": {
+    "gloss": "goal; target; objective",
+    "indonesian": "tujuan; sasaran"
+  },
+  "目录": {
+    "gloss": "table of contents; catalog",
+    "indonesian": "daftar isi; katalog"
+  },
+  "木头": {
+    "gloss": "wood; log; timber",
+    "indonesian": "kayu"
+  },
+  "哪怕": {
+    "gloss": "even if; even though",
+    "indonesian": "biarpun; sekalipun; walaupun"
+  },
+  "难免": {
+    "gloss": "hard to avoid; bound to happen",
+    "indonesian": "tidak bisa dihindari; wajar terjadi"
+  },
+  "脑袋": {
+    "gloss": "head; brains",
+    "indonesian": "kepala; otak"
+  },
+  "内科": {
+    "gloss": "internal medicine (department)",
+    "indonesian": "bagian penyakit dalam"
+  },
+  "嫩": {
+    "gloss": "tender; delicate; young",
+    "indonesian": "empuk; lembut; muda"
+  },
+  "能干": {
+    "gloss": "capable; competent",
+    "indonesian": "cakap; terampil"
+  },
+  "能源": {
+    "gloss": "energy (source); power source",
+    "indonesian": "sumber energi"
+  },
+  "年代": {
+    "gloss": "decade (e.g. the 80s); age, era",
+    "indonesian": "dekade (mis. tahun 80-an); zaman"
+  },
+  "年纪": {
+    "gloss": "age",
+    "indonesian": "umur; usia"
+  },
+  "宁可": {
+    "gloss": "would rather; prefer to",
+    "indonesian": "lebih baik; lebih memilih"
+  },
+  "牛仔裤": {
+    "gloss": "jeans",
+    "indonesian": "celana jeans"
+  },
+  "农村": {
+    "gloss": "countryside; rural area; village",
+    "indonesian": "pedesaan; desa"
+  },
+  "农业": {
+    "gloss": "agriculture; farming",
+    "indonesian": "pertanian"
+  },
+  "女士": {
+    "gloss": "lady; madam; Ms.",
+    "indonesian": "wanita; nyonya; ibu (sapaan sopan)"
+  },
+  "派": {
+    "gloss": "to send, dispatch; faction, school (of thought)",
+    "indonesian": "mengutus; mengirim; aliran, kelompok"
+  },
+  "赔偿": {
+    "gloss": "to compensate; compensation",
+    "indonesian": "mengganti kerugian; ganti rugi"
+  },
+  "培养": {
+    "gloss": "to cultivate; to train; to foster",
+    "indonesian": "memupuk; membina; mendidik"
+  },
+  "配合": {
+    "gloss": "to cooperate; to coordinate; to go well with",
+    "indonesian": "bekerja sama; berkoordinasi; serasi"
+  },
+  "披": {
+    "gloss": "to drape over one's shoulders; to throw on (a coat)",
+    "indonesian": "menyampirkan di bahu; mengenakan (jaket)"
+  },
+  "片面": {
+    "gloss": "one-sided; incomplete (view)",
+    "indonesian": "sepihak; berat sebelah; tidak menyeluruh"
+  },
+  "拼音": {
+    "gloss": "pinyin; phonetic spelling of Chinese",
+    "indonesian": "pinyin; ejaan bunyi bahasa Mandarin"
+  },
+  "平": {
+    "gloss": "flat; level; even (score); calm",
+    "indonesian": "datar; rata; seri; tenang"
+  },
+  "平常": {
+    "gloss": "usually; ordinary; common",
+    "indonesian": "biasanya; biasa"
+  },
+  "平方": {
+    "gloss": "square (as in square meter); squared",
+    "indonesian": "persegi (meter persegi); kuadrat"
+  },
+  "平静": {
+    "gloss": "calm; quiet; peaceful",
+    "indonesian": "tenang; damai"
+  },
+  "评价": {
+    "gloss": "to evaluate; to assess; evaluation",
+    "indonesian": "menilai; penilaian"
+  },
+  "破坏": {
+    "gloss": "to damage; to destroy; destruction",
+    "indonesian": "merusak; kerusakan"
+  },
+  "期待": {
+    "gloss": "to look forward to; to expect; expectation",
+    "indonesian": "menantikan; mengharapkan; harapan"
+  },
+  "奇迹": {
+    "gloss": "miracle; wonder",
+    "indonesian": "keajaiban; mukjizat"
+  },
+  "启发": {
+    "gloss": "to inspire; to enlighten; inspiration",
+    "indonesian": "menginspirasi; mencerahkan; inspirasi"
+  },
+  "气氛": {
+    "gloss": "atmosphere; mood",
+    "indonesian": "suasana"
+  },
+  "汽油": {
+    "gloss": "gasoline; petrol",
+    "indonesian": "bensin"
+  },
+  "谦虚": {
+    "gloss": "modest; humble",
+    "indonesian": "rendah hati"
+  },
+  "签": {
+    "gloss": "to sign (one's name, a contract)",
+    "indonesian": "menandatangani"
+  },
+  "浅": {
+    "gloss": "shallow; light (color); simple",
+    "indonesian": "dangkal; muda (warna); mudah"
+  },
+  "枪": {
+    "gloss": "gun; firearm; spear",
+    "indonesian": "senjata api; pistol; tombak"
+  },
+  "强调": {
+    "gloss": "to emphasize; to stress",
+    "indonesian": "menekankan"
+  },
+  "抢": {
+    "gloss": "to snatch, grab; to rush (to do sth first); to rob",
+    "indonesian": "merebut; berebut; merampok"
+  },
+  "悄悄": {
+    "gloss": "quietly; secretly; stealthily",
+    "indonesian": "diam-diam; pelan-pelan"
+  },
+  "瞧": {
+    "gloss": "to look; to see",
+    "indonesian": "lihat; melihat"
+  },
+  "巧妙": {
+    "gloss": "clever; ingenious; skilful",
+    "indonesian": "cerdik; jitu"
+  },
+  "亲爱": {
+    "gloss": "dear; beloved",
+    "indonesian": "tercinta; terkasih"
+  },
+  "亲切": {
+    "gloss": "warm and kind; cordial; friendly",
+    "indonesian": "ramah; hangat; akrab"
+  },
+  "勤奋": {
+    "gloss": "diligent; hardworking",
+    "indonesian": "rajin; tekun"
+  },
+  "青春": {
+    "gloss": "youth; youthfulness",
+    "indonesian": "masa muda"
+  },
+  "轻视": {
+    "gloss": "to look down on; to underestimate",
+    "indonesian": "meremehkan; memandang rendah"
+  },
+  "请求": {
+    "gloss": "request; to ask (formally)",
+    "indonesian": "permintaan; memohon"
+  },
+  "球迷": {
+    "gloss": "(sports) fan; football fan",
+    "indonesian": "penggemar olahraga bola"
+  },
+  "趋势": {
+    "gloss": "trend; tendency",
+    "indonesian": "tren; kecenderungan"
+  },
+  "去世": {
+    "gloss": "to pass away; to die",
+    "indonesian": "meninggal dunia; wafat"
+  },
+  "权力": {
+    "gloss": "power; authority",
+    "indonesian": "kekuasaan; wewenang"
+  },
+  "劝": {
+    "gloss": "to advise; to urge; to persuade",
+    "indonesian": "menasihati; membujuk"
+  },
+  "缺乏": {
+    "gloss": "to lack; to be short of",
+    "indonesian": "kurang; kekurangan"
+  },
+  "确认": {
+    "gloss": "to confirm; to verify",
+    "indonesian": "memastikan; mengonfirmasi"
+  },
+  "群": {
+    "gloss": "group; crowd; measure word for groups, flocks",
+    "indonesian": "kelompok; kerumunan; kata satuan untuk sekelompok"
+  },
+  "燃烧": {
+    "gloss": "to burn; to combust",
+    "indonesian": "membakar; terbakar"
+  },
+  "绕": {
+    "gloss": "to go around; to circle; to wind",
+    "indonesian": "memutar; mengitari; melilit"
+  },
+  "热爱": {
+    "gloss": "to love deeply; to be devoted to",
+    "indonesian": "sangat mencintai"
+  },
+  "热心": {
+    "gloss": "warm-hearted; enthusiastic; eager to help",
+    "indonesian": "suka membantu; antusias"
+  },
+  "人才": {
+    "gloss": "talent; talented person",
+    "indonesian": "orang berbakat; talenta"
+  },
+  "人类": {
+    "gloss": "humanity; mankind; human race",
+    "indonesian": "umat manusia"
+  },
+  "人生": {
+    "gloss": "life (one's life)",
+    "indonesian": "kehidupan; hidup manusia"
+  },
+  "人物": {
+    "gloss": "character (in a story); figure, personage",
+    "indonesian": "tokoh; karakter"
+  },
+  "忍不住": {
+    "gloss": "can't help (doing); unable to bear",
+    "indonesian": "tidak bisa menahan diri; tidak tahan"
+  },
+  "日程": {
+    "gloss": "schedule; itinerary",
+    "indonesian": "jadwal; agenda"
+  },
+  "日历": {
+    "gloss": "calendar",
+    "indonesian": "kalender"
+  },
+  "日用品": {
+    "gloss": "daily necessities; household items",
+    "indonesian": "barang kebutuhan sehari-hari"
+  },
+  "如何": {
+    "gloss": "how; in what way",
+    "indonesian": "bagaimana; dengan cara apa"
+  },
+  "软件": {
+    "gloss": "software",
+    "indonesian": "perangkat lunak; software"
+  },
+  "洒": {
+    "gloss": "to spill; to sprinkle; to spray",
+    "indonesian": "menumpahkan; memercikkan; menabur"
+  },
+  "嗓子": {
+    "gloss": "throat; voice",
+    "indonesian": "tenggorokan; suara"
+  },
+  "沙滩": {
+    "gloss": "beach; sandy shore",
+    "indonesian": "pantai berpasir"
+  },
+  "晒": {
+    "gloss": "to dry in the sun; to bask in the sun",
+    "indonesian": "menjemur; berjemur"
+  },
+  "闪电": {
+    "gloss": "lightning",
+    "indonesian": "kilat; petir"
+  },
+  "善于": {
+    "gloss": "to be good at; to be adept at",
+    "indonesian": "pandai dalam; mahir"
+  },
+  "商品": {
+    "gloss": "goods; merchandise; commodity",
+    "indonesian": "barang dagangan; komoditas"
+  },
+  "商务": {
+    "gloss": "business; commercial affairs",
+    "indonesian": "urusan bisnis; perdagangan"
+  },
+  "伤害": {
+    "gloss": "to harm; to hurt; harm",
+    "indonesian": "melukai; merugikan; menyakiti"
+  },
+  "舍不得": {
+    "gloss": "to hate to part with; can't bear to; reluctant to",
+    "indonesian": "tidak rela; berat hati; sayang (untuk)"
+  },
+  "设计": {
+    "gloss": "to design; design; to plan",
+    "indonesian": "mendesain; desain; merancang"
+  },
+  "摄影": {
+    "gloss": "photography; to take photos; to film",
+    "indonesian": "fotografi; memotret"
+  },
+  "伸": {
+    "gloss": "to stretch out; to extend",
+    "indonesian": "menjulurkan; merentangkan"
+  },
+  "深刻": {
+    "gloss": "profound; deep",
+    "indonesian": "mendalam"
+  },
+  "身份": {
+    "gloss": "identity; status; capacity, role (as)",
+    "indonesian": "identitas; status; kedudukan"
+  },
+  "神秘": {
+    "gloss": "mysterious; mystical",
+    "indonesian": "misterius; mistis"
+  },
+  "生动": {
+    "gloss": "vivid; lively",
+    "indonesian": "hidup (penggambaran); menarik"
+  },
+  "生长": {
+    "gloss": "to grow; to grow up",
+    "indonesian": "tumbuh; bertumbuh"
+  },
+  "诗": {
+    "gloss": "poem; poetry",
+    "indonesian": "puisi; syair"
+  },
+  "失眠": {
+    "gloss": "to suffer from insomnia",
+    "indonesian": "susah tidur; insomnia"
+  },
+  "狮子": {
+    "gloss": "lion",
+    "indonesian": "singa"
+  },
+  "时代": {
+    "gloss": "era; age; times",
+    "indonesian": "zaman; era"
+  },
+  "时髦": {
+    "gloss": "in vogue; fashionable",
+    "indonesian": "modis; trendi"
+  },
+  "时尚": {
+    "gloss": "fashion; fashionable; trend",
+    "indonesian": "mode; trendi; modis"
+  },
+  "实习": {
+    "gloss": "to intern; internship; to practise",
+    "indonesian": "magang"
+  },
+  "实验": {
+    "gloss": "experiment; test; to experiment",
+    "indonesian": "eksperimen; percobaan"
+  },
+  "石头": {
+    "gloss": "stone; rock",
+    "indonesian": "batu"
+  },
+  "使劲儿": {
+    "gloss": "to exert all one's strength; to push hard",
+    "indonesian": "mengerahkan tenaga; sekuat tenaga"
+  },
+  "始终": {
+    "gloss": "from beginning to end; all along; always",
+    "indonesian": "dari awal sampai akhir; selalu"
+  },
+  "试卷": {
+    "gloss": "exam paper; test paper",
+    "indonesian": "lembar ujian"
+  },
+  "市场": {
+    "gloss": "market; marketplace",
+    "indonesian": "pasar"
+  },
+  "事物": {
+    "gloss": "thing; object",
+    "indonesian": "hal; benda"
+  },
+  "收据": {
+    "gloss": "receipt",
+    "indonesian": "kuitansi; tanda terima"
+  },
+  "手工": {
+    "gloss": "handmade; handwork; manual work",
+    "indonesian": "buatan tangan; kerajinan tangan"
+  },
+  "手术": {
+    "gloss": "surgery; operation",
+    "indonesian": "operasi (bedah)"
+  },
+  "手续": {
+    "gloss": "procedures; formalities",
+    "indonesian": "prosedur; urusan administrasi"
+  },
+  "首": {
+    "gloss": "measure word for songs and poems; first; head",
+    "indonesian": "kata satuan untuk lagu/puisi; pertama; kepala"
+  },
+  "受伤": {
+    "gloss": "to be injured; to get hurt",
+    "indonesian": "terluka; cedera"
+  },
+  "寿命": {
+    "gloss": "life span; service life (of a machine)",
+    "indonesian": "usia hidup; umur pakai"
+  },
+  "书架": {
+    "gloss": "bookshelf",
+    "indonesian": "rak buku"
+  },
+  "输入": {
+    "gloss": "to input; to enter (data); to import",
+    "indonesian": "memasukkan (data); input"
+  },
+  "熟练": {
+    "gloss": "skilled; proficient; practiced",
+    "indonesian": "terampil; mahir"
+  },
+  "鼠标": {
+    "gloss": "computer mouse",
+    "indonesian": "mouse komputer"
+  },
+  "数据": {
+    "gloss": "data",
+    "indonesian": "data"
+  },
+  "数码": {
+    "gloss": "digital; number; numeral",
+    "indonesian": "digital; angka"
+  },
+  "摔倒": {
+    "gloss": "to fall down; to slip and fall",
+    "indonesian": "jatuh; terjatuh"
+  },
+  "双方": {
+    "gloss": "both sides; both parties",
+    "indonesian": "kedua pihak; kedua belah pihak"
+  },
+  "税": {
+    "gloss": "tax; duty",
+    "indonesian": "pajak; bea"
+  },
+  "说服": {
+    "gloss": "to persuade; to convince",
+    "indonesian": "meyakinkan; membujuk"
+  },
+  "丝绸": {
+    "gloss": "silk",
+    "indonesian": "sutra"
+  },
+  "思想": {
+    "gloss": "thought; thinking; ideology",
+    "indonesian": "pemikiran; ideologi"
+  },
+  "似乎": {
+    "gloss": "it seems; seemingly; as if",
+    "indonesian": "sepertinya; seolah-olah"
+  },
+  "随身": {
+    "gloss": "(to carry) on one's person; with one",
+    "indonesian": "dibawa serta; selalu dibawa"
+  },
+  "碎": {
+    "gloss": "broken (into pieces); to shatter; fragmented",
+    "indonesian": "hancur; pecah; remuk"
+  },
+  "损失": {
+    "gloss": "loss; damage; to lose",
+    "indonesian": "kerugian; kehilangan"
+  },
+  "锁": {
+    "gloss": "to lock; a lock",
+    "indonesian": "mengunci; gembok"
+  },
+  "台阶": {
+    "gloss": "steps; flight of steps; a way out (of embarrassment)",
+    "indonesian": "anak tangga; undakan; jalan keluar (dari situasi canggung)"
+  },
+  "太极拳": {
+    "gloss": "tai chi; shadowboxing",
+    "indonesian": "taichi; senam taichi"
+  },
+  "逃": {
+    "gloss": "to escape; to flee; to run away",
+    "indonesian": "kabur; melarikan diri"
+  },
+  "淘气": {
+    "gloss": "naughty; mischievous",
+    "indonesian": "nakal; bandel"
+  },
+  "讨价还价": {
+    "gloss": "to bargain; to haggle",
+    "indonesian": "tawar-menawar"
+  },
+  "套": {
+    "gloss": "measure word for sets (clothes, flats); cover",
+    "indonesian": "kata satuan untuk set (baju, rumah); sarung"
+  },
+  "特色": {
+    "gloss": "special feature; characteristic",
+    "indonesian": "ciri khas; keistimewaan"
+  },
+  "提倡": {
+    "gloss": "to advocate; to promote",
+    "indonesian": "menganjurkan; mempromosikan"
+  },
+  "题目": {
+    "gloss": "title; topic; (exam) question",
+    "indonesian": "judul; topik; soal"
+  },
+  "体贴": {
+    "gloss": "considerate; thoughtful; caring",
+    "indonesian": "perhatian; pengertian"
+  },
+  "体验": {
+    "gloss": "to experience (for oneself); experience",
+    "indonesian": "mengalami sendiri; pengalaman"
+  },
+  "天空": {
+    "gloss": "sky",
+    "indonesian": "langit"
+  },
+  "天真": {
+    "gloss": "naive; innocent; artless",
+    "indonesian": "naif; polos; lugu"
+  },
+  "调整": {
+    "gloss": "to adjust; adjustment",
+    "indonesian": "menyesuaikan; penyesuaian"
+  },
+  "通常": {
+    "gloss": "usually; normally; usual",
+    "indonesian": "biasanya; umumnya"
+  },
+  "统一": {
+    "gloss": "to unify; unified; uniform",
+    "indonesian": "menyatukan; bersatu; seragam"
+  },
+  "痛快": {
+    "gloss": "delighted; to one's heart's content; readily",
+    "indonesian": "senang; puas; dengan senang hati"
+  },
+  "偷": {
+    "gloss": "to steal; secretly",
+    "indonesian": "mencuri; diam-diam"
+  },
+  "投资": {
+    "gloss": "to invest; investment",
+    "indonesian": "berinvestasi; investasi"
+  },
+  "突出": {
+    "gloss": "outstanding; prominent; to highlight",
+    "indonesian": "menonjol; luar biasa; menonjolkan"
+  },
+  "土豆": {
+    "gloss": "potato",
+    "indonesian": "kentang"
+  },
+  "兔子": {
+    "gloss": "rabbit; hare",
+    "indonesian": "kelinci"
+  },
+  "推辞": {
+    "gloss": "to decline (an offer or invitation)",
+    "indonesian": "menolak (dengan halus)"
+  },
+  "推荐": {
+    "gloss": "to recommend; recommendation",
+    "indonesian": "merekomendasikan; rekomendasi"
+  },
+  "退": {
+    "gloss": "to return (an item); to move back; to withdraw",
+    "indonesian": "mengembalikan (barang); mundur; menarik diri"
+  },
+  "退休": {
+    "gloss": "to retire",
+    "indonesian": "pensiun"
+  },
+  "外公": {
+    "gloss": "maternal grandfather (mother's father)",
+    "indonesian": "kakek (dari pihak ibu)"
+  },
+  "完整": {
+    "gloss": "complete; intact; whole",
+    "indonesian": "lengkap; utuh"
+  },
+  "玩具": {
+    "gloss": "toy",
+    "indonesian": "mainan"
+  },
+  "万一": {
+    "gloss": "just in case; if by any chance",
+    "indonesian": "kalau-kalau; seandainya"
+  },
+  "威胁": {
+    "gloss": "to threaten; threat",
+    "indonesian": "mengancam; ancaman"
+  },
+  "维修": {
+    "gloss": "to repair; to maintain; maintenance",
+    "indonesian": "memperbaiki; perawatan; reparasi"
+  },
+  "围绕": {
+    "gloss": "to center on (an issue); to revolve around",
+    "indonesian": "berpusat pada; mengelilingi"
+  },
+  "尾巴": {
+    "gloss": "tail",
+    "indonesian": "ekor"
+  },
+  "委屈": {
+    "gloss": "to feel wronged; to be treated unfairly; grievance",
+    "indonesian": "merasa diperlakukan tidak adil; sakit hati"
+  },
+  "胃": {
+    "gloss": "stomach",
+    "indonesian": "lambung; perut"
+  },
+  "位于": {
+    "gloss": "to be located at; to lie",
+    "indonesian": "terletak di; berada di"
+  },
+  "未必": {
+    "gloss": "not necessarily; maybe not",
+    "indonesian": "belum tentu"
+  },
+  "温柔": {
+    "gloss": "gentle; tender; soft",
+    "indonesian": "lembut; halus"
+  },
+  "文具": {
+    "gloss": "stationery",
+    "indonesian": "alat tulis"
+  },
+  "文学": {
+    "gloss": "literature",
+    "indonesian": "sastra"
+  },
+  "稳定": {
+    "gloss": "stable; steady; to stabilize",
+    "indonesian": "stabil; mantap; menstabilkan"
+  },
+  "问候": {
+    "gloss": "to send one's regards; to greet; greetings",
+    "indonesian": "menyampaikan salam; menyapa"
+  },
+  "卧室": {
+    "gloss": "bedroom",
+    "indonesian": "kamar tidur"
+  },
+  "无数": {
+    "gloss": "countless; innumerable",
+    "indonesian": "tak terhitung; tak terhingga"
+  },
+  "勿": {
+    "gloss": "do not; don't (in signs, notices)",
+    "indonesian": "jangan; dilarang"
+  },
+  "物质": {
+    "gloss": "material; matter; substance",
+    "indonesian": "materi; zat; materiil"
+  },
+  "吸取": {
+    "gloss": "to draw (a lesson); to absorb",
+    "indonesian": "memetik (pelajaran); menyerap"
+  },
+  "系统": {
+    "gloss": "system",
+    "indonesian": "sistem"
+  },
+  "戏剧": {
+    "gloss": "drama; play; theater",
+    "indonesian": "drama; sandiwara; teater"
+  },
+  "吓": {
+    "gloss": "to scare; to frighten; to startle",
+    "indonesian": "menakuti; mengagetkan"
+  },
+  "夏令营": {
+    "gloss": "summer camp",
+    "indonesian": "perkemahan musim panas"
+  },
+  "下载": {
+    "gloss": "to download",
+    "indonesian": "mengunduh"
+  },
+  "显然": {
+    "gloss": "obviously; clearly; evidently",
+    "indonesian": "jelas sekali; jelas-jelas"
+  },
+  "县": {
+    "gloss": "county",
+    "indonesian": "kabupaten"
+  },
+  "现象": {
+    "gloss": "phenomenon",
+    "indonesian": "fenomena; gejala"
+  },
+  "香肠": {
+    "gloss": "sausage",
+    "indonesian": "sosis"
+  },
+  "相当": {
+    "gloss": "quite; fairly; equivalent to",
+    "indonesian": "cukup; agak; setara dengan"
+  },
+  "相似": {
+    "gloss": "similar; alike",
+    "indonesian": "mirip; serupa"
+  },
+  "想念": {
+    "gloss": "to miss (sb or sth)",
+    "indonesian": "rindu; kangen"
+  },
+  "享受": {
+    "gloss": "to enjoy; enjoyment",
+    "indonesian": "menikmati; kenikmatan"
+  },
+  "项链": {
+    "gloss": "necklace",
+    "indonesian": "kalung"
+  },
+  "象征": {
+    "gloss": "to symbolize; symbol; emblem",
+    "indonesian": "melambangkan; simbol; lambang"
+  },
+  "消极": {
+    "gloss": "negative; passive",
+    "indonesian": "negatif; pasif; pesimis"
+  },
+  "消失": {
+    "gloss": "to disappear; to vanish",
+    "indonesian": "menghilang; lenyap"
+  },
+  "小气": {
+    "gloss": "stingy; petty",
+    "indonesian": "pelit; picik"
+  },
+  "孝顺": {
+    "gloss": "filial; devoted to one's parents",
+    "indonesian": "berbakti kepada orang tua"
+  },
+  "斜": {
+    "gloss": "inclined; slanting; oblique",
+    "indonesian": "miring"
+  },
+  "写作": {
+    "gloss": "to write; writing",
+    "indonesian": "menulis; karya tulis"
+  },
+  "心理": {
+    "gloss": "psychological, mental; psychology; mentality",
+    "indonesian": "psikologis, mental; psikologi"
+  },
+  "心脏": {
+    "gloss": "heart",
+    "indonesian": "jantung"
+  },
+  "信任": {
+    "gloss": "to trust; trust",
+    "indonesian": "memercayai; kepercayaan"
+  },
+  "行为": {
+    "gloss": "behavior; conduct; action",
+    "indonesian": "perilaku; tindakan"
+  },
+  "形容": {
+    "gloss": "to describe",
+    "indonesian": "menggambarkan; melukiskan"
+  },
+  "形势": {
+    "gloss": "situation; circumstances",
+    "indonesian": "situasi; keadaan"
+  },
+  "形状": {
+    "gloss": "shape; form",
+    "indonesian": "bentuk"
+  },
+  "幸运": {
+    "gloss": "lucky; fortunate; good luck",
+    "indonesian": "beruntung; keberuntungan"
+  },
+  "兄弟": {
+    "gloss": "brothers; younger brother; buddy",
+    "indonesian": "saudara laki-laki; kakak-adik"
+  },
+  "虚心": {
+    "gloss": "open-minded; humble; modest",
+    "indonesian": "rendah hati; terbuka (menerima masukan)"
+  },
+  "宣布": {
+    "gloss": "to announce; to declare",
+    "indonesian": "mengumumkan; menyatakan"
+  },
+  "学术": {
+    "gloss": "academic; scholarly; academic research",
+    "indonesian": "akademis; ilmiah; penelitian ilmiah"
+  },
+  "询问": {
+    "gloss": "to ask (about); to inquire",
+    "indonesian": "menanyakan; bertanya"
+  },
+  "训练": {
+    "gloss": "to train; training",
+    "indonesian": "melatih; berlatih; latihan"
+  },
+  "押金": {
+    "gloss": "deposit; security deposit",
+    "indonesian": "uang jaminan; deposit"
+  },
+  "牙齿": {
+    "gloss": "tooth; teeth",
+    "indonesian": "gigi"
+  },
+  "宴会": {
+    "gloss": "banquet; feast; dinner party",
+    "indonesian": "perjamuan; pesta makan"
+  },
+  "痒": {
+    "gloss": "itchy; to itch",
+    "indonesian": "gatal"
+  },
+  "样式": {
+    "gloss": "style; design; pattern",
+    "indonesian": "model; gaya"
+  },
+  "腰": {
+    "gloss": "waist; lower back",
+    "indonesian": "pinggang"
+  },
+  "咬": {
+    "gloss": "to bite",
+    "indonesian": "menggigit"
+  },
+  "夜": {
+    "gloss": "night",
+    "indonesian": "malam"
+  },
+  "业余": {
+    "gloss": "spare-time; after work; amateur",
+    "indonesian": "waktu luang; di luar jam kerja; amatir"
+  },
+  "依然": {
+    "gloss": "still; as before",
+    "indonesian": "masih; tetap"
+  },
+  "一旦": {
+    "gloss": "once (sth happens); in case; if ever",
+    "indonesian": "begitu; sekali (terjadi); jika suatu saat"
+  },
+  "一致": {
+    "gloss": "in agreement; unanimous; consistent",
+    "indonesian": "sepakat; seia sekata; konsisten"
+  },
+  "一再": {
+    "gloss": "repeatedly; again and again",
+    "indonesian": "berulang kali"
+  },
+  "移民": {
+    "gloss": "to emigrate; to immigrate; immigrant",
+    "indonesian": "pindah ke luar negeri; imigran"
+  },
+  "疑问": {
+    "gloss": "question; doubt",
+    "indonesian": "pertanyaan; keraguan"
+  },
+  "以来": {
+    "gloss": "since (a past time); ever since",
+    "indonesian": "sejak; semenjak"
+  },
+  "意外": {
+    "gloss": "unexpected, surprising; accident, mishap",
+    "indonesian": "di luar dugaan; kecelakaan"
+  },
+  "议论": {
+    "gloss": "to talk about; to discuss; comment",
+    "indonesian": "membicarakan; memperbincangkan"
+  },
+  "义务": {
+    "gloss": "duty; obligation; voluntary (unpaid)",
+    "indonesian": "kewajiban; sukarela"
+  },
+  "因素": {
+    "gloss": "factor; element",
+    "indonesian": "faktor; unsur"
+  },
+  "英俊": {
+    "gloss": "handsome",
+    "indonesian": "tampan"
+  },
+  "营养": {
+    "gloss": "nutrition; nourishment",
+    "indonesian": "nutrisi; gizi"
+  },
+  "硬": {
+    "gloss": "hard; stiff; firm",
+    "indonesian": "keras; kaku"
+  },
+  "应付": {
+    "gloss": "to cope with; to deal with; to do half-heartedly",
+    "indonesian": "menghadapi; menangani; asal-asalan"
+  },
+  "应用": {
+    "gloss": "to apply; to use; application",
+    "indonesian": "menerapkan; menggunakan; aplikasi"
+  },
+  "拥挤": {
+    "gloss": "crowded; packed",
+    "indonesian": "ramai; sesak; padat"
+  },
+  "勇气": {
+    "gloss": "courage",
+    "indonesian": "keberanian"
+  },
+  "用功": {
+    "gloss": "hardworking (at study); to study hard",
+    "indonesian": "rajin (belajar); tekun"
+  },
+  "优惠": {
+    "gloss": "discount; preferential; favourable (terms)",
+    "indonesian": "diskon; potongan harga; keringanan"
+  },
+  "优势": {
+    "gloss": "advantage; superiority; strength",
+    "indonesian": "keunggulan; kelebihan"
+  },
+  "悠久": {
+    "gloss": "long-standing; long (history, tradition)",
+    "indonesian": "panjang (sejarah); sudah berlangsung lama"
+  },
+  "油炸": {
+    "gloss": "to deep-fry; deep-fried",
+    "indonesian": "menggoreng; gorengan"
+  },
+  "有利": {
+    "gloss": "favorable; advantageous; beneficial",
+    "indonesian": "menguntungkan; bermanfaat"
+  },
+  "娱乐": {
+    "gloss": "entertainment; recreation; to entertain",
+    "indonesian": "hiburan; rekreasi"
+  },
+  "预报": {
+    "gloss": "forecast",
+    "indonesian": "prakiraan; ramalan (cuaca)"
+  },
+  "预防": {
+    "gloss": "to prevent; to guard against; prevention",
+    "indonesian": "mencegah; pencegahan"
+  },
+  "圆": {
+    "gloss": "round; circle; (of the moon) full",
+    "indonesian": "bulat; lingkaran; (bulan) purnama"
+  },
+  "元旦": {
+    "gloss": "New Year's Day",
+    "indonesian": "Tahun Baru Masehi"
+  },
+  "员工": {
+    "gloss": "employee; staff",
+    "indonesian": "karyawan; pegawai"
+  },
+  "愿望": {
+    "gloss": "wish; desire",
+    "indonesian": "keinginan; harapan"
+  },
+  "晕": {
+    "gloss": "dizzy; to faint",
+    "indonesian": "pusing; pingsan"
+  },
+  "运气": {
+    "gloss": "luck; fortune",
+    "indonesian": "keberuntungan; nasib"
+  },
+  "运用": {
+    "gloss": "to use; to apply; to put to use",
+    "indonesian": "menggunakan; menerapkan"
+  },
+  "灾害": {
+    "gloss": "disaster; calamity",
+    "indonesian": "bencana"
+  },
+  "在乎": {
+    "gloss": "to care about; to mind",
+    "indonesian": "peduli; memedulikan"
+  },
+  "再三": {
+    "gloss": "again and again; repeatedly",
+    "indonesian": "berkali-kali"
+  },
+  "赞成": {
+    "gloss": "to approve of; to agree with; to support",
+    "indonesian": "setuju; mendukung"
+  },
+  "糟糕": {
+    "gloss": "terrible; too bad; oh no!",
+    "indonesian": "gawat; payah; celaka"
+  },
+  "造成": {
+    "gloss": "to cause; to bring about (sth bad)",
+    "indonesian": "menyebabkan; mengakibatkan"
+  },
+  "责备": {
+    "gloss": "to blame; to reproach",
+    "indonesian": "menyalahkan; menegur"
+  },
+  "窄": {
+    "gloss": "narrow",
+    "indonesian": "sempit"
+  },
+  "展开": {
+    "gloss": "to carry out; to launch; to unfold",
+    "indonesian": "melakukan; melancarkan; membentangkan"
+  },
+  "掌握": {
+    "gloss": "to master; to grasp; to control",
+    "indonesian": "menguasai; memahami; mengendalikan"
+  },
+  "账户": {
+    "gloss": "account (bank or online)",
+    "indonesian": "rekening; akun"
+  },
+  "珍惜": {
+    "gloss": "to treasure; to cherish; to value",
+    "indonesian": "menghargai; menyayangi"
+  },
+  "阵": {
+    "gloss": "measure word for spells (of rain, wind etc); a burst",
+    "indonesian": "kata satuan untuk sesaat (hujan, angin, dll.); sebentar"
+  },
+  "睁": {
+    "gloss": "to open (one's eyes)",
+    "indonesian": "membuka (mata)"
+  },
+  "争取": {
+    "gloss": "to strive for; to fight for; to win over",
+    "indonesian": "berjuang mendapatkan; mengupayakan"
+  },
+  "整个": {
+    "gloss": "whole; entire",
+    "indonesian": "seluruh; keseluruhan"
+  },
+  "整齐": {
+    "gloss": "neat; tidy; orderly",
+    "indonesian": "rapi; teratur"
+  },
+  "正": {
+    "gloss": "just (in the middle of); exactly; upright, correct",
+    "indonesian": "sedang; tepat; lurus, benar"
+  },
+  "政府": {
+    "gloss": "government",
+    "indonesian": "pemerintah"
+  },
+  "证件": {
+    "gloss": "ID; identity papers; certificate",
+    "indonesian": "kartu identitas; dokumen resmi"
+  },
+  "支": {
+    "gloss": "measure word for pens, songs, teams; to support",
+    "indonesian": "kata satuan untuk pena, lagu, tim; menopang"
+  },
+  "支票": {
+    "gloss": "check (bank); cheque",
+    "indonesian": "cek"
+  },
+  "指导": {
+    "gloss": "to guide; to coach; guidance",
+    "indonesian": "membimbing; bimbingan"
+  },
+  "制定": {
+    "gloss": "to draw up; to formulate (a plan, rules)",
+    "indonesian": "menyusun; merumuskan (rencana, aturan)"
+  },
+  "制造": {
+    "gloss": "to make; to manufacture; to create (trouble)",
+    "indonesian": "membuat; memproduksi; menimbulkan"
+  },
+  "智慧": {
+    "gloss": "wisdom; intelligence",
+    "indonesian": "kebijaksanaan; kecerdasan"
+  },
+  "秩序": {
+    "gloss": "order; orderliness",
+    "indonesian": "ketertiban; keteraturan"
+  },
+  "中介": {
+    "gloss": "agency; agent; intermediary",
+    "indonesian": "perantara; agen"
+  },
+  "中旬": {
+    "gloss": "middle of the month (11th to 20th)",
+    "indonesian": "pertengahan bulan"
+  },
+  "周到": {
+    "gloss": "thoughtful; considerate; attentive",
+    "indonesian": "penuh perhatian; cermat; teliti"
+  },
+  "逐步": {
+    "gloss": "progressively; step by step",
+    "indonesian": "langkah demi langkah; bertahap"
+  },
+  "竹子": {
+    "gloss": "bamboo",
+    "indonesian": "bambu"
+  },
+  "主持": {
+    "gloss": "to host; to chair (a meeting); to be in charge of",
+    "indonesian": "memimpin (rapat); membawakan acara; mengelola"
+  },
+  "主观": {
+    "gloss": "subjective",
+    "indonesian": "subjektif"
+  },
+  "主题": {
+    "gloss": "theme; subject; topic",
+    "indonesian": "tema; topik utama"
+  },
+  "主任": {
+    "gloss": "director; head (of a department)",
+    "indonesian": "kepala (bagian); direktur"
+  },
+  "抓": {
+    "gloss": "to grab; to catch; to arrest",
+    "indonesian": "meraih; menangkap; meringkus"
+  },
+  "专家": {
+    "gloss": "expert; specialist",
+    "indonesian": "pakar; ahli"
+  },
+  "专心": {
+    "gloss": "to concentrate; focused; attentive",
+    "indonesian": "fokus; berkonsentrasi"
+  },
+  "转告": {
+    "gloss": "to pass on (a message)",
+    "indonesian": "menyampaikan (pesan)"
+  },
+  "装": {
+    "gloss": "to pack, load; to install; to pretend",
+    "indonesian": "memasukkan, mengemas; memasang; berpura-pura"
+  },
+  "装修": {
+    "gloss": "to renovate; to decorate (a home); renovation",
+    "indonesian": "merenovasi; mendekorasi; renovasi"
+  },
+  "状况": {
+    "gloss": "condition; state; situation",
+    "indonesian": "keadaan; kondisi; situasi"
+  },
+  "追": {
+    "gloss": "to chase; to pursue",
+    "indonesian": "mengejar"
+  },
+  "资格": {
+    "gloss": "qualification; eligibility; seniority",
+    "indonesian": "kualifikasi; hak; syarat"
+  },
+  "资料": {
+    "gloss": "materials; data; information",
+    "indonesian": "bahan; data; informasi"
+  },
+  "姿势": {
+    "gloss": "posture; position; pose",
+    "indonesian": "postur; sikap tubuh; pose"
+  },
+  "紫": {
+    "gloss": "purple; violet",
+    "indonesian": "ungu"
+  },
+  "字幕": {
+    "gloss": "subtitles; caption",
+    "indonesian": "teks terjemahan; subtitle"
+  },
+  "自动": {
+    "gloss": "automatic; automatically; voluntarily",
+    "indonesian": "otomatis; dengan sendirinya"
+  },
+  "自由": {
+    "gloss": "free; freedom; liberty",
+    "indonesian": "bebas; kebebasan"
+  },
+  "综合": {
+    "gloss": "comprehensive; overall; to synthesize",
+    "indonesian": "menyeluruh; gabungan; memadukan"
+  },
+  "总共": {
+    "gloss": "altogether; in total",
+    "indonesian": "total; seluruhnya"
+  },
+  "总理": {
+    "gloss": "prime minister; premier",
+    "indonesian": "perdana menteri"
+  },
+  "总算": {
+    "gloss": "finally; at long last; on the whole",
+    "indonesian": "akhirnya; secara keseluruhan"
+  },
+  "总之": {
+    "gloss": "in short; in a word; anyway",
+    "indonesian": "singkatnya; pokoknya"
+  },
+  "组成": {
+    "gloss": "to make up; to form; to consist of",
+    "indonesian": "membentuk; terdiri dari"
+  },
+  "组织": {
+    "gloss": "to organize; organization",
+    "indonesian": "mengorganisasi; organisasi"
+  },
+  "作文": {
+    "gloss": "composition; essay",
+    "indonesian": "karangan"
+  },
+  "哎": {
+    "gloss": "hey! (to get attention); oh! (surprise or regret)",
+    "indonesian": "hei!; aduh!; wah!"
+  },
+  "爱护": {
+    "gloss": "to take good care of; to cherish and protect",
+    "indonesian": "melindungi dan menyayangi; merawat"
+  },
+  "爱惜": {
+    "gloss": "to cherish; to treasure; to use sparingly",
+    "indonesian": "menghargai; tidak menyia-nyiakan"
+  },
+  "安装": {
+    "gloss": "to install; to fit",
+    "indonesian": "memasang; menginstal"
+  },
+  "暗": {
+    "gloss": "dark; dim; secret; hidden",
+    "indonesian": "gelap; redup; diam-diam"
+  },
+  "把握": {
+    "gloss": "to grasp; to seize (a chance); certainty",
+    "indonesian": "memegang; memanfaatkan (peluang); keyakinan"
+  },
+  "摆": {
+    "gloss": "to put; to arrange; to swing",
+    "indonesian": "menaruh; menata; mengayun"
+  },
+  "办理": {
+    "gloss": "to handle; to transact; to conduct",
+    "indonesian": "mengurus"
+  },
+  "傍晚": {
+    "gloss": "dusk; early evening",
+    "indonesian": "senja; sore menjelang malam"
+  },
+  "包裹": {
+    "gloss": "parcel; package; to wrap up",
+    "indonesian": "paket; bungkusan; membungkus"
+  },
+  "包括": {
+    "gloss": "to include; to consist of",
+    "indonesian": "termasuk; mencakup"
+  },
+  "薄": {
+    "gloss": "thin; light (clothing)",
+    "indonesian": "tipis"
+  },
+  "宝贝": {
+    "gloss": "treasure; darling, baby",
+    "indonesian": "barang berharga, harta; sayang"
+  },
+  "保持": {
+    "gloss": "to keep; to maintain",
+    "indonesian": "mempertahankan; menjaga"
+  },
+  "保险": {
+    "gloss": "insurance; safe; secure",
+    "indonesian": "asuransi; aman"
+  },
+  "抱怨": {
+    "gloss": "to complain; to grumble",
+    "indonesian": "mengeluh; komplain"
+  },
+  "报道": {
+    "gloss": "to report (news); news report",
+    "indonesian": "memberitakan; laporan berita"
+  },
+  "报社": {
+    "gloss": "newspaper office; newspaper company",
+    "indonesian": "kantor surat kabar; penerbit koran"
+  },
+  "背": {
+    "gloss": "back (of the body); to memorize; to carry on the back",
+    "indonesian": "punggung; menghafal; menggendong"
+  },
+  "本质": {
+    "gloss": "essence; nature; true character",
+    "indonesian": "esensi; hakikat; sifat dasar"
+  },
+  "彼此": {
+    "gloss": "each other; one another",
+    "indonesian": "satu sama lain"
+  },
+  "毕竟": {
+    "gloss": "after all; when all is said and done",
+    "indonesian": "bagaimanapun juga; toh"
+  },
+  "避免": {
+    "gloss": "to avoid; to prevent",
+    "indonesian": "menghindari; mencegah"
+  },
+  "编辑": {
+    "gloss": "editor; to edit; to compile",
+    "indonesian": "editor; menyunting"
+  },
+  "便": {
+    "gloss": "then, right away (= 就); convenient",
+    "indonesian": "lalu; maka; praktis"
+  },
+  "标点": {
+    "gloss": "punctuation; punctuation mark",
+    "indonesian": "tanda baca"
+  },
+  "表明": {
+    "gloss": "to show; to indicate; to make clear",
+    "indonesian": "menunjukkan; memperjelas"
+  },
+  "病毒": {
+    "gloss": "virus",
+    "indonesian": "virus"
+  },
+  "播放": {
+    "gloss": "to broadcast; to play (a video or recording)",
+    "indonesian": "menyiarkan; memutar (video, lagu)"
+  },
+  "脖子": {
+    "gloss": "neck",
+    "indonesian": "leher"
+  },
+  "不要紧": {
+    "gloss": "it doesn't matter; not serious",
+    "indonesian": "tidak apa-apa; tidak serius"
+  },
+  "布": {
+    "gloss": "cloth; to spread, arrange",
+    "indonesian": "kain; menyebarkan, menata"
+  },
+  "不安": {
+    "gloss": "uneasy; anxious; restless",
+    "indonesian": "gelisah; tidak tenang"
+  },
+  "不得了": {
+    "gloss": "extremely; terribly; disastrous",
+    "indonesian": "sangat; luar biasa; gawat"
+  },
+  "不如": {
+    "gloss": "not as good as; inferior to; it would be better to",
+    "indonesian": "tidak sebaik; kalah dengan; lebih baik (…saja)"
+  },
+  "步骤": {
+    "gloss": "step; procedure",
+    "indonesian": "langkah; prosedur"
+  },
+  "采访": {
+    "gloss": "to interview; to cover (news)",
+    "indonesian": "mewawancarai; meliput"
+  },
+  "彩虹": {
+    "gloss": "rainbow",
+    "indonesian": "pelangi"
+  },
+  "参与": {
+    "gloss": "to participate (in); to take part",
+    "indonesian": "berpartisipasi; ikut serta"
+  },
+  "惭愧": {
+    "gloss": "ashamed",
+    "indonesian": "malu; merasa bersalah"
+  },
+  "操心": {
+    "gloss": "to worry about; to take pains over",
+    "indonesian": "khawatir; repot memikirkan"
+  },
+  "册": {
+    "gloss": "volume (of a book); measure word for books",
+    "indonesian": "jilid; kata satuan untuk buku"
+  },
+  "测验": {
+    "gloss": "to test; test; quiz",
+    "indonesian": "menguji; tes; ujian"
+  },
+  "曾经": {
+    "gloss": "once; ever (did); formerly",
+    "indonesian": "pernah; dulu pernah"
+  },
+  "差距": {
+    "gloss": "gap; disparity; difference",
+    "indonesian": "kesenjangan; perbedaan; jarak"
+  },
+  "产品": {
+    "gloss": "product; goods",
+    "indonesian": "produk"
+  },
+  "长途": {
+    "gloss": "long-distance",
+    "indonesian": "jarak jauh"
+  },
+  "抄": {
+    "gloss": "to copy; to plagiarize",
+    "indonesian": "menyalin; menyontek"
+  },
+  "超级": {
+    "gloss": "super; extremely",
+    "indonesian": "super; sangat"
+  },
+  "朝": {
+    "gloss": "towards; facing; dynasty",
+    "indonesian": "ke arah; menghadap; dinasti"
+  },
+  "炒": {
+    "gloss": "to stir-fry; to sauté; to speculate (in stocks)",
+    "indonesian": "menumis; menggoreng; berspekulasi"
+  },
+  "吵架": {
+    "gloss": "to quarrel; to argue",
+    "indonesian": "bertengkar; cekcok"
+  },
+  "车厢": {
+    "gloss": "(train) carriage; car; compartment",
+    "indonesian": "gerbong; kabin"
+  },
+  "沉默": {
+    "gloss": "silent; to keep silent; taciturn",
+    "indonesian": "diam; membisu; pendiam"
+  },
+  "称呼": {
+    "gloss": "to call; to address as; form of address",
+    "indonesian": "memanggil; sebutan; panggilan"
+  },
+  "承认": {
+    "gloss": "to admit; to acknowledge; to recognize",
+    "indonesian": "mengakui"
+  },
+  "程度": {
+    "gloss": "degree; level; extent",
+    "indonesian": "tingkat; taraf"
+  },
+  "成分": {
+    "gloss": "ingredient; component; composition",
+    "indonesian": "komponen; bahan; kandungan"
+  },
+  "成果": {
+    "gloss": "result; achievement; fruits (of work)",
+    "indonesian": "hasil; pencapaian"
+  },
+  "成就": {
+    "gloss": "achievement; accomplishment; to achieve",
+    "indonesian": "prestasi; pencapaian; mencapai"
+  },
+  "成熟": {
+    "gloss": "mature; ripe; to mature",
+    "indonesian": "dewasa; matang"
+  },
+  "成长": {
+    "gloss": "to grow up; to mature; growth",
+    "indonesian": "tumbuh; berkembang; pertumbuhan"
+  },
+  "吃亏": {
+    "gloss": "to lose out; to suffer a loss",
+    "indonesian": "rugi; dirugikan"
+  },
+  "迟早": {
+    "gloss": "sooner or later",
+    "indonesian": "cepat atau lambat"
+  },
+  "池塘": {
+    "gloss": "pond; pool",
+    "indonesian": "kolam"
+  },
+  "翅膀": {
+    "gloss": "wing",
+    "indonesian": "sayap"
+  },
+  "充电器": {
+    "gloss": "charger",
+    "indonesian": "pengisi daya; charger"
+  },
+  "充满": {
+    "gloss": "to be full of; filled with",
+    "indonesian": "penuh dengan; dipenuhi"
+  },
+  "抽屉": {
+    "gloss": "drawer",
+    "indonesian": "laci"
+  },
+  "臭": {
+    "gloss": "smelly; stinking; to stink",
+    "indonesian": "bau busuk; bau"
+  },
+  "出版": {
+    "gloss": "to publish",
+    "indonesian": "menerbitkan"
+  },
+  "出色": {
+    "gloss": "outstanding; remarkable; excellent",
+    "indonesian": "luar biasa; menonjol; sangat baik"
+  },
+  "初级": {
+    "gloss": "elementary; beginner level; primary",
+    "indonesian": "tingkat dasar; pemula"
+  },
+  "传播": {
+    "gloss": "to spread; to disseminate",
+    "indonesian": "menyebarkan; menyebar"
+  },
+  "传说": {
+    "gloss": "legend; folk tale",
+    "indonesian": "legenda; cerita rakyat"
+  },
+  "窗帘": {
+    "gloss": "window curtains",
+    "indonesian": "gorden; tirai"
+  },
+  "创造": {
+    "gloss": "to create; to set (a record)",
+    "indonesian": "menciptakan; mencetak (rekor)"
+  },
+  "词汇": {
+    "gloss": "vocabulary; words",
+    "indonesian": "kosakata"
+  },
+  "辞职": {
+    "gloss": "to resign; to quit (a job)",
+    "indonesian": "mengundurkan diri; berhenti kerja"
+  },
+  "刺激": {
+    "gloss": "exciting; to stimulate; to provoke",
+    "indonesian": "seru; menegangkan; merangsang"
+  },
+  "从此": {
+    "gloss": "from then on; since then; from now on",
+    "indonesian": "sejak saat itu; mulai sekarang"
+  },
+  "从事": {
+    "gloss": "to be engaged in; to work in (a field)",
+    "indonesian": "bekerja di bidang; menekuni"
+  },
+  "促进": {
+    "gloss": "to promote; to boost; to advance",
+    "indonesian": "mendorong; memajukan; meningkatkan"
+  },
+  "催": {
+    "gloss": "to urge; to hurry; to press",
+    "indonesian": "mendesak; menyuruh cepat-cepat"
+  },
+  "存在": {
+    "gloss": "to exist; existence",
+    "indonesian": "ada; keberadaan"
+  },
+  "答应": {
+    "gloss": "to agree; to promise; to answer",
+    "indonesian": "menyetujui; berjanji; menyahut"
+  },
+  "达到": {
+    "gloss": "to reach; to achieve; to attain",
+    "indonesian": "mencapai"
+  },
+  "打交道": {
+    "gloss": "to come into contact with; to have dealings",
+    "indonesian": "berurusan dengan; bergaul"
+  },
+  "打喷嚏": {
+    "gloss": "to sneeze",
+    "indonesian": "bersin"
+  },
+  "打听": {
+    "gloss": "to ask about; to make some inquiries; to ask around",
+    "indonesian": "menanyakan; mencari informasi"
+  },
+  "大方": {
+    "gloss": "generous; natural and poised; tasteful",
+    "indonesian": "dermawan; murah hati; luwes"
+  },
+  "大型": {
+    "gloss": "large; large-scale",
+    "indonesian": "besar; berskala besar"
+  },
+  "呆": {
+    "gloss": "dazed, stunned; dull, slow-witted; to stay",
+    "indonesian": "bengong, tertegun; bodoh; tinggal"
+  },
+  "代替": {
+    "gloss": "to replace; to take the place of",
+    "indonesian": "menggantikan; mengganti"
+  },
+  "贷款": {
+    "gloss": "loan; to take out a loan; to lend",
+    "indonesian": "pinjaman; kredit; meminjam (dari bank)"
+  },
+  "单纯": {
+    "gloss": "simple and innocent; pure; merely",
+    "indonesian": "polos; sederhana; semata-mata"
+  },
+  "单独": {
+    "gloss": "alone; on one's own; separately",
+    "indonesian": "sendirian; seorang diri; secara terpisah"
+  },
+  "单元": {
+    "gloss": "unit (of a textbook); entrance/block (of a building)",
+    "indonesian": "unit; bab (pelajaran); blok (gedung)"
+  },
+  "胆小鬼": {
+    "gloss": "coward",
+    "indonesian": "penakut; pengecut"
+  },
+  "当地": {
+    "gloss": "local; in the area",
+    "indonesian": "lokal; setempat"
+  },
+  "当心": {
+    "gloss": "to look out; to be careful",
+    "indonesian": "hati-hati; awas"
+  },
+  "挡": {
+    "gloss": "to block; to keep off; to get in the way",
+    "indonesian": "menghalangi; menahan; merintangi"
+  },
+  "岛屿": {
+    "gloss": "island; islands",
+    "indonesian": "pulau; pulau-pulau"
+  },
+  "导演": {
+    "gloss": "director (film, play); to direct",
+    "indonesian": "sutradara; menyutradarai"
+  },
+  "导致": {
+    "gloss": "to lead to; to cause; to result in",
+    "indonesian": "mengakibatkan; menyebabkan"
+  },
+  "到达": {
+    "gloss": "to arrive; to reach",
+    "indonesian": "tiba; sampai"
+  },
+  "道德": {
+    "gloss": "morality; ethics; moral",
+    "indonesian": "moral; etika; budi pekerti"
+  },
+  "等待": {
+    "gloss": "to wait; to wait for",
+    "indonesian": "menunggu; menanti"
+  },
+  "的确": {
+    "gloss": "indeed; really",
+    "indonesian": "memang; sungguh"
+  },
+  "地道": {
+    "gloss": "authentic; genuine; proper",
+    "indonesian": "asli; otentik; murni"
+  },
+  "地理": {
+    "gloss": "geography",
+    "indonesian": "geografi"
+  },
+  "地区": {
+    "gloss": "region; area; district",
+    "indonesian": "daerah; wilayah"
+  },
+  "地位": {
+    "gloss": "status; position; standing",
+    "indonesian": "kedudukan; status; posisi"
+  },
+  "点心": {
+    "gloss": "light refreshments; pastry; dim sum (in Cantonese cooking)",
+    "indonesian": "kue; camilan; dim sum"
+  },
+  "电台": {
+    "gloss": "radio station; broadcasting station",
+    "indonesian": "stasiun radio"
+  },
+  "钓": {
+    "gloss": "to fish (with rod and line); to angle",
+    "indonesian": "memancing"
+  },
+  "洞": {
+    "gloss": "hole; cave",
+    "indonesian": "lubang; gua"
+  },
+  "豆腐": {
+    "gloss": "tofu; bean curd",
+    "indonesian": "tahu"
+  },
+  "独立": {
+    "gloss": "independent; independence; on one's own",
+    "indonesian": "mandiri; merdeka; independen"
+  },
+  "断": {
+    "gloss": "to break; to snap; to cut off",
+    "indonesian": "putus; patah; memutuskan"
+  },
+  "堆": {
+    "gloss": "pile; heap; to pile up",
+    "indonesian": "tumpukan; menumpuk"
+  },
+  "对方": {
+    "gloss": "the other party; the other side",
+    "indonesian": "pihak lain; lawan bicara"
+  },
+  "对象": {
+    "gloss": "target; object; partner (boyfriend or girlfriend)",
+    "indonesian": "sasaran; objek; pasangan (pacar)"
+  },
+  "兑换": {
+    "gloss": "to exchange (currency); to convert",
+    "indonesian": "menukar (uang); menukarkan"
+  },
+  "蹲": {
+    "gloss": "to squat; to crouch",
+    "indonesian": "jongkok; berjongkok"
+  },
+  "多余": {
+    "gloss": "unnecessary; superfluous; surplus",
+    "indonesian": "tidak perlu; berlebihan; sisa"
+  },
+  "躲藏": {
+    "gloss": "to hide",
+    "indonesian": "bersembunyi"
+  },
+  "恶劣": {
+    "gloss": "very bad; harsh (weather, conditions); vile",
+    "indonesian": "sangat buruk; parah (cuaca, kondisi); keji"
+  },
+  "耳环": {
+    "gloss": "earring",
+    "indonesian": "anting-anting"
+  },
+  "发愁": {
+    "gloss": "to worry; to be anxious",
+    "indonesian": "cemas; khawatir; pusing memikirkan"
+  },
+  "发抖": {
+    "gloss": "to tremble; to shiver; to shake",
+    "indonesian": "gemetar; menggigil"
+  },
+  "发明": {
+    "gloss": "to invent; invention",
+    "indonesian": "menemukan; penemuan"
+  },
+  "翻": {
+    "gloss": "to turn over; to flip through (pages); to translate",
+    "indonesian": "membalik; membuka (halaman); menerjemahkan"
+  },
+  "反复": {
+    "gloss": "repeatedly; over and over; to keep changing",
+    "indonesian": "berulang-ulang; berkali-kali; berubah-ubah"
+  },
+  "反映": {
+    "gloss": "to reflect; to report (a problem); to make known",
+    "indonesian": "mencerminkan; melaporkan (masalah)"
+  },
+  "方": {
+    "gloss": "square; direction, side; method",
+    "indonesian": "persegi, kotak; arah, pihak; cara"
+  },
+  "仿佛": {
+    "gloss": "as if; to seem; to be like",
+    "indonesian": "seolah-olah; seakan-akan"
+  },
+  "非": {
+    "gloss": "not, non-; must (in 非…不可); wrong",
+    "indonesian": "tidak, bukan; harus (非…不可)"
+  },
+  "废话": {
+    "gloss": "nonsense; rubbish; superfluous words",
+    "indonesian": "omong kosong"
+  },
+  "分别": {
+    "gloss": "to part (from sb); separately; to tell apart",
+    "indonesian": "berpisah; masing-masing; membedakan"
+  },
+  "分配": {
+    "gloss": "to distribute; to assign; to allocate",
+    "indonesian": "membagikan; menugaskan; mengalokasikan"
+  },
+  "分析": {
+    "gloss": "to analyze; analysis",
+    "indonesian": "menganalisis; analisis"
+  },
+  "纷纷": {
+    "gloss": "one after another; in succession; one by one",
+    "indonesian": "satu per satu; berbondong-bondong"
+  },
+  "奋斗": {
+    "gloss": "to strive; to struggle (toward a goal)",
+    "indonesian": "berjuang; perjuangan"
+  },
+  "风格": {
+    "gloss": "style",
+    "indonesian": "gaya"
+  },
+  "风俗": {
+    "gloss": "custom; social custom",
+    "indonesian": "adat istiadat"
+  },
+  "疯狂": {
+    "gloss": "crazy; wild; frenzied",
+    "indonesian": "gila; menggila"
+  },
+  "否定": {
+    "gloss": "to reject; to deny; negative",
+    "indonesian": "menolak; menyangkal; negatif"
+  },
+  "幅": {
+    "gloss": "measure word for paintings, pictures, cloth",
+    "indonesian": "kata satuan untuk lukisan, gambar, kain"
+  },
+  "服装": {
+    "gloss": "clothing; costume; garments",
+    "indonesian": "pakaian; busana"
+  },
+  "辅导": {
+    "gloss": "to tutor; to coach; to give guidance",
+    "indonesian": "membimbing; memberi les"
+  },
+  "妇女": {
+    "gloss": "woman; women",
+    "indonesian": "wanita; kaum perempuan"
+  },
+  "改革": {
+    "gloss": "to reform; reform",
+    "indonesian": "mereformasi; reformasi"
+  },
+  "改善": {
+    "gloss": "to improve; improvement",
+    "indonesian": "memperbaiki; meningkatkan; perbaikan"
+  },
+  "盖": {
+    "gloss": "to cover; lid; to build (a house)",
+    "indonesian": "menutup(i); tutup; membangun"
+  },
+  "概念": {
+    "gloss": "concept; idea",
+    "indonesian": "konsep; gagasan"
+  },
+  "干脆": {
+    "gloss": "simply; might as well; straightforward",
+    "indonesian": "sekalian saja; langsung saja; terus terang"
+  },
+  "干燥": {
+    "gloss": "dry; arid",
+    "indonesian": "kering"
+  },
+  "感激": {
+    "gloss": "grateful; to appreciate; thankful",
+    "indonesian": "berterima kasih; bersyukur"
+  },
+  "感受": {
+    "gloss": "to feel, experience; feeling, impression",
+    "indonesian": "merasakan; perasaan; kesan"
+  },
+  "赶紧": {
+    "gloss": "quickly; hurriedly; without delay",
+    "indonesian": "cepat-cepat; segera"
+  },
+  "钢铁": {
+    "gloss": "steel",
+    "indonesian": "baja"
+  },
+  "高档": {
+    "gloss": "superior quality; high grade; top grade",
+    "indonesian": "kelas atas; mewah"
+  },
+  "搞": {
+    "gloss": "to do; to work on; to get (sth) done",
+    "indonesian": "mengerjakan; melakukan; membuat"
+  },
+  "格外": {
+    "gloss": "especially; exceptionally; unusually",
+    "indonesian": "sangat; luar biasa; lebih dari biasanya"
+  },
+  "个别": {
+    "gloss": "a very few; individual; isolated (cases)",
+    "indonesian": "segelintir; beberapa saja; individual"
+  },
+  "个性": {
+    "gloss": "personality; individuality",
+    "indonesian": "kepribadian; ciri khas"
+  },
+  "根": {
+    "gloss": "measure word for long thin things; root",
+    "indonesian": "kata satuan untuk benda panjang tipis; akar"
+  },
+  "公布": {
+    "gloss": "to announce; to make public",
+    "indonesian": "mengumumkan"
+  },
+  "公元": {
+    "gloss": "AD; CE (Common Era)",
+    "indonesian": "Masehi"
+  },
+  "公主": {
+    "gloss": "princess",
+    "indonesian": "putri raja"
+  },
+  "工程师": {
+    "gloss": "engineer",
+    "indonesian": "insinyur"
+  },
+  "工人": {
+    "gloss": "worker; laborer",
+    "indonesian": "pekerja; buruh"
+  },
+  "恭喜": {
+    "gloss": "congratulations!; to congratulate",
+    "indonesian": "selamat!; memberi selamat"
+  },
+  "贡献": {
+    "gloss": "contribution; to contribute; to devote",
+    "indonesian": "kontribusi; menyumbangkan; mengabdikan"
+  },
+  "构成": {
+    "gloss": "to make up; to form; to constitute",
+    "indonesian": "membentuk; menyusun"
+  },
+  "姑姑": {
+    "gloss": "aunt (father's sister)",
+    "indonesian": "bibi (saudara perempuan ayah)"
+  },
+  "古典": {
+    "gloss": "classical",
+    "indonesian": "klasik"
+  },
+  "鼓舞": {
+    "gloss": "to inspire; to encourage; to boost morale",
+    "indonesian": "memberi semangat; menginspirasi"
+  },
+  "股票": {
+    "gloss": "stock; shares",
+    "indonesian": "saham"
+  },
+  "固定": {
+    "gloss": "fixed; regular; to fix (in place)",
+    "indonesian": "tetap; memasang dengan kuat"
+  },
+  "挂号": {
+    "gloss": "to register (at a hospital); to send by registered mail",
+    "indonesian": "mendaftar (di rumah sakit); mengirim surat tercatat"
+  },
+  "拐弯": {
+    "gloss": "to turn (a corner); to make a turn",
+    "indonesian": "belok; berbelok"
+  },
+  "官": {
+    "gloss": "government official; officer",
+    "indonesian": "pejabat"
+  },
+  "关闭": {
+    "gloss": "to close; to shut down; to switch off",
+    "indonesian": "menutup; mematikan"
+  },
+  "观点": {
+    "gloss": "point of view; viewpoint",
+    "indonesian": "sudut pandang; pendapat"
+  },
+  "管子": {
+    "gloss": "tube; pipe",
+    "indonesian": "pipa; selang"
+  },
+  "光临": {
+    "gloss": "to honour with one's presence; to visit (polite)",
+    "indonesian": "berkenan hadir; berkunjung (sopan)"
+  },
+  "光盘": {
+    "gloss": "CD; disc; DVD",
+    "indonesian": "CD; cakram"
+  },
+  "广场": {
+    "gloss": "public square; plaza",
+    "indonesian": "alun-alun; plaza"
+  },
+  "广泛": {
+    "gloss": "extensive; wide-ranging; widespread",
+    "indonesian": "luas; meluas"
+  },
+  "规矩": {
+    "gloss": "rules; customs; well-behaved",
+    "indonesian": "aturan; tata krama; sopan"
+  },
+  "规模": {
+    "gloss": "scale; scope; size",
+    "indonesian": "skala; ukuran"
+  },
+  "归纳": {
+    "gloss": "to sum up; to summarize; to conclude",
+    "indonesian": "merangkum; menyimpulkan"
+  },
+  "柜台": {
+    "gloss": "counter; front desk",
+    "indonesian": "konter; meja layanan"
+  },
+  "锅": {
+    "gloss": "pot; pan; wok",
+    "indonesian": "panci; wajan"
+  },
+  "国王": {
+    "gloss": "king",
+    "indonesian": "raja"
+  },
+  "果然": {
+    "gloss": "sure enough; as expected",
+    "indonesian": "benar saja; sesuai dugaan"
+  },
+  "过分": {
+    "gloss": "excessive; going too far; overly",
+    "indonesian": "keterlaluan; berlebihan"
+  },
+  "过期": {
+    "gloss": "to expire; to be overdue",
+    "indonesian": "kedaluwarsa; lewat batas waktu"
+  },
+  "哈": {
+    "gloss": "ha (sound of laughter); aha",
+    "indonesian": "ha (suara tertawa); aha"
+  },
+  "海关": {
+    "gloss": "customs (at a border)",
+    "indonesian": "bea cukai"
+  },
+  "喊": {
+    "gloss": "to shout; to yell; to call (sb)",
+    "indonesian": "berteriak; memanggil"
+  },
+  "行业": {
+    "gloss": "industry; profession; line of business",
+    "indonesian": "bidang usaha; industri; profesi"
+  },
+  "好客": {
+    "gloss": "hospitable; to enjoy having guests",
+    "indonesian": "ramah kepada tamu; suka menjamu tamu"
+  },
+  "和平": {
+    "gloss": "peace; peaceful",
+    "indonesian": "perdamaian; damai"
+  },
+  "何况": {
+    "gloss": "let alone; to say nothing of; besides",
+    "indonesian": "apalagi; terlebih lagi"
+  },
+  "合影": {
+    "gloss": "to take a photo together; group photo",
+    "indonesian": "berfoto bersama; foto bersama"
+  },
+  "核心": {
+    "gloss": "core; nucleus; key",
+    "indonesian": "inti; pusat"
+  },
+  "后果": {
+    "gloss": "consequences; aftermath",
+    "indonesian": "akibat; konsekuensi"
+  },
+  "忽然": {
+    "gloss": "suddenly; all of a sudden",
+    "indonesian": "tiba-tiba"
+  },
+  "呼吸": {
+    "gloss": "to breathe; breathing",
+    "indonesian": "bernapas; pernapasan"
+  },
+  "蝴蝶": {
+    "gloss": "butterfly",
+    "indonesian": "kupu-kupu"
+  },
+  "胡同": {
+    "gloss": "alley; lane (hutong)",
+    "indonesian": "gang"
+  },
+  "华裔": {
+    "gloss": "person of Chinese descent; ethnic Chinese",
+    "indonesian": "keturunan Tionghoa"
+  },
+  "滑": {
+    "gloss": "slippery; smooth; to slide; to slip",
+    "indonesian": "licin; meluncur; tergelincir"
+  },
+  "化学": {
+    "gloss": "chemistry; chemical",
+    "indonesian": "kimia"
+  },
+  "缓解": {
+    "gloss": "to relieve; to ease; to alleviate",
+    "indonesian": "meringankan; meredakan"
+  },
+  "幻想": {
+    "gloss": "to fantasize; fantasy; illusion",
+    "indonesian": "berkhayal; fantasi; khayalan"
+  },
+  "挥": {
+    "gloss": "to wave; to brandish; to command",
+    "indonesian": "melambaikan; mengayunkan"
+  },
+  "灰尘": {
+    "gloss": "dust",
+    "indonesian": "debu"
+  },
+  "恢复": {
+    "gloss": "to recover; to restore; to resume",
+    "indonesian": "pulih; memulihkan"
+  },
+  "汇率": {
+    "gloss": "exchange rate",
+    "indonesian": "nilai tukar mata uang"
+  },
+  "婚姻": {
+    "gloss": "marriage; matrimony",
+    "indonesian": "pernikahan; perkawinan"
+  },
+  "火柴": {
+    "gloss": "match (for lighting a fire)",
+    "indonesian": "korek api"
+  },
+  "激烈": {
+    "gloss": "intense; fierce; heated",
+    "indonesian": "sengit; ketat; seru"
+  },
+  "肌肉": {
+    "gloss": "muscle",
+    "indonesian": "otot"
+  },
+  "极其": {
+    "gloss": "extremely",
+    "indonesian": "sangat; amat; luar biasa"
+  },
+  "集体": {
+    "gloss": "collective; group; team",
+    "indonesian": "kolektif; kelompok; bersama-sama"
+  },
+  "急忙": {
+    "gloss": "hastily; in a hurry",
+    "indonesian": "buru-buru; tergesa-gesa"
+  },
+  "记录": {
+    "gloss": "to record, take notes; record (written)",
+    "indonesian": "mencatat; catatan"
+  },
+  "计算": {
+    "gloss": "to calculate; to count; to compute",
+    "indonesian": "menghitung"
+  },
+  "系领带": {
+    "gloss": "to tie a tie; to wear a tie",
+    "indonesian": "memakai dasi"
+  },
+  "纪律": {
+    "gloss": "discipline",
+    "indonesian": "disiplin; tata tertib"
+  },
+  "寂寞": {
+    "gloss": "lonely; lonesome",
+    "indonesian": "kesepian"
+  },
+  "家庭": {
+    "gloss": "family; household",
+    "indonesian": "keluarga; rumah tangga"
+  },
+  "家乡": {
+    "gloss": "hometown; native place",
+    "indonesian": "kampung halaman"
+  },
+  "夹子": {
+    "gloss": "clip; clamp; folder",
+    "indonesian": "jepitan; penjepit"
+  },
+  "假设": {
+    "gloss": "to suppose; supposing that; hypothesis",
+    "indonesian": "misalkan; mengandaikan; hipotesis"
+  },
+  "嫁": {
+    "gloss": "(of a woman) to marry; to marry off (a daughter)",
+    "indonesian": "menikah (bagi wanita); menikahkan putri"
+  },
+  "价值": {
+    "gloss": "value; worth",
+    "indonesian": "nilai"
+  },
+  "肩膀": {
+    "gloss": "shoulder",
+    "indonesian": "bahu"
+  },
+  "坚决": {
+    "gloss": "firm; resolute; determined",
+    "indonesian": "tegas; teguh; bersikeras"
+  },
+  "艰巨": {
+    "gloss": "arduous; formidable; very difficult",
+    "indonesian": "berat; sangat sulit"
+  },
+  "兼职": {
+    "gloss": "part-time job; side job; to hold a second job",
+    "indonesian": "kerja paruh waktu; kerja sampingan"
+  },
+  "简历": {
+    "gloss": "résumé; CV",
+    "indonesian": "CV; riwayat hidup"
+  },
+  "剪刀": {
+    "gloss": "scissors",
+    "indonesian": "gunting"
+  },
+  "建立": {
+    "gloss": "to establish; to set up; to build (ties)",
+    "indonesian": "membangun; mendirikan; menjalin"
+  },
+  "讲究": {
+    "gloss": "to be particular about; exquisite; tasteful",
+    "indonesian": "mementingkan; cermat; berkelas"
+  },
+  "交际": {
+    "gloss": "to socialize; social interaction",
+    "indonesian": "bergaul; bersosialisasi"
+  },
+  "胶水": {
+    "gloss": "glue",
+    "indonesian": "lem"
+  },
+  "狡猾": {
+    "gloss": "cunning; sly; crafty",
+    "indonesian": "licik"
+  },
+  "教练": {
+    "gloss": "coach; instructor; trainer",
+    "indonesian": "pelatih"
+  },
+  "接触": {
+    "gloss": "to come into contact with; to touch; contact",
+    "indonesian": "bersentuhan; berhubungan; kontak"
+  },
+  "接近": {
+    "gloss": "to approach; to get close to; close to",
+    "indonesian": "mendekati; dekat dengan"
+  },
+  "阶段": {
+    "gloss": "stage; phase; period",
+    "indonesian": "tahap; fase"
+  },
+  "戒指": {
+    "gloss": "ring (for a finger)",
+    "indonesian": "cincin"
+  },
+  "金属": {
+    "gloss": "metal",
+    "indonesian": "logam"
+  },
+  "进口": {
+    "gloss": "to import; imported; entrance",
+    "indonesian": "mengimpor; impor; pintu masuk"
+  },
+  "尽力": {
+    "gloss": "to do one's best; to try one's hardest",
+    "indonesian": "berusaha sekuat tenaga; berusaha sebaik mungkin"
+  },
+  "精力": {
+    "gloss": "energy; vigor",
+    "indonesian": "tenaga; energi; semangat"
+  },
+  "经商": {
+    "gloss": "to do business; to be in trade",
+    "indonesian": "berbisnis; berdagang"
+  },
+  "经营": {
+    "gloss": "to run (a business); to manage; to operate",
+    "indonesian": "menjalankan (usaha); mengelola"
+  },
+  "酒吧": {
+    "gloss": "bar; pub",
+    "indonesian": "bar"
+  },
+  "救护车": {
+    "gloss": "ambulance",
+    "indonesian": "ambulans"
+  },
+  "居然": {
+    "gloss": "unexpectedly; to one's surprise",
+    "indonesian": "di luar dugaan; ternyata"
+  },
+  "具体": {
+    "gloss": "specific; concrete; detailed",
+    "indonesian": "konkret; spesifik; terperinci"
+  },
+  "俱乐部": {
+    "gloss": "club",
+    "indonesian": "klub"
+  },
+  "据说": {
+    "gloss": "it is said that; reportedly",
+    "indonesian": "katanya; konon"
+  },
+  "捐": {
+    "gloss": "to donate; to contribute",
+    "indonesian": "menyumbang; mendonasikan"
+  },
+  "决心": {
+    "gloss": "determination; to make up one's mind",
+    "indonesian": "tekad; bertekad"
+  },
+  "角色": {
+    "gloss": "role; character (in a play, film)",
+    "indonesian": "peran; tokoh"
+  },
+  "均匀": {
+    "gloss": "even; evenly distributed",
+    "indonesian": "merata; rata"
+  },
+  "卡车": {
+    "gloss": "truck; lorry",
+    "indonesian": "truk"
+  },
+  "开发": {
+    "gloss": "to develop; to open up (land, resources)",
+    "indonesian": "mengembangkan; membuka (lahan, sumber daya)"
+  },
+  "开幕式": {
+    "gloss": "opening ceremony",
+    "indonesian": "upacara pembukaan"
+  },
+  "看望": {
+    "gloss": "to visit; to call on (someone)",
+    "indonesian": "menjenguk; mengunjungi"
+  },
+  "靠": {
+    "gloss": "to depend on; to lean against; to be near",
+    "indonesian": "bergantung pada; bersandar; dekat"
+  },
+  "颗": {
+    "gloss": "measure word for small round things (stars, teeth)",
+    "indonesian": "kata satuan untuk benda kecil bulat (bintang, gigi)"
+  },
+  "可靠": {
+    "gloss": "reliable; dependable",
+    "indonesian": "dapat diandalkan"
+  },
+  "课程": {
+    "gloss": "course; curriculum; classes",
+    "indonesian": "mata kuliah; kurikulum; pelajaran"
+  },
+  "克服": {
+    "gloss": "to overcome; to conquer; to put up with",
+    "indonesian": "mengatasi; menahan"
+  },
+  "刻苦": {
+    "gloss": "hardworking; assiduous",
+    "indonesian": "tekun; bekerja keras"
+  },
+  "空间": {
+    "gloss": "space; room",
+    "indonesian": "ruang; ruangan"
+  },
+  "空闲": {
+    "gloss": "free time; idle; free",
+    "indonesian": "waktu luang; senggang"
+  },
+  "夸张": {
+    "gloss": "exaggerated; to exaggerate",
+    "indonesian": "berlebihan; melebih-lebihkan"
+  },
+  "会计": {
+    "gloss": "accountant; accounting",
+    "indonesian": "akuntan; akuntansi"
+  },
+  "宽": {
+    "gloss": "wide; broad; loose",
+    "indonesian": "lebar; luas; longgar"
+  },
+  "昆虫": {
+    "gloss": "insect",
+    "indonesian": "serangga"
+  },
+  "拦": {
+    "gloss": "to block; to stop; to flag down (a taxi)",
+    "indonesian": "menghadang; menghentikan; mencegat (taksi)"
+  },
+  "朗读": {
+    "gloss": "to read aloud",
+    "indonesian": "membaca dengan suara keras"
+  },
+  "劳驾": {
+    "gloss": "excuse me; may I trouble you",
+    "indonesian": "permisi; numpang tanya"
+  },
+  "老百姓": {
+    "gloss": "ordinary people; the common people",
+    "indonesian": "rakyat biasa"
+  },
+  "老实": {
+    "gloss": "honest; well-behaved; naive",
+    "indonesian": "jujur; patuh; lugu"
+  },
+  "老婆": {
+    "gloss": "wife (informal)",
+    "indonesian": "istri"
+  },
+  "乐观": {
+    "gloss": "optimistic",
+    "indonesian": "optimis"
+  },
+  "雷": {
+    "gloss": "thunder; mine (explosive)",
+    "indonesian": "guntur, petir; ranjau"
+  },
+  "类型": {
+    "gloss": "type; kind; category",
+    "indonesian": "tipe; jenis; kategori"
+  },
+  "冷淡": {
+    "gloss": "cold; indifferent; unfriendly",
+    "indonesian": "dingin; acuh tak acuh"
+  },
+  "梨": {
+    "gloss": "pear",
+    "indonesian": "buah pir"
+  },
+  "离婚": {
+    "gloss": "to divorce",
+    "indonesian": "bercerai"
+  },
+  "厘米": {
+    "gloss": "centimeter",
+    "indonesian": "sentimeter"
+  },
+  "立即": {
+    "gloss": "immediately; at once",
+    "indonesian": "segera; langsung"
+  },
+  "利润": {
+    "gloss": "profit",
+    "indonesian": "laba; keuntungan"
+  },
+  "利益": {
+    "gloss": "interest; benefit",
+    "indonesian": "kepentingan; keuntungan"
+  },
+  "连续": {
+    "gloss": "in a row; continuous; consecutive",
+    "indonesian": "berturut-turut; terus-menerus"
+  },
+  "恋爱": {
+    "gloss": "romantic love; to be in love; to date",
+    "indonesian": "percintaan; berpacaran; jatuh cinta"
+  },
+  "良好": {
+    "gloss": "good; fine; favorable",
+    "indonesian": "baik; bagus"
+  },
+  "粮食": {
+    "gloss": "grain; food (staple crops)",
+    "indonesian": "bahan pangan; biji-bijian"
+  },
+  "亮": {
+    "gloss": "bright; light; to shine",
+    "indonesian": "terang; bersinar; menyala"
+  },
+  "铃": {
+    "gloss": "(small) bell",
+    "indonesian": "bel; lonceng"
+  },
+  "零件": {
+    "gloss": "part; component",
+    "indonesian": "suku cadang; komponen"
+  },
+  "零食": {
+    "gloss": "snacks",
+    "indonesian": "camilan; jajanan"
+  },
+  "领导": {
+    "gloss": "leader; to lead; leadership",
+    "indonesian": "pemimpin; atasan; memimpin"
+  },
+  "流泪": {
+    "gloss": "to shed tears; to cry",
+    "indonesian": "meneteskan air mata; menangis"
+  },
+  "陆续": {
+    "gloss": "one after another; in succession",
+    "indonesian": "satu per satu; berturut-turut"
+  },
+  "录音": {
+    "gloss": "(sound) recording; to record (sound)",
+    "indonesian": "rekaman suara; merekam suara"
+  },
+  "轮流": {
+    "gloss": "to take turns",
+    "indonesian": "bergiliran; bergantian"
+  },
+  "逻辑": {
+    "gloss": "logic",
+    "indonesian": "logika"
+  },
+  "馒头": {
+    "gloss": "steamed bun (plain)",
+    "indonesian": "mantou; roti kukus"
+  },
+  "毛病": {
+    "gloss": "problem; fault; bad habit",
+    "indonesian": "masalah; kerusakan; kebiasaan buruk"
+  },
+  "矛盾": {
+    "gloss": "contradiction; contradictory; conflicted",
+    "indonesian": "kontradiksi; bertentangan; bimbang"
+  },
+  "贸易": {
+    "gloss": "trade; commerce",
+    "indonesian": "perdagangan"
+  },
+  "媒体": {
+    "gloss": "media; the news media",
+    "indonesian": "media; media massa"
+  },
+  "煤炭": {
+    "gloss": "coal",
+    "indonesian": "batu bara"
+  },
+  "魅力": {
+    "gloss": "charm; appeal; charisma",
+    "indonesian": "daya tarik; pesona"
+  },
+  "梦想": {
+    "gloss": "dream; to dream of",
+    "indonesian": "impian; cita-cita; memimpikan"
+  },
+  "蜜蜂": {
+    "gloss": "bee; honeybee",
+    "indonesian": "lebah"
+  },
+  "密切": {
+    "gloss": "close; intimate; closely",
+    "indonesian": "erat; dekat; akrab"
+  },
+  "秘书": {
+    "gloss": "secretary",
+    "indonesian": "sekretaris"
+  },
+  "面积": {
+    "gloss": "area (size of a surface); floor space",
+    "indonesian": "luas (area)"
+  },
+  "描写": {
+    "gloss": "to describe; to depict; to portray",
+    "indonesian": "menggambarkan; mendeskripsikan"
+  },
+  "敏感": {
+    "gloss": "sensitive; susceptible",
+    "indonesian": "sensitif; peka"
+  },
+  "明星": {
+    "gloss": "star; celebrity",
+    "indonesian": "bintang; selebriti; artis"
+  },
+  "名片": {
+    "gloss": "business card",
+    "indonesian": "kartu nama"
+  },
+  "命运": {
+    "gloss": "fate; destiny",
+    "indonesian": "takdir; nasib"
+  },
+  "模仿": {
+    "gloss": "to imitate; to copy; to mimic",
+    "indonesian": "meniru; menirukan"
+  },
+  "模特": {
+    "gloss": "(fashion) model",
+    "indonesian": "model (peragawati)"
+  },
+  "陌生": {
+    "gloss": "unfamiliar; strange",
+    "indonesian": "asing; tidak dikenal"
+  },
+  "目前": {
+    "gloss": "at present; currently",
+    "indonesian": "saat ini; sekarang"
+  },
+  "难怪": {
+    "gloss": "no wonder",
+    "indonesian": "pantas saja; tidak heran"
+  },
+  "内部": {
+    "gloss": "inside; internal; interior",
+    "indonesian": "bagian dalam; internal"
+  },
+  "嗯": {
+    "gloss": "uh-huh; yes (agreement); huh? (asking)",
+    "indonesian": "hmm; iya (setuju); hah? (bertanya)"
+  },
+  "念": {
+    "gloss": "to read aloud; to study (at a school); to miss (sb)",
+    "indonesian": "membaca (keras-keras); bersekolah; merindukan"
+  },
+  "浓": {
+    "gloss": "strong; thick; dense",
+    "indonesian": "kental; pekat; tebal"
+  },
+  "农民": {
+    "gloss": "farmer; peasant",
+    "indonesian": "petani"
+  },
+  "欧洲": {
+    "gloss": "Europe",
+    "indonesian": "Eropa"
+  },
+  "偶然": {
+    "gloss": "by chance; accidental; occasional",
+    "indonesian": "kebetulan; tidak disengaja"
+  },
+  "拍": {
+    "gloss": "to pat, clap; to take (a photo); to film",
+    "indonesian": "menepuk; memotret; merekam (film)"
+  },
+  "盼望": {
+    "gloss": "to look forward to; to long for",
+    "indonesian": "menantikan; mendambakan"
+  },
+  "培训": {
+    "gloss": "to train; training",
+    "indonesian": "melatih; pelatihan"
+  },
+  "佩服": {
+    "gloss": "to admire",
+    "indonesian": "kagum; mengagumi"
+  },
+  "盆": {
+    "gloss": "basin; tub; pot (for plants)",
+    "indonesian": "baskom; bak; pot (tanaman)"
+  },
+  "碰": {
+    "gloss": "to touch; to bump into; to run into (sb)",
+    "indonesian": "menyentuh; membentur; kebetulan bertemu"
+  },
+  "批": {
+    "gloss": "batch; measure word for groups; to criticize",
+    "indonesian": "kelompok; angkatan; mengkritik"
+  },
+  "批准": {
+    "gloss": "to approve; to ratify",
+    "indonesian": "menyetujui; mengesahkan"
+  },
+  "疲劳": {
+    "gloss": "tired; fatigued; fatigue",
+    "indonesian": "lelah; kelelahan"
+  },
+  "匹": {
+    "gloss": "measure word for horses; measure word for bolts of cloth",
+    "indonesian": "kata satuan untuk kuda; kata satuan untuk gulungan kain"
+  },
+  "片": {
+    "gloss": "measure word for slices, flat pieces; slice; film",
+    "indonesian": "kata satuan untuk lembaran, irisan; irisan; film"
+  },
+  "飘": {
+    "gloss": "to float (in the air); to flutter",
+    "indonesian": "melayang; berkibar"
+  },
+  "频道": {
+    "gloss": "(TV) channel",
+    "indonesian": "saluran (TV); kanal"
+  },
+  "凭": {
+    "gloss": "to rely on; based on; by virtue of",
+    "indonesian": "mengandalkan; berdasarkan"
+  },
+  "平安": {
+    "gloss": "safe and sound; peaceful",
+    "indonesian": "selamat; aman; tenteram"
+  },
+  "平等": {
+    "gloss": "equal; equality",
+    "indonesian": "setara; kesetaraan"
+  },
+  "平衡": {
+    "gloss": "balance; balanced; to balance",
+    "indonesian": "keseimbangan; seimbang; menyeimbangkan"
+  },
+  "平均": {
+    "gloss": "average; on average; evenly",
+    "indonesian": "rata-rata; merata"
+  },
+  "破产": {
+    "gloss": "to go bankrupt; bankruptcy",
+    "indonesian": "bangkrut; kebangkrutan"
+  },
+  "迫切": {
+    "gloss": "urgent; pressing; eager",
+    "indonesian": "mendesak; sangat ingin"
+  },
+  "期间": {
+    "gloss": "period; during (a time)",
+    "indonesian": "selama; periode; masa"
+  },
+  "其余": {
+    "gloss": "the rest; the others; remaining",
+    "indonesian": "sisanya; yang lain"
+  },
+  "企业": {
+    "gloss": "enterprise; company; business",
+    "indonesian": "perusahaan"
+  },
+  "前途": {
+    "gloss": "prospects; future",
+    "indonesian": "masa depan; prospek"
+  },
+  "欠": {
+    "gloss": "to owe; to lack",
+    "indonesian": "berutang; kurang"
+  },
+  "墙": {
+    "gloss": "wall",
+    "indonesian": "tembok; dinding"
+  },
+  "强烈": {
+    "gloss": "strong; intense; strongly",
+    "indonesian": "kuat; hebat; keras"
+  },
+  "切": {
+    "gloss": "to cut; to slice; to chop",
+    "indonesian": "memotong; mengiris"
+  },
+  "亲自": {
+    "gloss": "personally; in person",
+    "indonesian": "secara pribadi; sendiri"
+  },
+  "青": {
+    "gloss": "green; blue; young",
+    "indonesian": "hijau; biru; muda"
+  },
+  "青少年": {
+    "gloss": "teenager; adolescent; youth",
+    "indonesian": "remaja; muda-mudi"
+  },
+  "轻易": {
+    "gloss": "easily; lightly; rashly",
+    "indonesian": "dengan mudah; sembarangan"
+  },
+  "清淡": {
+    "gloss": "light (not greasy or salty); mild; bland",
+    "indonesian": "tidak berminyak; ringan (rasa); hambar"
+  },
+  "情景": {
+    "gloss": "scene; situation; circumstances",
+    "indonesian": "situasi; keadaan; pemandangan"
+  },
+  "情绪": {
+    "gloss": "mood; emotions; state of mind",
+    "indonesian": "suasana hati; emosi"
+  },
+  "庆祝": {
+    "gloss": "to celebrate",
+    "indonesian": "merayakan"
+  },
+  "娶": {
+    "gloss": "to marry (a woman); to take a wife",
+    "indonesian": "menikahi (perempuan); memperistri"
+  },
+  "取消": {
+    "gloss": "to cancel; to call off",
+    "indonesian": "membatalkan"
+  },
+  "圈": {
+    "gloss": "circle, ring; lap (measure word); to circle",
+    "indonesian": "lingkaran; putaran (kata satuan); melingkari"
+  },
+  "全面": {
+    "gloss": "comprehensive; all-round; overall",
+    "indonesian": "menyeluruh; komprehensif"
+  },
+  "权利": {
+    "gloss": "right (e.g. human rights); entitlement",
+    "indonesian": "hak"
+  },
+  "确定": {
+    "gloss": "to determine, fix; to be sure; definite",
+    "indonesian": "menentukan; memastikan; pasti"
+  },
+  "热烈": {
+    "gloss": "warm; enthusiastic; lively",
+    "indonesian": "hangat dan meriah; antusias"
+  },
+  "人口": {
+    "gloss": "population",
+    "indonesian": "jumlah penduduk; populasi"
+  },
+  "人民币": {
+    "gloss": "renminbi (RMB), Chinese currency",
+    "indonesian": "renminbi (RMB), mata uang Tiongkok"
+  },
+  "人事": {
+    "gloss": "personnel; human resources; human affairs",
+    "indonesian": "personalia; SDM"
+  },
+  "人员": {
+    "gloss": "staff; personnel",
+    "indonesian": "staf; personel"
+  },
+  "日常": {
+    "gloss": "daily; everyday; day-to-day",
+    "indonesian": "sehari-hari"
+  },
+  "日期": {
+    "gloss": "date",
+    "indonesian": "tanggal"
+  },
+  "日子": {
+    "gloss": "day; date; life (way of living)",
+    "indonesian": "hari; tanggal; kehidupan"
+  },
+  "如今": {
+    "gloss": "nowadays; now",
+    "indonesian": "sekarang; dewasa ini"
+  },
+  "软": {
+    "gloss": "soft; weak",
+    "indonesian": "lunak; empuk; lemah"
+  },
+  "弱": {
+    "gloss": "weak; feeble",
+    "indonesian": "lemah"
+  },
+  "色彩": {
+    "gloss": "color; coloring; flavor, character",
+    "indonesian": "warna; corak; nuansa"
+  },
+  "杀": {
+    "gloss": "to kill; to murder",
+    "indonesian": "membunuh"
+  },
+  "沙漠": {
+    "gloss": "desert",
+    "indonesian": "gurun pasir"
+  },
+  "傻": {
+    "gloss": "foolish; stupid; naive",
+    "indonesian": "bodoh; konyol"
+  },
+  "删除": {
+    "gloss": "to delete; to remove",
+    "indonesian": "menghapus"
+  },
+  "善良": {
+    "gloss": "kind-hearted; good and honest",
+    "indonesian": "baik hati"
+  },
+  "扇子": {
+    "gloss": "fan",
+    "indonesian": "kipas"
+  },
+  "商业": {
+    "gloss": "commerce; business; trade",
+    "indonesian": "bisnis; perdagangan; komersial"
+  },
+  "上当": {
+    "gloss": "to be fooled; to be taken in",
+    "indonesian": "tertipu; terkecoh"
+  },
+  "蛇": {
+    "gloss": "snake",
+    "indonesian": "ular"
+  },
+  "设备": {
+    "gloss": "equipment; facilities; device",
+    "indonesian": "peralatan; perlengkapan"
+  },
+  "设施": {
+    "gloss": "facilities",
+    "indonesian": "fasilitas"
+  },
+  "射击": {
+    "gloss": "to shoot; to fire (a gun); shooting",
+    "indonesian": "menembak; menembakkan"
+  },
+  "身材": {
+    "gloss": "figure; build; stature",
+    "indonesian": "bentuk tubuh; postur"
+  },
+  "神话": {
+    "gloss": "myth; mythology; fairy tale",
+    "indonesian": "mitos; mitologi; dongeng"
+  },
+  "升": {
+    "gloss": "to rise; to go up; liter",
+    "indonesian": "naik; terbit; liter"
+  },
+  "生产": {
+    "gloss": "to produce; to manufacture; to give birth",
+    "indonesian": "memproduksi; menghasilkan; melahirkan"
+  },
+  "声调": {
+    "gloss": "tone (of a Chinese syllable); tone of voice",
+    "indonesian": "nada; nada suara"
+  },
+  "绳子": {
+    "gloss": "cord; string; rope",
+    "indonesian": "tali"
+  },
+  "省略": {
+    "gloss": "to omit; to leave out",
+    "indonesian": "menghilangkan; melewatkan"
+  },
+  "胜利": {
+    "gloss": "victory; to win",
+    "indonesian": "kemenangan; menang"
+  },
+  "失去": {
+    "gloss": "to lose",
+    "indonesian": "kehilangan"
+  },
+  "失业": {
+    "gloss": "to lose one's job; unemployment",
+    "indonesian": "kehilangan pekerjaan; menganggur"
+  },
+  "湿润": {
+    "gloss": "moist; humid",
+    "indonesian": "lembap"
+  },
+  "时差": {
+    "gloss": "time difference; jet lag",
+    "indonesian": "perbedaan waktu; jet lag"
+  },
+  "时刻": {
+    "gloss": "moment; time; constantly",
+    "indonesian": "saat; momen; setiap saat"
+  },
+  "时期": {
+    "gloss": "period; phase; era",
+    "indonesian": "masa; periode"
+  },
+  "实话": {
+    "gloss": "the truth; honest words",
+    "indonesian": "omongan jujur; kebenaran"
+  },
+  "实践": {
+    "gloss": "practice; to put into practice",
+    "indonesian": "praktik; mempraktikkan"
+  },
+  "实现": {
+    "gloss": "to realize (a goal); to achieve; to come true",
+    "indonesian": "mewujudkan; mencapai; terwujud"
+  },
+  "实用": {
+    "gloss": "practical; functional; pragmatic",
+    "indonesian": "praktis; berguna"
+  },
+  "食物": {
+    "gloss": "food",
+    "indonesian": "makanan"
+  },
+  "士兵": {
+    "gloss": "soldier",
+    "indonesian": "prajurit; tentara"
+  },
+  "似的": {
+    "gloss": "as if; like; seems as if",
+    "indonesian": "seperti; seolah-olah"
+  },
+  "事实": {
+    "gloss": "fact",
+    "indonesian": "fakta; kenyataan"
+  },
+  "事先": {
+    "gloss": "in advance; beforehand",
+    "indonesian": "sebelumnya; terlebih dahulu"
+  },
+  "收获": {
+    "gloss": "gains; harvest; to reap",
+    "indonesian": "hasil yang didapat; panen; memetik hasil"
+  },
+  "手套": {
+    "gloss": "glove; mitten",
+    "indonesian": "sarung tangan"
+  },
+  "手指": {
+    "gloss": "finger",
+    "indonesian": "jari (tangan)"
+  },
+  "蔬菜": {
+    "gloss": "vegetables",
+    "indonesian": "sayuran"
+  },
+  "舒适": {
+    "gloss": "comfortable; cozy",
+    "indonesian": "nyaman"
+  },
+  "梳子": {
+    "gloss": "comb",
+    "indonesian": "sisir"
+  },
+  "属于": {
+    "gloss": "to belong to; to be part of",
+    "indonesian": "milik; termasuk"
+  },
+  "数": {
+    "gloss": "to count; to be counted as (the most)",
+    "indonesian": "menghitung; terhitung (paling)"
+  },
+  "甩": {
+    "gloss": "to fling; to swing; to dump (sb)",
+    "indonesian": "mengibaskan; melempar; mencampakkan"
+  },
+  "说不定": {
+    "gloss": "maybe; perhaps; can't say for sure",
+    "indonesian": "mungkin; belum tentu"
+  },
+  "撕": {
+    "gloss": "to tear",
+    "indonesian": "merobek"
+  },
+  "丝毫": {
+    "gloss": "the slightest bit; (not) at all",
+    "indonesian": "sedikit pun; sama sekali (tidak)"
+  },
+  "思考": {
+    "gloss": "to think deeply; to ponder; to reflect on",
+    "indonesian": "berpikir; merenungkan"
+  },
+  "私人": {
+    "gloss": "private; personal",
+    "indonesian": "pribadi; swasta"
+  },
+  "搜索": {
+    "gloss": "to search (for); to search online",
+    "indonesian": "mencari; menelusuri (online)"
+  },
+  "宿舍": {
+    "gloss": "dormitory; dorm room",
+    "indonesian": "asrama"
+  },
+  "随时": {
+    "gloss": "at any time; whenever necessary",
+    "indonesian": "kapan saja; sewaktu-waktu"
+  },
+  "随手": {
+    "gloss": "in passing; as one goes; without extra effort",
+    "indonesian": "sekalian; sambil lalu"
+  },
+  "缩短": {
+    "gloss": "to shorten; to cut down",
+    "indonesian": "memperpendek; mempersingkat"
+  },
+  "所": {
+    "gloss": "measure word for schools, buildings; that which",
+    "indonesian": "kata satuan untuk sekolah, gedung; yang"
+  },
+  "太太": {
+    "gloss": "wife; Mrs.; married woman",
+    "indonesian": "istri; Nyonya"
+  },
+  "谈判": {
+    "gloss": "to negotiate; negotiation; talks",
+    "indonesian": "bernegosiasi; negosiasi; perundingan"
+  },
+  "坦率": {
+    "gloss": "frank; candid; straightforward",
+    "indonesian": "terus terang"
+  },
+  "烫": {
+    "gloss": "scalding hot; to scald; to iron or perm",
+    "indonesian": "sangat panas; melepuh; menyetrika atau mengeriting"
+  },
+  "桃": {
+    "gloss": "peach",
+    "indonesian": "buah persik"
+  },
+  "逃避": {
+    "gloss": "to escape; to evade; to avoid",
+    "indonesian": "menghindari; lari dari"
+  },
+  "特殊": {
+    "gloss": "special; particular; unusual",
+    "indonesian": "khusus; istimewa"
+  },
+  "特征": {
+    "gloss": "characteristic; feature; trait",
+    "indonesian": "ciri khas; karakteristik"
+  },
+  "疼爱": {
+    "gloss": "to love dearly; to dote on",
+    "indonesian": "sangat menyayangi"
+  },
+  "提纲": {
+    "gloss": "outline",
+    "indonesian": "garis besar; kerangka"
+  },
+  "提问": {
+    "gloss": "to ask a question; to quiz",
+    "indonesian": "bertanya; mengajukan pertanyaan"
+  },
+  "体会": {
+    "gloss": "to realize (from experience); to appreciate; understanding",
+    "indonesian": "menyadari (dari pengalaman); menghayati; pemahaman"
+  },
+  "体现": {
+    "gloss": "to reflect; to embody; to show",
+    "indonesian": "mencerminkan; mewujudkan"
+  },
+  "调皮": {
+    "gloss": "naughty; mischievous",
+    "indonesian": "nakal; usil"
+  },
+  "挑战": {
+    "gloss": "challenge; to challenge",
+    "indonesian": "tantangan; menantang"
+  },
+  "痛苦": {
+    "gloss": "painful; suffering; pain",
+    "indonesian": "menderita; penderitaan; menyakitkan"
+  },
+  "投入": {
+    "gloss": "to put in (effort, money); to invest; absorbed",
+    "indonesian": "mencurahkan; menanamkan (modal); tekun"
+  },
+  "透明": {
+    "gloss": "transparent; open",
+    "indonesian": "transparan; tembus pandang"
+  },
+  "土地": {
+    "gloss": "land; soil; territory",
+    "indonesian": "tanah; lahan; wilayah"
+  },
+  "吐": {
+    "gloss": "to spit (out); to vomit",
+    "indonesian": "meludah(kan); muntah"
+  },
+  "团": {
+    "gloss": "group, team; ball, lump",
+    "indonesian": "rombongan, kelompok; gumpalan"
+  },
+  "推广": {
+    "gloss": "to popularize; to promote; to spread",
+    "indonesian": "mempromosikan; menyebarluaskan"
+  },
+  "退步": {
+    "gloss": "to fall behind; to regress; to get worse",
+    "indonesian": "mundur; menurun"
+  },
+  "歪": {
+    "gloss": "crooked; askew; tilted",
+    "indonesian": "miring; bengkok; mencong"
+  },
+  "外交": {
+    "gloss": "diplomacy; foreign affairs; diplomatic",
+    "indonesian": "diplomasi; hubungan luar negeri"
+  },
+  "完美": {
+    "gloss": "perfect",
+    "indonesian": "sempurna"
+  },
+  "完善": {
+    "gloss": "to improve; to perfect; well-developed",
+    "indonesian": "menyempurnakan; lengkap; sempurna"
+  },
+  "王子": {
+    "gloss": "prince",
+    "indonesian": "pangeran"
+  },
+  "往返": {
+    "gloss": "to go back and forth; round trip",
+    "indonesian": "pulang pergi; bolak-balik"
+  },
+  "网络": {
+    "gloss": "internet; network",
+    "indonesian": "internet; jaringan"
+  },
+  "危害": {
+    "gloss": "to harm; to endanger; harm",
+    "indonesian": "membahayakan; merusak; bahaya"
+  },
+  "微笑": {
+    "gloss": "smile; to smile",
+    "indonesian": "senyum; tersenyum"
+  },
+  "违反": {
+    "gloss": "to violate; to break (a rule or law)",
+    "indonesian": "melanggar"
+  },
+  "围巾": {
+    "gloss": "scarf; shawl",
+    "indonesian": "syal"
+  },
+  "唯一": {
+    "gloss": "only; sole",
+    "indonesian": "satu-satunya"
+  },
+  "伟大": {
+    "gloss": "great; mighty",
+    "indonesian": "agung; besar; hebat"
+  },
+  "胃口": {
+    "gloss": "appetite; liking",
+    "indonesian": "nafsu makan; selera"
+  },
+  "位置": {
+    "gloss": "position; location; place",
+    "indonesian": "posisi; lokasi; tempat"
+  },
+  "未来": {
+    "gloss": "future; coming (period)",
+    "indonesian": "masa depan; yang akan datang"
+  },
+  "温暖": {
+    "gloss": "warm; to warm (sb's heart)",
+    "indonesian": "hangat; menghangatkan"
+  },
+  "闻": {
+    "gloss": "to smell; to hear",
+    "indonesian": "mencium (bau); mendengar"
+  },
+  "文件": {
+    "gloss": "document; file",
+    "indonesian": "dokumen; berkas"
+  },
+  "文明": {
+    "gloss": "civilized; well-mannered; civilization",
+    "indonesian": "beradab; sopan; peradaban"
+  },
+  "文字": {
+    "gloss": "writing; script; written language",
+    "indonesian": "tulisan; aksara; bahasa tulis"
+  },
+  "吻": {
+    "gloss": "to kiss; kiss",
+    "indonesian": "mencium; ciuman"
+  },
+  "握手": {
+    "gloss": "to shake hands",
+    "indonesian": "berjabat tangan; bersalaman"
+  },
+  "屋子": {
+    "gloss": "room; house",
+    "indonesian": "kamar; ruangan; rumah"
+  },
+  "无奈": {
+    "gloss": "helpless; to have no choice; unfortunately",
+    "indonesian": "tak berdaya; terpaksa; apa boleh buat"
+  },
+  "无所谓": {
+    "gloss": "to not care; to not matter",
+    "indonesian": "tidak peduli; tidak masalah; terserah"
+  },
+  "武术": {
+    "gloss": "martial arts; wushu; kung fu",
+    "indonesian": "seni bela diri; wushu"
+  },
+  "雾": {
+    "gloss": "fog; mist",
+    "indonesian": "kabut"
+  },
+  "物理": {
+    "gloss": "physics",
+    "indonesian": "fisika"
+  },
+  "吸收": {
+    "gloss": "to absorb; to take in; to recruit",
+    "indonesian": "menyerap; merekrut"
+  },
+  "系": {
+    "gloss": "department (of a university); faculty; system",
+    "indonesian": "jurusan; fakultas"
+  },
+  "细节": {
+    "gloss": "details; particulars",
+    "indonesian": "detail; rincian"
+  },
+  "瞎": {
+    "gloss": "blind; (to do) blindly, without reason",
+    "indonesian": "buta; sembarangan; asal-asalan"
+  },
+  "鲜艳": {
+    "gloss": "bright-colored; vivid",
+    "indonesian": "berwarna cerah; mencolok"
+  },
+  "显得": {
+    "gloss": "to seem; to look; to appear",
+    "indonesian": "tampak; terlihat"
+  },
+  "显示": {
+    "gloss": "to show; to display; to demonstrate",
+    "indonesian": "menunjukkan; menampilkan"
+  },
+  "现代": {
+    "gloss": "modern; modern times",
+    "indonesian": "modern; zaman modern"
+  },
+  "现实": {
+    "gloss": "reality; real; realistic",
+    "indonesian": "kenyataan; realitas; realistis"
+  },
+  "限制": {
+    "gloss": "to limit; to restrict; limit",
+    "indonesian": "membatasi; batasan"
+  },
+  "相处": {
+    "gloss": "to get along (with); to live or work together",
+    "indonesian": "bergaul; berhubungan; hidup bersama"
+  },
+  "相对": {
+    "gloss": "relatively; relative; to face each other",
+    "indonesian": "relatif; secara relatif; berhadapan"
+  },
+  "相关": {
+    "gloss": "related; relevant; connected",
+    "indonesian": "terkait; berhubungan"
+  },
+  "想象": {
+    "gloss": "to imagine; imagination",
+    "indonesian": "membayangkan; imajinasi"
+  },
+  "项": {
+    "gloss": "measure word for items, tasks, projects; item",
+    "indonesian": "kata satuan untuk tugas, item; butir"
+  },
+  "项目": {
+    "gloss": "project; item; (sports) event",
+    "indonesian": "proyek; item; cabang (olahraga)"
+  },
+  "象棋": {
+    "gloss": "Chinese chess",
+    "indonesian": "catur Tiongkok"
+  },
+  "消费": {
+    "gloss": "to consume; to spend; consumption",
+    "indonesian": "berbelanja; mengonsumsi; konsumsi"
+  },
+  "消化": {
+    "gloss": "to digest",
+    "indonesian": "mencerna; pencernaan"
+  },
+  "销售": {
+    "gloss": "to sell; sales; to market",
+    "indonesian": "menjual; penjualan"
+  },
+  "小麦": {
+    "gloss": "wheat",
+    "indonesian": "gandum"
+  },
+  "效率": {
+    "gloss": "efficiency",
+    "indonesian": "efisiensi"
+  },
+  "歇": {
+    "gloss": "to rest; to take a break; to stop",
+    "indonesian": "istirahat"
+  },
+  "欣赏": {
+    "gloss": "to appreciate; to enjoy; to admire",
+    "indonesian": "menikmati; menghargai; mengagumi"
+  },
+  "信号": {
+    "gloss": "signal",
+    "indonesian": "sinyal"
+  },
+  "行动": {
+    "gloss": "to act, take action; action; to move about",
+    "indonesian": "bertindak; tindakan; bergerak"
+  },
+  "行人": {
+    "gloss": "pedestrian; passer-by",
+    "indonesian": "pejalan kaki"
+  },
+  "形成": {
+    "gloss": "to form; to take shape",
+    "indonesian": "membentuk; terbentuk"
+  },
+  "形式": {
+    "gloss": "form; shape; formality",
+    "indonesian": "bentuk; format; formalitas"
+  },
+  "形象": {
+    "gloss": "image; figure; vivid",
+    "indonesian": "citra; sosok; gamblang"
+  },
+  "性质": {
+    "gloss": "nature; characteristic",
+    "indonesian": "sifat; karakter (suatu hal)"
+  },
+  "幸亏": {
+    "gloss": "fortunately; luckily",
+    "indonesian": "untunglah; untung saja"
+  },
+  "胸": {
+    "gloss": "chest; breast",
+    "indonesian": "dada"
+  },
+  "修改": {
+    "gloss": "to revise; to modify; to amend",
+    "indonesian": "merevisi; mengubah; memperbaiki"
+  },
+  "休闲": {
+    "gloss": "leisure; to relax",
+    "indonesian": "bersantai; waktu santai"
+  },
+  "叙述": {
+    "gloss": "to narrate; to recount; narration",
+    "indonesian": "menceritakan; menuturkan"
+  },
+  "宣传": {
+    "gloss": "to publicize; to promote; propaganda",
+    "indonesian": "mempromosikan; menyebarluaskan; propaganda"
+  },
+  "学历": {
+    "gloss": "educational background; academic qualifications",
+    "indonesian": "latar belakang pendidikan; ijazah"
+  },
+  "学问": {
+    "gloss": "knowledge; learning",
+    "indonesian": "ilmu; pengetahuan"
+  },
+  "血": {
+    "gloss": "blood",
+    "indonesian": "darah"
+  },
+  "寻找": {
+    "gloss": "to look for; to seek",
+    "indonesian": "mencari"
+  },
+  "迅速": {
+    "gloss": "rapid; fast; quickly",
+    "indonesian": "cepat; pesat"
+  },
+  "延长": {
+    "gloss": "to extend; to prolong",
+    "indonesian": "memperpanjang"
+  },
+  "严肃": {
+    "gloss": "serious; solemn; stern",
+    "indonesian": "serius; khidmat; tegas"
+  },
+  "演讲": {
+    "gloss": "speech; lecture; to give a speech",
+    "indonesian": "pidato; ceramah; berpidato"
+  },
+  "阳台": {
+    "gloss": "balcony; porch",
+    "indonesian": "balkon"
+  },
+  "摇": {
+    "gloss": "to shake; to wave; to rock",
+    "indonesian": "menggoyang; menggeleng; mengayun"
+  },
+  "要不": {
+    "gloss": "otherwise; or else; how about...",
+    "indonesian": "kalau tidak; atau; bagaimana kalau"
+  },
+  "业务": {
+    "gloss": "business; professional work",
+    "indonesian": "bisnis; urusan pekerjaan"
+  },
+  "一辈子": {
+    "gloss": "a lifetime; all one's life",
+    "indonesian": "seumur hidup"
+  },
+  "一律": {
+    "gloss": "all, without exception; uniformly",
+    "indonesian": "semuanya tanpa kecuali; seragam"
+  },
+  "移动": {
+    "gloss": "to move; to shift; mobile",
+    "indonesian": "memindahkan; bergerak; seluler"
+  },
+  "遗憾": {
+    "gloss": "regret; pity; to be sorry",
+    "indonesian": "menyesal; sayang sekali"
+  },
+  "乙": {
+    "gloss": "B (second in a series); second; party B (in a contract)",
+    "indonesian": "B; kedua; pihak kedua"
+  },
+  "以及": {
+    "gloss": "as well as; and",
+    "indonesian": "serta; dan"
+  },
+  "亿": {
+    "gloss": "hundred million (100,000,000)",
+    "indonesian": "seratus juta"
+  },
+  "意义": {
+    "gloss": "meaning; significance",
+    "indonesian": "arti; makna"
+  },
+  "因而": {
+    "gloss": "therefore; as a result; thus",
+    "indonesian": "oleh karena itu; sehingga"
+  },
+  "银": {
+    "gloss": "silver; silver-colored",
+    "indonesian": "perak"
+  },
+  "印刷": {
+    "gloss": "to print; printing",
+    "indonesian": "mencetak; percetakan"
+  },
+  "英雄": {
+    "gloss": "hero",
+    "indonesian": "pahlawan"
+  },
+  "迎接": {
+    "gloss": "to welcome; to greet; to meet",
+    "indonesian": "menyambut; menjemput"
+  },
+  "营业": {
+    "gloss": "to do business; to be open (for business)",
+    "indonesian": "beroperasi; buka (usaha)"
+  },
+  "影子": {
+    "gloss": "shadow; reflection; trace",
+    "indonesian": "bayangan"
+  },
+  "硬件": {
+    "gloss": "hardware",
+    "indonesian": "perangkat keras"
+  },
+  "拥抱": {
+    "gloss": "to hug; to embrace",
+    "indonesian": "memeluk; berpelukan"
+  },
+  "用途": {
+    "gloss": "use; application",
+    "indonesian": "kegunaan"
+  },
+  "优美": {
+    "gloss": "graceful; fine; elegant",
+    "indonesian": "indah; anggun"
+  },
+  "游览": {
+    "gloss": "to go sightseeing; to tour",
+    "indonesian": "bertamasya; berwisata"
+  },
+  "犹豫": {
+    "gloss": "to hesitate; hesitant",
+    "indonesian": "ragu-ragu; bimbang"
+  },
+  "幼儿园": {
+    "gloss": "kindergarten; nursery school",
+    "indonesian": "taman kanak-kanak (TK)"
+  },
+  "与其": {
+    "gloss": "rather than (与其…不如…)",
+    "indonesian": "daripada"
+  },
+  "语气": {
+    "gloss": "tone of voice; manner of speaking",
+    "indonesian": "nada bicara"
+  },
+  "预订": {
+    "gloss": "to book; to reserve",
+    "indonesian": "memesan; reservasi"
+  },
+  "玉米": {
+    "gloss": "corn; maize",
+    "indonesian": "jagung"
+  },
+  "原料": {
+    "gloss": "raw material",
+    "indonesian": "bahan baku"
+  },
+  "原则": {
+    "gloss": "principle",
+    "indonesian": "prinsip"
+  },
+  "乐器": {
+    "gloss": "musical instrument",
+    "indonesian": "alat musik"
+  },
+  "运输": {
+    "gloss": "to transport; transportation",
+    "indonesian": "mengangkut; transportasi"
+  },
+  "在于": {
+    "gloss": "to lie in; to depend on",
+    "indonesian": "terletak pada; bergantung pada"
+  },
+  "赞美": {
+    "gloss": "to praise; to admire",
+    "indonesian": "memuji; menyanjung"
+  },
+  "则": {
+    "gloss": "while, but (contrast); then; measure word for news",
+    "indonesian": "sedangkan; maka; kata satuan untuk berita"
+  },
+  "摘": {
+    "gloss": "to pick (fruit, flowers); to take off (glasses, hat)",
+    "indonesian": "memetik; melepas (kacamata, topi)"
+  },
+  "粘贴": {
+    "gloss": "to stick; to paste; to glue",
+    "indonesian": "menempel; merekatkan"
+  },
+  "展览": {
+    "gloss": "exhibition; to exhibit; to put on display",
+    "indonesian": "pameran; memamerkan"
+  },
+  "占": {
+    "gloss": "to occupy; to take up; to make up (a share)",
+    "indonesian": "menempati; memakan (tempat); mencakup"
+  },
+  "战争": {
+    "gloss": "war",
+    "indonesian": "perang"
+  },
+  "长辈": {
+    "gloss": "elders; older generation",
+    "indonesian": "orang yang lebih tua; generasi tua"
+  },
+  "涨": {
+    "gloss": "to rise (of prices, water); to swell",
+    "indonesian": "naik (harga, air); membengkak"
+  },
+  "招待": {
+    "gloss": "to entertain (guests); to receive; hospitality",
+    "indonesian": "menjamu; melayani (tamu)"
+  },
+  "着火": {
+    "gloss": "to catch fire; to be on fire",
+    "indonesian": "terbakar; kebakaran"
+  },
+  "着凉": {
+    "gloss": "to catch a cold; to catch a chill",
+    "indonesian": "masuk angin"
+  },
+  "召开": {
+    "gloss": "to convene; to hold (a meeting)",
+    "indonesian": "mengadakan (rapat, konferensi)"
+  },
+  "照常": {
+    "gloss": "as usual",
+    "indonesian": "seperti biasa"
+  },
+  "哲学": {
+    "gloss": "philosophy",
+    "indonesian": "filsafat"
+  },
+  "真实": {
+    "gloss": "true; real; authentic",
+    "indonesian": "nyata; sesungguhnya; asli"
+  },
+  "针对": {
+    "gloss": "to target; to be aimed at; in response to",
+    "indonesian": "ditujukan pada; terhadap; menyasar"
+  },
+  "诊断": {
+    "gloss": "to diagnose; diagnosis",
+    "indonesian": "mendiagnosis; diagnosis"
+  },
+  "振动": {
+    "gloss": "to vibrate; vibration",
+    "indonesian": "bergetar; getaran"
+  },
+  "争论": {
+    "gloss": "to argue; to debate; argument",
+    "indonesian": "berdebat; perdebatan"
+  },
+  "征求": {
+    "gloss": "to solicit; to seek; to request (opinions, feedback etc)",
+    "indonesian": "meminta (pendapat)"
+  },
+  "整体": {
+    "gloss": "whole; entirety; as a whole",
+    "indonesian": "keseluruhan"
+  },
+  "政治": {
+    "gloss": "politics; political",
+    "indonesian": "politik"
+  },
+  "证据": {
+    "gloss": "evidence; proof",
+    "indonesian": "bukti"
+  },
+  "挣": {
+    "gloss": "to earn (money); to make (money)",
+    "indonesian": "mencari (uang); menghasilkan (uang)"
+  },
+  "直": {
+    "gloss": "straight; directly; frank",
+    "indonesian": "lurus; langsung; terus terang"
+  },
+  "执照": {
+    "gloss": "license; permit",
+    "indonesian": "surat izin; lisensi"
+  },
+  "指挥": {
+    "gloss": "to direct; to command; conductor",
+    "indonesian": "mengarahkan; memimpin; dirigen"
+  },
+  "制度": {
+    "gloss": "system (of rules); institution",
+    "indonesian": "sistem (aturan); peraturan"
+  },
+  "制作": {
+    "gloss": "to make; to produce; production",
+    "indonesian": "membuat; memproduksi; pembuatan"
+  },
+  "至今": {
+    "gloss": "until now; to this day; so far",
+    "indonesian": "sampai sekarang; hingga hari ini"
+  },
+  "至于": {
+    "gloss": "as for; as to; to go so far as to",
+    "indonesian": "mengenai; adapun; sampai-sampai"
+  },
+  "治疗": {
+    "gloss": "to treat (an illness); medical treatment",
+    "indonesian": "mengobati; pengobatan"
+  },
+  "志愿者": {
+    "gloss": "volunteer",
+    "indonesian": "sukarelawan; relawan"
+  },
+  "中心": {
+    "gloss": "center; heart; core",
+    "indonesian": "pusat"
+  },
+  "种类": {
+    "gloss": "kind; type; variety",
+    "indonesian": "jenis; macam"
+  },
+  "重大": {
+    "gloss": "major; important; significant",
+    "indonesian": "penting; besar; berarti"
+  },
+  "重量": {
+    "gloss": "weight",
+    "indonesian": "berat"
+  },
+  "猪": {
+    "gloss": "pig",
+    "indonesian": "babi"
+  },
+  "逐渐": {
+    "gloss": "gradually",
+    "indonesian": "secara bertahap; lambat laun"
+  },
+  "煮": {
+    "gloss": "to boil; to cook",
+    "indonesian": "merebus; memasak"
+  },
+  "主动": {
+    "gloss": "on one's own initiative; active",
+    "indonesian": "atas inisiatif sendiri; aktif"
+  },
+  "主人": {
+    "gloss": "owner; host; master",
+    "indonesian": "pemilik; tuan rumah; majikan"
+  },
+  "主席": {
+    "gloss": "chairman; chairperson; president",
+    "indonesian": "ketua"
+  },
+  "主张": {
+    "gloss": "to advocate; to stand for; view",
+    "indonesian": "berpendapat; menganjurkan; pendirian"
+  },
+  "祝福": {
+    "gloss": "blessing; good wishes; to wish sb well",
+    "indonesian": "berkah; ucapan selamat; mendoakan"
+  },
+  "注册": {
+    "gloss": "to register; to sign up",
+    "indonesian": "mendaftar; registrasi"
+  },
+  "抓紧": {
+    "gloss": "to make the most of (time); to hurry; to grip firmly",
+    "indonesian": "memanfaatkan (waktu); bergegas; memegang erat"
+  },
+  "转变": {
+    "gloss": "to change; to transform; change",
+    "indonesian": "berubah; mengubah; perubahan"
+  },
+  "装饰": {
+    "gloss": "to decorate; decoration",
+    "indonesian": "menghias; dekorasi"
+  },
+  "撞": {
+    "gloss": "to bump into; to crash into",
+    "indonesian": "menabrak; membentur"
+  },
+  "状态": {
+    "gloss": "state; condition",
+    "indonesian": "keadaan; kondisi"
+  },
+  "追求": {
+    "gloss": "to pursue; to seek; to court (sb)",
+    "indonesian": "mengejar; mencari; mendekati (lawan jenis)"
+  },
+  "资金": {
+    "gloss": "funds; capital",
+    "indonesian": "dana; modal"
+  },
+  "资源": {
+    "gloss": "resources; natural resources",
+    "indonesian": "sumber daya; sumber daya alam"
+  },
+  "咨询": {
+    "gloss": "to consult; to seek advice; consultation",
+    "indonesian": "berkonsultasi; meminta saran; konsultasi"
+  },
+  "字母": {
+    "gloss": "letter (of the alphabet)",
+    "indonesian": "huruf (alfabet)"
+  },
+  "自从": {
+    "gloss": "since; ever since",
+    "indonesian": "sejak"
+  },
+  "自豪": {
+    "gloss": "proud (of an achievement)",
+    "indonesian": "bangga"
+  },
+  "自觉": {
+    "gloss": "conscientious; on one's own initiative; aware",
+    "indonesian": "atas kesadaran sendiri; sadar"
+  },
+  "自私": {
+    "gloss": "selfish",
+    "indonesian": "egois"
+  },
+  "自愿": {
+    "gloss": "voluntary; of one's own free will",
+    "indonesian": "sukarela; atas kemauan sendiri"
+  },
+  "总裁": {
+    "gloss": "president (of a company); CEO; chairman",
+    "indonesian": "direktur utama; CEO"
+  },
+  "总统": {
+    "gloss": "president (of a country)",
+    "indonesian": "presiden"
+  },
+  "组": {
+    "gloss": "group; team; to form",
+    "indonesian": "kelompok; tim; membentuk"
+  },
+  "组合": {
+    "gloss": "to combine; to assemble; combination",
+    "indonesian": "menggabungkan; merakit; kombinasi"
+  },
+  "阻止": {
+    "gloss": "to stop; to prevent; to block",
+    "indonesian": "mencegah; menghentikan; menghalangi"
+  },
+  "醉": {
+    "gloss": "drunk; intoxicated",
+    "indonesian": "mabuk"
+  },
+  "最初": {
+    "gloss": "at first; initially; initial",
+    "indonesian": "awalnya; mula-mula"
+  },
+  "尊敬": {
+    "gloss": "to respect; to esteem; respected",
+    "indonesian": "menghormati; terhormat"
+  },
+  "遵守": {
+    "gloss": "to obey; to abide by; to comply with",
+    "indonesian": "menaati; mematuhi"
+  },
+  "作品": {
+    "gloss": "work (of art or literature)",
+    "indonesian": "karya"
+  },
+  "作为": {
+    "gloss": "as (in the role of); to regard as",
+    "indonesian": "sebagai; menjadikan"
+  }
+}

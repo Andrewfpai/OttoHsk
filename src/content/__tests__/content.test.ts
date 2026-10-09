@@ -17,12 +17,30 @@ const blanks = (s: string) => s.split(BLANK).length - 1;
 const unique = (ids: string[]) => new Set(ids).size === ids.length;
 
 describe("words", () => {
-  it("has the HSK 2.0 level-5 list with unique ids and a gloss each", () => {
-    expect(words.length).toBeGreaterThan(1200);
+  it("has the 1,300-word HSK 5 list with unique ids and a gloss each", () => {
+    expect(words.length).toBe(1300);
     expect(unique(words.map((w) => w.id))).toBe(true);
     for (const w of words) {
       expect(w.gloss, w.id).not.toBe("");
       expect(w.pinyin, w.id).not.toBe("");
+    }
+  });
+
+  it("gives every word a checked meaning in English and Indonesian", () => {
+    for (const w of words) {
+      expect(w.gloss.trim(), w.id).not.toBe("");
+      expect(w.gloss.length, w.id).toBeLessThanOrEqual(70);
+      expect(w.gloss, w.id).not.toMatch(/abbr\.|variant of|\(Tw\)|surname/i);
+      expect(w.indonesian.trim(), w.id).not.toBe("");
+    }
+  });
+
+  it("gives every word an example sentence that contains it", () => {
+    for (const w of words) {
+      expect(w.example, w.id).not.toBeNull();
+      expect(w.example!.zh, w.id).toContain(w.hanzi);
+      expect(w.example!.zh, w.id).toMatch(/[。？！]$/);
+      expect(w.example!.en.trim(), w.id).not.toBe("");
     }
   });
 });

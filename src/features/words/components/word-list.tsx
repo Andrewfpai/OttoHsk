@@ -10,6 +10,7 @@ import { KNOWN_STRENGTH, MAX_STRENGTH, type WordStatus, statusOf } from "@/featu
 import { plainPinyin } from "@/lib/pinyin";
 import { cn } from "@/lib/utils";
 
+import { ExampleSentence } from "./example-sentence";
 import { STATUS_DOT, STATUS_LABEL, StatusBadge } from "./status-badge";
 
 type Filter = "all" | WordStatus;
@@ -17,11 +18,11 @@ type Filter = "all" | WordStatus;
 const FILTERS: Filter[] = ["all", "new", "learning", "known"];
 const PAGE = 100;
 
-/** Search keys, built once: tone-less pinyin and lower-case meanings. */
+/** Search keys, built once: tone-less pinyin, and every meaning in English and Indonesian. */
 const searchable = words.map((w) => ({
   word: w,
   pinyin: plainPinyin(w.pinyin),
-  meanings: w.meanings.join(" ").toLowerCase(),
+  meanings: [w.gloss, w.indonesian, ...w.meanings].join(" ").toLowerCase(),
 }));
 
 const HAS_HANZI = /\p{Script=Han}/u;
@@ -67,7 +68,7 @@ export function WordList({ strengths }: { strengths: Record<string, number> }) {
               setQuery(e.target.value);
               setShown(PAGE);
             }}
-            placeholder="Search 汉字, pinyin (zhenshi) or English"
+            placeholder="Search 汉字, pinyin (zhenshi), English or Indonesian"
             aria-label="Search words"
             className="h-10 pl-9"
           />
@@ -142,7 +143,8 @@ export function WordList({ strengths }: { strengths: Record<string, number> }) {
                 {expanded ? (
                   <div className="bg-muted/30 space-y-2 px-4 pt-1 pb-4 text-sm">
                     <div className="flex flex-wrap items-center gap-2">
-                      <StatusBadge status={statusOf(strengths[w.id])} />
+                      {/* The row already shows status on wider screens. */}
+                      <StatusBadge status={statusOf(strengths[w.id])} className="sm:hidden" />
                       {strengths[w.id] !== undefined ? (
                         <span className="text-muted-foreground text-xs">
                           Strength{" "}
@@ -158,7 +160,16 @@ export function WordList({ strengths }: { strengths: Record<string, number> }) {
                         </span>
                       ))}
                     </div>
-                    <p className="text-muted-foreground">{w.meanings.join(" · ")}</p>
+                    {w.indonesian ? (
+                      <p>
+                        <span className="text-muted-foreground text-xs">Indonesian · </span>
+                        {w.indonesian}
+                      </p>
+                    ) : null}
+                    <ExampleSentence word={w} className="bg-background/60 rounded-lg border px-3 py-2" />
+                    <p className="text-muted-foreground text-xs">
+                      All dictionary senses: {w.meanings.join(" · ")}
+                    </p>
                   </div>
                 ) : null}
               </li>
@@ -181,7 +192,7 @@ export function WordList({ strengths }: { strengths: Record<string, number> }) {
       ) : null}
 
       <p className="text-muted-foreground text-xs">
-        Word list: complete-hsk-vocabulary (MIT). Definitions: CC-CEDICT (CC BY-SA 4.0).
+        Dictionary senses: complete-hsk-vocabulary (MIT) and CC-CEDICT (CC BY-SA 4.0).
       </p>
     </div>
   );

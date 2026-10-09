@@ -6,7 +6,7 @@ sibling to OttoLabs: same stack, separate site, linked both ways.
 | Page | What it does |
 |---|---|
 | Dashboard | Days left, words known / learning / not started, new words per day needed, words due in the next test, drill progress, latest mock |
-| Words → Word list | All 1,298 HSK 2.0 level-5 words. Search by 汉字, toneless pinyin or English; filter by status |
+| Words → Word list | All 1,300 HSK 5 words with checked English and Indonesian meanings and an example sentence each. Search by 汉字, toneless pinyin, English or Indonesian; filter by status |
 | Words → Flashcards | Timed practice → test → spaced repetition, with a lockout for guessing (below) |
 | Confusables | 45 near-synonym sets, 177 fill-the-blank questions |
 | Fill in 填空 | Reading Part 1 (46–60) passages from your own papers ("mengisi" d and E), four options per blank |
@@ -47,9 +47,15 @@ The feedback says which model answered and which failed. Each person can run
 `src/content/` is static and ships with the app; only results go in the
 database, keyed by content id. **Never change a published id.**
 
-- `words.json` is built by `npm run words:build` from
+- `words.json` is built by `npm run words:build`. The word set and pinyin
+  come from the 1,300-word HSK 5 list in `scripts/data/hsk5-mandarinbean.json`
+  (it matches the learner's own official list word for word); dictionary
+  senses and frequency from
   [complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary)
-  (MIT); definitions are CC-CEDICT (CC BY-SA 4.0).
+  (MIT), with definitions from CC-CEDICT (CC BY-SA 4.0).
+- `meanings.json` holds the checked meaning of every word in English and
+  Indonesian, and `examples.json` one example sentence each. Fix a meaning
+  there, not in `words.json`.
 - `ordering-papers-*.ts` and `cloze-*.ts` are transcribed from the learner's
   own papers, which have no answer keys: the answers were worked out and
   should be checked against a teacher's key where one exists.

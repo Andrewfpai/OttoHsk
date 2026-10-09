@@ -1,21 +1,33 @@
 /**
- * Builds src/content/words.json from the HSK 2.0 level-5 list.
+ * Builds src/content/words.json: the HSK 5 (HSK 2.0) word list.
  *
- * Source: scripts/data/hsk2-level5.json, from
- * https://github.com/drkameleon/complete-hsk-vocabulary (MIT), file
- * wordlists/exclusive/old/5.json. Definitions there come from CC-CEDICT
- * (CC BY-SA 4.0).
+ * Which words, and their pinyin: the 1,300-word list from MandarinBean
+ * (scripts/data/hsk5-mandarinbean.json, transcribed from the learner's PDF).
+ * It matches the learner's own official list (hsk5-official-list.json) word
+ * for word, and its pinyin is the standard mainland reading, neutral tones
+ * included. Where it is wrong, PINYIN_FIX below says so.
  *
- * The output is what the app ships: one compact record per word. A word's id
- * is its simplified hanzi, which is unique in the list and is what learner
- * progress rows are keyed by — so never re-key it.
+ * Dictionary data for each word (all senses, part of speech, frequency):
+ * - scripts/data/hsk2-level5.json — wordlists/exclusive/old/5.json, and
+ * - scripts/data/hsk5-extra-entries.json — the list's words that file lacks,
+ *   from complete.min.json (five written by hand),
+ * both from https://github.com/drkameleon/complete-hsk-vocabulary (MIT),
+ * whose definitions come from CC-CEDICT (CC BY-SA 4.0).
+ *
+ * The meaning shown in the app is NOT built here: it is the checked meaning
+ * in src/content/meanings.json, merged in src/content/words.ts.
+ *
+ * A word's id is its simplified hanzi; learner progress is keyed by it.
  *
  *   npm run words:build
  */
 import { readFileSync, writeFileSync } from "node:fs";
 
-const source = JSON.parse(
-  readFileSync(new URL("./data/hsk2-level5.json", import.meta.url), "utf8"),
+const read = (name) => JSON.parse(readFileSync(new URL(`./data/${name}`, import.meta.url), "utf8"));
+
+const list = read("hsk5-mandarinbean.json");
+const entries = new Map(
+  [...read("hsk2-level5.json"), ...read("hsk5-extra-entries.json")].map((e) => [e.simplified, e]),
 );
 
 const POS = {
@@ -35,54 +47,45 @@ const POS = {
 /** Cross-references and surnames are dictionary bookkeeping, not meanings. */
 const NOISE = /^(old )?variant of |^surname |^see |^used in |^\(old\)|^also written /i;
 
-/** Long enough to tell words apart in a quiz, short enough to scan. */
-const GLOSS_MAX = 60;
+/** Where the list's pinyin is wrong for the sense the app teaches. */
+const PINYIN_FIX = {
+  元旦: "yuándàn", // printed "uándàn"
+  嗯: "ǹg", // printed "en"; the "uh-huh, yes" reading the app teaches
+  吐: "tǔ", // printed "tù" (to vomit); the app teaches "to spit", tǔ
+  老婆: "lǎopo", // printed "lǎopó"; the dictionary form is neutral-tone
+};
 
-function useful(meanings) {
-  return meanings.filter((m) => !NOISE.test(m));
-}
+const missing = [];
+const words = list.map((o) => {
+  const entry = entries.get(o.hanzi);
+  if (!entry) missing.push(o.hanzi);
+  const forms = entry?.forms ?? [];
+  const meanings = [
+    ...new Set(forms.flatMap((f) => f.meanings.filter((m) => !NOISE.test(m)))),
+  ];
+  return {
+    id: o.hanzi,
+    hanzi: o.hanzi,
+    pinyin: PINYIN_FIX[o.hanzi] ?? o.pinyin,
+    // A fallback only; the checked meaning in src/content/meanings/ wins.
+    gloss: meanings.slice(0, 3).join("; "),
+    meanings,
+    pos: [...new Set((entry?.pos ?? []).map((p) => POS[p]).filter(Boolean))],
+    /** Lower is more common. Used to introduce common words first. */
+    rank: entry?.frequency ?? 99_999,
+    /** Position in the list; used only to break frequency ties. */
+    n: o.n,
+  };
+});
 
-/** A meaning this long is an explanation, not a translation. */
-const LONG = 45;
+if (missing.length) throw new Error(`No dictionary entry for: ${missing.join(" ")}`);
 
-function glossOf(meanings) {
-  const short = meanings.filter((m) => m.length <= LONG);
-  const pool = short.length ? short : meanings;
-  const parts = [];
-  for (const m of pool) {
-    const next = [...parts, m].join("; ");
-    if (parts.length > 0 && next.length > GLOSS_MAX) break;
-    parts.push(m);
-    if (parts.length === 3) break;
-  }
-  return parts.join("; ");
-}
-
-const words = source
-  .map((entry) => {
-    let forms = entry.forms.filter((f) => useful(f.meanings).length > 0);
-    if (forms.length === 0) forms = entry.forms;
-
-    const pinyin = [...new Set(forms.map((f) => f.transcriptions.pinyin))];
-    const meanings = [...new Set(forms.flatMap((f) => useful(f.meanings)))];
-    const pos = [...new Set((entry.pos ?? []).map((p) => POS[p]).filter(Boolean))];
-
-    return {
-      id: entry.simplified,
-      hanzi: entry.simplified,
-      pinyin: pinyin.join(" / "),
-      gloss: glossOf(meanings.length ? meanings : forms[0].meanings),
-      meanings: meanings.length ? meanings : forms[0].meanings,
-      pos,
-      /** Lower is more common. Used to introduce common words first. */
-      rank: entry.frequency,
-    };
-  })
-  .sort((a, b) => a.rank - b.rank);
+words.sort((a, b) => a.rank - b.rank || a.n - b.n);
 
 writeFileSync(
   new URL("../src/content/words.json", import.meta.url),
-  JSON.stringify(words),
+  // The list position only broke ties; the app does not need it.
+  JSON.stringify(words, (k, v) => (k === "n" ? undefined : v)),
 );
 
 console.log(`Wrote ${words.length} words.`);

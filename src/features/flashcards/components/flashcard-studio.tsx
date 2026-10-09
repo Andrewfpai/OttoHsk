@@ -15,6 +15,7 @@ import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
 import { type Word, getWord, words } from "@/content/words";
+import { ExampleSentence } from "@/features/words/components/example-sentence";
 import { formatCountdown, useNow } from "@/hooks/use-now";
 import { cn } from "@/lib/utils";
 
@@ -392,9 +393,13 @@ function Practice({
           <span className="space-y-2">
             <span className="text-primary block text-xl">{word.pinyin}</span>
             <span className="block text-lg">{word.gloss}</span>
+            {word.indonesian ? (
+              <span className="text-muted-foreground block text-sm">{word.indonesian}</span>
+            ) : null}
             {word.pos.length ? (
               <span className="text-muted-foreground block text-xs">{word.pos.join(" · ")}</span>
             ) : null}
+            <ExampleSentence word={word} className="border-t pt-3" />
           </span>
         ) : (
           <span className="text-muted-foreground text-sm">Tap or press Space to flip</span>
@@ -681,6 +686,10 @@ function Results({
                   <span className="min-w-0 flex-1 text-sm">
                     <span className="text-primary block">{w.pinyin}</span>
                     <span className="block">{w.gloss}</span>
+                    {w.indonesian ? (
+                      <span className="text-muted-foreground block text-xs">{w.indonesian}</span>
+                    ) : null}
+                    <ExampleSentence word={w} className="my-1" />
                     <span className="text-muted-foreground block text-xs">
                       You picked {chosen.hanzi} ({chosen.gloss})
                     </span>

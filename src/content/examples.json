@@ -1,0 +1,5202 @@
+{
+  "唉": {
+    "zh": "唉，我又忘带钥匙了。",
+    "en": "Oh dear, I've forgotten my keys again."
+  },
+  "爱心": {
+    "zh": "她很有爱心，经常去养老院帮助老人。",
+    "en": "She is very caring and often goes to the nursing home to help the elderly."
+  },
+  "安慰": {
+    "zh": "她考试没考好，我们都去安慰她。",
+    "en": "She did badly in the exam, so we all went to comfort her."
+  },
+  "岸": {
+    "zh": "晚饭以后，我们常常沿着河岸散步。",
+    "en": "After dinner, we often take a walk along the riverbank."
+  },
+  "熬夜": {
+    "zh": "你最近经常熬夜，对身体很不好。",
+    "en": "You've been staying up late a lot recently, which is bad for your health."
+  },
+  "包含": {
+    "zh": "这个价格包含早餐吗？",
+    "en": "Does this price include breakfast?"
+  },
+  "宝贵": {
+    "zh": "谢谢您提出的宝贵意见。",
+    "en": "Thank you for your valuable suggestions."
+  },
+  "保存": {
+    "zh": "这些老照片，奶奶一直保存得很好。",
+    "en": "Grandma has always kept these old photos in very good condition."
+  },
+  "保留": {
+    "zh": "这个小镇还保留着很多传统的习惯。",
+    "en": "This small town still preserves many traditional customs."
+  },
+  "报到": {
+    "zh": "新生必须在九月一日前到学校报到。",
+    "en": "New students must register at the school before September 1st."
+  },
+  "报告": {
+    "zh": "经理让我明天交一份调查报告。",
+    "en": "The manager asked me to hand in a survey report tomorrow."
+  },
+  "悲观": {
+    "zh": "遇到困难时不要太悲观，办法总会有的。",
+    "en": "Don't be too pessimistic when you run into difficulties; there's always a way."
+  },
+  "背景": {
+    "zh": "了解文化背景能帮助你理解这篇文章。",
+    "en": "Knowing the cultural background can help you understand this article."
+  },
+  "被子": {
+    "zh": "天冷了，晚上睡觉要盖厚一点儿的被子。",
+    "en": "It's gotten cold; you should use a thicker quilt at night."
+  },
+  "本科": {
+    "zh": "他本科学的是经济，读研究生时改学了法律。",
+    "en": "He studied economics as an undergraduate and switched to law for his master's."
+  },
+  "本领": {
+    "zh": "他从小跟着父亲学了一身好本领。",
+    "en": "He learned a whole range of skills from his father as a child."
+  },
+  "比例": {
+    "zh": "我们班男女生的比例是一比二。",
+    "en": "The ratio of boys to girls in our class is one to two."
+  },
+  "必然": {
+    "zh": "努力和成功之间没有必然的联系。",
+    "en": "There is no inevitable link between hard work and success."
+  },
+  "必要": {
+    "zh": "我觉得没有必要为这点小事生气。",
+    "en": "I don't think there's any need to get angry over such a small thing."
+  },
+  "鞭炮": {
+    "zh": "春节的时候，到处都能听到放鞭炮的声音。",
+    "en": "During the Spring Festival, you can hear firecrackers going off everywhere."
+  },
+  "辩论": {
+    "zh": "同学们围绕这个问题展开了激烈的辩论。",
+    "en": "The students held a heated debate on this issue."
+  },
+  "标志": {
+    "zh": "这家公司的标志是一只蓝色的鸟。",
+    "en": "This company's logo is a blue bird."
+  },
+  "表达": {
+    "zh": "我不知道该怎么用中文表达我的感谢。",
+    "en": "I don't know how to express my thanks in Chinese."
+  },
+  "表面": {
+    "zh": "他表面上很平静，其实心里非常紧张。",
+    "en": "He looks calm on the surface, but inside he is very nervous."
+  },
+  "表情": {
+    "zh": "听到这个消息，他脸上露出了吃惊的表情。",
+    "en": "When he heard the news, a look of surprise appeared on his face."
+  },
+  "表现": {
+    "zh": "她在这次比赛中表现得非常出色。",
+    "en": "She performed outstandingly in this competition."
+  },
+  "冰激凌": {
+    "zh": "天气这么热，我们去买冰激凌吃吧。",
+    "en": "It's so hot; let's go buy some ice cream."
+  },
+  "玻璃": {
+    "zh": "小心，地上有碎玻璃！",
+    "en": "Careful, there's broken glass on the floor!"
+  },
+  "博物馆": {
+    "zh": "周末我们一起去参观历史博物馆吧。",
+    "en": "Let's visit the history museum together this weekend."
+  },
+  "不断": {
+    "zh": "随着经济的发展，人们的生活水平不断提高。",
+    "en": "As the economy develops, people's living standards keep rising."
+  },
+  "不见得": {
+    "zh": "价格贵的东西不见得质量就好。",
+    "en": "Expensive things are not necessarily of good quality."
+  },
+  "不耐烦": {
+    "zh": "等了一个多小时，他开始有点儿不耐烦了。",
+    "en": "After waiting more than an hour, he began to get a bit impatient."
+  },
+  "补充": {
+    "zh": "运动以后要及时补充水分。",
+    "en": "After exercise you should replenish fluids promptly."
+  },
+  "不然": {
+    "zh": "快点儿走吧，不然就要迟到了。",
+    "en": "Let's hurry, or else we'll be late."
+  },
+  "不足": {
+    "zh": "由于经验不足，他犯了一些错误。",
+    "en": "Due to a lack of experience, he made some mistakes."
+  },
+  "部门": {
+    "zh": "这件事需要几个部门共同负责。",
+    "en": "Several departments need to be jointly responsible for this."
+  },
+  "财产": {
+    "zh": "他把全部财产都留给了儿子。",
+    "en": "He left all his property to his son."
+  },
+  "踩": {
+    "zh": "对不起，我不小心踩了你的脚。",
+    "en": "Sorry, I accidentally stepped on your foot."
+  },
+  "采取": {
+    "zh": "政府已经采取措施解决交通问题。",
+    "en": "The government has already taken measures to solve the traffic problem."
+  },
+  "参考": {
+    "zh": "写论文的时候，我参考了很多资料。",
+    "en": "When writing my thesis, I consulted a lot of material."
+  },
+  "操场": {
+    "zh": "下课以后，同学们都到操场上去踢球。",
+    "en": "After class, the students all go to the sports field to play football."
+  },
+  "插": {
+    "zh": "她把刚买的花插在了瓶子里。",
+    "en": "She put the flowers she had just bought into a vase."
+  },
+  "叉子": {
+    "zh": "吃西餐的时候，一般左手拿叉子，右手拿刀。",
+    "en": "When eating Western food, you usually hold the fork in your left hand and the knife in your right."
+  },
+  "拆": {
+    "zh": "这座旧楼下个月就要拆了。",
+    "en": "This old building will be torn down next month."
+  },
+  "产生": {
+    "zh": "他对中国文化产生了浓厚的兴趣。",
+    "en": "He developed a strong interest in Chinese culture."
+  },
+  "常识": {
+    "zh": "这是生活常识，大家都应该知道。",
+    "en": "This is common sense; everyone should know it."
+  },
+  "潮湿": {
+    "zh": "南方的春天很潮湿，衣服很难晒干。",
+    "en": "Spring in the south is very damp, so clothes are hard to dry."
+  },
+  "吵": {
+    "zh": "外面太吵了，我晚上根本睡不着。",
+    "en": "It's too noisy outside; I can't sleep at all at night."
+  },
+  "车库": {
+    "zh": "他把车停进了楼下的车库。",
+    "en": "He parked the car in the garage downstairs."
+  },
+  "彻底": {
+    "zh": "我们必须彻底解决这个问题。",
+    "en": "We must solve this problem completely."
+  },
+  "趁": {
+    "zh": "趁着天气好，我们出去散散步吧。",
+    "en": "Let's go out for a walk while the weather is nice."
+  },
+  "称": {
+    "zh": "北京被称为中国的政治文化中心。",
+    "en": "Beijing is known as China's political and cultural center."
+  },
+  "称赞": {
+    "zh": "他的出色表现得到了大家的称赞。",
+    "en": "His outstanding performance won everyone's praise."
+  },
+  "承担": {
+    "zh": "这件事的责任应该由我来承担。",
+    "en": "I should be the one to take responsibility for this."
+  },
+  "承受": {
+    "zh": "他每天工作到深夜，承受着很大的压力。",
+    "en": "He works late into the night every day and is under a lot of pressure."
+  },
+  "程序": {
+    "zh": "办理签证需要经过一定的程序。",
+    "en": "Getting a visa means going through certain procedures."
+  },
+  "成立": {
+    "zh": "这家公司是十年前成立的。",
+    "en": "This company was founded ten years ago."
+  },
+  "成人": {
+    "zh": "这家学校专门为成人提供外语课程。",
+    "en": "This school offers foreign language courses specifically for adults."
+  },
+  "成语": {
+    "zh": "汉语里有很多成语都来自古代的故事。",
+    "en": "Many Chinese idioms come from ancient stories."
+  },
+  "诚恳": {
+    "zh": "他诚恳地向大家道了歉。",
+    "en": "He sincerely apologised to everyone."
+  },
+  "持续": {
+    "zh": "这场大雨已经持续了三天。",
+    "en": "This heavy rain has lasted for three days."
+  },
+  "尺子": {
+    "zh": "请用尺子量一下这张纸有多长。",
+    "en": "Please use a ruler to measure how long this sheet of paper is."
+  },
+  "冲": {
+    "zh": "下课铃一响，孩子们就冲出了教室。",
+    "en": "As soon as the bell rang, the children rushed out of the classroom."
+  },
+  "充分": {
+    "zh": "考试前我们要做好充分的准备。",
+    "en": "We need to be fully prepared before the exam."
+  },
+  "重复": {
+    "zh": "请你把刚才的话再重复一遍。",
+    "en": "Please repeat what you just said."
+  },
+  "宠物": {
+    "zh": "她养了一只猫当宠物。",
+    "en": "She keeps a cat as a pet."
+  },
+  "抽象": {
+    "zh": "这个概念太抽象了，你能举个例子吗？",
+    "en": "This concept is too abstract; could you give an example?"
+  },
+  "丑": {
+    "zh": "这件衣服的颜色太丑了，我不想穿。",
+    "en": "The color of this outfit is so ugly; I don't want to wear it."
+  },
+  "出口": {
+    "zh": "这个国家主要出口水果和咖啡。",
+    "en": "This country mainly exports fruit and coffee."
+  },
+  "出示": {
+    "zh": "上车前请出示您的车票和身份证。",
+    "en": "Please show your ticket and ID before boarding."
+  },
+  "出席": {
+    "zh": "很多著名演员出席了这次活动。",
+    "en": "Many famous actors attended the event."
+  },
+  "除非": {
+    "zh": "除非你亲自去请他，否则他不会来。",
+    "en": "He won't come unless you go and invite him in person."
+  },
+  "除夕": {
+    "zh": "除夕晚上，全家人坐在一起吃年夜饭。",
+    "en": "On Lunar New Year's Eve, the whole family sits down together for the reunion dinner."
+  },
+  "处理": {
+    "zh": "这件事请你尽快处理一下。",
+    "en": "Please deal with this matter as soon as possible."
+  },
+  "传染": {
+    "zh": "感冒很容易传染，你最好戴上口罩。",
+    "en": "Colds are very contagious; you'd better wear a mask."
+  },
+  "传统": {
+    "zh": "春节是中国最重要的传统节日。",
+    "en": "The Spring Festival is China's most important traditional holiday."
+  },
+  "闯": {
+    "zh": "他没敲门就直接闯进了经理的办公室。",
+    "en": "He barged straight into the manager's office without knocking."
+  },
+  "吹": {
+    "zh": "风把桌上的报纸吹到了地上。",
+    "en": "The wind blew the newspaper off the table onto the floor."
+  },
+  "此外": {
+    "zh": "这家酒店环境很好，此外，价格也不贵。",
+    "en": "This hotel has a nice environment; in addition, it isn't expensive."
+  },
+  "次要": {
+    "zh": "价格是次要的，质量才是最重要的。",
+    "en": "Price is secondary; quality is what matters most."
+  },
+  "匆忙": {
+    "zh": "他走得太匆忙，把手机忘在了家里。",
+    "en": "He left in such a hurry that he forgot his phone at home."
+  },
+  "从而": {
+    "zh": "他改进了工作方法，从而提高了效率。",
+    "en": "He improved his working methods, thereby raising his efficiency."
+  },
+  "从前": {
+    "zh": "他现在比从前成熟多了。",
+    "en": "He is much more mature now than he used to be."
+  },
+  "粗糙": {
+    "zh": "这张桌子做工粗糙，表面也不平。",
+    "en": "This table is roughly made, and its surface isn't even."
+  },
+  "醋": {
+    "zh": "吃饺子的时候，我喜欢蘸一点儿醋。",
+    "en": "When I eat dumplings, I like to dip them in a little vinegar."
+  },
+  "促使": {
+    "zh": "这次失败促使他认真反思自己的问题。",
+    "en": "This failure prompted him to reflect seriously on his own problems."
+  },
+  "措施": {
+    "zh": "政府采取了一系列措施保护环境。",
+    "en": "The government has taken a series of measures to protect the environment."
+  },
+  "打工": {
+    "zh": "暑假的时候，他在一家餐厅打工。",
+    "en": "During the summer vacation, he worked part-time at a restaurant."
+  },
+  "大厦": {
+    "zh": "我们公司在市中心的一座大厦里。",
+    "en": "Our company is in a large building in the city center."
+  },
+  "大象": {
+    "zh": "大象的鼻子又长又灵活。",
+    "en": "An elephant's trunk is long and nimble."
+  },
+  "代表": {
+    "zh": "他代表全班同学向老师表示感谢。",
+    "en": "On behalf of the whole class, he thanked the teacher."
+  },
+  "待遇": {
+    "zh": "这家公司待遇不错，很多人都想去。",
+    "en": "This company offers good pay and benefits, so lots of people want to work there."
+  },
+  "单调": {
+    "zh": "每天都做同样的工作，生活太单调了。",
+    "en": "Doing the same work every day makes life too monotonous."
+  },
+  "单位": {
+    "zh": "我们单位今年来了几个新同事。",
+    "en": "Several new colleagues joined our workplace this year."
+  },
+  "担任": {
+    "zh": "他在公司里担任销售经理。",
+    "en": "He works as the sales manager at the company."
+  },
+  "耽误": {
+    "zh": "对不起，耽误了您这么多时间。",
+    "en": "Sorry for taking up so much of your time."
+  },
+  "淡": {
+    "zh": "这道菜有点儿淡，再放点儿盐吧。",
+    "en": "This dish is a bit bland; add a little more salt."
+  },
+  "倒霉": {
+    "zh": "真倒霉，刚出门就下起了大雨。",
+    "en": "What bad luck: it started pouring the moment I went out."
+  },
+  "道理": {
+    "zh": "你说的话很有道理。",
+    "en": "What you say makes a lot of sense."
+  },
+  "登记": {
+    "zh": "入住酒店时需要先登记。",
+    "en": "You need to register first when checking into a hotel."
+  },
+  "等于": {
+    "zh": "不说话并不等于没有意见。",
+    "en": "Not saying anything doesn't mean having no opinion."
+  },
+  "滴": {
+    "zh": "他的额头上流下了几滴汗水。",
+    "en": "A few drops of sweat ran down his forehead."
+  },
+  "敌人": {
+    "zh": "骄傲是进步最大的敌人。",
+    "en": "Arrogance is the greatest enemy of progress."
+  },
+  "递": {
+    "zh": "你能把桌子上那本书递给我吗？",
+    "en": "Could you pass me that book on the table?"
+  },
+  "地毯": {
+    "zh": "客厅的地上铺着一块漂亮的地毯。",
+    "en": "A beautiful rug is spread on the living room floor."
+  },
+  "地震": {
+    "zh": "这次地震造成了很大的损失。",
+    "en": "This earthquake caused heavy losses."
+  },
+  "电池": {
+    "zh": "我的手机电池快没电了，得赶紧充电。",
+    "en": "My phone battery is almost dead; I need to charge it right away."
+  },
+  "顶": {
+    "zh": "她戴着一顶白色的帽子。",
+    "en": "She is wearing a white hat."
+  },
+  "冻": {
+    "zh": "外面太冷了，我的手都冻红了。",
+    "en": "It's so cold outside that my hands are red from the cold."
+  },
+  "动画片": {
+    "zh": "我小时候每天放学回家都要看动画片。",
+    "en": "When I was little, I watched cartoons every day after school."
+  },
+  "逗": {
+    "zh": "他很会讲笑话，常常把大家逗得哈哈大笑。",
+    "en": "He's great at telling jokes and often has everyone roaring with laughter."
+  },
+  "独特": {
+    "zh": "这家餐厅的装修风格很独特。",
+    "en": "The decor of this restaurant has a very distinctive style."
+  },
+  "度过": {
+    "zh": "我在农村度过了一个愉快的暑假。",
+    "en": "I spent a happy summer vacation in the countryside."
+  },
+  "对比": {
+    "zh": "把这两张照片对比一下，你就能看出变化。",
+    "en": "Compare these two photos and you'll see the change."
+  },
+  "对待": {
+    "zh": "我们应该认真对待每一次考试。",
+    "en": "We should take every exam seriously."
+  },
+  "对手": {
+    "zh": "这次比赛，我们的对手非常强。",
+    "en": "Our opponents in this match are very strong."
+  },
+  "吨": {
+    "zh": "这辆卡车能装五吨货物。",
+    "en": "This truck can carry five tons of goods."
+  },
+  "顿": {
+    "zh": "下班以后我请你吃顿饭吧。",
+    "en": "Let me treat you to a meal after work."
+  },
+  "多亏": {
+    "zh": "多亏你帮忙，我们才按时完成了工作。",
+    "en": "Thanks to your help, we finished the work on time."
+  },
+  "朵": {
+    "zh": "他送给女朋友一朵红玫瑰。",
+    "en": "He gave his girlfriend a red rose."
+  },
+  "发表": {
+    "zh": "他在杂志上发表了一篇文章。",
+    "en": "He published an article in a magazine."
+  },
+  "发达": {
+    "zh": "这个地区的交通非常发达。",
+    "en": "This region has a highly developed transport network."
+  },
+  "发挥": {
+    "zh": "他在这次比赛中发挥得很好。",
+    "en": "He performed very well in this competition."
+  },
+  "发票": {
+    "zh": "结账的时候，请帮我开一张发票。",
+    "en": "When I pay, please issue me a receipt."
+  },
+  "发言": {
+    "zh": "会议上，每个人都有机会发言。",
+    "en": "At the meeting, everyone has a chance to speak."
+  },
+  "罚款": {
+    "zh": "在这里乱扔垃圾会被罚款。",
+    "en": "You'll be fined for littering here."
+  },
+  "法院": {
+    "zh": "他们最后把这件事告到了法院。",
+    "en": "In the end they took the matter to court."
+  },
+  "繁荣": {
+    "zh": "这几年，这个城市的经济越来越繁荣。",
+    "en": "In recent years, this city's economy has become more and more prosperous."
+  },
+  "反而": {
+    "zh": "吃了药以后，他的病不但没好，反而更严重了。",
+    "en": "After taking the medicine, his illness didn't get better; instead it got worse."
+  },
+  "反应": {
+    "zh": "听到这个消息，他一点儿反应也没有。",
+    "en": "When he heard the news, he showed no reaction at all."
+  },
+  "反正": {
+    "zh": "你不用着急，反正时间还早。",
+    "en": "There's no need to hurry; it's early anyway."
+  },
+  "范围": {
+    "zh": "这次考试的范围是前五课的内容。",
+    "en": "This exam covers the content of the first five lessons."
+  },
+  "方案": {
+    "zh": "经过讨论，我们最后选择了第二个方案。",
+    "en": "After discussion, we finally chose the second plan."
+  },
+  "方式": {
+    "zh": "每个人都有自己的学习方式。",
+    "en": "Everyone has their own way of learning."
+  },
+  "妨碍": {
+    "zh": "在图书馆大声说话会妨碍别人学习。",
+    "en": "Talking loudly in the library disturbs other people's studying."
+  },
+  "肥皂": {
+    "zh": "吃饭以前要用肥皂把手洗干净。",
+    "en": "Before eating, wash your hands clean with soap."
+  },
+  "分布": {
+    "zh": "这种植物主要分布在中国南方。",
+    "en": "This plant is mainly found in southern China."
+  },
+  "分手": {
+    "zh": "他们交往了三年，最后还是分手了。",
+    "en": "They dated for three years but broke up in the end."
+  },
+  "风景": {
+    "zh": "这里的风景美极了，我们拍几张照片吧。",
+    "en": "The scenery here is gorgeous; let's take a few photos."
+  },
+  "风险": {
+    "zh": "投资股票有一定的风险。",
+    "en": "Investing in stocks carries a certain amount of risk."
+  },
+  "讽刺": {
+    "zh": "这篇小说讽刺了那些只关心钱的人。",
+    "en": "This novel satirizes people who care only about money."
+  },
+  "否认": {
+    "zh": "他否认自己拿了那笔钱。",
+    "en": "He denied having taken that money."
+  },
+  "扶": {
+    "zh": "一位老人摔倒了，他赶紧把老人扶了起来。",
+    "en": "An old man fell, and he quickly helped him up."
+  },
+  "复制": {
+    "zh": "你可以把这个文件复制一份发给我。",
+    "en": "You can make a copy of this file and send it to me."
+  },
+  "改进": {
+    "zh": "我们的服务还有很多需要改进的地方。",
+    "en": "There is still a lot in our service that needs improving."
+  },
+  "改正": {
+    "zh": "老师让我们把作业中的错误改正过来。",
+    "en": "The teacher told us to correct the mistakes in our homework."
+  },
+  "概括": {
+    "zh": "请用一句话概括这篇文章的主要内容。",
+    "en": "Please summarise the main idea of this article in one sentence."
+  },
+  "感想": {
+    "zh": "读完这本书，你有什么感想？",
+    "en": "Now that you've finished this book, what are your thoughts on it?"
+  },
+  "赶快": {
+    "zh": "快下雨了，我们赶快回家吧。",
+    "en": "It's about to rain, let's hurry home."
+  },
+  "干活儿": {
+    "zh": "他每天早上六点就起床下地干活儿。",
+    "en": "He gets up at six every morning to go and work in the fields."
+  },
+  "高级": {
+    "zh": "她已经开始学习高级汉语课程了。",
+    "en": "She has already started taking advanced Chinese courses."
+  },
+  "告别": {
+    "zh": "毕业那天，我们和老师一一告别。",
+    "en": "On graduation day, we said goodbye to our teachers one by one."
+  },
+  "隔壁": {
+    "zh": "我家隔壁住着一对老夫妻。",
+    "en": "An elderly couple lives next door to us."
+  },
+  "个人": {
+    "zh": "这只是我个人的看法，仅供参考。",
+    "en": "This is just my personal opinion, for your reference only."
+  },
+  "各自": {
+    "zh": "会议结束以后，大家各自回了家。",
+    "en": "After the meeting ended, everyone went back to their own homes."
+  },
+  "根本": {
+    "zh": "我根本不认识他，怎么会给他打电话？",
+    "en": "I don't know him at all, so why would I call him?"
+  },
+  "公开": {
+    "zh": "公司还没有公开这个消息。",
+    "en": "The company hasn't made this news public yet."
+  },
+  "公平": {
+    "zh": "老师应该公平地对待每一个学生。",
+    "en": "Teachers should treat every student fairly."
+  },
+  "公寓": {
+    "zh": "他在公司附近租了一套小公寓。",
+    "en": "He rented a small apartment near his company."
+  },
+  "工厂": {
+    "zh": "他高中毕业后就进了工厂工作。",
+    "en": "After finishing high school, he went to work in a factory."
+  },
+  "工具": {
+    "zh": "网络已经成为人们学习的重要工具。",
+    "en": "The internet has become an important tool for learning."
+  },
+  "工业": {
+    "zh": "这座城市的工业发展得非常快。",
+    "en": "This city's industry has developed very rapidly."
+  },
+  "功能": {
+    "zh": "这款手机的功能非常多。",
+    "en": "This phone has a great many functions."
+  },
+  "沟通": {
+    "zh": "有问题的时候，大家应该多沟通。",
+    "en": "When there are problems, everyone should communicate more."
+  },
+  "姑娘": {
+    "zh": "那个穿红裙子的姑娘是我的同学。",
+    "en": "That girl in the red skirt is my classmate."
+  },
+  "古代": {
+    "zh": "中国古代有很多伟大的发明。",
+    "en": "Ancient China had many great inventions."
+  },
+  "鼓掌": {
+    "zh": "演出结束后，观众热烈地鼓掌。",
+    "en": "When the performance ended, the audience applauded warmly."
+  },
+  "骨头": {
+    "zh": "他踢球时腿受伤了，幸好骨头没事。",
+    "en": "He hurt his leg playing football; luckily the bone was fine."
+  },
+  "乖": {
+    "zh": "这孩子真乖，从来不让父母担心。",
+    "en": "This child is so well-behaved; he never makes his parents worry."
+  },
+  "怪不得": {
+    "zh": "原来他昨天发烧了，怪不得没来上课。",
+    "en": "So he had a fever yesterday—no wonder he didn't come to class."
+  },
+  "观察": {
+    "zh": "他仔细观察了一下周围的环境。",
+    "en": "He carefully observed his surroundings."
+  },
+  "观念": {
+    "zh": "随着时代的发展，人们的观念也在改变。",
+    "en": "As times change, people's ideas are changing too."
+  },
+  "冠军": {
+    "zh": "她在这次比赛中获得了冠军。",
+    "en": "She won the championship in this competition."
+  },
+  "光滑": {
+    "zh": "这块石头被河水冲得非常光滑。",
+    "en": "This stone has been worn very smooth by the river water."
+  },
+  "光明": {
+    "zh": "只要努力，你的未来一定是光明的。",
+    "en": "As long as you work hard, your future will surely be bright."
+  },
+  "广大": {
+    "zh": "广大的农村地区还需要更多的医生。",
+    "en": "The vast rural areas still need more doctors."
+  },
+  "规律": {
+    "zh": "他的生活很有规律，每天按时起床睡觉。",
+    "en": "He lives a very regular life, getting up and going to bed on time every day."
+  },
+  "规则": {
+    "zh": "每个参加比赛的人都必须遵守规则。",
+    "en": "Everyone taking part in the competition must follow the rules."
+  },
+  "滚": {
+    "zh": "球滚到了沙发下面。",
+    "en": "The ball rolled under the sofa."
+  },
+  "国庆节": {
+    "zh": "国庆节放假七天，我们打算去云南旅游。",
+    "en": "We get seven days off for National Day, and we plan to travel to Yunnan."
+  },
+  "果实": {
+    "zh": "秋天到了，树上结满了果实。",
+    "en": "Autumn has come, and the trees are full of fruit."
+  },
+  "过敏": {
+    "zh": "我对海鲜过敏，一吃就会不舒服。",
+    "en": "I'm allergic to seafood; I feel ill as soon as I eat it."
+  },
+  "海鲜": {
+    "zh": "这座城市靠海，海鲜又新鲜又便宜。",
+    "en": "This city is by the sea, so the seafood is fresh and cheap."
+  },
+  "豪华": {
+    "zh": "他们住在一家非常豪华的酒店里。",
+    "en": "They stayed in a very luxurious hotel."
+  },
+  "好奇": {
+    "zh": "孩子们对周围的一切都很好奇。",
+    "en": "Children are curious about everything around them."
+  },
+  "何必": {
+    "zh": "这点儿小事，你何必生这么大的气呢？",
+    "en": "It's such a small matter—why get so angry about it?"
+  },
+  "合法": {
+    "zh": "这家公司的经营完全合法。",
+    "en": "This company's operations are completely legal."
+  },
+  "合理": {
+    "zh": "这家饭馆的菜价格很合理。",
+    "en": "The dishes at this restaurant are very reasonably priced."
+  },
+  "合同": {
+    "zh": "双方明天上午正式签合同。",
+    "en": "The two parties will formally sign the contract tomorrow morning."
+  },
+  "合作": {
+    "zh": "希望我们以后有机会继续合作。",
+    "en": "I hope we'll have the chance to keep working together in the future."
+  },
+  "恨": {
+    "zh": "我恨自己当时没有好好学习。",
+    "en": "I hate myself for not studying hard back then."
+  },
+  "猴子": {
+    "zh": "动物园里的猴子正在树上跳来跳去。",
+    "en": "The monkeys at the zoo are jumping around in the trees."
+  },
+  "后背": {
+    "zh": "我的后背有点儿疼，可能是坐得太久了。",
+    "en": "My back hurts a little; maybe I've been sitting too long."
+  },
+  "忽视": {
+    "zh": "我们不能忽视孩子的心理健康。",
+    "en": "We must not neglect children's mental health."
+  },
+  "壶": {
+    "zh": "桌子上的壶里还有热水，你自己倒吧。",
+    "en": "There's still hot water in the pot on the table; help yourself."
+  },
+  "胡说": {
+    "zh": "你别胡说，事情根本不是这样的。",
+    "en": "Don't talk nonsense; that's not what happened at all."
+  },
+  "糊涂": {
+    "zh": "我真糊涂，又把钥匙忘在家里了。",
+    "en": "How silly of me—I left my keys at home again."
+  },
+  "花生": {
+    "zh": "我对花生过敏，不能吃这道菜。",
+    "en": "I'm allergic to peanuts, so I can't eat this dish."
+  },
+  "划": {
+    "zh": "周末我们去公园的湖上划船吧。",
+    "en": "Let's go rowing on the lake in the park this weekend."
+  },
+  "话题": {
+    "zh": "我们换个轻松点儿的话题吧。",
+    "en": "Let's change to a lighter topic."
+  },
+  "怀念": {
+    "zh": "我常常怀念大学时代的生活。",
+    "en": "I often fondly remember my life in my university days."
+  },
+  "怀孕": {
+    "zh": "她怀孕五个月了，不能太累。",
+    "en": "She is five months pregnant and shouldn't get too tired."
+  },
+  "慌张": {
+    "zh": "别慌张，先想想钥匙放在哪儿了。",
+    "en": "Don't panic; first think about where you put the keys."
+  },
+  "黄金": {
+    "zh": "这条项链是用黄金做的。",
+    "en": "This necklace is made of gold."
+  },
+  "灰": {
+    "zh": "很久没人住了，桌子上落了一层灰。",
+    "en": "No one has lived here for a long time, and a layer of dust has settled on the table."
+  },
+  "灰心": {
+    "zh": "一次失败不算什么，千万别灰心。",
+    "en": "One failure is nothing; whatever you do, don't lose heart."
+  },
+  "婚礼": {
+    "zh": "他们的婚礼将在下个月举行。",
+    "en": "Their wedding will be held next month."
+  },
+  "活跃": {
+    "zh": "他是班里最活跃的学生，经常参加各种活动。",
+    "en": "He is the most active student in the class and often joins all kinds of activities."
+  },
+  "伙伴": {
+    "zh": "他是我最好的合作伙伴。",
+    "en": "He's my best business partner."
+  },
+  "或许": {
+    "zh": "你去问问他吧，或许他知道答案。",
+    "en": "Go ask him; maybe he knows the answer."
+  },
+  "基本": {
+    "zh": "这些基本的语法你一定要掌握。",
+    "en": "You must master these basic grammar points."
+  },
+  "机器": {
+    "zh": "这台机器坏了，需要修理。",
+    "en": "This machine is broken and needs repairing."
+  },
+  "及格": {
+    "zh": "他这次数学考试终于及格了。",
+    "en": "He finally passed his maths exam this time."
+  },
+  "集合": {
+    "zh": "明天早上八点在学校门口集合。",
+    "en": "We'll gather at the school gate at eight tomorrow morning."
+  },
+  "集中": {
+    "zh": "上课时一定要集中注意力。",
+    "en": "You must concentrate in class."
+  },
+  "急诊": {
+    "zh": "他半夜发高烧，被送到医院看急诊。",
+    "en": "He had a high fever in the middle of the night and was taken to the emergency room."
+  },
+  "记忆": {
+    "zh": "那次旅行给我留下了美好的记忆。",
+    "en": "That trip left me with wonderful memories."
+  },
+  "纪录": {
+    "zh": "他在这次比赛中打破了世界纪录。",
+    "en": "He broke the world record in this competition."
+  },
+  "纪念": {
+    "zh": "这张照片是为了纪念我们毕业拍的。",
+    "en": "This photo was taken to commemorate our graduation."
+  },
+  "家务": {
+    "zh": "周末我常常帮妈妈做家务。",
+    "en": "On weekends I often help my mom with the housework."
+  },
+  "嘉宾": {
+    "zh": "今天的节目我们请来了一位特别的嘉宾。",
+    "en": "On today's show we've invited a special guest."
+  },
+  "甲": {
+    "zh": "在昨天的比赛中，甲队赢了乙队。",
+    "en": "In yesterday's match, Team A beat Team B."
+  },
+  "假如": {
+    "zh": "假如明天下雨，我们就不去爬山了。",
+    "en": "If it rains tomorrow, we won't go hiking."
+  },
+  "假装": {
+    "zh": "他假装没看见我，从我身边走了过去。",
+    "en": "He pretended not to see me and walked right past."
+  },
+  "驾驶": {
+    "zh": "酒后驾驶是非常危险的。",
+    "en": "Driving after drinking is extremely dangerous."
+  },
+  "坚强": {
+    "zh": "遇到困难的时候，我们要坚强一点儿。",
+    "en": "When we run into difficulties, we need to be strong."
+  },
+  "艰苦": {
+    "zh": "那时候生活条件很艰苦，但是大家都很快乐。",
+    "en": "Living conditions were very hard back then, but everyone was happy."
+  },
+  "捡": {
+    "zh": "他在路上捡到一个钱包，马上交给了警察。",
+    "en": "He found a wallet on the road and handed it straight to the police."
+  },
+  "简直": {
+    "zh": "这里的风景简直太美了！",
+    "en": "The scenery here is simply too beautiful!"
+  },
+  "健身": {
+    "zh": "他每天下班后都去健身房健身。",
+    "en": "He goes to the gym to work out every day after work."
+  },
+  "建设": {
+    "zh": "这座城市正在建设一个新的机场。",
+    "en": "This city is building a new airport."
+  },
+  "建筑": {
+    "zh": "这座建筑已经有三百多年的历史了。",
+    "en": "This building is more than three hundred years old."
+  },
+  "键盘": {
+    "zh": "这个键盘用起来很舒服，打字很快。",
+    "en": "This keyboard is comfortable to use, and I can type fast on it."
+  },
+  "讲座": {
+    "zh": "明天下午学校有一个关于找工作的讲座。",
+    "en": "Tomorrow afternoon the school is holding a lecture on job hunting."
+  },
+  "酱油": {
+    "zh": "做这道菜的时候，最后加一点儿酱油。",
+    "en": "When you make this dish, add a little soy sauce at the end."
+  },
+  "浇": {
+    "zh": "我出差的时候，别忘了给花浇水。",
+    "en": "While I'm away on business, don't forget to water the flowers."
+  },
+  "交换": {
+    "zh": "见面以后，我们互相交换了电话号码。",
+    "en": "After meeting, we exchanged phone numbers."
+  },
+  "交往": {
+    "zh": "他性格开朗，很喜欢和人交往。",
+    "en": "He's outgoing and really enjoys socializing with people."
+  },
+  "角度": {
+    "zh": "换个角度看问题，你会有不同的发现。",
+    "en": "Look at the problem from a different angle and you'll discover something new."
+  },
+  "教材": {
+    "zh": "这套教材很适合初级汉语学习者。",
+    "en": "This set of textbooks is well suited to beginner learners of Chinese."
+  },
+  "教训": {
+    "zh": "这次失败给了我一个深刻的教训。",
+    "en": "This failure taught me a profound lesson."
+  },
+  "接待": {
+    "zh": "我们公司今天要接待一批外国客人。",
+    "en": "Our company is receiving a group of foreign guests today."
+  },
+  "结实": {
+    "zh": "这个箱子很结实，放再多东西也不会坏。",
+    "en": "This box is very sturdy; it won't break no matter how much you put in it."
+  },
+  "节省": {
+    "zh": "坐地铁上班可以节省很多时间。",
+    "en": "Taking the subway to work can save a lot of time."
+  },
+  "结构": {
+    "zh": "这篇文章的结构很清楚，很容易理解。",
+    "en": "This essay has a clear structure and is easy to understand."
+  },
+  "结合": {
+    "zh": "学习要把理论和实践结合起来。",
+    "en": "In study, you should combine theory with practice."
+  },
+  "结论": {
+    "zh": "现在下结论还太早了。",
+    "en": "It's still too early to draw a conclusion."
+  },
+  "结账": {
+    "zh": "吃完饭以后，他叫服务员过来结账。",
+    "en": "After the meal, he called the waiter over to pay the bill."
+  },
+  "届": {
+    "zh": "他是我们学校的第一届毕业生。",
+    "en": "He was in our school's first graduating class."
+  },
+  "借口": {
+    "zh": "他总是找借口不参加集体活动。",
+    "en": "He always finds excuses not to take part in group activities."
+  },
+  "戒": {
+    "zh": "为了身体健康，他决定戒烟。",
+    "en": "For the sake of his health, he decided to quit smoking."
+  },
+  "紧急": {
+    "zh": "遇到紧急情况，请拨打这个电话。",
+    "en": "In an emergency, please call this number."
+  },
+  "尽快": {
+    "zh": "收到邮件后请尽快回复我。",
+    "en": "Please reply to me as soon as possible after you get the email."
+  },
+  "谨慎": {
+    "zh": "做这么重要的决定，你一定要谨慎。",
+    "en": "You must be cautious when making such an important decision."
+  },
+  "进步": {
+    "zh": "这学期他的汉语进步很大。",
+    "en": "His Chinese has improved a lot this term."
+  },
+  "近代": {
+    "zh": "这本书介绍了中国近代的历史。",
+    "en": "This book covers China's modern history."
+  },
+  "尽量": {
+    "zh": "我会尽量早点儿回来。",
+    "en": "I'll try to come back as early as I can."
+  },
+  "精神": {
+    "zh": "我们都应该学习他不怕困难的精神。",
+    "en": "We should all learn from his spirit of not fearing difficulties."
+  },
+  "经典": {
+    "zh": "这部电影已经成为经典，很多人看了好几遍。",
+    "en": "This film has become a classic; many people have watched it several times."
+  },
+  "救": {
+    "zh": "是这位医生救了我的命。",
+    "en": "It was this doctor who saved my life."
+  },
+  "舅舅": {
+    "zh": "我舅舅是一名医生，他是我妈妈的哥哥。",
+    "en": "My uncle is a doctor; he is my mother's older brother."
+  },
+  "桔子": {
+    "zh": "这些桔子又大又甜，你尝一个吧。",
+    "en": "These tangerines are big and sweet; try one."
+  },
+  "具备": {
+    "zh": "想做好这份工作，必须具备一定的经验。",
+    "en": "To do this job well, you need to have a certain amount of experience."
+  },
+  "巨大": {
+    "zh": "这几年，这座城市发生了巨大的变化。",
+    "en": "In the past few years, this city has undergone huge changes."
+  },
+  "决赛": {
+    "zh": "中国队顺利进入了决赛。",
+    "en": "The Chinese team made it into the final."
+  },
+  "绝对": {
+    "zh": "你放心，我绝对不会告诉别人。",
+    "en": "Don't worry, I absolutely won't tell anyone."
+  },
+  "军事": {
+    "zh": "他对军事方面的书特别感兴趣。",
+    "en": "He's especially interested in books on military affairs."
+  },
+  "开放": {
+    "zh": "这个博物馆每周一不对外开放。",
+    "en": "This museum is not open to the public on Mondays."
+  },
+  "开水": {
+    "zh": "小心，杯子里是刚烧好的开水！",
+    "en": "Careful, the cup has just-boiled water in it!"
+  },
+  "砍": {
+    "zh": "为了修路，他们砍了很多树。",
+    "en": "They cut down a lot of trees to build the road."
+  },
+  "看不起": {
+    "zh": "不要看不起任何人，每个人都有自己的长处。",
+    "en": "Don't look down on anyone; everyone has their own strengths."
+  },
+  "可见": {
+    "zh": "他连这么简单的题都做错了，可见没有认真复习。",
+    "en": "He even got such an easy question wrong, so clearly he didn't review properly."
+  },
+  "可怕": {
+    "zh": "那个梦太可怕了，我一晚上都没睡好。",
+    "en": "That dream was so frightening that I slept badly all night."
+  },
+  "克": {
+    "zh": "做这个蛋糕需要五百克面粉。",
+    "en": "You need five hundred grams of flour to make this cake."
+  },
+  "客观": {
+    "zh": "看问题要客观，不能只从自己的角度出发。",
+    "en": "You should look at problems objectively, not only from your own point of view."
+  },
+  "控制": {
+    "zh": "生气的时候，要学会控制自己的情绪。",
+    "en": "When you are angry, you need to learn to control your emotions."
+  },
+  "口味": {
+    "zh": "这家餐厅的菜很合我的口味。",
+    "en": "The food at this restaurant really suits my taste."
+  },
+  "夸": {
+    "zh": "老师夸他作文写得好。",
+    "en": "The teacher praised him for writing a good composition."
+  },
+  "扩大": {
+    "zh": "公司计划明年扩大生产规模。",
+    "en": "The company plans to expand its production next year."
+  },
+  "辣椒": {
+    "zh": "四川菜里经常放很多辣椒。",
+    "en": "Sichuan dishes often contain a lot of chili peppers."
+  },
+  "烂": {
+    "zh": "这些苹果都烂了，不能吃了。",
+    "en": "These apples have all gone rotten and can't be eaten."
+  },
+  "劳动": {
+    "zh": "爷爷奶奶每天在地里劳动，非常辛苦。",
+    "en": "Grandpa and Grandma work in the fields every day; it's very hard."
+  },
+  "老板": {
+    "zh": "老板同意我下周请两天假。",
+    "en": "The boss agreed to let me take two days off next week."
+  },
+  "老鼠": {
+    "zh": "厨房里好像有老鼠，我们得想办法抓住它。",
+    "en": "There seems to be a mouse in the kitchen; we need to find a way to catch it."
+  },
+  "姥姥": {
+    "zh": "放暑假的时候，我常去姥姥家住。",
+    "en": "During the summer holiday, I often stay at my maternal grandmother's house."
+  },
+  "理论": {
+    "zh": "理论和实践应该结合起来。",
+    "en": "Theory and practice should be combined."
+  },
+  "理由": {
+    "zh": "你没有理由拒绝这么好的机会。",
+    "en": "You have no reason to turn down such a good opportunity."
+  },
+  "立刻": {
+    "zh": "听到这个消息，她立刻哭了起来。",
+    "en": "On hearing the news, she immediately burst into tears."
+  },
+  "力量": {
+    "zh": "团结起来，我们的力量就更大了。",
+    "en": "When we unite, we are even stronger."
+  },
+  "利息": {
+    "zh": "把钱存在银行里，每年可以得到一些利息。",
+    "en": "If you deposit money in the bank, you earn some interest every year."
+  },
+  "利用": {
+    "zh": "我们要充分利用业余时间学习。",
+    "en": "We should make full use of our spare time to study."
+  },
+  "连忙": {
+    "zh": "看到老人上车，他连忙站起来让座。",
+    "en": "Seeing an elderly person get on the bus, he promptly stood up to offer his seat."
+  },
+  "联合": {
+    "zh": "几家公司联合起来开发了这个产品。",
+    "en": "Several companies joined forces to develop this product."
+  },
+  "了不起": {
+    "zh": "他一个人完成了这么多工作，真了不起！",
+    "en": "He finished so much work on his own—that's really amazing!"
+  },
+  "列车": {
+    "zh": "开往上海的列车马上就要出发了。",
+    "en": "The train to Shanghai is about to depart."
+  },
+  "临时": {
+    "zh": "经理临时有事，会议改到明天了。",
+    "en": "Something came up for the manager at the last minute, so the meeting was moved to tomorrow."
+  },
+  "灵活": {
+    "zh": "遇到特殊情况，我们要灵活处理。",
+    "en": "When special situations come up, we need to handle them flexibly."
+  },
+  "领域": {
+    "zh": "他是这个领域的专家。",
+    "en": "He is an expert in this field."
+  },
+  "流传": {
+    "zh": "这个故事在民间流传了几百年。",
+    "en": "This story has been passed down among the people for hundreds of years."
+  },
+  "浏览": {
+    "zh": "我每天早上都会浏览一下新闻网站。",
+    "en": "Every morning I browse the news websites."
+  },
+  "龙": {
+    "zh": "今年是龙年，很多人想在这一年生孩子。",
+    "en": "This is the Year of the Dragon, and many people want to have a baby this year."
+  },
+  "漏": {
+    "zh": "我的杯子漏水了，书包都湿了。",
+    "en": "My cup leaked and my whole schoolbag got wet."
+  },
+  "陆地": {
+    "zh": "地球上海洋的面积比陆地大得多。",
+    "en": "On Earth, the ocean covers a much larger area than the land."
+  },
+  "录取": {
+    "zh": "她被北京大学录取了。",
+    "en": "She was admitted to Peking University."
+  },
+  "论文": {
+    "zh": "我这个月必须完成毕业论文。",
+    "en": "I have to finish my graduation thesis this month."
+  },
+  "落后": {
+    "zh": "这个地区的经济还比较落后。",
+    "en": "The economy of this region is still rather backward."
+  },
+  "骂": {
+    "zh": "他今天迟到了，被老板骂了一顿。",
+    "en": "He was late today and got told off by his boss."
+  },
+  "麦克风": {
+    "zh": "麦克风好像坏了，后面的人听不清楚。",
+    "en": "The microphone seems to be broken; people at the back can't hear clearly."
+  },
+  "满足": {
+    "zh": "我们会尽量满足顾客的要求。",
+    "en": "We will do our best to meet our customers' requirements."
+  },
+  "冒险": {
+    "zh": "天气这么差，现在去爬山太冒险了。",
+    "en": "The weather is so bad; going hiking now is too risky."
+  },
+  "眉毛": {
+    "zh": "他的眉毛又黑又浓，看起来很精神。",
+    "en": "His eyebrows are dark and thick, and he looks very lively."
+  },
+  "美术": {
+    "zh": "她从小就喜欢美术，现在是一名画家。",
+    "en": "She has loved art since childhood and is now a painter."
+  },
+  "秘密": {
+    "zh": "这是我们之间的秘密，别告诉别人。",
+    "en": "This is a secret between us; don't tell anyone."
+  },
+  "面对": {
+    "zh": "面对困难，我们不能轻易放弃。",
+    "en": "When facing difficulties, we must not give up easily."
+  },
+  "面临": {
+    "zh": "这家公司正面临着很大的困难。",
+    "en": "This company is facing great difficulties."
+  },
+  "苗条": {
+    "zh": "她每天锻炼，身材一直保持得很苗条。",
+    "en": "She exercises every day and has always kept a slim figure."
+  },
+  "明确": {
+    "zh": "他明确表示不会参加这次活动。",
+    "en": "He made it clear that he won't take part in this event."
+  },
+  "明显": {
+    "zh": "吃了药以后，他的病明显好多了。",
+    "en": "After taking the medicine, his illness got noticeably better."
+  },
+  "名牌": {
+    "zh": "她很喜欢买名牌包，花了不少钱。",
+    "en": "She loves buying designer bags and has spent a lot of money on them."
+  },
+  "名胜古迹": {
+    "zh": "西安有很多名胜古迹，每年吸引大量游客。",
+    "en": "Xi'an has many famous scenic and historic sites that attract huge numbers of tourists every year."
+  },
+  "命令": {
+    "zh": "接到命令后，士兵们立即出发了。",
+    "en": "On receiving the order, the soldiers set off at once."
+  },
+  "摸": {
+    "zh": "爷爷摸了摸孩子的头，笑了。",
+    "en": "Grandpa stroked the child's head and smiled."
+  },
+  "模糊": {
+    "zh": "这张照片拍得太模糊了，看不清楚。",
+    "en": "This photo is too blurry to make anything out."
+  },
+  "摩托车": {
+    "zh": "他每天骑摩托车去上班。",
+    "en": "He rides a motorcycle to work every day."
+  },
+  "某": {
+    "zh": "我好像在某个地方见过他。",
+    "en": "I seem to have seen him somewhere before."
+  },
+  "目标": {
+    "zh": "他的目标是明年考上北京大学。",
+    "en": "His goal is to get into Peking University next year."
+  },
+  "目录": {
+    "zh": "先看看书的目录，就能了解大概内容。",
+    "en": "Look at the table of contents first, and you'll get a rough idea of what the book covers."
+  },
+  "木头": {
+    "zh": "这张桌子是用木头做的，非常结实。",
+    "en": "This table is made of wood and is very sturdy."
+  },
+  "哪怕": {
+    "zh": "哪怕再忙，他每天也要抽时间锻炼身体。",
+    "en": "No matter how busy he is, he makes time to exercise every day."
+  },
+  "难免": {
+    "zh": "刚开始学外语，犯错是难免的。",
+    "en": "When you first start learning a foreign language, mistakes are inevitable."
+  },
+  "脑袋": {
+    "zh": "他摸了摸脑袋，不好意思地笑了。",
+    "en": "He scratched his head and gave an embarrassed smile."
+  },
+  "内科": {
+    "zh": "你发烧咳嗽，应该去看内科。",
+    "en": "You have a fever and a cough, so you should see an internal medicine doctor."
+  },
+  "嫩": {
+    "zh": "这块牛肉炒得很嫩，非常好吃。",
+    "en": "This beef is stir-fried nice and tender; it's delicious."
+  },
+  "能干": {
+    "zh": "她是一个非常能干的经理。",
+    "en": "She is a very capable manager."
+  },
+  "能源": {
+    "zh": "我们应该节约能源，保护环境。",
+    "en": "We should save energy and protect the environment."
+  },
+  "年代": {
+    "zh": "这首歌在八十年代特别流行。",
+    "en": "This song was especially popular in the eighties."
+  },
+  "年纪": {
+    "zh": "爷爷年纪大了，记性越来越差。",
+    "en": "Grandpa is getting old, and his memory is getting worse and worse."
+  },
+  "宁可": {
+    "zh": "我宁可多花点儿钱，也要买质量好的东西。",
+    "en": "I'd rather spend a bit more money and buy good-quality things."
+  },
+  "牛仔裤": {
+    "zh": "他平时喜欢穿牛仔裤和运动鞋。",
+    "en": "He usually likes to wear jeans and sneakers."
+  },
+  "农村": {
+    "zh": "他在农村长大，对种地很熟悉。",
+    "en": "He grew up in the countryside and knows a lot about farming."
+  },
+  "农业": {
+    "zh": "这个地区的经济主要依靠农业。",
+    "en": "The economy of this region relies mainly on agriculture."
+  },
+  "女士": {
+    "zh": "女士们，先生们，欢迎大家的到来！",
+    "en": "Ladies and gentlemen, welcome, everyone!"
+  },
+  "派": {
+    "zh": "公司派他去上海工作一年。",
+    "en": "The company sent him to work in Shanghai for a year."
+  },
+  "赔偿": {
+    "zh": "如果货物在运输中损坏，公司会负责赔偿。",
+    "en": "If the goods are damaged in transit, the company will pay compensation."
+  },
+  "培养": {
+    "zh": "父母应该从小培养孩子读书的习惯。",
+    "en": "Parents should cultivate a reading habit in their children from an early age."
+  },
+  "配合": {
+    "zh": "这次任务需要大家互相配合。",
+    "en": "This task requires everyone to cooperate with each other."
+  },
+  "披": {
+    "zh": "晚上有点儿凉，她在身上披了一件外套。",
+    "en": "It was a bit cool in the evening, so she draped a jacket over her shoulders."
+  },
+  "片面": {
+    "zh": "你这样看问题太片面了。",
+    "en": "Looking at the problem this way is too one-sided."
+  },
+  "拼音": {
+    "zh": "刚开始学中文时，我要靠拼音才能读汉字。",
+    "en": "When I first started learning Chinese, I needed pinyin to read characters."
+  },
+  "平": {
+    "zh": "这条路又宽又平，骑车很舒服。",
+    "en": "This road is wide and flat, so cycling on it is very comfortable."
+  },
+  "平常": {
+    "zh": "他平常很少生气，今天怎么了？",
+    "en": "He rarely gets angry normally; what's wrong with him today?"
+  },
+  "平方": {
+    "zh": "这套房子的面积是九十平方米。",
+    "en": "This flat has an area of ninety square metres."
+  },
+  "平静": {
+    "zh": "听了他的解释，她的心情慢慢平静下来。",
+    "en": "After hearing his explanation, she gradually calmed down."
+  },
+  "评价": {
+    "zh": "老师对他的作文评价很高。",
+    "en": "The teacher rated his essay very highly."
+  },
+  "破坏": {
+    "zh": "这些工厂严重破坏了当地的环境。",
+    "en": "These factories have seriously damaged the local environment."
+  },
+  "期待": {
+    "zh": "我非常期待下个月的旅行。",
+    "en": "I'm really looking forward to next month's trip."
+  },
+  "奇迹": {
+    "zh": "他能从这么严重的事故中活下来，真是个奇迹。",
+    "en": "It's truly a miracle that he survived such a serious accident."
+  },
+  "启发": {
+    "zh": "老师的这番话给了我很大的启发。",
+    "en": "The teacher's words were very enlightening to me."
+  },
+  "气氛": {
+    "zh": "晚会的气氛非常热烈，大家都很开心。",
+    "en": "The atmosphere at the party was lively, and everyone was very happy."
+  },
+  "汽油": {
+    "zh": "车快没汽油了，我们找个加油站吧。",
+    "en": "The car is almost out of gas; let's find a gas station."
+  },
+  "谦虚": {
+    "zh": "她取得了这么好的成绩，却还是很谦虚。",
+    "en": "Even with such excellent results, she is still very modest."
+  },
+  "签": {
+    "zh": "请您仔细看完合同再签字。",
+    "en": "Please read the contract carefully before you sign it."
+  },
+  "浅": {
+    "zh": "这条河的水很浅，孩子们可以在里面玩。",
+    "en": "The water in this river is shallow, so children can play in it."
+  },
+  "枪": {
+    "zh": "那个警察手里拿着一把枪。",
+    "en": "That police officer is holding a gun."
+  },
+  "强调": {
+    "zh": "老师一再强调，考试的时候不能带手机。",
+    "en": "The teacher stressed again and again that phones are not allowed in the exam."
+  },
+  "抢": {
+    "zh": "小偷从她手里抢走了手机。",
+    "en": "The thief snatched the phone out of her hand."
+  },
+  "悄悄": {
+    "zh": "他悄悄地走进房间，怕吵醒孩子。",
+    "en": "He quietly walked into the room, afraid of waking the child."
+  },
+  "瞧": {
+    "zh": "你瞧，那边有人在放风筝。",
+    "en": "Look, someone over there is flying a kite."
+  },
+  "巧妙": {
+    "zh": "他巧妙地回答了记者的问题。",
+    "en": "He cleverly answered the reporter's question."
+  },
+  "亲爱": {
+    "zh": "亲爱的朋友们，欢迎大家来参加晚会！",
+    "en": "Dear friends, welcome to the party!"
+  },
+  "亲切": {
+    "zh": "那位老人很亲切地跟我们打招呼。",
+    "en": "The old man greeted us very warmly."
+  },
+  "勤奋": {
+    "zh": "他学习很勤奋，每天都学到很晚。",
+    "en": "He studies very diligently and works late every day."
+  },
+  "青春": {
+    "zh": "青春是人生中最美好的时光。",
+    "en": "Youth is the most beautiful time of life."
+  },
+  "轻视": {
+    "zh": "我们不能轻视任何一个对手。",
+    "en": "We must not underestimate any opponent."
+  },
+  "请求": {
+    "zh": "经理终于同意了我们的请求。",
+    "en": "The manager finally agreed to our request."
+  },
+  "球迷": {
+    "zh": "他是个老球迷，每场比赛都会看。",
+    "en": "He's a longtime fan and watches every match."
+  },
+  "趋势": {
+    "zh": "越来越多的人在网上购物，这已经成为一种趋势。",
+    "en": "More and more people shop online; it has become a trend."
+  },
+  "去世": {
+    "zh": "他的奶奶去年冬天去世了。",
+    "en": "His grandmother passed away last winter."
+  },
+  "权力": {
+    "zh": "权力越大，责任也就越大。",
+    "en": "The greater the power, the greater the responsibility."
+  },
+  "劝": {
+    "zh": "大家都劝他少抽点儿烟。",
+    "en": "Everyone urged him to smoke less."
+  },
+  "缺乏": {
+    "zh": "他缺乏工作经验，所以找工作很难。",
+    "en": "He lacks work experience, so it's hard for him to find a job."
+  },
+  "确认": {
+    "zh": "出发前请再确认一下航班时间。",
+    "en": "Please double-check the flight time before you set off."
+  },
+  "群": {
+    "zh": "一群孩子在公园里放风筝。",
+    "en": "A group of children is flying kites in the park."
+  },
+  "燃烧": {
+    "zh": "大火燃烧了整整一夜。",
+    "en": "The fire burned all night long."
+  },
+  "绕": {
+    "zh": "前面在修路，我们只好绕过去。",
+    "en": "The road ahead is under repair, so we have to go around it."
+  },
+  "热爱": {
+    "zh": "他非常热爱自己的工作。",
+    "en": "He loves his work deeply."
+  },
+  "热心": {
+    "zh": "王阿姨很热心，经常帮助邻居。",
+    "en": "Auntie Wang is very warm-hearted and often helps her neighbors."
+  },
+  "人才": {
+    "zh": "公司非常需要这方面的人才。",
+    "en": "The company badly needs talented people in this area."
+  },
+  "人类": {
+    "zh": "保护环境是全人类的共同责任。",
+    "en": "Protecting the environment is the shared responsibility of all humankind."
+  },
+  "人生": {
+    "zh": "失败是人生中很正常的一部分。",
+    "en": "Failure is a perfectly normal part of life."
+  },
+  "人物": {
+    "zh": "这部小说里的人物写得非常生动。",
+    "en": "The characters in this novel are written very vividly."
+  },
+  "忍不住": {
+    "zh": "听了他的笑话，大家都忍不住笑了起来。",
+    "en": "Hearing his joke, everyone couldn't help bursting out laughing."
+  },
+  "日程": {
+    "zh": "这周的日程安排得太满了，我没时间休息。",
+    "en": "This week's schedule is too packed; I have no time to rest."
+  },
+  "日历": {
+    "zh": "他在日历上标出了考试的日期。",
+    "en": "He marked the exam date on the calendar."
+  },
+  "日用品": {
+    "zh": "这家超市卖各种各样的日用品。",
+    "en": "This supermarket sells all kinds of everyday items."
+  },
+  "如何": {
+    "zh": "遇到困难时，我们应该如何解决？",
+    "en": "How should we deal with difficulties when we run into them?"
+  },
+  "软件": {
+    "zh": "我在手机上下载了一个学中文的软件。",
+    "en": "I downloaded an app for learning Chinese on my phone."
+  },
+  "洒": {
+    "zh": "他不小心把咖啡洒在了桌子上。",
+    "en": "He accidentally spilled coffee on the table."
+  },
+  "嗓子": {
+    "zh": "昨天唱了一晚上歌，今天嗓子有点儿疼。",
+    "en": "I sang all evening yesterday, and today my throat is a bit sore."
+  },
+  "沙滩": {
+    "zh": "孩子们在沙滩上玩儿得很开心。",
+    "en": "The children had a great time playing on the beach."
+  },
+  "晒": {
+    "zh": "今天天气这么好，把被子拿出去晒晒吧。",
+    "en": "The weather is so nice today; let's put the quilts out in the sun."
+  },
+  "闪电": {
+    "zh": "天空中突然出现一道闪电，接着就下起了大雨。",
+    "en": "A flash of lightning suddenly appeared in the sky, and then heavy rain began to fall."
+  },
+  "善于": {
+    "zh": "她很善于和别人交流。",
+    "en": "She is very good at communicating with others."
+  },
+  "商品": {
+    "zh": "这家超市的商品种类很多。",
+    "en": "This supermarket carries a wide variety of goods."
+  },
+  "商务": {
+    "zh": "他这次去上海是为了商务谈判。",
+    "en": "He went to Shanghai this time for business negotiations."
+  },
+  "伤害": {
+    "zh": "吸烟不仅伤害自己的身体，也会影响家人。",
+    "en": "Smoking not only harms your own body but also affects your family."
+  },
+  "舍不得": {
+    "zh": "毕业的时候，大家都舍不得离开学校。",
+    "en": "At graduation, nobody wanted to leave the school."
+  },
+  "设计": {
+    "zh": "这件衣服的设计非常简单大方。",
+    "en": "The design of this outfit is simple and elegant."
+  },
+  "摄影": {
+    "zh": "他对摄影很感兴趣，周末常常出去拍照。",
+    "en": "He is very interested in photography and often goes out to take pictures at weekends."
+  },
+  "伸": {
+    "zh": "他伸出手，跟我握了握手。",
+    "en": "He held out his hand and shook mine."
+  },
+  "深刻": {
+    "zh": "这本书给我留下了深刻的印象。",
+    "en": "This book left a deep impression on me."
+  },
+  "身份": {
+    "zh": "他以志愿者的身份参加了这次活动。",
+    "en": "He took part in this event as a volunteer."
+  },
+  "神秘": {
+    "zh": "这个地方给人一种神秘的感觉。",
+    "en": "This place has a mysterious feel to it."
+  },
+  "生动": {
+    "zh": "这篇文章写得非常生动，很吸引人。",
+    "en": "This article is written very vividly and is very engaging."
+  },
+  "生长": {
+    "zh": "这种植物在温暖湿润的地方生长得很快。",
+    "en": "This plant grows quickly in warm, humid places."
+  },
+  "诗": {
+    "zh": "李白写了很多有名的诗。",
+    "en": "Li Bai wrote many famous poems."
+  },
+  "失眠": {
+    "zh": "最近工作压力太大，我经常失眠。",
+    "en": "My work has been very stressful lately, and I often can't sleep."
+  },
+  "狮子": {
+    "zh": "动物园里的狮子正躺在树下睡觉。",
+    "en": "The lion at the zoo is lying under a tree, asleep."
+  },
+  "时代": {
+    "zh": "我们生活在一个信息时代。",
+    "en": "We live in an information age."
+  },
+  "时髦": {
+    "zh": "她总是穿得很时髦，像个模特一样。",
+    "en": "She always dresses very fashionably, like a model."
+  },
+  "时尚": {
+    "zh": "她总是穿得很时尚，很受年轻人欢迎。",
+    "en": "She always dresses fashionably and is popular with young people."
+  },
+  "实习": {
+    "zh": "毕业以前，他在一家银行实习了三个月。",
+    "en": "Before graduating, he interned at a bank for three months."
+  },
+  "实验": {
+    "zh": "科学家们做了很多次实验才成功。",
+    "en": "The scientists did many experiments before they succeeded."
+  },
+  "石头": {
+    "zh": "孩子们在河边捡了很多漂亮的石头。",
+    "en": "The children picked up lots of pretty stones by the river."
+  },
+  "使劲儿": {
+    "zh": "这扇门太紧了，你得使劲儿推才能打开。",
+    "en": "This door is very stiff; you have to push hard to open it."
+  },
+  "始终": {
+    "zh": "不管遇到什么困难，他始终没有放弃。",
+    "en": "No matter what difficulties he met, he never gave up."
+  },
+  "试卷": {
+    "zh": "考试结束后，老师把试卷收了上去。",
+    "en": "When the exam was over, the teacher collected the test papers."
+  },
+  "市场": {
+    "zh": "这种手机在国内市场上卖得非常好。",
+    "en": "This phone sells very well on the domestic market."
+  },
+  "事物": {
+    "zh": "孩子对新鲜事物总是充满好奇。",
+    "en": "Children are always full of curiosity about new things."
+  },
+  "收据": {
+    "zh": "交完钱以后，请保存好收据。",
+    "en": "After you pay, please keep the receipt safe."
+  },
+  "手工": {
+    "zh": "这些杯子都是手工做的，每个都不一样。",
+    "en": "These cups are all handmade, and each one is different."
+  },
+  "手术": {
+    "zh": "医生说他的手术非常成功。",
+    "en": "The doctor said his operation was very successful."
+  },
+  "手续": {
+    "zh": "办理出国手续需要很长时间。",
+    "en": "Going through the formalities to go abroad takes a long time."
+  },
+  "首": {
+    "zh": "这首歌我听了很多遍，还是很喜欢。",
+    "en": "I've listened to this song many times and still love it."
+  },
+  "受伤": {
+    "zh": "他在踢足球的时候不小心受伤了。",
+    "en": "He accidentally got injured while playing football."
+  },
+  "寿命": {
+    "zh": "随着生活水平的提高，人们的寿命越来越长。",
+    "en": "As living standards rise, people's life expectancy keeps getting longer."
+  },
+  "书架": {
+    "zh": "书架上摆满了各种各样的书。",
+    "en": "The bookshelf is filled with all kinds of books."
+  },
+  "输入": {
+    "zh": "请输入你的用户名和密码。",
+    "en": "Please enter your username and password."
+  },
+  "熟练": {
+    "zh": "经过一个月的练习，他已经能熟练地使用这个软件了。",
+    "en": "After a month of practice, he can now use this software proficiently."
+  },
+  "鼠标": {
+    "zh": "我的鼠标坏了，得买一个新的。",
+    "en": "My mouse is broken; I need to buy a new one."
+  },
+  "数据": {
+    "zh": "这些数据说明我们的销售情况越来越好。",
+    "en": "These figures show that our sales are getting better and better."
+  },
+  "数码": {
+    "zh": "他对数码产品很感兴趣，经常买新的相机。",
+    "en": "He is very interested in digital products and often buys new cameras."
+  },
+  "摔倒": {
+    "zh": "路上有冰，奶奶出门时不小心摔倒了。",
+    "en": "There was ice on the road, and Grandma slipped and fell when she went out."
+  },
+  "双方": {
+    "zh": "经过讨论，双方终于达成了一致。",
+    "en": "After discussion, both sides finally reached an agreement."
+  },
+  "税": {
+    "zh": "按照法律，每个公民都要按时交税。",
+    "en": "By law, every citizen must pay taxes on time."
+  },
+  "说服": {
+    "zh": "我花了很长时间才说服父母同意我出国。",
+    "en": "It took me a long time to persuade my parents to let me go abroad."
+  },
+  "丝绸": {
+    "zh": "中国的丝绸在世界上很有名。",
+    "en": "Chinese silk is famous all over the world."
+  },
+  "思想": {
+    "zh": "这篇文章表达了作者的思想感情。",
+    "en": "This essay expresses the author's thoughts and feelings."
+  },
+  "似乎": {
+    "zh": "他似乎对这个问题不太感兴趣。",
+    "en": "He doesn't seem very interested in this question."
+  },
+  "随身": {
+    "zh": "出国旅行时，护照一定要随身带着。",
+    "en": "When traveling abroad, always keep your passport on you."
+  },
+  "碎": {
+    "zh": "杯子掉在地上摔碎了。",
+    "en": "The cup fell on the floor and smashed."
+  },
+  "损失": {
+    "zh": "这场大火给工厂造成了很大的损失。",
+    "en": "The fire caused the factory heavy losses."
+  },
+  "锁": {
+    "zh": "出门前别忘了锁门。",
+    "en": "Don't forget to lock the door before you go out."
+  },
+  "台阶": {
+    "zh": "下雨天路滑，下台阶的时候要小心。",
+    "en": "The ground is slippery on rainy days, so be careful going down the steps."
+  },
+  "太极拳": {
+    "zh": "每天早上，很多老人在公园里打太极拳。",
+    "en": "Every morning, many elderly people practise tai chi in the park."
+  },
+  "逃": {
+    "zh": "小偷一看见警察就逃走了。",
+    "en": "The thief ran away as soon as he saw the police."
+  },
+  "淘气": {
+    "zh": "这个孩子很淘气，总是把玩具扔得到处都是。",
+    "en": "This child is very naughty and always throws toys everywhere."
+  },
+  "讨价还价": {
+    "zh": "在这个市场买东西可以讨价还价。",
+    "en": "You can bargain when shopping at this market."
+  },
+  "套": {
+    "zh": "他们在城里买了一套房子。",
+    "en": "They bought an apartment in the city."
+  },
+  "特色": {
+    "zh": "这家餐厅的菜很有地方特色。",
+    "en": "The dishes at this restaurant have a strong local character."
+  },
+  "提倡": {
+    "zh": "学校提倡学生多参加体育锻炼。",
+    "en": "The school encourages students to do more physical exercise."
+  },
+  "题目": {
+    "zh": "这次作文的题目是“我的家乡”。",
+    "en": "The topic of this composition is \"My Hometown\"."
+  },
+  "体贴": {
+    "zh": "他对妻子非常体贴，家务都抢着做。",
+    "en": "He is very considerate toward his wife and is always eager to do the housework."
+  },
+  "体验": {
+    "zh": "我想去农村体验一下那里的生活。",
+    "en": "I'd like to go to the countryside and experience life there."
+  },
+  "天空": {
+    "zh": "雨停了，天空中出现了一道彩虹。",
+    "en": "The rain stopped, and a rainbow appeared in the sky."
+  },
+  "天真": {
+    "zh": "你想得太天真了，事情没有那么简单。",
+    "en": "You're being too naive; things aren't that simple."
+  },
+  "调整": {
+    "zh": "我们需要根据实际情况调整计划。",
+    "en": "We need to adjust the plan according to the actual situation."
+  },
+  "通常": {
+    "zh": "周末我通常在家看书或者打扫房间。",
+    "en": "On weekends I usually read at home or clean my room."
+  },
+  "统一": {
+    "zh": "经过讨论，大家的意见终于统一了。",
+    "en": "After discussion, everyone's opinions were finally united."
+  },
+  "痛快": {
+    "zh": "考试终于结束了，大家玩得非常痛快。",
+    "en": "The exams are finally over, and everyone had a wonderful time."
+  },
+  "偷": {
+    "zh": "我的钱包在地铁上被人偷了。",
+    "en": "My wallet was stolen on the subway."
+  },
+  "投资": {
+    "zh": "他把所有的钱都投资到了这家公司。",
+    "en": "He invested all his money in this company."
+  },
+  "突出": {
+    "zh": "他在这次比赛中表现非常突出。",
+    "en": "His performance in this competition was outstanding."
+  },
+  "土豆": {
+    "zh": "我最喜欢吃妈妈做的土豆丝。",
+    "en": "My favorite dish is my mom's shredded potatoes."
+  },
+  "兔子": {
+    "zh": "小女孩养了两只白色的兔子。",
+    "en": "The little girl keeps two white rabbits."
+  },
+  "推辞": {
+    "zh": "朋友请他吃饭，他推辞了好几次，最后还是去了。",
+    "en": "His friend invited him to dinner; he declined several times but went in the end."
+  },
+  "推荐": {
+    "zh": "你能给我推荐几本好书吗？",
+    "en": "Can you recommend a few good books to me?"
+  },
+  "退": {
+    "zh": "这双鞋太小了，我想拿回商店退掉。",
+    "en": "These shoes are too small; I want to take them back to the shop and return them."
+  },
+  "退休": {
+    "zh": "爷爷退休以后，每天都去公园散步。",
+    "en": "Since Grandpa retired, he goes for a walk in the park every day."
+  },
+  "外公": {
+    "zh": "我外公今年八十岁了，身体还很健康。",
+    "en": "My grandfather on my mother's side is eighty this year and still very healthy."
+  },
+  "完整": {
+    "zh": "请把你的想法完整地表达出来。",
+    "en": "Please express your idea completely."
+  },
+  "玩具": {
+    "zh": "孩子把玩具扔得满地都是。",
+    "en": "The child threw toys all over the floor."
+  },
+  "万一": {
+    "zh": "带把伞吧，万一下雨呢？",
+    "en": "Take an umbrella, just in case it rains."
+  },
+  "威胁": {
+    "zh": "环境污染正在威胁着人类的健康。",
+    "en": "Environmental pollution is threatening human health."
+  },
+  "维修": {
+    "zh": "电梯正在维修，请走楼梯。",
+    "en": "The elevator is under repair; please take the stairs."
+  },
+  "围绕": {
+    "zh": "大家围绕这个问题展开了讨论。",
+    "en": "Everyone held a discussion centered on this issue."
+  },
+  "尾巴": {
+    "zh": "小狗一见到主人就高兴地摇尾巴。",
+    "en": "The puppy wags its tail happily as soon as it sees its owner."
+  },
+  "委屈": {
+    "zh": "明明不是她的错，却被批评了，她觉得很委屈。",
+    "en": "It clearly wasn't her fault, yet she was criticised, so she felt very wronged."
+  },
+  "胃": {
+    "zh": "他的胃不太好，不能吃太辣的东西。",
+    "en": "His stomach isn't very good, so he can't eat very spicy food."
+  },
+  "位于": {
+    "zh": "这家酒店位于市中心，交通很方便。",
+    "en": "This hotel is located in the city center, with convenient transport."
+  },
+  "未必": {
+    "zh": "价格贵的东西未必就是好的。",
+    "en": "Expensive things are not necessarily good."
+  },
+  "温柔": {
+    "zh": "她说话的声音很温柔。",
+    "en": "She speaks in a very gentle voice."
+  },
+  "文具": {
+    "zh": "开学前，妈妈给我买了很多新文具。",
+    "en": "Before school started, Mum bought me lots of new stationery."
+  },
+  "文学": {
+    "zh": "她从小就对中国文学很感兴趣。",
+    "en": "She has been interested in Chinese literature since she was little."
+  },
+  "稳定": {
+    "zh": "他想找一份收入稳定的工作。",
+    "en": "He wants to find a job with a stable income."
+  },
+  "问候": {
+    "zh": "回家以后，请代我问候你的父母。",
+    "en": "When you get home, please give my regards to your parents."
+  },
+  "卧室": {
+    "zh": "我的卧室不大，但是很温暖。",
+    "en": "My bedroom isn't big, but it's very cozy."
+  },
+  "无数": {
+    "zh": "为了这个实验，他失败了无数次。",
+    "en": "He failed countless times for the sake of this experiment."
+  },
+  "勿": {
+    "zh": "图书馆内请勿大声说话。",
+    "en": "Please do not talk loudly in the library."
+  },
+  "物质": {
+    "zh": "人们的物质生活越来越丰富了。",
+    "en": "People's material lives are getting richer and richer."
+  },
+  "吸取": {
+    "zh": "我们要从这次失败中吸取教训。",
+    "en": "We must learn a lesson from this failure."
+  },
+  "系统": {
+    "zh": "公司的电脑系统昨天出了问题。",
+    "en": "The company's computer system had a problem yesterday."
+  },
+  "戏剧": {
+    "zh": "她对中国传统戏剧很感兴趣。",
+    "en": "She is very interested in traditional Chinese theater."
+  },
+  "吓": {
+    "zh": "突然响起的声音把我吓了一跳。",
+    "en": "The sudden noise gave me a fright."
+  },
+  "夏令营": {
+    "zh": "暑假时，孩子们参加了一个英语夏令营。",
+    "en": "During the summer holiday, the children went to an English summer camp."
+  },
+  "下载": {
+    "zh": "你可以从网上免费下载这个软件。",
+    "en": "You can download this software for free online."
+  },
+  "显然": {
+    "zh": "他显然没有听懂老师的问题。",
+    "en": "He obviously didn't understand the teacher's question."
+  },
+  "县": {
+    "zh": "他在县里的一所中学当老师。",
+    "en": "He teaches at a middle school in the county."
+  },
+  "现象": {
+    "zh": "这种现象在大城市里很常见。",
+    "en": "This phenomenon is very common in big cities."
+  },
+  "香肠": {
+    "zh": "早饭我吃了两根香肠和一个鸡蛋。",
+    "en": "For breakfast I had two sausages and an egg."
+  },
+  "相当": {
+    "zh": "这次考试相当难，很多人没通过。",
+    "en": "This exam was quite hard; many people didn't pass."
+  },
+  "相似": {
+    "zh": "这两种文化有很多相似的地方。",
+    "en": "These two cultures have a lot in common."
+  },
+  "想念": {
+    "zh": "出国以后，我常常想念家乡的饭菜。",
+    "en": "Since going abroad, I often miss the food from my hometown."
+  },
+  "享受": {
+    "zh": "退休以后，他开始享受轻松的生活。",
+    "en": "After retiring, he began to enjoy a relaxed life."
+  },
+  "项链": {
+    "zh": "这条项链是妈妈送给我的生日礼物。",
+    "en": "This necklace was a birthday present from my mom."
+  },
+  "象征": {
+    "zh": "在中国文化中，红色象征着幸福和好运。",
+    "en": "In Chinese culture, red symbolizes happiness and good luck."
+  },
+  "消极": {
+    "zh": "遇到困难时，不要有消极的想法。",
+    "en": "When you run into difficulties, don't think negatively."
+  },
+  "消失": {
+    "zh": "他的身影很快就消失在人群中。",
+    "en": "His figure quickly disappeared into the crowd."
+  },
+  "小气": {
+    "zh": "他太小气了，从来不请朋友吃饭。",
+    "en": "He's so stingy that he never treats his friends to a meal."
+  },
+  "孝顺": {
+    "zh": "他很孝顺，每个周末都回家看望父母。",
+    "en": "He is a devoted son and goes home to visit his parents every weekend."
+  },
+  "斜": {
+    "zh": "墙上的画挂斜了，你帮我调一下。",
+    "en": "The picture on the wall is hanging crooked; help me straighten it."
+  },
+  "写作": {
+    "zh": "她从小就喜欢写作，现在是一名作家。",
+    "en": "She has loved writing since she was little, and now she is an author."
+  },
+  "心理": {
+    "zh": "考试前他的心理压力很大。",
+    "en": "He was under a lot of psychological pressure before the exam."
+  },
+  "心脏": {
+    "zh": "爷爷的心脏不太好，不能太累。",
+    "en": "Grandpa has a weak heart and mustn't get too tired."
+  },
+  "信任": {
+    "zh": "他做事很认真，老板非常信任他。",
+    "en": "He is very conscientious, so his boss trusts him a lot."
+  },
+  "行为": {
+    "zh": "在公共场所大声说话是不礼貌的行为。",
+    "en": "Talking loudly in public places is impolite behaviour."
+  },
+  "形容": {
+    "zh": "我不知道该怎么形容当时的心情。",
+    "en": "I don't know how to describe how I felt at the time."
+  },
+  "形势": {
+    "zh": "现在的经济形势对我们很不利。",
+    "en": "The current economic situation is very unfavorable to us."
+  },
+  "形状": {
+    "zh": "这些饼干有各种各样的形状，孩子们很喜欢。",
+    "en": "These cookies come in all kinds of shapes, and the children love them."
+  },
+  "幸运": {
+    "zh": "能遇到这么好的老师，我真幸运。",
+    "en": "I'm really lucky to have met such a good teacher."
+  },
+  "兄弟": {
+    "zh": "他们兄弟俩长得一点儿也不像。",
+    "en": "The two brothers don't look alike at all."
+  },
+  "虚心": {
+    "zh": "我们应该虚心接受别人的批评。",
+    "en": "We should accept other people's criticism with an open mind."
+  },
+  "宣布": {
+    "zh": "校长宣布明天放假一天。",
+    "en": "The principal announced that tomorrow will be a day off."
+  },
+  "学术": {
+    "zh": "他在这个领域发表了很多学术文章。",
+    "en": "He has published many academic papers in this field."
+  },
+  "询问": {
+    "zh": "警察向周围的人询问了当时的情况。",
+    "en": "The police asked the people nearby about what had happened."
+  },
+  "训练": {
+    "zh": "运动员们每天都要进行严格的训练。",
+    "en": "The athletes go through strict training every day."
+  },
+  "押金": {
+    "zh": "租这套房子要先交一个月的押金。",
+    "en": "To rent this apartment, you first have to pay one month's deposit."
+  },
+  "牙齿": {
+    "zh": "每天早晚刷牙才能保护好牙齿。",
+    "en": "Brushing morning and night is the way to keep your teeth healthy."
+  },
+  "宴会": {
+    "zh": "公司明天晚上要举行一个宴会。",
+    "en": "The company is holding a banquet tomorrow evening."
+  },
+  "痒": {
+    "zh": "被蚊子咬了以后，我的胳膊痒得很难受。",
+    "en": "After being bitten by a mosquito, my arm itched terribly."
+  },
+  "样式": {
+    "zh": "这家店的衣服样式很多，你可以慢慢挑。",
+    "en": "This shop has lots of clothing styles, so take your time choosing."
+  },
+  "腰": {
+    "zh": "他搬了一天的东西，腰疼得厉害。",
+    "en": "After moving things all day, his lower back hurts badly."
+  },
+  "咬": {
+    "zh": "他小时候被狗咬过，所以很怕狗。",
+    "en": "He was bitten by a dog as a child, so he's afraid of dogs."
+  },
+  "夜": {
+    "zh": "他昨天一夜都没睡好。",
+    "en": "He didn't sleep well all last night."
+  },
+  "业余": {
+    "zh": "他业余时间喜欢画画儿。",
+    "en": "In his spare time he likes to paint."
+  },
+  "依然": {
+    "zh": "虽然已经过了十年，这里依然没有什么变化。",
+    "en": "Although ten years have passed, this place still hasn't changed much."
+  },
+  "一旦": {
+    "zh": "一旦做出了决定，就不要轻易改变。",
+    "en": "Once you've made a decision, don't change it lightly."
+  },
+  "一致": {
+    "zh": "经过讨论，大家终于达成了一致。",
+    "en": "After discussion, everyone finally reached agreement."
+  },
+  "一再": {
+    "zh": "医生一再提醒他要少喝酒。",
+    "en": "The doctor reminded him again and again to drink less."
+  },
+  "移民": {
+    "zh": "他们全家十年前移民到了加拿大。",
+    "en": "His whole family emigrated to Canada ten years ago."
+  },
+  "疑问": {
+    "zh": "如果你还有什么疑问，可以随时问我。",
+    "en": "If you have any more questions, feel free to ask me anytime."
+  },
+  "以来": {
+    "zh": "今年以来，这里的房价一直在上涨。",
+    "en": "Since the start of this year, house prices here have kept rising."
+  },
+  "意外": {
+    "zh": "听到他要结婚的消息，大家都很意外。",
+    "en": "Everyone was surprised to hear that he was getting married."
+  },
+  "议论": {
+    "zh": "大家都在议论这次考试的结果。",
+    "en": "Everyone is talking about the results of this exam."
+  },
+  "义务": {
+    "zh": "保护环境是每个人的义务。",
+    "en": "Protecting the environment is everyone's duty."
+  },
+  "因素": {
+    "zh": "影响健康的因素有很多，比如饮食和睡眠。",
+    "en": "Many factors affect health, such as diet and sleep."
+  },
+  "英俊": {
+    "zh": "她的男朋友长得又高又英俊。",
+    "en": "Her boyfriend is tall and handsome."
+  },
+  "营养": {
+    "zh": "鸡蛋和牛奶都很有营养。",
+    "en": "Eggs and milk are both very nutritious."
+  },
+  "硬": {
+    "zh": "这块面包放了好几天，已经变得很硬了。",
+    "en": "This bread has been sitting for days and has gone hard."
+  },
+  "应付": {
+    "zh": "工作太多了，我一个人应付不过来。",
+    "en": "There's too much work; I can't cope with it on my own."
+  },
+  "应用": {
+    "zh": "这项新技术已经被广泛应用到生活中。",
+    "en": "This new technology has already been widely applied in everyday life."
+  },
+  "拥挤": {
+    "zh": "上下班的时候，地铁里非常拥挤。",
+    "en": "During rush hour, the subway is extremely crowded."
+  },
+  "勇气": {
+    "zh": "他终于鼓起勇气向她表白了。",
+    "en": "He finally plucked up the courage to tell her how he felt."
+  },
+  "用功": {
+    "zh": "他学习非常用功，每天都学到很晚。",
+    "en": "He studies very hard and stays up late studying every day."
+  },
+  "优惠": {
+    "zh": "现在买机票有优惠，可以打八折。",
+    "en": "There's a discount on plane tickets right now: 20% off."
+  },
+  "优势": {
+    "zh": "年轻是你最大的优势。",
+    "en": "Being young is your greatest advantage."
+  },
+  "悠久": {
+    "zh": "中国是一个历史悠久的国家。",
+    "en": "China is a country with a long history."
+  },
+  "油炸": {
+    "zh": "油炸食品吃多了对身体不好。",
+    "en": "Eating too much deep-fried food is bad for your health."
+  },
+  "有利": {
+    "zh": "这个政策有利于经济的发展。",
+    "en": "This policy is favorable to economic development."
+  },
+  "娱乐": {
+    "zh": "周末他的娱乐活动主要是看电影。",
+    "en": "On weekends his main entertainment is watching films."
+  },
+  "预报": {
+    "zh": "天气预报说明天有大雨，记得带伞。",
+    "en": "The weather forecast says there will be heavy rain tomorrow, so remember to bring an umbrella."
+  },
+  "预防": {
+    "zh": "经常洗手可以预防感冒。",
+    "en": "Washing your hands often can help prevent colds."
+  },
+  "圆": {
+    "zh": "今晚的月亮又大又圆。",
+    "en": "Tonight the moon is big and full."
+  },
+  "元旦": {
+    "zh": "元旦那天，我们全家去看了一场电影。",
+    "en": "On New Year's Day, our whole family went to see a film."
+  },
+  "员工": {
+    "zh": "这家公司有两千多名员工。",
+    "en": "This company has more than two thousand employees."
+  },
+  "愿望": {
+    "zh": "希望你的愿望早日实现。",
+    "en": "I hope your wish comes true soon."
+  },
+  "晕": {
+    "zh": "我坐了一天的车，现在头很晕，想躺一会儿。",
+    "en": "I've been on the road all day; my head is spinning and I want to lie down for a bit."
+  },
+  "运气": {
+    "zh": "这次能找到这么好的工作，完全是靠运气。",
+    "en": "Finding such a good job this time was entirely down to luck."
+  },
+  "运用": {
+    "zh": "学过的语法要在实际生活中运用。",
+    "en": "Grammar you have learned should be put to use in real life."
+  },
+  "灾害": {
+    "zh": "这场自然灾害给当地造成了很大的损失。",
+    "en": "This natural disaster caused heavy losses to the area."
+  },
+  "在乎": {
+    "zh": "别人怎么说我不在乎，我只做我喜欢的事。",
+    "en": "I don't care what others say; I just do what I like."
+  },
+  "再三": {
+    "zh": "经过再三考虑，他决定接受这份工作。",
+    "en": "After thinking it over again and again, he decided to accept the job."
+  },
+  "赞成": {
+    "zh": "我完全赞成你的意见。",
+    "en": "I completely agree with your opinion."
+  },
+  "糟糕": {
+    "zh": "糟糕，我把钥匙忘在办公室了！",
+    "en": "Oh no, I left my keys in the office!"
+  },
+  "造成": {
+    "zh": "这次事故造成了很大的损失。",
+    "en": "This accident caused heavy losses."
+  },
+  "责备": {
+    "zh": "他做错了事，妈妈却没有责备他。",
+    "en": "He did something wrong, but his mother didn't blame him."
+  },
+  "窄": {
+    "zh": "这条路太窄了，两辆车没法同时通过。",
+    "en": "This road is too narrow for two cars to pass at the same time."
+  },
+  "展开": {
+    "zh": "大家围绕这个问题展开了激烈的讨论。",
+    "en": "Everyone launched into a heated discussion on this issue."
+  },
+  "掌握": {
+    "zh": "学习外语，首先要掌握基本语法。",
+    "en": "To learn a foreign language, you first need to master the basic grammar."
+  },
+  "账户": {
+    "zh": "工资每个月会直接打到你的账户里。",
+    "en": "Your salary will be paid directly into your account every month."
+  },
+  "珍惜": {
+    "zh": "我们要珍惜现在的幸福生活。",
+    "en": "We should cherish the happy life we have now."
+  },
+  "阵": {
+    "zh": "下午突然下了一阵大雨。",
+    "en": "There was a sudden burst of heavy rain in the afternoon."
+  },
+  "睁": {
+    "zh": "他累得连眼睛都睁不开了。",
+    "en": "He was so tired he couldn't even keep his eyes open."
+  },
+  "争取": {
+    "zh": "我会努力争取这次出国学习的机会。",
+    "en": "I'll do my best to win this chance to study abroad."
+  },
+  "整个": {
+    "zh": "整个下午他都在图书馆看书。",
+    "en": "He spent the whole afternoon reading in the library."
+  },
+  "整齐": {
+    "zh": "教室里的桌椅摆得很整齐。",
+    "en": "The desks and chairs in the classroom are arranged very neatly."
+  },
+  "正": {
+    "zh": "我正要给你打电话，你就来了。",
+    "en": "I was just about to call you when you showed up."
+  },
+  "政府": {
+    "zh": "政府决定加大对教育的投入。",
+    "en": "The government decided to increase its investment in education."
+  },
+  "证件": {
+    "zh": "办理入住的时候，请出示您的证件。",
+    "en": "Please show your ID when you check in."
+  },
+  "支": {
+    "zh": "能把你那支笔借我用一下吗？",
+    "en": "Could I borrow that pen of yours for a moment?"
+  },
+  "支票": {
+    "zh": "现在用支票付款的人越来越少了。",
+    "en": "Fewer and fewer people pay by check these days."
+  },
+  "指导": {
+    "zh": "在老师的指导下，我顺利完成了论文。",
+    "en": "Under my teacher's guidance, I successfully finished my thesis."
+  },
+  "制定": {
+    "zh": "新学期开始了，我给自己制定了一个学习计划。",
+    "en": "The new term has begun, and I've drawn up a study plan for myself."
+  },
+  "制造": {
+    "zh": "这家工厂专门制造汽车零件。",
+    "en": "This factory specializes in manufacturing car parts."
+  },
+  "智慧": {
+    "zh": "这本书里充满了生活的智慧。",
+    "en": "This book is full of the wisdom of life."
+  },
+  "秩序": {
+    "zh": "请大家排好队上车，保持良好的秩序。",
+    "en": "Please line up to board and keep things orderly."
+  },
+  "中介": {
+    "zh": "我们是通过中介租到这套房子的。",
+    "en": "We rented this apartment through an agency."
+  },
+  "中旬": {
+    "zh": "我们计划在十月中旬出发去旅游。",
+    "en": "We plan to set off on our trip in mid-October."
+  },
+  "周到": {
+    "zh": "这家酒店的服务非常周到。",
+    "en": "The service at this hotel is very attentive."
+  },
+  "逐步": {
+    "zh": "经过努力，他的汉语水平正在逐步提高。",
+    "en": "Through hard work, his Chinese is gradually improving."
+  },
+  "竹子": {
+    "zh": "熊猫最喜欢吃竹子。",
+    "en": "Pandas love eating bamboo most of all."
+  },
+  "主持": {
+    "zh": "这次会议由王经理主持。",
+    "en": "This meeting will be chaired by Manager Wang."
+  },
+  "主观": {
+    "zh": "你的看法太主观了，应该多听听别人的意见。",
+    "en": "Your view is too subjective; you should listen more to other people's opinions."
+  },
+  "主题": {
+    "zh": "这次演讲比赛的主题是环境保护。",
+    "en": "The theme of this speech contest is environmental protection."
+  },
+  "主任": {
+    "zh": "有问题可以直接去找我们办公室主任。",
+    "en": "If you have a problem, you can go straight to our office director."
+  },
+  "抓": {
+    "zh": "过马路的时候，孩子紧紧地抓着妈妈的手。",
+    "en": "When crossing the road, the child held tightly onto his mother's hand."
+  },
+  "专家": {
+    "zh": "专家建议每天至少睡七个小时。",
+    "en": "Experts recommend sleeping at least seven hours a day."
+  },
+  "专心": {
+    "zh": "上课的时候要专心听讲，不要玩手机。",
+    "en": "In class you should listen attentively and not play on your phone."
+  },
+  "转告": {
+    "zh": "请你转告他，明天的会议改到下午了。",
+    "en": "Please tell him that tomorrow's meeting has been moved to the afternoon."
+  },
+  "装": {
+    "zh": "他把书都装进了箱子里。",
+    "en": "He packed all the books into the box."
+  },
+  "装修": {
+    "zh": "我们的新房子还在装修，下个月才能搬进去。",
+    "en": "Our new home is still being renovated; we can't move in until next month."
+  },
+  "状况": {
+    "zh": "最近公司的经济状况不太好。",
+    "en": "The company's financial situation hasn't been good lately."
+  },
+  "追": {
+    "zh": "那只小狗一直在后面追着我跑。",
+    "en": "That little dog kept chasing after me."
+  },
+  "资格": {
+    "zh": "只有会员才有资格参加这个活动。",
+    "en": "Only members are eligible to take part in this event."
+  },
+  "资料": {
+    "zh": "为了写论文，我在图书馆查了很多资料。",
+    "en": "I looked up a lot of material in the library to write my thesis."
+  },
+  "姿势": {
+    "zh": "写字的时候要注意保持正确的姿势。",
+    "en": "When writing, make sure to keep a correct posture."
+  },
+  "紫": {
+    "zh": "她穿了一条紫色的裙子，非常漂亮。",
+    "en": "She wore a purple skirt and looked very pretty."
+  },
+  "字幕": {
+    "zh": "看外国电影的时候，我一般会打开中文字幕。",
+    "en": "When I watch foreign films, I usually turn on Chinese subtitles."
+  },
+  "自动": {
+    "zh": "这种门有人走近时会自动打开。",
+    "en": "This kind of door opens automatically when someone approaches."
+  },
+  "自由": {
+    "zh": "大学生活比高中自由多了。",
+    "en": "University life is much freer than high school."
+  },
+  "综合": {
+    "zh": "这次考试主要考查学生的综合能力。",
+    "en": "This exam mainly tests students' overall ability."
+  },
+  "总共": {
+    "zh": "这次旅行我们总共花了五千块钱。",
+    "en": "We spent five thousand yuan in total on this trip."
+  },
+  "总理": {
+    "zh": "总理明天将访问欧洲三个国家。",
+    "en": "The premier will visit three European countries tomorrow."
+  },
+  "总算": {
+    "zh": "等了一个多小时，公共汽车总算来了。",
+    "en": "After waiting over an hour, the bus finally came."
+  },
+  "总之": {
+    "zh": "总之，我们必须在周五以前完成这个任务。",
+    "en": "In short, we must finish this task before Friday."
+  },
+  "组成": {
+    "zh": "这个乐队由五个年轻人组成。",
+    "en": "This band is made up of five young people."
+  },
+  "组织": {
+    "zh": "学校组织学生去博物馆参观。",
+    "en": "The school organized a trip for students to visit the museum."
+  },
+  "作文": {
+    "zh": "老师让我们写一篇题目为“我的家乡”的作文。",
+    "en": "The teacher asked us to write an essay titled \"My Hometown\"."
+  },
+  "哎": {
+    "zh": "哎，你的钥匙掉在地上了！",
+    "en": "Hey, you dropped your keys on the floor!"
+  },
+  "爱护": {
+    "zh": "我们要爱护花草树木，保护环境。",
+    "en": "We should take care of plants and trees and protect the environment."
+  },
+  "爱惜": {
+    "zh": "我们要爱惜粮食，不要浪费。",
+    "en": "We should value food and not waste it."
+  },
+  "安装": {
+    "zh": "师傅明天上午来给我们安装空调。",
+    "en": "The technician will come tomorrow morning to install our air conditioner."
+  },
+  "暗": {
+    "zh": "房间里太暗了，帮我把灯打开吧。",
+    "en": "It's too dark in the room; please turn on the light for me."
+  },
+  "把握": {
+    "zh": "这是个好机会，你一定要把握住。",
+    "en": "This is a great opportunity; you must seize it."
+  },
+  "摆": {
+    "zh": "桌子上摆着一盆漂亮的花。",
+    "en": "A pot of pretty flowers is set out on the table."
+  },
+  "办理": {
+    "zh": "我明天要去银行办理一些手续。",
+    "en": "Tomorrow I need to go to the bank to take care of some paperwork."
+  },
+  "傍晚": {
+    "zh": "每天傍晚，爷爷都会去公园散步。",
+    "en": "Every day toward evening, Grandpa goes for a walk in the park."
+  },
+  "包裹": {
+    "zh": "我去邮局取了一个包裹。",
+    "en": "I went to the post office to pick up a parcel."
+  },
+  "包括": {
+    "zh": "这次旅行的费用包括住宿和三餐。",
+    "en": "The cost of this trip includes accommodation and three meals a day."
+  },
+  "薄": {
+    "zh": "天气冷了，只穿一件薄衬衫可不行。",
+    "en": "It's gotten cold; just a thin shirt won't do."
+  },
+  "宝贝": {
+    "zh": "这些老照片是奶奶最珍惜的宝贝。",
+    "en": "These old photos are Grandma's most cherished treasures."
+  },
+  "保持": {
+    "zh": "毕业以后，我们一直保持着联系。",
+    "en": "We have kept in touch ever since graduating."
+  },
+  "保险": {
+    "zh": "出国旅游前最好买一份保险。",
+    "en": "It's best to buy insurance before travelling abroad."
+  },
+  "抱怨": {
+    "zh": "他总是抱怨工作太累，工资太低。",
+    "en": "He always complains that his job is too tiring and the pay is too low."
+  },
+  "报道": {
+    "zh": "这家报纸详细报道了那次交通事故。",
+    "en": "This newspaper reported on that traffic accident in detail."
+  },
+  "报社": {
+    "zh": "她大学毕业后在一家报社当记者。",
+    "en": "After graduating from university, she became a reporter at a newspaper."
+  },
+  "背": {
+    "zh": "他搬了一天箱子，背疼得厉害。",
+    "en": "He moved boxes all day, and his back hurts badly."
+  },
+  "本质": {
+    "zh": "这两个问题在本质上是一样的。",
+    "en": "These two problems are essentially the same."
+  },
+  "彼此": {
+    "zh": "我们认识多年，彼此都很了解。",
+    "en": "We've known each other for years and understand each other well."
+  },
+  "毕竟": {
+    "zh": "别生他的气了，他毕竟还是个孩子。",
+    "en": "Don't be angry with him; he's only a child, after all."
+  },
+  "避免": {
+    "zh": "开车时要集中注意力，避免发生事故。",
+    "en": "Concentrate when driving to avoid accidents."
+  },
+  "编辑": {
+    "zh": "她在一家杂志社当编辑。",
+    "en": "She works as an editor at a magazine."
+  },
+  "便": {
+    "zh": "他一下课便去图书馆了。",
+    "en": "As soon as class ended, he went to the library."
+  },
+  "标点": {
+    "zh": "写完作文以后，要检查一下标点有没有用错。",
+    "en": "After writing an essay, check whether any punctuation is used wrongly."
+  },
+  "表明": {
+    "zh": "调查结果表明，大多数人支持这个计划。",
+    "en": "The survey results show that most people support this plan."
+  },
+  "病毒": {
+    "zh": "我的电脑好像中病毒了。",
+    "en": "My computer seems to have caught a virus."
+  },
+  "播放": {
+    "zh": "电视台正在播放今年的春节晚会。",
+    "en": "The TV station is broadcasting this year's Spring Festival Gala."
+  },
+  "脖子": {
+    "zh": "天气冷了，出门记得围上围巾，别冻着脖子。",
+    "en": "It's getting cold; remember to wear a scarf when you go out so your neck doesn't get cold."
+  },
+  "不要紧": {
+    "zh": "只是一点儿小伤，不要紧，你别担心。",
+    "en": "It's only a small injury, nothing serious, so don't worry."
+  },
+  "布": {
+    "zh": "这块布可以用来做一条裙子。",
+    "en": "This piece of cloth can be used to make a skirt."
+  },
+  "不安": {
+    "zh": "考试结果还没出来，他心里很不安。",
+    "en": "The exam results aren't out yet, and he feels very uneasy."
+  },
+  "不得了": {
+    "zh": "听到这个好消息，她高兴得不得了。",
+    "en": "When she heard the good news, she was extremely happy."
+  },
+  "不如": {
+    "zh": "我的汉语说得不如他流利。",
+    "en": "My Chinese isn't as fluent as his."
+  },
+  "步骤": {
+    "zh": "请按照说明书上的步骤进行操作。",
+    "en": "Please follow the steps in the instructions."
+  },
+  "采访": {
+    "zh": "记者采访了几位参加比赛的运动员。",
+    "en": "The reporter interviewed several athletes taking part in the competition."
+  },
+  "彩虹": {
+    "zh": "雨停了，天空中出现了一道彩虹。",
+    "en": "The rain stopped, and a rainbow appeared in the sky."
+  },
+  "参与": {
+    "zh": "老师鼓励每个学生积极参与课堂讨论。",
+    "en": "The teacher encourages every student to take an active part in class discussions."
+  },
+  "惭愧": {
+    "zh": "我没能按时完成任务，感到很惭愧。",
+    "en": "I feel very ashamed that I didn't finish the task on time."
+  },
+  "操心": {
+    "zh": "孩子已经长大了，你就别再为他操心了。",
+    "en": "Your child is grown up now; stop worrying about him."
+  },
+  "册": {
+    "zh": "这套小说一共有三册，我已经看完了第一册。",
+    "en": "This novel comes in three volumes, and I've finished the first one."
+  },
+  "测验": {
+    "zh": "老师明天要测验我们上周学的生词。",
+    "en": "Tomorrow the teacher is going to test us on the new words we learned last week."
+  },
+  "曾经": {
+    "zh": "我曾经在上海工作过三年。",
+    "en": "I once worked in Shanghai for three years."
+  },
+  "差距": {
+    "zh": "城市和农村之间的收入差距还很大。",
+    "en": "The income gap between cities and the countryside is still large."
+  },
+  "产品": {
+    "zh": "这家公司的产品质量很好。",
+    "en": "This company's products are of very good quality."
+  },
+  "长途": {
+    "zh": "坐了十几个小时的长途汽车，他累坏了。",
+    "en": "After more than ten hours on a long-distance bus, he was exhausted."
+  },
+  "抄": {
+    "zh": "考试的时候抄别人的答案是不对的。",
+    "en": "Copying other people's answers during an exam is wrong."
+  },
+  "超级": {
+    "zh": "这部电影超级好看，你一定要去看！",
+    "en": "This movie is super good; you have to go see it!"
+  },
+  "朝": {
+    "zh": "我家的窗户朝南，冬天阳光很好。",
+    "en": "Our windows face south, so we get lots of sunshine in winter."
+  },
+  "炒": {
+    "zh": "妈妈炒了几个我爱吃的菜。",
+    "en": "Mum stir-fried a few of my favourite dishes."
+  },
+  "吵架": {
+    "zh": "他们俩昨天为了一点儿小事吵架了。",
+    "en": "The two of them quarreled over a trivial matter yesterday."
+  },
+  "车厢": {
+    "zh": "这节车厢里的人太多了，我们去后面吧。",
+    "en": "This carriage is too crowded; let's go to the back."
+  },
+  "沉默": {
+    "zh": "听了这个问题，他沉默了很久才回答。",
+    "en": "Hearing the question, he was silent for a long time before answering."
+  },
+  "称呼": {
+    "zh": "第一次见面，我不知道该怎么称呼他。",
+    "en": "Meeting him for the first time, I didn't know how to address him."
+  },
+  "承认": {
+    "zh": "他终于承认自己做错了。",
+    "en": "He finally admitted that he was wrong."
+  },
+  "程度": {
+    "zh": "我的汉语还没达到能看懂报纸的程度。",
+    "en": "My Chinese hasn't yet reached the level where I can read newspapers."
+  },
+  "成分": {
+    "zh": "这种饮料的主要成分是水和糖。",
+    "en": "The main ingredients of this drink are water and sugar."
+  },
+  "成果": {
+    "zh": "这项研究成果得到了专家们的肯定。",
+    "en": "The results of this research were recognized by experts."
+  },
+  "成就": {
+    "zh": "她在科学研究方面取得了很大的成就。",
+    "en": "She has made great achievements in scientific research."
+  },
+  "成熟": {
+    "zh": "经过这件事，他变得成熟多了。",
+    "en": "After this experience, he became much more mature."
+  },
+  "成长": {
+    "zh": "父母都希望孩子健康快乐地成长。",
+    "en": "All parents hope their children grow up healthy and happy."
+  },
+  "吃亏": {
+    "zh": "他为人太老实，所以经常吃亏。",
+    "en": "He is too honest, so he often loses out."
+  },
+  "迟早": {
+    "zh": "只要你坚持努力，迟早会成功的。",
+    "en": "As long as you keep working hard, you'll succeed sooner or later."
+  },
+  "池塘": {
+    "zh": "公园的池塘里有很多小鱼在游来游去。",
+    "en": "Lots of little fish are swimming around in the pond in the park."
+  },
+  "翅膀": {
+    "zh": "小鸟张开翅膀，飞向了天空。",
+    "en": "The little bird spread its wings and flew into the sky."
+  },
+  "充电器": {
+    "zh": "我忘带手机充电器了，能借你的用一下吗？",
+    "en": "I forgot my phone charger. Could I borrow yours for a bit?"
+  },
+  "充满": {
+    "zh": "年轻人总是充满了活力。",
+    "en": "Young people are always full of energy."
+  },
+  "抽屉": {
+    "zh": "钥匙就放在桌子的抽屉里。",
+    "en": "The keys are in the desk drawer."
+  },
+  "臭": {
+    "zh": "垃圾太臭了，赶快拿出去扔了吧。",
+    "en": "The garbage stinks; take it out and throw it away right now."
+  },
+  "出版": {
+    "zh": "他的第一本小说明年就要出版了。",
+    "en": "His first novel will be published next year."
+  },
+  "出色": {
+    "zh": "她在工作中表现得非常出色，受到了领导的表扬。",
+    "en": "She has done outstanding work and was praised by her boss."
+  },
+  "初级": {
+    "zh": "我刚开始学汉语，现在在上初级班。",
+    "en": "I've just started learning Chinese, so I'm in a beginner class."
+  },
+  "传播": {
+    "zh": "网络让信息传播得越来越快。",
+    "en": "The internet makes information spread faster and faster."
+  },
+  "传说": {
+    "zh": "关于这个湖，有一个美丽的传说。",
+    "en": "There is a beautiful legend about this lake."
+  },
+  "窗帘": {
+    "zh": "阳光太强了，把窗帘拉上吧。",
+    "en": "The sunlight is too strong; let's draw the curtains."
+  },
+  "创造": {
+    "zh": "这位运动员创造了新的世界纪录。",
+    "en": "This athlete set a new world record."
+  },
+  "词汇": {
+    "zh": "多读书可以帮助你扩大词汇量。",
+    "en": "Reading more can help you expand your vocabulary."
+  },
+  "辞职": {
+    "zh": "她因为压力太大，上个月辞职了。",
+    "en": "She resigned last month because the pressure was too great."
+  },
+  "刺激": {
+    "zh": "这部电影的情节非常刺激。",
+    "en": "The plot of this film is really thrilling."
+  },
+  "从此": {
+    "zh": "他们大吵了一架，从此再也没有联系过。",
+    "en": "They had a big fight, and since then they have never been in touch."
+  },
+  "从事": {
+    "zh": "他大学毕业以后一直从事教育工作。",
+    "en": "Since graduating from university, he has worked in education."
+  },
+  "促进": {
+    "zh": "旅游业的发展促进了当地经济的增长。",
+    "en": "The development of tourism has boosted the growth of the local economy."
+  },
+  "催": {
+    "zh": "妈妈一直催我早点儿结婚。",
+    "en": "My mother keeps pushing me to get married soon."
+  },
+  "存在": {
+    "zh": "这个计划还存在一些问题。",
+    "en": "There are still some problems with this plan."
+  },
+  "答应": {
+    "zh": "我请他帮忙，他很痛快地答应了。",
+    "en": "I asked him for help, and he readily agreed."
+  },
+  "达到": {
+    "zh": "这次考试他终于达到了自己的目标。",
+    "en": "In this exam he finally reached his goal."
+  },
+  "打交道": {
+    "zh": "做销售工作，每天都要和各种各样的人打交道。",
+    "en": "In sales, you have to deal with all kinds of people every day."
+  },
+  "打喷嚏": {
+    "zh": "他感冒了，一直在打喷嚏。",
+    "en": "He has a cold and keeps sneezing."
+  },
+  "打听": {
+    "zh": "我向邻居打听了一下附近哪儿有银行。",
+    "en": "I asked a neighbor where there was a bank nearby."
+  },
+  "大方": {
+    "zh": "他很大方，经常请朋友们吃饭。",
+    "en": "He is very generous and often treats his friends to meals."
+  },
+  "大型": {
+    "zh": "这里周末要举办一场大型音乐会。",
+    "en": "A large-scale concert will be held here this weekend."
+  },
+  "呆": {
+    "zh": "听到这个消息，他一下子呆住了。",
+    "en": "When he heard the news, he was stunned."
+  },
+  "代替": {
+    "zh": "王老师病了，今天由李老师代替他上课。",
+    "en": "Mr. Wang is ill, so Ms. Li is teaching his class in his place today."
+  },
+  "贷款": {
+    "zh": "他向银行贷款买了一套房子。",
+    "en": "He took out a bank loan to buy a flat."
+  },
+  "单纯": {
+    "zh": "她是个很单纯的女孩，很容易相信别人。",
+    "en": "She's a very innocent girl who trusts people easily."
+  },
+  "单独": {
+    "zh": "我想单独跟你谈一谈。",
+    "en": "I'd like to talk with you alone."
+  },
+  "单元": {
+    "zh": "这本书一共有十个单元，我们已经学了一半。",
+    "en": "This book has ten units in total, and we've already covered half of them."
+  },
+  "胆小鬼": {
+    "zh": "连这么小的虫子都怕，真是个胆小鬼！",
+    "en": "Scared of even such a tiny bug? What a coward!"
+  },
+  "当地": {
+    "zh": "去旅游时，我喜欢尝尝当地的特色菜。",
+    "en": "When I travel, I like to try the local specialties."
+  },
+  "当心": {
+    "zh": "路上有冰，开车一定要当心！",
+    "en": "There's ice on the road; be careful when you drive!"
+  },
+  "挡": {
+    "zh": "一辆大卡车挡住了我们的路。",
+    "en": "A big truck blocked our way."
+  },
+  "岛屿": {
+    "zh": "印度尼西亚是一个由很多岛屿组成的国家。",
+    "en": "Indonesia is a country made up of many islands."
+  },
+  "导演": {
+    "zh": "这部电影的导演非常有名。",
+    "en": "The director of this film is very famous."
+  },
+  "导致": {
+    "zh": "睡眠不足会导致注意力不集中。",
+    "en": "Lack of sleep can lead to poor concentration."
+  },
+  "到达": {
+    "zh": "火车将于下午三点到达北京。",
+    "en": "The train will arrive in Beijing at 3 p.m."
+  },
+  "道德": {
+    "zh": "为了钱欺骗朋友，这样做太不道德了。",
+    "en": "Deceiving a friend for money is really immoral."
+  },
+  "等待": {
+    "zh": "大家耐心等待了两个小时，飞机终于起飞了。",
+    "en": "Everyone waited patiently for two hours, and the plane finally took off."
+  },
+  "的确": {
+    "zh": "这个办法的确不错，我们试试吧。",
+    "en": "This method really is good; let's give it a try."
+  },
+  "地道": {
+    "zh": "他在北京住了十年，汉语说得很地道。",
+    "en": "He has lived in Beijing for ten years and speaks very authentic Chinese."
+  },
+  "地理": {
+    "zh": "我从小就对地理很感兴趣，喜欢看地图。",
+    "en": "I've been interested in geography since I was little and love looking at maps."
+  },
+  "地区": {
+    "zh": "这个地区的冬天特别冷。",
+    "en": "Winters in this region are especially cold."
+  },
+  "地位": {
+    "zh": "这家公司在行业中的地位越来越高。",
+    "en": "This company's standing in the industry keeps rising."
+  },
+  "点心": {
+    "zh": "下午我们一边喝茶，一边吃点心。",
+    "en": "In the afternoon we had tea and pastries."
+  },
+  "电台": {
+    "zh": "我每天开车的时候都听电台节目。",
+    "en": "I listen to radio programs every day while driving."
+  },
+  "钓": {
+    "zh": "爷爷周末喜欢去河边钓鱼。",
+    "en": "Grandpa likes going fishing by the river on weekends."
+  },
+  "洞": {
+    "zh": "我的袜子破了一个洞。",
+    "en": "There's a hole in my sock."
+  },
+  "豆腐": {
+    "zh": "我最喜欢喝妈妈做的豆腐汤。",
+    "en": "My favorite is the tofu soup my mom makes."
+  },
+  "独立": {
+    "zh": "孩子长大后要学会独立生活。",
+    "en": "When children grow up, they need to learn to live independently."
+  },
+  "断": {
+    "zh": "刮了一夜大风，好几根树枝都断了。",
+    "en": "After a night of strong wind, several branches snapped."
+  },
+  "堆": {
+    "zh": "他的桌子上放着一堆旧报纸。",
+    "en": "There is a pile of old newspapers on his desk."
+  },
+  "对方": {
+    "zh": "吵架的时候，要多站在对方的角度想想。",
+    "en": "When you argue, try to see things from the other person's point of view."
+  },
+  "对象": {
+    "zh": "这次调查的对象主要是大学生。",
+    "en": "The subjects of this survey are mainly college students."
+  },
+  "兑换": {
+    "zh": "我想把人民币兑换成美元。",
+    "en": "I'd like to exchange RMB for US dollars."
+  },
+  "蹲": {
+    "zh": "他蹲在地上找掉了的钥匙。",
+    "en": "He crouched on the ground looking for the keys he had dropped."
+  },
+  "多余": {
+    "zh": "这句话是多余的，可以去掉。",
+    "en": "This sentence is unnecessary; it can be taken out."
+  },
+  "躲藏": {
+    "zh": "小猫躲藏在床底下，怎么叫也不出来。",
+    "en": "The kitten is hiding under the bed and won't come out however much you call it."
+  },
+  "恶劣": {
+    "zh": "由于天气恶劣，今天的航班都被取消了。",
+    "en": "Due to severe weather, all of today's flights were canceled."
+  },
+  "耳环": {
+    "zh": "这对耳环是妈妈送给我的生日礼物。",
+    "en": "This pair of earrings was a birthday present from my mom."
+  },
+  "发愁": {
+    "zh": "他正为找工作的事发愁呢。",
+    "en": "He's worrying about finding a job."
+  },
+  "发抖": {
+    "zh": "外面太冷了，她冻得直发抖。",
+    "en": "It was so cold outside that she was shivering nonstop."
+  },
+  "发明": {
+    "zh": "你知道是谁发明了电话吗？",
+    "en": "Do you know who invented the telephone?"
+  },
+  "翻": {
+    "zh": "请大家把书翻到第二十页。",
+    "en": "Everyone, please turn your books to page twenty."
+  },
+  "反复": {
+    "zh": "这篇课文我反复读了好几遍。",
+    "en": "I read this text over and over, several times."
+  },
+  "反映": {
+    "zh": "这部小说反映了当时农民的生活。",
+    "en": "This novel reflects the lives of farmers at that time."
+  },
+  "方": {
+    "zh": "这张桌子是方的，那张是圆的。",
+    "en": "This table is square, and that one is round."
+  },
+  "仿佛": {
+    "zh": "看着这些老照片，我仿佛回到了小时候。",
+    "en": "Looking at these old photos, it felt as if I were back in my childhood."
+  },
+  "非": {
+    "zh": "这件事非你去不可。",
+    "en": "You are the one who has to go and handle this."
+  },
+  "废话": {
+    "zh": "别说废话了，我们快点儿开始吧。",
+    "en": "Stop talking nonsense; let's get started."
+  },
+  "分别": {
+    "zh": "和老朋友分别的时候，她忍不住哭了。",
+    "en": "When she parted from her old friend, she couldn't help crying."
+  },
+  "分配": {
+    "zh": "经理把任务分配给了每个人。",
+    "en": "The manager assigned tasks to each person."
+  },
+  "分析": {
+    "zh": "我们先分析一下失败的原因吧。",
+    "en": "Let's first analyse the reasons for the failure."
+  },
+  "纷纷": {
+    "zh": "听到这个消息，大家纷纷表示支持。",
+    "en": "On hearing the news, people expressed their support one after another."
+  },
+  "奋斗": {
+    "zh": "为了实现自己的理想，他一直在努力奋斗。",
+    "en": "He has been striving hard to realize his dreams."
+  },
+  "风格": {
+    "zh": "我很喜欢这位作家的写作风格。",
+    "en": "I really like this writer's writing style."
+  },
+  "风俗": {
+    "zh": "每个地方都有自己的风俗习惯。",
+    "en": "Every place has its own customs and habits."
+  },
+  "疯狂": {
+    "zh": "球迷们为自己喜欢的球队疯狂地欢呼。",
+    "en": "The fans cheered wildly for their favourite team."
+  },
+  "否定": {
+    "zh": "经理否定了我们的方案，认为风险太大。",
+    "en": "The manager rejected our plan, thinking it was too risky."
+  },
+  "幅": {
+    "zh": "墙上挂着一幅很漂亮的画。",
+    "en": "A very beautiful painting hangs on the wall."
+  },
+  "服装": {
+    "zh": "这家商店主要卖儿童服装。",
+    "en": "This shop mainly sells children's clothing."
+  },
+  "辅导": {
+    "zh": "姐姐每天晚上都辅导弟弟写作业。",
+    "en": "Every evening, the older sister helps her little brother with his homework."
+  },
+  "妇女": {
+    "zh": "现在越来越多的妇女走上了领导岗位。",
+    "en": "More and more women are now taking on leadership positions."
+  },
+  "改革": {
+    "zh": "学校决定对考试制度进行改革。",
+    "en": "The school decided to reform the examination system."
+  },
+  "改善": {
+    "zh": "这几年，人们的生活条件得到了很大的改善。",
+    "en": "In recent years, people's living conditions have greatly improved."
+  },
+  "盖": {
+    "zh": "天冷了，睡觉时要盖好被子。",
+    "en": "It's getting cold, so tuck the quilt in well when you sleep."
+  },
+  "概念": {
+    "zh": "这个概念有点儿复杂，老师又解释了一遍。",
+    "en": "This concept is a bit complicated, so the teacher explained it again."
+  },
+  "干脆": {
+    "zh": "既然这么麻烦，我们干脆别去了。",
+    "en": "Since it's such a hassle, let's just not go."
+  },
+  "干燥": {
+    "zh": "北方的冬天很干燥，要多喝水。",
+    "en": "Winters in the north are very dry, so you should drink plenty of water."
+  },
+  "感激": {
+    "zh": "对于大家的帮助，我非常感激。",
+    "en": "I am very grateful for everyone's help."
+  },
+  "感受": {
+    "zh": "这次旅行让我感受到了当地人的热情。",
+    "en": "This trip let me feel the warmth of the local people."
+  },
+  "赶紧": {
+    "zh": "快下雨了，我们赶紧回家吧。",
+    "en": "It's about to rain; let's hurry home."
+  },
+  "钢铁": {
+    "zh": "这座大桥是用钢铁建成的，非常结实。",
+    "en": "This bridge is built of steel and is very sturdy."
+  },
+  "高档": {
+    "zh": "这家饭店很高档，菜的价格也很贵。",
+    "en": "This restaurant is very upscale, and the dishes are expensive too."
+  },
+  "搞": {
+    "zh": "这件事一定要搞清楚再做决定。",
+    "en": "We must get this matter straight before making a decision."
+  },
+  "格外": {
+    "zh": "雨后的空气格外新鲜。",
+    "en": "The air is especially fresh after the rain."
+  },
+  "个别": {
+    "zh": "除了个别同学以外，大家都通过了考试。",
+    "en": "Apart from one or two students, everyone passed the exam."
+  },
+  "个性": {
+    "zh": "他是个很有个性的人。",
+    "en": "He's someone with a lot of personality."
+  },
+  "根": {
+    "zh": "他从桌上拿了一根香蕉。",
+    "en": "He took a banana from the table."
+  },
+  "公布": {
+    "zh": "考试成绩明天就会公布。",
+    "en": "The exam results will be announced tomorrow."
+  },
+  "公元": {
+    "zh": "这座寺庙建于公元七世纪。",
+    "en": "This temple was built in the 7th century AD."
+  },
+  "公主": {
+    "zh": "小女孩最喜欢听王子和公主的故事。",
+    "en": "The little girl loves stories about princes and princesses most of all."
+  },
+  "工程师": {
+    "zh": "他大学毕业以后成了一名工程师。",
+    "en": "After graduating from university he became an engineer."
+  },
+  "工人": {
+    "zh": "工厂里的工人每天工作八个小时。",
+    "en": "The workers in the factory work eight hours a day."
+  },
+  "恭喜": {
+    "zh": "恭喜你顺利通过了这次考试！",
+    "en": "Congratulations on passing the exam!"
+  },
+  "贡献": {
+    "zh": "他为国家的经济发展做出了很大的贡献。",
+    "en": "He made a great contribution to the country's economic development."
+  },
+  "构成": {
+    "zh": "这本书由十二个小故事构成。",
+    "en": "This book is made up of twelve short stories."
+  },
+  "姑姑": {
+    "zh": "我姑姑是我爸爸的妹妹，她在上海工作。",
+    "en": "My aunt is my dad's younger sister; she works in Shanghai."
+  },
+  "古典": {
+    "zh": "她特别喜欢听古典音乐，尤其是钢琴曲。",
+    "en": "She especially likes listening to classical music, particularly piano pieces."
+  },
+  "鼓舞": {
+    "zh": "这个好消息让大家深受鼓舞。",
+    "en": "This good news greatly lifted everyone's spirits."
+  },
+  "股票": {
+    "zh": "他去年买的股票最近涨了不少。",
+    "en": "The stocks he bought last year have risen quite a bit recently."
+  },
+  "固定": {
+    "zh": "他没有固定的工作，收入也不稳定。",
+    "en": "He has no steady job, and his income is unstable too."
+  },
+  "挂号": {
+    "zh": "去医院看病，要先挂号。",
+    "en": "When you see a doctor at the hospital, you have to register first."
+  },
+  "拐弯": {
+    "zh": "到了前面的路口往右拐弯，就是邮局。",
+    "en": "Turn right at the next junction and you'll find the post office."
+  },
+  "官": {
+    "zh": "他爷爷年轻的时候当过官。",
+    "en": "His grandfather was a government official when he was young."
+  },
+  "关闭": {
+    "zh": "飞机起飞前，请关闭您的手机。",
+    "en": "Please switch off your mobile phone before the plane takes off."
+  },
+  "观点": {
+    "zh": "对于这个问题，每个人都有不同的观点。",
+    "en": "Everyone has a different point of view on this issue."
+  },
+  "管子": {
+    "zh": "这根管子漏水了，得找人来修一下。",
+    "en": "This pipe is leaking; we need to get someone to fix it."
+  },
+  "光临": {
+    "zh": "欢迎各位顾客光临本店！",
+    "en": "Welcome to our store, everyone!"
+  },
+  "光盘": {
+    "zh": "这本教材里有一张光盘，可以用来听课文录音。",
+    "en": "This textbook comes with a CD you can use to listen to the lesson recordings."
+  },
+  "广场": {
+    "zh": "每天晚上都有很多老人在广场上跳舞。",
+    "en": "Every evening many elderly people dance in the square."
+  },
+  "广泛": {
+    "zh": "这个问题引起了社会的广泛关注。",
+    "en": "This issue has attracted wide public attention."
+  },
+  "规矩": {
+    "zh": "每个家庭都有自己的规矩。",
+    "en": "Every family has its own rules."
+  },
+  "规模": {
+    "zh": "这家公司的规模越来越大了。",
+    "en": "This company keeps growing in scale."
+  },
+  "归纳": {
+    "zh": "请你把这篇文章的主要观点归纳一下。",
+    "en": "Please sum up the main points of this article."
+  },
+  "柜台": {
+    "zh": "请您到一楼柜台办理退房手续。",
+    "en": "Please go to the front desk on the first floor to check out."
+  },
+  "锅": {
+    "zh": "妈妈煮了一大锅鸡汤。",
+    "en": "Mom made a big pot of chicken soup."
+  },
+  "国王": {
+    "zh": "很久以前，有一位国王非常喜欢音乐。",
+    "en": "Long ago, there was a king who loved music very much."
+  },
+  "果然": {
+    "zh": "天气预报说今天有雨，下午果然下起来了。",
+    "en": "The forecast said it would rain today, and sure enough, it started in the afternoon."
+  },
+  "过分": {
+    "zh": "你这样批评他，是不是有点儿过分了？",
+    "en": "Isn't it a bit too much to criticize him like that?"
+  },
+  "过期": {
+    "zh": "这瓶牛奶已经过期了，不能再喝了。",
+    "en": "This bottle of milk has expired; you can't drink it any more."
+  },
+  "哈": {
+    "zh": "听了他的笑话，大家都哈哈大笑起来。",
+    "en": "Everyone burst out laughing at his joke."
+  },
+  "海关": {
+    "zh": "过海关的时候，需要检查行李。",
+    "en": "Your luggage has to be inspected when you go through customs."
+  },
+  "喊": {
+    "zh": "我在后面大声喊他，他也没听见。",
+    "en": "I shouted to him loudly from behind, but he didn't hear me."
+  },
+  "行业": {
+    "zh": "他在旅游行业工作了十几年。",
+    "en": "He has worked in the tourism industry for over ten years."
+  },
+  "好客": {
+    "zh": "这里的人非常热情好客。",
+    "en": "The people here are very warm and hospitable."
+  },
+  "和平": {
+    "zh": "我们应该共同维护世界和平。",
+    "en": "We should work together to maintain world peace."
+  },
+  "何况": {
+    "zh": "这道题连老师都不会做，何况我们呢？",
+    "en": "Even the teacher can't solve this problem, let alone us."
+  },
+  "合影": {
+    "zh": "毕业那天，全班同学在学校门口合影留念。",
+    "en": "On graduation day, the whole class took a group photo at the school gate as a keepsake."
+  },
+  "核心": {
+    "zh": "他是我们团队的核心人物。",
+    "en": "He is the core member of our team."
+  },
+  "后果": {
+    "zh": "做决定以前，你要想清楚可能的后果。",
+    "en": "Before making a decision, you should think carefully about the possible consequences."
+  },
+  "忽然": {
+    "zh": "我们正在聊天，忽然停电了。",
+    "en": "We were chatting when suddenly the power went out."
+  },
+  "呼吸": {
+    "zh": "我们去公园呼吸一下新鲜空气吧。",
+    "en": "Let's go to the park and get some fresh air."
+  },
+  "蝴蝶": {
+    "zh": "花园里有几只蝴蝶在花间飞来飞去。",
+    "en": "A few butterflies are fluttering among the flowers in the garden."
+  },
+  "胡同": {
+    "zh": "北京的胡同很有特色，吸引了很多游客。",
+    "en": "Beijing's hutongs are very distinctive and attract lots of tourists."
+  },
+  "华裔": {
+    "zh": "他是美国华裔，但能说一口流利的汉语。",
+    "en": "He is a Chinese American, yet he speaks fluent Chinese."
+  },
+  "滑": {
+    "zh": "下雨后路很滑，走路小心点儿。",
+    "en": "The road is slippery after the rain; walk carefully."
+  },
+  "化学": {
+    "zh": "他大学学的是化学，现在在一家药厂工作。",
+    "en": "He studied chemistry at university and now works at a pharmaceutical factory."
+  },
+  "缓解": {
+    "zh": "听音乐可以帮助缓解压力。",
+    "en": "Listening to music can help relieve stress."
+  },
+  "幻想": {
+    "zh": "他总是幻想着有一天能成为明星。",
+    "en": "He always fantasizes about becoming a star one day."
+  },
+  "挥": {
+    "zh": "她站在门口向我们挥手告别。",
+    "en": "She stood at the door and waved goodbye to us."
+  },
+  "灰尘": {
+    "zh": "这间屋子很久没人住了，桌子上落满了灰尘。",
+    "en": "Nobody has lived in this room for a long time, and the table is covered in dust."
+  },
+  "恢复": {
+    "zh": "休息了几天，他的身体已经完全恢复了。",
+    "en": "After a few days' rest, he has fully recovered."
+  },
+  "汇率": {
+    "zh": "最近人民币对美元的汇率变化很大。",
+    "en": "Recently the exchange rate of the RMB against the US dollar has changed a lot."
+  },
+  "婚姻": {
+    "zh": "他们结婚二十年了，婚姻一直很幸福。",
+    "en": "They've been married for twenty years, and their marriage has always been happy."
+  },
+  "火柴": {
+    "zh": "停电了，他用火柴点了一根蜡烛。",
+    "en": "The power went out, so he lit a candle with a match."
+  },
+  "激烈": {
+    "zh": "现在找工作的竞争越来越激烈了。",
+    "en": "Competition for jobs is getting fiercer and fiercer."
+  },
+  "肌肉": {
+    "zh": "运动以后，他觉得腿上的肌肉很酸。",
+    "en": "After exercising, the muscles in his legs felt sore."
+  },
+  "极其": {
+    "zh": "这项工作极其重要，不能出任何错。",
+    "en": "This work is extremely important; there can't be any mistakes."
+  },
+  "集体": {
+    "zh": "我们是一个集体，应该互相帮助。",
+    "en": "We are a group, so we should help one another."
+  },
+  "急忙": {
+    "zh": "听到电话铃声，他急忙跑过去接。",
+    "en": "Hearing the phone ring, he hurried over to answer it."
+  },
+  "记录": {
+    "zh": "请把会议的内容记录下来。",
+    "en": "Please write down what is discussed in the meeting."
+  },
+  "计算": {
+    "zh": "请你计算一下这次旅行一共花了多少钱。",
+    "en": "Please calculate how much this trip cost in total."
+  },
+  "系领带": {
+    "zh": "参加正式的会议时，男士一般要系领带。",
+    "en": "At formal meetings, men usually wear a tie."
+  },
+  "纪律": {
+    "zh": "每个员工都应该遵守公司的纪律。",
+    "en": "Every employee should observe the company's rules and discipline."
+  },
+  "寂寞": {
+    "zh": "一个人在国外生活，有时候会觉得很寂寞。",
+    "en": "Living abroad alone, you sometimes feel very lonely."
+  },
+  "家庭": {
+    "zh": "他出生在一个普通的农民家庭。",
+    "en": "He was born into an ordinary farming family."
+  },
+  "家乡": {
+    "zh": "他已经五年没回家乡了。",
+    "en": "He hasn't been back to his hometown for five years."
+  },
+  "夹子": {
+    "zh": "她用一个夹子把头发夹了起来。",
+    "en": "She clipped her hair up with a clip."
+  },
+  "假设": {
+    "zh": "假设你是老板，你会怎么处理这个问题？",
+    "en": "Suppose you were the boss; how would you handle this problem?"
+  },
+  "嫁": {
+    "zh": "她嫁给了一个比她大五岁的医生。",
+    "en": "She married a doctor five years older than her."
+  },
+  "价值": {
+    "zh": "这本书很有参考价值。",
+    "en": "This book is of great reference value."
+  },
+  "肩膀": {
+    "zh": "他轻轻地拍了拍我的肩膀。",
+    "en": "He gently patted me on the shoulder."
+  },
+  "坚决": {
+    "zh": "我坚决反对这个计划。",
+    "en": "I firmly oppose this plan."
+  },
+  "艰巨": {
+    "zh": "这是一项非常艰巨的任务，需要大家共同努力。",
+    "en": "This is an extremely arduous task that needs everyone's joint effort."
+  },
+  "兼职": {
+    "zh": "很多大学生周末会去做兼职。",
+    "en": "Many university students do part-time jobs on weekends."
+  },
+  "简历": {
+    "zh": "我已经把简历发给了好几家公司。",
+    "en": "I've already sent my résumé to several companies."
+  },
+  "剪刀": {
+    "zh": "请把剪刀递给我，我要把这张纸剪开。",
+    "en": "Please pass me the scissors; I need to cut this sheet of paper."
+  },
+  "建立": {
+    "zh": "我们要和客户建立良好的关系。",
+    "en": "We need to build good relationships with our customers."
+  },
+  "讲究": {
+    "zh": "中国人吃饭很讲究，不仅要好吃，还要好看。",
+    "en": "Chinese people are particular about food: it must not only taste good but also look good."
+  },
+  "交际": {
+    "zh": "他很善于交际，朋友特别多。",
+    "en": "He is very good at socialising and has lots of friends."
+  },
+  "胶水": {
+    "zh": "用胶水把这两张纸粘在一起。",
+    "en": "Stick these two sheets of paper together with glue."
+  },
+  "狡猾": {
+    "zh": "这只狐狸非常狡猾，猎人一直抓不住它。",
+    "en": "This fox is very cunning; the hunter has never managed to catch it."
+  },
+  "教练": {
+    "zh": "在教练的指导下，他的成绩提高得很快。",
+    "en": "Under his coach's guidance, his results improved quickly."
+  },
+  "接触": {
+    "zh": "这份工作让我有机会接触到不同的人。",
+    "en": "This job gives me the chance to come into contact with all kinds of people."
+  },
+  "接近": {
+    "zh": "时间已经接近午夜了，他还在工作。",
+    "en": "It's nearly midnight, and he's still working."
+  },
+  "阶段": {
+    "zh": "这个项目已经进入最后阶段了。",
+    "en": "This project has entered its final stage."
+  },
+  "戒指": {
+    "zh": "结婚的时候，他给她戴上了戒指。",
+    "en": "At their wedding, he put the ring on her finger."
+  },
+  "金属": {
+    "zh": "这种杯子是用金属做的，很结实。",
+    "en": "This kind of cup is made of metal and is very sturdy."
+  },
+  "进口": {
+    "zh": "这些水果都是从国外进口的。",
+    "en": "These fruits are all imported from abroad."
+  },
+  "尽力": {
+    "zh": "我会尽力帮你解决这个问题的。",
+    "en": "I'll do my best to help you solve this problem."
+  },
+  "精力": {
+    "zh": "他把全部精力都放在了工作上。",
+    "en": "He put all his energy into his work."
+  },
+  "经商": {
+    "zh": "他大学毕业后就开始经商了。",
+    "en": "He went into business right after graduating from university."
+  },
+  "经营": {
+    "zh": "他在城里经营着一家小饭馆。",
+    "en": "He runs a small restaurant in town."
+  },
+  "酒吧": {
+    "zh": "下班以后，他们常去附近的酒吧喝一杯。",
+    "en": "After work, they often go to a nearby bar for a drink."
+  },
+  "救护车": {
+    "zh": "有人受伤了，快打电话叫救护车！",
+    "en": "Someone's hurt—call an ambulance, quick!"
+  },
+  "居然": {
+    "zh": "这么简单的题，他居然做错了。",
+    "en": "Such an easy question, and he actually got it wrong."
+  },
+  "具体": {
+    "zh": "你能说得再具体一点儿吗？",
+    "en": "Could you be a bit more specific?"
+  },
+  "俱乐部": {
+    "zh": "他每个周末都去网球俱乐部打球。",
+    "en": "He goes to the tennis club to play every weekend."
+  },
+  "据说": {
+    "zh": "据说这家店的烤鸭特别好吃。",
+    "en": "They say the roast duck at this restaurant is especially good."
+  },
+  "捐": {
+    "zh": "地震发生后，很多人都捐了钱。",
+    "en": "After the earthquake, many people donated money."
+  },
+  "决心": {
+    "zh": "他下定决心，今年一定要通过考试。",
+    "en": "He has made up his mind to pass the exam this year."
+  },
+  "角色": {
+    "zh": "她在这部电影里扮演一个老师的角色。",
+    "en": "She plays the role of a teacher in this film."
+  },
+  "均匀": {
+    "zh": "这个地区的降雨分布很不均匀。",
+    "en": "Rainfall in this region is very unevenly distributed."
+  },
+  "卡车": {
+    "zh": "一辆大卡车停在了我家门口。",
+    "en": "A big truck stopped in front of my house."
+  },
+  "开发": {
+    "zh": "这家公司正在开发一种新的手机软件。",
+    "en": "This company is developing a new mobile app."
+  },
+  "开幕式": {
+    "zh": "运动会的开幕式将在明天上午举行。",
+    "en": "The opening ceremony of the sports meet will be held tomorrow morning."
+  },
+  "看望": {
+    "zh": "周末我要去医院看望生病的奶奶。",
+    "en": "This weekend I'm going to the hospital to visit my sick grandma."
+  },
+  "靠": {
+    "zh": "他完全靠自己的努力考上了大学。",
+    "en": "He got into university entirely through his own hard work."
+  },
+  "颗": {
+    "zh": "天上有一颗特别亮的星星。",
+    "en": "There is a particularly bright star in the sky."
+  },
+  "可靠": {
+    "zh": "他做事认真负责，是个可靠的人。",
+    "en": "He is conscientious and responsible, a reliable person."
+  },
+  "课程": {
+    "zh": "这学期的课程安排得特别紧。",
+    "en": "This semester's courses are scheduled very tightly."
+  },
+  "克服": {
+    "zh": "只要我们一起努力，就一定能克服困难。",
+    "en": "As long as we work together, we can definitely overcome the difficulties."
+  },
+  "刻苦": {
+    "zh": "她学习非常刻苦，终于考上了理想的大学。",
+    "en": "She studied extremely hard and finally got into her dream university."
+  },
+  "空间": {
+    "zh": "这个房间不大，但空间利用得很好。",
+    "en": "This room isn't big, but the space is used very well."
+  },
+  "空闲": {
+    "zh": "空闲的时候，我喜欢在家看书。",
+    "en": "In my free time, I like reading at home."
+  },
+  "夸张": {
+    "zh": "你说得太夸张了，事情没那么严重。",
+    "en": "You're exaggerating; things aren't that serious."
+  },
+  "会计": {
+    "zh": "她大学学的是会计，现在在银行工作。",
+    "en": "She studied accounting at university and now works at a bank."
+  },
+  "宽": {
+    "zh": "这条马路很宽，车也不多。",
+    "en": "This road is very wide, and there isn't much traffic."
+  },
+  "昆虫": {
+    "zh": "蝴蝶和蜜蜂都是常见的昆虫。",
+    "en": "Butterflies and bees are both common insects."
+  },
+  "拦": {
+    "zh": "下雨了，我在路边拦了一辆出租车。",
+    "en": "It started raining, so I flagged down a taxi by the road."
+  },
+  "朗读": {
+    "zh": "老师让我们大声朗读课文。",
+    "en": "The teacher had us read the text aloud."
+  },
+  "劳驾": {
+    "zh": "劳驾，请问去火车站怎么走？",
+    "en": "Excuse me, could you tell me how to get to the train station?"
+  },
+  "老百姓": {
+    "zh": "物价上涨对老百姓的生活影响很大。",
+    "en": "Rising prices have a big impact on ordinary people's lives."
+  },
+  "老实": {
+    "zh": "他是个老实人，从来不说假话。",
+    "en": "He's an honest man and never tells lies."
+  },
+  "老婆": {
+    "zh": "他每天下班都早早回家陪老婆。",
+    "en": "Every day after work he goes home early to be with his wife."
+  },
+  "乐观": {
+    "zh": "不管遇到什么困难，他总是很乐观。",
+    "en": "Whatever difficulties he runs into, he always stays optimistic."
+  },
+  "雷": {
+    "zh": "外面打雷了，看来要下大雨了。",
+    "en": "It's thundering outside; it looks like it's going to pour."
+  },
+  "类型": {
+    "zh": "你平时喜欢看什么类型的电影？",
+    "en": "What kind of movies do you usually like to watch?"
+  },
+  "冷淡": {
+    "zh": "她对我的态度一直很冷淡。",
+    "en": "Her attitude toward me has always been cold."
+  },
+  "梨": {
+    "zh": "这种梨又脆又甜，很受欢迎。",
+    "en": "This kind of pear is crisp and sweet and very popular."
+  },
+  "离婚": {
+    "zh": "他们结婚不到两年就离婚了。",
+    "en": "They got divorced less than two years after marrying."
+  },
+  "厘米": {
+    "zh": "这张桌子长一百二十厘米。",
+    "en": "This table is 120 centimetres long."
+  },
+  "立即": {
+    "zh": "接到通知后，他立即出发了。",
+    "en": "After receiving the notice, he set off immediately."
+  },
+  "利润": {
+    "zh": "今年公司的利润比去年增加了一倍。",
+    "en": "This year the company's profits doubled compared with last year."
+  },
+  "利益": {
+    "zh": "我们不能只考虑自己的利益。",
+    "en": "We can't think only of our own interests."
+  },
+  "连续": {
+    "zh": "他已经连续工作了十个小时。",
+    "en": "He has been working for ten hours straight."
+  },
+  "恋爱": {
+    "zh": "他们俩谈恋爱已经三年了。",
+    "en": "The two of them have been in a relationship for three years."
+  },
+  "良好": {
+    "zh": "养成良好的习惯对孩子很重要。",
+    "en": "Developing good habits is very important for children."
+  },
+  "粮食": {
+    "zh": "我们要爱惜粮食，不要浪费。",
+    "en": "We should cherish food and not waste it."
+  },
+  "亮": {
+    "zh": "天还没亮，他就起床去跑步了。",
+    "en": "Before it was even light out, he got up to go running."
+  },
+  "铃": {
+    "zh": "下课铃一响，学生们就跑出了教室。",
+    "en": "As soon as the bell rang for the end of class, the students ran out of the classroom."
+  },
+  "零件": {
+    "zh": "这台机器有一个零件坏了，需要换一个新的。",
+    "en": "One of the parts in this machine is broken and needs replacing."
+  },
+  "零食": {
+    "zh": "少吃零食，多吃水果和蔬菜。",
+    "en": "Eat fewer snacks and more fruit and vegetables."
+  },
+  "领导": {
+    "zh": "公司领导对这个计划很满意。",
+    "en": "The company's leaders are very satisfied with this plan."
+  },
+  "流泪": {
+    "zh": "听完这个感人的故事，很多观众都流泪了。",
+    "en": "After hearing this moving story, many in the audience shed tears."
+  },
+  "陆续": {
+    "zh": "八点以后，客人们陆续到了。",
+    "en": "After eight o'clock, the guests arrived one after another."
+  },
+  "录音": {
+    "zh": "请把这段录音再放一遍。",
+    "en": "Please play this recording again."
+  },
+  "轮流": {
+    "zh": "我们几个人轮流打扫宿舍。",
+    "en": "The few of us take turns cleaning the dorm."
+  },
+  "逻辑": {
+    "zh": "他说话很有逻辑，大家都听得很明白。",
+    "en": "He speaks very logically, so everyone understands him clearly."
+  },
+  "馒头": {
+    "zh": "很多北方人把馒头当作主食。",
+    "en": "Many northerners eat steamed buns as their staple food."
+  },
+  "毛病": {
+    "zh": "我的电脑出了点儿毛病，开不了机。",
+    "en": "Something's wrong with my computer; it won't turn on."
+  },
+  "矛盾": {
+    "zh": "他说的话前后矛盾，大家都不太相信他。",
+    "en": "What he said contradicted itself, so nobody really believed him."
+  },
+  "贸易": {
+    "zh": "两国之间的贸易关系越来越密切。",
+    "en": "Trade relations between the two countries are getting closer and closer."
+  },
+  "媒体": {
+    "zh": "这件事引起了各大媒体的关注。",
+    "en": "This incident drew the attention of all the major media."
+  },
+  "煤炭": {
+    "zh": "这个地区的煤炭资源很丰富。",
+    "en": "This region is rich in coal resources."
+  },
+  "魅力": {
+    "zh": "这座古城有一种独特的魅力。",
+    "en": "This ancient city has a unique charm."
+  },
+  "梦想": {
+    "zh": "她从小的梦想就是成为一名医生。",
+    "en": "Her dream since childhood has been to become a doctor."
+  },
+  "蜜蜂": {
+    "zh": "春天到了，蜜蜂在花间飞来飞去。",
+    "en": "Spring has come, and bees are flying about among the flowers."
+  },
+  "密切": {
+    "zh": "我们和这家公司一直保持着密切的联系。",
+    "en": "We have always kept in close contact with this company."
+  },
+  "秘书": {
+    "zh": "有什么事你可以先跟我的秘书联系。",
+    "en": "If you need anything, you can contact my secretary first."
+  },
+  "面积": {
+    "zh": "这套房子的面积有一百二十平方米。",
+    "en": "This apartment has a floor area of 120 square meters."
+  },
+  "描写": {
+    "zh": "这本小说描写了一个普通家庭的生活。",
+    "en": "This novel depicts the life of an ordinary family."
+  },
+  "敏感": {
+    "zh": "她的皮肤很敏感，不能用这种化妆品。",
+    "en": "Her skin is very sensitive, so she can't use this kind of cosmetic."
+  },
+  "明星": {
+    "zh": "她小时候的梦想是当一名电影明星。",
+    "en": "Her childhood dream was to become a film star."
+  },
+  "名片": {
+    "zh": "这是我的名片，有事请给我打电话。",
+    "en": "Here is my business card; please call me if anything comes up."
+  },
+  "命运": {
+    "zh": "每个人都应该把命运掌握在自己手里。",
+    "en": "Everyone should take their fate into their own hands."
+  },
+  "模仿": {
+    "zh": "孩子很喜欢模仿大人说话。",
+    "en": "Children love to imitate the way adults talk."
+  },
+  "模特": {
+    "zh": "她身材很好，以前当过服装模特。",
+    "en": "She has a great figure and used to work as a fashion model."
+  },
+  "陌生": {
+    "zh": "刚到这个陌生的城市时，我谁也不认识。",
+    "en": "When I first arrived in this unfamiliar city, I didn't know anyone."
+  },
+  "目前": {
+    "zh": "目前这个问题还没有解决办法。",
+    "en": "At present there is still no solution to this problem."
+  },
+  "难怪": {
+    "zh": "他昨天晚上没睡觉，难怪今天这么累。",
+    "en": "He didn't sleep last night; no wonder he's so tired today."
+  },
+  "内部": {
+    "zh": "这是公司内部的会议，外人不能参加。",
+    "en": "This is an internal company meeting; outsiders can't attend."
+  },
+  "嗯": {
+    "zh": "嗯，我明白你的意思了。",
+    "en": "Uh-huh, I understand what you mean."
+  },
+  "念": {
+    "zh": "老师让我把这篇课文大声念一遍。",
+    "en": "The teacher asked me to read this text aloud once."
+  },
+  "浓": {
+    "zh": "这杯咖啡太浓了，我喝不惯。",
+    "en": "This coffee is too strong; I'm not used to it."
+  },
+  "农民": {
+    "zh": "今年雨水充足，农民们的收入增加了。",
+    "en": "There was plenty of rain this year, and the farmers' income increased."
+  },
+  "欧洲": {
+    "zh": "她打算明年夏天去欧洲旅行一个月。",
+    "en": "She plans to travel around Europe for a month next summer."
+  },
+  "偶然": {
+    "zh": "我是在一次偶然的机会中认识他的。",
+    "en": "I got to know him by chance."
+  },
+  "拍": {
+    "zh": "他笑着拍了拍我的肩膀。",
+    "en": "He smiled and patted me on the shoulder."
+  },
+  "盼望": {
+    "zh": "孩子们天天盼望着放寒假。",
+    "en": "The children look forward to the winter holiday every day."
+  },
+  "培训": {
+    "zh": "新员工上班前要参加两周的培训。",
+    "en": "New employees have to attend two weeks of training before starting work."
+  },
+  "佩服": {
+    "zh": "他敢一个人去旅行，我非常佩服他的勇气。",
+    "en": "He dared to travel alone; I really admire his courage."
+  },
+  "盆": {
+    "zh": "她把脏衣服放进盆里，准备洗干净。",
+    "en": "She put the dirty clothes into the basin, ready to wash them."
+  },
+  "碰": {
+    "zh": "我不小心碰了一下桌子，杯子掉到了地上。",
+    "en": "I accidentally bumped the table, and the cup fell to the floor."
+  },
+  "批": {
+    "zh": "公司今年招了一批新员工。",
+    "en": "The company took on a batch of new employees this year."
+  },
+  "批准": {
+    "zh": "经理已经批准了我的请假申请。",
+    "en": "The manager has approved my leave request."
+  },
+  "疲劳": {
+    "zh": "连续工作了十个小时，他感到非常疲劳。",
+    "en": "After working for ten hours straight, he felt extremely tired."
+  },
+  "匹": {
+    "zh": "草原上有一匹白马正在吃草。",
+    "en": "A white horse is grazing on the grassland."
+  },
+  "片": {
+    "zh": "早饭我只吃了两片面包。",
+    "en": "I only had two slices of bread for breakfast."
+  },
+  "飘": {
+    "zh": "天上飘着几朵白云。",
+    "en": "A few white clouds are floating in the sky."
+  },
+  "频道": {
+    "zh": "这个频道每天晚上七点播新闻。",
+    "en": "This channel broadcasts the news at seven every evening."
+  },
+  "凭": {
+    "zh": "他凭自己的努力考上了名牌大学。",
+    "en": "He got into a top university through his own hard work."
+  },
+  "平安": {
+    "zh": "到了以后给我打个电话，报个平安。",
+    "en": "Give me a call when you arrive to let me know you're safe."
+  },
+  "平等": {
+    "zh": "法律面前人人平等。",
+    "en": "Everyone is equal before the law."
+  },
+  "平衡": {
+    "zh": "我们要学会在工作和生活之间保持平衡。",
+    "en": "We need to learn to keep a balance between work and life."
+  },
+  "平均": {
+    "zh": "这个班学生的平均年龄是二十岁。",
+    "en": "The average age of the students in this class is twenty."
+  },
+  "破产": {
+    "zh": "由于经营不好，这家公司去年破产了。",
+    "en": "Because it was poorly run, this company went bankrupt last year."
+  },
+  "迫切": {
+    "zh": "毕业以后，他迫切希望找到一份好工作。",
+    "en": "After graduating, he was eager to find a good job."
+  },
+  "期间": {
+    "zh": "春节期间，很多商店都关门了。",
+    "en": "During the Spring Festival, many shops are closed."
+  },
+  "其余": {
+    "zh": "除了小王以外，其余的人我都不认识。",
+    "en": "Apart from Xiao Wang, I don't know any of the others."
+  },
+  "企业": {
+    "zh": "他毕业后在一家大企业工作。",
+    "en": "After graduating he worked at a large company."
+  },
+  "前途": {
+    "zh": "这个年轻人又聪明又努力，很有前途。",
+    "en": "This young man is smart and hardworking; he has a bright future."
+  },
+  "欠": {
+    "zh": "我还欠他两百块钱呢。",
+    "en": "I still owe him two hundred yuan."
+  },
+  "墙": {
+    "zh": "他把孩子的画挂在客厅的墙上。",
+    "en": "He hung his child's drawing on the living room wall."
+  },
+  "强烈": {
+    "zh": "他强烈反对这个计划。",
+    "en": "He strongly opposes this plan."
+  },
+  "切": {
+    "zh": "请把苹果切成小块。",
+    "en": "Please cut the apple into small pieces."
+  },
+  "亲自": {
+    "zh": "这件事很重要，我得亲自去一趟。",
+    "en": "This matter is important; I have to go there in person."
+  },
+  "青": {
+    "zh": "春天来了，山上的草都青了。",
+    "en": "Spring has come, and the grass on the hills has turned green."
+  },
+  "青少年": {
+    "zh": "现在很多青少年每天花大量时间玩手机。",
+    "en": "Nowadays many teenagers spend a lot of time on their phones every day."
+  },
+  "轻易": {
+    "zh": "他从不轻易放弃，遇到困难总是坚持到底。",
+    "en": "He never gives up easily; when he meets difficulties he always sees them through."
+  },
+  "清淡": {
+    "zh": "生病的时候最好吃点儿清淡的东西。",
+    "en": "When you're ill, it's best to eat something light."
+  },
+  "情景": {
+    "zh": "我永远忘不了第一次见到她时的情景。",
+    "en": "I'll never forget the scene when I first met her."
+  },
+  "情绪": {
+    "zh": "他今天情绪不太好，别去打扰他。",
+    "en": "He's in a bad mood today, so don't bother him."
+  },
+  "庆祝": {
+    "zh": "我们准备了一个晚会来庆祝他的生日。",
+    "en": "We've prepared a party to celebrate his birthday."
+  },
+  "娶": {
+    "zh": "他三十岁那年娶了一个北京姑娘。",
+    "en": "The year he turned thirty, he married a girl from Beijing."
+  },
+  "取消": {
+    "zh": "因为下大雨，今天的比赛取消了。",
+    "en": "Because of the heavy rain, today's match was cancelled."
+  },
+  "圈": {
+    "zh": "她在日历上把考试那天画了一个圈。",
+    "en": "She drew a circle around the exam day on the calendar."
+  },
+  "全面": {
+    "zh": "我们需要对这个问题进行全面的分析。",
+    "en": "We need to carry out a comprehensive analysis of this problem."
+  },
+  "权利": {
+    "zh": "每个人都有受教育的权利。",
+    "en": "Everyone has the right to an education."
+  },
+  "确定": {
+    "zh": "出发时间还没确定，我们明天再通知你。",
+    "en": "The departure time hasn't been fixed yet; we'll let you know tomorrow."
+  },
+  "热烈": {
+    "zh": "我们热烈欢迎新同学的到来！",
+    "en": "We warmly welcome our new classmates!"
+  },
+  "人口": {
+    "zh": "这座城市的人口已经超过了一千万。",
+    "en": "The population of this city has already exceeded ten million."
+  },
+  "人民币": {
+    "zh": "这件衣服打折以后只要两百块人民币。",
+    "en": "After the discount, this piece of clothing is only 200 RMB."
+  },
+  "人事": {
+    "zh": "招聘的事情，你可以去问人事部门。",
+    "en": "For recruitment matters, you can ask the human resources department."
+  },
+  "人员": {
+    "zh": "工作人员正在检查大家的护照。",
+    "en": "The staff are checking everyone's passports."
+  },
+  "日常": {
+    "zh": "手机已经成了日常生活中不可缺少的东西。",
+    "en": "Mobile phones have become indispensable in daily life."
+  },
+  "日期": {
+    "zh": "买牛奶的时候，要注意看生产日期。",
+    "en": "When buying milk, pay attention to the production date."
+  },
+  "日子": {
+    "zh": "今天是个特别的日子，我们去外面吃饭吧。",
+    "en": "Today is a special day; let's go out to eat."
+  },
+  "如今": {
+    "zh": "如今，越来越多的人选择在网上购物。",
+    "en": "Nowadays, more and more people choose to shop online."
+  },
+  "软": {
+    "zh": "这张床太软了，我睡得腰疼。",
+    "en": "This bed is too soft; sleeping on it gives me back pain."
+  },
+  "弱": {
+    "zh": "他从小身体就比较弱，经常生病。",
+    "en": "He has been rather weak since childhood and often gets sick."
+  },
+  "色彩": {
+    "zh": "这幅画色彩鲜艳，看起来很有活力。",
+    "en": "This painting has bright colors and looks very lively."
+  },
+  "杀": {
+    "zh": "这种药可以杀死皮肤上的细菌。",
+    "en": "This medicine can kill the bacteria on the skin."
+  },
+  "沙漠": {
+    "zh": "在沙漠里旅行，一定要带足够的水。",
+    "en": "When traveling in the desert, you must bring enough water."
+  },
+  "傻": {
+    "zh": "别傻站着了，快来帮忙！",
+    "en": "Don't just stand there like a fool; come and help!"
+  },
+  "删除": {
+    "zh": "我不小心把一个重要的文件删除了。",
+    "en": "I accidentally deleted an important file."
+  },
+  "善良": {
+    "zh": "她是一个非常善良的人，经常帮助别人。",
+    "en": "She is a very kind-hearted person who often helps others."
+  },
+  "扇子": {
+    "zh": "天太热了，她拿着一把扇子不停地扇。",
+    "en": "It was so hot that she kept fanning herself with a fan."
+  },
+  "商业": {
+    "zh": "这条街是城市的商业中心。",
+    "en": "This street is the city's commercial centre."
+  },
+  "上当": {
+    "zh": "这种广告不能随便相信，小心上当。",
+    "en": "Don't just believe ads like this; be careful not to get fooled."
+  },
+  "蛇": {
+    "zh": "她从小就特别怕蛇。",
+    "en": "She has been terrified of snakes since she was little."
+  },
+  "设备": {
+    "zh": "这家医院的设备非常先进。",
+    "en": "This hospital's equipment is very advanced."
+  },
+  "设施": {
+    "zh": "这个小区的生活设施很齐全。",
+    "en": "This residential community has a full range of amenities."
+  },
+  "射击": {
+    "zh": "他从小就开始练习射击。",
+    "en": "He started practicing shooting when he was a child."
+  },
+  "身材": {
+    "zh": "她每天坚持锻炼，身材保持得很好。",
+    "en": "She exercises every day and keeps herself in very good shape."
+  },
+  "神话": {
+    "zh": "我小时候很喜欢听中国古代的神话故事。",
+    "en": "As a child, I loved listening to ancient Chinese myths."
+  },
+  "升": {
+    "zh": "早上六点，太阳从东方升起来了。",
+    "en": "At six in the morning, the sun rose in the east."
+  },
+  "生产": {
+    "zh": "这家工厂主要生产儿童玩具。",
+    "en": "This factory mainly produces children's toys."
+  },
+  "声调": {
+    "zh": "很多外国人觉得汉语的声调特别难。",
+    "en": "Many foreigners find Chinese tones especially difficult."
+  },
+  "绳子": {
+    "zh": "他用一根绳子把箱子绑紧了。",
+    "en": "He tied the box tightly with a rope."
+  },
+  "省略": {
+    "zh": "这部分内容不太重要，可以省略。",
+    "en": "This part isn't very important, so it can be left out."
+  },
+  "胜利": {
+    "zh": "我们终于取得了比赛的胜利。",
+    "en": "We finally won the match."
+  },
+  "失去": {
+    "zh": "他不想失去这次难得的机会。",
+    "en": "He doesn't want to lose this rare opportunity."
+  },
+  "失业": {
+    "zh": "他失业以后，一直在找新工作。",
+    "en": "Since losing his job, he has been looking for a new one."
+  },
+  "湿润": {
+    "zh": "这里的气候温暖湿润，很适合种茶。",
+    "en": "The climate here is warm and humid, ideal for growing tea."
+  },
+  "时差": {
+    "zh": "我刚从美国回来，还在倒时差。",
+    "en": "I just got back from the US and am still getting over jet lag."
+  },
+  "时刻": {
+    "zh": "这是我一生中最难忘的时刻。",
+    "en": "This is the most unforgettable moment of my life."
+  },
+  "时期": {
+    "zh": "这是他一生中最困难的时期。",
+    "en": "This was the most difficult period of his life."
+  },
+  "实话": {
+    "zh": "说实话，我不太喜欢这部电影。",
+    "en": "To tell the truth, I don't really like this film."
+  },
+  "实践": {
+    "zh": "只有通过实践，才能真正学会一门技术。",
+    "en": "Only through practice can you truly master a skill."
+  },
+  "实现": {
+    "zh": "经过多年努力，他终于实现了自己的理想。",
+    "en": "After years of hard work, he finally realised his dream."
+  },
+  "实用": {
+    "zh": "这本词典很实用，我几乎每天都用。",
+    "en": "This dictionary is very practical; I use it almost every day."
+  },
+  "食物": {
+    "zh": "这些食物要放在冰箱里保存。",
+    "en": "This food needs to be kept in the fridge."
+  },
+  "士兵": {
+    "zh": "士兵们每天早上都要进行训练。",
+    "en": "The soldiers train every morning."
+  },
+  "似的": {
+    "zh": "他高兴得像个孩子似的。",
+    "en": "He was as happy as a child."
+  },
+  "事实": {
+    "zh": "事实证明，他的判断是正确的。",
+    "en": "The facts proved that his judgement was correct."
+  },
+  "事先": {
+    "zh": "如果你不能来，请事先通知我们。",
+    "en": "If you can't come, please let us know in advance."
+  },
+  "收获": {
+    "zh": "这次去中国留学，我的收获很大。",
+    "en": "I gained a great deal from studying in China this time."
+  },
+  "手套": {
+    "zh": "外面太冷了，出门记得戴手套。",
+    "en": "It's very cold outside; remember to wear gloves when you go out."
+  },
+  "手指": {
+    "zh": "切菜的时候，他不小心切到了手指。",
+    "en": "While chopping vegetables, he accidentally cut his finger."
+  },
+  "蔬菜": {
+    "zh": "医生建议我多吃蔬菜和水果。",
+    "en": "The doctor advised me to eat more vegetables and fruit."
+  },
+  "舒适": {
+    "zh": "这家酒店的房间干净又舒适。",
+    "en": "The rooms at this hotel are clean and comfortable."
+  },
+  "梳子": {
+    "zh": "她用梳子把头发梳得整整齐齐。",
+    "en": "She combed her hair neatly with a comb."
+  },
+  "属于": {
+    "zh": "这本书不属于我，是图书馆的。",
+    "en": "This book doesn't belong to me; it's the library's."
+  },
+  "数": {
+    "zh": "你数一数，一共来了多少人？",
+    "en": "Count them: how many people came altogether?"
+  },
+  "甩": {
+    "zh": "她生气地甩开了他的手。",
+    "en": "She angrily shook off his hand."
+  },
+  "说不定": {
+    "zh": "天这么阴，说不定一会儿要下雨。",
+    "en": "It's so overcast; it might rain in a while."
+  },
+  "撕": {
+    "zh": "弟弟不小心把我的作业本撕破了。",
+    "en": "My little brother accidentally tore my exercise book."
+  },
+  "丝毫": {
+    "zh": "他对这件事丝毫不感兴趣。",
+    "en": "He isn't the least bit interested in this matter."
+  },
+  "思考": {
+    "zh": "遇到问题要多思考，不要急着下结论。",
+    "en": "When you meet a problem, think it over carefully and don't rush to conclusions."
+  },
+  "私人": {
+    "zh": "这是我的私人事情，你就别问了。",
+    "en": "This is my private business, so please don't ask."
+  },
+  "搜索": {
+    "zh": "我在网上搜索了一下这家餐厅的地址。",
+    "en": "I searched online for this restaurant's address."
+  },
+  "宿舍": {
+    "zh": "我们宿舍一共住了四个人。",
+    "en": "Four people live in our dorm room altogether."
+  },
+  "随时": {
+    "zh": "有什么问题，你可以随时给我打电话。",
+    "en": "If you have any questions, you can call me at any time."
+  },
+  "随手": {
+    "zh": "出门的时候请随手关灯。",
+    "en": "Please turn off the lights on your way out."
+  },
+  "缩短": {
+    "zh": "有了高铁，两座城市之间的旅行时间缩短了一半。",
+    "en": "With the high-speed railway, travel time between the two cities has been cut in half."
+  },
+  "所": {
+    "zh": "我们家附近新开了一所小学。",
+    "en": "A new primary school has opened near our home."
+  },
+  "太太": {
+    "zh": "王先生和他太太经常一起去散步。",
+    "en": "Mr. Wang and his wife often go for walks together."
+  },
+  "谈判": {
+    "zh": "两家公司的谈判进行得很顺利。",
+    "en": "The negotiations between the two companies went smoothly."
+  },
+  "坦率": {
+    "zh": "坦率地说，我不太赞成你的计划。",
+    "en": "Frankly speaking, I don't really agree with your plan."
+  },
+  "烫": {
+    "zh": "水太烫了，小心别烫着手。",
+    "en": "The water is too hot; be careful not to scald your hand."
+  },
+  "桃": {
+    "zh": "夏天的桃子又大又甜，我每天都吃。",
+    "en": "Summer peaches are big and sweet; I eat them every day."
+  },
+  "逃避": {
+    "zh": "遇到问题不能逃避，要勇敢面对。",
+    "en": "When you run into problems, don't run away; face them bravely."
+  },
+  "特殊": {
+    "zh": "除非有特殊情况，否则请不要迟到。",
+    "en": "Unless there are special circumstances, please don't be late."
+  },
+  "特征": {
+    "zh": "每个民族都有自己的文化特征。",
+    "en": "Every ethnic group has its own cultural characteristics."
+  },
+  "疼爱": {
+    "zh": "奶奶非常疼爱她的小孙子。",
+    "en": "Grandma dearly loves her little grandson."
+  },
+  "提纲": {
+    "zh": "写作文之前，最好先列一个提纲。",
+    "en": "Before writing an essay, it's best to draw up an outline first."
+  },
+  "提问": {
+    "zh": "老师讲完以后，同学们开始提问。",
+    "en": "After the teacher finished, the students began asking questions."
+  },
+  "体会": {
+    "zh": "当了父母以后，我才体会到父母的辛苦。",
+    "en": "Only after becoming a parent did I truly understand how hard my parents worked."
+  },
+  "体现": {
+    "zh": "这部作品充分体现了作者对生活的热爱。",
+    "en": "This work fully reflects the author's love of life."
+  },
+  "调皮": {
+    "zh": "这个孩子很调皮，上课时总是跟同学说话。",
+    "en": "This child is very mischievous and is always chatting with classmates in class."
+  },
+  "挑战": {
+    "zh": "这份新工作对我来说是一个很大的挑战。",
+    "en": "This new job is a big challenge for me."
+  },
+  "痛苦": {
+    "zh": "失去亲人是一件非常痛苦的事。",
+    "en": "Losing a loved one is an extremely painful thing."
+  },
+  "投入": {
+    "zh": "他把全部精力都投入到了工作中。",
+    "en": "He put all his energy into his work."
+  },
+  "透明": {
+    "zh": "这个盒子是透明的，能看见里面的东西。",
+    "en": "This box is transparent; you can see what's inside."
+  },
+  "土地": {
+    "zh": "这里的土地很适合种水果。",
+    "en": "The land here is very suitable for growing fruit."
+  },
+  "吐": {
+    "zh": "吃葡萄的时候，他把皮吐在了盘子里。",
+    "en": "While eating grapes, he spat the skins onto the plate."
+  },
+  "团": {
+    "zh": "我们参加了一个去云南的旅游团。",
+    "en": "We joined a tour group going to Yunnan."
+  },
+  "推广": {
+    "zh": "政府正在全国范围内推广普通话。",
+    "en": "The government is promoting Mandarin nationwide."
+  },
+  "退步": {
+    "zh": "他最近不认真学习，成绩退步了很多。",
+    "en": "He hasn't been studying seriously lately, and his grades have slipped a lot."
+  },
+  "歪": {
+    "zh": "墙上那张画挂歪了，我们重新挂一下吧。",
+    "en": "That picture on the wall is hanging crooked; let's rehang it."
+  },
+  "外交": {
+    "zh": "两国正式建立了外交关系。",
+    "en": "The two countries formally established diplomatic relations."
+  },
+  "完美": {
+    "zh": "世界上没有完美的人，每个人都有缺点。",
+    "en": "Nobody in the world is perfect; everyone has shortcomings."
+  },
+  "完善": {
+    "zh": "我们需要进一步完善管理制度。",
+    "en": "We need to further improve our management system."
+  },
+  "王子": {
+    "zh": "故事里的王子最后和公主结婚了。",
+    "en": "In the story, the prince married the princess in the end."
+  },
+  "往返": {
+    "zh": "这趟车每天在两个城市之间往返两次。",
+    "en": "This train makes two round trips between the two cities every day."
+  },
+  "网络": {
+    "zh": "这里网络信号不好，视频总是卡。",
+    "en": "The network signal here is bad, so videos keep freezing."
+  },
+  "危害": {
+    "zh": "吸烟会严重危害身体健康。",
+    "en": "Smoking seriously harms your health."
+  },
+  "微笑": {
+    "zh": "她总是面带微笑地跟客人打招呼。",
+    "en": "She always greets the guests with a smile."
+  },
+  "违反": {
+    "zh": "他因为违反交通规则被罚了款。",
+    "en": "He was fined for breaking traffic rules."
+  },
+  "围巾": {
+    "zh": "天气冷了，出门的时候戴上围巾吧。",
+    "en": "It's gotten cold; put on a scarf when you go out."
+  },
+  "唯一": {
+    "zh": "他是我们班唯一会说法语的人。",
+    "en": "He is the only person in our class who can speak French."
+  },
+  "伟大": {
+    "zh": "他是中国历史上一位伟大的诗人。",
+    "en": "He is a great poet in Chinese history."
+  },
+  "胃口": {
+    "zh": "天气太热，我最近一点儿胃口都没有。",
+    "en": "It's so hot that I've had no appetite at all lately."
+  },
+  "位置": {
+    "zh": "这家饭店的位置很好，离地铁站很近。",
+    "en": "This restaurant is in a great location, close to the subway station."
+  },
+  "未来": {
+    "zh": "我对未来充满了信心。",
+    "en": "I am full of confidence about the future."
+  },
+  "温暖": {
+    "zh": "朋友的关心让我感到很温暖。",
+    "en": "My friends' concern made me feel very warm inside."
+  },
+  "闻": {
+    "zh": "我闻到了一股香味，原来是妈妈在做饭。",
+    "en": "I smelled something delicious; it turned out Mum was cooking."
+  },
+  "文件": {
+    "zh": "请把这份文件复印三份。",
+    "en": "Please make three copies of this document."
+  },
+  "文明": {
+    "zh": "在公共场所大声说话是不文明的行为。",
+    "en": "Talking loudly in public places is uncivilized behavior."
+  },
+  "文字": {
+    "zh": "汉字是世界上最古老的文字之一。",
+    "en": "Chinese characters are one of the oldest writing systems in the world."
+  },
+  "吻": {
+    "zh": "妈妈轻轻地吻了一下孩子的脸。",
+    "en": "The mother gently kissed her child's face."
+  },
+  "握手": {
+    "zh": "见面时，他热情地和我握手。",
+    "en": "When we met, he shook my hand warmly."
+  },
+  "屋子": {
+    "zh": "屋子里太热了，把窗户打开吧。",
+    "en": "It's too hot in the room; open the window."
+  },
+  "无奈": {
+    "zh": "试了很多办法都不行，他无奈地摇了摇头。",
+    "en": "Nothing he tried worked, and he shook his head helplessly."
+  },
+  "无所谓": {
+    "zh": "去哪儿吃饭我无所谓，你决定吧。",
+    "en": "I don't mind where we eat; you decide."
+  },
+  "武术": {
+    "zh": "很多外国人专门来中国学习武术。",
+    "en": "Many foreigners come to China specifically to learn martial arts."
+  },
+  "雾": {
+    "zh": "今天早上雾很大，高速公路都关闭了。",
+    "en": "The fog was so thick this morning that the highways were closed."
+  },
+  "物理": {
+    "zh": "他的物理成绩一直很好。",
+    "en": "His grades in physics have always been good."
+  },
+  "吸收": {
+    "zh": "孩子吸收新知识的速度特别快。",
+    "en": "Children absorb new knowledge especially quickly."
+  },
+  "系": {
+    "zh": "他是北京大学中文系的学生。",
+    "en": "He is a student in the Chinese department at Peking University."
+  },
+  "细节": {
+    "zh": "他做事很认真，从不放过任何细节。",
+    "en": "He's very careful in his work and never overlooks any detail."
+  },
+  "瞎": {
+    "zh": "那只小狗的眼睛瞎了，可是它跑得还很快。",
+    "en": "That puppy is blind, but it can still run fast."
+  },
+  "鲜艳": {
+    "zh": "她穿了一件颜色鲜艳的裙子。",
+    "en": "She was wearing a brightly coloured dress."
+  },
+  "显得": {
+    "zh": "她穿上这件衣服显得很年轻。",
+    "en": "She looks very young in this outfit."
+  },
+  "显示": {
+    "zh": "调查显示，越来越多的年轻人喜欢网上购物。",
+    "en": "The survey shows that more and more young people like shopping online."
+  },
+  "现代": {
+    "zh": "这座城市既有古老的建筑，也有现代的高楼。",
+    "en": "This city has both ancient buildings and modern high-rises."
+  },
+  "现实": {
+    "zh": "我们要面对现实，不能总是做梦。",
+    "en": "We have to face reality and can't keep dreaming."
+  },
+  "限制": {
+    "zh": "为了安全，这个公园限制每天的游客人数。",
+    "en": "For safety, this park limits the number of visitors each day."
+  },
+  "相处": {
+    "zh": "他性格很好，和同事们相处得很愉快。",
+    "en": "He has a good personality and gets along well with his colleagues."
+  },
+  "相对": {
+    "zh": "这个地区的房价相对便宜一些。",
+    "en": "Housing prices in this area are relatively cheap."
+  },
+  "相关": {
+    "zh": "请提供与这个问题相关的材料。",
+    "en": "Please provide materials related to this issue."
+  },
+  "想象": {
+    "zh": "你很难想象他以前是个多么害羞的人。",
+    "en": "You can hardly imagine how shy he used to be."
+  },
+  "项": {
+    "zh": "这项工作需要大家共同完成。",
+    "en": "This task needs everyone to complete it together."
+  },
+  "项目": {
+    "zh": "这个项目明年三月就要完成了。",
+    "en": "This project is due to be finished next March."
+  },
+  "象棋": {
+    "zh": "爷爷每天下午都和邻居下象棋。",
+    "en": "Every afternoon, Grandpa plays Chinese chess with the neighbour."
+  },
+  "消费": {
+    "zh": "现在越来越多的人喜欢在网上消费。",
+    "en": "More and more people now like to spend money online."
+  },
+  "消化": {
+    "zh": "晚饭吃得太多，不容易消化。",
+    "en": "If you eat too much at dinner, it's hard to digest."
+  },
+  "销售": {
+    "zh": "这家公司主要销售电脑和手机。",
+    "en": "This company mainly sells computers and mobile phones."
+  },
+  "小麦": {
+    "zh": "中国北方的农民主要种植小麦。",
+    "en": "Farmers in northern China mainly grow wheat."
+  },
+  "效率": {
+    "zh": "用这种方法工作，效率提高了很多。",
+    "en": "Working this way has raised efficiency a lot."
+  },
+  "歇": {
+    "zh": "走了这么久，我们坐下来歇一会儿吧。",
+    "en": "We've walked for so long—let's sit down and rest for a while."
+  },
+  "欣赏": {
+    "zh": "我很欣赏他做事认真的态度。",
+    "en": "I really admire his conscientious attitude to work."
+  },
+  "信号": {
+    "zh": "这里手机没有信号，打不了电话。",
+    "en": "There's no phone signal here, so you can't make calls."
+  },
+  "行动": {
+    "zh": "光说不行，我们必须马上行动起来。",
+    "en": "Talk alone won't do; we have to take action right away."
+  },
+  "行人": {
+    "zh": "司机看到前面有行人，马上停下了车。",
+    "en": "When the driver saw pedestrians ahead, he stopped the car at once."
+  },
+  "形成": {
+    "zh": "好习惯需要很长时间才能形成。",
+    "en": "Good habits take a long time to form."
+  },
+  "形式": {
+    "zh": "内容比形式更重要。",
+    "en": "Content matters more than form."
+  },
+  "形象": {
+    "zh": "这件事影响了公司的形象。",
+    "en": "This incident has damaged the company's image."
+  },
+  "性质": {
+    "zh": "这两个问题的性质完全不同，不能放在一起讨论。",
+    "en": "These two problems are completely different in nature and can't be discussed together."
+  },
+  "幸亏": {
+    "zh": "幸亏你提醒了我，不然我就迟到了。",
+    "en": "Luckily you reminded me, otherwise I would have been late."
+  },
+  "胸": {
+    "zh": "他跑完步以后，胸口有点儿疼。",
+    "en": "After his run, his chest hurt a little."
+  },
+  "修改": {
+    "zh": "这篇文章我已经修改了三遍。",
+    "en": "I have already revised this essay three times."
+  },
+  "休闲": {
+    "zh": "很多人喜欢周末去郊区休闲。",
+    "en": "Many people like to go to the suburbs to relax on weekends."
+  },
+  "叙述": {
+    "zh": "请你把事情的经过详细地叙述一遍。",
+    "en": "Please describe in detail how it all happened."
+  },
+  "宣传": {
+    "zh": "公司花了很多钱宣传这个新产品。",
+    "en": "The company spent a lot of money promoting this new product."
+  },
+  "学历": {
+    "zh": "这份工作要求本科以上学历。",
+    "en": "This job requires at least a bachelor's degree."
+  },
+  "学问": {
+    "zh": "王教授很有学问，大家都很尊敬他。",
+    "en": "Professor Wang is very learned, and everyone respects him."
+  },
+  "血": {
+    "zh": "他的手指被刀划破了，流了很多血。",
+    "en": "He cut his finger on a knife and lost a lot of blood."
+  },
+  "寻找": {
+    "zh": "他一直在寻找适合自己的工作。",
+    "en": "He has been looking for a job that suits him."
+  },
+  "迅速": {
+    "zh": "这座城市发展得非常迅速。",
+    "en": "This city has developed very rapidly."
+  },
+  "延长": {
+    "zh": "因为问题太多，会议延长了半个小时。",
+    "en": "Because there were so many issues, the meeting was extended by half an hour."
+  },
+  "严肃": {
+    "zh": "开会的时候，他的表情非常严肃。",
+    "en": "During the meeting, his expression was very serious."
+  },
+  "演讲": {
+    "zh": "他在毕业典礼上做了一次精彩的演讲。",
+    "en": "He gave a wonderful speech at the graduation ceremony."
+  },
+  "阳台": {
+    "zh": "我们家的阳台上种了很多花。",
+    "en": "We grow a lot of flowers on our balcony."
+  },
+  "摇": {
+    "zh": "我问他去不去，他摇了摇头。",
+    "en": "I asked him whether he was going, and he shook his head."
+  },
+  "要不": {
+    "zh": "快点儿走吧，要不就赶不上火车了。",
+    "en": "Let's hurry, otherwise we'll miss the train."
+  },
+  "业务": {
+    "zh": "她负责公司在海外的业务。",
+    "en": "She is in charge of the company's overseas business."
+  },
+  "一辈子": {
+    "zh": "我一辈子也忘不了那一天。",
+    "en": "I'll never forget that day as long as I live."
+  },
+  "一律": {
+    "zh": "本店所有商品一律打八折。",
+    "en": "Every item in this store is 20% off, without exception."
+  },
+  "移动": {
+    "zh": "请把桌子往左边移动一点儿。",
+    "en": "Please move the table a little to the left."
+  },
+  "遗憾": {
+    "zh": "很遗憾，我不能参加你的婚礼了。",
+    "en": "I'm very sorry that I can't come to your wedding."
+  },
+  "乙": {
+    "zh": "合同签好以后，甲方和乙方都必须遵守。",
+    "en": "Once the contract is signed, both Party A and Party B must abide by it."
+  },
+  "以及": {
+    "zh": "会议讨论了工资、假期以及其他问题。",
+    "en": "The meeting discussed wages, holidays and other issues."
+  },
+  "亿": {
+    "zh": "中国有十四亿多人口。",
+    "en": "China has a population of more than 1.4 billion."
+  },
+  "意义": {
+    "zh": "这次活动对孩子们来说很有意义。",
+    "en": "This activity is very meaningful for the children."
+  },
+  "因而": {
+    "zh": "他平时学习很努力，因而取得了很好的成绩。",
+    "en": "He always studies hard, and as a result he got excellent grades."
+  },
+  "银": {
+    "zh": "她脖子上戴着一条银项链。",
+    "en": "She's wearing a silver necklace around her neck."
+  },
+  "印刷": {
+    "zh": "这本书的印刷质量非常好。",
+    "en": "The printing quality of this book is excellent."
+  },
+  "英雄": {
+    "zh": "救人的那位司机被大家称为英雄。",
+    "en": "The driver who saved people was hailed by everyone as a hero."
+  },
+  "迎接": {
+    "zh": "全家人都到机场去迎接他。",
+    "en": "The whole family went to the airport to welcome him."
+  },
+  "营业": {
+    "zh": "这家超市每天营业到晚上十点。",
+    "en": "This supermarket is open until ten o'clock every night."
+  },
+  "影子": {
+    "zh": "太阳快下山时，人的影子变得很长。",
+    "en": "When the sun is about to set, people's shadows become very long."
+  },
+  "硬件": {
+    "zh": "这台电脑的硬件太旧了，需要更新。",
+    "en": "This computer's hardware is too old and needs upgrading."
+  },
+  "拥抱": {
+    "zh": "见到久别的朋友，他们紧紧地拥抱在一起。",
+    "en": "Seeing their long-lost friend, they hugged each other tightly."
+  },
+  "用途": {
+    "zh": "这种材料的用途非常广泛。",
+    "en": "This material has a very wide range of uses."
+  },
+  "优美": {
+    "zh": "这里环境优美，很适合散步。",
+    "en": "The surroundings here are beautiful and perfect for a walk."
+  },
+  "游览": {
+    "zh": "我们打算下个月去杭州游览西湖。",
+    "en": "We plan to go to Hangzhou next month to tour West Lake."
+  },
+  "犹豫": {
+    "zh": "他犹豫了一下，还是答应了。",
+    "en": "He hesitated for a moment, but agreed in the end."
+  },
+  "幼儿园": {
+    "zh": "每天早上，奶奶都送孙子去幼儿园。",
+    "en": "Every morning, Grandma takes her grandson to kindergarten."
+  },
+  "与其": {
+    "zh": "与其在家里等消息，不如自己去问问。",
+    "en": "Rather than waiting at home for news, you'd better go and ask yourself."
+  },
+  "语气": {
+    "zh": "他说话的语气很不客气，大家都不高兴。",
+    "en": "He spoke in a very rude tone, and nobody was happy about it."
+  },
+  "预订": {
+    "zh": "我已经在网上预订了酒店的房间。",
+    "en": "I've already booked a hotel room online."
+  },
+  "玉米": {
+    "zh": "这个地方的农民主要种玉米。",
+    "en": "The farmers here mainly grow corn."
+  },
+  "原料": {
+    "zh": "这种饮料的主要原料是新鲜水果。",
+    "en": "The main raw material of this drink is fresh fruit."
+  },
+  "原则": {
+    "zh": "不管做什么事，他都有自己的原则。",
+    "en": "Whatever he does, he has his own principles."
+  },
+  "乐器": {
+    "zh": "你会演奏什么乐器吗？",
+    "en": "Can you play any musical instruments?"
+  },
+  "运输": {
+    "zh": "这些水果主要靠火车运输。",
+    "en": "This fruit is mainly transported by train."
+  },
+  "在于": {
+    "zh": "成功的关键在于坚持。",
+    "en": "The key to success lies in perseverance."
+  },
+  "赞美": {
+    "zh": "这首诗赞美了家乡美丽的景色。",
+    "en": "This poem praises the beautiful scenery of the poet's hometown."
+  },
+  "则": {
+    "zh": "哥哥喜欢运动，弟弟则喜欢安静地看书。",
+    "en": "The older brother likes sports, whereas the younger one prefers reading quietly."
+  },
+  "摘": {
+    "zh": "公园里的花不能随便摘。",
+    "en": "You can't just pick the flowers in the park."
+  },
+  "粘贴": {
+    "zh": "请把照片粘贴在表格的右上角。",
+    "en": "Please stick the photo in the top right corner of the form."
+  },
+  "展览": {
+    "zh": "这个博物馆正在举办一个书法展览。",
+    "en": "This museum is holding a calligraphy exhibition."
+  },
+  "占": {
+    "zh": "这张大床占了房间的一半。",
+    "en": "This big bed takes up half the room."
+  },
+  "战争": {
+    "zh": "这场战争给人们带来了巨大的痛苦。",
+    "en": "This war brought great suffering to people."
+  },
+  "长辈": {
+    "zh": "过年的时候，我们要给长辈拜年。",
+    "en": "At Chinese New Year, we pay New Year visits to our elders."
+  },
+  "涨": {
+    "zh": "最近蔬菜的价格又涨了不少。",
+    "en": "Vegetable prices have gone up quite a bit again recently."
+  },
+  "招待": {
+    "zh": "谢谢你们的热情招待，我们玩得很开心！",
+    "en": "Thank you for your warm hospitality—we had a great time!"
+  },
+  "着火": {
+    "zh": "楼下的饭馆着火了，消防车马上就到了。",
+    "en": "The restaurant downstairs caught fire, and the fire engines arrived right away."
+  },
+  "着凉": {
+    "zh": "晚上睡觉要盖好被子，小心着凉。",
+    "en": "Cover yourself well with the quilt at night so you don't catch a cold."
+  },
+  "召开": {
+    "zh": "公司下周一将召开全体员工大会。",
+    "en": "The company will hold an all-staff meeting next Monday."
+  },
+  "照常": {
+    "zh": "虽然下着大雨，比赛还是照常进行。",
+    "en": "Although it was pouring with rain, the match went ahead as usual."
+  },
+  "哲学": {
+    "zh": "他在大学里学的是哲学。",
+    "en": "He studied philosophy at university."
+  },
+  "真实": {
+    "zh": "这部电影是根据真实的故事改编的。",
+    "en": "This film is adapted from a true story."
+  },
+  "针对": {
+    "zh": "老师针对每个学生的特点制定了学习计划。",
+    "en": "The teacher made a study plan tailored to each student's characteristics."
+  },
+  "诊断": {
+    "zh": "医生诊断他得了严重的感冒。",
+    "en": "The doctor diagnosed him with a bad cold."
+  },
+  "振动": {
+    "zh": "开会的时候，请把手机调成振动。",
+    "en": "During the meeting, please set your phone to vibrate."
+  },
+  "争论": {
+    "zh": "他们为这个问题争论了一个下午。",
+    "en": "They argued about this question for a whole afternoon."
+  },
+  "征求": {
+    "zh": "这件事我想先征求一下你的意见。",
+    "en": "I'd like to ask for your opinion on this matter first."
+  },
+  "整体": {
+    "zh": "我们应该从整体上考虑这个问题。",
+    "en": "We should consider this problem as a whole."
+  },
+  "政治": {
+    "zh": "他对政治一点儿也不感兴趣。",
+    "en": "He isn't interested in politics at all."
+  },
+  "证据": {
+    "zh": "警察还没有找到足够的证据。",
+    "en": "The police haven't found enough evidence yet."
+  },
+  "挣": {
+    "zh": "他每个月挣的钱只够付房租。",
+    "en": "The money he earns each month is only enough to pay the rent."
+  },
+  "直": {
+    "zh": "从这儿直走，到第二个路口往左拐。",
+    "en": "Go straight on from here and turn left at the second intersection."
+  },
+  "执照": {
+    "zh": "他上个月刚拿到驾驶执照。",
+    "en": "He only got his driving licence last month."
+  },
+  "指挥": {
+    "zh": "交通警察正在路口指挥交通。",
+    "en": "A traffic policeman is directing traffic at the intersection."
+  },
+  "制度": {
+    "zh": "公司今年实行了新的管理制度。",
+    "en": "This year the company introduced a new management system."
+  },
+  "制作": {
+    "zh": "这部电影的制作花了整整两年。",
+    "en": "Making this film took a full two years."
+  },
+  "至今": {
+    "zh": "那次旅行的经历，我至今还记得很清楚。",
+    "en": "I still remember that trip very clearly to this day."
+  },
+  "至于": {
+    "zh": "我只负责准备材料，至于开会时间，你去问经理吧。",
+    "en": "I'm only in charge of preparing the materials; as for the meeting time, ask the manager."
+  },
+  "治疗": {
+    "zh": "经过一个月的治疗，他的病终于好了。",
+    "en": "After a month of treatment, he finally recovered from his illness."
+  },
+  "志愿者": {
+    "zh": "很多大学生报名当了运动会的志愿者。",
+    "en": "Many university students signed up as volunteers for the sports games."
+  },
+  "中心": {
+    "zh": "我家就在市中心，交通很方便。",
+    "en": "My home is right in the city centre, so getting around is easy."
+  },
+  "种类": {
+    "zh": "这家超市水果种类很多，价格也不贵。",
+    "en": "This supermarket has many kinds of fruit, and the prices aren't high."
+  },
+  "重大": {
+    "zh": "这次会议将讨论几个重大问题。",
+    "en": "This meeting will discuss several major issues."
+  },
+  "重量": {
+    "zh": "每位乘客行李的重量不能超过二十公斤。",
+    "en": "Each passenger's luggage may not weigh more than twenty kilograms."
+  },
+  "猪": {
+    "zh": "农民在院子里养了几头猪。",
+    "en": "The farmer keeps a few pigs in the yard."
+  },
+  "逐渐": {
+    "zh": "天气逐渐变冷了，记得多穿点儿衣服。",
+    "en": "The weather is gradually getting colder; remember to dress warmly."
+  },
+  "煮": {
+    "zh": "妈妈每天早上都给我煮一个鸡蛋。",
+    "en": "Every morning my mother boils an egg for me."
+  },
+  "主动": {
+    "zh": "遇到不懂的问题，他总是主动问老师。",
+    "en": "When he doesn't understand something, he always takes the initiative to ask the teacher."
+  },
+  "主人": {
+    "zh": "这只小狗一直在门口等主人回家。",
+    "en": "The little dog kept waiting at the door for its owner to come home."
+  },
+  "主席": {
+    "zh": "他被选为学生会主席。",
+    "en": "He was elected chairman of the student union."
+  },
+  "主张": {
+    "zh": "我主张大家先讨论一下，再做决定。",
+    "en": "I suggest that we discuss it first before making a decision."
+  },
+  "祝福": {
+    "zh": "新年到了，我向大家送上最好的祝福。",
+    "en": "The New Year is here, and I send everyone my best wishes."
+  },
+  "注册": {
+    "zh": "使用这个网站以前，你需要先注册一个账号。",
+    "en": "Before using this website, you need to register an account first."
+  },
+  "抓紧": {
+    "zh": "离考试只有一个月了，你要抓紧时间复习。",
+    "en": "There's only a month until the exam, so you should make the most of your time to review."
+  },
+  "转变": {
+    "zh": "经过这件事，他对工作的态度发生了很大的转变。",
+    "en": "After this incident, his attitude toward work changed greatly."
+  },
+  "装饰": {
+    "zh": "过年的时候，大家用红灯笼装饰房子。",
+    "en": "At Chinese New Year, people decorate their houses with red lanterns."
+  },
+  "撞": {
+    "zh": "他骑车时不小心撞到了一棵树。",
+    "en": "While riding his bike, he accidentally crashed into a tree."
+  },
+  "状态": {
+    "zh": "考试前要调整好自己的状态。",
+    "en": "Before an exam you should get yourself into good shape."
+  },
+  "追求": {
+    "zh": "每个人都有追求幸福的权利。",
+    "en": "Everyone has the right to pursue happiness."
+  },
+  "资金": {
+    "zh": "由于缺少资金，这个项目暂时停了下来。",
+    "en": "Due to a lack of funds, the project has been put on hold."
+  },
+  "资源": {
+    "zh": "我们要节约水资源。",
+    "en": "We must conserve water resources."
+  },
+  "咨询": {
+    "zh": "关于留学的问题，你可以去学校咨询一下。",
+    "en": "For questions about studying abroad, you can go and ask the school for advice."
+  },
+  "字母": {
+    "zh": "英语一共有二十六个字母。",
+    "en": "English has twenty-six letters in total."
+  },
+  "自从": {
+    "zh": "自从搬到这里，他每天都去跑步。",
+    "en": "Ever since he moved here, he's gone running every day."
+  },
+  "自豪": {
+    "zh": "父母为儿子取得的成绩感到自豪。",
+    "en": "The parents are proud of what their son has achieved."
+  },
+  "自觉": {
+    "zh": "学习主要靠自觉，别人没法替你。",
+    "en": "Studying depends mainly on your own initiative; no one can do it for you."
+  },
+  "自私": {
+    "zh": "他太自私了，从来不考虑别人的感受。",
+    "en": "He's so selfish; he never considers other people's feelings."
+  },
+  "自愿": {
+    "zh": "参加这个活动完全是自愿的。",
+    "en": "Taking part in this activity is entirely voluntary."
+  },
+  "总裁": {
+    "zh": "他三十岁就当上了公司的总裁。",
+    "en": "He became the company's CEO at just thirty."
+  },
+  "总统": {
+    "zh": "这位总统下个月将访问中国。",
+    "en": "The president will visit China next month."
+  },
+  "组": {
+    "zh": "老师把我们分成四个组讨论问题。",
+    "en": "The teacher divided us into four groups to discuss the question."
+  },
+  "组合": {
+    "zh": "这套家具可以根据需要自由组合。",
+    "en": "This set of furniture can be freely combined as needed."
+  },
+  "阻止": {
+    "zh": "他想说什么，却被妈妈阻止了。",
+    "en": "He wanted to say something, but his mother stopped him."
+  },
+  "醉": {
+    "zh": "他昨天晚上喝醉了，今天头很疼。",
+    "en": "He got drunk last night and has a bad headache today."
+  },
+  "最初": {
+    "zh": "最初我并不喜欢这份工作，后来慢慢习惯了。",
+    "en": "At first I didn't like this job at all, but I gradually got used to it."
+  },
+  "尊敬": {
+    "zh": "他是一位受人尊敬的老教授。",
+    "en": "He is a highly respected old professor."
+  },
+  "遵守": {
+    "zh": "每个人都应该遵守交通规则。",
+    "en": "Everyone should obey the traffic rules."
+  },
+  "作品": {
+    "zh": "这是他最有名的一部作品。",
+    "en": "This is his most famous work."
+  },
+  "作为": {
+    "zh": "作为一名老师，他对学生非常负责。",
+    "en": "As a teacher, he is very responsible toward his students."
+  }
+}

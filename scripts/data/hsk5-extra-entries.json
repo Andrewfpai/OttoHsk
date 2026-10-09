@@ -1,0 +1,5357 @@
+[
+ {
+  "simplified": "哎",
+  "radical": "口",
+  "level": [
+   "t5",
+   "n7"
+  ],
+  "frequency": 2092,
+  "pos": [
+   "e"
+  ],
+  "forms": [
+   {
+    "traditional": "哎",
+    "transcriptions": {
+     "pinyin": "āi",
+     "numeric": "ai1"
+    },
+    "meanings": [
+     "hey!",
+     "(interjection used to attract attention or to express surprise or disapprobation)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "暗",
+  "radical": "日",
+  "level": [
+   "t5",
+   "n4",
+   "o4"
+  ],
+  "frequency": 2594,
+  "pos": [
+   "a",
+   "ad"
+  ],
+  "forms": [
+   {
+    "traditional": "晻",
+    "transcriptions": {
+     "pinyin": "àn",
+     "numeric": "an4"
+    },
+    "meanings": [
+     "variant of 暗"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "暗",
+    "transcriptions": {
+     "pinyin": "àn",
+     "numeric": "an4"
+    },
+    "meanings": [
+     "dark",
+     "to turn dark",
+     "secret; hidden",
+     "(literary) confused; ignorant"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "闇",
+    "transcriptions": {
+     "pinyin": "àn",
+     "numeric": "an4"
+    },
+    "meanings": [
+     "(literary) to close (a door)",
+     "to eclipse",
+     "confused; ignorant (variant of 暗)",
+     "dark (variant of 暗)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "熬夜",
+  "radical": "灬",
+  "level": [
+   "t5",
+   "n7"
+  ],
+  "frequency": 9364,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "熬夜",
+    "transcriptions": {
+     "pinyin": "áo yè",
+     "numeric": "ao2 ye4"
+    },
+    "meanings": [
+     "to stay up late or all night"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "包括",
+  "radical": "勹",
+  "level": [
+   "t5",
+   "n4",
+   "o4"
+  ],
+  "frequency": 788,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "包括",
+    "transcriptions": {
+     "pinyin": "bāo kuò",
+     "numeric": "bao1 kuo4"
+    },
+    "meanings": [
+     "to comprise",
+     "to include",
+     "to involve",
+     "to incorporate",
+     "to consist of"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "报到",
+  "radical": "扌",
+  "level": [
+   "t5",
+   "n3",
+   "o6"
+  ],
+  "frequency": 8953,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "報到",
+    "transcriptions": {
+     "pinyin": "bào dào",
+     "numeric": "bao4 dao4"
+    },
+    "meanings": [
+     "to report for duty",
+     "to check in",
+     "to register"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "报道",
+  "radical": "扌",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 886,
+  "pos": [
+   "v",
+   "n",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "報道",
+    "transcriptions": {
+     "pinyin": "bào dào",
+     "numeric": "bao4 dao4"
+    },
+    "meanings": [
+     "to report (news)",
+     "report"
+    ],
+    "classifiers": [
+     "篇",
+     "份"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "报社",
+  "radical": "扌",
+  "level": [
+   "t6",
+   "n7",
+   "o6"
+  ],
+  "frequency": 8300,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "報社",
+    "transcriptions": {
+     "pinyin": "bào shè",
+     "numeric": "bao4 she4"
+    },
+    "meanings": [
+     "newspaper (i.e. a company)"
+    ],
+    "classifiers": [
+     "家"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "抱怨",
+  "radical": "扌",
+  "level": [
+   "t5",
+   "n5",
+   "o6"
+  ],
+  "frequency": 3331,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "抱怨",
+    "transcriptions": {
+     "pinyin": "bào yuàn",
+     "numeric": "bao4 yuan4"
+    },
+    "meanings": [
+     "to complain",
+     "to grumble",
+     "to harbor a complaint",
+     "to feel dissatisfied"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "表达",
+  "radical": "衣",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 1660,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "表達",
+    "transcriptions": {
+     "pinyin": "biǎo dá",
+     "numeric": "biao3 da2"
+    },
+    "meanings": [
+     "to express; to convey"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "冰激凌",
+  "radical": "",
+  "level": [
+   "manual"
+  ],
+  "frequency": 99999,
+  "pos": [],
+  "forms": [
+   {
+    "traditional": "冰激凌",
+    "transcriptions": {
+     "pinyin": "bīng jī líng",
+     "numeric": ""
+    },
+    "meanings": [
+     "ice cream"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "播放",
+  "radical": "扌",
+  "level": [
+   "t4",
+   "n3",
+   "o6"
+  ],
+  "frequency": 3952,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "播放",
+    "transcriptions": {
+     "pinyin": "bō fàng",
+     "numeric": "bo1 fang4"
+    },
+    "meanings": [
+     "to broadcast; to transmit (by radio or TV)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "差距",
+  "radical": "工",
+  "level": [
+   "t5",
+   "n5",
+   "o6"
+  ],
+  "frequency": 6358,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "差距",
+    "transcriptions": {
+     "pinyin": "chā jù",
+     "numeric": "cha1 ju4"
+    },
+    "meanings": [
+     "disparity",
+     "gap"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "超级",
+  "radical": "走",
+  "level": [
+   "t5",
+   "n3",
+   "o6"
+  ],
+  "frequency": 1582,
+  "pos": [
+   "b",
+   "d"
+  ],
+  "forms": [
+   {
+    "traditional": "超級",
+    "transcriptions": {
+     "pinyin": "chāo jí",
+     "numeric": "chao1 ji2"
+    },
+    "meanings": [
+     "super-",
+     "ultra-",
+     "hyper-"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "潮湿",
+  "radical": "氵",
+  "level": [
+   "t6",
+   "n4",
+   "o6"
+  ],
+  "frequency": 11797,
+  "pos": [
+   "a",
+   "an"
+  ],
+  "forms": [
+   {
+    "traditional": "潮濕",
+    "transcriptions": {
+     "pinyin": "cháo shī",
+     "numeric": "chao2 shi1"
+    },
+    "meanings": [
+     "damp",
+     "moist"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "吵",
+  "radical": "口",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 2738,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "吵",
+    "transcriptions": {
+     "pinyin": "chǎo",
+     "numeric": "chao3"
+    },
+    "meanings": [
+     "to quarrel",
+     "to make a noise",
+     "noisy",
+     "to disturb by making a noise"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "称",
+  "radical": "禾",
+  "level": [
+   "t5",
+   "n2"
+  ],
+  "frequency": 1100,
+  "pos": [
+   "v",
+   "g",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "稱",
+    "transcriptions": {
+     "pinyin": "chèn",
+     "numeric": "chen4"
+    },
+    "meanings": [
+     "to fit",
+     "balanced",
+     "suitable"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "稱",
+    "transcriptions": {
+     "pinyin": "chēng",
+     "numeric": "cheng1"
+    },
+    "meanings": [
+     "to weigh",
+     "to state",
+     "to name",
+     "name",
+     "appellation",
+     "to praise"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "稱",
+    "transcriptions": {
+     "pinyin": "chèng",
+     "numeric": "cheng4"
+    },
+    "meanings": [
+     "variant of 秤",
+     "steelyard"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "成人",
+  "radical": "戈",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 4923,
+  "pos": [
+   "n",
+   "v",
+   "nr"
+  ],
+  "forms": [
+   {
+    "traditional": "成人",
+    "transcriptions": {
+     "pinyin": "chéng rén",
+     "numeric": "cheng2 ren2"
+    },
+    "meanings": [
+     "adult"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "成熟",
+  "radical": "戈",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 1955,
+  "pos": [
+   "a",
+   "an"
+  ],
+  "forms": [
+   {
+    "traditional": "成熟",
+    "transcriptions": {
+     "pinyin": "chéng shú",
+     "numeric": "cheng2 shu2"
+    },
+    "meanings": [
+     "mature; ripe",
+     "to mature; to ripen",
+     "Taiwan pr. [chéng shóu]"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "池塘",
+  "radical": "氵",
+  "level": [
+   "t7",
+   "n7",
+   "o6"
+  ],
+  "frequency": 13296,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "池塘",
+    "transcriptions": {
+     "pinyin": "chí táng",
+     "numeric": "chi2 tang2"
+    },
+    "meanings": [
+     "pool",
+     "pond"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "迟早",
+  "radical": "辶",
+  "level": [
+   "t7",
+   "n7"
+  ],
+  "frequency": 6843,
+  "pos": [
+   "d",
+   "a"
+  ],
+  "forms": [
+   {
+    "traditional": "遲早",
+    "transcriptions": {
+     "pinyin": "chí zǎo",
+     "numeric": "chi2 zao3"
+    },
+    "meanings": [
+     "sooner or later"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "出示",
+  "radical": "凵",
+  "level": [
+   "t6",
+   "n7"
+  ],
+  "frequency": 7905,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "出示",
+    "transcriptions": {
+     "pinyin": "chū shì",
+     "numeric": "chu1 shi4"
+    },
+    "meanings": [
+     "to show",
+     "to take out and show to others",
+     "to display"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "词汇",
+  "radical": "讠",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 9933,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "詞匯",
+    "transcriptions": {
+     "pinyin": "cí huì",
+     "numeric": "ci2 hui4"
+    },
+    "meanings": [
+     "variant of 词汇"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "詞彙",
+    "transcriptions": {
+     "pinyin": "cí huì",
+     "numeric": "ci2 hui4"
+    },
+    "meanings": [
+     "vocabulary",
+     "list of words (e.g. for language teaching purposes)",
+     "word"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "粗糙",
+  "radical": "米",
+  "level": [
+   "t7",
+   "n7"
+  ],
+  "frequency": 9951,
+  "pos": [
+   "a"
+  ],
+  "forms": [
+   {
+    "traditional": "粗糙",
+    "transcriptions": {
+     "pinyin": "cū cāo",
+     "numeric": "cu1 cao1"
+    },
+    "meanings": [
+     "crude",
+     "gruff",
+     "rough",
+     "coarse"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "大厦",
+  "radical": "大",
+  "level": [
+   "t5",
+   "n7",
+   "o6"
+  ],
+  "frequency": 5170,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "大廈",
+    "transcriptions": {
+     "pinyin": "dà shà",
+     "numeric": "da4 sha4"
+    },
+    "meanings": [
+     "(used in the names of grand buildings such as 百老汇大厦 Broadway Mansions (in Shanghai) or 帝国大厦 Empire State Building etc)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "代表",
+  "radical": "亻",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 644,
+  "pos": [
+   "n",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "代表",
+    "transcriptions": {
+     "pinyin": "dài biǎo",
+     "numeric": "dai4 biao3"
+    },
+    "meanings": [
+     "representative",
+     "delegate",
+     "to represent",
+     "to stand for",
+     "on behalf of",
+     "in the name of"
+    ],
+    "classifiers": [
+     "位",
+     "个",
+     "名"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "代替",
+  "radical": "亻",
+  "level": [
+   "t5",
+   "n4",
+   "o4"
+  ],
+  "frequency": 4167,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "代替",
+    "transcriptions": {
+     "pinyin": "dài tì",
+     "numeric": "dai4 ti4"
+    },
+    "meanings": [
+     "to replace",
+     "to take the place of"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "当地",
+  "radical": "⺌",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 1609,
+  "pos": [
+   "s"
+  ],
+  "forms": [
+   {
+    "traditional": "當地",
+    "transcriptions": {
+     "pinyin": "dāng dì",
+     "numeric": "dang1 di4"
+    },
+    "meanings": [
+     "local"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "当心",
+  "radical": "⺌",
+  "level": [
+   "t7",
+   "n7",
+   "o6"
+  ],
+  "frequency": 9615,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "當心",
+    "transcriptions": {
+     "pinyin": "dāng xīn",
+     "numeric": "dang1 xin1"
+    },
+    "meanings": [
+     "to take care",
+     "to look out"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "岛屿",
+  "radical": "山",
+  "level": [
+   "t7",
+   "n7",
+   "o6"
+  ],
+  "frequency": 13216,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "島嶼",
+    "transcriptions": {
+     "pinyin": "dǎo yǔ",
+     "numeric": "dao3 yu3"
+    },
+    "meanings": [
+     "island"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "断",
+  "radical": "斤",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 1707,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "斷",
+    "transcriptions": {
+     "pinyin": "duàn",
+     "numeric": "duan4"
+    },
+    "meanings": [
+     "to break",
+     "to snap",
+     "to cut off",
+     "to give up or abstain from sth",
+     "to judge",
+     "(usu. used in the negative) absolutely",
+     "definitely",
+     "decidedly"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "兑换",
+  "radical": "儿",
+  "level": [
+   "t7",
+   "n7",
+   "o6"
+  ],
+  "frequency": 11279,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "兌換",
+    "transcriptions": {
+     "pinyin": "duì huàn",
+     "numeric": "dui4 huan4"
+    },
+    "meanings": [
+     "to convert",
+     "to exchange"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "顿",
+  "radical": "页",
+  "level": [
+   "t4",
+   "n3",
+   "o4"
+  ],
+  "frequency": 1617,
+  "pos": [
+   "qv",
+   "g"
+  ],
+  "forms": [
+   {
+    "traditional": "頓",
+    "transcriptions": {
+     "pinyin": "dùn",
+     "numeric": "dun4"
+    },
+    "meanings": [
+     "to stop",
+     "to pause",
+     "to arrange",
+     "to lay out",
+     "to kowtow",
+     "to stamp (one's foot)",
+     "at once",
+     "classifier for meals, beatings, scoldings etc: time, bout, spell, meal"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "朵",
+  "radical": "木",
+  "level": [
+   "t5",
+   "n5",
+   "o4"
+  ],
+  "frequency": 4920,
+  "pos": [
+   "q",
+   "g"
+  ],
+  "forms": [
+   {
+    "traditional": "朵",
+    "transcriptions": {
+     "pinyin": "duǒ",
+     "numeric": "duo3"
+    },
+    "meanings": [
+     "flower",
+     "earlobe",
+     "fig. item on both sides",
+     "classifier for flowers, clouds etc"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "朶",
+    "transcriptions": {
+     "pinyin": "duǒ",
+     "numeric": "duo3"
+    },
+    "meanings": [
+     "variant of 朵"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "嗯",
+  "radical": "口",
+  "level": [
+   "t4",
+   "o6"
+  ],
+  "frequency": 1390,
+  "pos": [
+   "e"
+  ],
+  "forms": [
+   {
+    "traditional": "嗯",
+    "transcriptions": {
+     "pinyin": "ēn",
+     "numeric": "en1"
+    },
+    "meanings": [
+     "(a groaning sound)"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "嗯",
+    "transcriptions": {
+     "pinyin": "èn",
+     "numeric": "en4"
+    },
+    "meanings": [
+     "(nonverbal grunt as interjection)",
+     "OK, yeah",
+     "what?"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "嗯",
+    "transcriptions": {
+     "pinyin": "en",
+     "numeric": "en5"
+    },
+    "meanings": [
+     "interjection indicating approval, appreciation or agreement"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "耳环",
+  "radical": "耳",
+  "level": [
+   "t6",
+   "o6"
+  ],
+  "frequency": 11999,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "耳環",
+    "transcriptions": {
+     "pinyin": "ěr huán",
+     "numeric": "er3 huan2"
+    },
+    "meanings": [
+     "earring"
+    ],
+    "classifiers": [
+     "只",
+     "对"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "反映",
+  "radical": "又",
+  "level": [
+   "t5",
+   "n4",
+   "o4"
+  ],
+  "frequency": 3914,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "反映",
+    "transcriptions": {
+     "pinyin": "fǎn yìng",
+     "numeric": "fan3 ying4"
+    },
+    "meanings": [
+     "to mirror",
+     "to reflect",
+     "mirror image",
+     "reflection",
+     "(fig.) to report",
+     "to make known",
+     "to render"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "范围",
+  "radical": "艹",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 1325,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "範圍",
+    "transcriptions": {
+     "pinyin": "fàn wéi",
+     "numeric": "fan4 wei2"
+    },
+    "meanings": [
+     "range",
+     "scope",
+     "limit",
+     "extent"
+    ],
+    "classifiers": [
+     "个"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "分手",
+  "radical": "刀",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 2494,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "分手",
+    "transcriptions": {
+     "pinyin": "fēn shǒu",
+     "numeric": "fen1 shou3"
+    },
+    "meanings": [
+     "to part company",
+     "to split up",
+     "to break up"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "风景",
+  "radical": "风",
+  "level": [
+   "t4",
+   "n4",
+   "o4"
+  ],
+  "frequency": 4068,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "風景",
+    "transcriptions": {
+     "pinyin": "fēng jǐng",
+     "numeric": "feng1 jing3"
+    },
+    "meanings": [
+     "scenery; landscape"
+    ],
+    "classifiers": [
+     "个"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "干燥",
+  "radical": "十",
+  "level": [
+   "t6",
+   "n7",
+   "o4"
+  ],
+  "frequency": 8013,
+  "pos": [
+   "a",
+   "an",
+   "ad"
+  ],
+  "forms": [
+   {
+    "traditional": "乾燥",
+    "transcriptions": {
+     "pinyin": "gān zào",
+     "numeric": "gan1 zao4"
+    },
+    "meanings": [
+     "to dry (of weather, paint, cement etc)",
+     "desiccation",
+     "dull",
+     "uninteresting",
+     "arid"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "高级",
+  "radical": "高",
+  "level": [
+   "t5",
+   "n2",
+   "o4"
+  ],
+  "frequency": 2221,
+  "pos": [
+   "a"
+  ],
+  "forms": [
+   {
+    "traditional": "高級",
+    "transcriptions": {
+     "pinyin": "gāo jí",
+     "numeric": "gao1 ji2"
+    },
+    "meanings": [
+     "high level",
+     "high grade",
+     "advanced",
+     "high-ranking"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "工具",
+  "radical": "工",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 2299,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "工具",
+    "transcriptions": {
+     "pinyin": "gōng jù",
+     "numeric": "gong1 ju4"
+    },
+    "meanings": [
+     "tool",
+     "instrument",
+     "utensil",
+     "means (to achieve a goal etc)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "恭喜",
+  "radical": "⺗",
+  "level": [
+   "t5",
+   "n7"
+  ],
+  "frequency": 2480,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "恭喜",
+    "transcriptions": {
+     "pinyin": "gōng xǐ",
+     "numeric": "gong1 xi3"
+    },
+    "meanings": [
+     "to congratulate",
+     "(interj.) congratulations!"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "鼓掌",
+  "radical": "鼓",
+  "level": [
+   "t5",
+   "n5",
+   "o4"
+  ],
+  "frequency": 6623,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "鼓掌",
+    "transcriptions": {
+     "pinyin": "gǔ zhǎng",
+     "numeric": "gu3 zhang3"
+    },
+    "meanings": [
+     "to applaud",
+     "to clap"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "归纳",
+  "radical": "彐",
+  "level": [
+   "t7",
+   "n7",
+   "o6"
+  ],
+  "frequency": 24633,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "歸納",
+    "transcriptions": {
+     "pinyin": "guī nà",
+     "numeric": "gui1 na4"
+    },
+    "meanings": [
+     "to sum up",
+     "to summarize",
+     "to conclude from facts",
+     "induction (method of deduction in logic)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "国王",
+  "radical": "囗",
+  "level": [
+   "t6",
+   "n6"
+  ],
+  "frequency": 3586,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "國王",
+    "transcriptions": {
+     "pinyin": "guó wáng",
+     "numeric": "guo2 wang2"
+    },
+    "meanings": [
+     "king"
+    ],
+    "classifiers": [
+     "个"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "果然",
+  "radical": "木",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 3104,
+  "pos": [
+   "d",
+   "c"
+  ],
+  "forms": [
+   {
+    "traditional": "果然",
+    "transcriptions": {
+     "pinyin": "guǒ rán",
+     "numeric": "guo3 ran2"
+    },
+    "meanings": [
+     "really",
+     "sure enough",
+     "as expected",
+     "if indeed"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "好客",
+  "radical": "女",
+  "level": [
+   "t6",
+   "n7",
+   "o6"
+  ],
+  "frequency": 28557,
+  "pos": [
+   "a",
+   "an"
+  ],
+  "forms": [
+   {
+    "traditional": "好客",
+    "transcriptions": {
+     "pinyin": "hào kè",
+     "numeric": "hao4 ke4"
+    },
+    "meanings": [
+     "hospitality",
+     "to treat guests well",
+     "to enjoy having guests",
+     "hospitable",
+     "friendly"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "猴子",
+  "radical": "犭",
+  "level": [
+   "t5",
+   "o4"
+  ],
+  "frequency": 5675,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "猴子",
+    "transcriptions": {
+     "pinyin": "hóu zi",
+     "numeric": "hou2 zi5"
+    },
+    "meanings": [
+     "monkey"
+    ],
+    "classifiers": [
+     "只"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "后背",
+  "radical": "",
+  "level": [
+   "manual"
+  ],
+  "frequency": 99999,
+  "pos": [],
+  "forms": [
+   {
+    "traditional": "后背",
+    "transcriptions": {
+     "pinyin": "hòu bèi",
+     "numeric": ""
+    },
+    "meanings": [
+     "the back (of the body)",
+     "back"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "忽然",
+  "radical": "心",
+  "level": [
+   "t4",
+   "n2",
+   "o4"
+  ],
+  "frequency": 4518,
+  "pos": [
+   "d"
+  ],
+  "forms": [
+   {
+    "traditional": "忽然",
+    "transcriptions": {
+     "pinyin": "hū rán",
+     "numeric": "hu1 ran2"
+    },
+    "meanings": [
+     "suddenly; all of a sudden"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "划",
+  "radical": "刂",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 2993,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "划",
+    "transcriptions": {
+     "pinyin": "huá",
+     "numeric": "hua2"
+    },
+    "meanings": [
+     "to row",
+     "to paddle",
+     "profitable",
+     "worth (the effort)",
+     "it pays (to do sth)"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "劃",
+    "transcriptions": {
+     "pinyin": "huá",
+     "numeric": "hua2"
+    },
+    "meanings": [
+     "to cut",
+     "to slash",
+     "to scratch (cut into the surface of sth)",
+     "to strike (a match)"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "劃",
+    "transcriptions": {
+     "pinyin": "huà",
+     "numeric": "hua4"
+    },
+    "meanings": [
+     "to delimit",
+     "to transfer",
+     "to assign",
+     "to plan",
+     "to draw (a line)",
+     "stroke of a Chinese character"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "滑",
+  "radical": "氵",
+  "level": [
+   "t5",
+   "n5"
+  ],
+  "frequency": 2639,
+  "pos": [
+   "v",
+   "a"
+  ],
+  "forms": [
+   {
+    "traditional": "滑",
+    "transcriptions": {
+     "pinyin": "Huá",
+     "numeric": "Hua2"
+    },
+    "meanings": [
+     "surname Hua"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "滑",
+    "transcriptions": {
+     "pinyin": "huá",
+     "numeric": "hua2"
+    },
+    "meanings": [
+     "to slip; to slide",
+     "slippery; smooth",
+     "sly; slippery; not to be trusted"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "怀孕",
+  "radical": "忄",
+  "level": [
+   "t6",
+   "n7",
+   "o6"
+  ],
+  "frequency": 3299,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "懷孕",
+    "transcriptions": {
+     "pinyin": "huái yùn",
+     "numeric": "huai2 yun4"
+    },
+    "meanings": [
+     "pregnant",
+     "to have conceived",
+     "gestation",
+     "pregnancy"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "或许",
+  "radical": "戈",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 1228,
+  "pos": [
+   "d"
+  ],
+  "forms": [
+   {
+    "traditional": "或許",
+    "transcriptions": {
+     "pinyin": "huò xǔ",
+     "numeric": "huo4 xu3"
+    },
+    "meanings": [
+     "perhaps; maybe"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "极其",
+  "radical": "木",
+  "level": [
+   "t5",
+   "n4",
+   "o4"
+  ],
+  "frequency": 4627,
+  "pos": [
+   "d"
+  ],
+  "forms": [
+   {
+    "traditional": "極其",
+    "transcriptions": {
+     "pinyin": "jí qí",
+     "numeric": "ji2 qi2"
+    },
+    "meanings": [
+     "extremely"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "急诊",
+  "radical": "心",
+  "level": [
+   "t5",
+   "n7"
+  ],
+  "frequency": 11305,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "急診",
+    "transcriptions": {
+     "pinyin": "jí zhěn",
+     "numeric": "ji2 zhen3"
+    },
+    "meanings": [
+     "to give or receive urgent medical treatment",
+     "emergency treatment (at a hospital emergency department, or from a doctor on a house call)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "集合",
+  "radical": "隹",
+  "level": [
+   "t5",
+   "n4",
+   "o4"
+  ],
+  "frequency": 5571,
+  "pos": [
+   "v",
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "集合",
+    "transcriptions": {
+     "pinyin": "jí hé",
+     "numeric": "ji2 he2"
+    },
+    "meanings": [
+     "to gather; to assemble",
+     "(math.) set"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "假设",
+  "radical": "亻",
+  "level": [
+   "t6",
+   "n7",
+   "o6"
+  ],
+  "frequency": 4725,
+  "pos": [
+   "v",
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "假設",
+    "transcriptions": {
+     "pinyin": "jiǎ shè",
+     "numeric": "jia3 she4"
+    },
+    "meanings": [
+     "to suppose",
+     "to presume",
+     "to assume",
+     "supposing that ...",
+     "if",
+     "hypothesis",
+     "conjecture"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "兼职",
+  "radical": "丷",
+  "level": [
+   "t6",
+   "n7",
+   "o6"
+  ],
+  "frequency": 8368,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "兼職",
+    "transcriptions": {
+     "pinyin": "jiān zhí",
+     "numeric": "jian1 zhi2"
+    },
+    "meanings": [
+     "to hold concurrent posts",
+     "concurrent job",
+     "moonlighting"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "健身",
+  "radical": "亻",
+  "level": [
+   "t4",
+   "n4"
+  ],
+  "frequency": 4744,
+  "pos": [
+   "vn",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "健身",
+    "transcriptions": {
+     "pinyin": "jiàn shēn",
+     "numeric": "jian4 shen1"
+    },
+    "meanings": [
+     "to exercise",
+     "to keep fit",
+     "to work out",
+     "physical exercise"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "交往",
+  "radical": "亠",
+  "level": [
+   "t5",
+   "n3",
+   "o6"
+  ],
+  "frequency": 3394,
+  "pos": [
+   "vn",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "交往",
+    "transcriptions": {
+     "pinyin": "jiāo wǎng",
+     "numeric": "jiao1 wang3"
+    },
+    "meanings": [
+     "to associate (with)",
+     "to have contact (with)",
+     "to hang out (with)",
+     "to date",
+     "(interpersonal) relationship",
+     "association",
+     "contact"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "戒",
+  "radical": "戈",
+  "level": [
+   "t7",
+   "n5"
+  ],
+  "frequency": 3905,
+  "pos": [
+   "v",
+   "g",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "戒",
+    "transcriptions": {
+     "pinyin": "jiè",
+     "numeric": "jie4"
+    },
+    "meanings": [
+     "to guard against",
+     "to exhort",
+     "to admonish or warn",
+     "to give up or stop doing sth",
+     "Buddhist monastic discipline",
+     "ring (for a finger)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "尽快",
+  "radical": "尸",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 1987,
+  "pos": [
+   "d"
+  ],
+  "forms": [
+   {
+    "traditional": "儘快",
+    "transcriptions": {
+     "pinyin": "jǐn kuài",
+     "numeric": "jin3 kuai4"
+    },
+    "meanings": [
+     "as quickly as possible; as soon as possible"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "盡快",
+    "transcriptions": {
+     "pinyin": "jìn kuài",
+     "numeric": "jin4 kuai4"
+    },
+    "meanings": [
+     "see 尽快"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "经商",
+  "radical": "纟",
+  "level": [
+   "t6",
+   "n7",
+   "o6"
+  ],
+  "frequency": 17606,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "經商",
+    "transcriptions": {
+     "pinyin": "jīng shāng",
+     "numeric": "jing1 shang1"
+    },
+    "meanings": [
+     "to trade",
+     "to carry out commercial activities",
+     "in business"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "精神",
+  "radical": "米",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 640,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "精神",
+    "transcriptions": {
+     "pinyin": "jīng shén",
+     "numeric": "jing1 shen2"
+    },
+    "meanings": [
+     "spirit",
+     "mind",
+     "consciousness",
+     "thought",
+     "mental",
+     "psychological",
+     "essence",
+     "gist"
+    ],
+    "classifiers": [
+     "个"
+    ]
+   },
+   {
+    "traditional": "精神",
+    "transcriptions": {
+     "pinyin": "jīng shen",
+     "numeric": "jing1 shen5"
+    },
+    "meanings": [
+     "vigor",
+     "vitality",
+     "drive",
+     "spiritual"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "开水",
+  "radical": "廾",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 16321,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "開水",
+    "transcriptions": {
+     "pinyin": "kāi shuǐ",
+     "numeric": "kai1 shui3"
+    },
+    "meanings": [
+     "boiled water",
+     "boiling water"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "看望",
+  "radical": "目",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 8053,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "看望",
+    "transcriptions": {
+     "pinyin": "kàn wàng",
+     "numeric": "kan4 wang4"
+    },
+    "meanings": [
+     "to pay a visit to; to see (sb)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "靠",
+  "radical": "非",
+  "level": [
+   "t5",
+   "n2"
+  ],
+  "frequency": 622,
+  "pos": [
+   "v",
+   "p"
+  ],
+  "forms": [
+   {
+    "traditional": "靠",
+    "transcriptions": {
+     "pinyin": "kào",
+     "numeric": "kao4"
+    },
+    "meanings": [
+     "to lean against or on",
+     "to stand by the side of",
+     "to come near to",
+     "to depend on",
+     "to trust",
+     "to fuck (vulgar)",
+     "traditional military costume drama where the performers wear armor (old)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "夸张",
+  "radical": "大",
+  "level": [
+   "t6",
+   "n7"
+  ],
+  "frequency": 5029,
+  "pos": [
+   "v",
+   "n",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "誇張",
+    "transcriptions": {
+     "pinyin": "kuā zhāng",
+     "numeric": "kua1 zhang1"
+    },
+    "meanings": [
+     "to exaggerate",
+     "overstated",
+     "exaggerated",
+     "hyperbole",
+     "(coll.) excessive",
+     "ridiculous",
+     "outrageous"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "宽",
+  "radical": "宀",
+  "level": [
+   "t5",
+   "n4",
+   "o4"
+  ],
+  "frequency": 3471,
+  "pos": [
+   "a"
+  ],
+  "forms": [
+   {
+    "traditional": "寬",
+    "transcriptions": {
+     "pinyin": "Kuān",
+     "numeric": "Kuan1"
+    },
+    "meanings": [
+     "surname Kuan"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "寬",
+    "transcriptions": {
+     "pinyin": "kuān",
+     "numeric": "kuan1"
+    },
+    "meanings": [
+     "wide",
+     "broad",
+     "loose",
+     "relaxed",
+     "lenient"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "昆虫",
+  "radical": "日",
+  "level": [
+   "t5",
+   "n7",
+   "o6"
+  ],
+  "frequency": 11860,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "昆蟲",
+    "transcriptions": {
+     "pinyin": "kūn chóng",
+     "numeric": "kun1 chong2"
+    },
+    "meanings": [
+     "insect"
+    ],
+    "classifiers": [
+     "只",
+     "群",
+     "堆"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "扩大",
+  "radical": "扌",
+  "level": [
+   "t5",
+   "n4",
+   "o4"
+  ],
+  "frequency": 3635,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "擴大",
+    "transcriptions": {
+     "pinyin": "kuò dà",
+     "numeric": "kuo4 da4"
+    },
+    "meanings": [
+     "to expand",
+     "to enlarge",
+     "to broaden one's scope"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "朗读",
+  "radical": "月",
+  "level": [
+   "t6",
+   "n5",
+   "o6"
+  ],
+  "frequency": 18517,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "朗讀",
+    "transcriptions": {
+     "pinyin": "lǎng dú",
+     "numeric": "lang3 du2"
+    },
+    "meanings": [
+     "to read aloud"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "老婆",
+  "radical": "老",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 1565,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "老婆",
+    "transcriptions": {
+     "pinyin": "lǎo pó",
+     "numeric": "lao3 po2"
+    },
+    "meanings": [
+     "(coll.) wife"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "乐器",
+  "radical": "丿",
+  "level": [
+   "t6",
+   "n7"
+  ],
+  "frequency": 9468,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "樂器",
+    "transcriptions": {
+     "pinyin": "yuè qì",
+     "numeric": "yue4 qi4"
+    },
+    "meanings": [
+     "musical instrument"
+    ],
+    "classifiers": [
+     "件"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "类型",
+  "radical": "大",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 2598,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "類型",
+    "transcriptions": {
+     "pinyin": "lèi xíng",
+     "numeric": "lei4 xing2"
+    },
+    "meanings": [
+     "type; kind; category",
+     "(computer programming) type"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "冷淡",
+  "radical": "冫",
+  "level": [
+   "t7",
+   "n7",
+   "o6"
+  ],
+  "frequency": 12345,
+  "pos": [
+   "a",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "冷淡",
+    "transcriptions": {
+     "pinyin": "lěng dàn",
+     "numeric": "leng3 dan4"
+    },
+    "meanings": [
+     "cold",
+     "indifferent"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "连续",
+  "radical": "辶",
+  "level": [
+   "t5",
+   "n3"
+  ],
+  "frequency": 2315,
+  "pos": [
+   "a",
+   "ad"
+  ],
+  "forms": [
+   {
+    "traditional": "連續",
+    "transcriptions": {
+     "pinyin": "lián xù",
+     "numeric": "lian2 xu4"
+    },
+    "meanings": [
+     "continuous",
+     "in a row",
+     "serial",
+     "consecutive"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "亮",
+  "radical": "亠",
+  "level": [
+   "t4",
+   "n2",
+   "o4"
+  ],
+  "frequency": 1691,
+  "pos": [
+   "v",
+   "a"
+  ],
+  "forms": [
+   {
+    "traditional": "亮",
+    "transcriptions": {
+     "pinyin": "liàng",
+     "numeric": "liang4"
+    },
+    "meanings": [
+     "bright",
+     "clear",
+     "resonant",
+     "to shine",
+     "to show",
+     "to reveal"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "列车",
+  "radical": "刂",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 4242,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "列車",
+    "transcriptions": {
+     "pinyin": "liè chē",
+     "numeric": "lie4 che1"
+    },
+    "meanings": [
+     "(railway) train"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "流泪",
+  "radical": "氵",
+  "level": [
+   "n7",
+   "o4"
+  ],
+  "frequency": 7253,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "流淚",
+    "transcriptions": {
+     "pinyin": "liú lèi",
+     "numeric": "liu2 lei4"
+    },
+    "meanings": [
+     "to shed tears"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "媒体",
+  "radical": "女",
+  "level": [
+   "t5",
+   "n3",
+   "o6"
+  ],
+  "frequency": 1246,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "媒體",
+    "transcriptions": {
+     "pinyin": "méi tǐ",
+     "numeric": "mei2 ti3"
+    },
+    "meanings": [
+     "media, esp. news media"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "梦想",
+  "radical": "木",
+  "level": [
+   "t4",
+   "n4",
+   "o6"
+  ],
+  "frequency": 1446,
+  "pos": [
+   "n",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "夢想",
+    "transcriptions": {
+     "pinyin": "mèng xiǎng",
+     "numeric": "meng4 xiang3"
+    },
+    "meanings": [
+     "(fig.) to dream of",
+     "dream"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "敏感",
+  "radical": "攵",
+  "level": [
+   "t5",
+   "n5",
+   "o6"
+  ],
+  "frequency": 3233,
+  "pos": [
+   "a",
+   "an"
+  ],
+  "forms": [
+   {
+    "traditional": "敏感",
+    "transcriptions": {
+     "pinyin": "mǐn gǎn",
+     "numeric": "min3 gan3"
+    },
+    "meanings": [
+     "sensitive",
+     "susceptible"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "名胜古迹",
+  "radical": "",
+  "level": [
+   "manual"
+  ],
+  "frequency": 99999,
+  "pos": [],
+  "forms": [
+   {
+    "traditional": "名胜古迹",
+    "transcriptions": {
+     "pinyin": "míng shèng gǔ jì",
+     "numeric": ""
+    },
+    "meanings": [
+     "famous scenic spots and historic sites"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "模特",
+  "radical": "",
+  "level": [
+   "manual"
+  ],
+  "frequency": 99999,
+  "pos": [],
+  "forms": [
+   {
+    "traditional": "模特",
+    "transcriptions": {
+     "pinyin": "mó tè",
+     "numeric": ""
+    },
+    "meanings": [
+     "(fashion) model"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "难免",
+  "radical": "又",
+  "level": [
+   "t6",
+   "n4",
+   "o6"
+  ],
+  "frequency": 8428,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "難免",
+    "transcriptions": {
+     "pinyin": "nán miǎn",
+     "numeric": "nan2 mian3"
+    },
+    "meanings": [
+     "hard to avoid",
+     "difficult to escape from",
+     "will inevitably"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "内部",
+  "radical": "入",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 1865,
+  "pos": [
+   "f"
+  ],
+  "forms": [
+   {
+    "traditional": "內部",
+    "transcriptions": {
+     "pinyin": "nèi bù",
+     "numeric": "nei4 bu4"
+    },
+    "meanings": [
+     "interior",
+     "inside (part, section)",
+     "internal"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "农村",
+  "radical": "冖",
+  "level": [
+   "t4",
+   "n3",
+   "o4"
+  ],
+  "frequency": 8305,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "農村",
+    "transcriptions": {
+     "pinyin": "nóng cūn",
+     "numeric": "nong2 cun1"
+    },
+    "meanings": [
+     "rural area",
+     "village"
+    ],
+    "classifiers": [
+     "个"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "欧洲",
+  "radical": "欠",
+  "level": [
+   "t5",
+   "o6"
+  ],
+  "frequency": 1929,
+  "pos": [
+   "ns"
+  ],
+  "forms": [
+   {
+    "traditional": "歐洲",
+    "transcriptions": {
+     "pinyin": "Oū zhōu",
+     "numeric": "Ou1 zhou1"
+    },
+    "meanings": [
+     "Europe (abbr. for 欧罗巴洲)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "培训",
+  "radical": "土",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 3619,
+  "pos": [
+   "vn",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "培訓",
+    "transcriptions": {
+     "pinyin": "péi xùn",
+     "numeric": "pei2 xun4"
+    },
+    "meanings": [
+     "to cultivate",
+     "to train",
+     "to groom",
+     "training"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "碰",
+  "radical": "石",
+  "level": [
+   "t5",
+   "n2"
+  ],
+  "frequency": 2829,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "掽",
+    "transcriptions": {
+     "pinyin": "pèng",
+     "numeric": "peng4"
+    },
+    "meanings": [
+     "variant of 碰"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "碰",
+    "transcriptions": {
+     "pinyin": "pèng",
+     "numeric": "peng4"
+    },
+    "meanings": [
+     "to touch",
+     "to meet with",
+     "to bump"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "踫",
+    "transcriptions": {
+     "pinyin": "pèng",
+     "numeric": "peng4"
+    },
+    "meanings": [
+     "old variant of 碰"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "拼音",
+  "radical": "",
+  "level": [
+   "manual"
+  ],
+  "frequency": 99999,
+  "pos": [],
+  "forms": [
+   {
+    "traditional": "拼音",
+    "transcriptions": {
+     "pinyin": "pīn yīn",
+     "numeric": ""
+    },
+    "meanings": [
+     "pinyin",
+     "phonetic spelling of Chinese"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "平安",
+  "radical": "广",
+  "level": [
+   "t5",
+   "n2"
+  ],
+  "frequency": 3137,
+  "pos": [
+   "a",
+   "an",
+   "ad",
+   "n",
+   "nz"
+  ],
+  "forms": [
+   {
+    "traditional": "平安",
+    "transcriptions": {
+     "pinyin": "píng ān",
+     "numeric": "ping2 an1"
+    },
+    "meanings": [
+     "safe and sound",
+     "well",
+     "without mishap",
+     "quiet and safe",
+     "at peace"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "签",
+  "radical": "⺮",
+  "level": [
+   "t5",
+   "n5"
+  ],
+  "frequency": 2244,
+  "pos": [
+   "v",
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "簽",
+    "transcriptions": {
+     "pinyin": "qiān",
+     "numeric": "qian1"
+    },
+    "meanings": [
+     "to sign one's name",
+     "to write brief comments on a document",
+     "inscribed bamboo stick (variant of 签)",
+     "visa"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "籖",
+    "transcriptions": {
+     "pinyin": "qiān",
+     "numeric": "qian1"
+    },
+    "meanings": [
+     "Japanese variant of 签"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "籤",
+    "transcriptions": {
+     "pinyin": "qiān",
+     "numeric": "qian1"
+    },
+    "meanings": [
+     "inscribed bamboo stick (used in divination, gambling, drawing lots etc)",
+     "small wood sliver",
+     "label",
+     "tag"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "墙",
+  "radical": "土",
+  "level": [
+   "t5",
+   "n2",
+   "o4"
+  ],
+  "frequency": 1741,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "墻",
+    "transcriptions": {
+     "pinyin": "qiáng",
+     "numeric": "qiang2"
+    },
+    "meanings": [
+     "variant of 墙, wall"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "牆",
+    "transcriptions": {
+     "pinyin": "qiáng",
+     "numeric": "qiang2"
+    },
+    "meanings": [
+     "wall"
+    ],
+    "classifiers": [
+     "面",
+     "堵"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "轻易",
+  "radical": "车",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 3836,
+  "pos": [
+   "d",
+   "a"
+  ],
+  "forms": [
+   {
+    "traditional": "輕易",
+    "transcriptions": {
+     "pinyin": "qīng yì",
+     "numeric": "qing1 yi4"
+    },
+    "meanings": [
+     "easily",
+     "lightly",
+     "rashly"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "群",
+  "radical": "羊",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 1165,
+  "pos": [
+   "q",
+   "g"
+  ],
+  "forms": [
+   {
+    "traditional": "羣",
+    "transcriptions": {
+     "pinyin": "qún",
+     "numeric": "qun2"
+    },
+    "meanings": [
+     "variant of 群"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "群",
+    "transcriptions": {
+     "pinyin": "qún",
+     "numeric": "qun2"
+    },
+    "meanings": [
+     "group",
+     "crowd",
+     "flock, herd, pack etc"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "人民币",
+  "radical": "人",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 21641,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "人民幣",
+    "transcriptions": {
+     "pinyin": "rén mín bì",
+     "numeric": "ren2 min2 bi4"
+    },
+    "meanings": [
+     "Renminbi (RMB)",
+     "Chinese Yuan (CNY)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "日子",
+  "radical": "日",
+  "level": [
+   "t4",
+   "n2"
+  ],
+  "frequency": 1197,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "日子",
+    "transcriptions": {
+     "pinyin": "rì zi",
+     "numeric": "ri4 zi5"
+    },
+    "meanings": [
+     "day",
+     "a (calendar) date",
+     "days of one's life"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "软",
+  "radical": "车",
+  "level": [
+   "t5",
+   "n5",
+   "o4"
+  ],
+  "frequency": 3178,
+  "pos": [
+   "a",
+   "ad"
+  ],
+  "forms": [
+   {
+    "traditional": "軟",
+    "transcriptions": {
+     "pinyin": "ruǎn",
+     "numeric": "ruan3"
+    },
+    "meanings": [
+     "soft",
+     "flexible"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "輭",
+    "transcriptions": {
+     "pinyin": "ruǎn",
+     "numeric": "ruan3"
+    },
+    "meanings": [
+     "variant of 软"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "色彩",
+  "radical": "色",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 4732,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "色彩",
+    "transcriptions": {
+     "pinyin": "sè cǎi",
+     "numeric": "se4 cai3"
+    },
+    "meanings": [
+     "tint; coloring; coloration",
+     "(fig.) flavor; character"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "伤害",
+  "radical": "亻",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 1296,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "傷害",
+    "transcriptions": {
+     "pinyin": "shāng hài",
+     "numeric": "shang1 hai4"
+    },
+    "meanings": [
+     "to injure",
+     "to harm"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "商务",
+  "radical": "口",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 5810,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "商務",
+    "transcriptions": {
+     "pinyin": "shāng wù",
+     "numeric": "shang1 wu4"
+    },
+    "meanings": [
+     "commercial affairs",
+     "commercial",
+     "commerce",
+     "business"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "生长",
+  "radical": "生",
+  "level": [
+   "t5",
+   "n3"
+  ],
+  "frequency": 4189,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "生長",
+    "transcriptions": {
+     "pinyin": "shēng zhǎng",
+     "numeric": "sheng1 zhang3"
+    },
+    "meanings": [
+     "to grow",
+     "to grow up",
+     "to be brought up"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "狮子",
+  "radical": "犭",
+  "level": [
+   "t6",
+   "n7",
+   "o4"
+  ],
+  "frequency": 4295,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "獅子",
+    "transcriptions": {
+     "pinyin": "Shī zǐ",
+     "numeric": "Shi1 zi3"
+    },
+    "meanings": [
+     "Leo (star sign)",
+     "Shihtzu township in Pingtung County 屏东县, Taiwan"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "獅子",
+    "transcriptions": {
+     "pinyin": "shī zi",
+     "numeric": "shi1 zi5"
+    },
+    "meanings": [
+     "lion"
+    ],
+    "classifiers": [
+     "只",
+     "头"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "湿润",
+  "radical": "氵",
+  "level": [
+   "t7",
+   "n7",
+   "o4"
+  ],
+  "frequency": 15795,
+  "pos": [
+   "a",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "濕潤",
+    "transcriptions": {
+     "pinyin": "shī rùn",
+     "numeric": "shi1 run4"
+    },
+    "meanings": [
+     "moist"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "时差",
+  "radical": "日",
+  "level": [
+   "t5",
+   "o6"
+  ],
+  "frequency": 15662,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "時差",
+    "transcriptions": {
+     "pinyin": "shí chā",
+     "numeric": "shi2 cha1"
+    },
+    "meanings": [
+     "time difference",
+     "time lag",
+     "jet lag"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "市场",
+  "radical": "巾",
+  "level": [
+   "t4",
+   "n3",
+   "o4"
+  ],
+  "frequency": 1190,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "市場",
+    "transcriptions": {
+     "pinyin": "shì chǎng",
+     "numeric": "shi4 chang3"
+    },
+    "meanings": [
+     "marketplace",
+     "market (also in abstract)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "首",
+  "radical": "首",
+  "level": [
+   "t4",
+   "n4"
+  ],
+  "frequency": 662,
+  "pos": [
+   "m",
+   "q",
+   "g"
+  ],
+  "forms": [
+   {
+    "traditional": "首",
+    "transcriptions": {
+     "pinyin": "shǒu",
+     "numeric": "shou3"
+    },
+    "meanings": [
+     "head",
+     "chief",
+     "first (occasion, thing etc)",
+     "classifier for poems, songs etc"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "数",
+  "radical": "攵",
+  "level": [
+   "t4",
+   "n2",
+   "o6"
+  ],
+  "frequency": 852,
+  "pos": [
+   "m",
+   "n",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "數",
+    "transcriptions": {
+     "pinyin": "shǔ",
+     "numeric": "shu3"
+    },
+    "meanings": [
+     "to count",
+     "to count as; to regard as",
+     "to enumerate; to list"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "數",
+    "transcriptions": {
+     "pinyin": "shù",
+     "numeric": "shu4"
+    },
+    "meanings": [
+     "number; figure",
+     "several; a few"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "數",
+    "transcriptions": {
+     "pinyin": "shuò",
+     "numeric": "shuo4"
+    },
+    "meanings": [
+     "(literary) frequently; repeatedly"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "摔倒",
+  "radical": "扌",
+  "level": [
+   "n5"
+  ],
+  "frequency": 8001,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "摔倒",
+    "transcriptions": {
+     "pinyin": "shuāi dǎo",
+     "numeric": "shuai1 dao3"
+    },
+    "meanings": [
+     "to fall down",
+     "to slip and fall",
+     "to throw sb to the ground"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "搜索",
+  "radical": "扌",
+  "level": [
+   "t5",
+   "n5",
+   "o6"
+  ],
+  "frequency": 3062,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "搜索",
+    "transcriptions": {
+     "pinyin": "sōu suǒ",
+     "numeric": "sou1 suo3"
+    },
+    "meanings": [
+     "to search (a place)",
+     "to search (a database)",
+     "to search for (sth)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "随身",
+  "radical": "阝",
+  "level": [
+   "t7",
+   "n7",
+   "o6"
+  ],
+  "frequency": 6903,
+  "pos": [
+   "d",
+   "b"
+  ],
+  "forms": [
+   {
+    "traditional": "隨身",
+    "transcriptions": {
+     "pinyin": "suí shēn",
+     "numeric": "sui2 shen1"
+    },
+    "meanings": [
+     "to (carry) on one's person",
+     "to (take) with one"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "随手",
+  "radical": "阝",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 12138,
+  "pos": [
+   "d"
+  ],
+  "forms": [
+   {
+    "traditional": "隨手",
+    "transcriptions": {
+     "pinyin": "suí shǒu",
+     "numeric": "sui2 shou3"
+    },
+    "meanings": [
+     "conveniently",
+     "without extra trouble",
+     "while doing it",
+     "in passing"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "淘气",
+  "radical": "氵",
+  "level": [
+   "t6",
+   "n7",
+   "o6"
+  ],
+  "frequency": 14473,
+  "pos": [
+   "a"
+  ],
+  "forms": [
+   {
+    "traditional": "淘氣",
+    "transcriptions": {
+     "pinyin": "táo qì",
+     "numeric": "tao2 qi4"
+    },
+    "meanings": [
+     "naughty",
+     "mischievous"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "讨价还价",
+  "radical": "讠",
+  "level": [
+   "t7",
+   "n7",
+   "o6"
+  ],
+  "frequency": 12869,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "討價還價",
+    "transcriptions": {
+     "pinyin": "tǎo jià huán jià",
+     "numeric": "tao3 jia4 huan2 jia4"
+    },
+    "meanings": [
+     "to haggle over price",
+     "to bargain"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "特色",
+  "radical": "牛",
+  "level": [
+   "t5",
+   "n3",
+   "o6"
+  ],
+  "frequency": 4212,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "特色",
+    "transcriptions": {
+     "pinyin": "tè sè",
+     "numeric": "te4 se4"
+    },
+    "meanings": [
+     "characteristic",
+     "distinguishing feature or quality"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "偷",
+  "radical": "亻",
+  "level": [
+   "t6",
+   "n5"
+  ],
+  "frequency": 1795,
+  "pos": [
+   "v",
+   "d"
+  ],
+  "forms": [
+   {
+    "traditional": "偷",
+    "transcriptions": {
+     "pinyin": "tōu",
+     "numeric": "tou1"
+    },
+    "meanings": [
+     "to steal",
+     "to pilfer",
+     "to snatch",
+     "thief",
+     "stealthily"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "投入",
+  "radical": "扌",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 1661,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "投入",
+    "transcriptions": {
+     "pinyin": "tóu rù",
+     "numeric": "tou2 ru4"
+    },
+    "meanings": [
+     "to throw into",
+     "to put into",
+     "to throw oneself into",
+     "to participate in",
+     "to invest in",
+     "absorbed",
+     "engrossed"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "外公",
+  "radical": "夕",
+  "level": [
+   "t5",
+   "n7"
+  ],
+  "frequency": 10197,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "外公",
+    "transcriptions": {
+     "pinyin": "wài gōng",
+     "numeric": "wai4 gong1"
+    },
+    "meanings": [
+     "(coll.) mother's father",
+     "maternal grandfather"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "网络",
+  "radical": "网",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 1462,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "網絡",
+    "transcriptions": {
+     "pinyin": "Wǎng luò",
+     "numeric": "Wang3 luo4"
+    },
+    "meanings": [
+     "Internet"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "網絡",
+    "transcriptions": {
+     "pinyin": "wǎng luò",
+     "numeric": "wang3 luo4"
+    },
+    "meanings": [
+     "network (computing, telecommunications, transport etc)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "维修",
+  "radical": "纟",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 4508,
+  "pos": [
+   "vn",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "維修",
+    "transcriptions": {
+     "pinyin": "wéi xiū",
+     "numeric": "wei2 xiu1"
+    },
+    "meanings": [
+     "maintenance (of equipment)",
+     "to protect and maintain"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "位于",
+  "radical": "亻",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 3108,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "位於",
+    "transcriptions": {
+     "pinyin": "wèi yú",
+     "numeric": "wei4 yu2"
+    },
+    "meanings": [
+     "to be located at",
+     "to be situated at",
+     "to lie"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "胃口",
+  "radical": "⺼",
+  "level": [
+   "t6",
+   "n7",
+   "o6"
+  ],
+  "frequency": 7324,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "胃口",
+    "transcriptions": {
+     "pinyin": "wèi kǒu",
+     "numeric": "wei4 kou3"
+    },
+    "meanings": [
+     "appetite",
+     "liking"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "文字",
+  "radical": "文",
+  "level": [
+   "t4",
+   "n3"
+  ],
+  "frequency": 4168,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "文字",
+    "transcriptions": {
+     "pinyin": "wén zì",
+     "numeric": "wen2 zi4"
+    },
+    "meanings": [
+     "character",
+     "script",
+     "writing",
+     "written language",
+     "writing style",
+     "phraseology"
+    ],
+    "classifiers": [
+     "个"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "握手",
+  "radical": "扌",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 6920,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "握手",
+    "transcriptions": {
+     "pinyin": "wò shǒu",
+     "numeric": "wo4 shou3"
+    },
+    "meanings": [
+     "to shake hands"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "无所谓",
+  "radical": "无",
+  "level": [
+   "t6",
+   "n4"
+  ],
+  "frequency": 4014,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "無所謂",
+    "transcriptions": {
+     "pinyin": "wú suǒ wèi",
+     "numeric": "wu2 suo3 wei4"
+    },
+    "meanings": [
+     "to be indifferent",
+     "not to matter",
+     "cannot be said to be"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "勿",
+  "radical": "勹",
+  "level": [
+   "t7",
+   "n7",
+   "o6"
+  ],
+  "frequency": 6999,
+  "pos": [
+   "d"
+  ],
+  "forms": [
+   {
+    "traditional": "勿",
+    "transcriptions": {
+     "pinyin": "wù",
+     "numeric": "wu4"
+    },
+    "meanings": [
+     "do not"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "吸取",
+  "radical": "口",
+  "level": [
+   "t6",
+   "n7",
+   "o6"
+  ],
+  "frequency": 7936,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "吸取",
+    "transcriptions": {
+     "pinyin": "xī qǔ",
+     "numeric": "xi1 qu3"
+    },
+    "meanings": [
+     "to absorb",
+     "to draw (a lesson, insight etc)",
+     "to assimilate"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "夏令营",
+  "radical": "夊",
+  "level": [
+   "t6",
+   "n7",
+   "o6"
+  ],
+  "frequency": 13625,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "夏令營",
+    "transcriptions": {
+     "pinyin": "xià lìng yíng",
+     "numeric": "xia4 ling4 ying2"
+    },
+    "meanings": [
+     "summer camp"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "现代",
+  "radical": "王",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 2512,
+  "pos": [
+   "t"
+  ],
+  "forms": [
+   {
+    "traditional": "現代",
+    "transcriptions": {
+     "pinyin": "Xiàn dài",
+     "numeric": "Xian4 dai4"
+    },
+    "meanings": [
+     "Hyundai, South Korean company"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "現代",
+    "transcriptions": {
+     "pinyin": "xiàn dài",
+     "numeric": "xian4 dai4"
+    },
+    "meanings": [
+     "modern times",
+     "modern age",
+     "modern era"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "限制",
+  "radical": "阝",
+  "level": [
+   "t5",
+   "n4",
+   "o4"
+  ],
+  "frequency": 2479,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "限制",
+    "transcriptions": {
+     "pinyin": "xiàn zhì",
+     "numeric": "xian4 zhi4"
+    },
+    "meanings": [
+     "to restrict",
+     "to limit",
+     "to confine",
+     "restriction",
+     "limit"
+    ],
+    "classifiers": [
+     "个"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "香肠",
+  "radical": "香",
+  "level": [
+   "t6",
+   "n5"
+  ],
+  "frequency": 11857,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "香腸",
+    "transcriptions": {
+     "pinyin": "xiāng cháng",
+     "numeric": "xiang1 chang2"
+    },
+    "meanings": [
+     "sausage"
+    ],
+    "classifiers": [
+     "根"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "消极",
+  "radical": "氵",
+  "level": [
+   "t5",
+   "n5",
+   "o6"
+  ],
+  "frequency": 7959,
+  "pos": [
+   "a",
+   "ad"
+  ],
+  "forms": [
+   {
+    "traditional": "消極",
+    "transcriptions": {
+     "pinyin": "xiāo jí",
+     "numeric": "xiao1 ji2"
+    },
+    "meanings": [
+     "negative",
+     "passive",
+     "inactive"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "写作",
+  "radical": "冖",
+  "level": [
+   "t5",
+   "n3",
+   "o6"
+  ],
+  "frequency": 5219,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "寫作",
+    "transcriptions": {
+     "pinyin": "xiě zuò",
+     "numeric": "xie3 zuo4"
+    },
+    "meanings": [
+     "to write",
+     "to compose",
+     "writing",
+     "written works"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "信任",
+  "radical": "亻",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 1963,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "信任",
+    "transcriptions": {
+     "pinyin": "xìn rèn",
+     "numeric": "xin4 ren4"
+    },
+    "meanings": [
+     "to trust",
+     "to have confidence in"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "学历",
+  "radical": "子",
+  "level": [
+   "t5",
+   "n7",
+   "o6"
+  ],
+  "frequency": 9089,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "學歷",
+    "transcriptions": {
+     "pinyin": "xué lì",
+     "numeric": "xue2 li4"
+    },
+    "meanings": [
+     "educational background",
+     "academic qualifications"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "血",
+  "radical": "血",
+  "level": [
+   "t4",
+   "n3",
+   "o4"
+  ],
+  "frequency": 726,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "血",
+    "transcriptions": {
+     "pinyin": "xuè",
+     "numeric": "xue4"
+    },
+    "meanings": [
+     "blood",
+     "colloquial pr. [xiě]"
+    ],
+    "classifiers": [
+     "滴",
+     "片"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "押金",
+  "radical": "扌",
+  "level": [
+   "t5",
+   "n5",
+   "o6"
+  ],
+  "frequency": 17113,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "押金",
+    "transcriptions": {
+     "pinyin": "yā jīn",
+     "numeric": "ya1 jin1"
+    },
+    "meanings": [
+     "deposit",
+     "down payment"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "牙齿",
+  "radical": "牙",
+  "level": [
+   "t5",
+   "n7"
+  ],
+  "frequency": 4626,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "牙齒",
+    "transcriptions": {
+     "pinyin": "yá chǐ",
+     "numeric": "ya2 chi3"
+    },
+    "meanings": [
+     "tooth",
+     "dental"
+    ],
+    "classifiers": [
+     "颗"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "演讲",
+  "radical": "氵",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 3526,
+  "pos": [
+   "vn",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "演講",
+    "transcriptions": {
+     "pinyin": "yǎn jiǎng",
+     "numeric": "yan3 jiang3"
+    },
+    "meanings": [
+     "lecture",
+     "to make a speech"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "一律",
+  "radical": "一",
+  "level": [
+   "t6",
+   "n4",
+   "o6"
+  ],
+  "frequency": 13897,
+  "pos": [
+   "d"
+  ],
+  "forms": [
+   {
+    "traditional": "一律",
+    "transcriptions": {
+     "pinyin": "yī lǜ",
+     "numeric": "yi1 lü4"
+    },
+    "meanings": [
+     "same",
+     "uniformly",
+     "all",
+     "without exception"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "一再",
+  "radical": "一",
+  "level": [
+   "t6",
+   "n4",
+   "o6"
+  ],
+  "frequency": 10127,
+  "pos": [
+   "d"
+  ],
+  "forms": [
+   {
+    "traditional": "一再",
+    "transcriptions": {
+     "pinyin": "yī zài",
+     "numeric": "yi1 zai4"
+    },
+    "meanings": [
+     "repeatedly"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "亿",
+  "radical": "亻",
+  "level": [
+   "t5",
+   "n2",
+   "o4"
+  ],
+  "frequency": 3215,
+  "pos": [
+   "m"
+  ],
+  "forms": [
+   {
+    "traditional": "億",
+    "transcriptions": {
+     "pinyin": "yì",
+     "numeric": "yi4"
+    },
+    "meanings": [
+     "100 million"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "印刷",
+  "radical": "卩",
+  "level": [
+   "t5",
+   "n5",
+   "o6"
+  ],
+  "frequency": 8873,
+  "pos": [
+   "vn",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "印刷",
+    "transcriptions": {
+     "pinyin": "yìn shuā",
+     "numeric": "yin4 shua1"
+    },
+    "meanings": [
+     "to print",
+     "printing"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "硬",
+  "radical": "石",
+  "level": [
+   "t5",
+   "n5",
+   "o4"
+  ],
+  "frequency": 2476,
+  "pos": [
+   "a",
+   "d"
+  ],
+  "forms": [
+   {
+    "traditional": "硬",
+    "transcriptions": {
+     "pinyin": "yìng",
+     "numeric": "ying4"
+    },
+    "meanings": [
+     "hard; stiff; solid",
+     "(fig.) strong; firm",
+     "resolutely; uncompromisingly",
+     "laboriously; with great difficulty",
+     "good (quality); able (person)",
+     "(of food) filling; substantial"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "用功",
+  "radical": "用",
+  "level": [
+   "t6",
+   "n7",
+   "o6"
+  ],
+  "frequency": 19231,
+  "pos": [
+   "a",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "用功",
+    "transcriptions": {
+     "pinyin": "yòng gōng",
+     "numeric": "yong4 gong1"
+    },
+    "meanings": [
+     "diligent",
+     "industrious (in one's studies)",
+     "to study hard",
+     "to make great effort"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "员工",
+  "radical": "口",
+  "level": [
+   "t5",
+   "n3"
+  ],
+  "frequency": 1852,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "員工",
+    "transcriptions": {
+     "pinyin": "yuán gōng",
+     "numeric": "yuan2 gong1"
+    },
+    "meanings": [
+     "staff",
+     "personnel",
+     "employee"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "圆",
+  "radical": "囗",
+  "level": [
+   "t5",
+   "n4",
+   "o4"
+  ],
+  "frequency": 2899,
+  "pos": [
+   "g",
+   "a",
+   "n",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "圓",
+    "transcriptions": {
+     "pinyin": "yuán",
+     "numeric": "yuan2"
+    },
+    "meanings": [
+     "circle",
+     "round",
+     "circular",
+     "spherical",
+     "(of the moon) full",
+     "unit of Chinese currency (yuan)",
+     "tactful",
+     "to make consistent and whole (the narrative of a dream or a lie)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "在乎",
+  "radical": "土",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 2833,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "在乎",
+    "transcriptions": {
+     "pinyin": "zài hu",
+     "numeric": "zai4 hu5"
+    },
+    "meanings": [
+     "to care about",
+     "equivalent of 在于"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "在于",
+  "radical": "土",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 1868,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "在於",
+    "transcriptions": {
+     "pinyin": "zài yú",
+     "numeric": "zai4 yu2"
+    },
+    "meanings": [
+     "to be in",
+     "to lie in",
+     "to consist in",
+     "to depend on",
+     "to rest with"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "窄",
+  "radical": "穴",
+  "level": [
+   "t5",
+   "n7",
+   "o4"
+  ],
+  "frequency": 8622,
+  "pos": [
+   "a"
+  ],
+  "forms": [
+   {
+    "traditional": "窄",
+    "transcriptions": {
+     "pinyin": "zhǎi",
+     "numeric": "zhai3"
+    },
+    "meanings": [
+     "narrow",
+     "narrow-minded",
+     "badly off"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "占",
+  "radical": "⺊",
+  "level": [
+   "t5",
+   "n2"
+  ],
+  "frequency": 1571,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "佔",
+    "transcriptions": {
+     "pinyin": "zhàn",
+     "numeric": "zhan4"
+    },
+    "meanings": [
+     "variant of 占"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "占",
+    "transcriptions": {
+     "pinyin": "zhān",
+     "numeric": "zhan1"
+    },
+    "meanings": [
+     "to observe",
+     "to divine"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "占",
+    "transcriptions": {
+     "pinyin": "zhàn",
+     "numeric": "zhan4"
+    },
+    "meanings": [
+     "to take possession of",
+     "to occupy",
+     "to take up"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "长辈",
+  "radical": "长",
+  "level": [
+   "t6",
+   "n7",
+   "o6"
+  ],
+  "frequency": 14245,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "長輩",
+    "transcriptions": {
+     "pinyin": "zhǎng bèi",
+     "numeric": "zhang3 bei4"
+    },
+    "meanings": [
+     "one's elders",
+     "older generation"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "着火",
+  "radical": "目",
+  "level": [
+   "t4",
+   "n4"
+  ],
+  "frequency": 8629,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "著火",
+    "transcriptions": {
+     "pinyin": "zháo huǒ",
+     "numeric": "zhao2 huo3"
+    },
+    "meanings": [
+     "to catch fire"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "整齐",
+  "radical": "攵",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 8739,
+  "pos": [
+   "a",
+   "ad"
+  ],
+  "forms": [
+   {
+    "traditional": "整齊",
+    "transcriptions": {
+     "pinyin": "zhěng qí",
+     "numeric": "zheng3 qi2"
+    },
+    "meanings": [
+     "orderly",
+     "neat",
+     "even",
+     "tidy"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "挣",
+  "radical": "扌",
+  "level": [
+   "t5",
+   "n5"
+  ],
+  "frequency": 4542,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "掙",
+    "transcriptions": {
+     "pinyin": "zhēng",
+     "numeric": "zheng1"
+    },
+    "meanings": [
+     "used in 挣扎"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "掙",
+    "transcriptions": {
+     "pinyin": "zhèng",
+     "numeric": "zheng4"
+    },
+    "meanings": [
+     "to struggle to get free",
+     "to strive to acquire",
+     "to make (money)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "志愿者",
+  "radical": "心",
+  "level": [
+   "t5",
+   "n3"
+  ],
+  "frequency": 5709,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "志願者",
+    "transcriptions": {
+     "pinyin": "zhì yuàn zhě",
+     "numeric": "zhi4 yuan4 zhe3"
+    },
+    "meanings": [
+     "volunteer"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "制造",
+  "radical": "刂",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 1600,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "製造",
+    "transcriptions": {
+     "pinyin": "zhì zào",
+     "numeric": "zhi4 zao4"
+    },
+    "meanings": [
+     "to manufacture; to make"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "种类",
+  "radical": "禾",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 7596,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "種類",
+    "transcriptions": {
+     "pinyin": "zhǒng lèi",
+     "numeric": "zhong3 lei4"
+    },
+    "meanings": [
+     "kind",
+     "genus",
+     "type",
+     "category",
+     "variety",
+     "species",
+     "sort",
+     "class"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "重大",
+  "radical": "里",
+  "level": [
+   "t5",
+   "n3"
+  ],
+  "frequency": 1734,
+  "pos": [
+   "a"
+  ],
+  "forms": [
+   {
+    "traditional": "重大",
+    "transcriptions": {
+     "pinyin": "zhòng dà",
+     "numeric": "zhong4 da4"
+    },
+    "meanings": [
+     "great",
+     "important",
+     "major",
+     "significant"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "猪",
+  "radical": "犭",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 1583,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "豬",
+    "transcriptions": {
+     "pinyin": "zhū",
+     "numeric": "zhu1"
+    },
+    "meanings": [
+     "hog",
+     "pig",
+     "swine"
+    ],
+    "classifiers": [
+     "口",
+     "头"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "逐渐",
+  "radical": "辶",
+  "level": [
+   "t5",
+   "n4",
+   "o4"
+  ],
+  "frequency": 3347,
+  "pos": [
+   "d"
+  ],
+  "forms": [
+   {
+    "traditional": "逐漸",
+    "transcriptions": {
+     "pinyin": "zhú jiàn",
+     "numeric": "zhu2 jian4"
+    },
+    "meanings": [
+     "gradually"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "主动",
+  "radical": "丶",
+  "level": [
+   "t5",
+   "n3",
+   "o4"
+  ],
+  "frequency": 2470,
+  "pos": [
+   "ad",
+   "a",
+   "an"
+  ],
+  "forms": [
+   {
+    "traditional": "主動",
+    "transcriptions": {
+     "pinyin": "zhǔ dòng",
+     "numeric": "zhu3 dong4"
+    },
+    "meanings": [
+     "to take the initiative",
+     "to do sth of one's own accord",
+     "spontaneous",
+     "active",
+     "opposite: passive 被动",
+     "drive (of gears and shafts etc)"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "主任",
+  "radical": "丶",
+  "level": [
+   "t5",
+   "n3"
+  ],
+  "frequency": 2133,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "主任",
+    "transcriptions": {
+     "pinyin": "zhǔ rèn",
+     "numeric": "zhu3 ren4"
+    },
+    "meanings": [
+     "director",
+     "head"
+    ],
+    "classifiers": [
+     "个"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "主题",
+  "radical": "丶",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 2127,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "主題",
+    "transcriptions": {
+     "pinyin": "zhǔ tí",
+     "numeric": "zhu3 ti2"
+    },
+    "meanings": [
+     "theme",
+     "subject"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "抓",
+  "radical": "扌",
+  "level": [
+   "t5",
+   "n3"
+  ],
+  "frequency": 797,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "抓",
+    "transcriptions": {
+     "pinyin": "zhuā",
+     "numeric": "zhua1"
+    },
+    "meanings": [
+     "to grab",
+     "to catch",
+     "to arrest",
+     "to snatch",
+     "to scratch"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "装修",
+  "radical": "衣",
+  "level": [
+   "t5",
+   "n4"
+  ],
+  "frequency": 4138,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "裝修",
+    "transcriptions": {
+     "pinyin": "zhuāng xiū",
+     "numeric": "zhuang1 xiu1"
+    },
+    "meanings": [
+     "to decorate",
+     "interior decoration",
+     "to fit up",
+     "to renovate"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "撞",
+  "radical": "扌",
+  "level": [
+   "t5",
+   "n5",
+   "o4"
+  ],
+  "frequency": 2075,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "撞",
+    "transcriptions": {
+     "pinyin": "zhuàng",
+     "numeric": "zhuang4"
+    },
+    "meanings": [
+     "to knock against",
+     "to bump into",
+     "to run into",
+     "to meet by accident"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "追",
+  "radical": "辶",
+  "level": [
+   "t5",
+   "n3"
+  ],
+  "frequency": 1265,
+  "pos": [
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "追",
+    "transcriptions": {
+     "pinyin": "duī",
+     "numeric": "dui1"
+    },
+    "meanings": [
+     "to sculpt",
+     "to carve",
+     "musical instrument (old)"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "追",
+    "transcriptions": {
+     "pinyin": "zhuī",
+     "numeric": "zhui1"
+    },
+    "meanings": [
+     "to chase",
+     "to pursue",
+     "to look into",
+     "to investigate",
+     "to reminisce",
+     "to recall",
+     "to court (one's beloved)",
+     "to binge-watch (a TV drama)",
+     "retroactively",
+     "posthumously"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "字母",
+  "radical": "子",
+  "level": [
+   "t5",
+   "n4",
+   "o6"
+  ],
+  "frequency": 6456,
+  "pos": [
+   "n"
+  ],
+  "forms": [
+   {
+    "traditional": "字母",
+    "transcriptions": {
+     "pinyin": "zì mǔ",
+     "numeric": "zi4 mu3"
+    },
+    "meanings": [
+     "letter (of the alphabet)"
+    ],
+    "classifiers": [
+     "个"
+    ]
+   }
+  ]
+ },
+ {
+  "simplified": "组",
+  "radical": "纟",
+  "level": [
+   "t4",
+   "n2",
+   "o6"
+  ],
+  "frequency": 578,
+  "pos": [
+   "n",
+   "q",
+   "g",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "組",
+    "transcriptions": {
+     "pinyin": "Zǔ",
+     "numeric": "Zu3"
+    },
+    "meanings": [
+     "surname Zu"
+    ],
+    "classifiers": []
+   },
+   {
+    "traditional": "組",
+    "transcriptions": {
+     "pinyin": "zǔ",
+     "numeric": "zu3"
+    },
+    "meanings": [
+     "to form",
+     "to organize",
+     "group",
+     "team",
+     "classifier for sets, series, groups of people, batteries"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "组成",
+  "radical": "纟",
+  "level": [
+   "t5",
+   "n2",
+   "o4"
+  ],
+  "frequency": 2717,
+  "pos": [
+   "v",
+   "vn"
+  ],
+  "forms": [
+   {
+    "traditional": "組成",
+    "transcriptions": {
+     "pinyin": "zǔ chéng",
+     "numeric": "zu3 cheng2"
+    },
+    "meanings": [
+     "to form",
+     "to make up",
+     "to constitute"
+    ],
+    "classifiers": []
+   }
+  ]
+ },
+ {
+  "simplified": "组织",
+  "radical": "纟",
+  "level": [
+   "t5",
+   "n5",
+   "o4"
+  ],
+  "frequency": 590,
+  "pos": [
+   "n",
+   "v"
+  ],
+  "forms": [
+   {
+    "traditional": "組織",
+    "transcriptions": {
+     "pinyin": "zǔ zhī",
+     "numeric": "zu3 zhi1"
+    },
+    "meanings": [
+     "to organize",
+     "organization",
+     "(biology) tissue",
+     "(textiles) weave"
+    ],
+    "classifiers": [
+     "个"
+    ]
+   }
+  ]
+ }
+]

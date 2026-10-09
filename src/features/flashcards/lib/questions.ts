@@ -11,7 +11,6 @@
  * the answer's.
  */
 import type { Word } from "@/content/words";
-import { syllableCount } from "@/lib/pinyin";
 import { type Rng, shuffle } from "@/lib/random";
 
 export type QuestionKind = "meaning" | "hanzi" | "pinyin";
@@ -48,11 +47,11 @@ function distractorsFor(word: Word, kind: QuestionKind, pool: readonly Word[], r
   const candidates = pool.filter((w) => !clashes(w));
 
   // Similar-looking options make the question about knowing the word, not
-  // about spotting the odd one out: same syllable count for pinyin, a shared
-  // part of speech for meanings.
+  // about spotting the odd one out: the same number of syllables (one per
+  // character) for pinyin, a shared part of speech for meanings.
   const similar = candidates.filter((w) =>
     kind === "pinyin"
-      ? syllableCount(w.pinyin) === syllableCount(word.pinyin)
+      ? w.hanzi.length === word.hanzi.length
       : w.pos.some((p) => word.pos.includes(p)),
   );
 

@@ -13,7 +13,3 @@ export function plainPinyin(pinyin: string): string {
       .replace(/[^a-z]/g, "")
   );
 }
-
-export function syllableCount(pinyin: string): number {
-  return pinyin.split(/[\s/]+/).filter(Boolean).length;
-}

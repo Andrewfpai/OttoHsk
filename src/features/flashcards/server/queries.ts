@@ -1,5 +1,6 @@
 import { desc, eq } from "drizzle-orm";
 
+import { getWord } from "@/content/words";
 import { db } from "@/db";
 import { flashcardState, flashcardTests, wordProgress } from "@/db/schema";
 import { requireUser } from "@/lib/auth-guard";
@@ -9,10 +10,13 @@ export type ProgressRow = { wordId: string; strength: number; dueTest: number };
 
 export async function getProgress(): Promise<ProgressRow[]> {
   const user = await requireUser();
-  return db
+  const rows = await db
     .select({ wordId: wordProgress.wordId, strength: wordProgress.strength, dueTest: wordProgress.dueTest })
     .from(wordProgress)
     .where(eq(wordProgress.userId, user.id));
+  // Progress on a word that has left the list (it was rebuilt from the
+  // official 1,300) is kept, but never counted or shown.
+  return rows.filter((r) => getWord(r.wordId));
 }
 
 export type FlashcardInfo = {
