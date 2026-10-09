@@ -63,22 +63,26 @@ export async function redeemInvite(token: string, email: string): Promise<boolea
   if (!looksLikeInviteToken(token)) return false;
   const address = normalizeEmail(email);
 
-  const [spent] = await db
-    .update(inviteLinks)
-    .set({ usedAt: new Date(), usedByEmail: address })
-    .where(
-      and(
-        eq(inviteLinks.tokenHash, hashInviteToken(token)),
-        isNull(inviteLinks.usedAt),
-        gt(inviteLinks.expiresAt, new Date()),
-      ),
-    )
-    .returning({ createdBy: inviteLinks.createdBy });
-  if (!spent) return false;
+  // One transaction: a link must never end up spent without the address
+  // being added.
+  return db.transaction(async (tx) => {
+    const [spent] = await tx
+      .update(inviteLinks)
+      .set({ usedAt: new Date(), usedByEmail: address })
+      .where(
+        and(
+          eq(inviteLinks.tokenHash, hashInviteToken(token)),
+          isNull(inviteLinks.usedAt),
+          gt(inviteLinks.expiresAt, new Date()),
+        ),
+      )
+      .returning({ createdBy: inviteLinks.createdBy });
+    if (!spent) return false;
 
-  await db
-    .insert(allowedEmails)
-    .values({ email: address, invitedBy: spent.createdBy })
-    .onConflictDoNothing();
-  return true;
+    await tx
+      .insert(allowedEmails)
+      .values({ email: address, invitedBy: spent.createdBy })
+      .onConflictDoNothing();
+    return true;
+  });
 }

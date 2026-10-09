@@ -10,6 +10,7 @@ import {
   RotateCcw,
   X,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useEffect, useEffectEvent, useMemo, useRef, useState, useTransition } from "react";
 import { toast } from "sonner";
 
@@ -17,10 +18,12 @@ import { Button } from "@/components/ui/button";
 import { type Word, getWord, words } from "@/content/words";
 import { ExampleSentence } from "@/features/words/components/example-sentence";
 import { formatCountdown, useNow } from "@/hooks/use-now";
+import { formatDate } from "@/lib/dates";
+import { EXAM_TIME_ZONE } from "@/lib/exam";
 import { cn } from "@/lib/utils";
 
 import { DECK_SIZES, buildDeck, isDue } from "../lib/deck";
-import { FAIL_WRONG_RATIO, GUESS_MS, MAX_LOCK_MS, failAt, formatLock, lockDurationMs } from "../lib/lockout";
+import { FAIL_WRONG_RATIO, GUESS_MS, MAX_ANSWER_MS, MAX_LOCK_MS, failAt, formatLock, lockDurationMs } from "../lib/lockout";
 import { statusOf } from "../lib/schedule";
 import { type Question, buildQuestions } from "../lib/questions";
 import { type TestResult, submitTest } from "../server/actions";
@@ -46,6 +49,7 @@ export function FlashcardStudio({
   info: FlashcardInfo;
   recentTests: TestSummary[];
 }) {
+  const router = useRouter();
   const [phase, setPhase] = useState<Phase>({ name: "setup" });
   const [size, setSize] = useState<number>(20);
   // The server's answer after a test, in case it lands before the refreshed
@@ -104,7 +108,11 @@ export function FlashcardStudio({
           setResultLock(result.lockedUntil);
           setPhase({ name: "results", result, answers });
         }}
-        onLocked={() => setPhase({ name: "setup" })}
+        onLocked={() => {
+          // Locked from another tab: fetch the lock so Setup shows it.
+          router.refresh();
+          setPhase({ name: "setup" });
+        }}
       />
     );
   }
@@ -173,7 +181,7 @@ function Setup({
     <div className="grid gap-6 lg:grid-cols-[1fr_20rem]">
       <section className="bg-card space-y-6 rounded-2xl border p-5 sm:p-6">
         <dl className="grid grid-cols-3 gap-3">
-          <Stat label="Due this test" value={stats.due} />
+          <Stat label="Due for review" value={stats.due} />
           <Stat label="Not started" value={stats.fresh} />
           <Stat label="Known" value={stats.known} />
         </dl>
@@ -250,7 +258,7 @@ function Setup({
                 <li key={t.id} className="flex items-center justify-between gap-3">
                   <span className="text-muted-foreground">
                     <span className="font-numeric">#{t.testNumber}</span> ·{" "}
-                    {new Date(t.takenAt).toLocaleDateString(undefined, {
+                    {formatDate(new Date(t.takenAt), EXAM_TIME_ZONE, {
                       month: "short",
                       day: "numeric",
                     })}
@@ -340,7 +348,9 @@ function Practice({
   }, [startedAt, durationMs]);
 
   const onKey = useEffectEvent((e: KeyboardEvent) => {
-    if (e.target instanceof HTMLElement && e.target.closest("input, textarea")) return;
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    // Space and Enter belong to whatever button has focus, except the card.
+    if (e.target instanceof HTMLElement && e.target.closest("input, textarea, select, a, button:not([data-card])")) return;
     if (e.key === " " || e.key === "Enter") {
       e.preventDefault();
       flip();
@@ -384,6 +394,7 @@ function Practice({
 
       <button
         type="button"
+        data-card
         onClick={flip}
         aria-label={showBack ? "Hide answer" : "Show answer"}
         className="bg-card hover:border-primary/40 focus-visible:ring-ring flex min-h-72 w-full cursor-pointer flex-col items-center justify-center gap-4 rounded-2xl border p-8 text-center transition-colors focus-visible:ring-2 focus-visible:outline-none"
@@ -498,7 +509,12 @@ function Test({
 
   function pick(optionId: string) {
     if (picked !== null) return;
-    const ms = shownAt.current === null ? 60_000 : Math.round(performance.now() - shownAt.current);
+    // Capped: a question left open while the tab sat in the background is
+    // still a real answer.
+    const ms = Math.min(
+      MAX_ANSWER_MS,
+      shownAt.current === null ? 60_000 : Math.round(performance.now() - shownAt.current),
+    );
     setAnswers((a) => [...a, { wordId: q.wordId, chosenId: optionId, ms }]);
   }
 
@@ -510,11 +526,16 @@ function Test({
       return;
     }
     startTransition(async () => {
-      const res = await submitTest(answers);
-      if (res.ok) onDone(res.data, answers);
-      else {
-        toast.error(res.error);
-        if (res.code === "LOCKED") onLocked();
+      try {
+        const res = await submitTest(answers);
+        if (res.ok) onDone(res.data, answers);
+        else {
+          toast.error(res.error);
+          if (res.code === "LOCKED") onLocked();
+        }
+      } catch {
+        // Stay on the last question with every answer kept, so Finish retries.
+        toast.error("Couldn't reach the server. Your answers are kept; press Finish again.");
       }
     });
   }
@@ -525,6 +546,7 @@ function Test({
   }, []);
 
   const onKey = useEffectEvent((e: KeyboardEvent) => {
+    if (e.ctrlKey || e.metaKey || e.altKey || e.repeat) return;
     const n = Number(e.key);
     if (n >= 1 && n <= q.options.length) pick(q.options[n - 1]);
     else if (e.key === "Enter") next();

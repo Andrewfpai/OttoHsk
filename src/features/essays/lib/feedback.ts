@@ -19,11 +19,16 @@ export const feedbackSchema = z.object({
     .default([]),
   corrections: z
     .array(z.object({ original: z.string(), corrected: z.string(), why: z.string() }))
-    .max(12)
-    .default([]),
+    .default([])
+    // A weak essay can have many errors; keep the first 12 rather than
+    // rejecting the reply and moving on to the next model.
+    .transform((a) => a.slice(0, 12)),
   corrected: z.string().default(""),
   modelAnswer: z.string().min(1),
-  tips: z.array(z.string()).max(5).default([]),
+  tips: z
+    .array(z.string())
+    .default([])
+    .transform((a) => a.slice(0, 5)),
 });
 
 export type Feedback = z.infer<typeof feedbackSchema>;

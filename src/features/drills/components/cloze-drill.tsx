@@ -136,6 +136,13 @@ export function ClozeDrill({ stats, seed }: { stats: Record<string, ItemStat>; s
   }
 
   function next() {
+    if (
+      !checked &&
+      answeredCount > 0 &&
+      !window.confirm("Skip this passage? Your picks here won't be saved.")
+    ) {
+      return;
+    }
     setPosition((p) => p + 1);
     setPicked({});
     setChecked(false);

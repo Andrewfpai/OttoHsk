@@ -1,6 +1,5 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { z } from "zod";
 
 import { db } from "@/db";
@@ -26,8 +25,8 @@ export async function recordAttempt(input: unknown): Promise<ActionResult> {
 
   await db.insert(drillAttempts).values({ userId: user.id, ...parsed.data });
 
-  // The drill pages fix their queue order when they mount, so a refresh of
-  // their stats here never reshuffles the drill in progress.
-  revalidatePath("/dashboard");
+  // No revalidatePath: in Next 16 it re-renders the page the learner is on
+  // (whatever path is named), re-sending every drill prop mid-answer. The
+  // dashboard is rendered per request, so it is fresh on the next visit.
   return ok(undefined);
 }

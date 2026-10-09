@@ -47,7 +47,10 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [Google],
 
   callbacks: {
-    async signIn({ user }) {
+    async signIn({ user, profile }) {
+      // The allowlist matches by email, so only trust addresses Google has
+      // verified.
+      if (profile && profile.email_verified === false) return false;
       if (ownerEmails().length === 0) {
         // Fail closed for owners. An unset ALLOWED_EMAILS must not mean "the
         // internet may log in"; invited addresses can still get in.
@@ -73,13 +76,22 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       return granted;
     },
 
+    // An explicit shape, not the object Auth.js hands in: that carries the
+    // session token and the whole users row (password hash included), and
+    // whatever this returns is served at /api/auth/session.
     session({ session, user }) {
-      if (session.user) {
-        session.user.id = user.id;
-        // Whether one is set, never the hash itself.
-        session.user.hasPassword = Boolean((user as { passwordHash?: string | null }).passwordHash);
-      }
-      return session;
+      return {
+        expires: session.expires,
+        user: {
+          id: user.id,
+          name: user.name,
+          email: user.email,
+          image: user.image,
+          emailVerified: user.emailVerified,
+          // Whether one is set, never the hash itself.
+          hasPassword: Boolean((user as { passwordHash?: string | null }).passwordHash),
+        },
+      };
     },
   },
 });

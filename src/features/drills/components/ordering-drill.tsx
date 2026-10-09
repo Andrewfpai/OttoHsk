@@ -49,6 +49,9 @@ export function OrderingDrill({ stats, seed }: { stats: Record<string, ItemStat>
   // Fixed at mount from a server-chosen seed, so server and client render the
   // same queue and a stats refresh never reshuffles a drill in progress.
   const [queue] = useState(() => buildQueue(stats, seed));
+  // The seed prop changes whenever the page re-renders on the server; the
+  // chunk tray must not reorder mid-answer.
+  const [seed0] = useState(seed);
   const [summaryBase] = useState(stats);
   const [index, setIndex] = useState(0);
   const [placed, setPlaced] = useState<Placed>([]);
@@ -57,7 +60,7 @@ export function OrderingDrill({ stats, seed }: { stats: Record<string, ItemStat>
   const [results, setResults] = useState<Record<string, boolean>>({});
 
   const item = queue[index % queue.length];
-  const order = chunkOrder(item.chunks.length, seed + index);
+  const order = chunkOrder(item.chunks.length, seed0 + index);
 
   const summary = summarize(DRILL_ITEM_IDS.ordering, withSession(summaryBase, results));
 
@@ -99,7 +102,7 @@ export function OrderingDrill({ stats, seed }: { stats: Record<string, ItemStat>
         <div className="flex items-center justify-between gap-3">
           <span className="text-muted-foreground text-sm">
             Put the words in order. Tap a placed word to take it back.
-            <span className="bg-muted text-foreground ml-2 inline-block rounded-md px-1.5 py-0.5 text-xs whitespace-nowrap">
+            <span className="bg-muted text-foreground ml-2 inline-block max-w-full rounded-md px-1.5 py-0.5 text-xs break-words">
               {item.source ? `Your papers · ${item.source}` : "Built-in"}
             </span>
           </span>

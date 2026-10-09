@@ -20,6 +20,7 @@ import { Button } from "@/components/ui/button";
 import { ChartContainer } from "@/components/ui/chart";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { formatDate } from "@/lib/dates";
 import { SECTION_MAX } from "@/lib/exam";
 import { cn } from "@/lib/utils";
 
@@ -27,8 +28,9 @@ import { SECTIONS, percent } from "../lib/sections";
 import { deleteMock, saveMock } from "../server/actions";
 import type { MockRow } from "../server/queries";
 
+/** "7 Nov". A fixed locale, so the server and the browser print the same thing. */
 function shortDate(iso: string) {
-  return new Date(`${iso}T00:00:00`).toLocaleDateString(undefined, { month: "short", day: "numeric" });
+  return formatDate(new Date(`${iso}T00:00:00Z`), "UTC", { month: "short", day: "numeric" });
 }
 
 export function MockTracker({ mocks, today }: { mocks: MockRow[]; today: string }) {
@@ -37,23 +39,38 @@ export function MockTracker({ mocks, today }: { mocks: MockRow[]; today: string 
   // Remounting the form resets its fields when switching what is edited.
   const formKey = editing?.id ?? "new";
 
-  function submit(formData: FormData) {
+  // onSubmit rather than <form action>: React resets an action form once the
+  // action finishes, which would wipe the scores even when saving failed.
+  function submit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const data = Object.fromEntries(new FormData(form));
+    const wasEditing = editing !== null;
     startTransition(async () => {
-      const res = await saveMock(editing?.id ?? null, Object.fromEntries(formData));
-      if (!res.ok) {
-        toast.error(res.error);
-        return;
+      try {
+        const res = await saveMock(editing?.id ?? null, data);
+        if (!res.ok) {
+          toast.error(res.error);
+          return;
+        }
+        toast.success(wasEditing ? "Mock test updated" : "Mock test saved");
+        if (!wasEditing) form.reset();
+        setEditing(null);
+      } catch {
+        toast.error("Couldn't reach the server. Your scores are still in the form; try again.");
       }
-      toast.success(editing ? "Mock test updated" : "Mock test saved");
-      setEditing(null);
     });
   }
 
   function remove(id: string) {
     startTransition(async () => {
-      const res = await deleteMock(id);
-      if (!res.ok) toast.error(res.error);
-      else if (editing?.id === id) setEditing(null);
+      try {
+        const res = await deleteMock(id);
+        if (!res.ok) toast.error(res.error);
+        else if (editing?.id === id) setEditing(null);
+      } catch {
+        toast.error("Couldn't reach the server. Nothing was deleted; try again.");
+      }
     });
   }
 
@@ -70,7 +87,7 @@ export function MockTracker({ mocks, today }: { mocks: MockRow[]; today: string 
     <div className="grid gap-6 lg:grid-cols-[22rem_1fr]">
       <form
         key={formKey}
-        action={submit}
+        onSubmit={submit}
         className="bg-card h-fit space-y-4 rounded-2xl border p-5"
         aria-label={editing ? "Edit mock test" : "Add mock test"}
       >
@@ -236,7 +253,9 @@ export function MockTracker({ mocks, today }: { mocks: MockRow[]; today: string 
               No mock tests yet. After your next paper, enter how many you got right in each section.
             </p>
           ) : (
-            <div className="overflow-x-auto">
+            // relative: keeps the sr-only "Actions" label inside the scroll
+            // box, so it cannot widen the page on a phone.
+            <div className="relative overflow-x-auto">
               <table className="w-full text-sm">
                 <thead className="text-muted-foreground text-left text-xs">
                   <tr>

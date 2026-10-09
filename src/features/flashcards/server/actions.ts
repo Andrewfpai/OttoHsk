@@ -11,7 +11,7 @@ import { type ActionResult, fail, ok } from "@/lib/action-result";
 import { requireUser } from "@/lib/auth-guard";
 
 import { nextSchedule } from "../lib/schedule";
-import { GUESS_MS, afterTest, isLocked, isPass } from "../lib/lockout";
+import { GUESS_MS, MAX_ANSWER_MS, afterTest, isLocked, isPass } from "../lib/lockout";
 
 const answersSchema = z
   .array(
@@ -19,7 +19,11 @@ const answersSchema = z
       wordId: z.string().refine((id) => Boolean(getWord(id)), "Unknown word"),
       chosenId: z.string().refine((id) => Boolean(getWord(id)), "Unknown word"),
       /** How long the answer took. */
-      ms: z.number().int().min(0).max(30 * 60_000),
+      ms: z
+        .number()
+        .int()
+        .min(0)
+        .transform((ms) => Math.min(ms, MAX_ANSWER_MS)),
     }),
   )
   .min(1)
@@ -55,6 +59,9 @@ export async function submitTest(input: unknown): Promise<ActionResult<TestResul
 
   return db.transaction(async (tx) => {
     // FOR UPDATE: two tabs submitting at once must not both read "unlocked".
+    // The row is created first, since FOR UPDATE cannot lock a missing row
+    // and two first-ever tests would otherwise both be test #1.
+    await tx.insert(flashcardState).values({ userId: user.id }).onConflictDoNothing();
     const [state] = await tx
       .select()
       .from(flashcardState)

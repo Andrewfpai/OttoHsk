@@ -15,18 +15,21 @@ import { type Attempt, AllModelsFailed, completeWithFallback } from "../lib/fall
 import { type Feedback, buildMessages, parseFeedback } from "../lib/feedback";
 import { DAILY_ESSAY_LIMIT, aiConfig } from "./ai";
 
+/** Writing time is recorded, never a reason to refuse; a tab left open overnight still checks. */
+const duration = z.number().int().min(0).transform((ms) => Math.min(ms, 24 * 60 * 60_000));
+
 const schema = z.discriminatedUnion("kind", [
   z.object({
     kind: z.literal("q99"),
     words: z.array(z.string().trim().min(1).max(8)).length(5),
     body: z.string().trim().min(10).max(600),
-    durationMs: z.number().int().min(0).max(4 * 60 * 60_000),
+    durationMs: duration,
   }),
   z.object({
     kind: z.literal("q100"),
     scene: z.string().trim().min(4).max(300),
     body: z.string().trim().min(10).max(600),
-    durationMs: z.number().int().min(0).max(4 * 60 * 60_000),
+    durationMs: duration,
   }),
 ]);
 
@@ -49,7 +52,14 @@ function startOfToday(): Date {
 export async function checkEssay(input: unknown): Promise<ActionResult<EssayResult>> {
   const user = await requireUser();
   const parsed = schema.safeParse(input);
-  if (!parsed.success) return fail("Write at least a sentence before asking for feedback.");
+  if (!parsed.success) {
+    const tooShort = parsed.error.issues.some((i) => i.path[0] === "body");
+    return fail(
+      tooShort
+        ? "Write at least a sentence before asking for feedback."
+        : "Check the task: Q99 needs all five words, Q100 a picture description.",
+    );
+  }
   const essay = parsed.data;
 
   const config = aiConfig();

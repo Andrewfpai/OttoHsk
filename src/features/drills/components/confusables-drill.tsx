@@ -32,6 +32,9 @@ export function ConfusablesDrill({
   // Fixed at mount from a server-chosen seed, so server and client agree and a
   // stats refresh never reshuffles the drill in progress.
   const [queue] = useState(() => practiceOrder(ITEMS, (i) => i.id, stats, seededRng(seed)));
+  // The seed prop changes whenever the page re-renders on the server; option
+  // order must not, or the buttons would move under your finger.
+  const [seed0] = useState(seed);
   const [position, setPosition] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
   const [session, setSession] = useState<Record<string, boolean>>({});
@@ -41,7 +44,7 @@ export function ConfusablesDrill({
   const q = item.set.questions[item.index];
   const options = shuffle(
     item.set.words.map((w) => w.hanzi),
-    seededRng(seed + position),
+    seededRng(seed0 + position),
   );
   const pinyinOf = (hanzi: string) => item.set.words.find((w) => w.hanzi === hanzi)?.pinyin;
 

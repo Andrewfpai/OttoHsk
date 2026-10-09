@@ -103,7 +103,7 @@ describe("deck", () => {
     expect(deck.words.map((w) => w.id)).toEqual(words.slice(0, 10).map((w) => w.id));
   });
 
-  it("puts due words first, most overdue then shakiest, and skips words not yet due", () => {
+  it("puts overdue words weakest first, and skips words not yet due", () => {
     const progress = [
       { wordId: words[5].id, strength: 2, dueTest: 4 },
       { wordId: words[6].id, strength: 1, dueTest: 9 },
@@ -114,6 +114,20 @@ describe("deck", () => {
     expect(deck.words.slice(0, 3).map((w) => w.id)).toEqual([words[7].id, words[5].id, words[8].id]);
     expect(deck.words.some((w) => w.id === words[6].id)).toBe(false);
     expect(deck.reviewCount).toBe(3);
+  });
+
+  it("brings last test's misses back ahead of an older backlog", () => {
+    // 30 old overdue words at strength 0, then a miss from test 9 (due in 10).
+    const backlog = words.slice(0, 30).map((w) => ({ wordId: w.id, strength: 0, dueTest: 2 }));
+    const missed = { wordId: words[40].id, strength: 2, dueTest: 10 };
+    const deck = buildDeck(words, [...backlog, missed], 10, 10);
+    expect(deck.words[0].id).toBe(words[40].id);
+  });
+
+  it("never leaves nothing to study once every word has been seen", () => {
+    const progress = words.map((w, i) => ({ wordId: w.id, strength: 6, dueTest: 100 + i }));
+    const deck = buildDeck(words, progress, 50, 10);
+    expect(deck.words.map((w) => w.id)).toEqual(words.slice(0, 10).map((w) => w.id));
   });
 
   it("caps reviews at 70% while new words remain", () => {

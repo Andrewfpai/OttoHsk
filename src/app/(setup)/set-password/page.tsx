@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 
 import { SealMark } from "@/components/layout/brand";
 import { SetPasswordForm } from "@/features/account/components/set-password-form";
+import { signOut } from "@/lib/auth";
 import { requireUser } from "@/lib/auth-guard";
 
 export const metadata: Metadata = { title: "Set a password" };
@@ -14,6 +15,14 @@ export const metadata: Metadata = { title: "Set a password" };
 export default async function SetPasswordPage() {
   const user = await requireUser();
   if (user.hasPassword) redirect("/dashboard");
+
+  // The only way out of this page without a password: signed in with the
+  // wrong Google account, you can go back and pick another.
+  async function signOutAction() {
+    "use server";
+    await signOut({ redirect: false });
+    redirect("/sign-in");
+  }
 
   return (
     <main className="flex min-h-dvh items-center justify-center p-6">
@@ -27,6 +36,14 @@ export default async function SetPasswordPage() {
           </p>
         </div>
         <SetPasswordForm then="/dashboard" submitLabel="Save and continue" />
+        <form action={signOutAction} className="mt-6 text-center">
+          <button
+            type="submit"
+            className="text-muted-foreground hover:text-foreground cursor-pointer text-sm underline underline-offset-4"
+          >
+            Not you? Sign out and use another account
+          </button>
+        </form>
       </div>
     </main>
   );

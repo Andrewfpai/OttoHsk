@@ -1,6 +1,6 @@
 "use server";
 
-import { eq, sql } from "drizzle-orm";
+import { and, eq, ne, sql } from "drizzle-orm";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -14,7 +14,10 @@ import { SESSION_COOKIE, SESSION_COOKIE_OPTIONS, SESSION_MAX_AGE_S } from "@/lib
 
 import { passwordSignInSchema, setPasswordSchema } from "../schema";
 
-/** Set or change your own password. */
+/**
+ * Set or change your own password. Signs you out everywhere else, so a
+ * changed password also ends any session someone else had.
+ */
 export async function setPassword(input: unknown): Promise<ActionResult> {
   const user = await requireUser();
   const parsed = setPasswordSchema.safeParse(input);
@@ -24,8 +27,19 @@ export async function setPassword(input: unknown): Promise<ActionResult> {
     .update(users)
     .set({ passwordHash: await hashPassword(parsed.data.password) })
     .where(eq(users.id, user.id));
+
+  const current = (await cookies()).get(SESSION_COOKIE)?.value ?? "";
+  await db
+    .delete(sessions)
+    .where(and(eq(sessions.userId, user.id), ne(sessions.sessionToken, current)));
   return ok(undefined);
 }
+
+/**
+ * Hashed once, lazily: verified against when there is no account, so a miss
+ * takes as long as a wrong password and timing reveals nothing.
+ */
+let dummyHash: Promise<string> | null = null;
 
 /** One message for every failure, so it never reveals which part was wrong. */
 const WRONG = "That email and password don't match an account here.";
@@ -50,9 +64,11 @@ export async function signInWithPassword(input: unknown): Promise<ActionResult> 
     .where(eq(sql`lower(${users.email})`, email))
     .limit(1);
 
-  if (!user?.passwordHash || !(await verifyPassword(password, user.passwordHash))) {
+  if (!user?.passwordHash) {
+    await verifyPassword(password, await (dummyHash ??= hashPassword("not-a-real-password")));
     return fail(WRONG);
   }
+  if (!(await verifyPassword(password, user.passwordHash))) return fail(WRONG);
   // The same gate as Google sign-in: owners, and the invite list.
   if (!(await hasAccess(user.email))) {
     return fail("That account no longer has access. Ask the owner.", "ACCESS_DENIED");

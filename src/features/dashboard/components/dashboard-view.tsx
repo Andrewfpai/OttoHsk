@@ -93,7 +93,7 @@ export function DashboardView({ name, d }: { name: string | null; d: Dashboard }
           <h2 className="text-muted-foreground text-sm">Today</h2>
           <p>
             <span className="font-numeric text-4xl font-semibold">{d.due}</span>
-            <span className="text-muted-foreground"> word{d.due === 1 ? "" : "s"} due in your next test</span>
+            <span className="text-muted-foreground"> word{d.due === 1 ? "" : "s"} waiting for review</span>
           </p>
           {d.lockedUntil !== null ? (
             <p className="text-warning flex items-center gap-2 text-sm">

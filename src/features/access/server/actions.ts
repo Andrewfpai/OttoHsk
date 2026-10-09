@@ -57,7 +57,10 @@ export async function removeInvite(input: unknown): Promise<ActionResult<string>
   const ownerId = await requireOwnerId();
   if (!ownerId) return fail(NOT_OWNER, "FORBIDDEN");
 
-  const parsed = inviteSchema.safeParse(input);
+  // Not inviteSchema: an address already on the list (added by an invite
+  // link, from whatever Google returned) must stay removable even if it
+  // would fail strict email validation.
+  const parsed = z.object({ email: z.string().trim().toLowerCase().min(1) }).safeParse(input);
   if (!parsed.success) return fail("Unknown address.");
   const { email } = parsed.data;
 

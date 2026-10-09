@@ -55,8 +55,9 @@ export function FeedbackView({
         <section className="space-y-2">
           <h3 className="text-sm font-medium">The five words</h3>
           <ul className="space-y-1.5">
-            {feedback.wordUse.map((w) => (
-              <li key={w.word} className="flex items-start gap-2 text-sm">
+            {feedback.wordUse.map((w, i) => (
+              // Index keys: a model can repeat an entry.
+              <li key={i} className="flex items-start gap-2 text-sm">
                 {w.ok ? (
                   <Check aria-label="Used correctly" className="text-success mt-0.5 size-4 shrink-0" />
                 ) : (
@@ -106,8 +107,8 @@ export function FeedbackView({
         <section className="space-y-1.5">
           <h3 className="text-sm font-medium">Tips</h3>
           <ul className="text-muted-foreground list-disc space-y-1 pl-5 text-sm">
-            {feedback.tips.map((t) => (
-              <li key={t}>{t}</li>
+            {feedback.tips.map((t, i) => (
+              <li key={i}>{t}</li>
             ))}
           </ul>
         </section>

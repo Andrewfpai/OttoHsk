@@ -8,8 +8,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { scenes } from "@/content/essay-scenes";
-import { getWord, words as allWords } from "@/content/words";
+import { words as allWords } from "@/content/words";
 import { formatCountdown, useNow } from "@/hooks/use-now";
+import { formatDate } from "@/lib/dates";
+import { EXAM_TIME_ZONE } from "@/lib/exam";
 import { type Rng, seededRng, shuffle } from "@/lib/random";
 import { cn } from "@/lib/utils";
 
@@ -63,6 +65,9 @@ export function EssayStudio({
 
   const [body, setBody] = useState("");
   const [startedAt, setStartedAt] = useState<number | null>(null);
+  // When feedback arrived: the timer stops there instead of running on while
+  // you read it.
+  const [finishedAt, setFinishedAt] = useState<number | null>(null);
   const [result, setResult] = useState<EssayResult | null>(null);
   const [pending, startTransition] = useTransition();
   const now = useNow();
@@ -72,19 +77,24 @@ export function EssayStudio({
   const chars = countChars(body);
   const length = lengthState(chars);
   const used = wordsUsed(body, fiveWords);
-  const elapsed = startedAt !== null && now !== null ? now - startedAt : 0;
+  const elapsed =
+    startedAt !== null && (finishedAt ?? now) !== null ? (finishedAt ?? now!) - startedAt : 0;
 
   const promptReady = kind === "q99" ? fiveWords.every(Boolean) : scene.length >= 4;
   const canCheck = ai.enabled && promptReady && chars >= 10 && !pending;
 
   /** A new task starts a fresh essay. Asks first if there is writing to lose. */
   function resetFor(change: () => void) {
+    // Mid-check the reply would land on the new task; the controls are
+    // disabled then too, this is the backstop.
+    if (pending) return;
     if (body.trim() && !result && !window.confirm("Start a new task? Your current writing will be cleared.")) {
       return;
     }
     change();
     setBody("");
     setStartedAt(null);
+    setFinishedAt(null);
     setResult(null);
   }
 
@@ -102,17 +112,29 @@ export function EssayStudio({
         ? { kind, words: fiveWords, body, durationMs }
         : { kind, scene, body, durationMs };
     startTransition(async () => {
-      const res = await checkEssay(payload);
-      if (res.ok) setResult(res.data);
-      else toast.error(res.error, { duration: 10_000 });
+      // A timeout or a dropped connection throws rather than returning an
+      // error; catching it keeps the page, and the essay, on screen.
+      try {
+        const res = await checkEssay(payload);
+        if (res.ok) {
+          setResult(res.data);
+          setFinishedAt(Date.now());
+        } else {
+          toast.error(res.error, { duration: 10_000 });
+        }
+      } catch {
+        toast.error("Couldn't reach the server. Your essay is still here; try again.", {
+          duration: 10_000,
+        });
+      }
     });
   }
 
   return (
     <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
       <div className="min-w-0 space-y-5">
-        {/* Task */}
-        <section className="bg-card space-y-4 rounded-2xl border p-5">
+        {/* Task. Locked while checking, so the reply can't land on a different task. */}
+        <fieldset disabled={pending} className="bg-card min-w-0 space-y-4 rounded-2xl border p-5 disabled:opacity-60">
           <div role="group" aria-label="Question" className="bg-muted inline-flex rounded-lg p-1">
             {(["q99", "q100"] as const).map((k) => (
               <button
@@ -153,7 +175,7 @@ export function EssayStudio({
               </div>
 
               {source === "custom" ? (
-                <div className="grid grid-cols-5 gap-2">
+                <div className="grid grid-cols-3 gap-2 sm:grid-cols-5">
                   {custom.map((w, i) => (
                     <Input
                       key={i}
@@ -167,22 +189,18 @@ export function EssayStudio({
                 </div>
               ) : (
                 <div className="flex flex-wrap items-center gap-2">
-                  {given.map((id) => {
-                    const w = getWord(id);
-                    return (
-                      <span
-                        key={id}
-                        title={w ? `${w.pinyin} · ${w.gloss}` : undefined}
-                        className={cn(
-                          "rounded-lg border px-3 py-1.5 transition-colors",
-                          used[id] && "border-success bg-success/10",
-                        )}
-                      >
-                        <span className="font-hanzi block text-xl leading-tight">{id}</span>
-                        <span className="text-muted-foreground block text-xs">{w?.pinyin}</span>
-                      </span>
-                    );
-                  })}
+                  {/* Hanzi only, no pinyin or meaning: the real exam shows neither. */}
+                  {given.map((id) => (
+                    <span
+                      key={id}
+                      className={cn(
+                        "font-hanzi rounded-lg border px-3 py-2 text-xl leading-tight transition-colors",
+                        used[id] && "border-success bg-success/10",
+                      )}
+                    >
+                      {id}
+                    </span>
+                  ))}
                   <Button
                     variant="ghost"
                     size="icon-lg"
@@ -242,7 +260,7 @@ export function EssayStudio({
               </Button>
             </div>
           )}
-        </section>
+        </fieldset>
 
         {/* Writing */}
         <section className="bg-card space-y-3 rounded-2xl border p-5">
@@ -273,7 +291,7 @@ export function EssayStudio({
               if (startedAt === null && e.target.value) setStartedAt(Date.now());
               setBody(e.target.value);
             }}
-            readOnly={result !== null}
+            readOnly={result !== null || pending}
             maxLength={600}
             placeholder={startedAt === null ? "The 15-minute timer starts when you start typing…" : ""}
             aria-label="Your essay"
@@ -282,8 +300,9 @@ export function EssayStudio({
 
           {kind === "q99" && fiveWords.some(Boolean) ? (
             <p className="text-muted-foreground flex flex-wrap gap-x-3 gap-y-1 text-xs">
-              {fiveWords.filter(Boolean).map((w) => (
-                <span key={w} className={cn(used[w] ? "text-success" : "")}>
+              {fiveWords.filter(Boolean).map((w, i) => (
+                // The same word can be typed twice in "Enter my own".
+                <span key={i} className={cn(used[w] ? "text-success" : "")}>
                   {used[w] ? "✓" : "○"} <span className="font-hanzi">{w}</span>
                 </span>
               ))}
@@ -303,7 +322,7 @@ export function EssayStudio({
             )}
             {pending ? (
               <span className="text-muted-foreground text-xs">
-                Trying {ai.models.join(" → ")}. This can take up to a minute.
+                Trying {ai.models.join(" → ")}. Usually under a minute; longer if a model is down.
               </span>
             ) : !ai.enabled ? (
               <span className="text-muted-foreground text-xs">
@@ -355,7 +374,7 @@ function History({ essays }: { essays: EssayRow[] }) {
                   <span className="font-hanzi block truncate">{e.prompt}</span>
                   <span className="text-muted-foreground block text-xs">
                     {e.kind.toUpperCase()} ·{" "}
-                    {new Date(e.createdAt).toLocaleDateString(undefined, { month: "short", day: "numeric" })} ·{" "}
+                    {formatDate(new Date(e.createdAt), EXAM_TIME_ZONE, { month: "short", day: "numeric" })} ·{" "}
                     {e.model}
                   </span>
                 </span>

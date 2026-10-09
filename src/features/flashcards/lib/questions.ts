@@ -25,8 +25,12 @@ export type Question = {
 const KINDS: QuestionKind[] = ["meaning", "hanzi", "pinyin"];
 const OPTION_COUNT = 4;
 
+/** Senses split on ";" and on "," outside brackets: "group, team" is two. */
 function glossParts(w: Word): string[] {
-  return w.gloss.split("; ");
+  return w.gloss
+    .split(/[;,](?![^(]*\))/)
+    .map((s) => s.trim())
+    .filter(Boolean);
 }
 
 /**
