@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Fira_Code, Fira_Sans, Noto_Sans_SC } from "next/font/google";
 
 import { Providers } from "@/components/providers";
+import { ServiceWorker } from "@/components/service-worker";
 
 import "./globals.css";
 
@@ -37,6 +38,8 @@ export const metadata: Metadata = {
   },
   description: "HSK 5 and HSK 6 prep: words, flashcards, confusables, fill-in passages, sentence order, find the error, writing and mock scores.",
   applicationName: "OttoHSK",
+  // Installed on iOS ("Add to Home Screen"): full screen, with its own name.
+  appleWebApp: { capable: true, title: "OttoHSK", statusBarStyle: "black-translucent" },
 };
 
 export const viewport: Viewport = {
@@ -58,6 +61,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="flex min-h-full flex-col">
         <Providers>{children}</Providers>
+        <ServiceWorker />
       </body>
     </html>
   );

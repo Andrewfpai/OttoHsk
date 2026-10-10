@@ -26,8 +26,8 @@ describe("schedule", () => {
     }
     expect(strength).toBe(3);
     expect(statusOf(strength)).toBe("known");
-    // Right in test 1, back in 4 (+3), then 9 (+5); known, and away 10 tests.
-    expect(test).toBe(1 + 3 + 5 + 10);
+    // Right in test 1, back in 4 (+3), then 9 (+5); known, and away 20 tests.
+    expect(test).toBe(1 + 3 + 5 + 20);
   });
 
   it("brings a first right answer back three tests later, not two", () => {
@@ -37,7 +37,7 @@ describe("schedule", () => {
 
   it("fast-tracks a new word right on its first try: counts as two right, one more makes it known", () => {
     expect(nextSchedule(null, true, 1, SLOW)).toEqual({ strength: 2, dueTest: 6 });
-    expect(nextSchedule(2, true, 6, SLOW)).toEqual({ strength: 3, dueTest: 16 });
+    expect(nextSchedule(2, true, 6, SLOW)).toEqual({ strength: 3, dueTest: 26 });
     expect(statusOf(3)).toBe("known");
   });
 
@@ -51,12 +51,12 @@ describe("schedule", () => {
     const slip = nextSchedule(5, false, 40, SLOW); // known word, misclicked in test 40
     expect(slip).toEqual({ strength: 3, dueTest: 41 });
     expect(statusOf(slip.strength)).toBe("known");
-    expect(nextSchedule(slip.strength, true, 41, SLOW)).toEqual({ strength: 4, dueTest: 61 });
+    expect(nextSchedule(slip.strength, true, 41, SLOW)).toEqual({ strength: 4, dueTest: 81 });
   });
 
-  it("spaces strength 0–6 as 1, 3, 5, 10, 20, 40, 60 tests, capped at 6", () => {
-    expect([0, 1, 2, 3, 4, 5, 6, 9].map(gapFor)).toEqual([1, 3, 5, 10, 20, 40, 60, 60]);
-    expect(nextSchedule(6, true, 100, SLOW)).toEqual({ strength: 6, dueTest: 160 });
+  it("spaces strength 0–6 as 1, 3, 5, 20, 40, 60, 90 tests, capped at 6", () => {
+    expect([0, 1, 2, 3, 4, 5, 6, 9].map(gapFor)).toEqual([1, 3, 5, 20, 40, 60, 90, 90]);
+    expect(nextSchedule(6, true, 100, SLOW)).toEqual({ strength: 6, dueTest: 190 });
   });
 
   it("says new only for words never tested, and known from strength 3", () => {

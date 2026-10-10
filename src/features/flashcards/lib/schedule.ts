@@ -16,10 +16,10 @@
  *   strength  0 → next test
  *             1 → 3 tests later
  *             2 → 5
- *             3 → 10            known
- *             4 → 20
- *             5 → 40
- *             6 → 60            the ceiling: an occasional check
+ *             3 → 20            known: out of the way, so new words get the room
+ *             4 → 40
+ *             5 → 60
+ *             6 → 90            the ceiling: an occasional check
  */
 import { GUESS_MS } from "./lockout";
 
@@ -30,7 +30,7 @@ export const MAX_STRENGTH = 6;
 export const WRONG_PENALTY = 2;
 
 /** Tests to wait, indexed by strength. */
-export const GAP_BY_STRENGTH = [1, 3, 5, 10, 20, 40, 60] as const;
+export const GAP_BY_STRENGTH = [1, 3, 5, 20, 40, 60, 90] as const;
 
 /** Where a new word answered right on its first try lands, and when it is re-checked. */
 export const FAST_TRACK_STRENGTH = 2;

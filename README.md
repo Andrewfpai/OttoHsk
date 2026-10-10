@@ -49,7 +49,7 @@ demand by `components/level/level-provider.tsx`; server code uses
 
    | Strength | 0 | 1 | 2 | 3 (known) | 4 | 5 | 6 |
    |---|---|---|---|---|---|---|---|
-   | Back after (tests) | 1 | 3 | 5 | 10 | 20 | 40 | 60 |
+   | Back after (tests) | 1 | 3 | 5 | 20 | 40 | 60 | 90 |
 
 4. **Lockout** (`features/flashcards/lib/lockout.ts`): more than 60% wrong
    locks the *test* for 1 min, doubling per consecutive failure up to 1 h.
