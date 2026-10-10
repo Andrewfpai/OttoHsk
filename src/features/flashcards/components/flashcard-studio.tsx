@@ -14,6 +14,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useEffectEvent, useMemo, useRef, useState, useTransition } from "react";
 import { toast } from "sonner";
 
+import { StickyActions } from "@/components/sticky-actions";
 import { Button } from "@/components/ui/button";
 import { type Word, getWord, words } from "@/content/words";
 import { ExampleSentence } from "@/features/words/components/example-sentence";
@@ -639,17 +640,24 @@ function Test({
       </div>
 
       {picked !== null ? (
-        <div className="flex flex-wrap items-center justify-between gap-3">
+        <>
           <p className="text-sm">
             <span className="font-hanzi text-base">{word.hanzi}</span>{" "}
             <span className="text-primary">{word.pinyin}</span>{" "}
             <span className="text-muted-foreground">· {word.gloss}</span>
           </p>
-          <Button size="lg" className="cursor-pointer" onClick={next} disabled={pending}>
-            {pending ? <Loader2 aria-hidden className="animate-spin" /> : null}
-            {last ? "Finish test" : "Next"}
-          </Button>
-        </div>
+          <StickyActions className="sm:flex sm:justify-end">
+            <Button
+              size="lg"
+              className="h-11 w-full cursor-pointer sm:w-auto sm:px-8"
+              onClick={next}
+              disabled={pending}
+            >
+              {pending ? <Loader2 aria-hidden className="animate-spin" /> : null}
+              {last ? "Finish test" : "Next"}
+            </Button>
+          </StickyActions>
+        </>
       ) : (
         <p className="text-muted-foreground text-center text-xs">Press 1–4 to answer, Enter for next.</p>
       )}

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 
+import { StickyActions } from "@/components/sticky-actions";
 import { Button } from "@/components/ui/button";
 import { confusables } from "@/content/confusables";
 import type { ConfusableSet } from "@/content/types";
@@ -127,19 +128,23 @@ export function ConfusablesDrill({
             />
 
             {picked !== null ? (
-              <div className="space-y-4">
-                <p className={cn("text-sm", picked === q.answer ? "text-success" : "text-destructive")}>
-                  <span className="font-medium">{picked === q.answer ? "Right. " : "Not this time. "}</span>
-                  <span className="text-foreground">{q.why}</span>
-                </p>
-                <div className="bg-muted/50 space-y-3 rounded-xl p-4">
-                  <SetWords set={item.set} />
-                  <p className="text-muted-foreground text-sm">{item.set.explanation}</p>
+              <>
+                <div className="space-y-4">
+                  <p className={cn("text-sm", picked === q.answer ? "text-success" : "text-destructive")}>
+                    <span className="font-medium">{picked === q.answer ? "Right. " : "Not this time. "}</span>
+                    <span className="text-foreground">{q.why}</span>
+                  </p>
+                  <div className="bg-muted/50 space-y-3 rounded-xl p-4">
+                    <SetWords set={item.set} />
+                    <p className="text-muted-foreground text-sm">{item.set.explanation}</p>
+                  </div>
                 </div>
-                <Button size="lg" className="cursor-pointer" onClick={next}>
-                  Next
-                </Button>
-              </div>
+                <StickyActions surface="card">
+                  <Button size="lg" className="h-11 w-full cursor-pointer sm:w-auto" onClick={next}>
+                    Next
+                  </Button>
+                </StickyActions>
+              </>
             ) : null}
           </section>
         </div>
