@@ -1,12 +1,12 @@
 import { describe, expect, it } from "vitest";
 
 import { words } from "@/content/words";
-import { plainPinyin } from "@/lib/pinyin";
 import { seededRng } from "@/lib/random";
 
 import { buildDeck } from "../deck";
 import { afterTest, failAt, isLocked, isPass, lockDurationMs, MAX_LOCK_MS } from "../lockout";
-import { buildQuestions } from "../questions";
+import { isRightAnswer } from "../grade";
+import { type ChoiceQuestion, type Question, blankedSentence, buildQuestions, pinyinMatches } from "../questions";
 import { KNOWN_STRENGTH, gapFor, nextSchedule, statusOf } from "../schedule";
 
 const NOW = new Date("2026-10-10T08:00:00Z");
@@ -149,54 +149,90 @@ describe("deck", () => {
 });
 
 describe("questions", () => {
-  const deck = words.slice(0, 30);
+  const deck = words.slice(0, 40);
   const questions = buildQuestions(deck, words, seededRng(42));
+  const choices = (qs: Question[]) => qs.filter((q): q is ChoiceQuestion => q.kind !== "pinyin");
 
-  it("asks about every word once, with 4 distinct options including the answer", () => {
+  it("asks about every word once; choice questions have 4 distinct options including the answer", () => {
     expect(questions.map((q) => q.wordId).sort()).toEqual(deck.map((w) => w.id).sort());
-    for (const q of questions) {
+    for (const q of choices(questions)) {
       expect(q.options).toHaveLength(4);
       expect(new Set(q.options).size).toBe(4);
       expect(q.options).toContain(q.wordId);
     }
   });
 
-  it("mixes the three kinds evenly", () => {
+  it("mixes the four kinds evenly", () => {
     const count = (k: string) => questions.filter((q) => q.kind === k).length;
-    expect([count("meaning"), count("hanzi"), count("pinyin")]).toEqual([10, 10, 10]);
+    expect([count("meaning"), count("hanzi"), count("sentence"), count("pinyin")]).toEqual([10, 10, 10, 10]);
   });
 
   const all = buildQuestions(words, words, seededRng(7));
   const byId = new Map(words.map((w) => [w.id, w]));
   const senses = (gloss: string) => gloss.split(/[;,](?![^(]*\))/).map((x) => x.trim());
 
-  it("never offers two options that share a meaning, or a pinyin with tones aside", () => {
-    for (const q of all) {
+  it("never offers two options that share a meaning", () => {
+    for (const q of choices(all)) {
       const opts = q.options.map((id) => byId.get(id)!);
       for (let i = 0; i < opts.length; i++) {
         for (let j = i + 1; j < opts.length; j++) {
-          if (q.kind === "pinyin") {
-            expect(plainPinyin(opts[i].pinyin)).not.toBe(plainPinyin(opts[j].pinyin));
-          } else {
-            const a = senses(opts[i].gloss);
-            expect(senses(opts[j].gloss).some((m) => a.includes(m))).toBe(false);
-          }
+          const a = senses(opts[i].gloss);
+          expect(senses(opts[j].gloss).some((m) => a.includes(m))).toBe(false);
         }
       }
     }
   });
 
-  it("mixes medium and hard questions about half and half", () => {
-    const hard = all.filter((q) => q.difficulty === "hard").length / all.length;
-    expect(hard).toBeGreaterThan(0.4);
-    expect(hard).toBeLessThan(0.6);
+  it("blanks the word out of its example sentence, and offers no option that contains the answer", () => {
+    for (const q of choices(all).filter((x) => x.kind === "sentence")) {
+      const w = byId.get(q.wordId)!;
+      const blanked = blankedSentence(w);
+      expect(blanked, w.id).toContain("＿＿");
+      expect(blanked, w.id).not.toContain(w.hanzi);
+      for (const id of q.options) {
+        if (id !== w.id) expect(w.hanzi.includes(id) || id.includes(w.hanzi), `${w.id}: ${id}`).toBe(false);
+      }
+    }
   });
 
-  it("gives hard questions look-alike options, such as a shared character", () => {
-    const q = all.find((x) => x.wordId === "农村")!;
-    const shared = (id: string) => id !== q.wordId && [...id].some((c) => "农村".includes(c));
-    if (q.difficulty === "hard") expect(q.options.filter(shared).length).toBeGreaterThanOrEqual(1);
-    const hard = all.filter((x) => x.difficulty === "hard");
-    for (const h of hard) expect(h.options).toHaveLength(4);
+  it("gives about four in five choice questions look-alike options", () => {
+    const qs = choices(all);
+    const hard = qs.filter((q) => q.difficulty === "hard").length / qs.length;
+    expect(hard).toBeGreaterThan(0.7);
+    expect(hard).toBeLessThan(0.9);
+  });
+
+  it("uses look-alikes such as a shared character", () => {
+    const q = choices(buildQuestions([byId.get("农村")!], words, seededRng(1)))[0];
+    const shared = (id: string) => id !== "农村" && [...id].some((c) => "农村".includes(c));
+    expect(q.difficulty).toBe("hard");
+    expect(q.options.filter(shared).length).toBeGreaterThanOrEqual(2);
+  });
+});
+
+describe("typed pinyin", () => {
+  it("ignores tones, spaces, apostrophes, tone numbers and case", () => {
+    expect(pinyinMatches("biaoxian", "biǎoxiàn")).toBe(true);
+    expect(pinyinMatches(" Biao xian ", "biǎoxiàn")).toBe(true);
+    expect(pinyinMatches("biao3xian4", "biǎoxiàn")).toBe(true);
+    expect(pinyinMatches("fangan", "fāng'àn")).toBe(true);
+    expect(pinyinMatches("ouzhou", "Ōuzhōu")).toBe(true);
+  });
+
+  it("takes ü as ü, v or u", () => {
+    for (const t of ["lüshi", "lvshi", "lushi"]) expect(pinyinMatches(t, "lǜshī")).toBe(true);
+  });
+
+  it("needs every syllable: knowing one character is not enough", () => {
+    expect(pinyinMatches("biao", "biǎoxiàn")).toBe(false);
+    expect(pinyinMatches("biaoxiang", "biǎoxiàn")).toBe(false);
+    expect(pinyinMatches("", "biǎoxiàn")).toBe(false);
+  });
+
+  it("is graded on the server the same way", () => {
+    expect(isRightAnswer({ wordId: "表现", typed: "biaoxian", ms: 3000 })).toBe(true);
+    expect(isRightAnswer({ wordId: "表现", typed: "biaoxin", ms: 3000 })).toBe(false);
+    expect(isRightAnswer({ wordId: "表现", chosenId: "表现", ms: 3000 })).toBe(true);
+    expect(isRightAnswer({ wordId: "表现", chosenId: "表达", ms: 3000 })).toBe(false);
   });
 });

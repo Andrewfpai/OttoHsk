@@ -16,6 +16,7 @@ import { toast } from "sonner";
 
 import { StickyActions } from "@/components/sticky-actions";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { type Word, getWord, words } from "@/content/words";
 import { ExampleSentence } from "@/features/words/components/example-sentence";
 import { formatCountdown, useNow } from "@/hooks/use-now";
@@ -27,14 +28,15 @@ import { DECK_SIZES, buildDeck, isDue } from "../lib/deck";
 import { FAIL_WRONG_RATIO, GUESS_MS, MAX_ANSWER_MS, MAX_LOCK_MS, failAt, formatLock, lockDurationMs } from "../lib/lockout";
 import { nextPace } from "../lib/practice-pace";
 import { statusOf } from "../lib/schedule";
-import { type Question, buildQuestions } from "../lib/questions";
+import { type AnswerInput, isRightAnswer } from "../lib/grade";
+import { type Question, blankedSentence, buildQuestions, pinyinMatches } from "../lib/questions";
 import { type TestResult, submitTest } from "../server/actions";
 import type { FlashcardInfo, ProgressRow, TestSummary } from "../server/queries";
 import { savePace, usePracticePace } from "./use-practice-pace";
 
 /** Practice gets this long per card before the test starts on its own. */
 
-type Answer = { wordId: string; chosenId: string; ms: number };
+type Answer = AnswerInput;
 
 type Phase =
   | { name: "setup" }
@@ -489,10 +491,24 @@ function Practice({
 /** How long a right answer stays on screen before the next question. */
 const AUTO_NEXT_MS = 600;
 
+/** A monotonic clock for timing answers; only ever read in events and effects. */
+function clockMs(): number {
+  return performance.now();
+}
+
+/**
+ * How long an answer took. Capped: a question left open while the tab sat in
+ * the background is still a real answer.
+ */
+function answerMs(shownAt: number | null): number {
+  return Math.min(MAX_ANSWER_MS, shownAt === null ? 60_000 : Math.round(clockMs() - shownAt));
+}
+
 const PROMPT: Record<Question["kind"], string> = {
   meaning: "What does it mean?",
   hanzi: "Which word means this?",
-  pinyin: "How is it read?",
+  sentence: "Which word fits?",
+  pinyin: "Type the pinyin",
 };
 
 function Test({
@@ -506,32 +522,44 @@ function Test({
 }) {
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<Answer[]>([]);
+  const [typed, setTyped] = useState("");
   const [pending, startTransition] = useTransition();
+  const inputRef = useRef<HTMLInputElement>(null);
   // When the current question appeared, to time the answer. Set by events,
   // never during render.
   const shownAt = useRef<number | null>(null);
 
   const q = questions[index];
   const word = getWord(q.wordId)!;
-  const picked = answers[index]?.chosenId ?? null;
+  const answer = answers[index] ?? null;
+  const right = answer !== null && isRightAnswer(answer);
   const last = index === questions.length - 1;
 
-  function pick(optionId: string) {
-    if (picked !== null) return;
-    // Capped: a question left open while the tab sat in the background is
-    // still a real answer.
-    const ms = Math.min(
-      MAX_ANSWER_MS,
-      shownAt.current === null ? 60_000 : Math.round(performance.now() - shownAt.current),
-    );
-    setAnswers((a) => [...a, { wordId: q.wordId, chosenId: optionId, ms }]);
+  function record(given: { chosenId: string } | { typed: string }) {
+    if (answer !== null) return;
+    const ms = answerMs(shownAt.current);
+    setAnswers((a) => [...a, { wordId: q.wordId, ...given, ms }]);
+  }
+
+  function submitTyped(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (answer !== null) {
+      next();
+      return;
+    }
+    const text = typed.trim();
+    if (!text) return;
+    record({ typed: text });
+    // Wrong: close the phone keyboard so the right pinyin and Next show.
+    if (!pinyinMatches(text, word.pinyin)) inputRef.current?.blur();
   }
 
   function next() {
-    if (picked === null || pending) return;
+    if (answer === null || pending) return;
     if (!last) {
       setIndex((i) => i + 1);
-      shownAt.current = performance.now();
+      setTyped("");
+      shownAt.current = clockMs();
       return;
     }
     startTransition(async () => {
@@ -553,20 +581,27 @@ function Test({
   // correct answer can be read first.
   const autoNext = useEffectEvent(() => next());
   useEffect(() => {
-    if (picked === null || picked !== q.wordId) return;
+    if (!right) return;
     const t = setTimeout(autoNext, AUTO_NEXT_MS);
     return () => clearTimeout(t);
-  }, [picked, q.wordId]);
+  }, [right, index]);
 
   // The first question's clock starts when the test mounts.
   useEffect(() => {
-    shownAt.current = performance.now();
+    shownAt.current = clockMs();
   }, []);
+
+  // A pinyin question is ready to type into as soon as it appears.
+  useEffect(() => {
+    if (q.kind === "pinyin") inputRef.current?.focus();
+  }, [index, q.kind]);
 
   const onKey = useEffectEvent((e: KeyboardEvent) => {
     if (e.ctrlKey || e.metaKey || e.altKey || e.repeat) return;
+    // Typing pinyin: the form handles Enter, and digits are tone numbers.
+    if (e.target instanceof HTMLElement && e.target.closest("input, textarea")) return;
     const n = Number(e.key);
-    if (n >= 1 && n <= q.options.length) pick(q.options[n - 1]);
+    if (q.kind !== "pinyin" && n >= 1 && n <= q.options.length) record({ chosenId: q.options[n - 1] });
     else if (e.key === "Enter") next();
   });
   useEffect(() => {
@@ -578,7 +613,6 @@ function Test({
   function optionLabel(id: string) {
     const w = getWord(id)!;
     if (q.kind === "meaning") return <span>{w.gloss}</span>;
-    if (q.kind === "pinyin") return <span className="text-lg">{w.pinyin}</span>;
     return <span className="font-hanzi text-2xl">{w.hanzi}</span>;
   }
 
@@ -598,54 +632,92 @@ function Test({
         />
       </div>
 
-      <div className="bg-card flex min-h-44 items-center justify-center rounded-2xl border p-8 text-center">
+      <div className="bg-card flex min-h-44 items-center justify-center rounded-2xl border p-6 text-center sm:p-8">
         {q.kind === "hanzi" ? (
           <span className="text-2xl">{word.gloss}</span>
+        ) : q.kind === "sentence" ? (
+          <span className="font-hanzi text-2xl leading-relaxed">
+            {answer === null ? blankedSentence(word) : word.example?.zh}
+          </span>
         ) : (
           <span className="font-hanzi text-6xl leading-tight">{word.hanzi}</span>
         )}
       </div>
 
-      <div className="grid gap-2 sm:grid-cols-2">
-        {q.options.map((id, i) => {
-          const isAnswer = id === q.wordId;
-          const isPicked = id === picked;
-          return (
-            <button
-              key={id}
-              type="button"
-              onClick={() => pick(id)}
-              disabled={picked !== null}
+      {q.kind === "pinyin" ? (
+        <form onSubmit={submitTyped} className="space-y-2">
+          <div className="flex gap-2">
+            <Input
+              ref={inputRef}
+              value={typed}
+              onChange={(e) => setTyped(e.target.value)}
+              readOnly={answer !== null}
+              aria-label="Pinyin"
+              placeholder="e.g. biaoxian"
+              autoComplete="off"
+              autoCapitalize="none"
+              autoCorrect="off"
+              spellCheck={false}
+              enterKeyHint="go"
               className={cn(
-                "focus-visible:ring-ring flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 text-left transition-colors focus-visible:ring-2 focus-visible:outline-none disabled:cursor-default",
-                picked === null && "hover:border-primary/50 hover:bg-muted/50",
-                picked !== null && isAnswer && "border-success bg-success/10",
-                picked !== null && isPicked && !isAnswer && "border-destructive bg-destructive/10",
-                picked !== null && !isAnswer && !isPicked && "opacity-50",
+                "h-12 text-lg",
+                answer !== null &&
+                  (right ? "border-success bg-success/10" : "border-destructive bg-destructive/10"),
               )}
-            >
-              <span className="text-muted-foreground font-numeric bg-muted flex size-6 shrink-0 items-center justify-center rounded-md text-xs">
-                {i + 1}
-              </span>
-              <span className="min-w-0 flex-1">{optionLabel(id)}</span>
-              {picked !== null && isAnswer ? (
-                <Check aria-label="Correct answer" className="text-success size-5" />
-              ) : null}
-              {picked !== null && isPicked && !isAnswer ? (
-                <X aria-label="Your answer" className="text-destructive size-5" />
-              ) : null}
-            </button>
-          );
-        })}
-      </div>
+            />
+            {answer === null ? (
+              <Button type="submit" size="lg" className="h-12 cursor-pointer px-5" disabled={!typed.trim()}>
+                Check
+              </Button>
+            ) : null}
+          </div>
+          <p className="text-muted-foreground text-xs">Tones don&apos;t count. Type ü as v.</p>
+        </form>
+      ) : (
+        <div className="grid gap-2 sm:grid-cols-2">
+          {q.options.map((id, i) => {
+            const isAnswer = id === q.wordId;
+            const isPicked = answer !== null && id === answer.chosenId;
+            return (
+              <button
+                key={id}
+                type="button"
+                onClick={() => record({ chosenId: id })}
+                disabled={answer !== null}
+                className={cn(
+                  "focus-visible:ring-ring flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 text-left transition-colors focus-visible:ring-2 focus-visible:outline-none disabled:cursor-default",
+                  answer === null && "hover:border-primary/50 hover:bg-muted/50",
+                  answer !== null && isAnswer && "border-success bg-success/10",
+                  isPicked && !isAnswer && "border-destructive bg-destructive/10",
+                  answer !== null && !isAnswer && !isPicked && "opacity-50",
+                )}
+              >
+                <span className="text-muted-foreground font-numeric bg-muted flex size-6 shrink-0 items-center justify-center rounded-md text-xs">
+                  {i + 1}
+                </span>
+                <span className="min-w-0 flex-1">{optionLabel(id)}</span>
+                {answer !== null && isAnswer ? (
+                  <Check aria-label="Correct answer" className="text-success size-5" />
+                ) : null}
+                {isPicked && !isAnswer ? <X aria-label="Your answer" className="text-destructive size-5" /> : null}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
-      {picked !== null ? (
+      {answer !== null ? (
         <>
-          <p className="text-sm">
-            <span className="font-hanzi text-base">{word.hanzi}</span>{" "}
-            <span className="text-primary">{word.pinyin}</span>{" "}
-            <span className="text-muted-foreground">· {word.gloss}</span>
-          </p>
+          <div className="space-y-1 text-sm">
+            <p>
+              <span className="font-hanzi text-base">{word.hanzi}</span>{" "}
+              <span className="text-primary">{word.pinyin}</span>{" "}
+              <span className="text-muted-foreground">· {word.gloss}</span>
+            </p>
+            {q.kind === "sentence" && word.example ? (
+              <p className="text-muted-foreground">{word.example.en}</p>
+            ) : null}
+          </div>
           <StickyActions className="sm:flex sm:justify-end">
             <Button
               size="lg"
@@ -658,9 +730,9 @@ function Test({
             </Button>
           </StickyActions>
         </>
-      ) : (
+      ) : q.kind !== "pinyin" ? (
         <p className="text-muted-foreground text-center text-xs">Press 1–4 to answer, Enter for next.</p>
-      )}
+      ) : null}
     </div>
   );
 }
@@ -680,7 +752,7 @@ function Results({
   now: number | null;
   onAgain: () => void;
 }) {
-  const wrong = answers.filter((a) => a.chosenId !== a.wordId);
+  const wrong = answers.filter((a) => !isRightAnswer(a));
   const pct = Math.round((result.correct / result.total) * 100);
 
   return (
@@ -726,7 +798,7 @@ function Results({
           <ul className="bg-card divide-y rounded-xl border">
             {wrong.map((a) => {
               const w = getWord(a.wordId)!;
-              const chosen = getWord(a.chosenId)!;
+              const chosen = a.chosenId === undefined ? undefined : getWord(a.chosenId);
               return (
                 <li key={a.wordId} className="flex items-center gap-4 px-4 py-3">
                   <span className="font-hanzi w-20 shrink-0 text-2xl">{w.hanzi}</span>
@@ -738,7 +810,7 @@ function Results({
                     ) : null}
                     <ExampleSentence word={w} className="my-1" />
                     <span className="text-muted-foreground block text-xs">
-                      You picked {chosen.hanzi} ({chosen.gloss})
+                      {chosen ? `You picked ${chosen.hanzi} (${chosen.gloss})` : `You typed "${a.typed}"`}
                     </span>
                   </span>
                 </li>
@@ -762,7 +834,7 @@ function Results({
 
 /** Every word in the test: its strength before → after, and the test it returns in. */
 function ComesBack({ result, answers }: { result: TestResult; answers: Answer[] }) {
-  const right = new Set(answers.filter((a) => a.chosenId === a.wordId).map((a) => a.wordId));
+  const right = new Set(answers.filter(isRightAnswer).map((a) => a.wordId));
   const rows = [...result.schedule].sort((a, b) => a.dueTest - b.dueTest || a.strength - b.strength);
   return (
     <section className="space-y-3">

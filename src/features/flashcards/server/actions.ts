@@ -10,6 +10,7 @@ import { flashcardState, flashcardTests, wordProgress } from "@/db/schema";
 import { type ActionResult, fail, ok } from "@/lib/action-result";
 import { requireUser } from "@/lib/auth-guard";
 
+import { isRightAnswer } from "../lib/grade";
 import { nextSchedule } from "../lib/schedule";
 import { GUESS_MS, MAX_ANSWER_MS, afterTest, isLocked, isPass } from "../lib/lockout";
 
@@ -17,14 +18,21 @@ const answersSchema = z
   .array(
     z.object({
       wordId: z.string().refine((id) => Boolean(getWord(id)), "Unknown word"),
-      chosenId: z.string().refine((id) => Boolean(getWord(id)), "Unknown word"),
+      /** The option picked, for a multiple-choice question. */
+      chosenId: z
+        .string()
+        .refine((id) => Boolean(getWord(id)), "Unknown word")
+        .optional(),
+      /** What was typed, for a pinyin question. */
+      typed: z.string().max(60).optional(),
       /** How long the answer took. */
       ms: z
         .number()
         .int()
         .min(0)
         .transform((ms) => Math.min(ms, MAX_ANSWER_MS)),
-    }),
+    })
+    .refine((a) => (a.chosenId === undefined) !== (a.typed === undefined), "One answer per question"),
   )
   .min(1)
   .max(50)
@@ -95,7 +103,7 @@ export async function submitTest(input: unknown): Promise<ActionResult<TestResul
     let correct = 0;
     let guesses = 0;
     const rows = answers.map((a) => {
-      const right = a.chosenId === a.wordId;
+      const right = isRightAnswer(a);
       if (right) correct++;
       else if (a.ms < GUESS_MS) guesses++;
       const next = nextSchedule(strengths.get(a.wordId) ?? null, right, testNumber, a.ms);

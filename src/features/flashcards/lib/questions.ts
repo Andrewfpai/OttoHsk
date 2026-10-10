@@ -1,45 +1,49 @@
 /**
- * Turns a deck into a multiple-choice test.
+ * Turns a deck into a test.
  *
- * Three kinds, mixed evenly: hanzi → meaning (reading), meaning → hanzi
- * (recall), and hanzi → pinyin. Pinyin matters on the computer-based exam:
- * you can only type a character you can spell.
+ * Four kinds, mixed evenly:
+ * - meaning:  hanzi → pick the meaning (reading);
+ * - hanzi:    meaning → pick the hanzi (recall);
+ * - sentence: the word's example sentence with a blank → pick the word that
+ *   fits, as in Reading Part 1;
+ * - pinyin:   hanzi → type the pinyin. Typed, not chosen: with options,
+ *   knowing one character of a two-character word is enough to find the
+ *   answer. Tones are not checked. It is also how the exam's essays are
+ *   written, with a pinyin keyboard.
  *
- * Every option is a word id, so grading is just "did they pick the word
- * itself". Distractors are chosen so that no two options could both be
- * right: their meanings (or pinyin, for pinyin questions) must differ from
- * the answer's. Tones are ignored for pinyin: two options that differ only
- * in tone are never offered together.
+ * Every option is a word id, so grading a choice is just "did they pick the
+ * word itself". Distractors are chosen so that no two options could both be
+ * right: their meanings must differ.
  *
- * Difficulty is mixed, about half and half:
- * - medium: same number of characters and a shared part of speech, so no
- *   option can be ruled out at a glance;
- * - hard: look-alikes — words from the same confusable set, words sharing a
- *   character (安排 / 安慰 / 安装), and words that sound alike.
+ * Distractors are look-alikes wherever possible: words from the same
+ * confusable set, words sharing a character (安排 / 安慰 / 安装), and words
+ * that sound alike. Words with too few look-alikes — about one in five — get
+ * medium options instead: same number of characters, shared part of speech.
  */
 import { confusables } from "@/content/confusables";
 import type { Word } from "@/content/words";
 import { plainPinyin } from "@/lib/pinyin";
 import { type Rng, shuffle } from "@/lib/random";
 
-export type QuestionKind = "meaning" | "hanzi" | "pinyin";
+export type ChoiceKind = "meaning" | "hanzi" | "sentence";
+export type QuestionKind = ChoiceKind | "pinyin";
 export type Difficulty = "medium" | "hard";
 
-export type Question = {
+export type ChoiceQuestion = {
   wordId: string;
-  kind: QuestionKind;
+  kind: ChoiceKind;
   difficulty: Difficulty;
   /** Word ids, answer included, in display order. */
   options: string[];
 };
 
-const KINDS: QuestionKind[] = ["meaning", "hanzi", "pinyin"];
+/** Type the pinyin; graded by `pinyinMatches`. */
+export type TypedQuestion = { wordId: string; kind: "pinyin" };
+
+export type Question = ChoiceQuestion | TypedQuestion;
+
+const KINDS: QuestionKind[] = ["meaning", "hanzi", "sentence", "pinyin"];
 const OPTION_COUNT = 4;
-/**
- * Asked for in this share of questions. Some words have too few look-alikes
- * and fall back to medium, so this lands the real mix near half and half.
- */
-const HARD_SHARE = 0.63;
 /** A hard question has at least this many look-alike distractors. */
 export const MIN_LOOKALIKES = 2;
 
@@ -86,13 +90,13 @@ function withinEdits(a: string, b: string, max: number): boolean {
 }
 
 /**
- * Two words clash when one could pass for the other's answer: the same
- * pinyin, tones aside, for a pinyin question, or any shared meaning
- * otherwise (爱护 and 爱惜 both gloss as "to cherish").
+ * Two words clash when one could pass for the other's answer: any shared
+ * meaning (爱护 and 爱惜 both gloss as "to cherish").
  */
-function clash(a: Word, b: Word, kind: QuestionKind): boolean {
+function clash(a: Word, b: Word, kind: ChoiceKind): boolean {
   if (a.id === b.id) return true;
-  if (kind === "pinyin") return plain(a) === plain(b);
+  // In a sentence, 不如 and 不 could both seem to fill the blank.
+  if (kind === "sentence" && (a.hanzi.includes(b.hanzi) || b.hanzi.includes(a.hanzi))) return true;
   const parts = glossParts(b);
   return glossParts(a).some((m) => parts.includes(m));
 }
@@ -134,8 +138,7 @@ function similar(word: Word, candidates: readonly Word[]): Word[] {
 
 function distractorsFor(
   word: Word,
-  kind: QuestionKind,
-  wantHard: boolean,
+  kind: ChoiceKind,
   pool: readonly Word[],
   rng: Rng,
 ): { distractors: Word[]; difficulty: Difficulty } {
@@ -150,11 +153,8 @@ function distractorsFor(
     }
   };
 
-  let lookalikeCount = 0;
-  if (wantHard) {
-    take(lookalikes(word, candidates, rng));
-    lookalikeCount = picked.length;
-  }
+  take(lookalikes(word, candidates, rng));
+  const lookalikeCount = picked.length;
   take(shuffle(similar(word, candidates), rng));
   take(shuffle(candidates, rng));
 
@@ -165,10 +165,27 @@ function distractorsFor(
 }
 
 export function buildQuestions(deck: readonly Word[], pool: readonly Word[], rng: Rng): Question[] {
-  return shuffle(deck, rng).map((word, i) => {
-    const kind = KINDS[i % KINDS.length];
-    const { distractors, difficulty } = distractorsFor(word, kind, rng() < HARD_SHARE, pool, rng);
+  return shuffle(deck, rng).map((word, i): Question => {
+    let kind = KINDS[i % KINDS.length];
+    if (kind === "pinyin") return { wordId: word.id, kind };
+    if (kind === "sentence" && !word.example?.zh.includes(word.hanzi)) kind = "hanzi";
+    const { distractors, difficulty } = distractorsFor(word, kind, pool, rng);
     const options = shuffle([word, ...distractors], rng).map((w) => w.id);
     return { wordId: word.id, kind, difficulty, options };
   });
+}
+
+/** The example sentence with the word blanked out, for a sentence question. */
+export function blankedSentence(word: Word): string {
+  return (word.example?.zh ?? "").split(word.hanzi).join("＿＿");
+}
+
+/**
+ * Typed pinyin against the word's: tones, spaces, apostrophes and tone
+ * numbers are ignored, and ü may be typed as v or u.
+ */
+export function pinyinMatches(typed: string, pinyin: string): boolean {
+  const norm = (p: string) => plainPinyin(p).replace(/v/g, "u");
+  const t = norm(typed);
+  return t.length > 0 && t === norm(pinyin);
 }
