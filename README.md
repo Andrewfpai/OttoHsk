@@ -16,18 +16,25 @@ sibling to OttoLabs: same stack, separate site, linked both ways.
 
 ## Flashcards
 
-1. **Practice** against a timer (15 s per card). The test unlocks once every
-   card is flipped, or starts by itself when time runs out.
-2. **Test**: multiple choice, mixing hanzi → meaning, meaning → hanzi and
-   hanzi → pinyin. Wrong answers under 1.5 s count as guesses.
+1. **Practice** against a timer: 15 s per card to start, then shorter after
+   starting the test early and longer after running out (5–30 s, kept per
+   browser). The test can start at any time, and starts by itself when time
+   runs out.
+2. **Test**: four kinds, mixed evenly — hanzi → meaning, meaning → hanzi,
+   the word's example sentence with a blank, and typed pinyin (tones not
+   checked). Choice options are look-alikes wherever possible: confusable
+   sets, shared characters, similar sounds. Wrong answers under 1.5 s count
+   as guesses; a right answer moves on by itself.
 3. **Scheduling** (`features/flashcards/lib/schedule.ts`), counted in tests,
    not days. Every word stays in rotation; each has a strength 0–6.
    Right → +1 and further out; wrong → −2 and back in the very next test, so
-   a slip on a strong word costs a little, not everything.
+   a slip on a strong word costs a little, not everything. Three right in a
+   row makes a word known; a new word right on its first try (not a quick
+   guess) counts as two.
 
-   | Strength | 0 | 1 | 2 | 3 | 4 | 5 (known) | 6 |
+   | Strength | 0 | 1 | 2 | 3 (known) | 4 | 5 | 6 |
    |---|---|---|---|---|---|---|---|
-   | Back after (tests) | 1 | 2 | 4 | 8 | 15 | 30 | 60 |
+   | Back after (tests) | 1 | 3 | 5 | 10 | 20 | 40 | 60 |
 
 4. **Lockout** (`features/flashcards/lib/lockout.ts`): more than 60% wrong
    locks the *test* for 1 min, doubling per consecutive failure up to 1 h.

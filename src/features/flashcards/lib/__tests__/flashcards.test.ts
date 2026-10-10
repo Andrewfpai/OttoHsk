@@ -15,35 +15,7 @@ const MIN = 60_000;
 describe("schedule", () => {
   const SLOW = 4000; // a considered answer, not a quick guess
 
-  it("fast-tracks a new word answered right on its first try: strength 4, re-checked 5 tests later", () => {
-    expect(nextSchedule(null, true, 1, SLOW)).toEqual({ strength: 4, dueTest: 6 });
-    // Right again there: known, and away for 40 tests.
-    expect(nextSchedule(4, true, 6, SLOW)).toEqual({ strength: 5, dueTest: 46 });
-    expect(statusOf(5)).toBe("known");
-  });
-
-  it("does not fast-track a quick guess: back two tests later instead", () => {
-    expect(nextSchedule(null, true, 1, 900)).toEqual({ strength: 1, dueTest: 3 });
-  });
-
-  it("brings any wrong answer back in the very next test, 2 strength lower", () => {
-    expect(nextSchedule(4, false, 10, SLOW)).toEqual({ strength: 2, dueTest: 11 });
-    expect(nextSchedule(1, false, 10, SLOW)).toEqual({ strength: 0, dueTest: 11 });
-    expect(nextSchedule(null, false, 1, SLOW)).toEqual({ strength: 0, dueTest: 2 });
-  });
-
-  it("forgives a slip on a strong word: one right answer after it and it is spaced again", () => {
-    const slip = nextSchedule(5, false, 40, SLOW); // known word, misclicked in test 40
-    expect(slip).toEqual({ strength: 3, dueTest: 41 });
-    expect(nextSchedule(slip.strength, true, 41, SLOW)).toEqual({ strength: 4, dueTest: 61 });
-  });
-
-  it("spaces strength 0–6 as 1, 2, 4, 10, 20, 40, 60 tests, capped at 6", () => {
-    expect([0, 1, 2, 3, 4, 5, 6, 9].map(gapFor)).toEqual([1, 2, 4, 10, 20, 40, 60, 60]);
-    expect(nextSchedule(6, true, 100, SLOW)).toEqual({ strength: 6, dueTest: 160 });
-  });
-
-  it("calls a word known after 5 right answers when the first was a quick guess", () => {
+  it("calls a word known after 3 right answers in a row: 0 → 1 → 2 → 3", () => {
     let strength: number | null = null;
     let test = 1;
     for (let i = 0; i < KNOWN_STRENGTH; i++) {
@@ -52,15 +24,46 @@ describe("schedule", () => {
       strength = next.strength;
       test = next.dueTest;
     }
+    expect(strength).toBe(3);
     expect(statusOf(strength)).toBe("known");
-    // Learned in test 1; the fifth right answer comes in test 1+2+4+10+20 = 37.
-    expect(test).toBe(1 + 2 + 4 + 10 + 20 + 40);
+    // Right in test 1, back in 4 (+3), then 9 (+5); known, and away 10 tests.
+    expect(test).toBe(1 + 3 + 5 + 10);
   });
 
-  it("says new only for words never tested", () => {
+  it("brings a first right answer back three tests later, not two", () => {
+    expect(nextSchedule(null, true, 1, 900)).toEqual({ strength: 1, dueTest: 4 });
+    expect(nextSchedule(0, true, 7, SLOW)).toEqual({ strength: 1, dueTest: 10 });
+  });
+
+  it("fast-tracks a new word right on its first try: counts as two right, one more makes it known", () => {
+    expect(nextSchedule(null, true, 1, SLOW)).toEqual({ strength: 2, dueTest: 6 });
+    expect(nextSchedule(2, true, 6, SLOW)).toEqual({ strength: 3, dueTest: 16 });
+    expect(statusOf(3)).toBe("known");
+  });
+
+  it("brings any wrong answer back in the very next test, 2 strength lower", () => {
+    expect(nextSchedule(4, false, 10, SLOW)).toEqual({ strength: 2, dueTest: 11 });
+    expect(nextSchedule(1, false, 10, SLOW)).toEqual({ strength: 0, dueTest: 11 });
+    expect(nextSchedule(null, false, 1, SLOW)).toEqual({ strength: 0, dueTest: 2 });
+  });
+
+  it("forgives a slip on a strong word: one right answer after it and it is known again", () => {
+    const slip = nextSchedule(5, false, 40, SLOW); // known word, misclicked in test 40
+    expect(slip).toEqual({ strength: 3, dueTest: 41 });
+    expect(statusOf(slip.strength)).toBe("known");
+    expect(nextSchedule(slip.strength, true, 41, SLOW)).toEqual({ strength: 4, dueTest: 61 });
+  });
+
+  it("spaces strength 0–6 as 1, 3, 5, 10, 20, 40, 60 tests, capped at 6", () => {
+    expect([0, 1, 2, 3, 4, 5, 6, 9].map(gapFor)).toEqual([1, 3, 5, 10, 20, 40, 60, 60]);
+    expect(nextSchedule(6, true, 100, SLOW)).toEqual({ strength: 6, dueTest: 160 });
+  });
+
+  it("says new only for words never tested, and known from strength 3", () => {
     expect(statusOf(null)).toBe("new");
     expect(statusOf(0)).toBe("learning");
-    expect(statusOf(4)).toBe("learning");
+    expect(statusOf(2)).toBe("learning");
+    expect(statusOf(3)).toBe("known");
   });
 });
 
