@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { words } from "@/content/words";
+import { plainPinyin } from "@/lib/pinyin";
 import { seededRng } from "@/lib/random";
 
 import { buildDeck } from "../deck";
@@ -12,39 +13,48 @@ const NOW = new Date("2026-10-10T08:00:00Z");
 const MIN = 60_000;
 
 describe("schedule", () => {
-  it("brings a first right answer back two tests later (test 1 → test 3)", () => {
-    expect(nextSchedule(null, true, 1)).toEqual({ strength: 1, dueTest: 3 });
+  const SLOW = 4000; // a considered answer, not a quick guess
+
+  it("fast-tracks a new word answered right on its first try: strength 4, re-checked 5 tests later", () => {
+    expect(nextSchedule(null, true, 1, SLOW)).toEqual({ strength: 4, dueTest: 6 });
+    // Right again there: known, and away for 40 tests.
+    expect(nextSchedule(4, true, 6, SLOW)).toEqual({ strength: 5, dueTest: 46 });
+    expect(statusOf(5)).toBe("known");
+  });
+
+  it("does not fast-track a quick guess: back two tests later instead", () => {
+    expect(nextSchedule(null, true, 1, 900)).toEqual({ strength: 1, dueTest: 3 });
   });
 
   it("brings any wrong answer back in the very next test, 2 strength lower", () => {
-    expect(nextSchedule(4, false, 10)).toEqual({ strength: 2, dueTest: 11 });
-    expect(nextSchedule(1, false, 10)).toEqual({ strength: 0, dueTest: 11 });
-    expect(nextSchedule(null, false, 1)).toEqual({ strength: 0, dueTest: 2 });
+    expect(nextSchedule(4, false, 10, SLOW)).toEqual({ strength: 2, dueTest: 11 });
+    expect(nextSchedule(1, false, 10, SLOW)).toEqual({ strength: 0, dueTest: 11 });
+    expect(nextSchedule(null, false, 1, SLOW)).toEqual({ strength: 0, dueTest: 2 });
   });
 
   it("forgives a slip on a strong word: one right answer after it and it is spaced again", () => {
-    const slip = nextSchedule(5, false, 40); // known word, misclicked in test 40
+    const slip = nextSchedule(5, false, 40, SLOW); // known word, misclicked in test 40
     expect(slip).toEqual({ strength: 3, dueTest: 41 });
-    expect(nextSchedule(slip.strength, true, 41)).toEqual({ strength: 4, dueTest: 56 });
+    expect(nextSchedule(slip.strength, true, 41, SLOW)).toEqual({ strength: 4, dueTest: 61 });
   });
 
-  it("spaces strength 0–6 as 1, 2, 4, 8, 15, 30, 60 tests, capped at 6", () => {
-    expect([0, 1, 2, 3, 4, 5, 6, 9].map(gapFor)).toEqual([1, 2, 4, 8, 15, 30, 60, 60]);
-    expect(nextSchedule(6, true, 100)).toEqual({ strength: 6, dueTest: 160 });
+  it("spaces strength 0–6 as 1, 2, 4, 10, 20, 40, 60 tests, capped at 6", () => {
+    expect([0, 1, 2, 3, 4, 5, 6, 9].map(gapFor)).toEqual([1, 2, 4, 10, 20, 40, 60, 60]);
+    expect(nextSchedule(6, true, 100, SLOW)).toEqual({ strength: 6, dueTest: 160 });
   });
 
-  it("calls a word known after 5 right answers with no slips", () => {
+  it("calls a word known after 5 right answers when the first was a quick guess", () => {
     let strength: number | null = null;
     let test = 1;
     for (let i = 0; i < KNOWN_STRENGTH; i++) {
       expect(statusOf(strength)).not.toBe("known");
-      const next = nextSchedule(strength, true, test);
+      const next = nextSchedule(strength, true, test, i === 0 ? 900 : SLOW);
       strength = next.strength;
       test = next.dueTest;
     }
     expect(statusOf(strength)).toBe("known");
-    // Learned in test 1; fifth right answer comes in test 1+2+4+8+15 = 30.
-    expect(test).toBe(1 + 2 + 4 + 8 + 15 + 30);
+    // Learned in test 1; the fifth right answer comes in test 1+2+4+10+20 = 37.
+    expect(test).toBe(1 + 2 + 4 + 10 + 20 + 40);
   });
 
   it("says new only for words never tested", () => {
@@ -156,21 +166,37 @@ describe("questions", () => {
     expect([count("meaning"), count("hanzi"), count("pinyin")]).toEqual([10, 10, 10]);
   });
 
-  it("never offers two options that share a meaning or a pinyin", () => {
-    const all = buildQuestions(words.slice(0, 300), words, seededRng(7));
-    const byId = new Map(words.map((w) => [w.id, w]));
+  const all = buildQuestions(words, words, seededRng(7));
+  const byId = new Map(words.map((w) => [w.id, w]));
+  const senses = (gloss: string) => gloss.split(/[;,](?![^(]*\))/).map((x) => x.trim());
+
+  it("never offers two options that share a meaning, or a pinyin with tones aside", () => {
     for (const q of all) {
       const opts = q.options.map((id) => byId.get(id)!);
       for (let i = 0; i < opts.length; i++) {
         for (let j = i + 1; j < opts.length; j++) {
           if (q.kind === "pinyin") {
-            expect(opts[i].pinyin).not.toBe(opts[j].pinyin);
+            expect(plainPinyin(opts[i].pinyin)).not.toBe(plainPinyin(opts[j].pinyin));
           } else {
-            const a = opts[i].gloss.split("; ");
-            expect(opts[j].gloss.split("; ").some((m) => a.includes(m))).toBe(false);
+            const a = senses(opts[i].gloss);
+            expect(senses(opts[j].gloss).some((m) => a.includes(m))).toBe(false);
           }
         }
       }
     }
+  });
+
+  it("mixes medium and hard questions about half and half", () => {
+    const hard = all.filter((q) => q.difficulty === "hard").length / all.length;
+    expect(hard).toBeGreaterThan(0.4);
+    expect(hard).toBeLessThan(0.6);
+  });
+
+  it("gives hard questions look-alike options, such as a shared character", () => {
+    const q = all.find((x) => x.wordId === "农村")!;
+    const shared = (id: string) => id !== q.wordId && [...id].some((c) => "农村".includes(c));
+    if (q.difficulty === "hard") expect(q.options.filter(shared).length).toBeGreaterThanOrEqual(1);
+    const hard = all.filter((x) => x.difficulty === "hard");
+    for (const h of hard) expect(h.options).toHaveLength(4);
   });
 });

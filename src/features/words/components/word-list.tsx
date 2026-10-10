@@ -6,7 +6,16 @@ import { useDeferredValue, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { words } from "@/content/words";
-import { KNOWN_STRENGTH, MAX_STRENGTH, type WordStatus, statusOf } from "@/features/flashcards/lib/schedule";
+import {
+  FAST_TRACK_GAP,
+  FAST_TRACK_STRENGTH,
+  KNOWN_STRENGTH,
+  MAX_STRENGTH,
+  WRONG_PENALTY,
+  type WordStatus,
+  gapFor,
+  statusOf,
+} from "@/features/flashcards/lib/schedule";
 import { plainPinyin } from "@/lib/pinyin";
 import { cn } from "@/lib/utils";
 
@@ -14,22 +23,38 @@ import { ExampleSentence } from "./example-sentence";
 import { STATUS_DOT, STATUS_LABEL, StatusBadge } from "./status-badge";
 
 type Filter = "all" | WordStatus;
+type Sort = "az" | "common";
 
 const FILTERS: Filter[] = ["all", "new", "learning", "known"];
 const PAGE = 100;
 
 /** Search keys, built once: tone-less pinyin, and every meaning in English and Indonesian. */
-const searchable = words.map((w) => ({
+const byCommon = words.map((w) => ({
   word: w,
   pinyin: plainPinyin(w.pinyin),
   meanings: [w.gloss, w.indonesian, ...w.meanings].join(" ").toLowerCase(),
 }));
 
+/** Dictionary order, like the official list: pinyin without tones, then tones, then characters. */
+const byPinyin = [...byCommon].sort(
+  (a, b) =>
+    a.pinyin.localeCompare(b.pinyin) ||
+    a.word.pinyin.localeCompare(b.word.pinyin) ||
+    a.word.hanzi.localeCompare(b.word.hanzi, "zh"),
+);
+
 const HAS_HANZI = /\p{Script=Han}/u;
 
-export function WordList({ strengths }: { strengths: Record<string, number> }) {
+export type WordProgress = Record<string, { strength: number; dueTest: number }>;
+
+export function WordList({ progress, nextTest }: { progress: WordProgress; nextTest: number }) {
+  const strengths = useMemo(
+    () => Object.fromEntries(Object.entries(progress).map(([id, p]) => [id, p.strength])),
+    [progress],
+  );
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
+  const [sort, setSort] = useState<Sort>("az");
   const [shown, setShown] = useState(PAGE);
   const [open, setOpen] = useState<string | null>(null);
   // Typing stays responsive while 1,300 rows re-filter behind it.
@@ -44,7 +69,7 @@ export function WordList({ strengths }: { strengths: Record<string, number> }) {
   const results = useMemo(() => {
     const q = deferredQuery.trim().toLowerCase();
     const qPinyin = plainPinyin(q);
-    return searchable
+    return (sort === "az" ? byPinyin : byCommon)
       .filter(({ word, pinyin, meanings }) => {
         if (filter !== "all" && statusOf(strengths[word.id]) !== filter) return false;
         if (!q) return true;
@@ -52,7 +77,7 @@ export function WordList({ strengths }: { strengths: Record<string, number> }) {
         return (qPinyin && pinyin.includes(qPinyin)) || meanings.includes(q);
       })
       .map((s) => s.word);
-  }, [deferredQuery, filter, strengths]);
+  }, [deferredQuery, filter, sort, strengths]);
 
   return (
     <div className="space-y-4">
@@ -99,9 +124,35 @@ export function WordList({ strengths }: { strengths: Record<string, number> }) {
         </div>
       </div>
 
-      <p className="text-muted-foreground text-sm" aria-live="polite">
-        <span className="font-numeric">{results.length}</span> word{results.length === 1 ? "" : "s"}
-      </p>
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <p className="text-muted-foreground text-sm" aria-live="polite">
+          <span className="font-numeric">{results.length}</span> word{results.length === 1 ? "" : "s"}
+        </p>
+        <div role="group" aria-label="Sort words" className="flex items-center gap-1 text-sm">
+          <span className="text-muted-foreground mr-1">Sort</span>
+          {(
+            [
+              ["az", "A–Z"],
+              ["common", "Most common"],
+            ] as const
+          ).map(([value, label]) => (
+            <Button
+              key={value}
+              type="button"
+              size="sm"
+              variant={sort === value ? "secondary" : "ghost"}
+              aria-pressed={sort === value}
+              onClick={() => {
+                setSort(value);
+                setShown(PAGE);
+              }}
+              className="cursor-pointer"
+            >
+              {label}
+            </Button>
+          ))}
+        </div>
+      </div>
 
       {results.length === 0 ? (
         <div className="text-muted-foreground rounded-xl border border-dashed p-10 text-center text-sm">
@@ -145,13 +196,13 @@ export function WordList({ strengths }: { strengths: Record<string, number> }) {
                     <div className="flex flex-wrap items-center gap-2">
                       {/* The row already shows status on wider screens. */}
                       <StatusBadge status={statusOf(strengths[w.id])} className="sm:hidden" />
-                      {strengths[w.id] !== undefined ? (
+                      {progress[w.id] !== undefined ? (
                         <span className="text-muted-foreground text-xs">
                           Strength{" "}
                           <span className="font-numeric">
-                            {strengths[w.id]}/{MAX_STRENGTH}
+                            {progress[w.id].strength}/{MAX_STRENGTH}
                           </span>
-                          {strengths[w.id] < KNOWN_STRENGTH ? ` · known at ${KNOWN_STRENGTH}` : ""}
+                          {progress[w.id].strength < KNOWN_STRENGTH ? ` · known at ${KNOWN_STRENGTH}` : ""}
                         </span>
                       ) : null}
                       {w.pos.map((p) => (
@@ -160,6 +211,7 @@ export function WordList({ strengths }: { strengths: Record<string, number> }) {
                         </span>
                       ))}
                     </div>
+                    <NextAppearance entry={progress[w.id]} nextTest={nextTest} />
                     {w.indonesian ? (
                       <p>
                         <span className="text-muted-foreground text-xs">Indonesian · </span>
@@ -195,5 +247,36 @@ export function WordList({ strengths }: { strengths: Record<string, number> }) {
         Dictionary senses: complete-hsk-vocabulary (MIT) and CC-CEDICT (CC BY-SA 4.0).
       </p>
     </div>
+  );
+}
+
+/** When the word is next tested, and what a right or wrong answer would do. */
+function NextAppearance({
+  entry,
+  nextTest,
+}: {
+  entry: { strength: number; dueTest: number } | undefined;
+  nextTest: number;
+}) {
+  if (!entry) {
+    return (
+      <p className="text-muted-foreground text-xs">
+        Not tested yet. Right on the first try (not a quick guess): strength {FAST_TRACK_STRENGTH},
+        checked again {FAST_TRACK_GAP} tests later.
+      </p>
+    );
+  }
+  const { strength, dueTest } = entry;
+  const away = dueTest - nextTest;
+  const up = Math.min(MAX_STRENGTH, strength + 1);
+  const down = Math.max(0, strength - WRONG_PENALTY);
+  return (
+    <p className="text-muted-foreground text-xs">
+      <span className="text-foreground">
+        {away <= 0 ? "Due in your next test" : `Back in test #${dueTest} (${away} test${away === 1 ? "" : "s"} away)`}
+      </span>
+      {" · "}Right: strength {up}, then {gapFor(up)} tests later · Wrong: strength {down}, back the
+      next test.
+    </p>
   );
 }

@@ -24,13 +24,14 @@ import { cn } from "@/lib/utils";
 
 import { DECK_SIZES, buildDeck, isDue } from "../lib/deck";
 import { FAIL_WRONG_RATIO, GUESS_MS, MAX_ANSWER_MS, MAX_LOCK_MS, failAt, formatLock, lockDurationMs } from "../lib/lockout";
+import { nextPace } from "../lib/practice-pace";
 import { statusOf } from "../lib/schedule";
 import { type Question, buildQuestions } from "../lib/questions";
 import { type TestResult, submitTest } from "../server/actions";
 import type { FlashcardInfo, ProgressRow, TestSummary } from "../server/queries";
+import { savePace, usePracticePace } from "./use-practice-pace";
 
 /** Practice gets this long per card before the test starts on its own. */
-const PRACTICE_MS_PER_CARD = 15_000;
 
 type Answer = { wordId: string; chosenId: string; ms: number };
 
@@ -52,6 +53,7 @@ export function FlashcardStudio({
   const router = useRouter();
   const [phase, setPhase] = useState<Phase>({ name: "setup" });
   const [size, setSize] = useState<number>(20);
+  const pace = usePracticePace();
   // The server's answer after a test, in case it lands before the refreshed
   // props do.
   const [resultLock, setResultLock] = useState<number | null>(null);
@@ -71,15 +73,16 @@ export function FlashcardStudio({
       name: "practice",
       deck: deck.words,
       startedAt: Date.now(),
-      durationMs: deck.words.length * PRACTICE_MS_PER_CARD,
+      durationMs: deck.words.length * pace,
     });
   }
 
-  function startTest(deck: Word[]) {
+  function startTest(deck: Word[], startedAt: number, timedOut: boolean) {
     if (isLockedNow()) {
       toast.error("Tests are locked for now. Keep practising.");
       return;
     }
+    savePace(nextPace(pace, { cards: deck.length, usedMs: Date.now() - startedAt, timedOut }));
     setPhase({ name: "test", deck, questions: buildQuestions(deck, words, Math.random) });
   }
 
@@ -94,7 +97,7 @@ export function FlashcardStudio({
         lockedUntil={lockedUntil}
         now={now}
         isLockedNow={isLockedNow}
-        onStartTest={() => startTest(phase.deck)}
+        onStartTest={(timedOut) => startTest(phase.deck, phase.startedAt, timedOut)}
         onQuit={() => setPhase({ name: "setup" })}
       />
     );
@@ -137,6 +140,7 @@ export function FlashcardStudio({
       lockedUntil={lockedUntil}
       now={now}
       size={size}
+      pace={pace}
       onSize={setSize}
       onStart={startPractice}
       recentTests={recentTests}
@@ -153,6 +157,7 @@ function Setup({
   lockedUntil,
   now,
   size,
+  pace,
   onSize,
   onStart,
   recentTests,
@@ -163,6 +168,8 @@ function Setup({
   lockedUntil: number | null;
   now: number | null;
   size: number;
+  /** Practice ms per card. */
+  pace: number;
   onSize: (n: number) => void;
   onStart: () => void;
   recentTests: TestSummary[];
@@ -222,7 +229,7 @@ function Setup({
               >
                 <span className="font-numeric block text-lg font-semibold">{n}</span>
                 <span className="text-muted-foreground block text-xs">
-                  {formatCountdown(n * PRACTICE_MS_PER_CARD)} practice
+                  {formatCountdown(n * pace)} practice
                 </span>
               </button>
             ))}
@@ -313,7 +320,8 @@ function Practice({
   lockedUntil: number | null;
   now: number | null;
   isLockedNow: () => boolean;
-  onStartTest: () => void;
+  /** `timedOut` when the timer started it rather than the learner. */
+  onStartTest: (timedOut: boolean) => void;
   onQuit: () => void;
 }) {
   const [index, setIndex] = useState(0);
@@ -322,8 +330,7 @@ function Practice({
   const [timeUp, setTimeUp] = useState(false);
 
   const word = deck[index];
-  const allFlipped = flipped.size === deck.length;
-  const canTest = (allFlipped || timeUp) && !locked;
+  const canTest = !locked;
   const remaining = now === null ? durationMs : startedAt + durationMs - now;
 
   function flip() {
@@ -340,7 +347,7 @@ function Practice({
   // in which case practice simply carries on.
   const onTimeUp = useEffectEvent(() => {
     setTimeUp(true);
-    if (!isLockedNow()) onStartTest();
+    if (!isLockedNow()) onStartTest(true);
   });
   useEffect(() => {
     const t = setTimeout(onTimeUp, Math.max(0, startedAt + durationMs - Date.now()));
@@ -457,7 +464,7 @@ function Practice({
           size="lg"
           className="h-11 w-full cursor-pointer sm:w-auto sm:px-8"
           disabled={!canTest}
-          onClick={onStartTest}
+          onClick={() => onStartTest(false)}
         >
           Start test
         </Button>
@@ -467,10 +474,8 @@ function Practice({
               Tests unlock in{" "}
               <span className="font-numeric">{formatCountdown(lockedUntil - now)}</span>.
             </>
-          ) : canTest ? (
-            "Ready when you are."
           ) : (
-            "Flip every card to unlock the test, or wait for the timer."
+            "Start whenever you are ready. Starting early shortens next time's timer; running out lengthens it."
           )}
         </p>
       </div>
@@ -479,6 +484,9 @@ function Practice({
 }
 
 /* ──────────────────────────────── Test ─────────────────────────────── */
+
+/** How long a right answer stays on screen before the next question. */
+const AUTO_NEXT_MS = 600;
 
 const PROMPT: Record<Question["kind"], string> = {
   meaning: "What does it mean?",
@@ -539,6 +547,15 @@ function Test({
       }
     });
   }
+
+  // A right answer moves on by itself; a wrong one waits for Next, so the
+  // correct answer can be read first.
+  const autoNext = useEffectEvent(() => next());
+  useEffect(() => {
+    if (picked === null || picked !== q.wordId) return;
+    const t = setTimeout(autoNext, AUTO_NEXT_MS);
+    return () => clearTimeout(t);
+  }, [picked, q.wordId]);
 
   // The first question's clock starts when the test mounts.
   useEffect(() => {
@@ -724,11 +741,52 @@ function Results({
         </section>
       ) : null}
 
+      <ComesBack result={result} answers={answers} />
+
       <div className="flex justify-center">
         <Button size="lg" variant="outline" className="cursor-pointer" onClick={onAgain}>
           <RotateCcw aria-hidden /> New session
         </Button>
       </div>
     </div>
+  );
+}
+
+/** Every word in the test: its strength before → after, and the test it returns in. */
+function ComesBack({ result, answers }: { result: TestResult; answers: Answer[] }) {
+  const right = new Set(answers.filter((a) => a.chosenId === a.wordId).map((a) => a.wordId));
+  const rows = [...result.schedule].sort((a, b) => a.dueTest - b.dueTest || a.strength - b.strength);
+  return (
+    <section className="space-y-3">
+      <h2 className="text-sm font-medium">When each word comes back</h2>
+      <ul className="bg-card divide-y rounded-xl border text-sm">
+        {rows.map((r) => {
+          const w = getWord(r.wordId)!;
+          const ok = right.has(r.wordId);
+          const inTests = r.dueTest - result.testNumber;
+          return (
+            <li key={r.wordId} className="flex items-center gap-3 px-4 py-2.5">
+              {ok ? (
+                <Check aria-label="Right" className="text-success size-4 shrink-0" />
+              ) : (
+                <X aria-label="Wrong" className="text-destructive size-4 shrink-0" />
+              )}
+              <span className="font-hanzi w-16 shrink-0 text-lg">{w.hanzi}</span>
+              <span className="text-muted-foreground font-numeric min-w-0 flex-1 text-xs">
+                {r.before === null ? "new" : r.before} → {r.strength}
+                {statusOf(r.strength) === "known" ? " · known" : ""}
+              </span>
+              <span className="font-numeric shrink-0 text-right text-xs">
+                test #{r.dueTest}
+                <span className="text-muted-foreground">
+                  {" "}
+                  · {inTests === 1 ? "next test" : `in ${inTests} tests`}
+                </span>
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
   );
 }

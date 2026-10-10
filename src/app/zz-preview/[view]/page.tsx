@@ -38,7 +38,12 @@ export default async function PreviewPage({ params }: PageProps<"/zz-preview/[vi
         <PageHeader title="Words" />
         <WordsTabs />
         <div className="mt-6">
-          <WordList strengths={Object.fromEntries(s.progress.map((p) => [p.wordId, p.strength]))} />
+          <WordList
+            progress={Object.fromEntries(
+              s.progress.map((p) => [p.wordId, { strength: p.strength, dueTest: p.dueTest }]),
+            )}
+            nextTest={s.info.nextTest}
+          />
         </div>
       </PageContainer>
     ),

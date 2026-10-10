@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 
-import { getProgress } from "@/features/flashcards/server/queries";
+import { getFlashcardInfo, getProgress } from "@/features/flashcards/server/queries";
 import { WordList } from "@/features/words/components/word-list";
 
 export const metadata: Metadata = { title: "Word list" };
 
 export default async function WordsPage() {
-  const progress = await getProgress();
-  const strengths = Object.fromEntries(progress.map((p) => [p.wordId, p.strength]));
-  return <WordList strengths={strengths} />;
+  const [progress, info] = await Promise.all([getProgress(), getFlashcardInfo()]);
+  const byWord = Object.fromEntries(
+    progress.map((p) => [p.wordId, { strength: p.strength, dueTest: p.dueTest }]),
+  );
+  return <WordList progress={byWord} nextTest={info.nextTest} />;
 }

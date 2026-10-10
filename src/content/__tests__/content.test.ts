@@ -9,8 +9,9 @@ import { describe, expect, it } from "vitest";
 import { confusables } from "../confusables";
 import { clozePassages } from "../cloze";
 import { orderingItems } from "../ordering";
+import { getOrderingNote } from "../ordering-notes";
 import { orderingPapers } from "../ordering-papers";
-import { words } from "../words";
+import { getWord, words } from "../words";
 
 const BLANK = "＿＿";
 const blanks = (s: string) => s.split(BLANK).length - 1;
@@ -88,6 +89,18 @@ describe("ordering", () => {
 
   it("has unique ids across your papers and the built-in set", () => {
     expect(unique(all.map((i) => i.id))).toBe(true);
+  });
+
+  it("has pinyin and its HSK 5 words for every item (rerun scripts/build-ordering-notes.ts)", () => {
+    for (const item of all) {
+      const note = getOrderingNote(item.id);
+      expect(note?.pinyin, item.id).toBeTruthy();
+      const sentence = item.chunks.join("");
+      for (const id of note!.words) {
+        expect(getWord(id), `${item.id}: ${id}`).toBeDefined();
+        expect(sentence, item.id).toContain(getWord(id)!.hanzi);
+      }
+    }
   });
 
   it("marks every item from your papers with its source", () => {

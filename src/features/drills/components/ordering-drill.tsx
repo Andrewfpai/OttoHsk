@@ -5,8 +5,10 @@ import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { orderingItems } from "@/content/ordering";
+import { getOrderingNote } from "@/content/ordering-notes";
 import { orderingPapers } from "@/content/ordering-papers";
 import type { OrderingItem } from "@/content/types";
+import { getWord } from "@/content/words";
 import { seededRng, shuffle } from "@/lib/random";
 import { cn } from "@/lib/utils";
 
@@ -60,6 +62,7 @@ export function OrderingDrill({ stats, seed }: { stats: Record<string, ItemStat>
   const [results, setResults] = useState<Record<string, boolean>>({});
 
   const item = queue[index % queue.length];
+  const note = getOrderingNote(item.id);
   const order = chunkOrder(item.chunks.length, seed0 + index);
 
   const summary = summarize(DRILL_ITEM_IDS.ordering, withSession(summaryBase, results));
@@ -175,9 +178,32 @@ export function OrderingDrill({ stats, seed }: { stats: Record<string, ItemStat>
                   {checked ? "Correct" : "Not quite. The answer:"}
                 </p>
                 <p className="font-hanzi text-2xl">{sentenceOf(item.chunks, item.end)}</p>
+                {note ? <p className="text-primary text-sm">{note.pinyin}</p> : null}
                 <p className="text-muted-foreground text-sm">{item.translation}</p>
               </div>
             </div>
+            {note && note.words.length > 0 ? (
+              <div className="space-y-2 rounded-xl border p-4">
+                <h3 className="text-sm font-medium">HSK 5 words in this sentence</h3>
+                <ul className="space-y-2 text-sm">
+                  {note.words.map((id) => {
+                    const w = getWord(id);
+                    if (!w) return null;
+                    return (
+                      <li key={id} className="grid grid-cols-[auto_1fr] items-baseline gap-x-3">
+                        <span className="font-hanzi text-lg">{w.hanzi}</span>
+                        <span>
+                          <span className="text-primary">{w.pinyin}</span> {w.gloss}
+                          {w.indonesian ? (
+                            <span className="text-muted-foreground block text-xs">{w.indonesian}</span>
+                          ) : null}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ) : null}
             <div className="bg-muted/50 space-y-1 rounded-xl p-4 text-sm">
               <p className="font-medium">{item.point}</p>
               <p className="text-muted-foreground">{item.explanation}</p>

@@ -39,6 +39,16 @@ export type TestResult = {
   passed: boolean;
   /** Epoch ms, or null when the test passed. */
   lockedUntil: number | null;
+  /** Each word's strength before and after, and the test it is due back in. */
+  schedule: WordSchedule[];
+};
+
+export type WordSchedule = {
+  wordId: string;
+  /** null for a word tested for the first time. */
+  before: number | null;
+  strength: number;
+  dueTest: number;
 };
 
 /**
@@ -88,7 +98,7 @@ export async function submitTest(input: unknown): Promise<ActionResult<TestResul
       const right = a.chosenId === a.wordId;
       if (right) correct++;
       else if (a.ms < GUESS_MS) guesses++;
-      const next = nextSchedule(strengths.get(a.wordId) ?? null, right, testNumber);
+      const next = nextSchedule(strengths.get(a.wordId) ?? null, right, testNumber, a.ms);
       return {
         userId: user.id,
         wordId: a.wordId,
@@ -141,6 +151,12 @@ export async function submitTest(input: unknown): Promise<ActionResult<TestResul
       guesses,
       passed,
       lockedUntil: nextLock.lockedUntil?.getTime() ?? null,
+      schedule: rows.map((r) => ({
+        wordId: r.wordId,
+        before: strengths.get(r.wordId) ?? null,
+        strength: r.strength,
+        dueTest: r.dueTest,
+      })),
     });
   });
 }
