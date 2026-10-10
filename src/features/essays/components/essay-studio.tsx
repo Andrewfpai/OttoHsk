@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { scenes } from "@/content/essay-scenes";
-import { words as allWords } from "@/content/words";
+import { useWordBank } from "@/components/level/level-provider";
 import { formatCountdown, useNow } from "@/hooks/use-now";
 import { formatDate } from "@/lib/dates";
 import { EXAM_TIME_ZONE } from "@/lib/exam";
@@ -16,7 +16,7 @@ import { type Rng, seededRng, shuffle } from "@/lib/random";
 import { cn } from "@/lib/utils";
 
 import { ESSAY_MS, TARGET_CHARS, countChars, lengthState, wordsUsed } from "../lib/checks";
-import type { EssayKind } from "../lib/feedback";
+import type { ShortEssayKind } from "../lib/feedback";
 import { type EssayResult, checkEssay } from "../server/actions";
 import type { EssayRow } from "../server/queries";
 import { FeedbackView } from "./feedback-view";
@@ -51,10 +51,10 @@ export function EssayStudio({
   ai: { enabled: boolean; models: string[] };
   recent: EssayRow[];
 }) {
-  const allIds = allWords.map((w) => w.id);
+  const allIds = useWordBank().words.map((w) => w.id);
   const minePool = startedWordIds.length >= 5 ? startedWordIds : allIds;
 
-  const [kind, setKind] = useState<EssayKind>("q99");
+  const [kind, setKind] = useState<ShortEssayKind>("q99");
   const [source, setSource] = useState<WordSource>("mine");
   // Seeded, so the server render and the first client render agree.
   const [given, setGiven] = useState(() => pickFive(minePool, seededRng(seed)));

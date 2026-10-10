@@ -1,6 +1,7 @@
 "use server";
 
 import { and, eq, ne, sql } from "drizzle-orm";
+import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -12,7 +13,7 @@ import { requireUser } from "@/lib/auth-guard";
 import { hashPassword, verifyPassword } from "@/lib/password";
 import { SESSION_COOKIE, SESSION_COOKIE_OPTIONS, SESSION_MAX_AGE_S } from "@/lib/session-cookie";
 
-import { passwordSignInSchema, setPasswordSchema } from "../schema";
+import { passwordSignInSchema, setPasswordSchema, studySettingsSchema } from "../schema";
 
 /**
  * Set or change your own password. Signs you out everywhere else, so a
@@ -80,4 +81,20 @@ export async function signInWithPassword(input: unknown): Promise<ActionResult> 
   (await cookies()).set(SESSION_COOKIE, sessionToken, { ...SESSION_COOKIE_OPTIONS, expires });
 
   redirect("/dashboard");
+}
+
+/**
+ * The learner's HSK level and exam date. Every tab follows the level;
+ * progress is kept per level, so switching back and forth loses nothing.
+ */
+export async function updateStudySettings(input: unknown): Promise<ActionResult> {
+  const user = await requireUser();
+  const parsed = studySettingsSchema.safeParse(input);
+  if (!parsed.success) return fail(parsed.error.issues[0]?.message ?? "Check the settings.");
+  await db
+    .update(users)
+    .set({ level: parsed.data.level, examDate: parsed.data.examDate })
+    .where(eq(users.id, user.id));
+  revalidatePath("/", "layout");
+  return ok(undefined);
 }

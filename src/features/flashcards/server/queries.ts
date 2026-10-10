@@ -1,6 +1,6 @@
-import { desc, eq } from "drizzle-orm";
+import { and, desc, eq } from "drizzle-orm";
 
-import { getWord } from "@/content/words";
+import { wordBank } from "@/content/words";
 import { db } from "@/db";
 import { flashcardState, flashcardTests, wordProgress } from "@/db/schema";
 import { requireUser } from "@/lib/auth-guard";
@@ -8,15 +8,18 @@ import { requireUser } from "@/lib/auth-guard";
 /** Serializable across the server/client boundary. */
 export type ProgressRow = { wordId: string; strength: number; dueTest: number };
 
+/** Progress on the learner's current level's words. */
 export async function getProgress(): Promise<ProgressRow[]> {
   const user = await requireUser();
+  const bank = wordBank(user.level);
   const rows = await db
     .select({ wordId: wordProgress.wordId, strength: wordProgress.strength, dueTest: wordProgress.dueTest })
     .from(wordProgress)
     .where(eq(wordProgress.userId, user.id));
-  // Progress on a word that has left the list (it was rebuilt from the
-  // official 1,300) is kept, but never counted or shown.
-  return rows.filter((r) => getWord(r.wordId));
+  // Only this level's words. Ids never repeat across levels, and progress on
+  // a word that has left a list (HSK 5 was rebuilt from the official 1,300)
+  // is kept but never counted or shown.
+  return rows.filter((r) => bank.getWord(r.wordId));
 }
 
 export type FlashcardInfo = {
@@ -33,7 +36,7 @@ export async function getFlashcardInfo(): Promise<FlashcardInfo> {
   const [row] = await db
     .select()
     .from(flashcardState)
-    .where(eq(flashcardState.userId, user.id))
+    .where(and(eq(flashcardState.userId, user.id), eq(flashcardState.level, user.level)))
     .limit(1);
   const testsTaken = row?.testsTaken ?? 0;
   return {
@@ -59,7 +62,7 @@ export async function getRecentTests(limit = 10): Promise<TestSummary[]> {
   const rows = await db
     .select()
     .from(flashcardTests)
-    .where(eq(flashcardTests.userId, user.id))
+    .where(and(eq(flashcardTests.userId, user.id), eq(flashcardTests.level, user.level)))
     .orderBy(desc(flashcardTests.takenAt))
     .limit(limit);
   return rows.map((r) => ({

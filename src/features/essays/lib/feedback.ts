@@ -9,7 +9,9 @@ import { z } from "zod";
 
 import type { ChatMessage } from "./fallback";
 
-export type EssayKind = "q99" | "q100";
+export type EssayKind = "q99" | "q100" | "retell";
+/** HSK 5's two short essays. */
+export type ShortEssayKind = "q99" | "q100";
 
 export const feedbackSchema = z.object({
   score: z.coerce.number().min(0).max(100).transform(Math.round),
@@ -29,6 +31,13 @@ export const feedbackSchema = z.object({
     .array(z.string())
     .default([])
     .transform((a) => a.slice(0, 5)),
+  /** Retelling only: which of the story's key points the retelling kept. */
+  coverage: z
+    .array(z.object({ point: z.string(), kept: z.boolean(), note: z.string().default("") }))
+    .default([])
+    .transform((a) => a.slice(0, 10)),
+  /** Retelling only: a word on the title. */
+  titleNote: z.string().default(""),
 });
 
 export type Feedback = z.infer<typeof feedbackSchema>;
@@ -50,7 +59,7 @@ const SHAPE = `{
   "tips": ["up to 3 short English tips"]
 }`;
 
-export function buildMessages(kind: EssayKind, prompt: string, body: string): ChatMessage[] {
+export function buildMessages(kind: ShortEssayKind, prompt: string, body: string): ChatMessage[] {
   const task =
     kind === "q99"
       ? `HSK 5 Writing question 99: write a short passage of about 80 Chinese characters that uses ALL of these five words: ${prompt}.`

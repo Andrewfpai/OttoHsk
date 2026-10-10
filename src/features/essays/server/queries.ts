@@ -1,4 +1,4 @@
-import { desc, eq } from "drizzle-orm";
+import { and, desc, eq, inArray } from "drizzle-orm";
 
 import { db } from "@/db";
 import { essays } from "@/db/schema";
@@ -19,12 +19,14 @@ export type EssayRow = {
   feedback: Feedback | null;
 };
 
+/** The learner's current level's writing: Q99/Q100 for HSK 5, retellings for HSK 6. */
 export async function getRecentEssays(limit = 15): Promise<EssayRow[]> {
   const user = await requireUser();
+  const kinds: EssayKind[] = user.level === 5 ? ["q99", "q100"] : ["retell"];
   const rows = await db
     .select()
     .from(essays)
-    .where(eq(essays.userId, user.id))
+    .where(and(eq(essays.userId, user.id), inArray(essays.kind, kinds)))
     .orderBy(desc(essays.createdAt))
     .limit(limit);
   return rows.map((r) => {

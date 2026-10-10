@@ -4,12 +4,11 @@ import { useState } from "react";
 
 import { StickyActions } from "@/components/sticky-actions";
 import { Button } from "@/components/ui/button";
-import { confusables } from "@/content/confusables";
 import type { ConfusableSet } from "@/content/types";
 import { seededRng, shuffle } from "@/lib/random";
 import { cn } from "@/lib/utils";
 
-import { DRILL_ITEM_IDS, questionId } from "../lib/items";
+import { questionId } from "../lib/question-id";
 import { type ItemStat, practiceOrder, summarize, withSession } from "../lib/stats";
 import { BlankSentence, Choices } from "./choice-question";
 import { DrillHeader } from "./drill-header";
@@ -17,14 +16,21 @@ import { useRecord } from "./use-record";
 
 type Item = { set: ConfusableSet; index: number; id: string };
 
-const ITEMS: Item[] = confusables.flatMap((set) =>
-  set.questions.map((_, index) => ({ set, index, id: questionId(set.id, index) })),
-);
+function itemsOf(sets: ConfusableSet[]): Item[] {
+  return sets.flatMap((set) =>
+    set.questions.map((_, index) => ({ set, index, id: questionId(set.id, index) })),
+  );
+}
 
+/** `sets` and `itemIds` are the learner's level's, chosen on the server. */
 export function ConfusablesDrill({
+  sets,
+  itemIds,
   stats,
   seed,
 }: {
+  sets: ConfusableSet[];
+  itemIds: string[];
   stats: Record<string, ItemStat>;
   seed: number;
 }) {
@@ -32,7 +38,7 @@ export function ConfusablesDrill({
   const [mode, setMode] = useState<"drill" | "browse">("drill");
   // Fixed at mount from a server-chosen seed, so server and client agree and a
   // stats refresh never reshuffles the drill in progress.
-  const [queue] = useState(() => practiceOrder(ITEMS, (i) => i.id, stats, seededRng(seed)));
+  const [queue] = useState(() => practiceOrder(itemsOf(sets), (i) => i.id, stats, seededRng(seed)));
   // The seed prop changes whenever the page re-renders on the server; option
   // order must not, or the buttons would move under your finger.
   const [seed0] = useState(seed);
@@ -49,7 +55,7 @@ export function ConfusablesDrill({
   );
   const pinyinOf = (hanzi: string) => item.set.words.find((w) => w.hanzi === hanzi)?.pinyin;
 
-  const summary = summarize(DRILL_ITEM_IDS.confusable, withSession(stats, session));
+  const summary = summarize(itemIds, withSession(stats, session));
 
   function pick(option: string) {
     if (picked !== null) return;
@@ -71,7 +77,7 @@ export function ConfusablesDrill({
         {(
           [
             ["drill", "Drill"],
-            ["browse", `All pairs (${confusables.length})`],
+            ["browse", `All pairs (${sets.length})`],
           ] as const
         ).map(([value, label]) => (
           <button
@@ -93,7 +99,7 @@ export function ConfusablesDrill({
 
       {mode === "browse" ? (
         <ul className="grid gap-3 md:grid-cols-2">
-          {confusables.map((set) => (
+          {sets.map((set) => (
             <li key={set.id} className="bg-card space-y-3 rounded-xl border p-4">
               <SetWords set={set} />
               <p className="text-muted-foreground text-sm">{set.explanation}</p>

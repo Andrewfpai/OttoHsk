@@ -5,6 +5,7 @@ import { AccessManager } from "@/features/access/components/access-manager";
 import { InviteLinksManager } from "@/features/access/components/invite-links-manager";
 import { getAccessList } from "@/features/access/server/queries";
 import { SetPasswordForm } from "@/features/account/components/set-password-form";
+import { StudySettingsForm } from "@/features/account/components/study-settings-form";
 import { requireUser } from "@/lib/auth-guard";
 import { EXAM_TIME_ZONE } from "@/lib/exam";
 
@@ -16,6 +17,16 @@ export default async function SettingsPage() {
   return (
     <PageContainer className="max-w-3xl">
       <PageHeader title="Settings" description={`Signed in as ${user.email}.`} />
+
+      <section aria-labelledby="study-heading" className="bg-card mb-6 rounded-xl border p-4 sm:p-6">
+        <h2 id="study-heading" className="text-sm font-medium">
+          Study
+        </h2>
+        <p className="text-muted-foreground mt-1 mb-4 text-xs">
+          Every tab follows the level you pick: words, flashcards, drills, writing and mock tests.
+        </p>
+        <StudySettingsForm level={user.level} examDate={user.examDate} />
+      </section>
 
       <section aria-labelledby="password-heading" className="bg-card mb-6 rounded-xl border p-4 sm:p-6">
         <h2 id="password-heading" className="text-sm font-medium">

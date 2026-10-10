@@ -3,17 +3,16 @@
 import { Check, RotateCcw, X } from "lucide-react";
 import { useState } from "react";
 
+import { useWordBank } from "@/components/level/level-provider";
 import { StickyActions } from "@/components/sticky-actions";
 import { Button } from "@/components/ui/button";
 import { orderingItems } from "@/content/ordering";
 import { getOrderingNote } from "@/content/ordering-notes";
 import { orderingPapers } from "@/content/ordering-papers";
 import type { OrderingItem } from "@/content/types";
-import { getWord } from "@/content/words";
 import { seededRng, shuffle } from "@/lib/random";
 import { cn } from "@/lib/utils";
 
-import { DRILL_ITEM_IDS } from "../lib/items";
 import { isCorrectOrder, sentenceOf } from "../lib/ordering";
 import { type ItemStat, interleave, practiceOrder, summarize, withSession } from "../lib/stats";
 import { DrillHeader } from "./drill-header";
@@ -21,6 +20,9 @@ import { useRecord } from "./use-record";
 
 /** Share of each drill taken from your own papers; the rest is built-in. */
 const PAPERS_SHARE = 0.6;
+
+/** HSK 5 only (HSK 6 has no sentence ordering), so its content lives here. */
+const ITEM_IDS = [...orderingPapers, ...orderingItems].map((item) => item.id);
 
 function buildQueue(stats: Record<string, ItemStat>, seed: number): OrderingItem[] {
   const id = (i: OrderingItem) => i.id;
@@ -48,6 +50,7 @@ function chunkOrder(count: number, seed: number): number[] {
 }
 
 export function OrderingDrill({ stats, seed }: { stats: Record<string, ItemStat>; seed: number }) {
+  const { getWord } = useWordBank();
   const record = useRecord();
   // Fixed at mount from a server-chosen seed, so server and client render the
   // same queue and a stats refresh never reshuffles a drill in progress.
@@ -66,7 +69,7 @@ export function OrderingDrill({ stats, seed }: { stats: Record<string, ItemStat>
   const note = getOrderingNote(item.id);
   const order = chunkOrder(item.chunks.length, seed0 + index);
 
-  const summary = summarize(DRILL_ITEM_IDS.ordering, withSession(summaryBase, results));
+  const summary = summarize(ITEM_IDS, withSession(summaryBase, results));
 
   function place(chunkIndex: number) {
     if (checked !== null) return;

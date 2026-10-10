@@ -1,0 +1,5581 @@
+{
+  "吃力": {
+    "gloss": "strenuous; requiring effort; exhausted",
+    "indonesian": "susah payah; memerlukan banyak tenaga; capek",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "爷爷年纪大了，爬楼梯越来越吃力。",
+      "en": "Grandpa is getting old, and climbing stairs is getting harder and harder for him."
+    }
+  },
+  "参谋": {
+    "gloss": "to give advice; adviser; staff officer",
+    "indonesian": "memberi saran; penasihat; perwira staf",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "我想买台电脑，你帮我参谋一下吧。",
+      "en": "I want to buy a computer; could you give me some advice?"
+    }
+  },
+  "勾结": {
+    "gloss": "to collude with; to collaborate secretly; to gang up",
+    "indonesian": "bersekongkol; berkomplot; bekerja sama secara diam-diam",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这家公司被发现与供应商勾结抬高价格。",
+      "en": "The company was found colluding with suppliers to push up prices."
+    }
+  },
+  "动荡": {
+    "gloss": "turbulent; unstable; turmoil; upheaval",
+    "indonesian": "bergejolak; tidak stabil; kekacauan; gejolak",
+    "pos": [
+      "adjective",
+      "noun"
+    ],
+    "example": {
+      "zh": "市场动荡的时候，投资要格外小心。",
+      "en": "When the market is turbulent, you must be especially careful with investments."
+    }
+  },
+  "充沛": {
+    "gloss": "abundant; plentiful; full of (energy)",
+    "indonesian": "berlimpah; melimpah; penuh (tenaga)",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "他每天坚持锻炼，所以精力很充沛。",
+      "en": "He exercises every day, so he is full of energy."
+    }
+  },
+  "会晤": {
+    "gloss": "to meet (formally); meeting; talks",
+    "indonesian": "bertemu (secara resmi); pertemuan; perundingan",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "两家公司的负责人下周将在上海会晤。",
+      "en": "The heads of the two companies will meet in Shanghai next week."
+    }
+  },
+  "亚军": {
+    "gloss": "runner-up; second place",
+    "indonesian": "juara kedua; runner-up",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "她在这次全国比赛中获得了亚军。",
+      "en": "She came second in this national competition."
+    }
+  },
+  "主权": {
+    "gloss": "sovereignty; sovereign rights",
+    "indonesian": "kedaulatan; hak berdaulat",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "每个国家都有权维护自己的主权。",
+      "en": "Every country has the right to safeguard its own sovereignty."
+    }
+  },
+  "主办": {
+    "gloss": "to host; to organize; to sponsor (an event)",
+    "indonesian": "menjadi tuan rumah; menyelenggarakan; mensponsori (acara)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这次国际会议由我们学校主办。",
+      "en": "This international conference is hosted by our school."
+    }
+  },
+  "眯": {
+    "gloss": "to narrow one's eyes; to squint; to take a nap",
+    "indonesian": "menyipitkan mata; memicingkan mata; tidur sebentar",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "阳光太刺眼，他不由得眯起了眼睛。",
+      "en": "The sunlight was so glaring that he couldn't help squinting."
+    }
+  },
+  "盛行": {
+    "gloss": "to be in vogue; to be prevalent; to be popular",
+    "indonesian": "sedang populer; merajalela; banyak dilakukan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "近年来，网上购物在年轻人中十分盛行。",
+      "en": "In recent years, online shopping has become very popular among young people."
+    }
+  },
+  "畅通": {
+    "gloss": "unimpeded; unblocked; flowing freely",
+    "indonesian": "lancar; tidak terhambat; mengalir bebas",
+    "pos": [
+      "adjective",
+      "verb"
+    ],
+    "example": {
+      "zh": "下班高峰过后，这条路就畅通了。",
+      "en": "After the evening rush hour, this road is clear."
+    }
+  },
+  "生疏": {
+    "gloss": "out of practice; rusty; unfamiliar",
+    "indonesian": "kaku karena lama tidak berlatih; tidak terbiasa; asing",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "好几年没弹钢琴了，手指都生疏了。",
+      "en": "I haven't played the piano for years, and my fingers are rusty."
+    }
+  },
+  "海拔": {
+    "gloss": "altitude; elevation; height above sea level",
+    "indonesian": "ketinggian di atas permukaan laut; elevasi",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这座山海拔三千多米，山顶常年积雪。",
+      "en": "This mountain is over 3,000 metres high, and its peak is snow-covered all year."
+    }
+  },
+  "斯文": {
+    "gloss": "refined; gentle; cultured",
+    "indonesian": "sopan dan halus; berbudaya; lemah lembut",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "他戴着眼镜，说话很斯文。",
+      "en": "He wears glasses and speaks in a gentle, refined way."
+    }
+  },
+  "悬挂": {
+    "gloss": "to hang; to suspend; (vehicle) suspension",
+    "indonesian": "menggantung; memasang (bendera dsb.); suspensi (kendaraan)",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "大厅的墙上悬挂着一幅山水画。",
+      "en": "A landscape painting hangs on the wall of the hall."
+    }
+  },
+  "堆积": {
+    "gloss": "to pile up; to accumulate; to heap up",
+    "indonesian": "menumpuk; bertumpuk; menimbun",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "假期结束后，桌上堆积了很多文件。",
+      "en": "After the holiday, lots of documents had piled up on the desk."
+    }
+  },
+  "坚韧": {
+    "gloss": "tenacious; tough and durable; resilient",
+    "indonesian": "ulet; tangguh; kuat dan liat",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "她凭着坚韧的意志完成了马拉松。",
+      "en": "She finished the marathon through sheer tenacity."
+    }
+  },
+  "唾弃": {
+    "gloss": "to spurn; to despise; to cast aside",
+    "indonesian": "mencampakkan; menghina; membuang dengan jijik",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "不讲诚信的商家最终会被顾客唾弃。",
+      "en": "Dishonest merchants will eventually be spurned by customers."
+    }
+  },
+  "觉悟": {
+    "gloss": "awareness; consciousness; to come to understand; enlightenment",
+    "indonesian": "kesadaran; menyadari; pencerahan",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "大家的环保觉悟越来越高了。",
+      "en": "People's environmental awareness is getting higher and higher."
+    }
+  },
+  "自发": {
+    "gloss": "spontaneous; voluntary; of one's own accord",
+    "indonesian": "spontan; sukarela; atas kemauan sendiri",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "居民们自发组织起来清理小区垃圾。",
+      "en": "The residents spontaneously organized themselves to clean up the rubbish in the neighbourhood."
+    }
+  },
+  "空隙": {
+    "gloss": "gap; space; interval; spare moment",
+    "indonesian": "celah; ruang kosong; jeda; waktu luang",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他利用工作的空隙看了几页书。",
+      "en": "He read a few pages in the gaps between work."
+    }
+  },
+  "狠心": {
+    "gloss": "heartless; cruel; to harden one's heart; to make a painful decision",
+    "indonesian": "tega; kejam; mengeraskan hati",
+    "pos": [
+      "adjective",
+      "verb"
+    ],
+    "example": {
+      "zh": "她狠心把心爱的小狗送给了朋友。",
+      "en": "She steeled herself and gave her beloved puppy to a friend."
+    }
+  },
+  "派别": {
+    "gloss": "school (of thought); faction; group; sect",
+    "indonesian": "aliran; faksi; kelompok; sekte",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "中国画有很多不同的派别。",
+      "en": "There are many different schools of Chinese painting."
+    }
+  },
+  "攻克": {
+    "gloss": "to overcome; to conquer (a difficulty); to capture",
+    "indonesian": "mengatasi; menaklukkan (kesulitan); merebut",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "科学家们终于攻克了这个技术难题。",
+      "en": "The scientists finally overcame this technical problem."
+    }
+  },
+  "意向": {
+    "gloss": "intention; intent; purpose",
+    "indonesian": "niat; maksud; tujuan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "双方已经签订了合作意向书。",
+      "en": "Both sides have signed a letter of intent to cooperate."
+    }
+  },
+  "开拓": {
+    "gloss": "to open up; to develop; to pioneer",
+    "indonesian": "membuka; mengembangkan; merintis",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "公司正在积极开拓海外市场。",
+      "en": "The company is actively opening up overseas markets."
+    }
+  },
+  "别致": {
+    "gloss": "unique; distinctive; novel and stylish",
+    "indonesian": "unik; khas; menarik dan lain daripada yang lain",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这家咖啡馆的装修风格很别致。",
+      "en": "This café is decorated in a very distinctive style."
+    }
+  },
+  "创业": {
+    "gloss": "to start a business; to found an enterprise; to build up",
+    "indonesian": "memulai usaha; merintis bisnis; membangun usaha",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他大学毕业后就和朋友一起创业了。",
+      "en": "After graduating from university, he started a business with friends."
+    }
+  },
+  "伤脑筋": {
+    "gloss": "troublesome; to cause a headache; knotty",
+    "indonesian": "memusingkan; bikin pusing; merepotkan",
+    "pos": [
+      "adjective",
+      "verb"
+    ],
+    "example": {
+      "zh": "孩子不爱吃饭，真让父母伤脑筋。",
+      "en": "The child won't eat, which is a real headache for the parents."
+    }
+  },
+  "为期": {
+    "gloss": "to last (for a period); to be scheduled for",
+    "indonesian": "berlangsung selama; dijadwalkan selama",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这次培训为期两周，下周一开始。",
+      "en": "This training lasts two weeks and starts next Monday."
+    }
+  },
+  "通货膨胀": {
+    "gloss": "inflation; currency inflation",
+    "indonesian": "inflasi; kenaikan harga umum",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "通货膨胀导致物价不断上涨。",
+      "en": "Inflation has caused prices to keep rising."
+    }
+  },
+  "端正": {
+    "gloss": "upright; proper; correct; to correct (an attitude)",
+    "indonesian": "tegak; lurus; benar; memperbaiki (sikap)",
+    "pos": [
+      "adjective",
+      "verb"
+    ],
+    "example": {
+      "zh": "只有端正学习态度，成绩才能提高。",
+      "en": "Only by correcting your attitude to study can your grades improve."
+    }
+  },
+  "港湾": {
+    "gloss": "harbour; bay; haven",
+    "indonesian": "pelabuhan; teluk; tempat berlindung",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "对我来说，家永远是最温暖的港湾。",
+      "en": "For me, home will always be the warmest haven."
+    }
+  },
+  "文献": {
+    "gloss": "literature (sources); documents; records",
+    "indonesian": "literatur; dokumen; catatan sejarah",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "写论文之前，要先查阅大量相关文献。",
+      "en": "Before writing a thesis, you must first consult a lot of relevant literature."
+    }
+  },
+  "崇敬": {
+    "gloss": "to revere; to esteem; veneration",
+    "indonesian": "menghormati; mengagungkan; rasa hormat",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "学生们对这位老教授充满了崇敬。",
+      "en": "The students are full of reverence for this old professor."
+    }
+  },
+  "对照": {
+    "gloss": "to compare; to contrast; to check against",
+    "indonesian": "membandingkan; mencocokkan; kontras",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "请对照原文检查一下译文有没有错误。",
+      "en": "Please check the translation against the original for errors."
+    }
+  },
+  "媒介": {
+    "gloss": "medium; intermediary; vehicle",
+    "indonesian": "media; perantara; sarana",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "语言是人们交流思想的媒介。",
+      "en": "Language is the medium through which people exchange ideas."
+    }
+  },
+  "处分": {
+    "gloss": "to punish; to discipline; disciplinary action",
+    "indonesian": "menghukum; memberi sanksi; tindakan disipliner",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "他因为考试作弊受到了学校的处分。",
+      "en": "He was disciplined by the school for cheating in an exam."
+    }
+  },
+  "和气": {
+    "gloss": "friendly; amiable; polite; harmony",
+    "indonesian": "ramah; bersahabat; sopan; keharmonisan",
+    "pos": [
+      "adjective",
+      "noun"
+    ],
+    "example": {
+      "zh": "这家店的老板说话很和气。",
+      "en": "The owner of this shop speaks in a very friendly way."
+    }
+  },
+  "霸道": {
+    "gloss": "overbearing; domineering; (of liquor, medicine) strong",
+    "indonesian": "sewenang-wenang; suka menguasai; (minuman, obat) keras",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "他太霸道了，从来不听别人的意见。",
+      "en": "He is too domineering and never listens to other people's opinions."
+    }
+  },
+  "赞叹": {
+    "gloss": "to praise highly; to marvel at; to exclaim in admiration",
+    "indonesian": "memuji; mengagumi; berdecak kagum",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "游客们看到这里的美景都赞叹不已。",
+      "en": "The tourists all marvelled at the beautiful scenery here."
+    }
+  },
+  "苦涩": {
+    "gloss": "bitter and astringent; pained; anguished",
+    "indonesian": "pahit dan sepat; getir; pedih",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "听到这个消息，他脸上露出苦涩的笑容。",
+      "en": "Hearing the news, a bitter smile appeared on his face."
+    }
+  },
+  "耸": {
+    "gloss": "to shrug; to tower; to rise high",
+    "indonesian": "mengangkat (bahu); menjulang; menjulang tinggi",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他耸了耸肩，表示自己也不知道。",
+      "en": "He shrugged to show that he didn't know either."
+    }
+  },
+  "科目": {
+    "gloss": "school subject; course; (accounting) item",
+    "indonesian": "mata pelajaran; mata kuliah; pos (akuntansi)",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "在所有考试科目中，我最擅长数学。",
+      "en": "Of all the exam subjects, I'm best at maths."
+    }
+  },
+  "点缀": {
+    "gloss": "to embellish; to adorn; to decorate",
+    "indonesian": "menghiasi; memperindah; hiasan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "几盆鲜花把房间点缀得很漂亮。",
+      "en": "A few pots of flowers made the room look very pretty."
+    }
+  },
+  "歌颂": {
+    "gloss": "to sing the praises of; to extol; to eulogize",
+    "indonesian": "memuji; mengagungkan; menyanjung",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这首歌歌颂了母亲伟大的爱。",
+      "en": "This song celebrates a mother's great love."
+    }
+  },
+  "杂交": {
+    "gloss": "to hybridize; to crossbreed; hybrid",
+    "indonesian": "menyilangkan; kawin silang; hibrida",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "杂交水稻大大提高了粮食产量。",
+      "en": "Hybrid rice has greatly increased grain output."
+    }
+  },
+  "暂且": {
+    "gloss": "for the time being; for now; temporarily",
+    "indonesian": "untuk sementara; sementara ini; untuk saat ini",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "这个问题我们暂且不讨论，先吃饭吧。",
+      "en": "Let's put this issue aside for now and eat first."
+    }
+  },
+  "嘱咐": {
+    "gloss": "to tell; to instruct; to exhort",
+    "indonesian": "berpesan; menasihati; memberi pesan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "出门前，妈妈嘱咐我路上注意安全。",
+      "en": "Before I left, Mum told me to be careful on the way."
+    }
+  },
+  "冷落": {
+    "gloss": "to treat coldly; to snub; to leave out in the cold; desolate",
+    "indonesian": "mengabaikan; memperlakukan dengan dingin; sepi",
+    "pos": [
+      "verb",
+      "adjective"
+    ],
+    "example": {
+      "zh": "他忙着工作，冷落了家里人。",
+      "en": "Busy with work, he neglected his family."
+    }
+  },
+  "一丝不苟": {
+    "gloss": "meticulous; scrupulous; not the least bit careless",
+    "indonesian": "sangat teliti; cermat; tidak ceroboh sedikit pun",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "王老师批改作业总是一丝不苟。",
+      "en": "Teacher Wang is always meticulous when marking homework."
+    }
+  },
+  "迟缓": {
+    "gloss": "slow; sluggish; tardy",
+    "indonesian": "lambat; lamban; tertunda",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "由于资金不足，工程进展十分迟缓。",
+      "en": "Due to lack of funds, the project is progressing very slowly."
+    }
+  },
+  "眼色": {
+    "gloss": "meaningful glance; wink; signal with the eyes",
+    "indonesian": "isyarat mata; kedipan; lirikan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "妈妈给我使了个眼色，让我别再说了。",
+      "en": "Mum gave me a look, telling me not to say any more."
+    }
+  },
+  "浸泡": {
+    "gloss": "to soak; to steep; to immerse",
+    "indonesian": "merendam; merendamkan; mencelupkan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "做饭前，先把豆子浸泡一个晚上。",
+      "en": "Before cooking, soak the beans overnight."
+    }
+  },
+  "栏目": {
+    "gloss": "column (in a newspaper); programme (on TV); section",
+    "indonesian": "kolom (surat kabar); acara (TV); rubrik",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这个电视栏目很受老年观众欢迎。",
+      "en": "This TV programme is very popular with elderly viewers."
+    }
+  },
+  "有条不紊": {
+    "gloss": "methodical; orderly; systematic",
+    "indonesian": "teratur; sistematis; rapi",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "虽然工作很多，她却安排得有条不紊。",
+      "en": "Although there was a lot of work, she arranged it all in an orderly way."
+    }
+  },
+  "慰问": {
+    "gloss": "to express sympathy; to extend greetings; to console",
+    "indonesian": "menyampaikan simpati; mengunjungi untuk menghibur; menyampaikan salam",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "春节前，公司领导去慰问了退休员工。",
+      "en": "Before Spring Festival, company leaders visited the retired staff to extend their greetings."
+    }
+  },
+  "威信": {
+    "gloss": "prestige; authority; public trust",
+    "indonesian": "wibawa; kewibawaan; kepercayaan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "李校长在学生中很有威信。",
+      "en": "Principal Li has great prestige among the students."
+    }
+  },
+  "一目了然": {
+    "gloss": "clear at a glance; obvious",
+    "indonesian": "jelas sekali pandang; langsung terlihat jelas",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "用图表说明，数据就一目了然了。",
+      "en": "With a chart, the data is clear at a glance."
+    }
+  },
+  "自力更生": {
+    "gloss": "self-reliance; to rely on one's own efforts",
+    "indonesian": "berdikari; mandiri; mengandalkan usaha sendiri",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他从小就学会了自力更生。",
+      "en": "He learned to be self-reliant from a young age."
+    }
+  },
+  "灯笼": {
+    "gloss": "lantern; paper lantern",
+    "indonesian": "lampion; lentera",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "过年的时候，家家户户都挂起了红灯笼。",
+      "en": "At New Year, every household hangs up red lanterns."
+    }
+  },
+  "时事": {
+    "gloss": "current events; current affairs",
+    "indonesian": "peristiwa terkini; berita aktual",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "爸爸每天晚上都会看时事新闻。",
+      "en": "Dad watches the current affairs news every evening."
+    }
+  },
+  "新颖": {
+    "gloss": "novel; original; new and different",
+    "indonesian": "baru dan orisinal; inovatif; segar",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这个广告的创意非常新颖。",
+      "en": "The idea behind this advert is very original."
+    }
+  },
+  "兴高采烈": {
+    "gloss": "in high spirits; jubilant; elated",
+    "indonesian": "sangat gembira; bersuka cita; riang",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "孩子们兴高采烈地去公园春游了。",
+      "en": "The children went off to the park for a spring outing in high spirits."
+    }
+  },
+  "停泊": {
+    "gloss": "to anchor; to moor; to berth",
+    "indonesian": "berlabuh; menambatkan kapal; bersandar",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "港口里停泊着几十艘渔船。",
+      "en": "Dozens of fishing boats are moored in the harbour."
+    }
+  },
+  "倔强": {
+    "gloss": "stubborn; unbending; obstinate",
+    "indonesian": "keras kepala; tidak mau mengalah; teguh",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这孩子很倔强，从来不肯认错。",
+      "en": "This child is very stubborn and never admits he is wrong."
+    }
+  },
+  "俯视": {
+    "gloss": "to look down at; to overlook",
+    "indonesian": "memandang ke bawah; melihat dari atas",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "从山顶俯视，整个城市尽收眼底。",
+      "en": "Looking down from the summit, you can take in the whole city."
+    }
+  },
+  "世代": {
+    "gloss": "for generations; generation after generation",
+    "indonesian": "turun-temurun; dari generasi ke generasi",
+    "pos": [
+      "noun",
+      "adverb"
+    ],
+    "example": {
+      "zh": "他们家世代都住在这个小村子里。",
+      "en": "His family has lived in this small village for generations."
+    }
+  },
+  "靠拢": {
+    "gloss": "to draw close; to move closer together; to close ranks",
+    "indonesian": "mendekat; merapat; bergabung",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "拍合影的时候，请大家往中间靠拢一点。",
+      "en": "When we take the group photo, please move a bit closer to the middle."
+    }
+  },
+  "踏实": {
+    "gloss": "steady and sure; down-to-earth; free from anxiety; at ease",
+    "indonesian": "tekun dan sungguh-sungguh; membumi; tenang hati",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "他工作很踏实，领导很放心。",
+      "en": "He works steadily and reliably, so the boss trusts him."
+    }
+  },
+  "立足": {
+    "gloss": "to gain a foothold; to establish oneself; to base oneself on",
+    "indonesian": "berpijak; mendapat tempat; berlandaskan pada",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "想在大城市立足，并不是件容易的事。",
+      "en": "Establishing yourself in a big city is not an easy thing."
+    }
+  },
+  "物业": {
+    "gloss": "property; property management (company)",
+    "indonesian": "properti; pengelola gedung/perumahan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "水管坏了，快给物业打个电话吧。",
+      "en": "The water pipe is broken; quickly call property management."
+    }
+  },
+  "淡水": {
+    "gloss": "fresh water; non-salty water",
+    "indonesian": "air tawar; air yang tidak asin",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "地球上可以直接利用的淡水很少。",
+      "en": "There is very little fresh water on Earth that can be used directly."
+    }
+  },
+  "杠杆": {
+    "gloss": "lever; leverage",
+    "indonesian": "tuas; pengungkit; leverage",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "利用杠杆原理，可以轻松地搬动重物。",
+      "en": "Using the principle of the lever, you can move heavy objects easily."
+    }
+  },
+  "朴素": {
+    "gloss": "plain; simple; frugal",
+    "indonesian": "sederhana; bersahaja; hemat",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "她虽然很有钱，但穿着十分朴素。",
+      "en": "Although she is rich, she dresses very plainly."
+    }
+  },
+  "开辟": {
+    "gloss": "to open up; to start; to develop",
+    "indonesian": "membuka; merintis; mengembangkan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "航空公司新开辟了一条直飞航线。",
+      "en": "The airline has opened a new direct route."
+    }
+  },
+  "家喻户晓": {
+    "gloss": "known to every household; widely known; a household name",
+    "indonesian": "dikenal setiap orang; terkenal luas; sudah menjadi rahasia umum",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "这个故事在中国家喻户晓。",
+      "en": "This story is known to every household in China."
+    }
+  },
+  "周折": {
+    "gloss": "twists and turns; complications; setbacks",
+    "indonesian": "liku-liku; kerumitan; hambatan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "经过一番周折，他终于办好了签证。",
+      "en": "After a lot of trouble, he finally got his visa."
+    }
+  },
+  "丛": {
+    "gloss": "cluster; thicket; clump; measure word for clumps of plants",
+    "indonesian": "rumpun; semak; kelompok; kata satuan untuk rumpun tanaman",
+    "pos": [
+      "noun",
+      "measure word"
+    ],
+    "example": {
+      "zh": "院子里种着一丛丛的月季花。",
+      "en": "Clumps of Chinese roses are planted in the courtyard."
+    }
+  },
+  "进而": {
+    "gloss": "and then; further; going a step further",
+    "indonesian": "selanjutnya; lebih jauh lagi; kemudian",
+    "pos": [
+      "conjunction"
+    ],
+    "example": {
+      "zh": "先学好基础知识，进而提高实际能力。",
+      "en": "First master the basics, and then improve your practical skills."
+    }
+  },
+  "请示": {
+    "gloss": "to ask for instructions; to request approval (from a superior)",
+    "indonesian": "meminta petunjuk; meminta persetujuan (atasan)",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "这件事我得先向经理请示一下。",
+      "en": "I need to ask the manager for instructions on this first."
+    }
+  },
+  "肆无忌惮": {
+    "gloss": "unscrupulous; unrestrained; brazen",
+    "indonesian": "semena-mena; tanpa kendali; tanpa rasa takut",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他在会上肆无忌惮地批评同事。",
+      "en": "He criticized his colleagues brazenly at the meeting."
+    }
+  },
+  "确立": {
+    "gloss": "to establish; to set up; to fix",
+    "indonesian": "menetapkan; membangun; memantapkan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "上大学后，他确立了自己的人生目标。",
+      "en": "After going to university, he established his goals in life."
+    }
+  },
+  "盛情": {
+    "gloss": "great kindness; warm hospitality; boundless enthusiasm",
+    "indonesian": "keramahan yang besar; kebaikan hati; sambutan hangat",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "谢谢你们的盛情款待，我们玩得很开心。",
+      "en": "Thank you for your warm hospitality; we had a great time."
+    }
+  },
+  "狼吞虎咽": {
+    "gloss": "to wolf down; to gobble up; to eat greedily",
+    "indonesian": "makan dengan rakus; melahap; makan terburu-buru",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他饿坏了，端起碗就狼吞虎咽起来。",
+      "en": "He was starving, and as soon as he picked up the bowl he started wolfing it down."
+    }
+  },
+  "框架": {
+    "gloss": "frame; framework; structure",
+    "indonesian": "kerangka; rangka; struktur",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "写文章前，最好先搭好整体框架。",
+      "en": "Before writing an essay, it's best to first set up the overall framework."
+    }
+  },
+  "平坦": {
+    "gloss": "flat; level; smooth",
+    "indonesian": "datar; rata; mulus",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这条公路又宽又平坦，开车很舒服。",
+      "en": "This road is wide and flat, so it's comfortable to drive on."
+    }
+  },
+  "冰雹": {
+    "gloss": "hail; hailstone",
+    "indonesian": "hujan es; butiran es",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "一场突如其来的冰雹砸坏了不少庄稼。",
+      "en": "A sudden hailstorm damaged a lot of crops."
+    }
+  },
+  "随即": {
+    "gloss": "immediately; right after; presently",
+    "indonesian": "segera; langsung sesudahnya; seketika",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "他接到电话，随即离开了会议室。",
+      "en": "He took the call and immediately left the meeting room."
+    }
+  },
+  "赤字": {
+    "gloss": "deficit; red ink; budget shortfall",
+    "indonesian": "defisit; kekurangan anggaran",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "今年公司的财务出现了赤字。",
+      "en": "The company's finances went into deficit this year."
+    }
+  },
+  "草案": {
+    "gloss": "draft (of a plan, law, etc.); draft proposal",
+    "indonesian": "rancangan; draf (rencana, undang-undang, dsb.)",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这份合同草案还需要进一步修改。",
+      "en": "This draft contract still needs further revision."
+    }
+  },
+  "精简": {
+    "gloss": "to simplify; to streamline; to cut down",
+    "indonesian": "menyederhanakan; merampingkan; mengurangi",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "为了提高效率，公司决定精简办事程序。",
+      "en": "To improve efficiency, the company decided to streamline its procedures."
+    }
+  },
+  "疙瘩": {
+    "gloss": "lump; pimple; knot; hang-up (worry)",
+    "indonesian": "benjolan; jerawat; simpul; ganjalan (hati)",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "被蚊子咬了以后，胳膊上起了个小疙瘩。",
+      "en": "After being bitten by a mosquito, a small lump appeared on my arm."
+    }
+  },
+  "时而": {
+    "gloss": "sometimes; from time to time; now ... now ...",
+    "indonesian": "kadang-kadang; sesekali; terkadang ... terkadang ...",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "今天的天气时而晴天，时而下雨。",
+      "en": "Today the weather is sunny one moment and rainy the next."
+    }
+  },
+  "散文": {
+    "gloss": "prose; essay",
+    "indonesian": "prosa; esai",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "我很喜欢读朱自清的散文。",
+      "en": "I really like reading Zhu Ziqing's essays."
+    }
+  },
+  "工艺品": {
+    "gloss": "handicraft; craftwork; handiwork",
+    "indonesian": "kerajinan tangan; barang kerajinan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这些竹制工艺品都是手工做的。",
+      "en": "These bamboo handicrafts are all handmade."
+    }
+  },
+  "埋没": {
+    "gloss": "to neglect (talent); to stifle; to bury",
+    "indonesian": "menyia-nyiakan (bakat); mengubur; terpendam",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他很有才华，不应该被埋没。",
+      "en": "He is very talented and should not be overlooked."
+    }
+  },
+  "品德": {
+    "gloss": "moral character; morality; virtue",
+    "indonesian": "budi pekerti; moral; akhlak",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "选择朋友时，品德比能力更重要。",
+      "en": "When choosing friends, character is more important than ability."
+    }
+  },
+  "偏差": {
+    "gloss": "deviation; error; bias",
+    "indonesian": "penyimpangan; kekeliruan; bias",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他对这件事的理解有些偏差。",
+      "en": "His understanding of this matter is somewhat off."
+    }
+  },
+  "倘若": {
+    "gloss": "if; supposing; in case",
+    "indonesian": "jika; seandainya; kalau-kalau",
+    "pos": [
+      "conjunction"
+    ],
+    "example": {
+      "zh": "倘若明天下雨，比赛就推迟举行。",
+      "en": "If it rains tomorrow, the match will be postponed."
+    }
+  },
+  "便于": {
+    "gloss": "easy to; convenient for; to facilitate",
+    "indonesian": "memudahkan; mudah untuk; nyaman untuk",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这种包装很小，便于携带。",
+      "en": "This packaging is small and easy to carry."
+    }
+  },
+  "雄伟": {
+    "gloss": "magnificent; majestic; grand",
+    "indonesian": "megah; agung; kokoh",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "站在长城上，我感受到了它的雄伟。",
+      "en": "Standing on the Great Wall, I felt its grandeur."
+    }
+  },
+  "通俗": {
+    "gloss": "popular; easy to understand; common",
+    "indonesian": "populer; mudah dipahami; umum",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这本书用通俗的语言解释了科学知识。",
+      "en": "This book explains scientific knowledge in plain, accessible language."
+    }
+  },
+  "装卸": {
+    "gloss": "to load and unload; to assemble and disassemble",
+    "indonesian": "bongkar muat; memasang dan membongkar",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "工人们正在码头上装卸货物。",
+      "en": "The workers are loading and unloading goods at the dock."
+    }
+  },
+  "衬托": {
+    "gloss": "to set off; to serve as a foil to; to highlight",
+    "indonesian": "menonjolkan; memperindah dengan kontras; menjadi latar",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "在绿叶的衬托下，红花显得更加鲜艳。",
+      "en": "Set off by the green leaves, the red flowers look even brighter."
+    }
+  },
+  "考核": {
+    "gloss": "to assess; to examine; to check (performance); appraisal",
+    "indonesian": "menilai; menguji; evaluasi (kinerja)",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "新员工要经过三个月的考核才能转正。",
+      "en": "New employees have to pass a three-month assessment before becoming permanent."
+    }
+  },
+  "繁华": {
+    "gloss": "bustling; flourishing; prosperous",
+    "indonesian": "ramai; makmur; semarak",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这条街是全市最繁华的商业区。",
+      "en": "This street is the busiest commercial district in the city."
+    }
+  },
+  "母语": {
+    "gloss": "mother tongue; native language",
+    "indonesian": "bahasa ibu; bahasa asli",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他的母语是印尼语，但汉语说得也很好。",
+      "en": "His mother tongue is Indonesian, but he speaks Chinese very well too."
+    }
+  },
+  "以至": {
+    "gloss": "to the extent that; so much so that; up to",
+    "indonesian": "sampai-sampai; sehingga; hingga",
+    "pos": [
+      "conjunction"
+    ],
+    "example": {
+      "zh": "他看书太专心，以至忘了吃饭。",
+      "en": "He was so absorbed in his book that he forgot to eat."
+    }
+  },
+  "举足轻重": {
+    "gloss": "to play a decisive role; of great importance; pivotal",
+    "indonesian": "sangat berpengaruh; memegang peran penting; menentukan",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他在公司里是个举足轻重的人物。",
+      "en": "He is a very influential figure in the company."
+    }
+  },
+  "隐约": {
+    "gloss": "faint; vague; indistinct",
+    "indonesian": "samar-samar; sayup-sayup; tidak jelas",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "远处隐约传来了音乐声。",
+      "en": "Faint music could be heard in the distance."
+    }
+  },
+  "调和": {
+    "gloss": "to mediate; to reconcile; harmonious; to mix",
+    "indonesian": "mendamaikan; menyelaraskan; serasi; mencampur",
+    "pos": [
+      "verb",
+      "adjective"
+    ],
+    "example": {
+      "zh": "他俩吵架了，你去调和一下吧。",
+      "en": "Those two have quarrelled; go and smooth things over between them."
+    }
+  },
+  "误差": {
+    "gloss": "error (in measurement); margin of error; inaccuracy",
+    "indonesian": "selisih; galat; ketidakakuratan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这台仪器的测量误差非常小。",
+      "en": "This instrument's measurement error is very small."
+    }
+  },
+  "论证": {
+    "gloss": "to demonstrate; to prove; argumentation; reasoning",
+    "indonesian": "membuktikan; mengkaji; argumentasi; penalaran",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "这个方案还需要专家进一步论证。",
+      "en": "This plan still needs further evaluation by experts."
+    }
+  },
+  "灌溉": {
+    "gloss": "to irrigate; irrigation",
+    "indonesian": "mengairi; irigasi",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "农民们用河水灌溉农田。",
+      "en": "The farmers use river water to irrigate the fields."
+    }
+  },
+  "注释": {
+    "gloss": "note; annotation; to annotate",
+    "indonesian": "catatan; anotasi; memberi catatan",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "这本古书的注释写得很详细。",
+      "en": "The annotations in this ancient book are very detailed."
+    }
+  },
+  "油腻": {
+    "gloss": "greasy; oily; fatty (food)",
+    "indonesian": "berminyak; berlemak; enek",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "医生建议他少吃油腻的食物。",
+      "en": "The doctor advised him to eat less greasy food."
+    }
+  },
+  "摘要": {
+    "gloss": "summary; abstract; to summarize",
+    "indonesian": "ringkasan; abstrak; meringkas",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "论文的摘要不能超过三百字。",
+      "en": "The thesis abstract must not exceed three hundred characters."
+    }
+  },
+  "姑且": {
+    "gloss": "for the moment; tentatively; for the time being",
+    "indonesian": "untuk sementara; sementara waktu; boleh dicoba dulu",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "这个办法不太好，但姑且试一试吧。",
+      "en": "This method isn't great, but let's try it for now."
+    }
+  },
+  "天文": {
+    "gloss": "astronomy; astronomical",
+    "indonesian": "astronomi; ilmu falak",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他从小就对天文非常感兴趣。",
+      "en": "He has been very interested in astronomy since childhood."
+    }
+  },
+  "大体": {
+    "gloss": "on the whole; roughly; in general; general principle",
+    "indonesian": "secara garis besar; pada umumnya; kurang lebih",
+    "pos": [
+      "adverb",
+      "noun"
+    ],
+    "example": {
+      "zh": "我们的看法大体上是一致的。",
+      "en": "Our views are broadly the same."
+    }
+  },
+  "变故": {
+    "gloss": "unforeseen event; accident; misfortune",
+    "indonesian": "kejadian tak terduga; musibah; malapetaka",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "家里发生变故后，他变得成熟了许多。",
+      "en": "After misfortune struck his family, he became much more mature."
+    }
+  },
+  "发扬": {
+    "gloss": "to carry forward; to develop; to promote (a tradition or virtue)",
+    "indonesian": "mengembangkan; meneruskan; menjunjung (tradisi, kebajikan)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "我们要发扬团结互助的精神。",
+      "en": "We should carry forward the spirit of unity and mutual help."
+    }
+  },
+  "反问": {
+    "gloss": "to ask in reply; to answer a question with a question; rhetorical question",
+    "indonesian": "balik bertanya; menjawab dengan pertanyaan; pertanyaan retoris",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "我问他去不去，他反问我为什么不去。",
+      "en": "I asked him whether he was going, and he asked me back why I wasn't."
+    }
+  },
+  "争气": {
+    "gloss": "to try to make a good showing; to live up to expectations",
+    "indonesian": "berusaha tidak mengecewakan; membanggakan; memenuhi harapan",
+    "pos": [
+      "verb",
+      "adjective"
+    ],
+    "example": {
+      "zh": "儿子很争气，考上了理想的大学。",
+      "en": "The son lived up to expectations and got into his dream university."
+    }
+  },
+  "不相上下": {
+    "gloss": "equally matched; about the same; neck and neck",
+    "indonesian": "setara; seimbang; tidak jauh berbeda",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "这两个队的实力不相上下。",
+      "en": "The two teams are evenly matched."
+    }
+  },
+  "问世": {
+    "gloss": "to come out; to be published; to appear on the market",
+    "indonesian": "terbit; diluncurkan; muncul ke publik",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这款新手机将于下个月问世。",
+      "en": "This new phone will come out next month."
+    }
+  },
+  "锦上添花": {
+    "gloss": "to make something good even better; icing on the cake",
+    "indonesian": "membuat yang baik menjadi lebih baik; pelengkap yang menyempurnakan",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "这条项链配上你的裙子真是锦上添花。",
+      "en": "This necklace with your dress is the icing on the cake."
+    }
+  },
+  "钻研": {
+    "gloss": "to study intensively; to delve into; to dig into",
+    "indonesian": "menekuni; mendalami; mempelajari dengan tekun",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他花了很多年钻研中医。",
+      "en": "He spent many years studying traditional Chinese medicine in depth."
+    }
+  },
+  "追悼": {
+    "gloss": "to mourn; to commemorate (the dead); memorial",
+    "indonesian": "berduka; memperingati (orang meninggal); upacara peringatan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "很多人参加了老教授的追悼会。",
+      "en": "Many people attended the old professor's memorial service."
+    }
+  },
+  "萌芽": {
+    "gloss": "to sprout; to bud; germ; beginning",
+    "indonesian": "bertunas; berkecambah; tunas; awal mula",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "春天到了，小草开始萌芽了。",
+      "en": "Spring has come and the grass has begun to sprout."
+    }
+  },
+  "立方": {
+    "gloss": "cube (of a number); cubic; cubic metre",
+    "indonesian": "pangkat tiga; kubik; meter kubik",
+    "pos": [
+      "noun",
+      "measure word"
+    ],
+    "example": {
+      "zh": "这个水池能装下十立方的水。",
+      "en": "This pool can hold ten cubic metres of water."
+    }
+  },
+  "波涛": {
+    "gloss": "great waves; billows",
+    "indonesian": "gelombang besar; ombak",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "海上波涛汹涌，渔船都回港了。",
+      "en": "The sea was raging with huge waves, and the fishing boats all returned to port."
+    }
+  },
+  "播种": {
+    "gloss": "to sow seeds; sowing",
+    "indonesian": "menabur benih; menanam benih; penaburan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "春天是农民播种的季节。",
+      "en": "Spring is the season when farmers sow seeds."
+    }
+  },
+  "寒暄": {
+    "gloss": "to exchange greetings; small talk; pleasantries",
+    "indonesian": "berbasa-basi; bertukar salam; obrolan ringan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "两人寒暄了几句，就开始谈正事。",
+      "en": "The two exchanged a few pleasantries and then got down to business."
+    }
+  },
+  "千方百计": {
+    "gloss": "by every possible means; to do everything possible",
+    "indonesian": "dengan segala cara; berusaha sekuat tenaga",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "父母千方百计地为孩子创造好的条件。",
+      "en": "Parents do everything possible to create good conditions for their children."
+    }
+  },
+  "加剧": {
+    "gloss": "to intensify; to aggravate; to exacerbate",
+    "indonesian": "memperparah; meningkat; semakin hebat",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "行业之间的竞争正在不断加剧。",
+      "en": "Competition within the industry is constantly intensifying."
+    }
+  },
+  "伶俐": {
+    "gloss": "clever; bright; quick-witted",
+    "indonesian": "cerdas; pintar; cekatan",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这个小姑娘聪明伶俐，大家都喜欢她。",
+      "en": "This little girl is bright and clever, and everyone likes her."
+    }
+  },
+  "书法": {
+    "gloss": "calligraphy; penmanship",
+    "indonesian": "kaligrafi; seni menulis indah",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "爷爷每天早上都要练一个小时书法。",
+      "en": "Grandpa practises calligraphy for an hour every morning."
+    }
+  },
+  "上进": {
+    "gloss": "to strive to improve; to make progress; ambitious",
+    "indonesian": "berusaha maju; ingin berkembang; berambisi",
+    "pos": [
+      "verb",
+      "adjective"
+    ],
+    "example": {
+      "zh": "她是个很上进的年轻人，下班后还去学英语。",
+      "en": "She's a very motivated young person who studies English after work."
+    }
+  },
+  "陈列": {
+    "gloss": "to display; to exhibit; to lay out",
+    "indonesian": "memajang; memamerkan; menata",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "博物馆里陈列着许多珍贵的文物。",
+      "en": "Many precious cultural relics are displayed in the museum."
+    }
+  },
+  "镶嵌": {
+    "gloss": "to inlay; to embed; to set (jewels)",
+    "indonesian": "menatahkan; menyisipkan; menghiasi (permata)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这枚戒指上镶嵌着一颗钻石。",
+      "en": "This ring is set with a diamond."
+    }
+  },
+  "赤道": {
+    "gloss": "the equator; equatorial line",
+    "indonesian": "khatulistiwa; garis ekuator",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "印度尼西亚位于赤道附近，全年炎热。",
+      "en": "Indonesia lies near the equator and is hot all year round."
+    }
+  },
+  "胸怀": {
+    "gloss": "mind; breadth of mind; heart; to cherish (ideals)",
+    "indonesian": "hati; kelapangan dada; jiwa; menyimpan (cita-cita)",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "做领导的应该有宽广的胸怀。",
+      "en": "A leader should be broad-minded."
+    }
+  },
+  "无穷无尽": {
+    "gloss": "endless; inexhaustible; boundless",
+    "indonesian": "tak berujung; tak habis-habisnya; tak terbatas",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "读书给我带来了无穷无尽的快乐。",
+      "en": "Reading has brought me endless joy."
+    }
+  },
+  "拄": {
+    "gloss": "to lean on (a stick); to prop oneself up with",
+    "indonesian": "bertopang pada (tongkat); bertumpu",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "奶奶拄着拐杖慢慢地走进了公园。",
+      "en": "Grandma slowly walked into the park, leaning on her walking stick."
+    }
+  },
+  "心疼": {
+    "gloss": "to love dearly; to feel sorry for; to be distressed (by a loss)",
+    "indonesian": "sayang; merasa kasihan; merasa sayang (atas kerugian)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "看到孩子累成这样，妈妈很心疼。",
+      "en": "Seeing her child so exhausted, the mother felt heartbroken."
+    }
+  },
+  "巴结": {
+    "gloss": "to fawn on; to curry favour with; to suck up to",
+    "indonesian": "menjilat; mencari muka; merayu atasan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他总是想方设法巴结领导。",
+      "en": "He is always trying every way to curry favour with the boss."
+    }
+  },
+  "力求": {
+    "gloss": "to strive to; to make every effort to; to do one's best to",
+    "indonesian": "berusaha sekuat tenaga; berupaya keras untuk",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "我们力求把每一个细节都做好。",
+      "en": "We strive to get every detail right."
+    }
+  },
+  "不屑一顾": {
+    "gloss": "to disdain; to consider beneath one's notice; to scorn",
+    "indonesian": "memandang rendah; tidak sudi melirik; meremehkan",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他对别人的建议总是不屑一顾。",
+      "en": "He always dismisses other people's suggestions with disdain."
+    }
+  },
+  "遏制": {
+    "gloss": "to curb; to contain; to restrain",
+    "indonesian": "membendung; menahan; mengekang",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "政府采取措施遏制房价过快上涨。",
+      "en": "The government took measures to curb the rapid rise in house prices."
+    }
+  },
+  "督促": {
+    "gloss": "to urge; to supervise and urge on; to push (someone to finish)",
+    "indonesian": "mendesak; mengawasi dan mendorong; menyuruh",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "妈妈每天督促我按时完成作业。",
+      "en": "Mum urges me every day to finish my homework on time."
+    }
+  },
+  "着重": {
+    "gloss": "to emphasize; to stress; to focus on",
+    "indonesian": "menekankan; mementingkan; memfokuskan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "老师着重讲了这道题的解题思路。",
+      "en": "The teacher stressed the approach to solving this problem."
+    }
+  },
+  "盖章": {
+    "gloss": "to stamp; to affix a seal",
+    "indonesian": "mengecap; membubuhkan stempel",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这份申请表需要单位盖章才有效。",
+      "en": "This application form is only valid with your employer's stamp."
+    }
+  },
+  "湖泊": {
+    "gloss": "lake; lakes",
+    "indonesian": "danau",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这个地区有很多美丽的湖泊。",
+      "en": "There are many beautiful lakes in this region."
+    }
+  },
+  "椭圆": {
+    "gloss": "oval; ellipse; elliptical",
+    "indonesian": "oval; elips; lonjong",
+    "pos": [
+      "noun",
+      "adjective"
+    ],
+    "example": {
+      "zh": "会议室里放着一张椭圆形的桌子。",
+      "en": "There is an oval table in the meeting room."
+    }
+  },
+  "操劳": {
+    "gloss": "to work hard; to toil; to look after (affairs)",
+    "indonesian": "bekerja keras; bersusah payah; mengurus",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "母亲为这个家操劳了一辈子。",
+      "en": "Mother toiled her whole life for this family."
+    }
+  },
+  "心得": {
+    "gloss": "what one has learned; insights; experience gained",
+    "indonesian": "pengalaman yang diperoleh; hasil pemahaman; kesan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "请你谈谈学习汉语的心得。",
+      "en": "Please tell us what you've learned from studying Chinese."
+    }
+  },
+  "刊物": {
+    "gloss": "publication; periodical; journal",
+    "indonesian": "terbitan; majalah berkala; jurnal",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他的论文发表在一家学术刊物上。",
+      "en": "His paper was published in an academic journal."
+    }
+  },
+  "颈椎": {
+    "gloss": "cervical vertebra; neck (spine)",
+    "indonesian": "tulang leher; ruas tulang leher",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "长时间低头看手机对颈椎不好。",
+      "en": "Looking down at your phone for a long time is bad for your neck."
+    }
+  },
+  "迎面": {
+    "gloss": "head-on; in one's face; directly towards one",
+    "indonesian": "dari arah depan; berhadapan; langsung ke muka",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "一出门，一阵冷风迎面吹来。",
+      "en": "As soon as I went out, a gust of cold wind blew right in my face."
+    }
+  },
+  "舒畅": {
+    "gloss": "happy and relaxed; carefree; comfortable",
+    "indonesian": "lega; senang dan nyaman; bebas dari beban",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "考完试以后，我心情特别舒畅。",
+      "en": "After the exams, I felt especially relaxed and happy."
+    }
+  },
+  "章程": {
+    "gloss": "rules; regulations; charter; constitution (of an organization)",
+    "indonesian": "anggaran dasar; peraturan; piagam",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "加入协会前，请先阅读协会章程。",
+      "en": "Before joining the association, please read its charter."
+    }
+  },
+  "神气": {
+    "gloss": "cocky; putting on airs; spirited; expression",
+    "indonesian": "sombong; berlagak; bersemangat; raut wajah",
+    "pos": [
+      "adjective",
+      "noun"
+    ],
+    "example": {
+      "zh": "他穿上新军装，显得特别神气。",
+      "en": "He looked very smart and proud in his new uniform."
+    }
+  },
+  "栽培": {
+    "gloss": "to cultivate; to grow; to train (talent)",
+    "indonesian": "membudidayakan; menanam; membina (bakat)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "感谢公司多年来对我的栽培。",
+      "en": "Thank you to the company for nurturing me over the years."
+    }
+  },
+  "昼夜": {
+    "gloss": "day and night; around the clock",
+    "indonesian": "siang dan malam; sepanjang hari",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "工人们昼夜不停地抢修道路。",
+      "en": "The workers repaired the road day and night without stopping."
+    }
+  },
+  "敌视": {
+    "gloss": "to be hostile to; to regard as an enemy; hostility",
+    "indonesian": "memusuhi; bersikap bermusuhan; permusuhan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他们两家因为一点小事互相敌视。",
+      "en": "The two families became hostile to each other over a trifle."
+    }
+  },
+  "招收": {
+    "gloss": "to recruit; to take in; to enrol",
+    "indonesian": "merekrut; menerima (siswa, pegawai)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这所大学今年计划招收三千名新生。",
+      "en": "This university plans to admit 3,000 new students this year."
+    }
+  },
+  "吹捧": {
+    "gloss": "to flatter; to puff up; to laud excessively",
+    "indonesian": "menyanjung; memuji berlebihan; menjilat",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "别听他们吹捧，要清楚自己的不足。",
+      "en": "Don't listen to their flattery; be clear about your own shortcomings."
+    }
+  },
+  "名次": {
+    "gloss": "ranking; position in a list; place",
+    "indonesian": "peringkat; urutan; posisi",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "比赛重在参与，名次并不重要。",
+      "en": "Taking part is what matters in the competition; the ranking isn't important."
+    }
+  },
+  "倡导": {
+    "gloss": "to advocate; to promote; to initiate",
+    "indonesian": "menganjurkan; mempromosikan; memprakarsai",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "学校倡导学生养成节约的好习惯。",
+      "en": "The school encourages students to develop the good habit of thrift."
+    }
+  },
+  "不言而喻": {
+    "gloss": "self-evident; it goes without saying",
+    "indonesian": "sudah jelas dengan sendirinya; tidak perlu dikatakan lagi",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "健康的重要性是不言而喻的。",
+      "en": "The importance of health goes without saying."
+    }
+  },
+  "诧异": {
+    "gloss": "surprised; astonished; amazed",
+    "indonesian": "heran; terkejut; tercengang",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "听说他辞职了，大家都很诧异。",
+      "en": "Everyone was astonished to hear that he had resigned."
+    }
+  },
+  "渔民": {
+    "gloss": "fisherman; fishing folk",
+    "indonesian": "nelayan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这个小岛上的居民大多是渔民。",
+      "en": "Most of the residents on this small island are fishermen."
+    }
+  },
+  "托运": {
+    "gloss": "to check in (luggage); to consign for shipment",
+    "indonesian": "memasukkan ke bagasi; mengirimkan (barang)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这个箱子太大，必须托运。",
+      "en": "This suitcase is too big; it has to be checked in."
+    }
+  },
+  "成心": {
+    "gloss": "intentionally; on purpose; deliberately",
+    "indonesian": "sengaja; dengan sengaja",
+    "pos": [
+      "adverb",
+      "adjective"
+    ],
+    "example": {
+      "zh": "对不起，我不是成心要让你难堪的。",
+      "en": "Sorry, I didn't mean to embarrass you."
+    }
+  },
+  "忌讳": {
+    "gloss": "taboo; to avoid as taboo; to avoid",
+    "indonesian": "pantangan; tabu; menghindari",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "在中国，送礼时忌讳送钟。",
+      "en": "In China, giving a clock as a gift is taboo."
+    }
+  },
+  "导向": {
+    "gloss": "orientation; guidance; to lead to; to direct towards",
+    "indonesian": "orientasi; arahan; mengarahkan",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "企业应该以市场需求为导向。",
+      "en": "Enterprises should be market-oriented."
+    }
+  },
+  "啰唆": {
+    "gloss": "long-winded; wordy; to nag; troublesome",
+    "indonesian": "cerewet; bertele-tele; banyak omong; merepotkan",
+    "pos": [
+      "adjective",
+      "verb"
+    ],
+    "example": {
+      "zh": "他说话太啰唆，半天说不到重点。",
+      "en": "He's so long-winded; it takes him ages to get to the point."
+    }
+  },
+  "变迁": {
+    "gloss": "changes; transitions; vicissitudes",
+    "indonesian": "perubahan; pergantian; pasang surut",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "这些老照片记录了城市的变迁。",
+      "en": "These old photos record the changes in the city."
+    }
+  },
+  "制约": {
+    "gloss": "to restrict; to constrain; to condition",
+    "indonesian": "membatasi; mengekang; mempengaruhi",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "资金不足制约了公司的发展。",
+      "en": "Lack of funds has constrained the company's development."
+    }
+  },
+  "列举": {
+    "gloss": "to list; to enumerate; to cite (examples)",
+    "indonesian": "menyebutkan satu per satu; mendaftar; memberi (contoh)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "请列举几个保护环境的好方法。",
+      "en": "Please list a few good ways to protect the environment."
+    }
+  },
+  "公证": {
+    "gloss": "to notarize; notarization",
+    "indonesian": "mengesahkan di notaris; notarisasi",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "出国留学需要把毕业证书拿去公证。",
+      "en": "To study abroad, you need to have your diploma notarized."
+    }
+  },
+  "佳肴": {
+    "gloss": "delicacy; fine food; delicious dish",
+    "indonesian": "hidangan lezat; makanan istimewa",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "年夜饭桌上摆满了美味佳肴。",
+      "en": "The New Year's Eve table was covered with delicious dishes."
+    }
+  },
+  "亏待": {
+    "gloss": "to treat unfairly; to treat shabbily",
+    "indonesian": "memperlakukan tidak adil; merugikan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "你好好干，公司绝不会亏待你。",
+      "en": "Work hard and the company will never treat you unfairly."
+    }
+  },
+  "魄力": {
+    "gloss": "boldness; drive; daring and resolution",
+    "indonesian": "keberanian; ketegasan; daya dobrak",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "新经理做事很有魄力。",
+      "en": "The new manager acts with great boldness and decisiveness."
+    }
+  },
+  "顿时": {
+    "gloss": "immediately; suddenly; at once",
+    "indonesian": "seketika; tiba-tiba; langsung",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "听到这个好消息，大家顿时欢呼起来。",
+      "en": "On hearing the good news, everyone immediately cheered."
+    }
+  },
+  "鞭策": {
+    "gloss": "to spur on; to urge on; to encourage",
+    "indonesian": "memacu; mendorong; menyemangati",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "老师的话一直鞭策着我努力学习。",
+      "en": "My teacher's words have always spurred me on to study hard."
+    }
+  },
+  "索性": {
+    "gloss": "might as well; simply; just",
+    "indonesian": "sekalian saja; sekalian; langsung saja",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "雨越下越大，我们索性不走了。",
+      "en": "The rain got heavier and heavier, so we simply decided not to leave."
+    }
+  },
+  "相声": {
+    "gloss": "crosstalk; comic dialogue",
+    "indonesian": "lawak dialog Tiongkok; xiangsheng",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他最喜欢听相声，常常笑得停不下来。",
+      "en": "He loves listening to crosstalk and often can't stop laughing."
+    }
+  },
+  "涌现": {
+    "gloss": "to emerge in large numbers; to spring up; to come to the fore",
+    "indonesian": "bermunculan; muncul dalam jumlah besar",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "近几年涌现出了许多优秀的年轻作家。",
+      "en": "In recent years many outstanding young writers have emerged."
+    }
+  },
+  "朴实": {
+    "gloss": "simple; plain; honest; down-to-earth",
+    "indonesian": "sederhana; polos; jujur; bersahaja",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这里的村民朴实热情。",
+      "en": "The villagers here are simple, honest and warm-hearted."
+    }
+  },
+  "固然": {
+    "gloss": "admittedly; it is true that; of course",
+    "indonesian": "memang; tentu saja; walaupun memang",
+    "pos": [
+      "conjunction",
+      "adverb"
+    ],
+    "example": {
+      "zh": "成绩固然重要，但身体健康更重要。",
+      "en": "Grades are certainly important, but good health is more important."
+    }
+  },
+  "呼啸": {
+    "gloss": "to whistle; to howl; to roar",
+    "indonesian": "menderu; melolong; bersiul (angin)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "窗外北风呼啸，屋里却很暖和。",
+      "en": "Outside the window the north wind howled, but inside it was warm."
+    }
+  },
+  "吉祥": {
+    "gloss": "lucky; auspicious; propitious",
+    "indonesian": "membawa keberuntungan; bertuah; pertanda baik",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "在中国人眼里，红色是吉祥的颜色。",
+      "en": "In the eyes of Chinese people, red is an auspicious colour."
+    }
+  },
+  "讥笑": {
+    "gloss": "to sneer at; to ridicule; to deride",
+    "indonesian": "mengejek; mencemooh; menertawakan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "我们不应该讥笑别人的缺点。",
+      "en": "We shouldn't ridicule other people's shortcomings."
+    }
+  },
+  "蔚蓝": {
+    "gloss": "azure; sky blue",
+    "indonesian": "biru langit; biru cerah",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "蔚蓝的天空中飘着几朵白云。",
+      "en": "A few white clouds drift in the azure sky."
+    }
+  },
+  "茎": {
+    "gloss": "stem; stalk",
+    "indonesian": "batang; tangkai",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这种植物的茎很细，但非常结实。",
+      "en": "This plant's stem is very thin but extremely sturdy."
+    }
+  },
+  "答辩": {
+    "gloss": "to defend (a thesis); to reply (to charges); oral defence",
+    "indonesian": "mempertahankan (tesis); menjawab (tuduhan); sidang",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "下个月我要参加毕业论文答辩。",
+      "en": "Next month I have to defend my graduation thesis."
+    }
+  },
+  "慈祥": {
+    "gloss": "kindly; benevolent (esp. of elderly people); kind-looking",
+    "indonesian": "ramah dan penuh kasih; welas asih (terutama orang tua)",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "奶奶脸上总是带着慈祥的笑容。",
+      "en": "Grandma always has a kindly smile on her face."
+    }
+  },
+  "家常": {
+    "gloss": "daily family life; home-style (food); small talk about home",
+    "indonesian": "kehidupan sehari-hari keluarga; masakan rumahan; obrolan santai",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这家小饭馆的家常菜做得很地道。",
+      "en": "This little restaurant's home-style dishes are very authentic."
+    }
+  },
+  "学说": {
+    "gloss": "theory; doctrine; school of thought",
+    "indonesian": "teori; doktrin; ajaran",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他的学说对后世影响很大。",
+      "en": "His theory had a great influence on later generations."
+    }
+  },
+  "壮丽": {
+    "gloss": "magnificent; majestic; splendid",
+    "indonesian": "megah; indah dan agung; menakjubkan",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "黄山的日出景色十分壮丽。",
+      "en": "The sunrise at Huangshan is truly magnificent."
+    }
+  },
+  "周转": {
+    "gloss": "turnover; cash flow; to have enough to go round",
+    "indonesian": "perputaran (modal); arus kas; mencukupi",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "公司最近资金周转有些困难。",
+      "en": "The company has recently had some cash-flow difficulties."
+    }
+  },
+  "兴旺": {
+    "gloss": "prosperous; flourishing; thriving",
+    "indonesian": "makmur; berkembang pesat; jaya",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "祝你们的生意越来越兴旺！",
+      "en": "Wishing your business ever greater prosperity!"
+    }
+  },
+  "借鉴": {
+    "gloss": "to learn from; to draw on (others' experience); reference",
+    "indonesian": "mengambil pelajaran dari; mencontoh; meniru (pengalaman orang lain)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "我们可以借鉴其他国家的成功经验。",
+      "en": "We can draw on the successful experience of other countries."
+    }
+  },
+  "飘扬": {
+    "gloss": "to flutter; to wave (in the wind); to fly",
+    "indonesian": "berkibar; melambai (tertiup angin)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "运动场上彩旗飘扬，非常热闹。",
+      "en": "Coloured flags flutter over the sports ground; it's very lively."
+    }
+  },
+  "纺织": {
+    "gloss": "spinning and weaving; textile",
+    "indonesian": "pemintalan dan penenunan; tekstil",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "这个城市的纺织业非常发达。",
+      "en": "This city's textile industry is highly developed."
+    }
+  },
+  "纵横": {
+    "gloss": "vertical and horizontal; crisscross; freely; unrestrained",
+    "indonesian": "membujur dan melintang; bersilang-silang; leluasa",
+    "pos": [
+      "adjective",
+      "verb"
+    ],
+    "example": {
+      "zh": "城市里道路纵横，交通十分方便。",
+      "en": "The city is crisscrossed with roads, making transport very convenient."
+    }
+  },
+  "旷课": {
+    "gloss": "to skip class; to play truant; to cut school",
+    "indonesian": "bolos sekolah; membolos; tidak masuk kelas",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他这学期已经旷课三次了。",
+      "en": "He has already skipped class three times this term."
+    }
+  },
+  "文艺": {
+    "gloss": "literature and art; the arts; artsy",
+    "indonesian": "sastra dan seni; kesenian; berjiwa seni",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "学校每年都会举办文艺晚会。",
+      "en": "The school holds an arts evening every year."
+    }
+  },
+  "截至": {
+    "gloss": "up to (a time); as of; by",
+    "indonesian": "sampai dengan; per (tanggal); hingga",
+    "pos": [
+      "verb",
+      "preposition"
+    ],
+    "example": {
+      "zh": "截至昨天，报名人数已经超过五百人。",
+      "en": "As of yesterday, the number of applicants had exceeded five hundred."
+    }
+  },
+  "威望": {
+    "gloss": "prestige; high standing; reputation",
+    "indonesian": "wibawa; martabat; reputasi tinggi",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这位医生在当地享有很高的威望。",
+      "en": "This doctor enjoys great prestige locally."
+    }
+  },
+  "夹杂": {
+    "gloss": "to be mixed with; to be mingled with; to be interspersed with",
+    "indonesian": "bercampur; tercampur dengan; diselingi",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他说话时常常夹杂着几句英语。",
+      "en": "He often mixes a few English words into his speech."
+    }
+  },
+  "壮烈": {
+    "gloss": "heroic; brave; glorious (esp. of a sacrifice)",
+    "indonesian": "gagah berani; heroik; mulia (pengorbanan)",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这部电影讲述了一个壮烈的历史故事。",
+      "en": "This film tells a heroic story from history."
+    }
+  },
+  "反之": {
+    "gloss": "conversely; on the other hand; otherwise",
+    "indonesian": "sebaliknya; di sisi lain",
+    "pos": [
+      "conjunction"
+    ],
+    "example": {
+      "zh": "努力就会进步，反之就会落后。",
+      "en": "If you work hard you'll progress; otherwise you'll fall behind."
+    }
+  },
+  "历来": {
+    "gloss": "always; throughout history; all along",
+    "indonesian": "sejak dahulu; selalu; dari dulu",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "中国人历来重视家庭教育。",
+      "en": "Chinese people have always valued family education."
+    }
+  },
+  "分寸": {
+    "gloss": "sense of propriety; proper limits; tact",
+    "indonesian": "batas kewajaran; takaran yang pas; kebijaksanaan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "开玩笑也要注意分寸。",
+      "en": "Even when joking, you need to know where to draw the line."
+    }
+  },
+  "起哄": {
+    "gloss": "to jeer; to create a disturbance; to tease (in a group)",
+    "indonesian": "bersorak-sorai (mengejek); membuat keributan; menggoda beramai-ramai",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他一上台，同学们就开始起哄。",
+      "en": "As soon as he went on stage, his classmates started jeering and cheering."
+    }
+  },
+  "贯彻": {
+    "gloss": "to implement; to carry out; to put into practice",
+    "indonesian": "melaksanakan; menerapkan; menjalankan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "新的规定必须认真贯彻执行。",
+      "en": "The new regulations must be conscientiously implemented."
+    }
+  },
+  "蕴藏": {
+    "gloss": "to contain; to hold in store; to have latent (resources)",
+    "indonesian": "mengandung; menyimpan; terpendam",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这片土地下蕴藏着丰富的石油。",
+      "en": "This land holds rich oil reserves."
+    }
+  },
+  "相等": {
+    "gloss": "equal; to be equal to; equivalent",
+    "indonesian": "sama; setara; sebanding",
+    "pos": [
+      "verb",
+      "adjective"
+    ],
+    "example": {
+      "zh": "这两个房间的面积大致相等。",
+      "en": "The two rooms are roughly equal in area."
+    }
+  },
+  "畔": {
+    "gloss": "bank (of a river or lake); side; edge",
+    "indonesian": "tepi (sungai atau danau); pinggir; sisi",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "我们在湖畔找了一家安静的小旅馆。",
+      "en": "We found a quiet little hotel by the lake."
+    }
+  },
+  "沿海": {
+    "gloss": "coastal; along the coast; coastal area",
+    "indonesian": "pesisir; sepanjang pantai; daerah pesisir",
+    "pos": [
+      "noun",
+      "adjective"
+    ],
+    "example": {
+      "zh": "沿海城市的经济发展得比较快。",
+      "en": "The economy of coastal cities has developed relatively quickly."
+    }
+  },
+  "污蔑": {
+    "gloss": "to slander; to smear; to vilify",
+    "indonesian": "memfitnah; mencemarkan nama baik",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "你没有证据，不能随便污蔑别人。",
+      "en": "You have no evidence; you can't just slander others."
+    }
+  },
+  "棍棒": {
+    "gloss": "club; stick; cudgel",
+    "indonesian": "pentungan; tongkat; gada",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "教育孩子要讲道理，不能靠棍棒。",
+      "en": "Raise children with reason, not with the stick."
+    }
+  },
+  "梢": {
+    "gloss": "tip (of a branch); end; top",
+    "indonesian": "ujung (dahan); pucuk",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "一只小鸟站在树梢上唱歌。",
+      "en": "A little bird is singing at the top of the tree."
+    }
+  },
+  "操练": {
+    "gloss": "to drill; to practise; drill",
+    "indonesian": "berlatih; melatih; latihan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "新生们正在操场上进行队列操练。",
+      "en": "The new students are doing formation drills on the sports field."
+    }
+  },
+  "搀": {
+    "gloss": "to support by the arm; to help (someone) along; to mix",
+    "indonesian": "memapah; menuntun; mencampur",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他搀着老人慢慢地过了马路。",
+      "en": "He helped the old man slowly across the road, holding his arm."
+    }
+  },
+  "拟定": {
+    "gloss": "to draw up; to draft; to formulate",
+    "indonesian": "menyusun; merancang; merumuskan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "我们已经拟定了下半年的工作计划。",
+      "en": "We have drawn up the work plan for the second half of the year."
+    }
+  },
+  "悬殊": {
+    "gloss": "wide gap; great disparity; widely different",
+    "indonesian": "jauh berbeda; kesenjangan besar; timpang",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "两个队实力悬殊，比赛毫无悬念。",
+      "en": "The two teams were so unevenly matched that the result was never in doubt."
+    }
+  },
+  "恭敬": {
+    "gloss": "respectful; deferential",
+    "indonesian": "hormat; sopan; takzim",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "学生恭敬地向老师鞠了一躬。",
+      "en": "The student bowed respectfully to the teacher."
+    }
+  },
+  "归根到底": {
+    "gloss": "in the final analysis; ultimately; when all is said and done",
+    "indonesian": "pada akhirnya; pada dasarnya; ujung-ujungnya",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "归根到底，成功还是要靠自己的努力。",
+      "en": "In the final analysis, success still depends on your own efforts."
+    }
+  },
+  "寓言": {
+    "gloss": "fable; parable; allegory",
+    "indonesian": "fabel; cerita perumpamaan; alegori",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这则寓言告诉我们做事不能骄傲。",
+      "en": "This fable teaches us not to be arrogant."
+    }
+  },
+  "多元化": {
+    "gloss": "diversified; diversification; pluralistic",
+    "indonesian": "beragam; diversifikasi; pluralistik",
+    "pos": [
+      "adjective",
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "现在年轻人的生活方式越来越多元化。",
+      "en": "Young people's lifestyles are becoming more and more diverse."
+    }
+  },
+  "喧哗": {
+    "gloss": "to make a racket; noisy; uproar",
+    "indonesian": "membuat keributan; gaduh; hiruk-pikuk",
+    "pos": [
+      "verb",
+      "adjective"
+    ],
+    "example": {
+      "zh": "图书馆里请保持安静，不要大声喧哗。",
+      "en": "Please keep quiet in the library and don't make a noise."
+    }
+  },
+  "哺乳": {
+    "gloss": "to breastfeed; to suckle; to nurse",
+    "indonesian": "menyusui; menyusukan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "鲸鱼虽然生活在海里，却是哺乳动物。",
+      "en": "Although whales live in the sea, they are mammals."
+    }
+  },
+  "启蒙": {
+    "gloss": "to enlighten; to teach the basics to beginners; enlightenment",
+    "indonesian": "memberi pencerahan; mengajar dasar-dasar; pencerahan",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "我的音乐启蒙老师是我的母亲。",
+      "en": "My first music teacher was my mother."
+    }
+  },
+  "俗话": {
+    "gloss": "common saying; proverb",
+    "indonesian": "pepatah; peribahasa",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "俗话说得好，熟能生巧。",
+      "en": "As the saying goes, practice makes perfect."
+    }
+  },
+  "逆行": {
+    "gloss": "to go the wrong way; to drive against the traffic",
+    "indonesian": "melawan arus; berjalan berlawanan arah",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "在单行道上逆行是很危险的。",
+      "en": "Driving the wrong way on a one-way street is very dangerous."
+    }
+  },
+  "贬义": {
+    "gloss": "derogatory sense; negative connotation; pejorative",
+    "indonesian": "makna negatif; konotasi buruk; peyoratif",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这个词带有贬义，用的时候要小心。",
+      "en": "This word has a negative connotation, so be careful when using it."
+    }
+  },
+  "落成": {
+    "gloss": "to be completed (of a building); completion",
+    "indonesian": "selesai dibangun; diresmikan (bangunan)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "新图书馆将于明年春天落成。",
+      "en": "The new library will be completed next spring."
+    }
+  },
+  "留念": {
+    "gloss": "to keep as a souvenir; to keep as a memento",
+    "indonesian": "sebagai kenang-kenangan; untuk kenangan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "毕业那天，我们在校门口拍照留念。",
+      "en": "On graduation day, we took photos at the school gate as a keepsake."
+    }
+  },
+  "斟酌": {
+    "gloss": "to consider carefully; to deliberate; to weigh",
+    "indonesian": "menimbang-nimbang; mempertimbangkan dengan cermat",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这件事很重要，你要好好斟酌一下。",
+      "en": "This matter is important; you should think it over carefully."
+    }
+  },
+  "挑拨": {
+    "gloss": "to sow discord; to incite; to stir up trouble",
+    "indonesian": "mengadu domba; menghasut; memprovokasi",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "别听他的，他是在挑拨我们的关系。",
+      "en": "Don't listen to him; he's trying to sow discord between us."
+    }
+  },
+  "承包": {
+    "gloss": "to contract (for a job); to undertake; contract",
+    "indonesian": "memborong; mengontrak (pekerjaan); kontrak",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这个工程由一家建筑公司承包。",
+      "en": "This project has been contracted to a construction company."
+    }
+  },
+  "批发": {
+    "gloss": "wholesale; to sell wholesale",
+    "indonesian": "grosir; menjual secara grosir",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "在批发市场买东西比商店便宜多了。",
+      "en": "Buying things at the wholesale market is much cheaper than in shops."
+    }
+  },
+  "扎实": {
+    "gloss": "solid; sturdy; down-to-earth; thorough",
+    "indonesian": "kokoh; kuat; mantap; matang (dasar)",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "他的汉语基础打得很扎实。",
+      "en": "He has a very solid foundation in Chinese."
+    }
+  },
+  "固有": {
+    "gloss": "intrinsic; inherent; native",
+    "indonesian": "bawaan; melekat; asli",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "我们要打破固有的思维方式。",
+      "en": "We need to break out of our established ways of thinking."
+    }
+  },
+  "亏损": {
+    "gloss": "to lose money; loss; deficit",
+    "indonesian": "merugi; kerugian; defisit",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "这家工厂已经连续三年亏损了。",
+      "en": "This factory has been losing money for three years in a row."
+    }
+  },
+  "严寒": {
+    "gloss": "bitter cold; severe cold; freezing",
+    "indonesian": "sangat dingin; dingin yang menggigit; musim dingin yang parah",
+    "pos": [
+      "adjective",
+      "noun"
+    ],
+    "example": {
+      "zh": "冬天这里非常严寒，气温常常在零下二十度。",
+      "en": "Winters here are bitterly cold, often twenty degrees below zero."
+    }
+  },
+  "饱和": {
+    "gloss": "saturated; saturation; at full capacity",
+    "indonesian": "jenuh; kejenuhan; penuh",
+    "pos": [
+      "adjective",
+      "noun"
+    ],
+    "example": {
+      "zh": "这个城市的手机市场已经基本饱和了。",
+      "en": "This city's mobile phone market is already basically saturated."
+    }
+  },
+  "陡峭": {
+    "gloss": "steep; precipitous",
+    "indonesian": "curam; terjal",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这条山路十分陡峭，大家要小心。",
+      "en": "This mountain path is very steep, so everyone be careful."
+    }
+  },
+  "谢绝": {
+    "gloss": "to politely decline; to refuse",
+    "indonesian": "menolak dengan sopan; menolak",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他谢绝了朋友的帮助，决定自己解决。",
+      "en": "He politely declined his friend's help and decided to solve it himself."
+    }
+  },
+  "自满": {
+    "gloss": "complacent; self-satisfied",
+    "indonesian": "puas diri; congkak",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "取得一点成绩就自满，是不会进步的。",
+      "en": "If you get complacent after a little success, you won't make progress."
+    }
+  },
+  "涂抹": {
+    "gloss": "to smear; to apply (cream, paint); to scribble",
+    "indonesian": "mengoleskan; memoles; mencoret-coret",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "出门前，记得在脸上涂抹防晒霜。",
+      "en": "Before going out, remember to put sunscreen on your face."
+    }
+  },
+  "法人": {
+    "gloss": "legal person; legal entity; legal representative",
+    "indonesian": "badan hukum; wakil hukum",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他是这家公司的法人代表。",
+      "en": "He is the legal representative of this company."
+    }
+  },
+  "次品": {
+    "gloss": "defective product; substandard goods",
+    "indonesian": "barang cacat; produk di bawah standar",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "如果买到次品，可以要求退换。",
+      "en": "If you buy a defective product, you can ask for a refund or exchange."
+    }
+  },
+  "地势": {
+    "gloss": "terrain; topography; lie of the land",
+    "indonesian": "keadaan tanah; topografi; medan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "中国的地势西高东低。",
+      "en": "China's terrain is high in the west and low in the east."
+    }
+  },
+  "合算": {
+    "gloss": "worthwhile; cost-effective; a good deal; to reckon up",
+    "indonesian": "menguntungkan; sepadan; hemat; menghitung",
+    "pos": [
+      "adjective",
+      "verb"
+    ],
+    "example": {
+      "zh": "买年卡比每次买票合算多了。",
+      "en": "Buying an annual pass is much better value than buying a ticket each time."
+    }
+  },
+  "力争": {
+    "gloss": "to strive for; to work hard for; to argue strongly",
+    "indonesian": "berusaha keras meraih; berjuang untuk; bersikeras berargumen",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "我们力争在年底前完成这个项目。",
+      "en": "We are striving to finish this project before the end of the year."
+    }
+  },
+  "书记": {
+    "gloss": "secretary (of a Party committee); clerk",
+    "indonesian": "sekretaris (komite partai); juru tulis",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "村里的书记每天都很忙。",
+      "en": "The village Party secretary is very busy every day."
+    }
+  },
+  "遮挡": {
+    "gloss": "to shelter from; to block; to keep out",
+    "indonesian": "menghalangi; menutupi; melindungi dari",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "窗帘可以遮挡强烈的阳光。",
+      "en": "The curtains can keep out the strong sunlight."
+    }
+  },
+  "衣裳": {
+    "gloss": "clothes; clothing",
+    "indonesian": "pakaian; baju",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "天冷了，出门多穿件衣裳。",
+      "en": "It's getting cold; put on an extra layer when you go out."
+    }
+  },
+  "荤": {
+    "gloss": "meat or fish dish; non-vegetarian food",
+    "indonesian": "makanan berdaging; lauk daging atau ikan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他不吃荤，只吃素菜。",
+      "en": "He doesn't eat meat or fish, only vegetarian dishes."
+    }
+  },
+  "花蕾": {
+    "gloss": "flower bud; bud",
+    "indonesian": "kuncup bunga; kuncup",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "枝头上长满了粉红色的花蕾。",
+      "en": "The branches are covered in pink flower buds."
+    }
+  },
+  "舰艇": {
+    "gloss": "naval vessel; warship",
+    "indonesian": "kapal perang; kapal angkatan laut",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "港口里停着几艘巨大的舰艇。",
+      "en": "Several huge naval vessels are docked in the port."
+    }
+  },
+  "职能": {
+    "gloss": "function; role",
+    "indonesian": "fungsi; peran; tugas",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这个部门的主要职能是管理人事。",
+      "en": "The main function of this department is managing personnel."
+    }
+  },
+  "浓厚": {
+    "gloss": "dense; thick; strong (interest, atmosphere)",
+    "indonesian": "tebal; pekat; kuat (minat, suasana)",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "他对中国历史有浓厚的兴趣。",
+      "en": "He has a strong interest in Chinese history."
+    }
+  },
+  "洽谈": {
+    "gloss": "to negotiate; to discuss; talks",
+    "indonesian": "berunding; bernegosiasi; perundingan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "双方正在洽谈合作的具体细节。",
+      "en": "The two sides are negotiating the specific details of the cooperation."
+    }
+  },
+  "格局": {
+    "gloss": "pattern; structure; layout; framework",
+    "indonesian": "pola; struktur; tata letak; kerangka",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这套房子的格局设计得很合理。",
+      "en": "The layout of this flat is very well designed."
+    }
+  },
+  "根深蒂固": {
+    "gloss": "deep-rooted; ingrained; entrenched",
+    "indonesian": "berurat berakar; mendarah daging; sudah mengakar",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "有些传统观念在人们心中根深蒂固。",
+      "en": "Some traditional ideas are deeply rooted in people's minds."
+    }
+  },
+  "哆嗦": {
+    "gloss": "to tremble; to shiver; to quiver",
+    "indonesian": "gemetar; menggigil",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "外面太冷了，他冻得直哆嗦。",
+      "en": "It was so cold outside that he was shivering non-stop."
+    }
+  },
+  "及早": {
+    "gloss": "as early as possible; before it is too late; promptly",
+    "indonesian": "sedini mungkin; secepatnya; sebelum terlambat",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "身体不舒服要及早去医院检查。",
+      "en": "If you feel unwell, get checked at the hospital as early as possible."
+    }
+  },
+  "剪彩": {
+    "gloss": "to cut the ribbon; ribbon-cutting ceremony",
+    "indonesian": "menggunting pita; upacara pengguntingan pita",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "市长亲自为新商场开业剪彩。",
+      "en": "The mayor personally cut the ribbon at the opening of the new shopping mall."
+    }
+  },
+  "辽阔": {
+    "gloss": "vast; extensive; boundless",
+    "indonesian": "luas; membentang; tak bertepi",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "站在辽阔的草原上，心情格外舒畅。",
+      "en": "Standing on the vast grassland, you feel especially carefree."
+    }
+  },
+  "茂盛": {
+    "gloss": "luxuriant; lush; flourishing",
+    "indonesian": "rimbun; subur; lebat",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "雨季过后，山上的树木长得很茂盛。",
+      "en": "After the rainy season, the trees on the mountain grow lush."
+    }
+  },
+  "肥沃": {
+    "gloss": "fertile; rich (soil)",
+    "indonesian": "subur (tanah)",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这里土地肥沃，适合种植水稻。",
+      "en": "The land here is fertile and suitable for growing rice."
+    }
+  },
+  "空前绝后": {
+    "gloss": "unprecedented and unrepeatable; unique in history",
+    "indonesian": "belum pernah ada dan tak akan terulang; satu-satunya dalam sejarah",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "那场演唱会的盛况可以说是空前绝后。",
+      "en": "The scale of that concert could be called unprecedented and never to be repeated."
+    }
+  },
+  "检讨": {
+    "gloss": "self-criticism; to examine oneself critically; to review",
+    "indonesian": "introspeksi; mengkritik diri sendiri; meninjau",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "他迟到了好几次，被要求写检讨。",
+      "en": "He was late several times and was asked to write a self-criticism."
+    }
+  },
+  "无微不至": {
+    "gloss": "meticulous; in every possible way; thoughtful to the smallest detail",
+    "indonesian": "penuh perhatian sampai hal terkecil; sangat teliti",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "护士对病人的照顾无微不至。",
+      "en": "The nurses take care of the patients in every possible way."
+    }
+  },
+  "挎": {
+    "gloss": "to carry on one's arm; to carry over one's shoulder or at one's side",
+    "indonesian": "menenteng di lengan; menyandang di bahu",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "她挎着一个篮子去菜市场买菜。",
+      "en": "She went to the market with a basket on her arm."
+    }
+  },
+  "并列": {
+    "gloss": "to stand side by side; to be juxtaposed; tied (in ranking)",
+    "indonesian": "berdampingan; sejajar; seri (peringkat)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这次比赛，他们两人并列第一。",
+      "en": "In this competition, the two of them tied for first place."
+    }
+  },
+  "实惠": {
+    "gloss": "good value; affordable; practical; material benefit",
+    "indonesian": "terjangkau; menguntungkan; praktis; manfaat nyata",
+    "pos": [
+      "adjective",
+      "noun"
+    ],
+    "example": {
+      "zh": "这家餐厅的菜又好吃又实惠。",
+      "en": "The food at this restaurant is both tasty and good value."
+    }
+  },
+  "势必": {
+    "gloss": "is bound to; will certainly; inevitably",
+    "indonesian": "pasti akan; mau tidak mau; tak terelakkan",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "不按时吃饭，势必会影响健康。",
+      "en": "Not eating on time is bound to affect your health."
+    }
+  },
+  "再接再厉": {
+    "gloss": "to keep up the good work; to make persistent efforts",
+    "indonesian": "terus berusaha lebih keras; pertahankan dan tingkatkan",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "这次考得不错，希望你再接再厉。",
+      "en": "You did well on this exam; keep up the good work."
+    }
+  },
+  "兴隆": {
+    "gloss": "prosperous; thriving; flourishing (business)",
+    "indonesian": "laris; makmur; maju (usaha)",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "祝您生意兴隆，财源广进！",
+      "en": "Wishing you a thriving business and abundant wealth!"
+    }
+  },
+  "风气": {
+    "gloss": "general mood; prevailing practice; social atmosphere",
+    "indonesian": "suasana umum; kebiasaan yang berlaku; iklim sosial",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "我们班的学习风气很好。",
+      "en": "Our class has a very good study atmosphere."
+    }
+  },
+  "零星": {
+    "gloss": "scattered; sporadic; fragmentary; odd (bits)",
+    "indonesian": "tersebar; sporadis; sedikit-sedikit; serpihan",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "明天上午有零星小雨。",
+      "en": "There will be scattered light showers tomorrow morning."
+    }
+  },
+  "雄厚": {
+    "gloss": "abundant; solid; strong (resources, funds)",
+    "indonesian": "kuat; berlimpah; kokoh (modal, sumber daya)",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这家公司资金雄厚，技术先进。",
+      "en": "This company has abundant funds and advanced technology."
+    }
+  },
+  "衔接": {
+    "gloss": "to link up; to connect; to join",
+    "indonesian": "menyambung; menghubungkan; bertautan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这两段文字衔接得不太自然。",
+      "en": "These two passages don't link up very naturally."
+    }
+  },
+  "耐用": {
+    "gloss": "durable; hard-wearing",
+    "indonesian": "tahan lama; awet",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这双鞋虽然贵，但是很耐用。",
+      "en": "These shoes are expensive, but very durable."
+    }
+  },
+  "美观": {
+    "gloss": "attractive; pleasing to the eye; good-looking",
+    "indonesian": "indah dipandang; menarik; elok",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这款家具既美观又实用。",
+      "en": "This furniture is both attractive and practical."
+    }
+  },
+  "爱不释手": {
+    "gloss": "to love something too much to put it down; to treasure",
+    "indonesian": "sangat menyukai sampai tidak mau melepaskannya; sangat menyayangi",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "这本小说太好看了，我读得爱不释手。",
+      "en": "This novel is so good that I can't put it down."
+    }
+  },
+  "热泪盈眶": {
+    "gloss": "eyes brimming with tears; deeply moved",
+    "indonesian": "mata berlinang air mata; sangat terharu",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "看到久别的父母，她激动得热泪盈眶。",
+      "en": "Seeing her parents after so long, she was so moved that her eyes filled with tears."
+    }
+  },
+  "怠慢": {
+    "gloss": "to slight; to neglect (a guest); to treat coldly",
+    "indonesian": "mengabaikan; kurang melayani (tamu); memperlakukan dengan dingin",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "招待不周，怠慢了各位，请多包涵。",
+      "en": "Forgive us if we haven't looked after you all properly."
+    }
+  },
+  "志气": {
+    "gloss": "aspiration; ambition; backbone; drive",
+    "indonesian": "cita-cita; semangat; tekad; harga diri",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他虽然出身贫寒，但很有志气。",
+      "en": "Although he came from a poor family, he was full of ambition."
+    }
+  },
+  "弊端": {
+    "gloss": "drawback; malpractice; abuse; flaw",
+    "indonesian": "kelemahan; penyimpangan; kekurangan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这种管理方式存在很多弊端。",
+      "en": "This management approach has many drawbacks."
+    }
+  },
+  "吞吞吐吐": {
+    "gloss": "to hem and haw; to mumble; to speak hesitantly",
+    "indonesian": "berbicara terbata-bata; ragu-ragu; tidak terus terang",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "有话直说，别这么吞吞吐吐的。",
+      "en": "If you have something to say, say it straight out; don't hem and haw."
+    }
+  },
+  "兢兢业业": {
+    "gloss": "conscientious and diligent; dedicated; cautious and meticulous",
+    "indonesian": "tekun dan teliti; penuh dedikasi; bekerja dengan sungguh-sungguh",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他在这个岗位上兢兢业业工作了二十年。",
+      "en": "He worked conscientiously in this post for twenty years."
+    }
+  },
+  "与日俱增": {
+    "gloss": "to increase day by day; to grow with each passing day",
+    "indonesian": "bertambah dari hari ke hari; terus meningkat",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "随着年龄增长，他对家乡的思念与日俱增。",
+      "en": "As he grows older, his longing for his hometown grows day by day."
+    }
+  },
+  "附和": {
+    "gloss": "to echo; to chime in with; to go along with",
+    "indonesian": "membeo; ikut-ikutan setuju; mengiyakan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他没有自己的看法，只会附和别人。",
+      "en": "He has no views of his own and just echoes what others say."
+    }
+  },
+  "调剂": {
+    "gloss": "to adjust; to regulate; to make up for shortages; to vary",
+    "indonesian": "menyesuaikan; mengatur; mengimbangi; memberi variasi",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "周末出去走走，可以调剂一下生活。",
+      "en": "Going out at the weekend can add some variety to life."
+    }
+  },
+  "见义勇为": {
+    "gloss": "to act bravely for a just cause; to do the right thing courageously",
+    "indonesian": "berani membela kebenaran; bertindak berani demi keadilan",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他见义勇为，帮助警察抓住了小偷。",
+      "en": "He bravely stepped in and helped the police catch the thief."
+    }
+  },
+  "称心如意": {
+    "gloss": "to one's heart's content; perfectly satisfactory; just as one wishes",
+    "indonesian": "sesuai keinginan; memuaskan hati; sesuai harapan",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他终于找到了一份称心如意的工作。",
+      "en": "He finally found a job that was just what he wanted."
+    }
+  },
+  "神态": {
+    "gloss": "expression; manner; bearing; look",
+    "indonesian": "raut wajah; sikap; gaya; penampilan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这幅画把老人的神态画得栩栩如生。",
+      "en": "This painting captures the old man's expression vividly."
+    }
+  },
+  "磨合": {
+    "gloss": "to break in; to wear in; to adapt to each other",
+    "indonesian": "saling menyesuaikan diri; masa adaptasi; inreyen (mesin)",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "新同事之间需要一段时间来磨合。",
+      "en": "New colleagues need some time to get used to working with each other."
+    }
+  },
+  "短促": {
+    "gloss": "brief; short (in time); hurried",
+    "indonesian": "singkat; pendek (waktu); terburu-buru",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "他跑得太快，呼吸变得十分短促。",
+      "en": "He ran so fast that his breathing became very short."
+    }
+  },
+  "盛产": {
+    "gloss": "to abound in; to be rich in; to produce in abundance",
+    "indonesian": "banyak menghasilkan; kaya akan; penghasil utama",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这个地区盛产苹果和葡萄。",
+      "en": "This region produces apples and grapes in abundance."
+    }
+  },
+  "气魄": {
+    "gloss": "boldness; daring; imposing manner; grandeur",
+    "indonesian": "keberanian; jiwa besar; kemegahan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这座建筑设计得很有气魄。",
+      "en": "This building is designed on a grand scale."
+    }
+  },
+  "扩充": {
+    "gloss": "to expand; to augment; to extend",
+    "indonesian": "memperluas; menambah; mengembangkan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "图书馆计划扩充藏书数量。",
+      "en": "The library plans to expand its collection of books."
+    }
+  },
+  "应邀": {
+    "gloss": "at someone's invitation; to accept an invitation",
+    "indonesian": "atas undangan; memenuhi undangan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "他应邀参加了朋友的婚礼。",
+      "en": "He attended his friend's wedding at their invitation."
+    }
+  },
+  "屡次": {
+    "gloss": "repeatedly; time and again",
+    "indonesian": "berkali-kali; berulang kali",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "他屡次迟到，被经理批评了。",
+      "en": "He was late repeatedly and was criticized by the manager."
+    }
+  },
+  "声势": {
+    "gloss": "momentum; power and influence; impetus",
+    "indonesian": "momentum; pengaruh dan kekuatan; gaung",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这次宣传活动声势很大。",
+      "en": "This publicity campaign has tremendous momentum."
+    }
+  },
+  "取缔": {
+    "gloss": "to ban; to outlaw; to suppress",
+    "indonesian": "melarang; menertibkan; membubarkan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这些无证经营的小摊已经被取缔了。",
+      "en": "These unlicensed stalls have been banned."
+    }
+  },
+  "馋": {
+    "gloss": "greedy (for food); gluttonous; to crave",
+    "indonesian": "rakus (makanan); doyan makan; ngiler",
+    "pos": [
+      "adjective",
+      "verb"
+    ],
+    "example": {
+      "zh": "闻到烤鸭的香味，我馋得直流口水。",
+      "en": "Smelling the roast duck, my mouth was watering with craving."
+    }
+  },
+  "防治": {
+    "gloss": "to prevent and cure; prevention and treatment",
+    "indonesian": "mencegah dan mengobati; pencegahan dan pengobatan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "医院开展了感冒防治的宣传活动。",
+      "en": "The hospital launched a campaign on preventing and treating colds."
+    }
+  },
+  "谋求": {
+    "gloss": "to seek; to strive for; to pursue",
+    "indonesian": "mencari; mengupayakan; mengejar",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "两家公司希望谋求长期的合作。",
+      "en": "The two companies hope to seek long-term cooperation."
+    }
+  },
+  "落实": {
+    "gloss": "to implement; to carry out; to ensure; practicable",
+    "indonesian": "melaksanakan; mewujudkan; memastikan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这个计划什么时候能落实？",
+      "en": "When can this plan be implemented?"
+    }
+  },
+  "杜绝": {
+    "gloss": "to put an end to; to eliminate; to stamp out",
+    "indonesian": "memberantas; mencegah sama sekali; menghentikan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "我们要杜绝浪费粮食的现象。",
+      "en": "We must put an end to wasting food."
+    }
+  },
+  "效益": {
+    "gloss": "benefit; returns; efficiency; profit",
+    "indonesian": "manfaat; hasil; efisiensi; keuntungan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "今年公司的经济效益明显提高了。",
+      "en": "The company's economic returns have clearly improved this year."
+    }
+  },
+  "征收": {
+    "gloss": "to levy; to collect (taxes); to expropriate",
+    "indonesian": "memungut (pajak); mengenakan; mengambil alih",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "政府决定对进口汽车征收更高的税。",
+      "en": "The government decided to levy higher taxes on imported cars."
+    }
+  },
+  "化肥": {
+    "gloss": "chemical fertilizer; fertilizer",
+    "indonesian": "pupuk kimia; pupuk",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "过多使用化肥会破坏土壤。",
+      "en": "Using too much chemical fertilizer can damage the soil."
+    }
+  },
+  "勘探": {
+    "gloss": "to explore; to survey; to prospect (for minerals)",
+    "indonesian": "mengeksplorasi; menyurvei; mencari (bahan tambang)",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "专家们正在这一带勘探石油。",
+      "en": "Experts are prospecting for oil in this area."
+    }
+  },
+  "验收": {
+    "gloss": "to check and accept; to inspect before acceptance; acceptance inspection",
+    "indonesian": "memeriksa dan menerima; serah terima setelah pemeriksaan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "新教学楼已经通过了验收。",
+      "en": "The new teaching building has passed its acceptance inspection."
+    }
+  },
+  "聋哑": {
+    "gloss": "deaf and mute; deaf-mute",
+    "indonesian": "tunarungu dan tunawicara; bisu tuli",
+    "pos": [
+      "adjective",
+      "noun"
+    ],
+    "example": {
+      "zh": "她在一所聋哑学校当老师。",
+      "en": "She teaches at a school for the deaf and mute."
+    }
+  },
+  "缴纳": {
+    "gloss": "to pay (fees, taxes); to hand in",
+    "indonesian": "membayar (biaya, pajak); menyetor",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "请在月底前缴纳本学期的学费。",
+      "en": "Please pay this term's tuition before the end of the month."
+    }
+  },
+  "繁体字": {
+    "gloss": "traditional Chinese character; traditional script",
+    "indonesian": "aksara Tionghoa tradisional; huruf tradisional",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "台湾和香港现在仍然使用繁体字。",
+      "en": "Taiwan and Hong Kong still use traditional characters today."
+    }
+  },
+  "立交桥": {
+    "gloss": "overpass; flyover; interchange",
+    "indonesian": "jalan layang; simpang susun",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这座立交桥大大缓解了交通压力。",
+      "en": "This flyover has greatly eased traffic pressure."
+    }
+  },
+  "磋商": {
+    "gloss": "to consult; to negotiate; to discuss seriously",
+    "indonesian": "berunding; bermusyawarah; berkonsultasi",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "经过多次磋商，双方终于达成了协议。",
+      "en": "After several rounds of negotiation, the two sides finally reached an agreement."
+    }
+  },
+  "珍稀": {
+    "gloss": "rare and precious; rare",
+    "indonesian": "langka dan berharga; langka",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "熊猫是一种珍稀动物。",
+      "en": "The panda is a rare and precious animal."
+    }
+  },
+  "熏陶": {
+    "gloss": "to influence gradually; to nurture; edifying influence",
+    "indonesian": "mempengaruhi secara bertahap; membentuk; pengaruh positif",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "在父亲的熏陶下，他从小就爱上了音乐。",
+      "en": "Under his father's influence, he fell in love with music as a child."
+    }
+  },
+  "水利": {
+    "gloss": "water conservancy; irrigation works; water resources",
+    "indonesian": "pengairan; irigasi; pengelolaan sumber daya air",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "政府投入大量资金修建水利工程。",
+      "en": "The government has invested heavily in building water conservancy projects."
+    }
+  },
+  "普及": {
+    "gloss": "to popularize; to spread widely; widespread; universal",
+    "indonesian": "memasyarakatkan; menyebarluaskan; tersebar luas; merata",
+    "pos": [
+      "verb",
+      "adjective"
+    ],
+    "example": {
+      "zh": "如今智能手机已经非常普及了。",
+      "en": "Nowadays smartphones have become extremely widespread."
+    }
+  },
+  "急功近利": {
+    "gloss": "eager for quick success and instant benefit; short-sighted",
+    "indonesian": "ingin cepat berhasil dan untung; berpikiran pendek",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "做学问不能急功近利。",
+      "en": "In scholarly work you can't be eager for quick success."
+    }
+  },
+  "循序渐进": {
+    "gloss": "to proceed step by step; to advance gradually",
+    "indonesian": "bertahap; selangkah demi selangkah; secara berangsur-angsur",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "学外语要循序渐进，不能着急。",
+      "en": "Learning a foreign language must be done step by step; you can't rush."
+    }
+  },
+  "层出不穷": {
+    "gloss": "to emerge one after another; endless; never-ending",
+    "indonesian": "terus bermunculan; tiada habisnya; silih berganti",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "网络上的新词层出不穷。",
+      "en": "New words keep emerging on the internet one after another."
+    }
+  },
+  "就近": {
+    "gloss": "nearby; in the neighbourhood; without going far",
+    "indonesian": "di dekat; terdekat; tanpa pergi jauh",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "孩子们可以就近上学，非常方便。",
+      "en": "The children can go to school nearby, which is very convenient."
+    }
+  },
+  "实事求是": {
+    "gloss": "to be practical and realistic; to seek truth from facts",
+    "indonesian": "realistis; berpegang pada fakta; objektif",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "写报告要实事求是，不能夸大。",
+      "en": "A report must stick to the facts, without exaggeration."
+    }
+  },
+  "完备": {
+    "gloss": "complete; perfect; fully equipped",
+    "indonesian": "lengkap; sempurna; serba ada",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这家医院的设备十分完备。",
+      "en": "This hospital is very well equipped."
+    }
+  },
+  "宁肯": {
+    "gloss": "would rather; prefer to",
+    "indonesian": "lebih baik; lebih suka",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "我宁肯自己多干点，也不想麻烦别人。",
+      "en": "I'd rather do more myself than trouble others."
+    }
+  },
+  "天伦之乐": {
+    "gloss": "family happiness; the joy of family life",
+    "indonesian": "kebahagiaan keluarga; kebahagiaan berkumpul dengan keluarga",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "退休后，爷爷在家享受天伦之乐。",
+      "en": "After retiring, Grandpa enjoys the happiness of family life at home."
+    }
+  },
+  "吃苦": {
+    "gloss": "to bear hardships; to suffer; to endure difficulties",
+    "indonesian": "menanggung kesusahan; bersusah payah; tahan menderita",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "年轻人应该能吃苦，多锻炼自己。",
+      "en": "Young people should be able to endure hardship and push themselves."
+    }
+  },
+  "儒家": {
+    "gloss": "Confucianism; Confucian school; Confucianist",
+    "indonesian": "Konfusianisme; aliran Konfusius; penganut Konfusius",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "儒家思想对中国文化影响深远。",
+      "en": "Confucian thought has had a profound influence on Chinese culture."
+    }
+  },
+  "倡议": {
+    "gloss": "to propose; to initiate; proposal; initiative",
+    "indonesian": "mengusulkan; memprakarsai; usulan; inisiatif",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "学生会倡议大家节约用水。",
+      "en": "The student union is calling on everyone to save water."
+    }
+  },
+  "作息": {
+    "gloss": "work and rest; daily routine",
+    "indonesian": "bekerja dan beristirahat; rutinitas harian",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "养成规律的作息习惯对身体有好处。",
+      "en": "Developing a regular routine of work and rest is good for your health."
+    }
+  },
+  "争先恐后": {
+    "gloss": "to strive to be first; to scramble; to vie with one another",
+    "indonesian": "berebut ingin menjadi yang pertama; berlomba-lomba",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "老师一提问，同学们争先恐后地举手。",
+      "en": "As soon as the teacher asked a question, the students vied to raise their hands."
+    }
+  },
+  "东张西望": {
+    "gloss": "to look around; to glance about in all directions",
+    "indonesian": "menoleh ke sana ke mari; celingak-celinguk",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "上课时别东张西望，要认真听讲。",
+      "en": "Don't look around in class; listen carefully."
+    }
+  },
+  "骨干": {
+    "gloss": "backbone; mainstay; key member",
+    "indonesian": "tulang punggung; tumpuan; anggota inti",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他是我们部门的业务骨干。",
+      "en": "He is the backbone of our department's operations."
+    }
+  },
+  "闭塞": {
+    "gloss": "isolated; remote; ill-informed; to block up",
+    "indonesian": "terpencil; terisolasi; kurang informasi; tersumbat",
+    "pos": [
+      "adjective",
+      "verb"
+    ],
+    "example": {
+      "zh": "以前这个山村交通闭塞，消息不灵通。",
+      "en": "This mountain village used to be cut off, and news was slow to arrive."
+    }
+  },
+  "贫乏": {
+    "gloss": "lacking; poor; deficient; meagre",
+    "indonesian": "kurang; miskin; minim; tandus",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "他的文章内容贫乏，缺少新意。",
+      "en": "His article is thin on content and lacks fresh ideas."
+    }
+  },
+  "耕地": {
+    "gloss": "cultivated land; farmland; to plough",
+    "indonesian": "lahan pertanian; tanah garapan; membajak",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "城市扩张占用了大量耕地。",
+      "en": "Urban expansion has taken over a large amount of farmland."
+    }
+  },
+  "矿产": {
+    "gloss": "minerals; mineral resources",
+    "indonesian": "bahan tambang; sumber daya mineral",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这个省的矿产资源非常丰富。",
+      "en": "This province is very rich in mineral resources."
+    }
+  },
+  "瞻仰": {
+    "gloss": "to look at with reverence; to pay one's respects (to)",
+    "indonesian": "memandang dengan hormat; berziarah; memberi penghormatan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "每年都有很多游客来这里瞻仰名人故居。",
+      "en": "Every year many visitors come here to pay their respects at the former residence."
+    }
+  },
+  "盆地": {
+    "gloss": "basin (geography); valley basin",
+    "indonesian": "cekungan; lembah",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "四川盆地夏天又闷又热。",
+      "en": "The Sichuan Basin is hot and humid in summer."
+    }
+  },
+  "物美价廉": {
+    "gloss": "good quality and inexpensive; good value for money",
+    "indonesian": "bagus dan murah; berkualitas dengan harga terjangkau",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "这家超市的商品物美价廉。",
+      "en": "The goods in this supermarket are good quality and cheap."
+    }
+  },
+  "服气": {
+    "gloss": "to be convinced; to accept (a defeat) willingly",
+    "indonesian": "mengakui; menerima dengan ikhlas (kekalahan); yakin",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "输给这么强的对手，我很服气。",
+      "en": "Losing to such a strong opponent, I accept it wholeheartedly."
+    }
+  },
+  "支流": {
+    "gloss": "tributary; minor aspect; offshoot",
+    "indonesian": "anak sungai; aspek kecil; cabang",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这条河是长江的一条支流。",
+      "en": "This river is a tributary of the Yangtze."
+    }
+  },
+  "恍然大悟": {
+    "gloss": "to suddenly realize; to suddenly see the light",
+    "indonesian": "tiba-tiba sadar; tiba-tiba paham",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "听了老师的解释，我才恍然大悟。",
+      "en": "Only after hearing the teacher's explanation did it suddenly dawn on me."
+    }
+  },
+  "审美": {
+    "gloss": "aesthetic; aesthetic sense; appreciation of beauty",
+    "indonesian": "estetika; selera keindahan; apresiasi seni",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "每个人的审美标准都不一样。",
+      "en": "Everyone's aesthetic standards are different."
+    }
+  },
+  "奠定": {
+    "gloss": "to lay (a foundation); to establish; to settle",
+    "indonesian": "meletakkan (dasar); membangun; memantapkan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "大学的学习为他今后的工作奠定了基础。",
+      "en": "His university studies laid the foundation for his future career."
+    }
+  },
+  "叮嘱": {
+    "gloss": "to urge repeatedly; to exhort; to remind (someone to do something)",
+    "indonesian": "berpesan berulang kali; mewanti-wanti; mengingatkan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "医生叮嘱他按时吃药，多休息。",
+      "en": "The doctor reminded him repeatedly to take his medicine on time and rest more."
+    }
+  },
+  "亭子": {
+    "gloss": "pavilion; kiosk",
+    "indonesian": "paviliun; gazebo",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "我们在湖边的亭子里休息了一会儿。",
+      "en": "We rested for a while in the pavilion by the lake."
+    }
+  },
+  "丘陵": {
+    "gloss": "hills; hilly land",
+    "indonesian": "perbukitan; daerah berbukit",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这一带是丘陵地区，适合种茶。",
+      "en": "This area is hilly and suitable for growing tea."
+    }
+  },
+  "一举两得": {
+    "gloss": "to kill two birds with one stone; to gain two ends at once",
+    "indonesian": "sekali dayung dua pulau terlampaui; satu tindakan dua manfaat",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "骑车上班既省钱又锻炼身体，一举两得。",
+      "en": "Cycling to work saves money and gives you exercise: two birds with one stone."
+    }
+  },
+  "见多识广": {
+    "gloss": "experienced and knowledgeable; well-travelled and well-informed",
+    "indonesian": "berpengalaman dan berpengetahuan luas",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他去过很多国家，见多识广。",
+      "en": "He's been to many countries and is very experienced and knowledgeable."
+    }
+  },
+  "稿件": {
+    "gloss": "manuscript; contribution (to a publication); draft",
+    "indonesian": "naskah; tulisan kiriman; draf",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "编辑部每天都会收到大量稿件。",
+      "en": "The editorial office receives a large number of manuscripts every day."
+    }
+  },
+  "画蛇添足": {
+    "gloss": "to ruin something by adding something superfluous; to overdo it",
+    "indonesian": "melakukan hal berlebihan yang justru merusak; berlebihan",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "文章已经很好了，再改就画蛇添足了。",
+      "en": "The essay is already good; changing it further would just spoil it."
+    }
+  },
+  "沉淀": {
+    "gloss": "to settle; to precipitate; sediment; to accumulate (experience)",
+    "indonesian": "mengendap; endapan; mengumpulkan (pengalaman)",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "把水放一会儿，让杂质沉淀下来。",
+      "en": "Let the water stand for a while so the impurities settle."
+    }
+  },
+  "招标": {
+    "gloss": "to invite bids; to invite tenders",
+    "indonesian": "membuka tender; mengundang penawaran",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这个工程将通过公开招标选择施工单位。",
+      "en": "The contractor for this project will be chosen through open tender."
+    }
+  },
+  "娇气": {
+    "gloss": "delicate; fragile; finicky; pampered",
+    "indonesian": "manja; rapuh; cengeng",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这孩子太娇气了，一点苦都吃不了。",
+      "en": "This child is too pampered and can't bear the slightest hardship."
+    }
+  },
+  "园林": {
+    "gloss": "garden; park; landscape garden",
+    "indonesian": "taman; kebun; taman lanskap",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "苏州的园林在世界上很有名。",
+      "en": "The gardens of Suzhou are world-famous."
+    }
+  },
+  "后顾之忧": {
+    "gloss": "worries about things back home; fears of trouble behind",
+    "indonesian": "kekhawatiran akan urusan di rumah; beban pikiran",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "公司解决了员工孩子上学的后顾之忧。",
+      "en": "The company solved employees' worries about their children's schooling."
+    }
+  },
+  "刹那": {
+    "gloss": "instant; split second; moment",
+    "indonesian": "sekejap; sesaat; dalam sekejap mata",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "看到他的那一刹那，我高兴得哭了。",
+      "en": "The instant I saw him, I cried with joy."
+    }
+  },
+  "兴致勃勃": {
+    "gloss": "in high spirits; full of enthusiasm",
+    "indonesian": "penuh semangat; sangat bergairah",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "孩子们兴致勃勃地参观了动物园。",
+      "en": "The children visited the zoo full of enthusiasm."
+    }
+  },
+  "共计": {
+    "gloss": "to total; to add up to; in total",
+    "indonesian": "berjumlah; total; seluruhnya",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "这次活动共计花费两万元。",
+      "en": "This event cost a total of twenty thousand yuan."
+    }
+  },
+  "不由得": {
+    "gloss": "can't help; cannot but; involuntarily",
+    "indonesian": "tidak dapat menahan diri; mau tak mau; tanpa sadar",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "想起小时候的事，她不由得笑了。",
+      "en": "Thinking of her childhood, she couldn't help smiling."
+    }
+  },
+  "不敢当": {
+    "gloss": "I don't deserve it; you flatter me; I'm not worthy",
+    "indonesian": "tidak berani menerima; terlalu memuji; saya tidak pantas",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "您太过奖了，我实在不敢当。",
+      "en": "You're praising me too much; I really don't deserve it."
+    }
+  },
+  "霞": {
+    "gloss": "rosy clouds; morning or evening glow",
+    "indonesian": "awan merah; cahaya fajar atau senja",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "傍晚时分，天边布满了彩霞。",
+      "en": "At dusk, the horizon was covered with rosy clouds."
+    }
+  },
+  "稠密": {
+    "gloss": "dense; thick; densely populated",
+    "indonesian": "padat; rapat; berpenduduk padat",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "东部沿海地区人口稠密。",
+      "en": "The eastern coastal region is densely populated."
+    }
+  },
+  "砍伐": {
+    "gloss": "to fell (trees); to cut down; to log",
+    "indonesian": "menebang (pohon); menebang hutan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "禁止在这片森林里乱砍伐树木。",
+      "en": "Indiscriminate felling of trees in this forest is prohibited."
+    }
+  },
+  "据悉": {
+    "gloss": "it is reported that; according to reports",
+    "indonesian": "dikabarkan; menurut informasi; kabarnya",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "据悉，这部电影将于下月上映。",
+      "en": "It is reported that this film will be released next month."
+    }
+  },
+  "挺拔": {
+    "gloss": "tall and straight; upright and strong",
+    "indonesian": "tegak menjulang; tinggi dan kokoh",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "路边的白杨树又高又挺拔。",
+      "en": "The poplars along the road are tall and straight."
+    }
+  },
+  "感慨": {
+    "gloss": "to sigh with emotion; to be filled with emotion; emotional reflection",
+    "indonesian": "terharu; merenung penuh perasaan; berkeluh kesah",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "回到母校，他感慨万千。",
+      "en": "Back at his old school, he was filled with all sorts of emotions."
+    }
+  },
+  "封建": {
+    "gloss": "feudal; feudalism; old-fashioned",
+    "indonesian": "feodal; feodalisme; kolot",
+    "pos": [
+      "adjective",
+      "noun"
+    ],
+    "example": {
+      "zh": "奶奶的一些想法比较封建。",
+      "en": "Some of Grandma's ideas are rather old-fashioned."
+    }
+  },
+  "依托": {
+    "gloss": "to rely on; to depend on; support; backing",
+    "indonesian": "bersandar pada; bergantung pada; landasan; dukungan",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "这个小镇依托旅游业发展经济。",
+      "en": "This small town relies on tourism to develop its economy."
+    }
+  },
+  "逐年": {
+    "gloss": "year by year; year after year",
+    "indonesian": "dari tahun ke tahun; tahun demi tahun",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "这里的游客人数逐年增加。",
+      "en": "The number of tourists here increases year by year."
+    }
+  },
+  "贤惠": {
+    "gloss": "virtuous; kind and considerate (of a woman); good-natured",
+    "indonesian": "bijak dan berbudi (perempuan); baik hati",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "他的妻子又贤惠又能干。",
+      "en": "His wife is both virtuous and capable."
+    }
+  },
+  "聚精会神": {
+    "gloss": "to concentrate one's attention; to be absorbed",
+    "indonesian": "memusatkan perhatian; berkonsentrasi penuh; khusyuk",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "学生们聚精会神地听老师讲课。",
+      "en": "The students listened to the teacher with complete concentration."
+    }
+  },
+  "精打细算": {
+    "gloss": "to budget carefully; to calculate meticulously; thrifty",
+    "indonesian": "berhitung cermat; hemat; mengatur keuangan dengan teliti",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "妈妈过日子总是精打细算。",
+      "en": "Mum always budgets very carefully in daily life."
+    }
+  },
+  "欣欣向荣": {
+    "gloss": "flourishing; thriving; prosperous",
+    "indonesian": "tumbuh subur; berkembang pesat; makmur",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "春天来了，田野里一片欣欣向荣的景象。",
+      "en": "Spring has come, and the fields are a picture of flourishing growth."
+    }
+  },
+  "昌盛": {
+    "gloss": "prosperous; flourishing; thriving",
+    "indonesian": "jaya; makmur; berjaya",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "祝愿我们的祖国繁荣昌盛。",
+      "en": "May our motherland be prosperous and flourishing."
+    }
+  },
+  "日新月异": {
+    "gloss": "to change with each passing day; rapid progress",
+    "indonesian": "berubah dengan cepat setiap hari; kemajuan pesat",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "科学技术的发展日新月异。",
+      "en": "Science and technology are developing rapidly day by day."
+    }
+  },
+  "把关": {
+    "gloss": "to check; to control quality; to guard a pass",
+    "indonesian": "memeriksa; mengawasi kualitas; menjaga gerbang",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "产品出厂前，质检员要严格把关。",
+      "en": "Before products leave the factory, inspectors must check them strictly."
+    }
+  },
+  "得不偿失": {
+    "gloss": "the gains do not make up for the losses; not worth it",
+    "indonesian": "lebih banyak ruginya daripada untungnya; tidak sepadan",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "为了省钱而累坏身体，真是得不偿失。",
+      "en": "Wearing yourself out to save money really isn't worth it."
+    }
+  },
+  "布告": {
+    "gloss": "notice; bulletin; announcement",
+    "indonesian": "pengumuman; maklumat; papan pengumuman",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "学校门口贴出了放假的布告。",
+      "en": "A holiday notice was posted at the school gate."
+    }
+  },
+  "刻不容缓": {
+    "gloss": "extremely urgent; to brook no delay",
+    "indonesian": "sangat mendesak; tidak dapat ditunda",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "保护环境已经刻不容缓了。",
+      "en": "Protecting the environment is now extremely urgent."
+    }
+  },
+  "供不应求": {
+    "gloss": "demand exceeds supply; in short supply",
+    "indonesian": "permintaan melebihi pasokan; laris manis",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "这款新手机一上市就供不应求。",
+      "en": "As soon as this new phone went on sale, demand exceeded supply."
+    }
+  },
+  "炉灶": {
+    "gloss": "stove; kitchen range; cooker",
+    "indonesian": "kompor; tungku dapur",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "做完饭后，记得把炉灶擦干净。",
+      "en": "After cooking, remember to wipe the stove clean."
+    }
+  },
+  "比重": {
+    "gloss": "proportion; share; specific gravity",
+    "indonesian": "proporsi; bagian; berat jenis",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "服务业在经济中所占的比重越来越大。",
+      "en": "The service sector accounts for an ever larger share of the economy."
+    }
+  },
+  "出神": {
+    "gloss": "to be lost in thought; to be spellbound; to be in a trance",
+    "indonesian": "melamun; terpesona; terbengong",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "她望着窗外出神，连我进来都没发现。",
+      "en": "She was gazing out of the window, lost in thought, and didn't even notice me come in."
+    }
+  },
+  "优胜劣汰": {
+    "gloss": "survival of the fittest; the strong win and the weak are eliminated",
+    "indonesian": "yang kuat bertahan, yang lemah tersingkir; seleksi alam",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "市场竞争遵循优胜劣汰的规律。",
+      "en": "Market competition follows the law of survival of the fittest."
+    }
+  },
+  "须知": {
+    "gloss": "notice; guidelines; instructions; one should know that",
+    "indonesian": "hal yang perlu diketahui; petunjuk; ketentuan",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "考试前请仔细阅读考生须知。",
+      "en": "Please read the candidate instructions carefully before the exam."
+    }
+  },
+  "边疆": {
+    "gloss": "border area; frontier; borderland",
+    "indonesian": "daerah perbatasan; wilayah tapal batas",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他大学毕业后去边疆当了老师。",
+      "en": "After graduating, he went to the border region to be a teacher."
+    }
+  },
+  "纲领": {
+    "gloss": "programme; guiding principle; platform",
+    "indonesian": "program; pedoman; landasan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这份文件是公司未来五年的发展纲领。",
+      "en": "This document is the company's guiding programme for the next five years."
+    }
+  },
+  "正月": {
+    "gloss": "first month of the lunar year; first lunar month",
+    "indonesian": "bulan pertama kalender imlek; bulan satu imlek",
+    "pos": [
+      "noun",
+      "time word"
+    ],
+    "example": {
+      "zh": "正月十五是元宵节，要吃汤圆。",
+      "en": "The fifteenth day of the first lunar month is the Lantern Festival, when people eat tangyuan."
+    }
+  },
+  "振兴": {
+    "gloss": "to revitalize; to promote vigorously; to revive",
+    "indonesian": "membangkitkan kembali; menghidupkan kembali; merevitalisasi",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "政府出台政策振兴乡村经济。",
+      "en": "The government introduced policies to revitalize the rural economy."
+    }
+  },
+  "废寝忘食": {
+    "gloss": "to forget to eat and sleep; to be totally absorbed (in work)",
+    "indonesian": "lupa makan dan tidur; tenggelam dalam pekerjaan",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "为了完成研究，他废寝忘食地工作。",
+      "en": "To finish the research, he worked so hard he forgot to eat and sleep."
+    }
+  },
+  "堤坝": {
+    "gloss": "dam; dyke; embankment",
+    "indonesian": "bendungan; tanggul",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "雨季来临前，工人们加固了堤坝。",
+      "en": "Before the rainy season, the workers reinforced the dyke."
+    }
+  },
+  "凹凸": {
+    "gloss": "uneven; bumpy; concave and convex",
+    "indonesian": "tidak rata; bergelombang; cekung dan cembung",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "这条小路凹凸不平，走路要小心。",
+      "en": "This path is bumpy and uneven, so watch your step."
+    }
+  },
+  "乡镇": {
+    "gloss": "villages and towns; township",
+    "indonesian": "desa dan kota kecil; kecamatan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "很多乡镇企业发展得很快。",
+      "en": "Many township enterprises have developed very quickly."
+    }
+  },
+  "不免": {
+    "gloss": "unavoidably; inevitably; cannot help but",
+    "indonesian": "tidak terhindarkan; mau tidak mau; pasti",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "第一次上台演讲，他不免有些紧张。",
+      "en": "Giving a speech on stage for the first time, he was inevitably a bit nervous."
+    }
+  },
+  "难能可贵": {
+    "gloss": "rare and commendable; praiseworthy; remarkable",
+    "indonesian": "langka dan patut dihargai; sangat terpuji",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他这么年轻就这么懂事，真是难能可贵。",
+      "en": "It's truly remarkable that he's so sensible at such a young age."
+    }
+  },
+  "锲而不舍": {
+    "gloss": "to persevere; to keep at it; unflagging",
+    "indonesian": "pantang menyerah; tekun; terus berusaha",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "只要锲而不舍，就一定能学好汉语。",
+      "en": "As long as you persevere, you will definitely master Chinese."
+    }
+  },
+  "辩证": {
+    "gloss": "dialectical; to investigate and verify",
+    "indonesian": "dialektis; menelaah; mengkaji",
+    "pos": [
+      "adjective",
+      "verb"
+    ],
+    "example": {
+      "zh": "我们要辩证地看待这个问题。",
+      "en": "We should look at this problem dialectically."
+    }
+  },
+  "潜移默化": {
+    "gloss": "to influence imperceptibly; subtle influence",
+    "indonesian": "mempengaruhi secara diam-diam; pengaruh tak kasat mata",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "父母的言行会潜移默化地影响孩子。",
+      "en": "Parents' words and deeds subtly influence their children."
+    }
+  },
+  "清真": {
+    "gloss": "halal; Muslim; Islamic",
+    "indonesian": "halal; Muslim; Islami",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "学校食堂专门设有清真窗口。",
+      "en": "The school canteen has a dedicated halal counter."
+    }
+  },
+  "淡季": {
+    "gloss": "off season; low season; slack season",
+    "indonesian": "musim sepi; musim rendah",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "旅游淡季的机票比较便宜。",
+      "en": "Flights are cheaper in the off season."
+    }
+  },
+  "气功": {
+    "gloss": "qigong; breathing exercises",
+    "indonesian": "qigong; latihan pernapasan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "每天早上公园里都有人练气功。",
+      "en": "Every morning there are people practising qigong in the park."
+    }
+  },
+  "毅然": {
+    "gloss": "resolutely; firmly; without hesitation",
+    "indonesian": "dengan tegas; tanpa ragu; dengan mantap",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "他毅然放弃了高薪工作，回乡创业。",
+      "en": "He resolutely gave up a high-paying job and returned home to start a business."
+    }
+  },
+  "正气": {
+    "gloss": "uprightness; integrity; healthy atmosphere",
+    "indonesian": "kejujuran; integritas; semangat lurus",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他为人正直，一身正气。",
+      "en": "He is an honest man, full of integrity."
+    }
+  },
+  "朝代": {
+    "gloss": "dynasty; reign",
+    "indonesian": "dinasti; masa pemerintahan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "唐朝是中国历史上最繁荣的朝代之一。",
+      "en": "The Tang was one of the most prosperous dynasties in Chinese history."
+    }
+  },
+  "斩钉截铁": {
+    "gloss": "resolute and decisive; categorical; firm",
+    "indonesian": "tegas dan pasti; tanpa ragu; mantap",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他斩钉截铁地拒绝了这个要求。",
+      "en": "He flatly refused the request."
+    }
+  },
+  "微观": {
+    "gloss": "microscopic; micro-; microcosmic",
+    "indonesian": "mikro; mikroskopis",
+    "pos": [
+      "adjective",
+      "noun"
+    ],
+    "example": {
+      "zh": "这门课主要研究微观经济学。",
+      "en": "This course mainly studies microeconomics."
+    }
+  },
+  "廉洁": {
+    "gloss": "honest and clean; incorruptible; free of corruption",
+    "indonesian": "bersih; jujur; tidak korup",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "老百姓希望官员廉洁奉公。",
+      "en": "Ordinary people hope officials will be honest and serve the public."
+    }
+  },
+  "序言": {
+    "gloss": "preface; foreword; introduction",
+    "indonesian": "kata pengantar; prakata; pendahuluan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这本书的序言是一位著名作家写的。",
+      "en": "The preface to this book was written by a famous author."
+    }
+  },
+  "宏观": {
+    "gloss": "macro-; macroscopic; overall",
+    "indonesian": "makro; makroskopis; secara keseluruhan",
+    "pos": [
+      "adjective",
+      "noun"
+    ],
+    "example": {
+      "zh": "政府加强了对经济的宏观调控。",
+      "en": "The government has strengthened macro-level regulation of the economy."
+    }
+  },
+  "历代": {
+    "gloss": "successive dynasties; past generations; through the ages",
+    "indonesian": "dinasti-dinasti terdahulu; turun-temurun; sepanjang zaman",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "博物馆收藏了历代名人的书法作品。",
+      "en": "The museum holds calligraphy by famous figures from successive dynasties."
+    }
+  },
+  "风土人情": {
+    "gloss": "local customs and conditions; local conditions and customs",
+    "indonesian": "adat istiadat dan kondisi setempat; budaya lokal",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "旅游可以让我们了解各地的风土人情。",
+      "en": "Travel lets us learn about local customs in different places."
+    }
+  },
+  "豪迈": {
+    "gloss": "bold and generous; heroic; open-hearted",
+    "indonesian": "gagah berani; berjiwa besar; lapang hati",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "他说话的语气非常豪迈。",
+      "en": "He speaks in a very bold and heroic tone."
+    }
+  },
+  "见闻": {
+    "gloss": "what one sees and hears; knowledge; experiences",
+    "indonesian": "apa yang dilihat dan didengar; pengalaman; wawasan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他把旅途中的见闻写成了一本书。",
+      "en": "He wrote what he saw and heard on his travels into a book."
+    }
+  },
+  "船舶": {
+    "gloss": "ships; vessels; shipping",
+    "indonesian": "kapal; kapal laut; perkapalan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "港口每天有上百艘船舶进出。",
+      "en": "Over a hundred vessels enter and leave the port every day."
+    }
+  },
+  "礼尚往来": {
+    "gloss": "courtesy demands reciprocity; to return a favour",
+    "indonesian": "kesopanan harus dibalas; saling membalas kebaikan",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他送了我礼物，礼尚往来，我也要回送一份。",
+      "en": "He gave me a gift; courtesy demands reciprocity, so I'll give one back."
+    }
+  },
+  "省会": {
+    "gloss": "provincial capital; capital of a province",
+    "indonesian": "ibu kota provinsi; pusat pemerintahan provinsi",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "广州是广东省的省会。",
+      "en": "Guangzhou is the provincial capital of Guangdong."
+    }
+  },
+  "查获": {
+    "gloss": "to seize; to track down and confiscate; to ferret out",
+    "indonesian": "menyita; menangkap; membongkar",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "海关查获了一批走私手机。",
+      "en": "Customs seized a batch of smuggled mobile phones."
+    }
+  },
+  "朝气蓬勃": {
+    "gloss": "full of youthful vigour; energetic; vibrant",
+    "indonesian": "penuh semangat muda; bergairah; energik",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "校园里到处都是朝气蓬勃的年轻人。",
+      "en": "The campus is full of energetic young people."
+    }
+  },
+  "弊病": {
+    "gloss": "drawback; defect; malady; ill",
+    "indonesian": "kelemahan; cacat; penyakit (sosial)",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这种教育方法有不少弊病。",
+      "en": "This teaching method has quite a few drawbacks."
+    }
+  },
+  "尚且": {
+    "gloss": "even; still (followed by \"let alone\")",
+    "indonesian": "bahkan; saja (diikuti \"apalagi\")",
+    "pos": [
+      "conjunction"
+    ],
+    "example": {
+      "zh": "大人尚且搬不动，何况孩子呢？",
+      "en": "Even adults can't move it, let alone children."
+    }
+  },
+  "外向": {
+    "gloss": "extroverted; outgoing; export-oriented",
+    "indonesian": "ekstrover; supel; berorientasi ekspor",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "她性格外向，很容易交到朋友。",
+      "en": "She is outgoing and makes friends easily."
+    }
+  },
+  "体裁": {
+    "gloss": "genre; literary form; style",
+    "indonesian": "genre; bentuk sastra; jenis tulisan",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "诗歌和小说是两种不同的文学体裁。",
+      "en": "Poetry and fiction are two different literary genres."
+    }
+  },
+  "任重道远": {
+    "gloss": "to shoulder heavy responsibilities over a long road; a long way to go",
+    "indonesian": "tanggung jawab berat dan jalan masih panjang",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "保护环境任重道远，需要大家共同努力。",
+      "en": "Protecting the environment is a heavy, long-term task that needs everyone's effort."
+    }
+  },
+  "不料": {
+    "gloss": "unexpectedly; to one's surprise",
+    "indonesian": "tak disangka; di luar dugaan",
+    "pos": [
+      "conjunction",
+      "adverb"
+    ],
+    "example": {
+      "zh": "本想出去散步，不料下起了大雨。",
+      "en": "I meant to go out for a walk, but unexpectedly it started pouring."
+    }
+  },
+  "鸦雀无声": {
+    "gloss": "absolute silence; not a sound to be heard",
+    "indonesian": "sunyi senyap; hening sama sekali",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "考试开始后，教室里鸦雀无声。",
+      "en": "Once the exam began, the classroom fell completely silent."
+    }
+  },
+  "过奖": {
+    "gloss": "to overpraise; you flatter me",
+    "indonesian": "terlalu memuji; Anda terlalu menyanjung",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "您过奖了，我还差得远呢。",
+      "en": "You flatter me; I still have a long way to go."
+    }
+  },
+  "苦尽甘来": {
+    "gloss": "after hardship comes happiness; the bitter is past and the sweet arrives",
+    "indonesian": "setelah susah datang senang; berakit-rakit ke hulu, berenang-renang ke tepian",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他们夫妻俩终于苦尽甘来，过上了好日子。",
+      "en": "After all their hardships, the couple finally have a good life."
+    }
+  },
+  "精益求精": {
+    "gloss": "to strive for perfection; to keep improving",
+    "indonesian": "terus menyempurnakan; berusaha mencapai kesempurnaan",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "他对自己的作品总是精益求精。",
+      "en": "He always strives for perfection in his work."
+    }
+  },
+  "籍贯": {
+    "gloss": "place of origin; native place; ancestral home",
+    "indonesian": "tempat asal; kampung halaman leluhur",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "填表时，请写清楚你的籍贯。",
+      "en": "When filling in the form, please clearly write your place of origin."
+    }
+  },
+  "稻谷": {
+    "gloss": "rice (unhusked); paddy",
+    "indonesian": "padi; gabah",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "秋天到了，田里的稻谷金黄一片。",
+      "en": "Autumn has come, and the rice in the fields is a sea of gold."
+    }
+  },
+  "混浊": {
+    "gloss": "muddy; turbid; murky",
+    "indonesian": "keruh; kotor; butek",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "下过大雨以后，河水变得很混浊。",
+      "en": "After the heavy rain, the river water became very muddy."
+    }
+  },
+  "悬崖峭壁": {
+    "gloss": "sheer cliffs; precipice; steep cliff face",
+    "indonesian": "tebing curam; jurang terjal",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "山上到处都是悬崖峭壁，十分危险。",
+      "en": "The mountain is full of sheer cliffs and very dangerous."
+    }
+  },
+  "川流不息": {
+    "gloss": "never-ending flow; continuous stream (of people or traffic)",
+    "indonesian": "mengalir tiada henti; arus yang tak putus-putus",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "马路上的车辆川流不息。",
+      "en": "There is a never-ending stream of traffic on the road."
+    }
+  },
+  "压岁钱": {
+    "gloss": "New Year money (given to children); lucky money",
+    "indonesian": "angpau Tahun Baru Imlek; uang hadiah Imlek untuk anak",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "过年时，孩子们最盼望的就是压岁钱。",
+      "en": "At New Year, what children most look forward to is their lucky money."
+    }
+  },
+  "举世瞩目": {
+    "gloss": "to attract worldwide attention; to be the focus of world attention",
+    "indonesian": "menarik perhatian dunia; menjadi sorotan dunia",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "这座大桥的建成取得了举世瞩目的成就。",
+      "en": "The completion of this bridge was an achievement that drew worldwide attention."
+    }
+  },
+  "连年": {
+    "gloss": "in successive years; year after year; for years running",
+    "indonesian": "bertahun-tahun berturut-turut; tahun demi tahun",
+    "pos": [
+      "adverb"
+    ],
+    "example": {
+      "zh": "这个地区连年丰收，农民的收入提高了。",
+      "en": "This region has had good harvests for years running, and farmers' incomes have risen."
+    }
+  },
+  "诞辰": {
+    "gloss": "birthday (of a respected person); anniversary of birth",
+    "indonesian": "hari lahir (tokoh terhormat); peringatan hari lahir",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "今年是这位作家诞辰一百周年。",
+      "en": "This year marks the hundredth anniversary of this writer's birth."
+    }
+  },
+  "络绎不绝": {
+    "gloss": "in an endless stream; continuous; one after another",
+    "indonesian": "tak putus-putus; berdatangan terus-menerus",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "节假日，来这里参观的游客络绎不绝。",
+      "en": "On holidays, visitors come here in an endless stream."
+    }
+  },
+  "知足常乐": {
+    "gloss": "contentment brings happiness; to be content with what one has",
+    "indonesian": "bersyukur membawa kebahagiaan; puas dengan apa yang dimiliki",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "奶奶常说，做人要知足常乐。",
+      "en": "Grandma often says that being content with what you have brings happiness."
+    }
+  },
+  "津津有味": {
+    "gloss": "with relish; with great interest; with gusto",
+    "indonesian": "dengan lahap; dengan penuh minat; dengan asyik",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "孩子们津津有味地听爷爷讲故事。",
+      "en": "The children listened to Grandpa's stories with great interest."
+    }
+  },
+  "拜年": {
+    "gloss": "to pay a New Year call; to wish someone a happy New Year",
+    "indonesian": "berkunjung saat Tahun Baru; mengucapkan selamat Tahun Baru",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "大年初一，我们去亲戚家拜年。",
+      "en": "On the first day of the New Year, we visit relatives to wish them a happy New Year."
+    }
+  },
+  "急于求成": {
+    "gloss": "impatient for success; overly eager for quick results",
+    "indonesian": "terburu-buru ingin berhasil; tidak sabar menunggu hasil",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "学习要一步一步来，不能急于求成。",
+      "en": "Learning should be done step by step; you can't be impatient for results."
+    }
+  },
+  "季军": {
+    "gloss": "third place; second runner-up; bronze medallist",
+    "indonesian": "juara ketiga; peraih medali perunggu",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "我们队在这次比赛中获得了季军。",
+      "en": "Our team came third in this competition."
+    }
+  },
+  "南辕北辙": {
+    "gloss": "to act in a way that defeats one's purpose; to go in the opposite direction",
+    "indonesian": "tindakan yang bertentangan dengan tujuan; berlawanan arah",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "想减肥却天天吃夜宵，简直是南辕北辙。",
+      "en": "Wanting to lose weight but eating late-night snacks every day is completely self-defeating."
+    }
+  },
+  "公安局": {
+    "gloss": "public security bureau; police station",
+    "indonesian": "biro keamanan publik; kantor polisi",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "办理护照需要到公安局去申请。",
+      "en": "To get a passport, you need to apply at the public security bureau."
+    }
+  },
+  "乌黑": {
+    "gloss": "jet-black; pitch-black; dark",
+    "indonesian": "hitam legam; hitam pekat",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "小女孩有一头乌黑的长发。",
+      "en": "The little girl has long jet-black hair."
+    }
+  },
+  "馅儿": {
+    "gloss": "filling; stuffing",
+    "indonesian": "isi (makanan); isian",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "我最喜欢吃白菜猪肉馅儿的饺子。",
+      "en": "My favourite dumplings are the ones with cabbage and pork filling."
+    }
+  },
+  "联欢": {
+    "gloss": "to have a get-together; to celebrate together; social gathering",
+    "indonesian": "pesta bersama; berkumpul merayakan; acara keakraban",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "新年前，公司举办了一场联欢晚会。",
+      "en": "Before New Year, the company held a party for everyone."
+    }
+  },
+  "相辅相成": {
+    "gloss": "to complement each other; to supplement one another",
+    "indonesian": "saling melengkapi; saling mendukung",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "学习和休息是相辅相成的。",
+      "en": "Study and rest complement each other."
+    }
+  },
+  "畜牧": {
+    "gloss": "animal husbandry; livestock farming; to raise livestock",
+    "indonesian": "peternakan; beternak",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": {
+      "zh": "草原上的居民主要从事畜牧业。",
+      "en": "The grassland residents are mainly engaged in animal husbandry."
+    }
+  },
+  "生肖": {
+    "gloss": "Chinese zodiac animal; animal sign",
+    "indonesian": "shio; tanda zodiak Tionghoa",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "我的生肖是龙，你呢？",
+      "en": "My zodiac sign is the dragon. What about you?"
+    }
+  },
+  "理直气壮": {
+    "gloss": "confident because one is in the right; with justified confidence",
+    "indonesian": "yakin karena merasa benar; percaya diri karena di pihak yang benar",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "明明是他错了，他却说得理直气壮。",
+      "en": "He was clearly in the wrong, yet he spoke as if fully justified."
+    }
+  },
+  "泰斗": {
+    "gloss": "leading authority; master; giant (in a field)",
+    "indonesian": "tokoh terkemuka; maestro; pakar besar",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他是中国医学界的泰斗。",
+      "en": "He is a leading authority in Chinese medicine."
+    }
+  },
+  "沾光": {
+    "gloss": "to benefit from association with someone; to bask in reflected glory",
+    "indonesian": "ikut menikmati keuntungan; ikut kecipratan",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "哥哥考上了名牌大学，全家人都跟着沾光。",
+      "en": "My brother got into a top university, and the whole family shared in the glory."
+    }
+  },
+  "正负": {
+    "gloss": "positive and negative; plus or minus",
+    "indonesian": "positif dan negatif; plus minus",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "这次实验的误差在正负一度以内。",
+      "en": "The error in this experiment was within plus or minus one degree."
+    }
+  },
+  "旗袍": {
+    "gloss": "qipao; cheongsam",
+    "indonesian": "qipao; cheongsam (gaun tradisional Tionghoa)",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "她穿着一件红色的旗袍参加婚礼。",
+      "en": "She wore a red qipao to the wedding."
+    }
+  },
+  "各抒己见": {
+    "gloss": "everyone expresses their own views; to air one's views freely",
+    "indonesian": "masing-masing menyampaikan pendapat; bebas mengemukakan pandangan",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "会上大家各抒己见，讨论得很热烈。",
+      "en": "At the meeting everyone gave their own views, and the discussion was lively."
+    }
+  },
+  "勉励": {
+    "gloss": "to encourage; to urge; encouragement",
+    "indonesian": "menyemangati; mendorong; dorongan",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": {
+      "zh": "老师勉励我们要继续努力。",
+      "en": "The teacher encouraged us to keep working hard."
+    }
+  },
+  "侃侃而谈": {
+    "gloss": "to speak with ease and confidence; to talk freely",
+    "indonesian": "berbicara dengan lancar dan percaya diri; berbicara panjang lebar",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "面试时，他在考官面前侃侃而谈。",
+      "en": "In the interview, he spoke with ease and confidence in front of the examiners."
+    }
+  },
+  "递增": {
+    "gloss": "to increase progressively; to rise steadily",
+    "indonesian": "meningkat secara bertahap; bertambah terus",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "公司的销售额每年以百分之十的速度递增。",
+      "en": "The company's sales increase by ten percent every year."
+    }
+  },
+  "踊跃": {
+    "gloss": "eager; enthusiastic; vying with one another",
+    "indonesian": "antusias; bersemangat; berbondong-bondong",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "同学们踊跃报名参加志愿者活动。",
+      "en": "Students eagerly signed up for the volunteer activity."
+    }
+  },
+  "羽绒服": {
+    "gloss": "down jacket; down coat",
+    "indonesian": "jaket bulu angsa; jaket bulu",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "北方冬天很冷，一定要带件羽绒服。",
+      "en": "Winters in the north are cold, so be sure to bring a down jacket."
+    }
+  },
+  "经纬": {
+    "gloss": "longitude and latitude; warp and weft; main threads",
+    "indonesian": "garis bujur dan lintang; lungsin dan pakan; garis besar",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "地图上的经纬线可以帮助我们确定位置。",
+      "en": "The lines of longitude and latitude on a map help us pinpoint locations."
+    }
+  },
+  "纪要": {
+    "gloss": "summary; minutes (of a meeting)",
+    "indonesian": "ringkasan; notulen (rapat)",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "会后请把会议纪要发给每个人。",
+      "en": "After the meeting, please send the minutes to everyone."
+    }
+  },
+  "炊烟": {
+    "gloss": "smoke from kitchen chimneys; cooking smoke",
+    "indonesian": "asap dapur; asap dari cerobong dapur",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "傍晚，村子里升起了袅袅炊烟。",
+      "en": "At dusk, wisps of cooking smoke rose over the village."
+    }
+  },
+  "温带": {
+    "gloss": "temperate zone; temperate region",
+    "indonesian": "zona beriklim sedang; daerah beriklim sedang",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "北京位于北温带，四季分明。",
+      "en": "Beijing lies in the northern temperate zone and has four distinct seasons."
+    }
+  },
+  "恳切": {
+    "gloss": "earnest; sincere; heartfelt",
+    "indonesian": "sungguh-sungguh; tulus; dengan sepenuh hati",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "他恳切地请求大家原谅他。",
+      "en": "He earnestly asked everyone to forgive him."
+    }
+  },
+  "得天独厚": {
+    "gloss": "richly endowed by nature; blessed with unique advantages",
+    "indonesian": "dianugerahi keunggulan alam; memiliki keunggulan istimewa",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "这里气候温暖，发展旅游业得天独厚。",
+      "en": "With its warm climate, this place has unique advantages for developing tourism."
+    }
+  },
+  "喜闻乐见": {
+    "gloss": "popular; loved by the people; a pleasure to see and hear",
+    "indonesian": "digemari; disukai masyarakat; menyenangkan untuk ditonton",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "相声是老百姓喜闻乐见的艺术形式。",
+      "en": "Crosstalk is an art form loved by ordinary people."
+    }
+  },
+  "博大精深": {
+    "gloss": "broad and profound; extensive and deep (knowledge, culture)",
+    "indonesian": "luas dan mendalam (ilmu, budaya)",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "中国文化博大精深，值得慢慢学习。",
+      "en": "Chinese culture is broad and profound and worth studying slowly."
+    }
+  },
+  "勤俭": {
+    "gloss": "hardworking and thrifty; industrious and frugal",
+    "indonesian": "rajin dan hemat",
+    "pos": [
+      "adjective"
+    ],
+    "example": {
+      "zh": "父母从小就教育我们要勤俭节约。",
+      "en": "Since childhood, our parents taught us to be hardworking and thrifty."
+    }
+  },
+  "农历": {
+    "gloss": "lunar calendar; Chinese calendar",
+    "indonesian": "kalender imlek; penanggalan lunar",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "中秋节是农历八月十五。",
+      "en": "The Mid-Autumn Festival falls on the fifteenth day of the eighth lunar month."
+    }
+  },
+  "东道主": {
+    "gloss": "host; host country",
+    "indonesian": "tuan rumah; negara tuan rumah",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "作为东道主，我们要热情接待各国客人。",
+      "en": "As hosts, we should warmly welcome guests from every country."
+    }
+  },
+  "饱经沧桑": {
+    "gloss": "to have experienced many vicissitudes of life; weather-beaten",
+    "indonesian": "telah mengalami banyak pasang surut kehidupan; kenyang pengalaman",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "老人那饱经沧桑的脸上露出了笑容。",
+      "en": "A smile appeared on the old man's weather-beaten face."
+    }
+  },
+  "飞禽走兽": {
+    "gloss": "birds and beasts; wildlife",
+    "indonesian": "burung dan binatang buas; satwa liar",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "这片森林里生活着各种飞禽走兽。",
+      "en": "All kinds of birds and animals live in this forest."
+    }
+  },
+  "端午节": {
+    "gloss": "Dragon Boat Festival; Duanwu Festival",
+    "indonesian": "Festival Perahu Naga; Hari Raya Peh Cun",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "端午节的时候，人们会吃粽子、看龙舟比赛。",
+      "en": "At the Dragon Boat Festival, people eat zongzi and watch dragon boat races."
+    }
+  },
+  "深情厚谊": {
+    "gloss": "deep friendship; profound affection",
+    "indonesian": "persahabatan yang mendalam; kasih sayang yang tulus",
+    "pos": [
+      "idiom"
+    ],
+    "example": {
+      "zh": "我永远不会忘记你们的深情厚谊。",
+      "en": "I will never forget your deep friendship."
+    }
+  },
+  "武侠": {
+    "gloss": "wuxia; martial arts hero; martial arts (fiction genre)",
+    "indonesian": "wuxia; pendekar silat; cerita silat",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他从小就爱看金庸的武侠小说。",
+      "en": "He has loved reading Jin Yong's martial arts novels since childhood."
+    }
+  },
+  "将就": {
+    "gloss": "to make do with; to put up with; to settle for",
+    "indonesian": "seadanya; menerima apa adanya; memaklumi",
+    "pos": [
+      "verb"
+    ],
+    "example": {
+      "zh": "房间有点小，你就将就住一晚吧。",
+      "en": "The room's a bit small, but just make do with it for one night."
+    }
+  },
+  "对联": {
+    "gloss": "couplet (written on scrolls); antithetical couplet",
+    "indonesian": "sajak berpasangan; bait berpasangan (ditempel di pintu)",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "春节前，家家户户都会在门上贴对联。",
+      "en": "Before Spring Festival, every household puts couplets on their doors."
+    }
+  },
+  "华侨": {
+    "gloss": "overseas Chinese; Chinese emigrant",
+    "indonesian": "perantau Tionghoa; warga Tionghoa di luar negeri",
+    "pos": [
+      "noun"
+    ],
+    "example": {
+      "zh": "他的爷爷是印尼华侨，几十年前回过中国。",
+      "en": "His grandfather was an overseas Chinese in Indonesia who went back to China decades ago."
+    }
+  }
+}

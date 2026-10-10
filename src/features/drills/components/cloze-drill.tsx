@@ -4,12 +4,11 @@ import { ArrowRight } from "lucide-react";
 import { Fragment, useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import { clozePassages } from "@/content/cloze";
 import type { ClozePassage } from "@/content/types";
 import { seededRng } from "@/lib/random";
 import { cn } from "@/lib/utils";
 
-import { DRILL_ITEM_IDS, questionId } from "../lib/items";
+import { questionId } from "../lib/question-id";
 import { type ItemStat, practiceOrder, summarize, withSession } from "../lib/stats";
 import { Choices } from "./choice-question";
 import { DrillHeader } from "./drill-header";
@@ -21,9 +20,12 @@ const LETTERS = ["A", "B", "C", "D"] as const;
  * A passage's standing for ordering the queue: missed if any blank was last
  * answered wrong, untried if no blank has been answered, otherwise right.
  */
-function passageStats(stats: Record<string, ItemStat>): Record<string, ItemStat> {
+function passageStats(
+  passages: ClozePassage[],
+  stats: Record<string, ItemStat>,
+): Record<string, ItemStat> {
   const out: Record<string, ItemStat> = {};
-  for (const p of clozePassages) {
+  for (const p of passages) {
     const own = p.blanks.map((b) => stats[questionId(p.id, b.number)]).filter(Boolean);
     if (own.length === 0) continue;
     out[p.id] = {
@@ -87,12 +89,23 @@ function PassageText({
   );
 }
 
-export function ClozeDrill({ stats, seed }: { stats: Record<string, ItemStat>; seed: number }) {
+/** `passages` and `itemIds` are the learner's level's, chosen on the server. */
+export function ClozeDrill({
+  passages,
+  itemIds,
+  stats,
+  seed,
+}: {
+  passages: ClozePassage[];
+  itemIds: string[];
+  stats: Record<string, ItemStat>;
+  seed: number;
+}) {
   const record = useRecord();
   // Fixed at mount from a server-chosen seed, so server and client agree and a
   // stats refresh never reshuffles the drill in progress.
   const [queue] = useState(() =>
-    practiceOrder(clozePassages, (p) => p.id, passageStats(stats), seededRng(seed)),
+    practiceOrder(passages, (p) => p.id, passageStats(passages, stats), seededRng(seed)),
   );
   const [position, setPosition] = useState(0);
   // Picks can change freely until the passage is checked, as on the exam.
@@ -110,7 +123,7 @@ export function ClozeDrill({ stats, seed }: { stats: Record<string, ItemStat>; s
   }
 
   const passage = queue[position % queue.length];
-  const summary = summarize(DRILL_ITEM_IDS.cloze, withSession(stats, session));
+  const summary = summarize(itemIds, withSession(stats, session));
   const answeredCount = passage.blanks.filter((b) => picked[b.number] !== undefined).length;
   const allAnswered = answeredCount === passage.blanks.length;
 

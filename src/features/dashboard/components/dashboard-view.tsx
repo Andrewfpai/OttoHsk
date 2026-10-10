@@ -3,18 +3,13 @@ import Link from "next/link";
 
 import { PageContainer, PageHeader } from "@/components/layout/page-header";
 import { Button } from "@/components/ui/button";
-import { TOTAL_WORDS } from "@/content/words";
 import type { Dashboard } from "@/features/dashboard/server/queries";
-import { SECTIONS, percent } from "@/features/mocks/lib/sections";
+import { percent, sectionsFor } from "@/features/mocks/lib/sections";
 import { STATUS_DOT, STATUS_LABEL } from "@/features/words/components/status-badge";
-import { EXAM_DATE, EXAM_TIME_ZONE, SECTION_MAX } from "@/lib/exam";
+import { formatDate } from "@/lib/dates";
+import { EXAM_TIME_ZONE } from "@/lib/exam";
+import { SECTION_MAX } from "@/lib/levels";
 import { cn } from "@/lib/utils";
-
-const DRILLS = [
-  { kind: "confusable", label: "Confusables", href: "/confusables" },
-  { kind: "cloze", label: "Fill in", href: "/cloze" },
-  { kind: "ordering", label: "Sentence order", href: "/ordering" },
-] as const;
 
 /** Pure presentation, so the dev preview can render it with sample data. */
 export function DashboardView({ name, d }: { name: string | null; d: Dashboard }) {
@@ -23,30 +18,44 @@ export function DashboardView({ name, d }: { name: string | null; d: Dashboard }
   const latest = d.latestMock;
   const firstName = name?.split(" ")[0];
 
-  const examLabel = new Date(`${EXAM_DATE}T00:00:00`).toLocaleDateString("en-GB", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+  const TOTAL_WORDS = d.totalWords;
+  const SECTIONS = sectionsFor(d.level);
+  const max = SECTION_MAX[d.level];
+  const examLabel = d.examDate
+    ? formatDate(new Date(`${d.examDate}T00:00:00Z`), "UTC", {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      })
+    : null;
 
   return (
     <PageContainer>
-      <PageHeader title={firstName ? `加油, ${firstName}` : "加油"} description="Your HSK 5 prep at a glance." />
+      <PageHeader title={firstName ? `加油, ${firstName}` : "加油"} description={`Your HSK ${d.level} prep at a glance.`} />
 
       <div className="grid gap-4 lg:grid-cols-3">
         {/* Countdown */}
         <section className="bg-card flex flex-col justify-between gap-4 rounded-2xl border p-5">
           <h2 className="text-muted-foreground text-sm">Exam day</h2>
-          <div>
-            <p className="font-numeric text-6xl font-semibold tracking-tight">
-              {Math.max(0, days)}
-            </p>
-            <p className="text-muted-foreground">
-              {days > 1 ? "days to go" : days === 1 ? "day to go" : days === 0 ? "Today. 加油!" : "Exam done"}
-            </p>
-          </div>
-          <p className="text-sm">{examLabel}</p>
+          {days === null ? (
+            <>
+              <p className="text-muted-foreground">No exam date set.</p>
+              <Link href="/settings" className="text-primary text-sm hover:underline">
+                Set one in Settings
+              </Link>
+            </>
+          ) : (
+            <>
+              <div>
+                <p className="font-numeric text-6xl font-semibold tracking-tight">{Math.max(0, days)}</p>
+                <p className="text-muted-foreground">
+                  {days > 1 ? "days to go" : days === 1 ? "day to go" : days === 0 ? "Today. 加油!" : "Exam done"}
+                </p>
+              </div>
+              <p className="text-sm">{examLabel}</p>
+            </>
+          )}
         </section>
 
         {/* Words covered */}
@@ -80,7 +89,7 @@ export function DashboardView({ name, d }: { name: string | null; d: Dashboard }
               </div>
             ))}
           </dl>
-          {counts.new > 0 && days > 0 ? (
+          {counts.new > 0 && d.newPerDay !== null ? (
             <p className="text-muted-foreground text-sm">
               Start <span className="text-foreground font-numeric font-medium">{d.newPerDay}</span> new
               words a day to have seen every word by exam day.
@@ -118,8 +127,8 @@ export function DashboardView({ name, d }: { name: string | null; d: Dashboard }
         <section className="bg-card space-y-4 rounded-2xl border p-5">
           <h2 className="text-muted-foreground text-sm">Drills mastered</h2>
           <ul className="space-y-3">
-            {DRILLS.map((drill) => {
-              const s = d.drills[drill.kind];
+            {d.drills.map((drill) => {
+              const s = drill.summary;
               return (
                 <li key={drill.kind}>
                   <Link href={drill.href} className="group block space-y-1.5">
@@ -158,13 +167,13 @@ export function DashboardView({ name, d }: { name: string | null; d: Dashboard }
                     <span>{s.label}</span>
                     <span className="font-numeric">
                       {latest[s.key]}
-                      <span className="text-muted-foreground">/{SECTION_MAX[s.key]}</span>
+                      <span className="text-muted-foreground">/{max[s.key]}</span>
                     </span>
                   </div>
                   <div className="bg-muted h-1.5 overflow-hidden rounded-full">
                     <div
                       className="h-full"
-                      style={{ width: `${percent(s.key, latest[s.key])}%`, background: s.color }}
+                      style={{ width: `${percent(d.level, s.key, latest[s.key])}%`, background: s.color }}
                     />
                   </div>
                 </li>

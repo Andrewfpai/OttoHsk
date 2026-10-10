@@ -18,7 +18,7 @@ function refresh() {
 
 export async function saveMock(id: string | null, input: unknown): Promise<ActionResult> {
   const user = await requireUser();
-  const parsed = mockSchema.safeParse(input);
+  const parsed = mockSchema(user.level).safeParse(input);
   if (!parsed.success) return fail(parsed.error.issues[0]?.message ?? "Check the scores.");
 
   if (id) {
@@ -27,11 +27,12 @@ export async function saveMock(id: string | null, input: unknown): Promise<Actio
     const updated = await db
       .update(mockTests)
       .set(parsed.data)
-      .where(and(eq(mockTests.id, id), eq(mockTests.userId, user.id)))
+      // Scored for the current level, so it may only change that level's rows.
+      .where(and(eq(mockTests.id, id), eq(mockTests.userId, user.id), eq(mockTests.level, user.level)))
       .returning({ id: mockTests.id });
     if (updated.length === 0) return fail("That mock test no longer exists.");
   } else {
-    await db.insert(mockTests).values({ userId: user.id, ...parsed.data });
+    await db.insert(mockTests).values({ userId: user.id, level: user.level, ...parsed.data });
   }
 
   refresh();

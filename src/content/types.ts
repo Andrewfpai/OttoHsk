@@ -66,3 +66,37 @@ export type ClozePassage = {
     why: string;
   }[];
 };
+
+/**
+ * One HSK 6 Reading Part 1 item (questions 51–60): four sentences, exactly
+ * one of which has a grammatical or usage error (病句).
+ */
+export type ErrorItem = {
+  /** Stable id, e.g. "err-001". */
+  id: string;
+  /** Four sentences, in A–D order. */
+  sentences: [string, string, string, string];
+  /** Index of the sentence with the error: 0 = A … 3 = D. */
+  wrong: 0 | 1 | 2 | 3;
+  /** The wrong sentence, corrected with the smallest change. */
+  corrected: string;
+  /** The kind of error, e.g. "Redundancy (重复)", "Missing subject". */
+  point: string;
+  /** One or two English sentences on what is wrong and why. */
+  why: string;
+};
+
+/**
+ * One HSK 6 writing task (question 101, 缩写): read a story for 10 minutes,
+ * then retell it in about 400 characters from memory, with a title.
+ */
+export type RetellStory = {
+  /** Stable id, e.g. "story-01". */
+  id: string;
+  /** A title a learner might give it. */
+  title: string;
+  /** The story, 800–1,000 characters. Paragraphs separated by a newline. */
+  text: string;
+  /** The 5–8 points a good retelling keeps, in order, in Chinese. */
+  keyPoints: string[];
+};

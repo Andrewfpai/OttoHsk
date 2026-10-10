@@ -11,7 +11,7 @@
  * backlog of reviews would stall coverage, and with a fixed exam date
  * reaching every word matters.
  */
-import type { Word } from "@/content/words";
+import type { Word } from "@/content/word-types";
 
 export type ProgressLite = { wordId: string; strength: number; dueTest: number };
 

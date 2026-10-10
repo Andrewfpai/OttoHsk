@@ -14,7 +14,22 @@ sibling to OttoLabs: same stack, separate site, linked both ways.
 | Essays | Q99 (five words) and Q100 (a described picture): 15-min timer, character count, word-use check, AI feedback naming the model that answered |
 | Mock tests | Log correct answers per section (L /45, R /45, W Part 1 /8) and see the trend |
 
-## Flashcards
+## Levels (HSK 5 and HSK 6)
+
+Each person picks a level and an optional exam date in Settings; every tab
+follows the level (`lib/levels.ts`). Progress is kept per level: word ids
+never repeat across levels, and flashcard state, test history and mock tests
+carry a `level` column. A level's word list is its own chunk, loaded on
+demand by `components/level/level-provider.tsx`; server code uses
+`content/words.ts`.
+
+| | HSK 5 | HSK 6 |
+|---|---|---|
+| Words | 1,300 (`words-hsk5.ts`) | 2,500 (`words-hsk6.json`, `npm run words:build:hsk6`) |
+| Reading drill | Fill in (46–60) | Fill in (61–70) and Find the error 病句 (51–60) |
+| Writing | Sentence order (91–98), essays Q99/Q100 | Retelling 缩写 (101) |
+| Mock tests | L /45, R /45, W Part 1 /8 | L /50, R /50, W essay /100 |
+
 
 1. **Practice** against a timer: 15 s per card to start, then shorter after
    starting the test early and longer after running out (5–30 s, kept per

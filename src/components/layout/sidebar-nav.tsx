@@ -4,11 +4,12 @@ import { ArrowUpRight, Timer } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { useLevel } from "@/components/level/level-provider";
 import {
-  NAV_ITEMS,
   OTTOLABS_URL,
   SECONDARY_NAV_ITEMS,
   isActivePath,
+  navItems,
   type NavItem,
 } from "@/components/layout/nav-items";
 import { cn } from "@/lib/utils";
@@ -60,10 +61,11 @@ function NavLink({
 
 export function SidebarNav({ onNavigate }: { onNavigate?: () => void }) {
   const pathname = usePathname();
+  const level = useLevel();
 
   return (
     <nav aria-label="Main" className="flex flex-1 flex-col gap-1">
-      {NAV_ITEMS.map((item) => (
+      {navItems(level).map((item) => (
         <NavLink
           key={item.href}
           item={item}

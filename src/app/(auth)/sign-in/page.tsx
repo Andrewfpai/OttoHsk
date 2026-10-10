@@ -37,7 +37,7 @@ export default async function SignInPage({ searchParams }: PageProps<"/sign-in">
           <SealMark className="mx-auto size-12 text-2xl" />
           <h1 className="text-2xl font-semibold tracking-tight">OttoHSK</h1>
           <p className="text-muted-foreground text-sm text-balance">
-            Words, flashcards and drills for HSK 5.
+            Words, flashcards and drills for HSK 5 and HSK 6.
           </p>
         </div>
 

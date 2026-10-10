@@ -6,12 +6,21 @@
  */
 import { describe, expect, it } from "vitest";
 
-import { confusables } from "../confusables";
 import { clozePassages } from "../cloze";
+import { clozeHsk6 } from "../cloze-hsk6";
+import { confusables } from "../confusables";
+import { confusablesHsk6 } from "../confusables-hsk6";
+import { errorsHsk6 } from "../errors-hsk6";
 import { orderingItems } from "../ordering";
 import { getOrderingNote } from "../ordering-notes";
 import { orderingPapers } from "../ordering-papers";
-import { getWord, words } from "../words";
+import { storiesHsk6 } from "../stories-hsk6";
+import type { ClozePassage, ConfusableSet } from "../types";
+import type { Word } from "../word-types";
+import { bankHsk5, wordsHsk5 as words } from "../words-hsk5";
+import { wordsHsk6 } from "../words-hsk6";
+
+const getWord = bankHsk5.getWord;
 
 const BLANK = "＿＿";
 const blanks = (s: string) => s.split(BLANK).length - 1;
@@ -46,12 +55,12 @@ describe("words", () => {
   });
 });
 
-describe("confusables", () => {
+function checkConfusables(sets: ConfusableSet[]) {
   it("has unique ids", () => {
-    expect(unique(confusables.map((s) => s.id))).toBe(true);
+    expect(unique(sets.map((s) => s.id))).toBe(true);
   });
 
-  it.each(confusables.map((s) => [s.id, s] as const))("%s is well-formed", (_, set) => {
+  it.each(sets.map((s) => [s.id, s] as const))("%s is well-formed", (_, set) => {
     expect(set.words.length).toBeGreaterThanOrEqual(2);
     expect(unique(set.words.map((w) => w.hanzi))).toBe(true);
     expect(set.questions.length).toBeGreaterThan(0);
@@ -62,27 +71,31 @@ describe("confusables", () => {
       expect(q.why.trim(), q.sentence).not.toBe("");
     }
   });
-});
+}
 
-describe("cloze", () => {
+/** `first`–`last`: the exam's question numbers for the section. */
+function checkCloze(passages: ClozePassage[], first: number, last: number) {
   it("has unique ids", () => {
-    expect(unique(clozePassages.map((p) => p.id))).toBe(true);
+    expect(unique(passages.map((p) => p.id))).toBe(true);
   });
 
-  it.each(clozePassages.map((p) => [p.id, p] as const))("%s is well-formed", (_, p) => {
+  it.each(passages.map((p) => [p.id, p] as const))("%s is well-formed", (_, p) => {
     const marked = [...p.text.matchAll(/\{\{(\d+)\}\}/g)].map((m) => Number(m[1]));
     // Every {{n}} has exactly one blank, in the same order, and vice versa.
     expect(marked).toEqual(p.blanks.map((b) => b.number));
     for (const b of p.blanks) {
-      expect(b.number, p.id).toBeGreaterThanOrEqual(46);
-      expect(b.number, p.id).toBeLessThanOrEqual(60);
+      expect(b.number, p.id).toBeGreaterThanOrEqual(first);
+      expect(b.number, p.id).toBeLessThanOrEqual(last);
       expect(b.options, `${p.id} #${b.number}`).toHaveLength(4);
       expect(unique(b.options), `${p.id} #${b.number}`).toBe(true);
       expect([0, 1, 2, 3]).toContain(b.answer);
       expect(b.why.trim(), `${p.id} #${b.number}`).not.toBe("");
     }
   });
-});
+}
+
+describe("confusables", () => checkConfusables(confusables));
+describe("cloze", () => checkCloze(clozePassages, 46, 60));
 
 describe("ordering", () => {
   const all = [...orderingPapers, ...orderingItems];
@@ -118,5 +131,82 @@ describe("ordering", () => {
     for (const alt of item.alternatives ?? []) {
       expect([...alt].sort().join("|"), item.id).toBe(key);
     }
+  });
+});
+
+/** The meaning a quiz shows must not contain the word it asks for. */
+function checkWordList(list: Word[], size: number) {
+  it(`has ${size} words with unique ids`, () => {
+    expect(list.length).toBe(size);
+    expect(unique(list.map((w) => w.id))).toBe(true);
+  });
+
+  it("gives every word pinyin, a meaning in English and Indonesian, and a part of speech", () => {
+    for (const w of list) {
+      expect(w.pinyin.trim(), w.id).not.toBe("");
+      expect(w.gloss.trim(), w.id).not.toBe("");
+      expect(w.indonesian.trim(), w.id).not.toBe("");
+      expect(w.pos.length, w.id).toBeGreaterThan(0);
+      expect(w.gloss, w.id).not.toMatch(/[一-鿿]/);
+    }
+  });
+
+  it("gives every word an example sentence that contains it", () => {
+    for (const w of list) {
+      expect(w.example, w.id).not.toBeNull();
+      expect(w.example!.zh, w.id).toContain(w.hanzi);
+      expect(w.example!.en.trim(), w.id).not.toBe("");
+    }
+  });
+}
+
+describe("HSK 6", () => {
+  describe("words", () => {
+    checkWordList(wordsHsk6, 2500);
+
+    it("shares no word with HSK 5, so progress ids never collide", () => {
+      const hsk5 = new Set(words.map((w) => w.id));
+      expect(wordsHsk6.filter((w) => hsk5.has(w.id))).toEqual([]);
+    });
+  });
+
+  describe("confusables", () => {
+    checkConfusables(confusablesHsk6);
+
+    it("never reuses an HSK 5 set id", () => {
+      const hsk5 = new Set(confusables.map((s) => s.id));
+      expect(confusablesHsk6.filter((s) => hsk5.has(s.id))).toEqual([]);
+    });
+  });
+
+  describe("cloze", () => checkCloze(clozeHsk6, 61, 70));
+
+  describe("find the error", () => {
+    it("has unique ids", () => {
+      expect(unique(errorsHsk6.map((i) => i.id))).toBe(true);
+    });
+
+    it.each(errorsHsk6.map((i) => [i.id, i] as const))("%s is well-formed", (_, item) => {
+      expect(item.sentences).toHaveLength(4);
+      expect(unique(item.sentences)).toBe(true);
+      expect([0, 1, 2, 3]).toContain(item.wrong);
+      expect(item.corrected).not.toBe(item.sentences[item.wrong]);
+      expect(item.point.trim()).not.toBe("");
+      expect(item.why.trim()).not.toBe("");
+    });
+  });
+
+  describe("retelling stories", () => {
+    it("has unique ids", () => {
+      expect(unique(storiesHsk6.map((s) => s.id))).toBe(true);
+    });
+
+    it.each(storiesHsk6.map((s) => [s.id, s] as const))("%s is exam length with key points", (_, story) => {
+      const han = story.text.match(/[一-鿿]/g)?.length ?? 0;
+      expect(han).toBeGreaterThanOrEqual(700);
+      expect(han).toBeLessThanOrEqual(1100);
+      expect(story.keyPoints.length).toBeGreaterThanOrEqual(5);
+      expect(story.title.trim()).not.toBe("");
+    });
   });
 });

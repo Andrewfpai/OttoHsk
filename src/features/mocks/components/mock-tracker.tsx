@@ -21,10 +21,11 @@ import { ChartContainer } from "@/components/ui/chart";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { formatDate } from "@/lib/dates";
-import { SECTION_MAX } from "@/lib/exam";
+import { useLevel } from "@/components/level/level-provider";
+import { SECTION_MAX } from "@/lib/levels";
 import { cn } from "@/lib/utils";
 
-import { SECTIONS, percent } from "../lib/sections";
+import { percent, sectionsFor } from "../lib/sections";
 import { deleteMock, saveMock } from "../server/actions";
 import type { MockRow } from "../server/queries";
 
@@ -34,6 +35,9 @@ function shortDate(iso: string) {
 }
 
 export function MockTracker({ mocks, today }: { mocks: MockRow[]; today: string }) {
+  const level = useLevel();
+  const SECTIONS = sectionsFor(level);
+  const max = SECTION_MAX[level];
   const [editing, setEditing] = useState<MockRow | null>(null);
   const [pending, startTransition] = useTransition();
   // Remounting the form resets its fields when switching what is edited.
@@ -78,9 +82,9 @@ export function MockTracker({ mocks, today }: { mocks: MockRow[]; today: string 
   const previous = mocks.at(-2);
   const chartData = mocks.map((m) => ({
     name: shortDate(m.takenOn),
-    listening: percent("listening", m.listening),
-    reading: percent("reading", m.reading),
-    writing: percent("writing", m.writing),
+    listening: percent(level, "listening", m.listening),
+    reading: percent(level, "reading", m.reading),
+    writing: percent(level, "writing", m.writing),
   }));
 
   return (
@@ -130,12 +134,12 @@ export function MockTracker({ mocks, today }: { mocks: MockRow[]; today: string 
                 inputMode="numeric"
                 required
                 min={0}
-                max={SECTION_MAX[s.key]}
+                max={max[s.key]}
                 defaultValue={editing?.[s.key] ?? ""}
                 className="font-numeric w-24"
               />
               <span className="text-muted-foreground font-numeric text-sm">
-                / {SECTION_MAX[s.key]} correct
+                / {max[s.key]} {level === 6 && s.key === "writing" ? "points" : "correct"}
               </span>
             </div>
           </div>
@@ -158,8 +162,9 @@ export function MockTracker({ mocks, today }: { mocks: MockRow[]; today: string 
           </Button>
         </div>
         <p className="text-muted-foreground text-xs">
-          Writing counts the 8 sentence-ordering questions. The two essays have no answer key, so
-          they are not scored here.
+          {level === 5
+            ? "Writing counts the 8 sentence-ordering questions. The two essays have no answer key, so they are not scored here."
+            : "Writing is the 缩写 essay, scored out of 100: enter your own or a teacher's estimate."}
         </p>
       </form>
 
@@ -177,10 +182,10 @@ export function MockTracker({ mocks, today }: { mocks: MockRow[]; today: string 
                   </div>
                   <p className="font-numeric mt-1 text-3xl font-semibold">
                     {value}
-                    <span className="text-muted-foreground text-lg font-normal">/{SECTION_MAX[s.key]}</span>
+                    <span className="text-muted-foreground text-lg font-normal">/{max[s.key]}</span>
                   </p>
                   <p className="text-muted-foreground font-numeric text-sm">
-                    {percent(s.key, value)}%
+                    {percent(level, s.key, value)}%
                     {delta !== null && delta !== 0 ? (
                       <span className={cn("ml-2", delta > 0 ? "text-success" : "text-destructive")}>
                         {delta > 0 ? "+" : ""}
@@ -279,7 +284,7 @@ export function MockTracker({ mocks, today }: { mocks: MockRow[]; today: string 
                       {SECTIONS.map((s) => (
                         <td key={s.key} className="font-numeric px-3 py-2.5 text-right whitespace-nowrap">
                           {m[s.key]}
-                          <span className="text-muted-foreground">/{SECTION_MAX[s.key]}</span>
+                          <span className="text-muted-foreground">/{max[s.key]}</span>
                         </td>
                       ))}
                       <td className="px-5 py-1.5">

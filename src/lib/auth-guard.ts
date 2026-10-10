@@ -4,6 +4,7 @@ import { cache } from "react";
 import { hasAccess, signOutEverywhere } from "@/features/access/server/check";
 import { isOwnerEmail } from "@/lib/access";
 import { auth } from "@/lib/auth";
+import { type Level, toLevel } from "@/lib/levels";
 
 export type AuthedUser = {
   id: string;
@@ -11,6 +12,10 @@ export type AuthedUser = {
   name: string | null;
   image: string | null;
   hasPassword: boolean;
+  /** The HSK level they study; every tab follows it. */
+  level: Level;
+  /** Their exam day ("YYYY-MM-DD"), or null when none is set. */
+  examDate: string | null;
 };
 
 /**
@@ -44,6 +49,8 @@ export const requireUser = cache(async (): Promise<AuthedUser> => {
     name: session.user.name ?? null,
     image: session.user.image ?? null,
     hasPassword: session.user.hasPassword ?? false,
+    level: toLevel(session.user.level),
+    examDate: session.user.examDate ?? null,
   };
 });
 

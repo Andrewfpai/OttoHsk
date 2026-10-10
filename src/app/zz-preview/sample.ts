@@ -1,16 +1,18 @@
 /**
  * Sample data for the dev-only preview pages. Never imported by real routes.
  */
-import { words } from "@/content/words";
+import { wordBank } from "@/content/words";
 import type { Dashboard } from "@/features/dashboard/server/queries";
 import type { ItemStat } from "@/features/drills/lib/stats";
 import type { EssayRow } from "@/features/essays/server/queries";
 import type { FlashcardInfo, ProgressRow, TestSummary } from "@/features/flashcards/server/queries";
 import type { MockRow } from "@/features/mocks/server/queries";
+import type { Level } from "@/lib/levels";
 
 const DAY = 86_400_000;
 
-export function sampleData() {
+export function sampleData(level: Level = 5) {
+  const words = wordBank(level).words;
   const now = Date.now();
   const testsTaken = 12;
   const progress: ProgressRow[] = words.slice(0, 80).map((w, i) => ({
@@ -25,27 +27,38 @@ export function sampleData() {
     { id: "t1", takenAt: now - DAY, testNumber: 12, total: 20, correct: 15, guesses: 0, passed: true },
     { id: "t2", takenAt: now - 2 * DAY, testNumber: 11, total: 20, correct: 6, guesses: 4, passed: false },
   ];
-  const mocks: MockRow[] = [
-    { id: "00000000-0000-4000-8000-000000000001", takenOn: "2026-09-20", label: "H51001", listening: 24, reading: 21, writing: 4 },
-    { id: "00000000-0000-4000-8000-000000000002", takenOn: "2026-09-28", label: "H51002", listening: 28, reading: 25, writing: 5 },
-    { id: "00000000-0000-4000-8000-000000000003", takenOn: "2026-10-06", label: null, listening: 30, reading: 24, writing: 6 },
-  ];
+  const mocks: MockRow[] =
+    level === 5
+      ? [
+          { id: "00000000-0000-4000-8000-000000000001", takenOn: "2026-09-20", label: "H51001", listening: 24, reading: 21, writing: 4 },
+          { id: "00000000-0000-4000-8000-000000000002", takenOn: "2026-09-28", label: "H51002", listening: 28, reading: 25, writing: 5 },
+          { id: "00000000-0000-4000-8000-000000000003", takenOn: "2026-10-06", label: null, listening: 30, reading: 24, writing: 6 },
+        ]
+      : [
+          { id: "00000000-0000-4000-8000-000000000004", takenOn: "2026-09-20", label: "H61001", listening: 30, reading: 27, writing: 58 },
+          { id: "00000000-0000-4000-8000-000000000005", takenOn: "2026-10-04", label: "H61002", listening: 33, reading: 31, writing: 64 },
+        ];
   const stats: Record<string, ItemStat> = {
     "ord-001": { attempts: 1, correct: 0, lastCorrect: false },
     "ord-002": { attempts: 2, correct: 2, lastCorrect: true },
   };
   const dashboard: Dashboard = {
+    level,
+    examDate: "2026-11-07",
     daysLeft: 28,
+    totalWords: words.length,
     words: { known: 32, learning: 48, new: words.length - 80 },
     newPerDay: Math.ceil((words.length - 80) / 28),
     due: 20,
     lockedUntil: null,
-    drills: {
-      confusable: { total: 177, tried: 30, mastered: 22 },
-      ordering: { total: 60, tried: 12, mastered: 9 },
-      cloze: { total: 150, tried: 30, mastered: 21 },
-    },
-    latestMock: mocks[2],
+    drills: [
+      { kind: "confusable", label: "Confusables", href: "/confusables", summary: { total: 177, tried: 30, mastered: 22 } },
+      { kind: "cloze", label: "Fill in", href: "/cloze", summary: { total: 150, tried: 30, mastered: 21 } },
+      level === 5
+        ? { kind: "ordering", label: "Sentence order", href: "/ordering", summary: { total: 211, tried: 12, mastered: 9 } }
+        : { kind: "error", label: "Find the error", href: "/errors", summary: { total: 80, tried: 10, mastered: 6 } },
+    ],
+    latestMock: mocks.at(-1) ?? null,
   };
   const essays: EssayRow[] = [
     {
@@ -73,6 +86,8 @@ export function sampleData() {
         corrected: "我学习汉语至今已经三年了。我每天坚持练习，也常常和中国朋友交流。显然，这些努力有了成果，我的汉语水平提高了很多。",
         modelAnswer: "我学习汉语至今已经三年了。刚开始时我觉得很难，但我一直坚持每天练习，还经常和中国朋友交流。显然，这些努力取得了成果：现在我不但能看懂中文新闻，而且能用汉语表达自己的想法。",
         tips: ["Aim for 80 characters: add an example or a result.", "Link sentences with 不但……而且 or 因此."],
+        coverage: [],
+        titleNote: "",
       },
     },
   ];

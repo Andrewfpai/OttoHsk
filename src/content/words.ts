@@ -1,54 +1,22 @@
 /**
- * The HSK 5 (HSK 2.0) word list: the app's source of truth for vocabulary.
- *
- * Three files, merged here by word id:
- * - `words.json`: the 1,300 words with pinyin, frequency and every
- *   dictionary sense, built by `npm run words:build` (see
- *   scripts/build-words.mjs for sources and licences). Most common first.
- * - `meanings.json`: the checked meaning of every word, in English (shown
- *   and quizzed on) and Indonesian. It replaces the dictionary's guess.
- *   Fix a meaning here, never in words.json.
- * - `examples.json`: one example sentence per word.
+ * Every level's vocabulary, for server code. Client code must not import
+ * this (it would ship every list to the browser): it uses `useWordBank()`.
  */
-import examples from "./examples.json";
-import checked from "./meanings.json";
-import data from "./words.json";
+import type { Level } from "@/lib/levels";
 
-export type Example = { zh: string; en: string };
+import type { WordBank } from "./word-types";
+import { bankHsk5 } from "./words-hsk5";
+import { bankHsk6 } from "./words-hsk6";
 
-export type Word = {
-  /** The simplified hanzi. Progress rows are keyed by it. */
-  id: string;
-  hanzi: string;
-  pinyin: string;
-  /** The checked English meaning: shown on cards and used as a quiz answer. */
-  gloss: string;
-  /** The same meaning in Indonesian. */
-  indonesian: string;
-  /** Every dictionary sense, for the word list's detail view. */
-  meanings: string[];
-  pos: string[];
-  /** Frequency rank; lower is more common. */
-  rank: number;
-  /** One sentence using the word in its HSK 5 sense. */
-  example: Example | null;
-};
+export type { Example, Word, WordBank } from "./word-types";
 
-type Meaning = { gloss: string; indonesian: string };
-const meaningOf: Record<string, Meaning> = checked;
-const exampleOf: Record<string, Example> = examples;
+const BANKS: Record<Level, WordBank> = { 5: bankHsk5, 6: bankHsk6 };
 
-export const words: Word[] = data.map((w) => ({
-  ...w,
-  gloss: meaningOf[w.id]?.gloss ?? w.gloss,
-  indonesian: meaningOf[w.id]?.indonesian ?? "",
-  example: exampleOf[w.id] ?? null,
-}));
+export function wordBank(level: Level): WordBank {
+  return BANKS[level];
+}
 
-export const TOTAL_WORDS = words.length;
-
-const byId = new Map(words.map((w) => [w.id, w]));
-
-export function getWord(id: string): Word | undefined {
-  return byId.get(id);
+/** A word from any level, for checks that only need to know it exists. */
+export function findWord(id: string) {
+  return bankHsk5.getWord(id) ?? bankHsk6.getWord(id);
 }

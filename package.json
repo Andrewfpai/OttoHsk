@@ -14,7 +14,8 @@
     "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
-    "words:build": "node scripts/build-words.mjs"
+    "words:build": "node scripts/build-words.mjs",
+    "words:build:hsk6": "node scripts/build-words-hsk6.mjs"
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^1.11.3",

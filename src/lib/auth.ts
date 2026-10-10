@@ -90,6 +90,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           emailVerified: user.emailVerified,
           // Whether one is set, never the hash itself.
           hasPassword: Boolean((user as { passwordHash?: string | null }).passwordHash),
+          level: (user as { level?: number }).level ?? 5,
+          examDate: (user as { examDate?: string | null }).examDate ?? null,
         },
       };
     },

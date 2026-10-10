@@ -4,6 +4,7 @@ import { Menu } from "lucide-react";
 import { useState } from "react";
 
 import { Brand } from "@/components/layout/brand";
+import { LevelProvider } from "@/components/level/level-provider";
 import { SidebarNav } from "@/components/layout/sidebar-nav";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { UserMenu } from "@/components/layout/user-menu";
@@ -25,12 +26,13 @@ export function AppShell({
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <div className="flex min-h-dvh">
+    <LevelProvider level={user.level}>
+      <div className="flex min-h-dvh">
       {/* Desktop sidebar: one screen tall and sticky, so the account menu sits
           at the bottom of the window on every page. */}
       <aside className="bg-sidebar border-sidebar-border sticky top-0 hidden h-dvh w-60 shrink-0 flex-col gap-6 border-r p-3 lg:flex">
         <div className="px-2 pt-2">
-          <Brand />
+          <Brand level={user.level} />
         </div>
         <div className="flex min-h-0 flex-1 flex-col overflow-y-auto">
           <SidebarNav />
@@ -64,7 +66,7 @@ export function AppShell({
               <SheetHeader className="p-0">
                 <SheetTitle className="sr-only">Navigation</SheetTitle>
                 <div className="px-2 pt-2">
-                  <Brand />
+                  <Brand level={user.level} />
                 </div>
               </SheetHeader>
               <SidebarNav onNavigate={() => setMobileOpen(false)} />
@@ -75,13 +77,14 @@ export function AppShell({
           </Sheet>
 
           <div className="flex-1">
-            <Brand />
+            <Brand level={user.level} />
           </div>
           <ThemeToggle />
         </header>
 
         <main className="min-w-0 flex-1">{children}</main>
       </div>
-    </div>
+      </div>
+    </LevelProvider>
   );
 }

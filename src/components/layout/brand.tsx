@@ -12,7 +12,7 @@ export function SealMark({ className = "size-8 text-base" }: { className?: strin
   );
 }
 
-export function Brand() {
+export function Brand({ level }: { level: number }) {
   return (
     <Link
       href="/dashboard"
@@ -20,7 +20,7 @@ export function Brand() {
     >
       <SealMark />
       <span className="text-sm font-semibold tracking-tight">
-        OttoHSK <span className="text-muted-foreground font-normal">· HSK 5</span>
+        OttoHSK <span className="text-muted-foreground font-normal">· HSK {level}</span>
       </span>
     </Link>
   );

@@ -1,15 +1,12 @@
 /**
- * The exam everything counts down to. HSK 2.0 level 5, computer-based.
+ * The default exam day for new accounts. Each person can change or clear it
+ * in Settings; the countdown uses theirs.
  */
-export const EXAM_DATE = "2026-11-07";
+export const DEFAULT_EXAM_DATE = "2026-11-07";
 
 /** Days are counted in the learner's local calendar, not UTC. */
 export const EXAM_TIME_ZONE = "Asia/Jakarta";
 
-/** Section sizes, for showing "30/45". Writing counts Part 1 only. */
-export const SECTION_MAX = { listening: 45, reading: 45, writing: 8 } as const;
-
-export type Section = keyof typeof SECTION_MAX;
 
 /** The calendar date ("YYYY-MM-DD") at `now` in `timeZone`. */
 export function localDate(now: Date, timeZone = EXAM_TIME_ZONE): string {
@@ -28,8 +25,10 @@ function dayNumber(isoDate: string): number {
 }
 
 /**
- * Whole days from today to exam day. 0 on the day itself, negative after it.
+ * Whole days from today to exam day. 0 on the day itself, negative after it,
+ * null when no exam date is set.
  */
-export function daysUntilExam(now: Date, examDate = EXAM_DATE): number {
+export function daysUntilExam(now: Date, examDate: string | null): number | null {
+  if (!examDate) return null;
   return dayNumber(examDate) - dayNumber(localDate(now));
 }

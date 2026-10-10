@@ -5,7 +5,8 @@ import { useDeferredValue, useMemo, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { words } from "@/content/words";
+import { useWordBank } from "@/components/level/level-provider";
+import type { Word, WordBank } from "@/content/word-types";
 import {
   FAST_TRACK_GAP,
   FAST_TRACK_STRENGTH,
@@ -28,26 +29,42 @@ type Sort = "az" | "common";
 const FILTERS: Filter[] = ["all", "new", "learning", "known"];
 const PAGE = 100;
 
-/** Search keys, built once: tone-less pinyin, and every meaning in English and Indonesian. */
-const byCommon = words.map((w) => ({
-  word: w,
-  pinyin: plainPinyin(w.pinyin),
-  meanings: [w.gloss, w.indonesian, ...w.meanings].join(" ").toLowerCase(),
-}));
+type Searchable = { word: Word; pinyin: string; meanings: string };
 
-/** Dictionary order, like the official list: pinyin without tones, then tones, then characters. */
-const byPinyin = [...byCommon].sort(
-  (a, b) =>
-    a.pinyin.localeCompare(b.pinyin) ||
-    a.word.pinyin.localeCompare(b.word.pinyin) ||
-    a.word.hanzi.localeCompare(b.word.hanzi, "zh"),
-);
+/**
+ * Search keys, built once per level: tone-less pinyin, and every meaning in
+ * English and Indonesian. Two orders: most common first, and dictionary
+ * order like the official list (pinyin without tones, then tones, then
+ * characters).
+ */
+const indexes = new WeakMap<WordBank, { byCommon: Searchable[]; byPinyin: Searchable[] }>();
+function indexOf(bank: WordBank) {
+  let index = indexes.get(bank);
+  if (!index) {
+    const byCommon = bank.words.map((w) => ({
+      word: w,
+      pinyin: plainPinyin(w.pinyin),
+      meanings: [w.gloss, w.indonesian, ...w.meanings].join(" ").toLowerCase(),
+    }));
+    const byPinyin = [...byCommon].sort(
+      (a, b) =>
+        a.pinyin.localeCompare(b.pinyin) ||
+        a.word.pinyin.localeCompare(b.word.pinyin) ||
+        a.word.hanzi.localeCompare(b.word.hanzi, "zh"),
+    );
+    index = { byCommon, byPinyin };
+    indexes.set(bank, index);
+  }
+  return index;
+}
 
 const HAS_HANZI = /\p{Script=Han}/u;
 
 export type WordProgress = Record<string, { strength: number; dueTest: number }>;
 
 export function WordList({ progress, nextTest }: { progress: WordProgress; nextTest: number }) {
+  const bank = useWordBank();
+  const { byCommon, byPinyin } = indexOf(bank);
   const strengths = useMemo(
     () => Object.fromEntries(Object.entries(progress).map(([id, p]) => [id, p.strength])),
     [progress],
@@ -62,9 +79,9 @@ export function WordList({ progress, nextTest }: { progress: WordProgress; nextT
 
   const counts = useMemo(() => {
     const c: Record<WordStatus, number> = { new: 0, learning: 0, known: 0 };
-    for (const w of words) c[statusOf(strengths[w.id])]++;
+    for (const w of bank.words) c[statusOf(strengths[w.id])]++;
     return c;
-  }, [strengths]);
+  }, [bank, strengths]);
 
   const results = useMemo(() => {
     const q = deferredQuery.trim().toLowerCase();
@@ -77,7 +94,7 @@ export function WordList({ progress, nextTest }: { progress: WordProgress; nextT
         return (qPinyin && pinyin.includes(qPinyin)) || meanings.includes(q);
       })
       .map((s) => s.word);
-  }, [deferredQuery, filter, sort, strengths]);
+  }, [byCommon, byPinyin, deferredQuery, filter, sort, strengths]);
 
   return (
     <div className="space-y-4">
@@ -117,7 +134,7 @@ export function WordList({ progress, nextTest }: { progress: WordProgress; nextT
               ) : null}
               {f === "all" ? "All" : STATUS_LABEL[f]}
               <span className="text-muted-foreground font-numeric text-xs">
-                {f === "all" ? words.length : counts[f]}
+                {f === "all" ? bank.total : counts[f]}
               </span>
             </Button>
           ))}

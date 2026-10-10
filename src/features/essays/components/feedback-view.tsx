@@ -51,6 +51,34 @@ export function FeedbackView({
         </div>
       </div>
 
+      {feedback.coverage.length > 0 ? (
+        <section className="space-y-2">
+          <h3 className="text-sm font-medium">Story points kept</h3>
+          <ul className="space-y-1.5">
+            {feedback.coverage.map((c, i) => (
+              // Index keys: a model can repeat an entry.
+              <li key={i} className="flex items-start gap-2 text-sm">
+                {c.kept ? (
+                  <Check aria-label="Kept" className="text-success mt-0.5 size-4 shrink-0" />
+                ) : (
+                  <X aria-label="Missing" className="text-destructive mt-0.5 size-4 shrink-0" />
+                )}
+                <span className="min-w-0">
+                  <span className="font-hanzi">{c.point}</span>
+                  {c.note ? <span className="text-muted-foreground block">{c.note}</span> : null}
+                </span>
+              </li>
+            ))}
+          </ul>
+          {feedback.titleNote ? (
+            <p className="text-muted-foreground text-sm">
+              <span className="text-foreground font-medium">Title: </span>
+              {feedback.titleNote}
+            </p>
+          ) : null}
+        </section>
+      ) : null}
+
       {feedback.wordUse.length > 0 ? (
         <section className="space-y-2">
           <h3 className="text-sm font-medium">The five words</h3>

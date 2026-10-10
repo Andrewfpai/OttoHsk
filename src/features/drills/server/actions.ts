@@ -10,7 +10,7 @@ import { requireUser } from "@/lib/auth-guard";
 import { isDrillItem } from "../lib/items";
 
 const schema = z.object({
-  kind: z.enum(["confusable", "ordering", "cloze"]),
+  kind: z.enum(["confusable", "ordering", "cloze", "error"]),
   itemId: z.string().min(1).max(100),
   correct: z.boolean(),
 });

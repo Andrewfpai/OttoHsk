@@ -17,7 +17,8 @@ import { toast } from "sonner";
 import { StickyActions } from "@/components/sticky-actions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { type Word, getWord, words } from "@/content/words";
+import { useWordBank } from "@/components/level/level-provider";
+import type { Word } from "@/content/word-types";
 import { ExampleSentence } from "@/features/words/components/example-sentence";
 import { formatCountdown, useNow } from "@/hooks/use-now";
 import { formatDate } from "@/lib/dates";
@@ -53,6 +54,7 @@ export function FlashcardStudio({
   info: FlashcardInfo;
   recentTests: TestSummary[];
 }) {
+  const bank = useWordBank();
   const router = useRouter();
   const [phase, setPhase] = useState<Phase>({ name: "setup" });
   const [size, setSize] = useState<number>(20);
@@ -67,7 +69,7 @@ export function FlashcardStudio({
   const isLockedNow = () => lockedUntil !== null && lockedUntil > Date.now();
 
   function startPractice() {
-    const deck = buildDeck(words, progress, info.nextTest, size);
+    const deck = buildDeck(bank.words, progress, info.nextTest, size);
     if (deck.words.length === 0) {
       toast.info("Nothing to study right now: every word is waiting for its next review.");
       return;
@@ -86,7 +88,7 @@ export function FlashcardStudio({
       return;
     }
     savePace(nextPace(pace, { cards: deck.length, usedMs: Date.now() - startedAt, timedOut }));
-    setPhase({ name: "test", deck, questions: buildQuestions(deck, words, Math.random) });
+    setPhase({ name: "test", deck, questions: buildQuestions(deck, bank, Math.random) });
   }
 
   if (phase.name === "practice") {
@@ -177,6 +179,7 @@ function Setup({
   onStart: () => void;
   recentTests: TestSummary[];
 }) {
+  const { total } = useWordBank();
   const stats = useMemo(() => {
     let due = 0;
     let known = 0;
@@ -184,8 +187,8 @@ function Setup({
       if (isDue(p, info.nextTest)) due++;
       if (statusOf(p.strength) === "known") known++;
     }
-    return { due, known, fresh: words.length - progress.length };
-  }, [progress, info.nextTest]);
+    return { due, known, fresh: total - progress.length };
+  }, [progress, info.nextTest, total]);
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_20rem]">
@@ -529,10 +532,11 @@ function Test({
   // never during render.
   const shownAt = useRef<number | null>(null);
 
+  const { getWord } = useWordBank();
   const q = questions[index];
   const word = getWord(q.wordId)!;
   const answer = answers[index] ?? null;
-  const right = answer !== null && isRightAnswer(answer);
+  const right = answer !== null && isRightAnswer(answer, getWord);
   const last = index === questions.length - 1;
 
   function record(given: { chosenId: string } | { typed: string }) {
@@ -752,7 +756,8 @@ function Results({
   now: number | null;
   onAgain: () => void;
 }) {
-  const wrong = answers.filter((a) => !isRightAnswer(a));
+  const { getWord } = useWordBank();
+  const wrong = answers.filter((a) => !isRightAnswer(a, getWord));
   const pct = Math.round((result.correct / result.total) * 100);
 
   return (
@@ -834,7 +839,8 @@ function Results({
 
 /** Every word in the test: its strength before → after, and the test it returns in. */
 function ComesBack({ result, answers }: { result: TestResult; answers: Answer[] }) {
-  const right = new Set(answers.filter(isRightAnswer).map((a) => a.wordId));
+  const { getWord } = useWordBank();
+  const right = new Set(answers.filter((a) => isRightAnswer(a, getWord)).map((a) => a.wordId));
   const rows = [...result.schedule].sort((a, b) => a.dueTest - b.dueTest || a.strength - b.strength);
   return (
     <section className="space-y-3">

@@ -1,4 +1,4 @@
-import { asc, eq } from "drizzle-orm";
+import { and, asc, eq } from "drizzle-orm";
 
 import { db } from "@/db";
 import { type MockTest, mockTests } from "@/db/schema";
@@ -9,7 +9,7 @@ export type MockRow = Pick<
   "id" | "takenOn" | "label" | "listening" | "reading" | "writing"
 >;
 
-/** Oldest first, the order a trend reads in. */
+/** The learner's current level's mocks, oldest first: the order a trend reads in. */
 export async function getMocks(): Promise<MockRow[]> {
   const user = await requireUser();
   return db
@@ -22,6 +22,6 @@ export async function getMocks(): Promise<MockRow[]> {
       writing: mockTests.writing,
     })
     .from(mockTests)
-    .where(eq(mockTests.userId, user.id))
+    .where(and(eq(mockTests.userId, user.id), eq(mockTests.level, user.level)))
     .orderBy(asc(mockTests.takenOn), asc(mockTests.createdAt));
 }

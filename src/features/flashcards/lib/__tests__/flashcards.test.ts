@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { words } from "@/content/words";
+import { bankHsk5 as bank, wordsHsk5 as words } from "@/content/words-hsk5";
 import { seededRng } from "@/lib/random";
 
 import { buildDeck } from "../deck";
@@ -153,7 +153,7 @@ describe("deck", () => {
 
 describe("questions", () => {
   const deck = words.slice(0, 40);
-  const questions = buildQuestions(deck, words, seededRng(42));
+  const questions = buildQuestions(deck, bank, seededRng(42));
   const choices = (qs: Question[]) => qs.filter((q): q is ChoiceQuestion => q.kind !== "pinyin");
 
   it("asks about every word once; choice questions have 4 distinct options including the answer", () => {
@@ -170,7 +170,7 @@ describe("questions", () => {
     expect([count("meaning"), count("hanzi"), count("sentence"), count("pinyin")]).toEqual([10, 10, 10, 10]);
   });
 
-  const all = buildQuestions(words, words, seededRng(7));
+  const all = buildQuestions(words, bank, seededRng(7));
   const byId = new Map(words.map((w) => [w.id, w]));
   const senses = (gloss: string) => gloss.split(/[;,](?![^(]*\))/).map((x) => x.trim());
 
@@ -206,7 +206,7 @@ describe("questions", () => {
   });
 
   it("uses look-alikes such as a shared character", () => {
-    const q = choices(buildQuestions([byId.get("农村")!], words, seededRng(1)))[0];
+    const q = choices(buildQuestions([byId.get("农村")!], bank, seededRng(1)))[0];
     const shared = (id: string) => id !== "农村" && [...id].some((c) => "农村".includes(c));
     expect(q.difficulty).toBe("hard");
     expect(q.options.filter(shared).length).toBeGreaterThanOrEqual(2);
@@ -233,9 +233,9 @@ describe("typed pinyin", () => {
   });
 
   it("is graded on the server the same way", () => {
-    expect(isRightAnswer({ wordId: "表现", typed: "biaoxian", ms: 3000 })).toBe(true);
-    expect(isRightAnswer({ wordId: "表现", typed: "biaoxin", ms: 3000 })).toBe(false);
-    expect(isRightAnswer({ wordId: "表现", chosenId: "表现", ms: 3000 })).toBe(true);
-    expect(isRightAnswer({ wordId: "表现", chosenId: "表达", ms: 3000 })).toBe(false);
+    expect(isRightAnswer({ wordId: "表现", typed: "biaoxian", ms: 3000 }, bank.getWord)).toBe(true);
+    expect(isRightAnswer({ wordId: "表现", typed: "biaoxin", ms: 3000 }, bank.getWord)).toBe(false);
+    expect(isRightAnswer({ wordId: "表现", chosenId: "表现", ms: 3000 }, bank.getWord)).toBe(true);
+    expect(isRightAnswer({ wordId: "表现", chosenId: "表达", ms: 3000 }, bank.getWord)).toBe(false);
   });
 });

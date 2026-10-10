@@ -1,4 +1,4 @@
-import type { Word } from "@/content/words";
+import type { Word } from "@/content/word-types";
 import { cn } from "@/lib/utils";
 
 /** The word's example sentence, with the word itself picked out. */

@@ -5,6 +5,13 @@
  */
 import { notFound } from "next/navigation";
 
+import { storiesHsk6 } from "@/content/stories-hsk6";
+import { StudySettingsForm } from "@/features/account/components/study-settings-form";
+import { ErrorDrill } from "@/features/drills/components/error-drill";
+import { DRILLS, drillItemIds } from "@/features/drills/lib/items";
+import { RetellStudio } from "@/features/essays/components/retell-studio";
+import { toLevel } from "@/lib/levels";
+
 import { AppShell } from "@/components/layout/app-shell";
 import { PageContainer, PageHeader } from "@/components/layout/page-header";
 import { DashboardView } from "@/features/dashboard/components/dashboard-view";
@@ -20,12 +27,21 @@ import { WordsTabs } from "@/features/words/components/words-tabs";
 
 import { sampleData } from "../sample";
 
-const USER = { id: "preview", email: "preview@example.com", name: "Preview Learner", image: null, hasPassword: true };
-
-export default async function PreviewPage({ params }: PageProps<"/zz-preview/[view]">) {
+/** `?level=6` previews HSK 6. */
+export default async function PreviewPage({ params, searchParams }: PageProps<"/zz-preview/[view]">) {
   if (process.env.NODE_ENV === "production") notFound();
   const { view } = await params;
-  const s = sampleData();
+  const level = toLevel(Number((await searchParams).level ?? 5));
+  const USER = {
+    id: "preview",
+    email: "preview@example.com",
+    name: "Preview Learner",
+    image: null,
+    hasPassword: true,
+    level,
+    examDate: "2026-11-07",
+  };
+  const s = sampleData(level);
 
   async function signOutAction() {
     "use server";
@@ -62,7 +78,12 @@ export default async function PreviewPage({ params }: PageProps<"/zz-preview/[vi
     confusables: (
       <PageContainer>
         <PageHeader title="Confusables 近义词" />
-        <ConfusablesDrill stats={{}} seed={s.seed} />
+        <ConfusablesDrill
+          sets={DRILLS[level].confusable}
+          itemIds={drillItemIds(level, "confusable")}
+          stats={{}}
+          seed={s.seed}
+        />
       </PageContainer>
     ),
     ordering: (
@@ -85,7 +106,30 @@ export default async function PreviewPage({ params }: PageProps<"/zz-preview/[vi
     cloze: (
       <PageContainer>
         <PageHeader title="Fill in 填空" />
-        <ClozeDrill stats={{}} seed={s.seed} />
+        <ClozeDrill passages={DRILLS[level].cloze} itemIds={drillItemIds(level, "cloze")} stats={{}} seed={s.seed} />
+      </PageContainer>
+    ),
+    errors: (
+      <PageContainer>
+        <PageHeader title="Find the error 病句" />
+        <ErrorDrill items={DRILLS[6].error} stats={{}} seed={s.seed} />
+      </PageContainer>
+    ),
+    retell: (
+      <PageContainer>
+        <PageHeader title="Retelling 缩写" />
+        <RetellStudio
+          stories={storiesHsk6}
+          seed={s.seed}
+          ai={{ enabled: true, models: ["deepseek-v4-pro", "gpt-6-sol", "claude-opus-4.8", "glm-5.2"] }}
+          recent={[]}
+        />
+      </PageContainer>
+    ),
+    settings: (
+      <PageContainer className="max-w-3xl">
+        <PageHeader title="Settings" />
+        <StudySettingsForm level={level} examDate="2026-11-07" />
       </PageContainer>
     ),
     mocks: (

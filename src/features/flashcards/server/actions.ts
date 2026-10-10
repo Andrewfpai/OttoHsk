@@ -4,7 +4,7 @@ import { and, eq, inArray, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 
-import { getWord } from "@/content/words";
+import { findWord, wordBank } from "@/content/words";
 import { db } from "@/db";
 import { flashcardState, flashcardTests, wordProgress } from "@/db/schema";
 import { type ActionResult, fail, ok } from "@/lib/action-result";
@@ -17,11 +17,11 @@ import { GUESS_MS, MAX_ANSWER_MS, afterTest, isLocked, isPass } from "../lib/loc
 const answersSchema = z
   .array(
     z.object({
-      wordId: z.string().refine((id) => Boolean(getWord(id)), "Unknown word"),
+      wordId: z.string().refine((id) => Boolean(findWord(id)), "Unknown word"),
       /** The option picked, for a multiple-choice question. */
       chosenId: z
         .string()
-        .refine((id) => Boolean(getWord(id)), "Unknown word")
+        .refine((id) => Boolean(findWord(id)), "Unknown word")
         .optional(),
       /** What was typed, for a pinyin question. */
       typed: z.string().max(60).optional(),
@@ -72,6 +72,12 @@ export async function submitTest(input: unknown): Promise<ActionResult<TestResul
   const parsed = answersSchema.safeParse(input);
   if (!parsed.success) return fail("That test could not be read. Start a new session.");
   const answers = parsed.data;
+  // Every word must belong to the level the learner is studying now: a test
+  // started before switching level in another tab is not graded against it.
+  const bank = wordBank(user.level);
+  if (answers.some((a) => !bank.getWord(a.wordId))) {
+    return fail("Your level changed since this test started. Start a new session.");
+  }
 
   const now = new Date();
 
@@ -79,11 +85,11 @@ export async function submitTest(input: unknown): Promise<ActionResult<TestResul
     // FOR UPDATE: two tabs submitting at once must not both read "unlocked".
     // The row is created first, since FOR UPDATE cannot lock a missing row
     // and two first-ever tests would otherwise both be test #1.
-    await tx.insert(flashcardState).values({ userId: user.id }).onConflictDoNothing();
+    await tx.insert(flashcardState).values({ userId: user.id, level: user.level }).onConflictDoNothing();
     const [state] = await tx
       .select()
       .from(flashcardState)
-      .where(eq(flashcardState.userId, user.id))
+      .where(and(eq(flashcardState.userId, user.id), eq(flashcardState.level, user.level)))
       .for("update")
       .limit(1);
     const lock = { level: state?.lockLevel ?? 0, lockedUntil: state?.lockedUntil ?? null };
@@ -103,7 +109,7 @@ export async function submitTest(input: unknown): Promise<ActionResult<TestResul
     let correct = 0;
     let guesses = 0;
     const rows = answers.map((a) => {
-      const right = isRightAnswer(a);
+      const right = isRightAnswer(a, bank.getWord);
       if (right) correct++;
       else if (a.ms < GUESS_MS) guesses++;
       const next = nextSchedule(strengths.get(a.wordId) ?? null, right, testNumber, a.ms);
@@ -136,7 +142,7 @@ export async function submitTest(input: unknown): Promise<ActionResult<TestResul
     const passed = isPass(correct, total);
     await tx
       .insert(flashcardTests)
-      .values({ userId: user.id, testNumber, total, correct, guesses, passed });
+      .values({ userId: user.id, level: user.level, testNumber, total, correct, guesses, passed });
 
     const nextLock = afterTest(lock, passed, now);
     const nextState = {
@@ -146,8 +152,8 @@ export async function submitTest(input: unknown): Promise<ActionResult<TestResul
     };
     await tx
       .insert(flashcardState)
-      .values({ userId: user.id, ...nextState })
-      .onConflictDoUpdate({ target: flashcardState.userId, set: nextState });
+      .values({ userId: user.id, level: user.level, ...nextState })
+      .onConflictDoUpdate({ target: [flashcardState.userId, flashcardState.level], set: nextState });
 
     revalidatePath("/dashboard");
     revalidatePath("/words", "layout");

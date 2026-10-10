@@ -20,8 +20,7 @@
  * that sound alike. Words with too few look-alikes — about one in five — get
  * medium options instead: same number of characters, shared part of speech.
  */
-import { confusables } from "@/content/confusables";
-import type { Word } from "@/content/words";
+import type { Word, WordBank } from "@/content/word-types";
 import { plainPinyin } from "@/lib/pinyin";
 import { type Rng, shuffle } from "@/lib/random";
 
@@ -62,14 +61,23 @@ function plain(w: Word): string {
   return p;
 }
 
-/** hanzi → the other words in its confusable sets. */
-const confusableMates = new Map<string, Set<string>>();
-for (const set of confusables) {
-  for (const a of set.words) {
-    const mates = confusableMates.get(a.hanzi) ?? new Set<string>();
-    for (const b of set.words) if (b.hanzi !== a.hanzi) mates.add(b.hanzi);
-    confusableMates.set(a.hanzi, mates);
+type Mates = Map<string, Set<string>>;
+
+/** hanzi → the other words in its confusable groups. Built once per level. */
+const matesCache = new WeakMap<WordBank["confusableGroups"], Mates>();
+function matesOf(groups: WordBank["confusableGroups"]): Mates {
+  let mates = matesCache.get(groups);
+  if (mates) return mates;
+  mates = new Map();
+  for (const group of groups) {
+    for (const a of group) {
+      const set = mates.get(a) ?? new Set<string>();
+      for (const b of group) if (b !== a) set.add(b);
+      mates.set(a, set);
+    }
   }
+  matesCache.set(groups, mates);
+  return mates;
 }
 
 /** Edit distance, stopping early once it passes `max`. */
@@ -110,8 +118,8 @@ function soundsAlike(a: string, b: string): boolean {
 }
 
 /** Look-alikes for `word`, most confusing first: confusable sets, a shared character, a similar sound. */
-function lookalikes(word: Word, candidates: readonly Word[], rng: Rng): Word[] {
-  const mates = confusableMates.get(word.hanzi);
+function lookalikes(word: Word, candidates: readonly Word[], allMates: Mates, rng: Rng): Word[] {
+  const mates = allMates.get(word.hanzi);
   const chars = new Set(word.hanzi);
   const sound = plain(word);
   const confusing: Word[] = [];
@@ -140,6 +148,7 @@ function distractorsFor(
   word: Word,
   kind: ChoiceKind,
   pool: readonly Word[],
+  mates: Mates,
   rng: Rng,
 ): { distractors: Word[]; difficulty: Difficulty } {
   const candidates = pool.filter((w) => !clash(word, w, kind));
@@ -153,7 +162,7 @@ function distractorsFor(
     }
   };
 
-  take(lookalikes(word, candidates, rng));
+  take(lookalikes(word, candidates, mates, rng));
   const lookalikeCount = picked.length;
   take(shuffle(similar(word, candidates), rng));
   take(shuffle(candidates, rng));
@@ -164,12 +173,19 @@ function distractorsFor(
   };
 }
 
-export function buildQuestions(deck: readonly Word[], pool: readonly Word[], rng: Rng): Question[] {
+/** A test for `deck`, with distractors drawn from the rest of `bank`'s level. */
+export function buildQuestions(
+  deck: readonly Word[],
+  bank: Pick<WordBank, "words" | "confusableGroups">,
+  rng: Rng,
+): Question[] {
+  const pool = bank.words;
+  const mates = matesOf(bank.confusableGroups);
   return shuffle(deck, rng).map((word, i): Question => {
     let kind = KINDS[i % KINDS.length];
     if (kind === "pinyin") return { wordId: word.id, kind };
     if (kind === "sentence" && !word.example?.zh.includes(word.hanzi)) kind = "hanzi";
-    const { distractors, difficulty } = distractorsFor(word, kind, pool, rng);
+    const { distractors, difficulty } = distractorsFor(word, kind, pool, mates, rng);
     const options = shuffle([word, ...distractors], rng).map((w) => w.id);
     return { wordId: word.id, kind, difficulty, options };
   });
@@ -182,10 +198,11 @@ export function blankedSentence(word: Word): string {
 
 /**
  * Typed pinyin against the word's: tones, spaces, apostrophes and tone
- * numbers are ignored, and ü may be typed as v or u.
+ * numbers are ignored, and ü may be typed as v or u. A word with several
+ * readings ("ò, ó, é") accepts any of them.
  */
 export function pinyinMatches(typed: string, pinyin: string): boolean {
   const norm = (p: string) => plainPinyin(p).replace(/v/g, "u");
   const t = norm(typed);
-  return t.length > 0 && t === norm(pinyin);
+  return t.length > 0 && pinyin.split(/,\s*/).some((reading) => t === norm(reading));
 }

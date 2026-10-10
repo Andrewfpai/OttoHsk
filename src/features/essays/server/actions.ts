@@ -4,6 +4,7 @@ import { and, count, eq, gte } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 
+import { storiesHsk6 } from "@/content/stories-hsk6";
 import { db } from "@/db";
 import { essays } from "@/db/schema";
 import { type ActionResult, fail, ok } from "@/lib/action-result";
@@ -13,6 +14,7 @@ import { EXAM_TIME_ZONE, localDate } from "@/lib/exam";
 import { countChars } from "../lib/checks";
 import { type Attempt, AllModelsFailed, completeWithFallback } from "../lib/fallback";
 import { type Feedback, buildMessages, parseFeedback } from "../lib/feedback";
+import { buildRetellMessages } from "../lib/retell";
 import { DAILY_ESSAY_LIMIT, aiConfig } from "./ai";
 
 /** Writing time is recorded, never a reason to refuse; a tab left open overnight still checks. */
@@ -99,6 +101,73 @@ export async function checkEssay(input: unknown): Promise<ActionResult<EssayResu
       body: essay.body,
       chars: countChars(essay.body),
       durationMs: essay.durationMs,
+      score: result.value.score,
+      feedback: result.value,
+      model: result.model,
+    })
+    .returning({ id: essays.id });
+
+  revalidatePath("/essays");
+  return ok({ id: row.id, feedback: result.value, model: result.model, attempts: result.attempts });
+}
+
+const retellSchema = z.object({
+  storyId: z.string().refine((id) => storiesHsk6.some((s) => s.id === id), "Unknown story"),
+  title: z.string().trim().max(40),
+  body: z.string().trim().min(50).max(1200),
+  durationMs: duration,
+});
+
+/**
+ * HSK 6 question 101 (缩写): AI feedback on a retelling, judged against the
+ * story and its key points. Shares the daily limit with HSK 5's essays.
+ */
+export async function checkRetelling(input: unknown): Promise<ActionResult<EssayResult>> {
+  const user = await requireUser();
+  const parsed = retellSchema.safeParse(input);
+  if (!parsed.success) {
+    const tooShort = parsed.error.issues.some((i) => i.path[0] === "body");
+    return fail(tooShort ? "Write at least a few sentences before asking for feedback." : "Pick a story first.");
+  }
+  const { storyId, title, body, durationMs } = parsed.data;
+  const story = storiesHsk6.find((s) => s.id === storyId)!;
+
+  const config = aiConfig();
+  if (!config) return fail("AI feedback is not set up: AI_API_KEY is missing.", "NO_AI");
+
+  const [{ n }] = await db
+    .select({ n: count() })
+    .from(essays)
+    .where(and(eq(essays.userId, user.id), gte(essays.createdAt, startOfToday())));
+  if (n >= DAILY_ESSAY_LIMIT) {
+    return fail(`That's ${DAILY_ESSAY_LIMIT} checks today, the daily limit. Try again tomorrow.`, "LIMIT");
+  }
+
+  let result;
+  try {
+    result = await completeWithFallback({
+      ...config,
+      messages: buildRetellMessages(story, title, body),
+      parse: parseFeedback,
+    });
+  } catch (error) {
+    if (error instanceof AllModelsFailed) {
+      const tried = error.attempts.map((a) => `${a.model}: ${a.error}`).join("; ");
+      return fail(`None of the models could check it right now (${tried}). Your retelling is still here; try again in a minute.`, "AI_DOWN");
+    }
+    throw error;
+  }
+
+  const text = title ? `${title}\n${body}` : body;
+  const [row] = await db
+    .insert(essays)
+    .values({
+      userId: user.id,
+      kind: "retell",
+      prompt: storyId,
+      body: text,
+      chars: countChars(body),
+      durationMs,
       score: result.value.score,
       feedback: result.value,
       model: result.model,

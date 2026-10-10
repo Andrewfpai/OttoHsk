@@ -5,7 +5,7 @@
  * renamed. Table names are passed explicitly to the adapter in
  * `src/lib/auth.ts`.
  */
-import { index, integer, pgTable, primaryKey, text, timestamp } from "drizzle-orm/pg-core";
+import { date, index, integer, pgTable, primaryKey, smallint, text, timestamp } from "drizzle-orm/pg-core";
 import type { AdapterAccountType } from "next-auth/adapters";
 
 export const users = pgTable("users", {
@@ -21,6 +21,10 @@ export const users = pgTable("users", {
    * with email and password. Null until set after the first Google sign-in.
    */
   passwordHash: text("password_hash"),
+  /** Ours: the HSK level this person studies, 5 or 6. Every tab follows it. */
+  level: smallint("level").notNull().default(5),
+  /** Ours: their exam day, for the countdown. Null: no exam date set. */
+  examDate: date("exam_date", { mode: "string" }).default("2026-11-07"),
 });
 
 export const accounts = pgTable(

@@ -15,6 +15,13 @@
       "when": 1791571731314,
       "tag": "0001_user_password",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791625753794,
+      "tag": "0002_hsk6_levels",
+      "breakpoints": true
     }
   ]
 }
