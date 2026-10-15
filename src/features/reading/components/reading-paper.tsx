@@ -5,7 +5,7 @@ import { useMemo, useState, useSyncExternalStore } from "react";
 
 import { Button } from "@/components/ui/button";
 import type { ReadingItem, ReadingQuestion, ReadingSet, ReadingToken } from "@/content/types";
-import { useRecordMany } from "@/features/drills/components/use-record";
+import { useRecord, useRecordMany } from "@/features/drills/components/use-record";
 import { questionId } from "@/features/drills/lib/question-id";
 import { StarButton } from "@/features/stars/components/stars";
 import { cn } from "@/lib/utils";
@@ -24,6 +24,8 @@ type Saved = {
   checked: boolean;
   startedAt?: number;
   checkedAt?: number;
+  /** One question at a time: the index of the question on screen. */
+  at?: number;
 };
 
 const EMPTY: Saved = { picks: {}, checked: false };
@@ -135,8 +137,6 @@ export function ReadingPaperView({ sets, tokens }: { sets: ReadingSet[]; tokens:
     part2: useSaved("part2"),
     part3: useSaved("part3"),
   };
-  const lookup = saves[part][0].checked;
-
   /** One handler for every word on the page, rather than thousands. */
   function spotFrom(target: EventTarget | null): Spot | null {
     const el = target instanceof Element ? target.closest<HTMLElement>("[data-k]") : null;
@@ -144,7 +144,9 @@ export function ReadingPaperView({ sets, tokens }: { sets: ReadingSet[]; tokens:
     return { key: el.dataset.k, index: Number(el.dataset.i) };
   }
 
-  const token = lookup && spot ? tokens[spot.key]?.[spot.index] : undefined;
+  // Words are only tappable where lookup is open (an answered question, or
+  // a checked part), so a spot can only be set there.
+  const token = spot ? tokens[spot.key]?.[spot.index] : undefined;
 
   return (
     <div
@@ -193,16 +195,29 @@ export function ReadingPaperView({ sets, tokens }: { sets: ReadingSet[]; tokens:
       </div>
 
       <div id="reading-part" role="tabpanel" aria-labelledby={`tab-${part}`}>
-        <PartView
-          key={part}
-          sets={sets}
-          part={part}
-          tokens={tokens}
-          spot={lookup ? spot : null}
-          saved={saves[part][0]}
-          update={saves[part][1]}
-          onReset={() => setSpot(null)}
-        />
+        {/* Part 2 goes one question at a time, answer shown at once, so a
+            mistake is studied while it is fresh. Part 3 is done whole. */}
+        {part === "part2" && !saves.part2[0].checked ? (
+          <OneByOne
+            sets={sets}
+            tokens={tokens}
+            spot={spot}
+            saved={saves.part2[0]}
+            update={saves.part2[1]}
+            onMove={() => setSpot(null)}
+          />
+        ) : (
+          <PartView
+            key={part}
+            sets={sets}
+            part={part}
+            tokens={tokens}
+            spot={spot}
+            saved={saves[part][0]}
+            update={saves[part][1]}
+            onReset={() => setSpot(null)}
+          />
+        )}
       </div>
 
       {token?.p ? <WordPanel token={token} onClose={() => setSpot(null)} /> : null}
@@ -326,6 +341,136 @@ function PartView({
   );
 }
 
+/**
+ * Part 2, one question at a time. Picking shows the answer and why at once,
+ * and opens word lookup for that question; Next waits for you. When every
+ * question is done, the whole part shows checked, with the score.
+ */
+function OneByOne({
+  sets,
+  tokens,
+  spot,
+  saved,
+  update,
+  onMove,
+}: {
+  sets: ReadingSet[];
+  tokens: Tokens;
+  spot: Spot | null;
+  saved: Saved;
+  update: Update;
+  onMove: () => void;
+}) {
+  const record = useRecord();
+  const steps = useMemo(
+    () => sets.flatMap((set) => set.paper.part2.map((item) => ({ set, item }))),
+    [sets],
+  );
+  const { picks } = saved;
+  const at = Math.min(Math.max(saved.at ?? 0, 0), steps.length - 1);
+  const { set, item } = steps[at];
+  const q = item.questions[0];
+  const id = questionId(set.paper.id, q.number);
+  const picked = picks[id];
+  const answered = picked !== undefined;
+  const last = at === steps.length - 1;
+  const right = steps.filter(({ set: s, item: i }) => {
+    const qq = i.questions[0];
+    return picks[questionId(s.paper.id, qq.number)] === qq.answer;
+  }).length;
+  const done = steps.filter(({ set: s, item: i }) => picks[questionId(s.paper.id, i.questions[0].number)] !== undefined).length;
+
+  function pick(_: string, option: number) {
+    if (answered) return;
+    update((prev) => ({
+      ...prev,
+      picks: { ...prev.picks, [id]: option },
+      startedAt: prev.startedAt ?? Date.now(),
+    }));
+    record("reading", id, option === q.answer);
+  }
+
+  function go(to: number) {
+    onMove();
+    update((prev) => ({ ...prev, at: to }));
+    scrollTo("reading-top");
+  }
+
+  function finish() {
+    onMove();
+    // Results stay on screen but are not stored: a refresh starts afresh.
+    update((prev) => ({ ...prev, checked: true, checkedAt: Date.now() }), false);
+    scrollTo("reading-top");
+  }
+
+  return (
+    <div className="space-y-4">
+      <div id="reading-top" className="scroll-mt-20 space-y-2">
+        <div className="flex flex-wrap items-baseline justify-between gap-2 text-sm">
+          <p className="font-medium">
+            Set {set.label} <span className="text-muted-foreground font-normal">{set.paper.title}</span>
+          </p>
+          <p className="text-muted-foreground">
+            <span className="font-numeric">
+              {at + 1}/{steps.length}
+            </span>
+            {done > 0 ? (
+              <>
+                {" "}
+                · <span className="font-numeric">{right}</span> right so far
+              </>
+            ) : null}
+          </p>
+        </div>
+        <div className="bg-muted h-1 overflow-hidden rounded-full">
+          <div className="bg-primary h-full transition-[width]" style={{ width: `${(done / steps.length) * 100}%` }} />
+        </div>
+      </div>
+
+      <ItemCard
+        key={id}
+        paperId={set.paper.id}
+        item={item}
+        tokens={tokens}
+        spot={spot}
+        lookup={answered}
+        picks={picks}
+        checked={answered}
+        onPick={pick}
+        actions={
+          // Always in place, hidden and inert until you answer, so it never
+          // lands below the fold and nothing jumps.
+          <div className="flex gap-2">
+            <Button
+              variant="outline"
+              size="lg"
+              className={cn("h-11 cursor-pointer", at === 0 && "invisible")}
+              onClick={() => go(at - 1)}
+              disabled={at === 0}
+            >
+              Back
+            </Button>
+            <Button
+              size="lg"
+              className={cn("h-11 flex-1 cursor-pointer sm:flex-none sm:px-8", !answered && "invisible")}
+              onClick={() => (last ? finish() : go(at + 1))}
+              disabled={!answered}
+              aria-hidden={!answered || undefined}
+              tabIndex={answered ? undefined : -1}
+            >
+              {last ? "See results" : "Next"}
+            </Button>
+          </div>
+        }
+      />
+
+      {answered ? (
+        <p className="text-muted-foreground text-xs">Tap any word above for its pinyin and meaning.</p>
+      ) : null}
+    </div>
+  );
+}
+
 function scrollTo(id: string) {
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   document.getElementById(id)?.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
@@ -344,6 +489,7 @@ function ItemCard({
   picks,
   checked,
   onPick,
+  actions,
 }: {
   paperId: string;
   item: ReadingItem;
@@ -353,6 +499,8 @@ function ItemCard({
   picks: Record<string, number>;
   checked: boolean;
   onPick: (id: string, option: number) => void;
+  /** Buttons right under the options, above the explanation. */
+  actions?: React.ReactNode;
 }) {
   const many = item.questions.length > 1;
   return (
@@ -376,6 +524,7 @@ function ItemCard({
                 picked={picks[id]}
                 checked={checked}
                 onPick={(i) => onPick(id, i)}
+                actions={actions}
               />
             );
           })}
@@ -394,6 +543,7 @@ function Question({
   picked,
   checked,
   onPick,
+  actions,
 }: {
   id: string;
   q: ReadingQuestion;
@@ -403,6 +553,7 @@ function Question({
   picked: number | undefined;
   checked: boolean;
   onPick: (option: number) => void;
+  actions?: React.ReactNode;
 }) {
   const right = picked === q.answer;
   return (
@@ -452,6 +603,7 @@ function Question({
           );
         })}
       </div>
+      {actions}
       {checked ? (
         <div
           className={cn(
@@ -514,13 +666,13 @@ function Text({
     ),
   );
 
-  if (!paragraphs) return <span className={cn("font-hanzi text-lg leading-relaxed", className)}>{words}</span>;
+  if (!paragraphs) return <span className={cn("font-hanzi text-base leading-relaxed sm:text-lg", className)}>{words}</span>;
 
   // Split at the "\n" tokens into indented paragraphs, as on paper.
   const paras: React.ReactNode[][] = [[]];
   tokens.forEach((t, i) => (t.t === "\n" ? paras.push([]) : paras.at(-1)!.push(words[i])));
   return (
-    <div className={cn("font-hanzi space-y-2 text-lg leading-loose", className)}>
+    <div className={cn("font-hanzi space-y-1.5 text-base leading-relaxed sm:space-y-2 sm:text-lg sm:leading-loose", className)}>
       {paras.map((p, i) => (
         <p key={i} className="indent-[2em]">
           {p}
