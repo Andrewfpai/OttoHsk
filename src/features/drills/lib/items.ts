@@ -12,7 +12,7 @@ import { confusablesHsk6 } from "@/content/confusables-hsk6";
 import { errorsHsk6 } from "@/content/errors-hsk6";
 import { orderingItems } from "@/content/ordering";
 import { orderingPapers } from "@/content/ordering-papers";
-import { readingH51329 } from "@/content/reading-h51329";
+import { READING_SETS } from "@/content/reading";
 import type { ClozePassage, ConfusableSet, ErrorItem, OrderingItem, ReadingPaper } from "@/content/types";
 import type { DrillKind } from "@/db/schema";
 import type { Level } from "@/lib/levels";
@@ -38,7 +38,7 @@ export const DRILLS: Record<Level, LevelDrills> = {
     cloze: clozePassages,
     ordering: { papers: orderingPapers, builtIn: orderingItems },
     error: [],
-    reading: [readingH51329],
+    reading: READING_SETS.map((s) => s.paper),
   },
   6: {
     confusable: confusablesHsk6,

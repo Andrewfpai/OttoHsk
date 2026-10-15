@@ -1,10 +1,10 @@
 "use client";
 
-import { Check, RotateCcw, X } from "lucide-react";
+import { Check, Lock, RotateCcw, X } from "lucide-react";
 import { useMemo, useState, useSyncExternalStore } from "react";
 
 import { Button } from "@/components/ui/button";
-import type { ReadingItem, ReadingPaper, ReadingQuestion, ReadingToken } from "@/content/types";
+import type { ReadingItem, ReadingQuestion, ReadingSet, ReadingToken } from "@/content/types";
 import { useRecordMany } from "@/features/drills/components/use-record";
 import { questionId } from "@/features/drills/lib/question-id";
 import { StarButton } from "@/features/stars/components/stars";
@@ -19,8 +19,8 @@ type Spot = { key: string; index: number };
 /* ───────────────────────── saved answers ───────────────────────── */
 
 type Saved = {
-  /** Question number → option index. */
-  picks: Record<number, number>;
+  /** Question id ("h51329#61") → option index. */
+  picks: Record<string, number>;
   checked: boolean;
   startedAt?: number;
   checkedAt?: number;
@@ -28,7 +28,7 @@ type Saved = {
 
 const EMPTY: Saved = { picks: {}, checked: false };
 const listeners = new Set<() => void>();
-const storageKey = (paperId: string) => `ottohsk.reading.${paperId}`;
+const storageKey = (part: PartKey) => `ottohsk.reading.v2.${part}`;
 
 function subscribe(listener: () => void) {
   listeners.add(listener);
@@ -39,9 +39,9 @@ function subscribe(listener: () => void) {
   };
 }
 
-function readRaw(paperId: string): string {
+function readRaw(part: PartKey): string {
   try {
-    return window.localStorage.getItem(storageKey(paperId)) ?? "";
+    return window.localStorage.getItem(storageKey(part)) ?? "";
   } catch {
     return "";
   }
@@ -51,41 +51,50 @@ function parse(raw: string): Saved {
   if (!raw) return EMPTY;
   try {
     const v = JSON.parse(raw) as Partial<Saved>;
-    return { ...EMPTY, ...v, picks: v.picks && typeof v.picks === "object" ? v.picks : {} };
+    return { ...EMPTY, ...v, picks: v.picks && typeof v.picks === "object" ? v.picks : {}, checked: false };
   } catch {
     return EMPTY;
   }
 }
 
-function write(paperId: string, saved: Saved) {
+function write(part: PartKey, saved: Saved | null) {
   try {
-    window.localStorage.setItem(storageKey(paperId), JSON.stringify(saved));
+    if (saved) window.localStorage.setItem(storageKey(part), JSON.stringify(saved));
+    else window.localStorage.removeItem(storageKey(part));
   } catch {
-    // Not kept; the answers still count for this visit's check.
+    // Not kept; the answers still count for this visit.
   }
   for (const l of listeners) l();
 }
 
+type Update = (change: (prev: Saved) => Saved, keep?: boolean) => void;
+
 /**
- * Answers live in this browser, so a half-done paper survives a refresh.
- * Storage can throw (private mode), and then nothing is kept between visits.
+ * Answers in progress live in this browser, so a half-done part survives a
+ * refresh. A checked part is not kept: its results stay until you leave or
+ * refresh, and then the part starts fresh. Storage can throw (private
+ * mode), and then answers live in memory for this visit only.
  */
-function useSaved(paperId: string): [Saved, (change: (prev: Saved) => Saved) => void] {
+function useSaved(part: PartKey): [Saved, Update] {
   const raw = useSyncExternalStore(
     subscribe,
-    () => readRaw(paperId),
+    () => readRaw(part),
     () => "",
   );
-  // Without storage the answers live in memory instead.
   const [memory, setMemory] = useState<Saved | null>(null);
   const saved = useMemo(() => memory ?? parse(raw), [memory, raw]);
   // Built from what is stored now, not this render's copy, so two quick
   // taps cannot overwrite each other.
-  function update(change: (prev: Saved) => Saved) {
-    const next = change(memory ?? parse(readRaw(paperId)));
-    write(paperId, next);
-    setMemory(readRaw(paperId) ? null : next);
-  }
+  const update: Update = (change, keep = true) => {
+    const next = change(memory ?? parse(readRaw(part)));
+    if (!keep) {
+      write(part, null);
+      setMemory(next);
+      return;
+    }
+    write(part, next);
+    setMemory(readRaw(part) ? null : next);
+  };
   return [saved, update];
 }
 
@@ -98,26 +107,35 @@ const PARTS: Record<PartKey, { label: string; title: string; how: string }> = {
   part3: { label: "Part 3", title: "第三部分", how: "read each passage and answer its questions" },
 };
 
-function questionsOf(items: ReadingItem[]): ReadingQuestion[] {
-  return items.flatMap((item) => item.questions);
+/** Every question of one part, across the sets, with where it comes from. */
+type Entry = { set: ReadingSet; q: ReadingQuestion; id: string };
+
+function entriesOf(sets: ReadingSet[], part: PartKey): Entry[] {
+  return sets.flatMap((set) =>
+    set.paper[part].flatMap((item) =>
+      item.questions.map((q) => ({ set, q, id: questionId(set.paper.id, q.number) })),
+    ),
+  );
 }
 
 function range(items: ReadingItem[]): string {
-  const qs = questionsOf(items);
+  const qs = items.flatMap((item) => item.questions);
   return `${qs[0].number}–${qs.at(-1)!.number}`;
 }
 
 /**
- * A reading paper to do on screen, one part per tab: answer the part, then
- * check it. Every word can be tapped (or hovered) for its pinyin and meaning.
+ * Reading Parts 2 and 3 of several real papers, one part per tab: answer
+ * the part, then check it. After checking, every word can be tapped (or
+ * hovered) for its pinyin and meaning; before, it is exam conditions.
  */
-export function ReadingPaperView({ paper, tokens }: { paper: ReadingPaper; tokens: Tokens }) {
+export function ReadingPaperView({ sets, tokens }: { sets: ReadingSet[]; tokens: Tokens }) {
   const [part, setPart] = useState<PartKey>("part2");
   const [spot, setSpot] = useState<Spot | null>(null);
-  const saves: Record<PartKey, ReturnType<typeof useSaved>> = {
-    part2: useSaved(`${paper.id}.part2`),
-    part3: useSaved(`${paper.id}.part3`),
+  const saves: Record<PartKey, [Saved, Update]> = {
+    part2: useSaved("part2"),
+    part3: useSaved("part3"),
   };
+  const lookup = saves[part][0].checked;
 
   /** One handler for every word on the page, rather than thousands. */
   function spotFrom(target: EventTarget | null): Spot | null {
@@ -126,7 +144,7 @@ export function ReadingPaperView({ paper, tokens }: { paper: ReadingPaper; token
     return { key: el.dataset.k, index: Number(el.dataset.i) };
   }
 
-  const token = spot ? tokens[spot.key]?.[spot.index] : undefined;
+  const token = lookup && spot ? tokens[spot.key]?.[spot.index] : undefined;
 
   return (
     <div
@@ -143,11 +161,11 @@ export function ReadingPaperView({ paper, tokens }: { paper: ReadingPaper; token
     >
       <div role="tablist" aria-label="Part" className="bg-muted flex w-full gap-1 rounded-xl p-1 sm:w-fit">
         {(Object.keys(PARTS) as PartKey[]).map((key) => {
-          const qs = questionsOf(paper[key]);
+          const entries = entriesOf(sets, key);
           const { picks, checked } = saves[key][0];
           const status = checked
-            ? `${qs.filter((q) => picks[q.number] === q.answer).length}/${qs.length} right`
-            : `${qs.filter((q) => picks[q.number] !== undefined).length}/${qs.length} answered`;
+            ? `${entries.filter((e) => picks[e.id] === e.q.answer).length}/${entries.length} right`
+            : `${entries.filter((e) => picks[e.id] !== undefined).length}/${entries.length} answered`;
           return (
             <button
               key={key}
@@ -166,7 +184,7 @@ export function ReadingPaperView({ paper, tokens }: { paper: ReadingPaper; token
               )}
             >
               <span>
-                {PARTS[key].label} <span className="font-numeric">· {range(paper[key])}</span>
+                {PARTS[key].label} <span className="font-numeric">· {range(sets[0].paper[key])}</span>
               </span>
               <span className="text-muted-foreground font-numeric text-xs font-normal">{status}</span>
             </button>
@@ -177,13 +195,13 @@ export function ReadingPaperView({ paper, tokens }: { paper: ReadingPaper; token
       <div id="reading-part" role="tabpanel" aria-labelledby={`tab-${part}`}>
         <PartView
           key={part}
-          paperId={paper.id}
+          sets={sets}
           part={part}
-          items={paper[part]}
           tokens={tokens}
-          spot={spot}
+          spot={lookup ? spot : null}
           saved={saves[part][0]}
           update={saves[part][1]}
+          onReset={() => setSpot(null)}
         />
       </div>
 
@@ -193,47 +211,49 @@ export function ReadingPaperView({ paper, tokens }: { paper: ReadingPaper; token
 }
 
 function PartView({
-  paperId,
+  sets,
   part,
-  items,
   tokens,
   spot,
   saved,
   update,
+  onReset,
 }: {
-  paperId: string;
+  sets: ReadingSet[];
   part: PartKey;
-  items: ReadingItem[];
   tokens: Tokens;
   spot: Spot | null;
   saved: Saved;
-  update: (change: (prev: Saved) => Saved) => void;
+  update: Update;
+  onReset: () => void;
 }) {
   const recordMany = useRecordMany();
   const { picks, checked } = saved;
-  const questions = useMemo(() => questionsOf(items), [items]);
-  const answered = questions.filter((q) => picks[q.number] !== undefined).length;
+  const entries = useMemo(() => entriesOf(sets, part), [sets, part]);
+  const answered = entries.filter((e) => picks[e.id] !== undefined).length;
 
-  function pick(q: ReadingQuestion, option: number) {
+  function pick(id: string, option: number) {
     if (checked) return;
     update((prev) => ({
       ...prev,
-      picks: { ...prev.picks, [q.number]: option },
+      picks: { ...prev.picks, [id]: option },
       startedAt: prev.startedAt ?? Date.now(),
     }));
   }
 
   function check() {
-    update((prev) => ({ ...prev, checked: true, checkedAt: Date.now() }));
+    // Results stay on screen but are not stored: a refresh starts afresh.
+    update((prev) => ({ ...prev, checked: true, checkedAt: Date.now() }), false);
     recordMany(
       "reading",
-      questions.map((q) => ({ itemId: questionId(paperId, q.number), correct: picks[q.number] === q.answer })),
+      entries.map((e) => ({ itemId: e.id, correct: picks[e.id] === e.q.answer })),
     );
     scrollTo("reading-top");
   }
 
   function reset() {
     update(() => EMPTY);
+    onReset();
     scrollTo("reading-top");
   }
 
@@ -241,20 +261,44 @@ function PartView({
     <div className="space-y-6">
       <div id="reading-top" className="scroll-mt-20">
         {checked ? (
-          <Score questions={questions} saved={saved} onReset={reset} />
+          <Score entries={entries} saved={saved} onReset={reset} />
         ) : (
           <p className="text-muted-foreground text-sm">
-            Answer all {questions.length}, then check: you see what you missed and why. Tap any word
-            {" "}(or hover, with a mouse) for its pinyin and meaning. Your answers are kept on this device.
+            {sets.length} sets, {entries.length} questions. Answer them, then check: you see what you missed
+            and why. After checking, tap any word (or hover, with a mouse) for its pinyin and meaning.
           </p>
         )}
       </div>
 
-      <Part title={PARTS[part].title} subtitle={`Questions ${range(items)}: ${PARTS[part].how}.`}>
-        {items.map((item) => (
-          <ItemCard key={item.id} paperId={paperId} item={item} tokens={tokens} spot={spot} picks={picks} checked={checked} onPick={pick} />
+      <section className="space-y-4">
+        <header>
+          <h2 className="font-hanzi text-xl font-semibold">{PARTS[part].title}</h2>
+          <p className="text-muted-foreground text-sm">
+            Questions {range(sets[0].paper[part])} of each set: {PARTS[part].how}.
+          </p>
+        </header>
+        {sets.map((set) => (
+          <div key={set.paper.id} className="space-y-4">
+            <h3 className="flex items-baseline gap-2 pt-2 font-semibold">
+              Set {set.label}
+              <span className="text-muted-foreground text-sm font-normal">{set.paper.title}</span>
+            </h3>
+            {set.paper[part].map((item) => (
+              <ItemCard
+                key={item.id}
+                paperId={set.paper.id}
+                item={item}
+                tokens={tokens}
+                spot={spot}
+                lookup={checked}
+                picks={picks}
+                checked={checked}
+                onPick={pick}
+              />
+            ))}
+          </div>
         ))}
-      </Part>
+      </section>
 
       <div className="flex flex-wrap items-center gap-3">
         {checked ? (
@@ -270,10 +314,10 @@ function PartView({
             </Button>
             <p className="text-muted-foreground text-sm">
               <span className="font-numeric">
-                {answered}/{questions.length}
+                {answered}/{entries.length}
               </span>{" "}
               answered
-              {answered > 0 && answered < questions.length ? ". Blank ones count as wrong." : ""}
+              {answered > 0 && answered < entries.length ? ". Blank ones count as wrong." : ""}
             </p>
           </>
         )}
@@ -287,17 +331,7 @@ function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
 }
 
-function Part({ title, subtitle, children }: { title: string; subtitle: string; children: React.ReactNode }) {
-  return (
-    <section className="space-y-4">
-      <header>
-        <h2 className="font-hanzi text-xl font-semibold">{title}</h2>
-        <p className="text-muted-foreground text-sm">{subtitle}</p>
-      </header>
-      {children}
-    </section>
-  );
-}
+const anchor = (id: string) => `q-${id.replace("#", "-")}`;
 
 /* ───────────────────────────── items ───────────────────────────── */
 
@@ -306,6 +340,7 @@ function ItemCard({
   item,
   tokens,
   spot,
+  lookup,
   picks,
   checked,
   onPick,
@@ -314,9 +349,10 @@ function ItemCard({
   item: ReadingItem;
   tokens: Tokens;
   spot: Spot | null;
-  picks: Record<number, number>;
+  lookup: boolean;
+  picks: Record<string, number>;
   checked: boolean;
-  onPick: (q: ReadingQuestion, option: number) => void;
+  onPick: (id: string, option: number) => void;
 }) {
   const many = item.questions.length > 1;
   return (
@@ -324,21 +360,25 @@ function ItemCard({
       <div className={cn(many && "lg:grid lg:grid-cols-2 lg:gap-8")}>
         <div className={cn(many && "lg:sticky lg:top-6 lg:max-h-[calc(100dvh-3rem)] lg:self-start lg:overflow-y-auto")}>
           {many ? <p className="text-muted-foreground font-numeric mb-2 text-xs font-medium">{item.numbers}</p> : null}
-          <Text tokens={tokens[item.id] ?? []} textKey={item.id} spot={spot} paragraphs />
+          <Text tokens={tokens[item.id] ?? []} textKey={item.id} spot={spot} lookup={lookup} paragraphs />
         </div>
         <div className={cn("space-y-6", many ? "mt-6 lg:mt-0" : "mt-4")}>
-          {item.questions.map((q) => (
-            <Question
-              key={q.number}
-              paperId={paperId}
-              q={q}
-              tokens={tokens}
-              spot={spot}
-              picked={picks[q.number]}
-              checked={checked}
-              onPick={(i) => onPick(q, i)}
-            />
-          ))}
+          {item.questions.map((q) => {
+            const id = questionId(paperId, q.number);
+            return (
+              <Question
+                key={q.number}
+                id={id}
+                q={q}
+                tokens={tokens}
+                spot={spot}
+                lookup={lookup}
+                picked={picks[id]}
+                checked={checked}
+                onPick={(i) => onPick(id, i)}
+              />
+            );
+          })}
         </div>
       </div>
     </article>
@@ -346,29 +386,30 @@ function ItemCard({
 }
 
 function Question({
-  paperId,
+  id,
   q,
   tokens,
   spot,
+  lookup,
   picked,
   checked,
   onPick,
 }: {
-  paperId: string;
+  id: string;
   q: ReadingQuestion;
   tokens: Tokens;
   spot: Spot | null;
+  lookup: boolean;
   picked: number | undefined;
   checked: boolean;
   onPick: (option: number) => void;
 }) {
-  const id = `${paperId}#${q.number}`;
   const right = picked === q.answer;
   return (
-    <div id={`q${q.number}`} className="scroll-mt-20 space-y-3">
+    <div id={anchor(id)} className="scroll-mt-20 space-y-3">
       <div className="flex items-start gap-2">
         <span className="font-numeric bg-muted rounded-md px-1.5 py-0.5 text-sm font-semibold">{q.number}</span>
-        {q.prompt ? <Text tokens={tokens[id] ?? []} textKey={id} spot={spot} className="pt-0.5" /> : null}
+        {q.prompt ? <Text tokens={tokens[id] ?? []} textKey={id} spot={spot} lookup={lookup} className="pt-0.5" /> : null}
       </div>
       <div role="radiogroup" aria-label={`Question ${q.number}`} className="grid gap-2 sm:grid-cols-2">
         {q.options.map((_, i) => {
@@ -402,7 +443,7 @@ function Question({
               >
                 {LETTERS[i]}
               </span>
-              <Text tokens={tokens[key] ?? []} textKey={key} spot={spot} className="flex-1 pt-px" />
+              <Text tokens={tokens[key] ?? []} textKey={key} spot={spot} lookup={lookup} className="flex-1 pt-px" />
               {checked && isAnswer ? <Check aria-label="Correct answer" className="text-success mt-1 size-4 shrink-0" /> : null}
               {checked && isPicked && !isAnswer ? (
                 <X aria-label="Your answer" className="text-destructive mt-1 size-4 shrink-0" />
@@ -434,36 +475,40 @@ function Question({
 
 /* ───────────────────────────── words ───────────────────────────── */
 
-/** A text drawn word by word, each word tappable. */
+const UNDERLINE = "decoration-primary underline decoration-2 underline-offset-[5px]";
+
+/** A text drawn word by word; with `lookup`, each word is tappable. */
 function Text({
   tokens,
   textKey,
   spot,
+  lookup,
   paragraphs = false,
   className,
 }: {
   tokens: ReadingToken[];
   textKey: string;
   spot: Spot | null;
+  lookup: boolean;
   paragraphs?: boolean;
   className?: string;
 }) {
   const words = tokens.map((t, i) =>
-    t.t === "\n" ? null : t.p ? (
+    t.t === "\n" ? null : lookup && t.p ? (
       <span
         key={i}
         data-k={textKey}
         data-i={i}
         className={cn(
           "cursor-pointer rounded-sm transition-colors hover:bg-primary/10",
-          t.u && "decoration-primary underline decoration-2 underline-offset-[5px]",
+          t.u && UNDERLINE,
           spot?.key === textKey && spot.index === i && "bg-primary/20 hover:bg-primary/20",
         )}
       >
         {t.t}
       </span>
     ) : (
-      <span key={i} className={cn(t.u && "decoration-primary underline decoration-2 underline-offset-[5px]")}>
+      <span key={i} className={cn(t.u && UNDERLINE)}>
         {t.t}
       </span>
     ),
@@ -517,18 +562,15 @@ function WordPanel({ token, onClose }: { token: ReadingToken; onClose: () => voi
 
 /* ───────────────────────────── score ───────────────────────────── */
 
-function Score({
-  questions,
-  saved,
-  onReset,
-}: {
-  questions: ReadingQuestion[];
-  saved: Saved;
-  onReset: () => void;
-}) {
+function Score({ entries, saved, onReset }: { entries: Entry[]; saved: Saved; onReset: () => void }) {
   const { picks } = saved;
-  const right = questions.filter((q) => picks[q.number] === q.answer).length;
-  const missed = questions.filter((q) => picks[q.number] !== q.answer).map((q) => q.number);
+  const isRight = (e: Entry) => picks[e.id] === e.q.answer;
+  const right = entries.filter(isRight).length;
+  const missed = entries.filter((e) => !isRight(e));
+  const bySet = [...new Set(entries.map((e) => e.set))].map((set) => {
+    const mine = entries.filter((e) => e.set === set);
+    return { set, right: mine.filter(isRight).length, total: mine.length };
+  });
   const minutes =
     saved.startedAt && saved.checkedAt ? Math.max(1, Math.round((saved.checkedAt - saved.startedAt) / 60_000)) : null;
 
@@ -539,27 +581,38 @@ function Score({
           <p className="text-muted-foreground text-sm">Score</p>
           <p className="font-numeric text-4xl font-semibold">
             {right}
-            <span className="text-muted-foreground text-2xl">/{questions.length}</span>
+            <span className="text-muted-foreground text-2xl">/{entries.length}</span>
           </p>
         </div>
-        {minutes ? (
-          <dl className="font-numeric text-sm">
-            <dt className="text-muted-foreground">Time</dt>
-            <dd className="font-medium">{minutes} min</dd>
-          </dl>
-        ) : null}
+        <dl className="font-numeric flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          {bySet.map((s) => (
+            <div key={s.set.paper.id}>
+              <dt className="text-muted-foreground">Set {s.set.label}</dt>
+              <dd className="font-medium">
+                {s.right}/{s.total}
+              </dd>
+            </div>
+          ))}
+          {minutes ? (
+            <div>
+              <dt className="text-muted-foreground">Time</dt>
+              <dd className="font-medium">{minutes} min</dd>
+            </div>
+          ) : null}
+        </dl>
       </div>
       {missed.length > 0 ? (
         <div className="space-y-2">
           <p className="text-sm font-medium">Missed: jump to one</p>
           <ul className="flex flex-wrap gap-1.5">
-            {missed.map((n) => (
-              <li key={n}>
+            {missed.map((e) => (
+              <li key={e.id}>
                 <a
-                  href={`#q${n}`}
-                  className="border-destructive/40 text-destructive hover:bg-destructive/10 font-numeric inline-flex min-h-9 min-w-9 items-center justify-center rounded-lg border px-2 text-sm"
+                  href={`#${anchor(e.id)}`}
+                  className="border-destructive/40 text-destructive hover:bg-destructive/10 font-numeric inline-flex min-h-9 items-center justify-center rounded-lg border px-2 text-sm"
                 >
-                  {n}
+                  {e.set.label}
+                  {e.q.number}
                 </a>
               </li>
             ))}
@@ -568,6 +621,10 @@ function Score({
       ) : (
         <p className="text-success font-medium">Every answer right.</p>
       )}
+      <p className="text-muted-foreground flex items-center gap-1.5 text-xs">
+        <Lock aria-hidden className="size-3.5" />
+        Results are not kept: refresh or leave and this part starts fresh.
+      </p>
       <Button variant="outline" className="cursor-pointer" onClick={onReset}>
         <RotateCcw aria-hidden />
         Try again

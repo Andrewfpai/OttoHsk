@@ -38,7 +38,7 @@ const batch = z.object({
   results: z
     .array(z.object({ itemId: z.string().min(1).max(100), correct: z.boolean() }))
     .min(1)
-    .max(60),
+    .max(200),
 });
 
 /** Logs a whole paper's answers at once, as one insert. */

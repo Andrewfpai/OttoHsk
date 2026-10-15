@@ -16,7 +16,6 @@ import { useRouter } from "next/navigation";
 import { useEffect, useEffectEvent, useMemo, useRef, useState, useTransition } from "react";
 import { toast } from "sonner";
 
-import { StickyActions } from "@/components/sticky-actions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useWordBank } from "@/components/level/level-provider";
@@ -440,7 +439,7 @@ function Practice({
   }, []);
 
   return (
-    <div className="mx-auto max-w-2xl space-y-5">
+    <div className="mx-auto max-w-2xl space-y-3 sm:space-y-5">
       <div className="flex items-center justify-between gap-3">
         <Button variant="ghost" className="cursor-pointer" onClick={onQuit}>
           <ArrowLeft aria-hidden /> End session
@@ -554,9 +553,6 @@ function Practice({
 
 /* ──────────────────────────────── Test ─────────────────────────────── */
 
-/** How long a right answer stays on screen before the next question. */
-const AUTO_NEXT_MS = 600;
-
 /** A monotonic clock for timing answers; only ever read in events and effects. */
 function clockMs(): number {
   return performance.now();
@@ -644,15 +640,6 @@ function Test({
     });
   }
 
-  // A right answer moves on by itself; a wrong one waits for Next, so the
-  // correct answer can be read first.
-  const autoNext = useEffectEvent(() => next());
-  useEffect(() => {
-    if (!right) return;
-    const t = setTimeout(autoNext, AUTO_NEXT_MS);
-    return () => clearTimeout(t);
-  }, [right, index]);
-
   // The first question's clock starts when the test mounts.
   useEffect(() => {
     shownAt.current = clockMs();
@@ -699,7 +686,7 @@ function Test({
         />
       </div>
 
-      <div className="bg-card flex min-h-44 items-center justify-center rounded-2xl border p-6 text-center sm:p-8">
+      <div className="bg-card flex min-h-32 items-center justify-center rounded-2xl border p-4 text-center sm:min-h-44 sm:p-8">
         {q.kind === "hanzi" ? (
           <span className="text-2xl">{word.gloss}</span>
         ) : q.kind === "sentence" ? (
@@ -707,7 +694,7 @@ function Test({
             {answer === null ? blankedSentence(word) : word.quiz?.zh}
           </span>
         ) : (
-          <span className="font-hanzi text-6xl leading-tight">{word.hanzi}</span>
+          <span className="font-hanzi text-5xl leading-tight sm:text-6xl">{word.hanzi}</span>
         )}
       </div>
 
@@ -752,7 +739,7 @@ function Test({
                 onClick={() => record({ chosenId: id })}
                 disabled={answer !== null}
                 className={cn(
-                  "focus-visible:ring-ring flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 text-left transition-colors focus-visible:ring-2 focus-visible:outline-none disabled:cursor-default",
+                  "focus-visible:ring-ring flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border px-4 py-2 text-left sm:min-h-14 sm:py-3 transition-colors focus-visible:ring-2 focus-visible:outline-none disabled:cursor-default",
                   answer === null && "hover:border-primary/50 hover:bg-muted/50",
                   answer !== null && isAnswer && "border-success bg-success/10",
                   isPicked && !isAnswer && "border-destructive bg-destructive/10",
@@ -773,32 +760,34 @@ function Test({
         </div>
       )}
 
+      {/* Next always holds its place, hidden and unclickable until you answer,
+          so it never appears below the fold and nothing jumps. It never
+          moves on by itself: you read the answer, then go. */}
+      <div className="sm:flex sm:justify-end">
+        <Button
+          size="lg"
+          className={cn("h-11 w-full cursor-pointer sm:w-auto sm:px-8", answer === null && "invisible")}
+          onClick={next}
+          disabled={answer === null || pending}
+          aria-hidden={answer === null || undefined}
+          tabIndex={answer === null ? -1 : undefined}
+        >
+          {pending ? <Loader2 aria-hidden className="animate-spin" /> : null}
+          {last ? "Finish test" : "Next"}
+        </Button>
+      </div>
+
       {answer !== null ? (
-        <>
-          <div className="space-y-1 text-sm">
-            <p>
-              <span className="font-hanzi text-base">{word.hanzi}</span>{" "}
-              <span className="text-primary">{word.pinyin}</span>{" "}
-              <span className="text-muted-foreground">· {word.gloss}</span>
-            </p>
-            {q.kind === "sentence" && word.quiz ? (
-              <p className="text-muted-foreground">{word.quiz.en}</p>
-            ) : null}
-          </div>
-          <StickyActions className="sm:flex sm:justify-end">
-            <Button
-              size="lg"
-              className="h-11 w-full cursor-pointer sm:w-auto sm:px-8"
-              onClick={next}
-              disabled={pending}
-            >
-              {pending ? <Loader2 aria-hidden className="animate-spin" /> : null}
-              {last ? "Finish test" : "Next"}
-            </Button>
-          </StickyActions>
-        </>
+        <div className="space-y-1 text-sm">
+          <p>
+            <span className="font-hanzi text-base">{word.hanzi}</span>{" "}
+            <span className="text-primary">{word.pinyin}</span>{" "}
+            <span className="text-muted-foreground">· {word.gloss}</span>
+          </p>
+          {q.kind === "sentence" && word.quiz ? <p className="text-muted-foreground">{word.quiz.en}</p> : null}
+        </div>
       ) : q.kind !== "pinyin" ? (
-        <p className="text-muted-foreground text-center text-xs">Press 1–4 to answer, Enter for next.</p>
+        <p className="text-muted-foreground hidden text-center text-xs sm:block">Press 1–4 to answer, Enter for next.</p>
       ) : null}
     </div>
   );

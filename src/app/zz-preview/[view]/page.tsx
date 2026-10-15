@@ -5,7 +5,7 @@
  */
 import { notFound } from "next/navigation";
 
-import { readingH51329 } from "@/content/reading-h51329";
+import { READING_SETS } from "@/content/reading";
 import readingTokens from "@/content/reading-tokens.json";
 import { storiesHsk6 } from "@/content/stories-hsk6";
 import type { ReadingToken } from "@/content/types";
@@ -163,7 +163,7 @@ export default async function PreviewPage({ params, searchParams }: PageProps<"/
       <PageContainer>
         <PageHeader title="Reading 阅读" />
         <StarsProvider initial={starred} offline>
-          <ReadingPaperView paper={readingH51329} tokens={readingTokens as Record<string, ReadingToken[]>} />
+          <ReadingPaperView sets={READING_SETS} tokens={readingTokens as Record<string, ReadingToken[]>} />
         </StarsProvider>
       </PageContainer>
     ),

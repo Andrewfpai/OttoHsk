@@ -152,3 +152,6 @@ export type ReadingToken = {
   /** Underlined in the paper. */
   u?: 1;
 };
+
+/** A paper in the reading section, with the letter it goes by ("A"). */
+export type ReadingSet = { label: string; paper: ReadingPaper };
