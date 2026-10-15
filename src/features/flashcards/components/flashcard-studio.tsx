@@ -8,6 +8,7 @@ import {
   Loader2,
   Lock,
   RotateCcw,
+  Star,
   X,
 } from "lucide-react";
 import Link from "next/link";
@@ -26,7 +27,7 @@ import { formatDate } from "@/lib/dates";
 import { EXAM_TIME_ZONE } from "@/lib/exam";
 import { cn } from "@/lib/utils";
 
-import { DECK_SIZES, buildDeck, isDue } from "../lib/deck";
+import { DECK_SIZES, buildDeck, buildStarredDeck, isDue } from "../lib/deck";
 import { FAIL_WRONG_RATIO, GUESS_MS, MAX_ANSWER_MS, MAX_LOCK_MS, failAt, formatLock, lockDurationMs } from "../lib/lockout";
 import { nextPace } from "../lib/practice-pace";
 import { statusOf } from "../lib/schedule";
@@ -46,19 +47,29 @@ type Phase =
   | { name: "test"; deck: Word[]; questions: Question[] }
   | { name: "results"; result: TestResult; answers: Answer[] };
 
+/** Which words a session draws from: the usual mix, or starred words only. */
+export type DeckSource = "mix" | "starred";
+
 export function FlashcardStudio({
   progress,
   info,
   recentTests,
+  starredIds,
+  initialSource = "mix",
 }: {
   progress: ProgressRow[];
   info: FlashcardInfo;
   recentTests: TestSummary[];
+  starredIds: string[];
+  initialSource?: DeckSource;
 }) {
   const bank = useWordBank();
   const router = useRouter();
   const [phase, setPhase] = useState<Phase>({ name: "setup" });
   const [size, setSize] = useState<number>(20);
+  const [chosenSource, setSource] = useState<DeckSource>(initialSource);
+  // Unstarring the last word elsewhere drops back to the usual mix.
+  const source: DeckSource = starredIds.length > 0 ? chosenSource : "mix";
   const pace = usePracticePace();
   // The server's answer after a test, in case it lands before the refreshed
   // props do.
@@ -70,7 +81,10 @@ export function FlashcardStudio({
   const isLockedNow = () => lockedUntil !== null && lockedUntil > Date.now();
 
   function startPractice() {
-    const deck = buildDeck(bank.words, progress, info.nextTest, size);
+    const deck =
+      source === "starred"
+        ? buildStarredDeck(bank.words, progress, starredIds, info.nextTest, size)
+        : buildDeck(bank.words, progress, info.nextTest, size);
     if (deck.words.length === 0) {
       toast.info("Nothing to study right now: every word is waiting for its next review.");
       return;
@@ -148,6 +162,9 @@ export function FlashcardStudio({
       size={size}
       pace={pace}
       onSize={setSize}
+      source={source}
+      starredCount={starredIds.length}
+      onSource={setSource}
       onStart={startPractice}
       recentTests={recentTests}
     />
@@ -165,6 +182,9 @@ function Setup({
   size,
   pace,
   onSize,
+  source,
+  starredCount,
+  onSource,
   onStart,
   recentTests,
 }: {
@@ -177,10 +197,15 @@ function Setup({
   /** Practice ms per card. */
   pace: number;
   onSize: (n: number) => void;
+  source: DeckSource;
+  starredCount: number;
+  onSource: (s: DeckSource) => void;
   onStart: () => void;
   recentTests: TestSummary[];
 }) {
   const { total } = useWordBank();
+  // A starred deck is as big as the starred list, at most.
+  const deckSize = source === "starred" ? Math.min(size, starredCount) : size;
   const stats = useMemo(() => {
     let due = 0;
     let known = 0;
@@ -219,6 +244,38 @@ function Setup({
           </div>
         ) : null}
 
+        {starredCount > 0 ? (
+          <div className="space-y-3">
+            <h2 className="text-sm font-medium">Words</h2>
+            <div role="radiogroup" aria-label="Words" className="flex flex-wrap gap-2">
+              {(
+                [
+                  ["mix", "Usual mix", "Due reviews and new words"],
+                  ["starred", "Starred only", `${starredCount} starred, shakiest first`],
+                ] as const
+              ).map(([value, label, hint]) => (
+                <button
+                  key={value}
+                  type="button"
+                  role="radio"
+                  aria-checked={source === value}
+                  onClick={() => onSource(value)}
+                  className={cn(
+                    "focus-visible:ring-ring cursor-pointer rounded-xl border px-4 py-3 text-left transition-colors focus-visible:ring-2 focus-visible:outline-none",
+                    source === value ? "border-primary bg-primary/10" : "hover:bg-muted",
+                  )}
+                >
+                  <span className="flex items-center gap-1.5 font-medium">
+                    {value === "starred" ? <Star aria-hidden className="text-warning fill-warning size-4" /> : null}
+                    {label}
+                  </span>
+                  <span className="text-muted-foreground block text-xs">{hint}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : null}
+
         <div className="space-y-3">
           <h2 className="text-sm font-medium">Cards per session</h2>
           <div role="radiogroup" aria-label="Cards per session" className="flex flex-wrap gap-2">
@@ -250,8 +307,8 @@ function Setup({
           <p className="text-muted-foreground flex items-start gap-2 text-sm">
             <Lock aria-hidden className="mt-0.5 size-4 shrink-0" />
             <span>
-              Get <span className="text-foreground font-numeric font-medium">{failAt(size)}</span> or
-              more of <span className="font-numeric">{size}</span> wrong (over{" "}
+              Get <span className="text-foreground font-numeric font-medium">{failAt(deckSize)}</span> or
+              more of <span className="font-numeric">{deckSize}</span> wrong (over{" "}
               {Math.round(FAIL_WRONG_RATIO * 100)}%) and the test locks for{" "}
               <span className="text-foreground font-medium">{formatLock(lockDurationMs(info.lockLevel))}</span>
               {info.lockLevel > 0

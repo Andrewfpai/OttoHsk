@@ -107,6 +107,21 @@ export const flashcardTests = pgTable(
 );
 
 /**
+ * Words the learner starred: "I don't get it yet, test me on it". Starring
+ * brings a started word back in the next flashcard test, and the flashcards
+ * can test the starred words alone. Word ids are unique across levels.
+ */
+export const starredWords = pgTable(
+  "starred_words",
+  {
+    userId: userId(),
+    wordId: text("word_id").notNull(),
+    starredAt: timestamp("starred_at", { mode: "date", withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [primaryKey({ columns: [t.userId, t.wordId] })],
+);
+
+/**
  * A full mock paper. HSK 5: correct answers per section (L /45, R /45,
  * W Part 1 /8). HSK 6: L /50, R /50, and the 缩写 essay's score /100.
  */
@@ -134,8 +149,11 @@ export const mockTests = pgTable(
   ],
 );
 
-/** "error" is HSK 6's 病句 drill (find the sentence with an error). */
-export const drillKind = pgEnum("drill_kind", ["confusable", "ordering", "cloze", "error"]);
+/**
+ * "error" is HSK 6's 病句 drill (find the sentence with an error); "reading"
+ * is a reading paper's Parts 2–3, one row per question ("h51329#71").
+ */
+export const drillKind = pgEnum("drill_kind", ["confusable", "ordering", "cloze", "error", "reading"]);
 
 /**
  * Every answer in the confusables, ordering and fill-in (cloze) drills.

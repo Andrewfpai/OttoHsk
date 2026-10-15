@@ -19,6 +19,7 @@ const DRILL_LINKS: Record<DrillKind, { label: string; href: string }> = {
   cloze: { label: "Fill in", href: "/cloze" },
   ordering: { label: "Sentence order", href: "/ordering" },
   error: { label: "Find the error", href: "/errors" },
+  reading: { label: "Reading", href: "/reading" },
 };
 
 export type DrillCard = { kind: DrillKind; label: string; href: string; summary: DrillSummary };

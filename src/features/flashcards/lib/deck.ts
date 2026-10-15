@@ -60,3 +60,31 @@ export function buildDeck(
 
   return { words: [...reviews, ...news], reviewCount: reviews.length, newCount: news.length };
 }
+
+/**
+ * A deck of starred words only: due ones first, then weakest first, so the
+ * words you flagged as shaky are the ones you meet. Unseen starred words
+ * count as weakest. Answers go through the same schedule as any test.
+ */
+export function buildStarredDeck(
+  allWords: readonly Word[],
+  progress: readonly ProgressLite[],
+  starredIds: readonly string[],
+  nextTest: number,
+  size: number,
+): Deck {
+  const byId = new Map(allWords.map((w) => [w.id, w]));
+  const byWord = new Map(progress.map((p) => [p.wordId, p]));
+  const rank = (id: string) => {
+    const p = byWord.get(id);
+    return p ? { due: isDue(p, nextTest), strength: p.strength, dueTest: p.dueTest } : { due: true, strength: -1, dueTest: 0 };
+  };
+  const words = starredIds
+    .filter((id) => byId.has(id))
+    .map((id) => ({ id, ...rank(id) }))
+    .sort((a, b) => Number(b.due) - Number(a.due) || a.strength - b.strength || a.dueTest - b.dueTest)
+    .slice(0, size)
+    .map((r) => byId.get(r.id)!);
+  const newCount = words.filter((w) => !byWord.has(w.id)).length;
+  return { words, reviewCount: words.length - newCount, newCount };
+}

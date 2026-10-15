@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown, Search } from "lucide-react";
+import { ChevronDown, Search, Star } from "lucide-react";
 import { useDeferredValue, useMemo, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -17,16 +17,17 @@ import {
   gapFor,
   statusOf,
 } from "@/features/flashcards/lib/schedule";
+import { StarButton, useStars } from "@/features/stars/components/stars";
 import { plainPinyin } from "@/lib/pinyin";
 import { cn } from "@/lib/utils";
 
 import { ExampleSentence } from "./example-sentence";
 import { STATUS_DOT, STATUS_LABEL, StatusBadge } from "./status-badge";
 
-type Filter = "all" | WordStatus;
+type Filter = "all" | WordStatus | "starred";
 type Sort = "az" | "common";
 
-const FILTERS: Filter[] = ["all", "new", "learning", "known"];
+const FILTERS: Filter[] = ["all", "new", "learning", "known", "starred"];
 const PAGE = 100;
 
 type Searchable = { word: Word; pinyin: string; meanings: string };
@@ -64,6 +65,7 @@ export type WordProgress = Record<string, { strength: number; dueTest: number }>
 
 export function WordList({ progress, nextTest }: { progress: WordProgress; nextTest: number }) {
   const bank = useWordBank();
+  const { starred } = useStars();
   const { byCommon, byPinyin } = indexOf(bank);
   const strengths = useMemo(
     () => Object.fromEntries(Object.entries(progress).map(([id, p]) => [id, p.strength])),
@@ -88,13 +90,15 @@ export function WordList({ progress, nextTest }: { progress: WordProgress; nextT
     const qPinyin = plainPinyin(q);
     return (sort === "az" ? byPinyin : byCommon)
       .filter(({ word, pinyin, meanings }) => {
-        if (filter !== "all" && statusOf(strengths[word.id]) !== filter) return false;
+        if (filter === "starred" ? !starred.has(word.id) : filter !== "all" && statusOf(strengths[word.id]) !== filter) {
+          return false;
+        }
         if (!q) return true;
         if (HAS_HANZI.test(q)) return word.hanzi.includes(q);
         return (qPinyin && pinyin.includes(qPinyin)) || meanings.includes(q);
       })
       .map((s) => s.word);
-  }, [byCommon, byPinyin, deferredQuery, filter, sort, strengths]);
+  }, [byCommon, byPinyin, deferredQuery, filter, sort, strengths, starred]);
 
   return (
     <div className="space-y-4">
@@ -129,12 +133,14 @@ export function WordList({ progress, nextTest }: { progress: WordProgress; nextT
               }}
               className="cursor-pointer"
             >
-              {f !== "all" ? (
+              {f === "starred" ? (
+                <Star aria-hidden className="text-warning fill-current" />
+              ) : f !== "all" ? (
                 <span aria-hidden className={cn("size-2 rounded-full", STATUS_DOT[f])} />
               ) : null}
-              {f === "all" ? "All" : STATUS_LABEL[f]}
+              {f === "all" ? "All" : f === "starred" ? "Starred" : STATUS_LABEL[f]}
               <span className="text-muted-foreground font-numeric text-xs">
-                {f === "all" ? bank.total : counts[f]}
+                {f === "all" ? bank.total : f === "starred" ? starred.size : counts[f]}
               </span>
             </Button>
           ))}
@@ -181,11 +187,12 @@ export function WordList({ progress, nextTest }: { progress: WordProgress; nextT
             const expanded = open === w.id;
             return (
               <li key={w.id}>
+                <div className="flex items-center pr-2">
                 <button
                   type="button"
                   onClick={() => setOpen(expanded ? null : w.id)}
                   aria-expanded={expanded}
-                  className="hover:bg-muted/50 focus-visible:bg-muted/50 grid w-full cursor-pointer grid-cols-[5.5rem_1fr_auto] items-center gap-x-4 px-4 py-3 text-left transition-colors focus-visible:outline-none sm:grid-cols-[7rem_9rem_1fr_auto]"
+                  className="hover:bg-muted/50 focus-visible:bg-muted/50 grid min-w-0 flex-1 cursor-pointer grid-cols-[5.5rem_1fr_auto] items-center gap-x-4 px-4 py-3 text-left transition-colors focus-visible:outline-none sm:grid-cols-[7rem_9rem_1fr_auto]"
                 >
                   <span className="font-hanzi text-2xl leading-tight">{w.hanzi}</span>
                   <span className="text-muted-foreground hidden text-sm sm:block">{w.pinyin}</span>
@@ -208,6 +215,8 @@ export function WordList({ progress, nextTest }: { progress: WordProgress; nextT
                     />
                   </span>
                 </button>
+                <StarButton wordId={w.id} label={w.hanzi} />
+                </div>
                 {expanded ? (
                   <div className="bg-muted/30 space-y-2 px-4 pt-1 pb-4 text-sm">
                     <div className="flex flex-wrap items-center gap-2">

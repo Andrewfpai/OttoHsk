@@ -12,7 +12,8 @@ import { confusablesHsk6 } from "@/content/confusables-hsk6";
 import { errorsHsk6 } from "@/content/errors-hsk6";
 import { orderingItems } from "@/content/ordering";
 import { orderingPapers } from "@/content/ordering-papers";
-import type { ClozePassage, ConfusableSet, ErrorItem, OrderingItem } from "@/content/types";
+import { readingH51329 } from "@/content/reading-h51329";
+import type { ClozePassage, ConfusableSet, ErrorItem, OrderingItem, ReadingPaper } from "@/content/types";
 import type { DrillKind } from "@/db/schema";
 import type { Level } from "@/lib/levels";
 
@@ -27,6 +28,8 @@ export type LevelDrills = {
   ordering: { papers: OrderingItem[]; builtIn: OrderingItem[] };
   /** HSK 6 only: reading Part 1 (病句). */
   error: ErrorItem[];
+  /** HSK 5 only: reading Parts 2–3 of whole papers. */
+  reading: ReadingPaper[];
 };
 
 export const DRILLS: Record<Level, LevelDrills> = {
@@ -35,18 +38,20 @@ export const DRILLS: Record<Level, LevelDrills> = {
     cloze: clozePassages,
     ordering: { papers: orderingPapers, builtIn: orderingItems },
     error: [],
+    reading: [readingH51329],
   },
   6: {
     confusable: confusablesHsk6,
     cloze: clozeHsk6,
     ordering: { papers: [], builtIn: [] },
     error: errorsHsk6,
+    reading: [],
   },
 };
 
 /** Which drills each level has, in menu order. */
 export const LEVEL_DRILL_KINDS: Record<Level, DrillKind[]> = {
-  5: ["confusable", "cloze", "ordering"],
+  5: ["confusable", "cloze", "ordering", "reading"],
   6: ["confusable", "cloze", "error"],
 };
 
@@ -62,6 +67,12 @@ export function drillItemIds(level: Level, kind: DrillKind): string[] {
       return [...d.ordering.papers, ...d.ordering.builtIn].map((item) => item.id);
     case "error":
       return d.error.map((item) => item.id);
+    case "reading":
+      return d.reading.flatMap((paper) =>
+        [...paper.part2, ...paper.part3].flatMap((item) =>
+          item.questions.map((q) => questionId(paper.id, q.number)),
+        ),
+      );
   }
 }
 

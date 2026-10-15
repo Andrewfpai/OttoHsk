@@ -100,3 +100,55 @@ export type RetellStory = {
   /** The 5–8 points a good retelling keeps, in order, in Chinese. */
   keyPoints: string[];
 };
+
+/** One question of an HSK reading paper: four options, one right. */
+export type ReadingQuestion = {
+  /** The exam question number, e.g. 71. */
+  number: number;
+  /** The question; Part 2 has none (choose the statement that matches). */
+  prompt?: string;
+  options: [string, string, string, string];
+  /** Index of the right option: 0 = A … 3 = D. */
+  answer: 0 | 1 | 2 | 3;
+  /** One or two English sentences on why, pointing at the passage. */
+  why: string;
+};
+
+/** A passage with its questions. [[…]] in the text marks an underlined part. */
+export type ReadingItem = {
+  /** Stable id, e.g. "h51329-71". */
+  id: string;
+  /** "61" or "71–74". */
+  numbers: string;
+  /** Paragraphs separated by a newline. */
+  passage: string;
+  questions: ReadingQuestion[];
+};
+
+/** HSK 5 Reading Parts 2 (61–70) and 3 (71–90) of one paper. */
+export type ReadingPaper = {
+  id: string;
+  title: string;
+  source: string;
+  part2: ReadingItem[];
+  part3: ReadingItem[];
+};
+
+/**
+ * One word of a reading text, as built by scripts/build-reading-tokens.ts.
+ * Punctuation and other non-hanzi text are tokens with `t` only.
+ */
+export type ReadingToken = {
+  /** The text itself. "\n" on its own breaks a paragraph. */
+  t: string;
+  /** Pinyin, read in context. */
+  p?: string;
+  /** Meaning. */
+  g?: string;
+  /** Level, e.g. "HSK 5" or "HSK 3.0 · 7". */
+  l?: string;
+  /** Word id, when it is in the learner's word lists (and so can be starred). */
+  id?: string;
+  /** Underlined in the paper. */
+  u?: 1;
+};

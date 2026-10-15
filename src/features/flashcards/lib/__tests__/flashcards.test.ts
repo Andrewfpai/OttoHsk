@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import { bankHsk5 as bank, wordsHsk5 as words } from "@/content/words-hsk5";
 import { seededRng } from "@/lib/random";
 
-import { buildDeck } from "../deck";
+import { buildDeck, buildStarredDeck } from "../deck";
 import { afterTest, failAt, isLocked, isPass, lockDurationMs, MAX_LOCK_MS } from "../lockout";
 import { isRightAnswer } from "../grade";
 import { areSynonyms } from "../synonyms";
@@ -149,6 +149,19 @@ describe("deck", () => {
     const deck = buildDeck(words, progress, 2, 10);
     expect(deck.reviewCount).toBe(7);
     expect(deck.newCount).toBe(3);
+  });
+
+  it("starred-only decks hold starred words alone, due and weakest first", () => {
+    const [a, b, c, d] = words;
+    const progress = [
+      { wordId: a.id, strength: 4, dueTest: 30 },
+      { wordId: b.id, strength: 2, dueTest: 5 },
+      { wordId: c.id, strength: 0, dueTest: 5 },
+    ];
+    const deck = buildStarredDeck(words, progress, [a.id, b.id, c.id, d.id, "nope"], 5, 10);
+    expect(deck.words.map((w) => w.id)).toEqual([d.id, c.id, b.id, a.id]);
+    expect(deck.newCount).toBe(1);
+    expect(buildStarredDeck(words, progress, [a.id, b.id, c.id], 5, 2).words).toHaveLength(2);
   });
 });
 

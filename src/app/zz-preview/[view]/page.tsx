@@ -5,7 +5,13 @@
  */
 import { notFound } from "next/navigation";
 
+import { readingH51329 } from "@/content/reading-h51329";
+import readingTokens from "@/content/reading-tokens.json";
 import { storiesHsk6 } from "@/content/stories-hsk6";
+import type { ReadingToken } from "@/content/types";
+import { ReadingPaperView } from "@/features/reading/components/reading-paper";
+import { QuickReview } from "@/features/stars/components/quick-review";
+import { StarsProvider } from "@/features/stars/components/stars";
 import { StudySettingsForm } from "@/features/account/components/study-settings-form";
 import { ErrorDrill } from "@/features/drills/components/error-drill";
 import { DRILLS, drillItemIds } from "@/features/drills/lib/items";
@@ -43,6 +49,7 @@ export default async function PreviewPage({ params, searchParams }: PageProps<"/
     examDate: "2026-11-07",
   };
   const s = sampleData(level);
+  const starred = s.progress.slice(0, 5).map((p) => p.wordId);
 
   async function signOutAction() {
     "use server";
@@ -55,25 +62,27 @@ export default async function PreviewPage({ params, searchParams }: PageProps<"/
         <PageHeader title="Words" />
         <WordsTabs />
         <div className="mt-6">
-          <WordList
-            progress={Object.fromEntries(
-              s.progress.map((p) => [p.wordId, { strength: p.strength, dueTest: p.dueTest }]),
-            )}
-            nextTest={s.info.nextTest}
-          />
+          <StarsProvider initial={starred} offline>
+            <WordList
+              progress={Object.fromEntries(
+                s.progress.map((p) => [p.wordId, { strength: p.strength, dueTest: p.dueTest }]),
+              )}
+              nextTest={s.info.nextTest}
+            />
+          </StarsProvider>
         </div>
       </PageContainer>
     ),
     flashcards: (
       <PageContainer>
         <PageHeader title="Words" />
-        <FlashcardStudio progress={s.progress} info={s.info} recentTests={s.recentTests} />
+        <FlashcardStudio progress={s.progress} info={s.info} recentTests={s.recentTests} starredIds={starred} />
       </PageContainer>
     ),
     "flashcards-locked": (
       <PageContainer>
         <PageHeader title="Words" />
-        <FlashcardStudio progress={s.progress} info={s.lockedInfo} recentTests={s.recentTests} />
+        <FlashcardStudio progress={s.progress} info={s.lockedInfo} recentTests={s.recentTests} starredIds={starred} />
       </PageContainer>
     ),
     confusables: (
@@ -140,6 +149,22 @@ export default async function PreviewPage({ params, searchParams }: PageProps<"/
       <PageContainer className="max-w-3xl">
         <PageHeader title="Settings" />
         <StudySettingsForm level={level} examDate="2026-11-07" />
+      </PageContainer>
+    ),
+    review: (
+      <PageContainer>
+        <PageHeader title="Quick review" />
+        <StarsProvider initial={starred} offline>
+          <QuickReview startedIds={s.progress.map((p) => p.wordId)} seed={s.seed} />
+        </StarsProvider>
+      </PageContainer>
+    ),
+    reading: (
+      <PageContainer>
+        <PageHeader title="Reading 阅读" />
+        <StarsProvider initial={starred} offline>
+          <ReadingPaperView paper={readingH51329} tokens={readingTokens as Record<string, ReadingToken[]>} />
+        </StarsProvider>
       </PageContainer>
     ),
     mocks: (

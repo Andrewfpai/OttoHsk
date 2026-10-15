@@ -2,9 +2,11 @@ import {
   BookOpenText,
   FileWarning,
   ClipboardCheck,
+  Eye,
   GitCompareArrows,
   LayoutDashboard,
   ListOrdered,
+  Newspaper,
   PenLine,
   Settings,
   TextCursorInput,
@@ -28,10 +30,12 @@ export function navItems(level: Level): NavItem[] {
     { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
     // Covers both tabs: the word list and /words/flashcards.
     { href: "/words", label: "Words", icon: BookOpenText },
+    { href: "/review", label: "Quick review", icon: Eye },
     { href: "/cloze", label: "Fill in", icon: TextCursorInput },
     level === 5
       ? { href: "/ordering", label: "Sentence order", icon: ListOrdered }
       : { href: "/errors", label: "Find the error", icon: FileWarning },
+    ...(level === 5 ? [{ href: "/reading", label: "Reading", icon: Newspaper }] : []),
     { href: "/essays", label: level === 5 ? "Essays" : "Retelling", icon: PenLine },
     { href: "/mocks", label: "Mock tests", icon: ClipboardCheck },
     { href: "/confusables", label: "Confusables", icon: GitCompareArrows },
