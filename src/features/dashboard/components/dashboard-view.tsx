@@ -90,6 +90,7 @@ export function DashboardView({ name, d }: { name: string | null; d: Dashboard }
               </div>
             ))}
           </dl>
+          {t ? <TargetBar t={t} total={TOTAL_WORDS} /> : null}
         </section>
 
         {/* Today */}
@@ -183,6 +184,46 @@ export function DashboardView({ name, d }: { name: string | null; d: Dashboard }
         </section>
       </div>
     </PageContainer>
+  );
+}
+
+/**
+ * Progress against today's target, on the same scale as the words bar
+ * above: the shaded stretch is where today's target reaches, the fill is
+ * where progress is (known words 1, learning words ¼–¾).
+ */
+function TargetBar({ t, total }: { t: NonNullable<Dashboard["target"]>; total: number }) {
+  const at = (n: number) => `${Math.min(100, (n / Math.max(1, total)) * 100)}%`;
+  return (
+    <div className="space-y-2 border-t pt-4">
+      <div className="flex flex-wrap items-baseline justify-between gap-2 text-sm">
+        <span className="text-muted-foreground">Today&apos;s target</span>
+        <span className="font-numeric">
+          {t.progress}
+          <span className="text-muted-foreground"> / {t.targetToday}</span>
+          {t.behind > 0 ? (
+            <span className="text-warning"> · {t.behind} to go</span>
+          ) : (
+            <span className="text-success"> · on track</span>
+          )}
+        </span>
+      </div>
+      <div
+        className="bg-muted relative h-3 overflow-hidden rounded-full"
+        role="img"
+        aria-label={`Progress ${t.progress}, today's target ${t.targetToday}, of ${total} words`}
+      >
+        <div className="bg-foreground/15 absolute inset-y-0 left-0" style={{ width: at(t.targetToday) }} />
+        <div
+          className={cn("absolute inset-y-0 left-0 rounded-full", t.behind > 0 ? "bg-warning" : "bg-success")}
+          style={{ width: at(t.progress) }}
+        />
+        <div className="bg-foreground absolute inset-y-0 w-0.5" style={{ left: at(t.targetToday) }} />
+      </div>
+      <p className="text-muted-foreground text-xs">
+        The line is where today&apos;s target is. Known words count 1, learning words ¼–¾.
+      </p>
+    </div>
   );
 }
 
