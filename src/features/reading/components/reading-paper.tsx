@@ -1,12 +1,13 @@
 "use client";
 
-import { Check, Lock, RotateCcw, X } from "lucide-react";
-import { useMemo, useState, useSyncExternalStore } from "react";
+import { Check, Lock, RotateCcw, Timer, X } from "lucide-react";
+import { useEffect, useEffectEvent, useMemo, useState, useSyncExternalStore } from "react";
 
 import { Button } from "@/components/ui/button";
 import type { ReadingItem, ReadingQuestion, ReadingSet, ReadingToken } from "@/content/types";
 import { useRecord, useRecordMany } from "@/features/drills/components/use-record";
 import { questionId } from "@/features/drills/lib/question-id";
+import { formatCountdown, useNow } from "@/hooks/use-now";
 import { StarButton } from "@/features/stars/components/stars";
 import { cn } from "@/lib/utils";
 
@@ -24,9 +25,17 @@ type Saved = {
   checked: boolean;
   startedAt?: number;
   checkedAt?: number;
-  /** One question at a time: the index of the question on screen. */
+  /** One item at a time: the index of the item on screen. */
   at?: number;
+  /** Part 3: the timed run of the passage on screen, once started. */
+  run?: { startedAt: number; checkedAt?: number };
 };
+
+/**
+ * Time for one Part 3 passage (four questions). The real reading paper
+ * gives 45 minutes for 45 questions: a minute a question.
+ */
+const PASSAGE_MS = 4 * 60_000;
 
 const EMPTY: Saved = { picks: {}, checked: false };
 const listeners = new Set<() => void>();
@@ -196,7 +205,8 @@ export function ReadingPaperView({ sets, tokens }: { sets: ReadingSet[]; tokens:
 
       <div id="reading-part" role="tabpanel" aria-labelledby={`tab-${part}`}>
         {/* Part 2 goes one question at a time, answer shown at once, so a
-            mistake is studied while it is fresh. Part 3 is done whole. */}
+            mistake is studied while it is fresh. Part 3 goes one timed
+            passage at a time. Once a part is done, it shows whole. */}
         {part === "part2" && !saves.part2[0].checked ? (
           <OneByOne
             sets={sets}
@@ -204,6 +214,15 @@ export function ReadingPaperView({ sets, tokens }: { sets: ReadingSet[]; tokens:
             spot={spot}
             saved={saves.part2[0]}
             update={saves.part2[1]}
+            onMove={() => setSpot(null)}
+          />
+        ) : part === "part3" && !saves.part3[0].checked ? (
+          <PassageByPassage
+            sets={sets}
+            tokens={tokens}
+            spot={spot}
+            saved={saves.part3[0]}
+            update={saves.part3[1]}
             onMove={() => setSpot(null)}
           />
         ) : (
@@ -471,6 +490,194 @@ function OneByOne({
   );
 }
 
+/**
+ * Part 3, one passage at a time, against the clock. The passage stays
+ * hidden until Start. The timer is a stored start time, so it keeps
+ * running through a refresh or a switch of tab. Check, or the clock
+ * running out, shows the answers and why and opens word lookup; Next
+ * waits for you. After the last passage the whole part shows checked.
+ */
+function PassageByPassage({
+  sets,
+  tokens,
+  spot,
+  saved,
+  update,
+  onMove,
+}: {
+  sets: ReadingSet[];
+  tokens: Tokens;
+  spot: Spot | null;
+  saved: Saved;
+  update: Update;
+  onMove: () => void;
+}) {
+  const recordMany = useRecordMany();
+  const now = useNow();
+  const steps = useMemo(
+    () => sets.flatMap((set) => set.paper.part3.map((item) => ({ set, item }))),
+    [sets],
+  );
+  const { picks, run } = saved;
+  const at = Math.min(Math.max(saved.at ?? 0, 0), steps.length - 1);
+  const { set, item } = steps[at];
+  const last = at === steps.length - 1;
+  const ids = item.questions.map((q) => questionId(set.paper.id, q.number));
+  const started = run !== undefined;
+  const checked = run?.checkedAt !== undefined;
+  const deadline = run ? run.startedAt + PASSAGE_MS : null;
+  // Null until the clock is read on the client.
+  const left = deadline === null ? PASSAGE_MS : now === null ? null : deadline - now;
+  const used = run?.checkedAt !== undefined ? Math.min(PASSAGE_MS, run.checkedAt - run.startedAt) : null;
+  const right = item.questions.filter((q, i) => picks[ids[i]] === q.answer).length;
+  const answered = ids.filter((id) => picks[id] !== undefined).length;
+
+  function start() {
+    update((prev) => ({ ...prev, run: { startedAt: Date.now() }, startedAt: prev.startedAt ?? Date.now() }));
+  }
+
+  function pick(id: string, option: number) {
+    if (!started || checked) return;
+    update((prev) => ({ ...prev, picks: { ...prev.picks, [id]: option } }));
+  }
+
+  function check() {
+    if (!run || checked) return;
+    update((prev) => (prev.run ? { ...prev, run: { ...prev.run, checkedAt: Date.now() } } : prev));
+    recordMany(
+      "reading",
+      item.questions.map((q, i) => ({ itemId: ids[i], correct: picks[ids[i]] === q.answer })),
+    );
+  }
+
+  // Time up checks the passage, blanks and all, as the exam would.
+  const onTimeUp = useEffectEvent(() => check());
+  useEffect(() => {
+    if (deadline === null || checked) return;
+    const t = setTimeout(onTimeUp, Math.max(0, deadline - Date.now()));
+    return () => clearTimeout(t);
+  }, [deadline, checked]);
+
+  function next() {
+    onMove();
+    if (last) {
+      // Results stay on screen but are not stored: a refresh starts afresh.
+      update((prev) => ({ ...prev, run: undefined, checked: true, checkedAt: Date.now() }), false);
+    } else {
+      update((prev) => ({ ...prev, at: at + 1, run: undefined }));
+    }
+    scrollTo("reading-top");
+  }
+
+  const label = (
+    <p className="text-sm font-medium">
+      Set {set.label} <span className="text-muted-foreground font-normal">{set.paper.title}</span>{" "}
+      <span className="font-numeric">· {item.numbers}</span>
+    </p>
+  );
+
+  return (
+    <div className="space-y-4">
+      <div id="reading-top" className="scroll-mt-20 space-y-2">
+        <div className="flex flex-wrap items-baseline justify-between gap-2 text-sm">
+          <p className="text-muted-foreground">
+            Passage{" "}
+            <span className="font-numeric">
+              {at + 1}/{steps.length}
+            </span>
+          </p>
+          <p className="text-muted-foreground">
+            <span className="font-numeric">{formatCountdown(PASSAGE_MS)}</span> a passage, as in the exam
+          </p>
+        </div>
+        <div className="bg-muted h-1 overflow-hidden rounded-full">
+          <div className="bg-primary h-full transition-[width]" style={{ width: `${(at / steps.length) * 100}%` }} />
+        </div>
+      </div>
+
+      {!started ? (
+        <section className="bg-card space-y-4 rounded-2xl border p-5 text-center sm:p-8">
+          {label}
+          <p className="text-muted-foreground text-sm">
+            One passage, four questions,{" "}
+            <span className="text-foreground font-numeric font-medium">{formatCountdown(PASSAGE_MS)}</span>. The
+            clock starts when you press Start and keeps running if you leave or refresh. When it runs out, your
+            answers are checked as they are.
+          </p>
+          <Button size="lg" variant="cta" className="h-11 cursor-pointer px-8" onClick={start}>
+            <Timer aria-hidden />
+            Start
+          </Button>
+        </section>
+      ) : (
+        <>
+          {/* The clock stays in view while you read. */}
+          <div className="bg-background/90 supports-[backdrop-filter]:bg-background/70 sticky top-[calc(3.5rem+env(safe-area-inset-top))] z-20 -mx-1 flex items-center justify-between gap-3 rounded-xl border px-4 py-2 backdrop-blur lg:top-2">
+            {label}
+            {checked ? (
+              <p className="text-sm">
+                <span className="font-numeric font-semibold">
+                  {right}/{item.questions.length}
+                </span>{" "}
+                right
+                {used !== null ? (
+                  <span className="text-muted-foreground">
+                    {" "}
+                    · {used >= PASSAGE_MS ? "time ran out" : <span className="font-numeric">{formatCountdown(used)}</span>}
+                  </span>
+                ) : null}
+              </p>
+            ) : (
+              <p
+                role="timer"
+                aria-label="Time left"
+                className={cn(
+                  "font-numeric flex items-center gap-1.5 text-lg font-semibold",
+                  left !== null && left <= 60_000 && "text-destructive",
+                )}
+              >
+                <Timer aria-hidden className="size-4" />
+                {left === null ? "–:––" : formatCountdown(left)}
+              </p>
+            )}
+          </div>
+
+          <ItemCard
+            paperId={set.paper.id}
+            item={item}
+            tokens={tokens}
+            spot={spot}
+            lookup={checked}
+            picks={picks}
+            checked={checked}
+            onPick={pick}
+          />
+
+          <div className="flex flex-wrap items-center gap-3">
+            {checked ? (
+              <Button size="lg" className="h-11 cursor-pointer px-8" onClick={next}>
+                {last ? "See results" : "Next passage"}
+              </Button>
+            ) : (
+              <>
+                <Button size="lg" className="h-11 cursor-pointer px-8" onClick={check} disabled={answered === 0}>
+                  <Check aria-hidden />
+                  Check
+                </Button>
+                <p className="text-muted-foreground text-sm">
+                  <span className="font-numeric">{answered}/4</span> answered
+                  {answered > 0 && answered < 4 ? ". Blank ones count as wrong." : ""}
+                </p>
+              </>
+            )}
+            {checked ? <p className="text-muted-foreground text-sm">Tap any word for its pinyin and meaning.</p> : null}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 function scrollTo(id: string) {
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   document.getElementById(id)?.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
@@ -506,7 +713,7 @@ function ItemCard({
   return (
     <article className="bg-card rounded-2xl border p-4 sm:p-6">
       <div className={cn(many && "lg:grid lg:grid-cols-2 lg:gap-8")}>
-        <div className={cn(many && "lg:sticky lg:top-6 lg:max-h-[calc(100dvh-3rem)] lg:self-start lg:overflow-y-auto")}>
+        <div className={cn(many && "lg:sticky lg:top-20 lg:max-h-[calc(100dvh-6rem)] lg:self-start lg:overflow-y-auto")}>
           {many ? <p className="text-muted-foreground font-numeric mb-2 text-xs font-medium">{item.numbers}</p> : null}
           <Text tokens={tokens[item.id] ?? []} textKey={item.id} spot={spot} lookup={lookup} paragraphs />
         </div>
