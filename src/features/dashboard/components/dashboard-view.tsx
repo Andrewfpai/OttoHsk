@@ -19,6 +19,7 @@ export function DashboardView({ name, d }: { name: string | null; d: Dashboard }
   const firstName = name?.split(" ")[0];
 
   const TOTAL_WORDS = d.totalWords;
+  const t = d.target;
   const SECTIONS = sectionsFor(d.level);
   const max = SECTION_MAX[d.level];
   const examLabel = d.examDate
@@ -89,19 +90,14 @@ export function DashboardView({ name, d }: { name: string | null; d: Dashboard }
               </div>
             ))}
           </dl>
-          {counts.new > 0 && d.newPerDay !== null ? (
-            <p className="text-muted-foreground text-sm">
-              Start <span className="text-foreground font-numeric font-medium">{d.newPerDay}</span> new
-              words a day to have seen every word by exam day.
-            </p>
-          ) : null}
         </section>
 
         {/* Today */}
         <section className="bg-card space-y-4 rounded-2xl border p-5">
           <h2 className="text-muted-foreground text-sm">Today</h2>
-          <p>
-            <span className="font-numeric text-4xl font-semibold">{d.due}</span>
+          {t ? <TargetToday t={t} /> : null}
+          <p className={cn(t && "text-sm")}>
+            <span className={cn("font-numeric font-semibold", t ? "text-base" : "text-4xl")}>{d.due}</span>
             <span className="text-muted-foreground"> word{d.due === 1 ? "" : "s"} waiting for review</span>
           </p>
           {d.lockedUntil !== null ? (
@@ -187,5 +183,37 @@ export function DashboardView({ name, d }: { name: string | null; d: Dashboard }
         </section>
       </div>
     </PageContainer>
+  );
+}
+
+/** Today's place on the plan to know every word a week before the exam. */
+function TargetToday({ t }: { t: NonNullable<Dashboard["target"]> }) {
+  const goal = formatDate(new Date(`${t.goalDate}T00:00:00Z`), "UTC", { day: "numeric", month: "short" });
+  const pct = Math.min(100, Math.round((t.known / Math.max(1, t.targetToday)) * 100));
+  return (
+    <div className="space-y-2">
+      <p>
+        {t.behind > 0 ? (
+          <>
+            <span className="font-numeric text-4xl font-semibold">{t.behind}</span>
+            <span className="text-muted-foreground"> more to know today</span>
+          </>
+        ) : (
+          <span className="text-success text-2xl font-semibold">On track</span>
+        )}
+      </p>
+      <div
+        className="bg-muted h-2 overflow-hidden rounded-full"
+        role="img"
+        aria-label={`${t.known} of ${t.targetToday} known`}
+      >
+        <div className={cn("h-full", t.behind > 0 ? "bg-warning" : "bg-success")} style={{ width: `${pct}%` }} />
+      </div>
+      <p className="text-muted-foreground text-sm">
+        Target for today <span className="text-foreground font-numeric">{t.targetToday}</span> known (day{" "}
+        <span className="font-numeric">{t.day}</span> × <span className="font-numeric">{t.perDay}</span>). You know{" "}
+        <span className="text-foreground font-numeric">{t.known}</span>. Every word by {goal}.
+      </p>
+    </div>
   );
 }

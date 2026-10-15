@@ -27,6 +27,15 @@ const blanks = (s: string) => s.split(BLANK).length - 1;
 const unique = (ids: string[]) => new Set(ids).size === ids.length;
 
 describe("words", () => {
+  it("gives every word a test sentence, different from the practice one", () => {
+    for (const w of words) {
+      expect(w.quiz, w.id).not.toBeNull();
+      expect(w.quiz!.zh.split(w.hanzi).length - 1, `${w.id}: ${w.quiz!.zh}`).toBe(1);
+      expect(w.quiz!.zh, w.id).not.toBe(w.example?.zh);
+      expect(w.quiz!.en.trim(), w.id).not.toBe("");
+    }
+  });
+
   it("has the 1,300-word HSK 5 list with unique ids and a gloss each", () => {
     expect(words.length).toBe(1300);
     expect(unique(words.map((w) => w.id))).toBe(true);
@@ -148,6 +157,15 @@ function checkWordList(list: Word[], size: number) {
       expect(w.indonesian.trim(), w.id).not.toBe("");
       expect(w.pos.length, w.id).toBeGreaterThan(0);
       expect(w.gloss, w.id).not.toMatch(/[一-鿿]/);
+    }
+  });
+
+  it("gives every word a test sentence, different from the practice one", () => {
+    for (const w of list) {
+      expect(w.quiz, w.id).not.toBeNull();
+      expect(w.quiz!.zh.split(w.hanzi).length - 1, `${w.id}: ${w.quiz!.zh}`).toBe(1);
+      expect(w.quiz!.zh, w.id).not.toBe(w.example?.zh);
+      expect(w.quiz!.en.trim(), w.id).not.toBe("");
     }
   });
 

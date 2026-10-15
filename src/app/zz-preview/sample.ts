@@ -48,7 +48,7 @@ export function sampleData(level: Level = 5) {
     daysLeft: 28,
     totalWords: words.length,
     words: { known: 32, learning: 48, new: words.length - 80 },
-    newPerDay: Math.ceil((words.length - 80) / 28),
+    target: { goalDate: "2026-11-01", perDay: 55, day: 7, planDays: 24, targetToday: 385, known: 223, behind: 162 },
     due: 20,
     lockedUntil: null,
     drills: [

@@ -1,4 +1,4 @@
-import { and, desc, eq } from "drizzle-orm";
+import { and, desc, eq, min } from "drizzle-orm";
 
 import { wordBank } from "@/content/words";
 import { db } from "@/db";
@@ -74,4 +74,16 @@ export async function getRecentTests(limit = 10): Promise<TestSummary[]> {
     guesses: r.guesses,
     passed: r.passed,
   }));
+}
+
+/** When the learner took their first test at their current level, or null. */
+export async function getFirstTestAt(): Promise<Date | null> {
+  const user = await requireUser();
+  const [row] = await db
+    .select({ first: min(flashcardTests.takenAt) })
+    .from(flashcardTests)
+    .where(and(eq(flashcardTests.userId, user.id), eq(flashcardTests.level, user.level)));
+  // min() over a timestamp comes back as a string from the driver, whatever
+  // its TypeScript type says; parse it rather than trust it.
+  return row?.first ? new Date(row.first) : null;
 }

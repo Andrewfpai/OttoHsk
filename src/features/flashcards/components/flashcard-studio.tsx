@@ -641,7 +641,7 @@ function Test({
           <span className="text-2xl">{word.gloss}</span>
         ) : q.kind === "sentence" ? (
           <span className="font-hanzi text-2xl leading-relaxed">
-            {answer === null ? blankedSentence(word) : word.example?.zh}
+            {answer === null ? blankedSentence(word) : word.quiz?.zh}
           </span>
         ) : (
           <span className="font-hanzi text-6xl leading-tight">{word.hanzi}</span>
@@ -718,8 +718,8 @@ function Test({
               <span className="text-primary">{word.pinyin}</span>{" "}
               <span className="text-muted-foreground">· {word.gloss}</span>
             </p>
-            {q.kind === "sentence" && word.example ? (
-              <p className="text-muted-foreground">{word.example.en}</p>
+            {q.kind === "sentence" && word.quiz ? (
+              <p className="text-muted-foreground">{word.quiz.en}</p>
             ) : null}
           </div>
           <StickyActions className="sm:flex sm:justify-end">

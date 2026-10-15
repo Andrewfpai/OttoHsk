@@ -184,16 +184,18 @@ export function buildQuestions(
   return shuffle(deck, rng).map((word, i): Question => {
     let kind = KINDS[i % KINDS.length];
     if (kind === "pinyin") return { wordId: word.id, kind };
-    if (kind === "sentence" && !word.example?.zh.includes(word.hanzi)) kind = "hanzi";
+    // Only with a test sentence: the practice card's example would be
+    // answered from memory of the card, not knowledge of the word.
+    if (kind === "sentence" && !word.quiz?.zh.includes(word.hanzi)) kind = "hanzi";
     const { distractors, difficulty } = distractorsFor(word, kind, pool, mates, rng);
     const options = shuffle([word, ...distractors], rng).map((w) => w.id);
     return { wordId: word.id, kind, difficulty, options };
   });
 }
 
-/** The example sentence with the word blanked out, for a sentence question. */
+/** The word's test sentence with the word blanked out, for a sentence question. */
 export function blankedSentence(word: Word): string {
-  return (word.example?.zh ?? "").split(word.hanzi).join("＿＿");
+  return (word.quiz?.zh ?? "").split(word.hanzi).join("＿＿");
 }
 
 /**

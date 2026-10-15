@@ -23,8 +23,13 @@ export type Word = {
   pos: string[];
   /** Frequency rank; lower is more common. */
   rank: number;
-  /** One sentence using the word in the sense its level tests. */
+  /** One sentence using the word in the sense its level tests. Shown in practice. */
   example: Example | null;
+  /**
+   * A different sentence, used only by the test's sentence questions: the
+   * test checks the word, not memory of the practice card's sentence.
+   */
+  quiz: Example | null;
 };
 
 /** One level's vocabulary, with lookups. */

@@ -6,11 +6,13 @@ import { getItemStats } from "@/features/drills/server/queries";
 import { isDue } from "@/features/flashcards/lib/deck";
 import { isLocked } from "@/features/flashcards/lib/lockout";
 import { statusOf } from "@/features/flashcards/lib/schedule";
-import { getFlashcardInfo, getProgress } from "@/features/flashcards/server/queries";
+import { getFirstTestAt, getFlashcardInfo, getProgress } from "@/features/flashcards/server/queries";
 import { type MockRow, getMocks } from "@/features/mocks/server/queries";
 import { requireUser } from "@/lib/auth-guard";
-import { daysUntilExam } from "@/lib/exam";
+import { daysUntilExam, localDate } from "@/lib/exam";
 import type { Level } from "@/lib/levels";
+
+import { type DailyTarget, dailyTarget } from "../lib/target";
 
 const DRILL_LINKS: Record<DrillKind, { label: string; href: string }> = {
   confusable: { label: "Confusables", href: "/confusables" },
@@ -29,8 +31,8 @@ export type Dashboard = {
   daysLeft: number | null;
   totalWords: number;
   words: { known: number; learning: number; new: number };
-  /** New words to start each day so every word is seen by exam day; null without a date ahead. */
-  newPerDay: number | null;
+  /** The straight-line plan to know every word a week before the exam; null without one. */
+  target: DailyTarget | null;
   /** Words due in the next test. */
   due: number;
   /** Epoch ms while tests are locked, else null. */
@@ -42,10 +44,11 @@ export type Dashboard = {
 export async function getDashboard(): Promise<Dashboard> {
   const user = await requireUser();
   const kinds = LEVEL_DRILL_KINDS[user.level];
-  const [progress, info, mocks, ...drillStats] = await Promise.all([
+  const [progress, info, mocks, firstTestAt, ...drillStats] = await Promise.all([
     getProgress(),
     getFlashcardInfo(),
     getMocks(),
+    getFirstTestAt(),
     ...kinds.map((kind) => getItemStats(kind)),
   ]);
 
@@ -61,6 +64,14 @@ export async function getDashboard(): Promise<Dashboard> {
   }
 
   const lockedUntil = info.lockedUntil !== null ? new Date(info.lockedUntil) : null;
+  const today = localDate(now);
+  const target = dailyTarget({
+    total: totalWords,
+    known: words.known,
+    startDate: firstTestAt ? localDate(firstTestAt) : today,
+    today,
+    examDate: user.examDate,
+  });
 
   return {
     level: user.level,
@@ -68,7 +79,7 @@ export async function getDashboard(): Promise<Dashboard> {
     daysLeft,
     totalWords,
     words,
-    newPerDay: daysLeft !== null && daysLeft > 0 ? Math.ceil(words.new / daysLeft) : null,
+    target,
     due,
     lockedUntil: isLocked(lockedUntil, now) ? info.lockedUntil : null,
     drills: kinds.map((kind, i) => ({

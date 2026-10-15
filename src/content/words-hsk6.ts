@@ -4,10 +4,14 @@
  * for sources and licences).
  */
 import { confusablesHsk6 } from "./confusables-hsk6";
-import { type Word, makeBank } from "./word-types";
+import quiz from "./quiz-hsk6.json";
+import { type Example, type Word, makeBank } from "./word-types";
 import data from "./words-hsk6.json";
 
-export const wordsHsk6: Word[] = data;
+/** Test-only sentences (`node scripts/build-quiz.mjs`), never the practice card's. */
+const quizOf: Record<string, Example> = quiz;
+
+export const wordsHsk6: Word[] = data.map((w) => ({ ...w, quiz: quizOf[w.id] ?? null }));
 
 export const bankHsk6 = makeBank(
   6,
