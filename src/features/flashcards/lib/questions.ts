@@ -24,6 +24,8 @@ import type { Word, WordBank } from "@/content/word-types";
 import { plainPinyin } from "@/lib/pinyin";
 import { type Rng, shuffle } from "@/lib/random";
 
+import { areSynonyms } from "./synonyms";
+
 export type ChoiceKind = "meaning" | "hanzi" | "sentence";
 export type QuestionKind = ChoiceKind | "pinyin";
 export type Difficulty = "medium" | "hard";
@@ -103,6 +105,8 @@ function withinEdits(a: string, b: string, max: number): boolean {
  */
 function clash(a: Word, b: Word, kind: ChoiceKind): boolean {
   if (a.id === b.id) return true;
+  // True synonyms: no question can tell them apart.
+  if (areSynonyms(a.hanzi, b.hanzi)) return true;
   // In a sentence, 不如 and 不 could both seem to fill the blank.
   if (kind === "sentence" && (a.hanzi.includes(b.hanzi) || b.hanzi.includes(a.hanzi))) return true;
   const parts = glossParts(b);

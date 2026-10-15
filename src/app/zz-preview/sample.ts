@@ -5,7 +5,7 @@ import { wordBank } from "@/content/words";
 import type { Dashboard } from "@/features/dashboard/server/queries";
 import type { ItemStat } from "@/features/drills/lib/stats";
 import type { EssayRow } from "@/features/essays/server/queries";
-import type { FlashcardInfo, ProgressRow, TestSummary } from "@/features/flashcards/server/queries";
+import type { FlashcardInfo, HistoryTest, ProgressRow, TestSummary } from "@/features/flashcards/server/queries";
 import type { MockRow } from "@/features/mocks/server/queries";
 import type { Level } from "@/lib/levels";
 
@@ -26,6 +26,13 @@ export function sampleData(level: Level = 5) {
   const recentTests: TestSummary[] = [
     { id: "t1", takenAt: now - DAY, testNumber: 12, total: 20, correct: 15, guesses: 0, passed: true },
     { id: "t2", takenAt: now - 2 * DAY, testNumber: 11, total: 20, correct: 6, guesses: 4, passed: false },
+  ];
+  const ids = words.slice(0, 30).map((w) => w.id);
+  const history: HistoryTest[] = [
+    { id: "h3", takenAt: Date.UTC(2026, 9, 15, 7, 5), day: "2026-10-15", testNumber: 24, total: 30, correct: 28, guesses: 0, passed: true,
+      answers: ids.map((id, i) => ({ wordId: id, right: i !== 3 && i !== 11, ...(i === 3 ? { chosenId: ids[4] } : i === 11 ? { typed: "abc" } : { chosenId: id }) })) },
+    { id: "h2", takenAt: Date.UTC(2026, 9, 15, 3, 40), day: "2026-10-15", testNumber: 23, total: 20, correct: 20, guesses: 0, passed: true, answers: null },
+    { id: "h1", takenAt: Date.UTC(2026, 9, 14, 12, 0), day: "2026-10-14", testNumber: 22, total: 20, correct: 18, guesses: 1, passed: true, answers: null },
   ];
   const mocks: MockRow[] =
     level === 5
@@ -48,7 +55,7 @@ export function sampleData(level: Level = 5) {
     daysLeft: 28,
     totalWords: words.length,
     words: { known: 32, learning: 48, new: words.length - 80 },
-    target: { goalDate: "2026-11-01", perDay: 55, day: 7, planDays: 24, targetToday: 385, known: 223, behind: 162 },
+    target: { goalDate: "2026-11-01", perDay: 55, day: 7, planDays: 24, targetToday: 385, progress: 263, behind: 122 },
     due: 20,
     lockedUntil: null,
     drills: [
@@ -91,5 +98,5 @@ export function sampleData(level: Level = 5) {
       },
     },
   ];
-  return { essays, progress, info, lockedInfo, recentTests, mocks, stats, dashboard, seed: 1234, today: "2026-10-10" };
+  return { history, essays, progress, info, lockedInfo, recentTests, mocks, stats, dashboard, seed: 1234, today: "2026-10-10" };
 }

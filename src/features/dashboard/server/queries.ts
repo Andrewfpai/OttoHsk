@@ -12,7 +12,7 @@ import { requireUser } from "@/lib/auth-guard";
 import { daysUntilExam, localDate } from "@/lib/exam";
 import type { Level } from "@/lib/levels";
 
-import { type DailyTarget, dailyTarget } from "../lib/target";
+import { type DailyTarget, dailyTarget, progressOf } from "../lib/target";
 
 const DRILL_LINKS: Record<DrillKind, { label: string; href: string }> = {
   confusable: { label: "Confusables", href: "/confusables" },
@@ -67,7 +67,7 @@ export async function getDashboard(): Promise<Dashboard> {
   const today = localDate(now);
   const target = dailyTarget({
     total: totalWords,
-    known: words.known,
+    progress: progressOf(progress.map((p) => p.strength)),
     startDate: firstTestAt ? localDate(firstTestAt) : today,
     today,
     examDate: user.examDate,

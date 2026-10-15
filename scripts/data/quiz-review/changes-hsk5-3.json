@@ -1,0 +1,386 @@
+[
+  {
+    "hanzi": "宝贵",
+    "before": {
+      "zh": "这次比赛给我们积累了宝贵的经验。",
+      "en": "This competition gave us valuable experience."
+    },
+    "after": {
+      "zh": "通过这次比赛，我们积累了很多宝贵的经验。",
+      "en": "Through this competition we gained a lot of valuable experience."
+    },
+    "reason": "unnatural 比赛给我们积累了"
+  },
+  {
+    "hanzi": "展览",
+    "before": {
+      "zh": "下个月美术馆要展览几位年轻画家的作品。",
+      "en": "Next month the art gallery will exhibit works by several young painters."
+    },
+    "after": {
+      "zh": "这次汽车展览一直持续到月底，每天都有很多人参观。",
+      "en": "This car exhibition runs until the end of the month, and lots of people visit every day."
+    },
+    "reason": "verb use 展览作品 unnatural; 展出 is the natural verb"
+  },
+  {
+    "hanzi": "重量",
+    "before": {
+      "zh": "这辆小车能承受的最大重量是五百公斤。",
+      "en": "The maximum weight this cart can carry is 500 kilograms."
+    },
+    "after": {
+      "zh": "这个书架每一层能承受的最大重量是二十公斤。",
+      "en": "Each shelf of this bookcase can bear a maximum weight of 20 kilograms."
+    },
+    "reason": "unclear 小车 / mismatched 'cart'"
+  },
+  {
+    "hanzi": "自私",
+    "before": {
+      "zh": "只想着自己的利益，这种自私的做法让同事们很失望。",
+      "en": "Thinking only of his own interests, this selfish behaviour disappointed his colleagues."
+    },
+    "after": {
+      "zh": "他只想着自己的利益，这种自私的做法让同事们很失望。",
+      "en": "He thinks only of his own interests, and this selfish behaviour has disappointed his colleagues."
+    },
+    "reason": "missing subject (dangling clause)"
+  },
+  {
+    "hanzi": "形状",
+    "before": {
+      "zh": "天上的云不停地变化，形状像一只大白兔。",
+      "en": "The clouds kept changing; their shape looked like a big white rabbit."
+    },
+    "after": {
+      "zh": "天上有一朵白云，形状很像一只大白兔。",
+      "en": "There's a white cloud in the sky shaped just like a big white rabbit."
+    },
+    "reason": "illogical: clouds keep changing yet have one shape"
+  },
+  {
+    "hanzi": "节省",
+    "before": {
+      "zh": "为了节省用电，离开房间时要关掉空调。",
+      "en": "To save electricity, turn off the air conditioner when you leave the room."
+    },
+    "after": {
+      "zh": "为了节省开支，他们这个月很少去外面吃饭。",
+      "en": "To cut costs, they've rarely eaten out this month."
+    },
+    "reason": "节约用电 is the fixed collocation, 节约 fits better"
+  },
+  {
+    "hanzi": "何况",
+    "before": {
+      "zh": "平时开车都要两个小时，何况今天还下大雪。",
+      "en": "The drive normally takes two hours, let alone today with heavy snow."
+    },
+    "after": {
+      "zh": "平时开车都要两个小时，何况今天还下大雪。",
+      "en": "Even normally the drive takes two hours, and today there's heavy snow on top of that."
+    },
+    "reason": "awkward 'let alone' translation"
+  },
+  {
+    "hanzi": "赞美",
+    "before": {
+      "zh": "听到别人的赞美，她害羞得脸都红了。",
+      "en": "Hearing other people's praise, she blushed with shyness."
+    },
+    "after": {
+      "zh": "人们用各种美好的语言赞美春天的到来。",
+      "en": "People hail the arrival of spring with all kinds of beautiful words."
+    },
+    "reason": "称赞/夸奖 fit 别人的赞美 equally"
+  },
+  {
+    "hanzi": "热心",
+    "before": {
+      "zh": "这位司机很热心，下车后还把我们送到了门口。",
+      "en": "The driver was very warm-hearted; after we got out, he even walked us to the door."
+    },
+    "after": {
+      "zh": "这位司机很热心，还帮我们把行李搬到了门口。",
+      "en": "The driver was very warm-hearted and even helped carry our luggage to the door."
+    },
+    "reason": "illogical 下车后还把我们送到了门口"
+  },
+  {
+    "hanzi": "吸取",
+    "before": {
+      "zh": "植物通过根从土壤里吸取水分。",
+      "en": "Plants absorb water from the soil through their roots."
+    },
+    "after": {
+      "zh": "他善于吸取别人的经验，所以进步得很快。",
+      "en": "He's good at learning from others' experience, so he has made rapid progress."
+    },
+    "reason": "吸收水分 is the natural collocation, 吸收 fits better"
+  },
+  {
+    "hanzi": "征求",
+    "before": {
+      "zh": "搬家之前，他先征求了父母的同意。",
+      "en": "Before moving, he first sought his parents' consent."
+    },
+    "after": {
+      "zh": "定装修方案之前，他先征求了家里每个人的看法。",
+      "en": "Before settling on the renovation plan, he first asked everyone in the family for their views."
+    },
+    "reason": "wrong collocation 征求同意 (should be 征得同意)"
+  },
+  {
+    "hanzi": "称赞",
+    "before": {
+      "zh": "这家餐厅的服务受到了顾客的一致称赞。",
+      "en": "This restaurant's service has been unanimously praised by its customers."
+    },
+    "after": {
+      "zh": "老师在全班同学面前称赞他字写得漂亮。",
+      "en": "In front of the whole class, the teacher praised his beautiful handwriting."
+    },
+    "reason": "same collocation as practice (受到/得到…的称赞)"
+  },
+  {
+    "hanzi": "着火",
+    "before": {
+      "zh": "那片森林着火了，烟很远都能看见。",
+      "en": "That forest caught fire, and the smoke could be seen from far away."
+    },
+    "after": {
+      "zh": "那片森林着火了，很远就能看到浓浓的黑烟。",
+      "en": "That forest caught fire, and the thick black smoke could be seen from far away."
+    },
+    "reason": "awkward word order 烟很远都能看见"
+  },
+  {
+    "hanzi": "舅舅",
+    "before": {
+      "zh": "妈妈的哥哥要来我们家住，我好久没见到舅舅了。",
+      "en": "Mum's elder brother is coming to stay with us; I haven't seen my uncle for ages."
+    },
+    "after": {
+      "zh": "我妈妈只有一个弟弟，就是我的小舅舅，他只比我大八岁。",
+      "en": "My mum has only one younger brother—my young uncle, who is just eight years older than me."
+    },
+    "reason": "repeats practice definition 妈妈的哥哥"
+  },
+  {
+    "hanzi": "过期",
+    "before": {
+      "zh": "我的护照下个月就要过期了，得赶紧去办新的。",
+      "en": "My passport expires next month, so I need to get a new one quickly."
+    },
+    "after": {
+      "zh": "这张优惠券上个月就过期了，现在用不了了。",
+      "en": "This coupon expired last month, so it can't be used now."
+    },
+    "reason": "passport 就要到期 fits better than 过期"
+  },
+  {
+    "hanzi": "及格",
+    "before": {
+      "zh": "这门课考六十分以上才算及格。",
+      "en": "In this course you need over sixty points to pass."
+    },
+    "after": {
+      "zh": "这门课考六十分以上才算及格。",
+      "en": "In this course you need sixty points or more to pass."
+    },
+    "reason": "'over sixty' mistranslates 六十分以上"
+  },
+  {
+    "hanzi": "一再",
+    "before": {
+      "zh": "他一再向我保证，以后不会再迟到了。",
+      "en": "He repeatedly promised me that he would never be late again."
+    },
+    "after": {
+      "zh": "因为天气不好，我们的航班一再推迟，到半夜才起飞。",
+      "en": "Because of the bad weather, our flight was delayed again and again and didn't take off until midnight."
+    },
+    "reason": "再三 fits 一再向我保证 equally"
+  },
+  {
+    "hanzi": "灰尘",
+    "before": {
+      "zh": "打开那本旧书，上面全是灰尘。",
+      "en": "When I opened that old book, it was covered in dust."
+    },
+    "after": {
+      "zh": "我拿起那本旧书轻轻一拍，灰尘到处乱飞。",
+      "en": "When I picked up the old book and gave it a light pat, dust flew everywhere."
+    },
+    "reason": "illogical: dust found only after opening the book"
+  },
+  {
+    "hanzi": "轮流",
+    "before": {
+      "zh": "晚上照顾病人，兄弟姐妹几个人轮流值班。",
+      "en": "To look after the patient at night, the brothers and sisters take turns on duty."
+    },
+    "after": {
+      "zh": "爸爸住院期间，我们兄弟姐妹几个轮流去医院照顾他。",
+      "en": "While Dad was in hospital, we brothers and sisters took turns looking after him there."
+    },
+    "reason": "unnatural 值班 for family carers"
+  },
+  {
+    "hanzi": "幸亏",
+    "before": {
+      "zh": "幸亏带了伞，不然就被淋湿了。",
+      "en": "Luckily I brought an umbrella, or I would have got soaked."
+    },
+    "after": {
+      "zh": "幸亏当时树下没有人，不然那根树枝掉下来就危险了。",
+      "en": "Luckily nobody was under the tree at the time; otherwise that falling branch could have been dangerous."
+    },
+    "reason": "多亏带了伞 fits equally"
+  },
+  {
+    "hanzi": "姑姑",
+    "before": {
+      "zh": "我姑姑是爸爸唯一的姐姐，从小就特别疼我。",
+      "en": "My aunt is Dad's only elder sister, and she has doted on me since I was little."
+    },
+    "after": {
+      "zh": "每年春节，爸爸都会带我们去看他的姐姐，也就是我的姑姑。",
+      "en": "Every Spring Festival, Dad takes us to visit his elder sister—my aunt."
+    },
+    "reason": "repeats practice definition pattern 姑姑是爸爸的…"
+  },
+  {
+    "hanzi": "振动",
+    "before": {
+      "zh": "地铁经过的时候，楼里能感觉到轻微的振动。",
+      "en": "When the underground train passes, you can feel a slight vibration in the building."
+    },
+    "after": {
+      "zh": "物理课上老师告诉我们，声音是由物体的振动产生的。",
+      "en": "In physics class the teacher told us that sound is produced by the vibration of objects."
+    },
+    "reason": "building shaking is 震动, not 振动"
+  },
+  {
+    "hanzi": "均匀",
+    "before": {
+      "zh": "把面粉和水搅拌均匀，再放进锅里。",
+      "en": "Mix the flour and water evenly, then put it in the pot."
+    },
+    "after": {
+      "zh": "先把鸡蛋和少量盐搅拌均匀，再倒进热油锅里。",
+      "en": "First beat the eggs with a little salt until evenly mixed, then pour them into the hot oiled pan."
+    },
+    "reason": "illogical flour-and-water into pot"
+  },
+  {
+    "hanzi": "悠久",
+    "before": {
+      "zh": "端午节吃粽子是一个悠久的传统。",
+      "en": "Eating zongzi at the Dragon Boat Festival is a long-standing tradition."
+    },
+    "after": {
+      "zh": "端午节吃粽子的传统十分悠久，已经延续了两千多年。",
+      "en": "The tradition of eating zongzi at the Dragon Boat Festival is very old and has lasted over two thousand years."
+    },
+    "reason": "stilted 是一个悠久的传统"
+  },
+  {
+    "hanzi": "再三",
+    "before": {
+      "zh": "妈妈再三叮嘱我，到了学校要马上给家里打电话。",
+      "en": "Mum told me again and again to call home as soon as I got to school."
+    },
+    "after": {
+      "zh": "他犹豫再三，最后还是没有把那封信寄出去。",
+      "en": "After hesitating again and again, he still didn't send the letter in the end."
+    },
+    "reason": "一再叮嘱 fits equally"
+  },
+  {
+    "hanzi": "日历",
+    "before": {
+      "zh": "墙上挂着一本日历，上面写着今天是星期五。",
+      "en": "A calendar hangs on the wall, showing that today is Friday."
+    },
+    "after": {
+      "zh": "每天早上，爷爷都会撕下一张日历，看看今天是几号。",
+      "en": "Every morning, Grandpa tears a page off the calendar to see what the date is."
+    },
+    "reason": "odd 日历上写着今天是星期五"
+  },
+  {
+    "hanzi": "淘气",
+    "before": {
+      "zh": "弟弟小时候特别淘气，经常爬到树上去。",
+      "en": "My little brother was very mischievous as a child and often climbed trees."
+    },
+    "after": {
+      "zh": "我弟弟是个有名的淘气包，邻居们没有不认识他的。",
+      "en": "My little brother is a notorious little rascal; every neighbour knows him."
+    },
+    "reason": "调皮 fits equally; use fixed word 淘气包"
+  },
+  {
+    "hanzi": "慌张",
+    "before": {
+      "zh": "第一次见女朋友的父母，他显得有点儿慌张。",
+      "en": "Meeting his girlfriend's parents for the first time, he seemed a bit flustered."
+    },
+    "after": {
+      "zh": "她神色慌张地跑进来，说钱包和护照都不见了。",
+      "en": "She ran in looking flustered and said her wallet and passport were both missing."
+    },
+    "reason": "meeting parents calls for 紧张, not 慌张"
+  },
+  {
+    "hanzi": "煤炭",
+    "before": {
+      "zh": "以前，很多北方家庭冬天靠烧煤炭取暖。",
+      "en": "In the past, many northern families burned coal to keep warm in winter."
+    },
+    "after": {
+      "zh": "这座城市以前主要靠开采煤炭发展经济。",
+      "en": "This city used to rely mainly on coal mining for its economy."
+    },
+    "reason": "unnatural 烧煤炭取暖 (should be 烧煤)"
+  },
+  {
+    "hanzi": "充电器",
+    "before": {
+      "zh": "手机快没电了，你带充电器了吗？",
+      "en": "My phone's almost out of battery—did you bring a charger?"
+    },
+    "after": {
+      "zh": "这个充电器很快，半个小时就能把手机充满电。",
+      "en": "This charger is fast; it can fully charge a phone in half an hour."
+    },
+    "reason": "same situation as practice (bringing a charger)"
+  },
+  {
+    "hanzi": "次要",
+    "before": {
+      "zh": "对我来说，工资多少是次要的，我更看重发展机会。",
+      "en": "For me, the salary is secondary; I care more about opportunities to grow."
+    },
+    "after": {
+      "zh": "这个问题比较次要，我们可以放到下次开会再讨论。",
+      "en": "This issue is fairly minor; we can leave it for the next meeting."
+    },
+    "reason": "same pattern as practice (X是次要的)"
+  },
+  {
+    "hanzi": "元旦",
+    "before": {
+      "zh": "一月一日是元旦，是新的一年的第一天。",
+      "en": "January the first is New Year's Day, the first day of the new year."
+    },
+    "after": {
+      "zh": "过了元旦就是新的一年了，你有什么新年计划？",
+      "en": "Once New Year's Day is past it's a new year—what are your New Year plans?"
+    },
+    "reason": "redundant, stilted 新的一年的第一天"
+  }
+]

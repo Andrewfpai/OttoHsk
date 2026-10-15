@@ -186,17 +186,20 @@ export function DashboardView({ name, d }: { name: string | null; d: Dashboard }
   );
 }
 
-/** Today's place on the plan to know every word a week before the exam. */
+/**
+ * Today's place on the plan to know every word a week before the exam.
+ * Progress: a known word counts 1, a learning word ¼–¾ by its strength.
+ */
 function TargetToday({ t }: { t: NonNullable<Dashboard["target"]> }) {
   const goal = formatDate(new Date(`${t.goalDate}T00:00:00Z`), "UTC", { day: "numeric", month: "short" });
-  const pct = Math.min(100, Math.round((t.known / Math.max(1, t.targetToday)) * 100));
+  const pct = Math.min(100, Math.round((t.progress / Math.max(1, t.targetToday)) * 100));
   return (
     <div className="space-y-2">
       <p>
         {t.behind > 0 ? (
           <>
             <span className="font-numeric text-4xl font-semibold">{t.behind}</span>
-            <span className="text-muted-foreground"> more to know today</span>
+            <span className="text-muted-foreground"> to go today</span>
           </>
         ) : (
           <span className="text-success text-2xl font-semibold">On track</span>
@@ -205,14 +208,15 @@ function TargetToday({ t }: { t: NonNullable<Dashboard["target"]> }) {
       <div
         className="bg-muted h-2 overflow-hidden rounded-full"
         role="img"
-        aria-label={`${t.known} of ${t.targetToday} known`}
+        aria-label={`Progress ${t.progress} of today's target ${t.targetToday}`}
       >
         <div className={cn("h-full", t.behind > 0 ? "bg-warning" : "bg-success")} style={{ width: `${pct}%` }} />
       </div>
       <p className="text-muted-foreground text-sm">
-        Target for today <span className="text-foreground font-numeric">{t.targetToday}</span> known (day{" "}
-        <span className="font-numeric">{t.day}</span> × <span className="font-numeric">{t.perDay}</span>). You know{" "}
-        <span className="text-foreground font-numeric">{t.known}</span>. Every word by {goal}.
+        Progress <span className="text-foreground font-numeric">{t.progress}</span> of today&apos;s{" "}
+        <span className="text-foreground font-numeric">{t.targetToday}</span> (day{" "}
+        <span className="font-numeric">{t.day}</span> × <span className="font-numeric">{t.perDay}</span>). A known
+        word counts 1, a learning word ¼–¾ as it gets stronger. Every word by {goal}.
       </p>
     </div>
   );

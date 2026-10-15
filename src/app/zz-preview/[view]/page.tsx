@@ -21,6 +21,7 @@ import { ClozeDrill } from "@/features/drills/components/cloze-drill";
 import { NoRecording } from "@/features/drills/components/use-record";
 import { OrderingDrill } from "@/features/drills/components/ordering-drill";
 import { FlashcardStudio } from "@/features/flashcards/components/flashcard-studio";
+import { TestHistory } from "@/features/flashcards/components/test-history";
 import { MockTracker } from "@/features/mocks/components/mock-tracker";
 import { WordList } from "@/features/words/components/word-list";
 import { WordsTabs } from "@/features/words/components/words-tabs";
@@ -107,6 +108,15 @@ export default async function PreviewPage({ params, searchParams }: PageProps<"/
       <PageContainer>
         <PageHeader title="Fill in 填空" />
         <ClozeDrill passages={DRILLS[level].cloze} itemIds={drillItemIds(level, "cloze")} stats={{}} seed={s.seed} />
+      </PageContainer>
+    ),
+    history: (
+      <PageContainer>
+        <PageHeader title="Words" />
+        <WordsTabs />
+        <div className="mt-6">
+          <TestHistory tests={s.history} />
+        </div>
       </PageContainer>
     ),
     errors: (

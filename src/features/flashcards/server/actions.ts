@@ -11,6 +11,7 @@ import { type ActionResult, fail, ok } from "@/lib/action-result";
 import { requireUser } from "@/lib/auth-guard";
 
 import { isRightAnswer } from "../lib/grade";
+import type { TestAnswerRecord } from "../lib/history";
 import { nextSchedule } from "../lib/schedule";
 import { GUESS_MS, MAX_ANSWER_MS, afterTest, isLocked, isPass } from "../lib/lockout";
 
@@ -108,8 +109,10 @@ export async function submitTest(input: unknown): Promise<ActionResult<TestResul
 
     let correct = 0;
     let guesses = 0;
+    const records: TestAnswerRecord[] = [];
     const rows = answers.map((a) => {
       const right = isRightAnswer(a, bank.getWord);
+      records.push({ wordId: a.wordId, right, chosenId: a.chosenId, typed: a.typed });
       if (right) correct++;
       else if (a.ms < GUESS_MS) guesses++;
       const next = nextSchedule(strengths.get(a.wordId) ?? null, right, testNumber, a.ms);
@@ -142,7 +145,7 @@ export async function submitTest(input: unknown): Promise<ActionResult<TestResul
     const passed = isPass(correct, total);
     await tx
       .insert(flashcardTests)
-      .values({ userId: user.id, level: user.level, testNumber, total, correct, guesses, passed });
+      .values({ userId: user.id, level: user.level, testNumber, total, correct, guesses, passed, answers: records });
 
     const nextLock = afterTest(lock, passed, now);
     const nextState = {

@@ -93,6 +93,12 @@ export const flashcardTests = pgTable(
     /** Wrong answers given faster than a real attempt takes. */
     guesses: smallint("guesses").notNull(),
     passed: boolean("passed").notNull(),
+    /**
+     * Each word's result, in the order asked, for the test history. Null for
+     * tests taken before it was recorded. Shape: `TestAnswerRecord[]` in
+     * features/flashcards/lib/history.ts.
+     */
+    answers: jsonb("answers"),
   },
   (t) => [
     index("flashcard_tests_user_idx").on(t.userId, t.takenAt),

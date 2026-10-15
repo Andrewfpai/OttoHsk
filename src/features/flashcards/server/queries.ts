@@ -4,6 +4,9 @@ import { wordBank } from "@/content/words";
 import { db } from "@/db";
 import { flashcardState, flashcardTests, wordProgress } from "@/db/schema";
 import { requireUser } from "@/lib/auth-guard";
+import { localDate } from "@/lib/exam";
+
+import { type TestAnswerRecord, readAnswers } from "../lib/history";
 
 /** Serializable across the server/client boundary. */
 export type ProgressRow = { wordId: string; strength: number; dueTest: number };
@@ -86,4 +89,33 @@ export async function getFirstTestAt(): Promise<Date | null> {
   // min() over a timestamp comes back as a string from the driver, whatever
   // its TypeScript type says; parse it rather than trust it.
   return row?.first ? new Date(row.first) : null;
+}
+
+export type HistoryTest = TestSummary & {
+  /** "YYYY-MM-DD" in the learner's calendar, for grouping by day. */
+  day: string;
+  /** Each word's result; null for tests taken before results were kept. */
+  answers: TestAnswerRecord[] | null;
+};
+
+/** Every test at the learner's current level, newest first. */
+export async function getTestHistory(limit = 2000): Promise<HistoryTest[]> {
+  const user = await requireUser();
+  const rows = await db
+    .select()
+    .from(flashcardTests)
+    .where(and(eq(flashcardTests.userId, user.id), eq(flashcardTests.level, user.level)))
+    .orderBy(desc(flashcardTests.takenAt))
+    .limit(limit);
+  return rows.map((r) => ({
+    id: r.id,
+    takenAt: r.takenAt.getTime(),
+    day: localDate(r.takenAt),
+    testNumber: r.testNumber,
+    total: r.total,
+    correct: r.correct,
+    guesses: r.guesses,
+    passed: r.passed,
+    answers: readAnswers(r.answers),
+  }));
 }

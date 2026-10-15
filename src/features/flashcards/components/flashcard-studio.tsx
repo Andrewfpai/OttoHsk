@@ -10,6 +10,7 @@ import {
   RotateCcw,
   X,
 } from "lucide-react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useEffectEvent, useMemo, useRef, useState, useTransition } from "react";
 import { toast } from "sonner";
@@ -265,7 +266,12 @@ function Setup({
       <aside className="space-y-6">
         {recentTests.length > 0 ? (
           <section className="bg-card rounded-2xl border p-5 text-sm">
-            <h2 className="mb-3 font-medium">Recent tests</h2>
+            <div className="mb-3 flex items-baseline justify-between gap-2">
+              <h2 className="font-medium">Recent tests</h2>
+              <Link href="/words/history" className="text-primary text-sm hover:underline">
+                All tests
+              </Link>
+            </div>
             <ul className="space-y-2">
               {recentTests.slice(0, 6).map((t) => (
                 <li key={t.id} className="flex items-center justify-between gap-3">

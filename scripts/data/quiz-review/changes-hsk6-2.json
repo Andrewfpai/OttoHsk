@@ -1,0 +1,530 @@
+[
+  {
+    "hanzi": "泄露",
+    "before": {
+      "zh": "这份考试题目在考试前被人泄露了，学校只好重新出题。",
+      "en": "The exam questions were leaked before the test, so the school had to write new ones."
+    },
+    "after": {
+      "zh": "期末考试的试题被人提前泄露了，学校只好连夜重新出题。",
+      "en": "The final exam questions were leaked in advance, so the school had to write new ones overnight."
+    },
+    "reason": "awkward 这份考试题目 and repeated 考试"
+  },
+  {
+    "hanzi": "典礼",
+    "before": {
+      "zh": "校长在新图书馆的开幕典礼上剪彩并发表了讲话。",
+      "en": "The principal cut the ribbon and gave a speech at the opening ceremony of the new library."
+    },
+    "after": {
+      "zh": "九月一日，全校师生在操场上举行了隆重的开学典礼。",
+      "en": "On 1 September, the whole school held a grand ceremony on the sports field to open the new term."
+    },
+    "reason": "开幕仪式 fits as well; use fixed 开学典礼"
+  },
+  {
+    "hanzi": "皆",
+    "before": {
+      "zh": "这种现象古今中外皆有，并不值得奇怪。",
+      "en": "This phenomenon has existed in all times and places, so it is nothing to be surprised about."
+    },
+    "after": {
+      "zh": "错别字在学生的作文里比比皆是，老师改得很头疼。",
+      "en": "Miswritten characters are everywhere in students' essays, and marking them gives the teacher a headache."
+    },
+    "reason": "都 fits 古今中外皆有 equally; use fixed 比比皆是"
+  },
+  {
+    "hanzi": "抵抗",
+    "before": {
+      "zh": "面对美食的诱惑，正在减肥的她实在难以抵抗。",
+      "en": "Faced with the temptation of delicious food, she found it hard to resist while on a diet."
+    },
+    "after": {
+      "zh": "孩子的抵抗力比较弱，换季的时候特别容易感冒。",
+      "en": "Children have fairly weak resistance and catch colds especially easily when the seasons change."
+    },
+    "reason": "抵抗诱惑 unidiomatic (抵挡/抗拒 诱惑)"
+  },
+  {
+    "hanzi": "操纵",
+    "before": {
+      "zh": "这款无人机用手机就能轻松操纵，连孩子都会玩。",
+      "en": "This drone can easily be controlled with a phone; even children can fly it."
+    },
+    "after": {
+      "zh": "有人在背后操纵比赛结果，几名球员因此被终身禁赛。",
+      "en": "Someone was rigging match results behind the scenes, and several players were banned for life."
+    },
+    "reason": "操作/操控 fit a drone equally"
+  },
+  {
+    "hanzi": "局面",
+    "before": {
+      "zh": "主队连得五分，终于扭转了落后的局面。",
+      "en": "The home team scored five points in a row and finally turned around the situation of being behind."
+    },
+    "after": {
+      "zh": "主队连得五分，终于扭转了落后的局面。",
+      "en": "The home team scored five points in a row and finally turned around a losing position."
+    },
+    "reason": "awkward English 'situation of being behind'"
+  },
+  {
+    "hanzi": "奇妙",
+    "before": {
+      "zh": "第一次在海底看到五颜六色的鱼群，那种感觉真奇妙。",
+      "en": "Seeing colourful schools of fish under the sea for the first time was a marvellous feeling."
+    },
+    "after": {
+      "zh": "我们竟然在国外偶遇了小学同桌，缘分真是太奇妙了。",
+      "en": "We actually ran into my primary-school deskmate abroad; fate really is a wonderful thing."
+    },
+    "reason": "美妙 fits 那种感觉真奇妙 equally"
+  },
+  {
+    "hanzi": "纯粹",
+    "before": {
+      "zh": "他学画画纯粹出于兴趣，并不打算以此为职业。",
+      "en": "He learns to paint purely out of interest and has no plans to make a career of it."
+    },
+    "after": {
+      "zh": "别听他的，他说的那些纯粹是胡说八道。",
+      "en": "Don't listen to him; what he says is pure nonsense."
+    },
+    "reason": "单纯出于兴趣 fits equally; same frame as practice"
+  },
+  {
+    "hanzi": "超越",
+    "before": {
+      "zh": "这部电影的票房超越了去年的冠军，成为今年第一。",
+      "en": "This film's box office surpassed last year's top earner, making it number one this year."
+    },
+    "after": {
+      "zh": "他在这次比赛中超越了自我，打破了个人最好成绩。",
+      "en": "In this competition he surpassed himself and broke his personal best."
+    },
+    "reason": "超过 fits 票房超过 equally; use 超越自我"
+  },
+  {
+    "hanzi": "弱点",
+    "before": {
+      "zh": "发音不准是他学汉语最大的弱点。",
+      "en": "Inaccurate pronunciation is his biggest weakness in learning Chinese."
+    },
+    "after": {
+      "zh": "贪小便宜是人性的弱点，骗子正是利用了这一点。",
+      "en": "Wanting something for nothing is a weakness of human nature, and that is exactly what swindlers exploit."
+    },
+    "reason": "缺点 fits 最大的弱点 equally"
+  },
+  {
+    "hanzi": "签署",
+    "before": {
+      "zh": "租房之前，一定要仔细阅读合同再签署。",
+      "en": "Before renting a flat, be sure to read the contract carefully before signing it."
+    },
+    "after": {
+      "zh": "这份文件必须由总经理本人签署才能生效。",
+      "en": "This document only takes effect once the general manager has signed it personally."
+    },
+    "reason": "签署 too formal for signing a flat lease"
+  },
+  {
+    "hanzi": "打仗",
+    "before": {
+      "zh": "爷爷常给我们讲他年轻时在外地打仗的故事。",
+      "en": "Grandpa often tells us stories about fighting in battles far from home when he was young."
+    },
+    "after": {
+      "zh": "爷爷常给我们讲他年轻时当兵打仗的故事。",
+      "en": "Grandpa often tells us stories of his days as a young soldier at war."
+    },
+    "reason": "unnatural 在外地打仗"
+  },
+  {
+    "hanzi": "掐",
+    "before": {
+      "zh": "公园里的花是给大家欣赏的，请不要随便掐。",
+      "en": "The flowers in the park are for everyone to enjoy, so please don't pick them."
+    },
+    "after": {
+      "zh": "他每天都掐着点儿到公司，从来不早到一分钟。",
+      "en": "Every day he arrives at the office right on the dot, never a minute early."
+    },
+    "reason": "不要随便掐 lacks object; 摘 is the natural verb for flowers"
+  },
+  {
+    "hanzi": "保卫",
+    "before": {
+      "zh": "这座古城墙当年是用来保卫城市的。",
+      "en": "This ancient city wall was originally built to defend the city."
+    },
+    "after": {
+      "zh": "他在大学的保卫处工作，负责整个校园的安全。",
+      "en": "He works in the university's security office and is responsible for the safety of the whole campus."
+    },
+    "reason": "保护 fits 保卫城市 equally"
+  },
+  {
+    "hanzi": "撤销",
+    "before": {
+      "zh": "由于报名人数太少，这门选修课被学校撤销了。",
+      "en": "Because too few people signed up, the school cancelled this elective course."
+    },
+    "after": {
+      "zh": "由于证据不足，法院撤销了原来的判决。",
+      "en": "Because of insufficient evidence, the court overturned the original verdict."
+    },
+    "reason": "a cancelled course is 取消, not 撤销"
+  },
+  {
+    "hanzi": "带领",
+    "before": {
+      "zh": "在新队长的带领下，球队连续赢了五场比赛。",
+      "en": "Under the new captain's leadership, the team won five games in a row."
+    },
+    "after": {
+      "zh": "班长带领全班同学把教室打扫得干干净净。",
+      "en": "The class monitor led the whole class in cleaning the classroom until it was spotless."
+    },
+    "reason": "领导/率领 fit 在…的带领下 equally"
+  },
+  {
+    "hanzi": "违背",
+    "before": {
+      "zh": "这样做违背了公平竞争的原则。",
+      "en": "Doing this goes against the principle of fair competition."
+    },
+    "after": {
+      "zh": "他不愿意违背自己的良心去说假话。",
+      "en": "He is unwilling to go against his conscience and tell lies."
+    },
+    "reason": "违反 fits 违背原则 equally"
+  },
+  {
+    "hanzi": "遗产",
+    "before": {
+      "zh": "爷爷去世后，把全部遗产都捐给了家乡的学校。",
+      "en": "After Grandpa passed away, his entire inheritance was donated to the school in his hometown."
+    },
+    "after": {
+      "zh": "他继承了父亲留下的一大笔遗产，却很快就挥霍光了。",
+      "en": "He inherited a large fortune from his father but soon squandered it all."
+    },
+    "reason": "illogical: donating after death"
+  },
+  {
+    "hanzi": "看待",
+    "before": {
+      "zh": "不同年龄的人看待金钱的态度往往不一样。",
+      "en": "People of different ages often regard money differently."
+    },
+    "after": {
+      "zh": "他已经变了很多，你不要再用老眼光看待他了。",
+      "en": "He has changed a lot, so stop seeing him the way you used to."
+    },
+    "reason": "看待…的态度 mixes 对待; 对待 fits better"
+  },
+  {
+    "hanzi": "珍贵",
+    "before": {
+      "zh": "大熊猫是一种非常珍贵的动物，数量很少。",
+      "en": "The giant panda is a very precious animal with very small numbers."
+    },
+    "after": {
+      "zh": "博物馆里展出了一批珍贵的文物，吸引了很多游客。",
+      "en": "The museum put a collection of precious cultural relics on display, attracting many visitors."
+    },
+    "reason": "珍稀动物 is the set phrase; 珍稀 fits better"
+  },
+  {
+    "hanzi": "竞赛",
+    "before": {
+      "zh": "学校每年举办一次英语演讲竞赛，吸引了很多学生参加。",
+      "en": "The school holds an English speech contest every year, which attracts many students."
+    },
+    "after": {
+      "zh": "学校每年都举办一次知识竞赛，每个班都要派代表参加。",
+      "en": "The school holds a general-knowledge quiz every year, and every class sends representatives."
+    },
+    "reason": "演讲比赛 is the natural term; 比赛 fits better"
+  },
+  {
+    "hanzi": "迷惑",
+    "before": {
+      "zh": "他的回答让我很迷惑，不知道他到底同不同意。",
+      "en": "His answer left me puzzled; I don't know whether he agrees or not."
+    },
+    "after": {
+      "zh": "魔术师用一些小动作迷惑观众，让大家看不出破绽。",
+      "en": "The magician uses small movements to mislead the audience so nobody can spot the trick."
+    },
+    "reason": "困惑 fits 让我很迷惑 better"
+  },
+  {
+    "hanzi": "麻醉",
+    "before": {
+      "zh": "麻醉的药效过了以后，伤口开始疼起来。",
+      "en": "After the anaesthetic wore off, the wound began to hurt."
+    },
+    "after": {
+      "zh": "麻醉过后，伤口开始隐隐作痛。",
+      "en": "Once the anaesthetic wore off, the wound began to ache."
+    },
+    "reason": "awkward 麻醉的药效 (麻药的药效)"
+  },
+  {
+    "hanzi": "鉴定",
+    "before": {
+      "zh": "经过鉴定，这批奶粉的质量符合国家标准。",
+      "en": "After inspection, this batch of milk powder was certified as meeting national standards."
+    },
+    "after": {
+      "zh": "经过专家鉴定，这栋老楼已经成了危房，居民必须马上搬走。",
+      "en": "Experts assessed the old building as unsafe, so the residents must move out immediately."
+    },
+    "reason": "product quality standards take 检验, not 鉴定"
+  },
+  {
+    "hanzi": "跪",
+    "before": {
+      "zh": "小朋友跪在沙发上，趴着窗户往外看。",
+      "en": "The child knelt on the sofa, leaning on the window to look outside."
+    },
+    "after": {
+      "zh": "小朋友跪在沙发上，扒着窗台往外看。",
+      "en": "The child knelt on the sofa, holding onto the windowsill to look outside."
+    },
+    "reason": "ungrammatical 趴着窗户"
+  },
+  {
+    "hanzi": "驱逐",
+    "before": {
+      "zh": "那位球迷因为向场内扔瓶子，被保安驱逐出场。",
+      "en": "That fan was thrown out by security for throwing bottles onto the pitch."
+    },
+    "after": {
+      "zh": "他的签证过期多年，最后被驱逐出境。",
+      "en": "His visa had expired years earlier, and he was eventually deported."
+    },
+    "reason": "驱逐出场 for a fan is stilted (赶出/带离)"
+  },
+  {
+    "hanzi": "局势",
+    "before": {
+      "zh": "这几天市场局势变化很快，很多商家都很紧张。",
+      "en": "The market situation has changed quickly in recent days, and many businesses are nervous."
+    },
+    "after": {
+      "zh": "下了这步棋以后，局势对白方越来越不利。",
+      "en": "After this move, the position became more and more unfavourable for White."
+    },
+    "reason": "市场局势 unidiomatic; 形势 fits better"
+  },
+  {
+    "hanzi": "终止",
+    "before": {
+      "zh": "因为天气突然变坏，比赛被迫终止。",
+      "en": "Because the weather suddenly turned bad, the match was forced to stop."
+    },
+    "after": {
+      "zh": "两家公司终止了长达十年的合作关系。",
+      "en": "The two companies ended a partnership that had lasted ten years."
+    },
+    "reason": "中止 fits a weather-stopped match equally or better"
+  },
+  {
+    "hanzi": "登陆",
+    "before": {
+      "zh": "请先登陆你的账号，再修改个人信息。",
+      "en": "Please log in to your account first, then edit your personal information."
+    },
+    "after": {
+      "zh": "这款新手机下个月将正式登陆中国市场。",
+      "en": "This new phone will officially launch in the Chinese market next month."
+    },
+    "reason": "logging in is 登录, not 登陆"
+  },
+  {
+    "hanzi": "优先",
+    "before": {
+      "zh": "这个职位会说日语的应聘者将被优先考虑。",
+      "en": "Applicants who speak Japanese will be given priority for this position."
+    },
+    "after": {
+      "zh": "应聘这个职位，会说日语的人将被优先录用。",
+      "en": "For this position, applicants who speak Japanese will be given priority in hiring."
+    },
+    "reason": "stilted word order 这个职位会说日语的应聘者"
+  },
+  {
+    "hanzi": "精确",
+    "before": {
+      "zh": "这块手表走得非常精确，一年只差几秒。",
+      "en": "This watch keeps very precise time, losing only a few seconds a year."
+    },
+    "after": {
+      "zh": "这台电子秤可以精确到零点一克，很适合做蛋糕时用。",
+      "en": "This digital scale is precise to 0.1 grams, which makes it ideal for baking."
+    },
+    "reason": "a watch 走得准, not 走得精确"
+  },
+  {
+    "hanzi": "特定",
+    "before": {
+      "zh": "这张优惠券只能在特定的商店使用。",
+      "en": "This coupon can only be used in designated shops."
+    },
+    "after": {
+      "zh": "这个词只在特定的场合使用，平时说话很少用到。",
+      "en": "This word is only used on particular occasions and rarely comes up in everyday speech."
+    },
+    "reason": "指定商店 fits better than 特定的商店"
+  },
+  {
+    "hanzi": "保障",
+    "before": {
+      "zh": "充足的睡眠是保障学习效率的基础。",
+      "en": "Enough sleep is the foundation for ensuring efficient study."
+    },
+    "after": {
+      "zh": "完善的社会保障制度能让老人安享晚年。",
+      "en": "A sound social security system lets older people live out their later years in peace."
+    },
+    "reason": "保证学习效率 is more natural; 保证 fits better"
+  },
+  {
+    "hanzi": "势力",
+    "before": {
+      "zh": "台风的势力正在减弱，明天可能就会离开本地。",
+      "en": "The typhoon's strength is weakening, and it may leave the area tomorrow."
+    },
+    "after": {
+      "zh": "这个家族在当地很有势力，没人敢得罪他们。",
+      "en": "This family is very powerful locally; nobody dares to cross them."
+    },
+    "reason": "台风的势力 not the influence sense (强度)"
+  },
+  {
+    "hanzi": "差别",
+    "before": {
+      "zh": "双胞胎姐妹长得几乎没有差别，连老师都分不清。",
+      "en": "The twin sisters look almost no different; even their teacher can't tell them apart."
+    },
+    "after": {
+      "zh": "同样是员工，公司不应该搞差别待遇。",
+      "en": "They are all employees, so the company shouldn't treat them differently."
+    },
+    "reason": "区别 fits 长得没有差别 equally"
+  },
+  {
+    "hanzi": "制止",
+    "before": {
+      "zh": "有乘客在车厢里吸烟，乘务员立刻上前制止。",
+      "en": "A passenger was smoking in the carriage, and the attendant immediately went over to stop him."
+    },
+    "after": {
+      "zh": "如果不及时制止，这种浪费现象会越来越严重。",
+      "en": "If it isn't stopped in time, this kind of waste will only get worse."
+    },
+    "reason": "same 上前制止 scene as practice"
+  },
+  {
+    "hanzi": "占据",
+    "before": {
+      "zh": "这款饮料占据了全国一半以上的市场。",
+      "en": "This drink holds more than half of the national market."
+    },
+    "after": {
+      "zh": "在他的心中，家庭始终占据着最重要的位置。",
+      "en": "In his heart, family has always held the most important place."
+    },
+    "reason": "占领市场 fits equally"
+  },
+  {
+    "hanzi": "华丽",
+    "before": {
+      "zh": "这篇文章词语华丽，可是内容很空。",
+      "en": "This essay's wording is flowery, but its content is empty."
+    },
+    "after": {
+      "zh": "这篇文章辞藻华丽，可是内容很空洞。",
+      "en": "This essay is full of flowery language, but its content is hollow."
+    },
+    "reason": "词语华丽 should be 辞藻华丽"
+  },
+  {
+    "hanzi": "答复",
+    "before": {
+      "zh": "我已经发了好几封邮件，到现在还没收到任何答复。",
+      "en": "I've sent several emails and still haven't received any reply."
+    },
+    "after": {
+      "zh": "这件事我得跟家人商量一下，明天再给你一个明确的答复。",
+      "en": "I need to talk this over with my family; I'll give you a definite answer tomorrow."
+    },
+    "reason": "回复 fits email replies better"
+  },
+  {
+    "hanzi": "昂贵",
+    "before": {
+      "zh": "这次失败的代价太昂贵了，公司损失了几百万。",
+      "en": "The cost of this failure was too high; the company lost several million."
+    },
+    "after": {
+      "zh": "因为一次小小的失误，公司付出了昂贵的代价。",
+      "en": "Because of one small slip, the company paid a heavy price."
+    },
+    "reason": "代价太昂贵了 unnatural; 昂贵的代价 is the collocation"
+  },
+  {
+    "hanzi": "难得",
+    "before": {
+      "zh": "他平时工作很忙，今天难得有空陪孩子去公园。",
+      "en": "He is usually very busy at work; today he rarely has time to take the children to the park."
+    },
+    "after": {
+      "zh": "他平时工作很忙，今天难得有空陪孩子去公园。",
+      "en": "He is usually very busy at work; today he has a rare chance to take the children to the park."
+    },
+    "reason": "mistranslation 'rarely has time'"
+  },
+  {
+    "hanzi": "罢工",
+    "before": {
+      "zh": "由于司机罢工，今天全市的公交车都停运了。",
+      "en": "Because the drivers are on strike, all the city's buses have stopped running today."
+    },
+    "after": {
+      "zh": "为了要求提高工资，码头工人决定集体罢工三天。",
+      "en": "To demand higher pay, the dock workers decided to strike together for three days."
+    },
+    "reason": "same 由于…罢工，…停 frame as practice"
+  },
+  {
+    "hanzi": "免疫",
+    "before": {
+      "zh": "得过一次水痘的人，身体就会对它产生免疫。",
+      "en": "People who have had chickenpox once become immune to it."
+    },
+    "after": {
+      "zh": "得过一次水痘的人，一般会终身免疫。",
+      "en": "People who have had chickenpox once are usually immune for life."
+    },
+    "reason": "stilted 对它产生免疫"
+  },
+  {
+    "hanzi": "以免",
+    "before": {
+      "zh": "请把药放在高处，以免小孩拿到。",
+      "en": "Please put the medicine up high so that children can't reach it."
+    },
+    "after": {
+      "zh": "使用前请仔细阅读说明书，以免造成不必要的损失。",
+      "en": "Please read the instructions carefully before use to avoid unnecessary damage."
+    },
+    "reason": "免得 fits the original equally"
+  }
+]

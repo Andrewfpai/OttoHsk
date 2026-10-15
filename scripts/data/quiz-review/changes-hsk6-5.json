@@ -1,0 +1,332 @@
+[
+  {
+    "hanzi": "吃力",
+    "before": "这篇文章生词太多，我读起来非常吃力。",
+    "after": "这种吃力不讨好的差事，大家都不愿意接。",
+    "reason": "费力/费劲 fit 读起来很吃力 equally; use fixed phrase 吃力不讨好"
+  },
+  {
+    "hanzi": "会晤",
+    "before": "两所大学的校长在北京进行了会晤，商讨合作事宜。",
+    "after": "两国外长在日内瓦举行会晤，就气候合作交换了意见。",
+    "reason": "too close to practice (two organisations' heads meeting in a city); 会晤 also too formal for university presidents"
+  },
+  {
+    "hanzi": "生疏",
+    "before": "他很久没开车了，技术有些生疏，所以开得很慢。",
+    "after": "我刚搬到这里，人地生疏，连买菜的地方都找不到。",
+    "reason": "same situation as practice (long out of practice, rusty); use 人地生疏"
+  },
+  {
+    "hanzi": "堆积",
+    "before": "仓库里堆积着大量卖不出去的商品。",
+    "after": "秋天到了，院子里堆积了厚厚一层落叶。",
+    "reason": "unsold goods collocate with 积压, which fits better than 堆积"
+  },
+  {
+    "hanzi": "觉悟",
+    "before": "经过老师的耐心开导，他终于觉悟到自己错了。",
+    "after": "在佛教里，“佛”的意思就是觉悟了的人。",
+    "reason": "醒悟/意识 fit 觉悟到自己错了 equally (and more naturally)"
+  },
+  {
+    "hanzi": "开拓",
+    "before": "他是中国现代音乐的开拓者之一，影响了很多人。",
+    "after": "公司需要一批敢于开拓进取的年轻人。",
+    "reason": "开创者 fits 现代音乐的开拓者 equally; use fixed 开拓进取"
+  },
+  {
+    "hanzi": "媒介",
+    "before": "Mosquitoes are a medium for spreading many diseases.",
+    "after": "Mosquitoes are carriers of many diseases.",
+    "reason": "en only: awkward en 'a medium for spreading'"
+  },
+  {
+    "hanzi": "处分",
+    "before": "他上班时间多次喝酒，被公司给予了警告处分。",
+    "after": "他上班时间多次喝酒，公司决定给予他记过处分。",
+    "reason": "ungrammatical passive 被公司给予了处分"
+  },
+  {
+    "hanzi": "耸",
+    "before": "市中心，一座座摩天大楼高高耸入云端。",
+    "after": "市中心，一座座摩天大楼高耸入云。",
+    "reason": "redundant 高高耸入云端; use idiom 高耸入云"
+  },
+  {
+    "hanzi": "暂且",
+    "before": "房子还没找到，我暂且住在朋友家。",
+    "after": "别的暂且不说，光是房租就花掉了我一半的工资。",
+    "reason": "暂时 fits 暂且住在朋友家 equally; use 暂且不说"
+  },
+  {
+    "hanzi": "眼色",
+    "before": "这孩子很会看眼色，知道什么时候该说话。",
+    "after": "开会时，同事悄悄朝我递了个眼色，示意老板进来了。",
+    "reason": "脸色 fits 会看眼色 equally; use 递眼色"
+  },
+  {
+    "hanzi": "慰问",
+    "before": "球队输了比赛后，校长亲自到更衣室慰问队员们。",
+    "after": "炎炎夏日，志愿者们带着绿豆汤到工地慰问工人。",
+    "reason": "慰问 wrong for consoling a losing team (安慰 fits better)"
+  },
+  {
+    "hanzi": "威信",
+    "before": "他说话不算数，在同事中渐渐失去了威信。",
+    "after": "新来的经理处事公正，很快就在员工中树立了威信。",
+    "reason": "威信 is a leader's authority, not standing among peers (信用 fits better)"
+  },
+  {
+    "hanzi": "倔强",
+    "before": "她性格倔强，认定的事谁劝也没用。",
+    "after": "摔倒了好几次，这个倔强的小女孩还是咬着牙自己站了起来。",
+    "reason": "固执 fits 认定的事谁劝也没用 equally; use positive unbending sense"
+  },
+  {
+    "hanzi": "朴素",
+    "before": "这位作家的文字朴素自然，读起来很亲切。",
+    "after": "老一辈人艰苦朴素的作风值得我们学习。",
+    "reason": "朴实 fits 文字朴素自然 equally; use fixed 艰苦朴素"
+  },
+  {
+    "hanzi": "偏差",
+    "before": "导航出现了偏差，我们多绕了二十分钟。",
+    "after": "项目一开始方向就出现了偏差，后来花了很大力气才纠正过来。",
+    "reason": "误差 fits 导航出现了偏差 equally"
+  },
+  {
+    "hanzi": "论证",
+    "before": "他在文章中用大量数据论证了自己的观点。",
+    "after": "这篇论文论证严密，数据充分，得到了评审专家的一致好评。",
+    "reason": "证明 fits 用数据论证观点 equally; use 论证严密"
+  },
+  {
+    "hanzi": "大体",
+    "before": "这部小说的情节我大体还记得，但细节忘了。",
+    "after": "她很识大体，从不为小事和别人计较。",
+    "reason": "大概/大致 fit 大体还记得 equally; use fixed 识大体"
+  },
+  {
+    "hanzi": "追悼",
+    "before": "清明节那天，他们来到墓地追悼去世的亲人。",
+    "after": "这位老作家去世后，文学界为他举行了隆重的追悼大会。",
+    "reason": "Qingming grave visit is 祭奠/悼念, not 追悼"
+  },
+  {
+    "hanzi": "立方",
+    "before": "这个冰箱的容积不到半立方米，只适合一个人用。",
+    "after": "这个月我们家用了十二立方米的水，比上个月多了不少。",
+    "reason": "illogical: half a cubic metre is a family-size fridge, not one-person"
+  },
+  {
+    "hanzi": "湖泊",
+    "before": "夏天我们常去城外的湖泊划船、钓鱼。",
+    "after": "由于气候变暖，这一地区不少湖泊的面积正在缩小。",
+    "reason": "湖泊 is a collective term; unnatural for going boating on a lake"
+  },
+  {
+    "hanzi": "操劳",
+    "before": "爸爸年纪大了，不要再让他为家里的事操劳了。",
+    "after": "王医生日夜操劳，终于累倒在了工作岗位上。",
+    "reason": "same collocation as practice (为家里的事操劳)"
+  },
+  {
+    "hanzi": "名次",
+    "before": "这次考试他的名次比上次提高了十位。",
+    "after": "这次考试他的名次比上次前进了十名。",
+    "reason": "unnatural 名次提高了十位"
+  },
+  {
+    "hanzi": "倡导",
+    "before": "这个城市倡导市民绿色出行，多骑自行车。",
+    "after": "作为环保理念的积极倡导者，她从不使用一次性餐具。",
+    "reason": "提倡 fits 倡导市民绿色出行 equally; use 倡导者"
+  },
+  {
+    "hanzi": "公证",
+    "before": "买房子之前，他们专门找律师把协议拿去公证了。",
+    "after": "这份遗嘱已经经过公证，任何人都无权更改。",
+    "reason": "illogical 找律师把协议拿去公证; also echoed practice 拿去公证"
+  },
+  {
+    "hanzi": "涌现",
+    "before": "最近几年，各地涌现出一大批年轻的创业者。",
+    "after": "最近几年，市场上涌现出各种各样的新能源汽车。",
+    "reason": "too close to practice (涌现出 young writers/entrepreneurs)"
+  },
+  {
+    "hanzi": "朴实",
+    "before": "这篇作文语言朴实，感情真挚，打动了评委。",
+    "after": "他的演讲朴实无华，却句句打动人心。",
+    "reason": "朴素 fits 语言朴实 equally; use 朴实无华"
+  },
+  {
+    "hanzi": "学说",
+    "before": "达尔文的进化论学说改变了人们对生命的认识。",
+    "after": "达尔文提出的进化学说改变了人们对生命起源的认识。",
+    "reason": "redundant 进化论学说"
+  },
+  {
+    "hanzi": "棍棒",
+    "before": "Some people used to think that spare the rod meant spoil the child, but that idea is now outdated.",
+    "after": "People used to say that a filial child is raised under the rod, but that idea is now outdated.",
+    "reason": "en only: garbled en for 棍棒底下出孝子"
+  },
+  {
+    "hanzi": "喧哗",
+    "before": "门外一阵喧哗，原来是送快递的来了。",
+    "after": "门外一阵喧哗，原来是邻居家在办喜事。",
+    "reason": "illogical: a courier arriving does not cause 喧哗"
+  },
+  {
+    "hanzi": "留念",
+    "before": "临别时，他送给我一支钢笔作为留念。",
+    "after": "演出结束后，歌迷们排队请她签名留念。",
+    "reason": "纪念 fits 作为留念 equally (and more naturally); use 签名留念"
+  },
+  {
+    "hanzi": "陡峭",
+    "before": "这段楼梯又窄又陡峭，老人走的时候要扶着栏杆。",
+    "after": "这面悬崖十分陡峭，只有经验丰富的攀岩者才敢挑战。",
+    "reason": "陡峭 is for cliffs and mountains, not stairs (又窄又陡)"
+  },
+  {
+    "hanzi": "书记",
+    "before": "新来的书记很关心村民的生活，经常到各家走访。",
+    "after": "庭审过程中，书记员要把每个人说的话都准确记录下来。",
+    "reason": "same situation as practice (village Party secretary); use clerk sense"
+  },
+  {
+    "hanzi": "根深蒂固",
+    "before": "重男轻女的思想在一些地方仍然根深蒂固。",
+    "after": "多年养成的习惯根深蒂固，想改掉可没那么容易。",
+    "reason": "same collocation as practice (观念/思想根深蒂固)"
+  },
+  {
+    "hanzi": "检讨",
+    "before": "开完会后，大家一起检讨了这次活动失败的原因。",
+    "after": "他在会上作了深刻的检讨，承认是自己的疏忽造成了损失。",
+    "reason": "检讨原因 (review) is Taiwan usage; mainland says 总结/反思"
+  },
+  {
+    "hanzi": "气魄",
+    "before": "这幅山水画气魄宏大，令人震撼。",
+    "after": "长城绵延万里，充分显示了中华民族的伟大气魄。",
+    "reason": "气势宏大 fits a painting better than 气魄宏大"
+  },
+  {
+    "hanzi": "扩充",
+    "before": "公司计划明年扩充研发团队，再招二十名工程师。",
+    "after": "这部词典的第二版扩充了五千多个新词条。",
+    "reason": "扩大 fits 扩充研发团队 equally"
+  },
+  {
+    "hanzi": "取缔",
+    "before": "这种危害健康的食品添加剂已被明令取缔。",
+    "after": "这个打着养生旗号骗老人钱的组织已经被依法取缔。",
+    "reason": "取缔 is for organisations/activities, not a food additive (禁止使用)"
+  },
+  {
+    "hanzi": "磋商",
+    "before": "关于房租的问题，房东和租客还在进一步磋商。",
+    "after": "这一问题还需要和外方进一步磋商，目前无法给出答复。",
+    "reason": "register: 磋商 too formal for landlord and tenant (协商/商量)"
+  },
+  {
+    "hanzi": "珍稀",
+    "before": "这片森林里生活着许多珍稀植物。",
+    "after": "这片森林里生长着许多珍稀植物。",
+    "reason": "plants 生长, not 生活"
+  },
+  {
+    "hanzi": "完备",
+    "before": "这个小区的配套设施十分完备，超市、医院、学校都有。",
+    "after": "只要手续完备，三天之内就能拿到签证。",
+    "reason": "same collocation as practice (设施/设备十分完备)"
+  },
+  {
+    "hanzi": "闭塞",
+    "before": "他在山里住了多年，对外面的世界了解很少，思想也比较闭塞。",
+    "after": "那时候信息闭塞，村里人过了好几天才知道这个消息。",
+    "reason": "思想闭塞 doubtful; 封闭/保守 fit better"
+  },
+  {
+    "hanzi": "贫乏",
+    "before": "这个地区水资源贫乏，居民用水十分困难。",
+    "after": "他的词汇太贫乏了，翻来覆去就那几句话。",
+    "reason": "匮乏/短缺 fit 水资源贫乏 equally or better"
+  },
+  {
+    "hanzi": "支流",
+    "before": "长江有很多支流，汉江就是其中最长的一条。",
+    "after": "这条河有十几条支流，一到雨季水位就涨得很快。",
+    "reason": "same situation as practice (Yangtze tributary)"
+  },
+  {
+    "hanzi": "画蛇添足",
+    "before": "这个设计已经很完美了，再加装饰反而是画蛇添足。",
+    "after": "他本来已经道歉了，又补充了一大堆理由，真是画蛇添足。",
+    "reason": "same situation as practice (already good, more editing spoils it)"
+  },
+  {
+    "hanzi": "共计",
+    "before": "这本书共计三十二章，我已经读完一半了。",
+    "after": "本次比赛共计有八百多名选手报名参加。",
+    "reason": "unnatural 这本书共计三十二章 (共有)"
+  },
+  {
+    "hanzi": "稠密",
+    "before": "这片森林树木稠密，阳光很难照进来。",
+    "after": "江南地区河网稠密，自古就有“水乡”之称。",
+    "reason": "forests are 茂密, not 树木稠密"
+  },
+  {
+    "hanzi": "昌盛",
+    "before": "唐朝国力昌盛，吸引了许多外国商人来到长安。",
+    "after": "宋代文化昌盛，出现了许多著名的诗人和画家。",
+    "reason": "unnatural collocation 国力昌盛 (国力强盛)"
+  },
+  {
+    "hanzi": "出神",
+    "before": "他坐在湖边望着水面出神，连鱼上钩了都不知道。",
+    "after": "他的演奏太动人了，台下的观众都听得出神了。",
+    "reason": "same situation and structure as practice (望着…出神，连…都没发现)"
+  },
+  {
+    "hanzi": "凹凸",
+    "before": "月球表面凹凸不平，布满了大大小小的坑。",
+    "after": "这种墙纸表面有凹凸的花纹，摸起来很有质感。",
+    "reason": "same fixed phrase as practice (凹凸不平)"
+  },
+  {
+    "hanzi": "尚且",
+    "before": "这道题连老师尚且做不出来，更别说我们了。",
+    "after": "这道题老师尚且做不出来，更别说我们了。",
+    "reason": "redundant 连…尚且"
+  },
+  {
+    "hanzi": "诞辰",
+    "before": "学校举办了纪念鲁迅诞辰的活动。",
+    "after": "今天是孔子诞辰纪念日，曲阜举行了隆重的祭孔大典。",
+    "reason": "纪念鲁迅诞辰 incomplete without an anniversary"
+  },
+  {
+    "hanzi": "络绎不绝",
+    "before": "新店开业那天，前来购物的顾客络绎不绝。",
+    "after": "古时候，这条山路上往来的商队络绎不绝。",
+    "reason": "same collocation as practice (顾客/游客络绎不绝)"
+  },
+  {
+    "hanzi": "正负",
+    "before": "这次民意调查的误差为正负三个百分点。",
+    "after": "两个数相乘时，结果的正负由它们的符号决定。",
+    "reason": "same collocation as practice (误差正负)"
+  },
+  {
+    "hanzi": "勤俭",
+    "before": "爷爷奶奶勤俭了一辈子，连一张纸都舍不得浪费。",
+    "after": "奶奶勤俭持家，把一大家子的日子安排得井井有条。",
+    "reason": "unnatural 勤俭了一辈子 (节俭 fits better); use 勤俭持家"
+  }
+]

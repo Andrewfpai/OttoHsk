@@ -1,0 +1,284 @@
+[
+  {
+    "hanzi": "口气",
+    "before": "他总用命令的口气跟同事说话，大家都不太高兴。",
+    "after": "这小伙子口气可真不小，说一年之内要开三家分店。",
+    "reason": "命令的口气 fits 语气 equally; use idiom 口气不小"
+  },
+  {
+    "hanzi": "产业",
+    "before": "近年来，新能源汽车产业发展得非常迅速。",
+    "after": "为了推动产业升级，这座城市把高污染的工厂都搬出了市区。",
+    "reason": "行业 fits equally; use fixed collocation 产业升级"
+  },
+  {
+    "hanzi": "宽容",
+    "before": "夫妻之间需要互相理解和宽容，婚姻才能长久。",
+    "after": "老师宽容地笑了笑，没有再追究他迟到的事。",
+    "reason": "互相理解和包容 fits equally; use 宽容地笑"
+  },
+  {
+    "hanzi": "旗帜",
+    "before": "游客们跟着导游手中的红色旗帜，一个接一个地走进博物馆。",
+    "after": "他旗帜鲜明地反对这个方案，一点儿也不含糊。",
+    "reason": "tour guide's flag is 小旗, 旗帜 too formal; use 旗帜鲜明"
+  },
+  {
+    "hanzi": "颤抖",
+    "before": "第一次上台演讲，他紧张得连声音都在颤抖。",
+    "after": "老人用颤抖的双手接过奖杯，眼里含着泪水。",
+    "reason": "声音发抖 fits equally; use set phrase 颤抖的双手"
+  },
+  {
+    "hanzi": "延续",
+    "before": "据天气预报说，这场高温天气将一直延续到下周末。",
+    "after": "这部电视剧的第二季延续了第一季的风格，依然很受欢迎。",
+    "reason": "weather 持续到 not 延续到"
+  },
+  {
+    "hanzi": "实行",
+    "before": "从今年起，这座城市开始实行垃圾分类制度。",
+    "after": "这家超市实行会员制，没有会员卡不能进去购物。",
+    "reason": "实施 fits equally and same pattern as practice; use 实行会员制"
+  },
+  {
+    "hanzi": "供给",
+    "before": "这个地区的电力供给不足，夏天经常停电。",
+    "after": "市场上鸡蛋的供给大于需求，所以价格一直在下降。",
+    "reason": "电力供应 is the natural word; use 供给 vs 需求 pairing"
+  },
+  {
+    "hanzi": "瞪",
+    "before": "他瞪大眼睛，不敢相信自己中了大奖。",
+    "after": "钥匙锁在车里了，我们只能站在外面干瞪眼。",
+    "reason": "睁大眼睛 fits equally; use idiom 干瞪眼"
+  },
+  {
+    "hanzi": "任意",
+    "before": "这张一日票可以在当天任意乘坐市内所有公交线路。",
+    "after": "数学老师说，这个规律对任意一个正整数都成立。",
+    "reason": "随意乘坐 fits equally; use mathematical 任意一个"
+  },
+  {
+    "hanzi": "敏锐",
+    "before": "狗的嗅觉非常敏锐，能闻到很远处的气味。",
+    "after": "她有着敏锐的商业眼光，总能比别人早一步发现机会。",
+    "reason": "嗅觉灵敏 fits equally; use 敏锐的眼光"
+  },
+  {
+    "hanzi": "审理",
+    "before": "法院将于下个月公开审理这起房屋买卖纠纷案件。",
+    "after": "这起案件由三名法官共同审理，判决结果将在下周公布。",
+    "reason": "same situation as practice (dispute to be heard next week/month)"
+  },
+  {
+    "hanzi": "归还",
+    "before": "用完的工具请及时归还到原来的位置。",
+    "after": "警察把找回的钱包归还给了失主。",
+    "reason": "归还到原来的位置 unnatural; 归还 takes an owner"
+  },
+  {
+    "hanzi": "捧",
+    "before": "他用双手捧着一碗热汤，小心翼翼地端到爷爷面前。",
+    "after": "他捧起一把清凉的泉水，痛痛快快地洗了把脸。",
+    "reason": "same collocation as practice 双手捧着"
+  },
+  {
+    "hanzi": "侵略",
+    "before": "为了抵抗北方民族的侵略，古人修建了长城。",
+    "after": "这座古老的城墙曾多次帮助城里的百姓抵御外敌的侵略。",
+    "reason": "doubtful content: 北方民族的侵略 is ethnically loaded"
+  },
+  {
+    "hanzi": "严密",
+    "before": "这次考试组织得很严密，没有人能作弊。",
+    "after": "对方球队防守严密，我们一整场都没找到射门的机会。",
+    "reason": "组织得很严格 fits equally; use 防守严密"
+  },
+  {
+    "hanzi": "诸位",
+    "before": "诸位旅客，列车即将到站，请做好下车准备。",
+    "after": "诸位远道而来，一路辛苦了，请先入座喝杯茶吧。",
+    "reason": "train announcements use 各位旅客, not 诸位"
+  },
+  {
+    "hanzi": "窜",
+    "before": "一只野兔突然从草丛里窜出来，吓了我一跳。",
+    "after": "火苗一下子窜得老高，吓得他赶紧往后退。",
+    "reason": "same situation as practice (animal darting out)"
+  },
+  {
+    "hanzi": "平行",
+    "before": "这两个讲座是平行举行的，你只能选一个参加。",
+    "after": "大会期间将举办三个平行论坛，参会者可以自由选择。",
+    "reason": "unnatural 平行举行的 for concurrent lectures"
+  },
+  {
+    "hanzi": "合伙",
+    "before": "大学毕业后，他们三个人合伙成立了一家设计公司。",
+    "after": "这笔生意是我和老同学合伙做的，赚了钱两人平分。",
+    "reason": "same collocation as practice (合伙开/成立公司)"
+  },
+  {
+    "hanzi": "风光",
+    "before": "儿子考上了名牌大学，父母觉得脸上很风光。",
+    "after": "儿子考上了名牌大学，父母在亲戚面前觉得特别风光。",
+    "reason": "mixed idiom 脸上很风光 (脸上有光)"
+  },
+  {
+    "hanzi": "孤立",
+    "before": "这座房子孤立在山顶上，周围没有其他人家。",
+    "after": "这个问题不能孤立地看，要和其他因素联系起来分析。",
+    "reason": "unnatural 房子孤立在山顶上"
+  },
+  {
+    "hanzi": "呻吟",
+    "before": "他的牙疼了一整夜，躺在床上不停地呻吟。",
+    "after": "夜深了，隔壁传来老人低低的呻吟声，我怎么也睡不着。",
+    "reason": "same situation as practice (疼得不停地呻吟)"
+  },
+  {
+    "hanzi": "精通",
+    "before": "这位老师傅精通各种汽车的修理。",
+    "after": "这位老师傅精通汽车修理，什么毛病都难不倒他。",
+    "reason": "stilted 精通各种汽车的修理"
+  },
+  {
+    "hanzi": "殖民地",
+    "before": "香港曾经是英国的殖民地，1997年回归中国。",
+    "after": "这座城市留下了许多殖民地时期的老建筑，很有异国风情。",
+    "reason": "same structure as practice (X曾经是Y的殖民地)"
+  },
+  {
+    "hanzi": "延伸",
+    "before": "这条地铁线明年将延伸到机场。",
+    "after": "老师给我们推荐了几本课外延伸阅读的书。",
+    "reason": "same situation as practice (route extends to a place)"
+  },
+  {
+    "hanzi": "连锁",
+    "before": "一家工厂停产，引起了一连串的连锁反应。",
+    "after": "一家大工厂突然停产，在整个行业引发了连锁反应。",
+    "reason": "redundant 一连串的连锁反应"
+  },
+  {
+    "hanzi": "施展",
+    "before": "魔术师施展了一个小魔法，让手中的花变成了鸽子。",
+    "after": "公司给了年轻人很大的空间，让他们放手施展拳脚。",
+    "reason": "magicians perform 魔术, 施展魔法 is for wizards"
+  },
+  {
+    "hanzi": "紧迫",
+    "before": "离考试只有三天了，复习任务十分紧迫。",
+    "after": "离考试只剩三天了，大家都有了一种紧迫感。",
+    "reason": "复习任务十分紧张 fits equally; use 紧迫感"
+  },
+  {
+    "hanzi": "领土",
+    "before": "俄罗斯是世界上领土面积最大的国家。",
+    "after": "这个岛国的领土由一千多个大大小小的岛屿组成。",
+    "reason": "same collocation as practice 领土面积"
+  },
+  {
+    "hanzi": "向往",
+    "before": "她从小就向往成为一名宇航员。",
+    "after": "很多年轻人都向往自由自在的工作方式。",
+    "reason": "向往成为 unnatural (梦想成为)"
+  },
+  {
+    "hanzi": "撇",
+    "before": "她撇下手里的书，跑出去迎接回家的爸爸。",
+    "after": "你怎么能撇下朋友，自己先回家了呢？",
+    "reason": "撇下手里的书 unnatural (扔下); 撇下 takes people"
+  },
+  {
+    "hanzi": "持久",
+    "before": "这场持久的干旱让农民们非常担心。",
+    "after": "这款手机电池续航持久，充一次电能用两天。",
+    "reason": "持久的干旱 unnatural (持续的干旱)"
+  },
+  {
+    "hanzi": "预兆",
+    "before": "他最近总是头疼，这可能是生病的预兆。",
+    "after": "出门前镜子突然碎了，她觉得这是个不祥的预兆。",
+    "reason": "medical symptom is 征兆/前兆, not 预兆"
+  },
+  {
+    "hanzi": "称号",
+    "before": "这位运动员三次获得了“世界冠军”的称号。",
+    "after": "她把这个荣誉称号看作是对自己多年工作的肯定。",
+    "reason": "same collocation as practice 获得了…的称号; 世界冠军的称号 odd"
+  },
+  {
+    "hanzi": "方圆",
+    "before": "这座山上方圆几公里都没有一户人家。",
+    "after": "这家小饭馆名气很大，方圆几十里的人都会专门跑来吃。",
+    "reason": "same structure as practice (方圆…只有/没有)"
+  },
+  {
+    "hanzi": "筹备",
+    "before": "两个人正在忙着筹备下个月的婚礼。",
+    "after": "这家博物馆从筹备到正式开放，一共用了五年时间。",
+    "reason": "same pattern as practice 正在筹备下个月的X"
+  },
+  {
+    "hanzi": "制裁",
+    "before": "这位运动员因为服用禁药，受到了联合会的严厉制裁。",
+    "after": "对于违反食品安全法的企业，必须依法进行严厉制裁。",
+    "reason": "same situation as practice (athlete sanctioned)"
+  },
+  {
+    "hanzi": "振奋",
+    "before": "球队在最后一分钟进了球，球迷们感到无比振奋。",
+    "after": "这场胜利大大振奋了全队的士气。",
+    "reason": "感到无比兴奋 fits equally; use 振奋士气"
+  },
+  {
+    "hanzi": "分泌",
+    "before": "看到美味的食物，嘴里会自然地分泌口水。",
+    "after": "看到美味的食物，嘴里会自然地分泌唾液。",
+    "reason": "分泌口水 mixes registers (流口水 / 分泌唾液)"
+  },
+  {
+    "hanzi": "承办",
+    "before": "这次国际会议将由我们公司负责承办。",
+    "after": "为了承办这届运动会，这座城市新建了三座体育馆。",
+    "reason": "same structure as practice (由我们…承办)"
+  },
+  {
+    "hanzi": "冤枉",
+    "before": "早知道这家店这么难吃，就不花这个冤枉钱了。",
+    "after": "早知道这家店这么难吃，就不花这个冤枉钱了。",
+    "reason": "en: 'this place was so bad' loses 难吃 (bad food); en now: If I'd known the food here was this bad, I wouldn't have wasted my money on it."
+  },
+  {
+    "hanzi": "正规",
+    "before": "这次比赛完全按照正规的国际规则进行。",
+    "after": "他没受过正规的训练，全靠自学成了一名厨师。",
+    "reason": "正规的国际规则 odd collocation"
+  },
+  {
+    "hanzi": "种植",
+    "before": "爷爷在后院种植了各种各样的蔬菜。",
+    "after": "这个地区气候温暖湿润，非常适合种植茶树。",
+    "reason": "wrong register: 种植 too formal for a home vegetable patch"
+  },
+  {
+    "hanzi": "支柱",
+    "before": "汽车工业是这座城市的经济支柱。",
+    "after": "在她最困难的时候，朋友们的鼓励成了她的精神支柱。",
+    "reason": "same collocation as practice 经济支柱"
+  },
+  {
+    "hanzi": "辫子",
+    "before": "我们说话要小心，别让对方抓住辫子。",
+    "after": "我们说话要小心，别让人抓住小辫子。",
+    "reason": "idiom is 抓小辫子, not 抓住辫子"
+  },
+  {
+    "hanzi": "健全",
+    "before": "这座城市的公共交通系统非常健全，出门十分方便。",
+    "after": "学校教育的目的是培养身心健全的人。",
+    "reason": "交通系统健全 odd collocation (完善/发达)"
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "hanzi": "橙",
+    "before": "他把冰箱里剩下的一个橙切开，分给两个孩子吃。",
+    "after": "彩虹有红、橙、黄、绿、青、蓝、紫七种颜色。",
+    "reason": "unnatural 一个橙 (natives say 橙子); use fixed colour sequence"
+  },
+  {
+    "hanzi": "文物",
+    "before": "这件文物已经有两千多年的历史了，是国家一级保护对象。",
+    "after": "工人在修路时挖出了一批古代文物，马上报告了有关部门。",
+    "reason": "unnatural 国家一级保护对象 (relics are 国家一级文物)"
+  },
+  {
+    "hanzi": "陶醉",
+    "before": "听到观众热烈的掌声，演员脸上露出了陶醉的神情。",
+    "after": "他刚写了几首诗就自我陶醉起来，以为自己是大诗人了。",
+    "reason": "陶醉的神情 after applause: 得意/满足 fit as well; use fixed 自我陶醉"
+  },
+  {
+    "hanzi": "就职",
+    "before": "他大学毕业后就职于一家外贸公司。",
+    "after": "公司新任总经理在就职演说中提出了三年发展计划。",
+    "reason": "就职于 = 任职于, blank ambiguous; use 就职演说"
+  },
+  {
+    "hanzi": "委员",
+    "before": "每位委员都需要在会议上发表自己的意见。",
+    "after": "她是班上的文艺委员，负责组织联欢会和各种演出。",
+    "reason": "成员 fits 每位__ equally; use fixed 文艺委员"
+  },
+  {
+    "hanzi": "分明",
+    "before": "他分明看见了我，却假装没看见。",
+    "after": "他为人正直，是非分明，从不随声附和。",
+    "reason": "明明 fits 他__看见了我 equally well; use 是非分明"
+  },
+  {
+    "hanzi": "创立",
+    "before": "这所学校由一位归国华侨于一九二零年创立。",
+    "after": "达尔文创立的进化论，彻底改变了人们对生命的认识。",
+    "reason": "创办 is the natural verb for founding a school"
+  },
+  {
+    "hanzi": "驻扎",
+    "before": "这家公司在上海驻扎了一支技术团队，专门服务亚洲客户。",
+    "after": "古代这座小城是边关要地，常年驻扎着上千名士兵。",
+    "reason": "unnatural collocation 公司驻扎团队"
+  },
+  {
+    "hanzi": "情理",
+    "before": "这件事发生在情理之中，大家并不觉得奇怪。",
+    "after": "他这么生气也在情理之中，换了谁都会不高兴。",
+    "reason": "unidiomatic 发生在情理之中"
+  },
+  {
+    "hanzi": "庄严",
+    "before": "法官穿着黑色的长袍，神情庄严地走进了法庭。",
+    "after": "走进这座千年古寺，四周一片庄严肃穆，游客们都放轻了脚步。",
+    "reason": "严肃 fits 神情__ equally; use 庄严肃穆"
+  },
+  {
+    "hanzi": "领悟",
+    "before": "直到自己当了父母，他才真正领悟到父母的辛苦。",
+    "after": "这首诗的意境很深，要反复读几遍才能领悟。",
+    "reason": "领悟 doesn't take 辛苦 (体会到辛苦)"
+  },
+  {
+    "hanzi": "安详",
+    "before": "小猫在温暖的阳光下安详地睡着了。",
+    "after": "湖边钓鱼的老人神情安详，仿佛周围的喧闹都与他无关。",
+    "reason": "安静/安稳 fit 小猫__地睡着了 equally"
+  },
+  {
+    "hanzi": "采纳",
+    "before": "他的方案很有创意，最后被评委采纳了。",
+    "after": "这条建议被采纳以后，食堂排队的时间缩短了一半。",
+    "reason": "judges select (选中) a plan, they don't 采纳 it"
+  },
+  {
+    "hanzi": "信誉",
+    "before": "做生意最重要的是讲信誉，不能欺骗顾客。",
+    "after": "这家银行信誉卓著，深受储户信赖。",
+    "reason": "讲信用 fits 讲__ equally; use 信誉卓著"
+  },
+  {
+    "hanzi": "形态",
+    "before": "水有三种形态：固态、液态和气态。",
+    "after": "这种昆虫一生要经历卵、幼虫、蛹和成虫四种形态。",
+    "reason": "状态 is the usual word for states of matter"
+  },
+  {
+    "hanzi": "瓦解",
+    "before": "他的谎言被揭穿后，大家对他的信任一下子瓦解了。",
+    "after": "对方一连进了三个球，彻底瓦解了我们的斗志。",
+    "reason": "trust doesn't 瓦解; 瓦解 suits morale/organisations"
+  },
+  {
+    "hanzi": "涮火锅",
+    "before": "四川人涮火锅喜欢放很多辣椒。",
+    "after": "这家店涮火锅用的羊肉都是从内蒙古运来的。",
+    "reason": "Sichuan hot pot is 吃 not 涮; chilli isn't added by 涮"
+  },
+  {
+    "hanzi": "争端",
+    "before": "两家公司因为专利问题发生了争端，最后闹上了法庭。",
+    "after": "两国之间的贸易争端持续了好几年，双方都损失不小。",
+    "reason": "纠纷 is the natural word for a dispute between companies"
+  },
+  {
+    "hanzi": "诬陷",
+    "before": "他被同事诬陷泄露了公司机密，最后查明是一场误会。",
+    "after": "他被同事诬陷泄露了公司机密，幸好监控录像证明了他的清白。",
+    "reason": "illogical: 诬陷 (malicious) then 一场误会"
+  },
+  {
+    "hanzi": "编织",
+    "before": "她用彩色的绳子编织了一个漂亮的手链。",
+    "after": "她用彩色的绳子编织了一条漂亮的手链。",
+    "reason": "wrong measure word 一个手链 (一条)"
+  },
+  {
+    "hanzi": "抱负",
+    "before": "他从小就立下了远大的抱负，要当一名科学家。",
+    "after": "来到这家新公司后，他终于有了施展抱负的机会。",
+    "reason": "unidiomatic 立下抱负 (立下志向); 志向 fit better"
+  },
+  {
+    "hanzi": "庄重",
+    "before": "他平时爱开玩笑，可一上讲台就变得很庄重。",
+    "after": "她举止庄重，从不在公共场合大声说笑。",
+    "reason": "严肃 fits 一上讲台就变得很__ better"
+  },
+  {
+    "hanzi": "宏伟",
+    "before": "这座新建的体育馆规模宏伟，可以同时举办好几场比赛。",
+    "after": "站在长城上，望着这项宏伟的工程，游客们无不惊叹。",
+    "reason": "unnatural collocation 规模宏伟 (规模宏大)"
+  },
+  {
+    "hanzi": "细致",
+    "before": "这位医生检查得很细致，连很小的问题都没放过。",
+    "after": "作者对人物心理的描写细致入微，读来十分感人。",
+    "reason": "仔细 fits 检查得很__ equally; use 细致入微"
+  },
+  {
+    "hanzi": "节制",
+    "before": "喝酒要有节制，喝多了伤身体。",
+    "after": "他花钱毫无节制，每个月的工资不到月底就花光了。",
+    "reason": "same 饮酒/饮食要有节制 situation as practice"
+  },
+  {
+    "hanzi": "屏障",
+    "before": "这排大树就像一道屏障，挡住了冬天的寒风。",
+    "after": "皮肤是人体抵御细菌的第一道屏障。",
+    "reason": "trees-as-windbreak barrier same as practice forest barrier"
+  },
+  {
+    "hanzi": "索取",
+    "before": "他总是向朋友索取帮助，却从来不回报。",
+    "after": "他只知道向父母索取，从来没想过回报他们。",
+    "reason": "unidiomatic 索取帮助 (寻求帮助)"
+  },
+  {
+    "hanzi": "耗费",
+    "before": "装修这套房子耗费了他们全部的积蓄。",
+    "after": "修复这幅古画耗费了专家们整整三年的心血。",
+    "reason": "unidiomatic 耗费积蓄 (花光积蓄)"
+  },
+  {
+    "hanzi": "培育",
+    "before": "学校的任务是培育德智体全面发展的人才。",
+    "after": "春天，林场的工人们在温室里培育树苗。",
+    "reason": "培养人才 is the standard collocation; 培养 fits better"
+  },
+  {
+    "hanzi": "重叠",
+    "before": "这两张照片重叠在一起，看起来有点奇怪。",
+    "after": "远处群山重叠，越远颜色越淡，像一幅水墨画。",
+    "reason": "vague, odd situation (two photos overlapping)"
+  },
+  {
+    "hanzi": "改良",
+    "before": "经过改良，这款电饭锅煮出来的米饭更香了。",
+    "after": "农民们用科学方法改良土壤，让盐碱地也能种出庄稼。",
+    "reason": "改进 is the natural word for improving a product"
+  },
+  {
+    "hanzi": "附件",
+    "before": "我把简历放在附件里了，请查收。",
+    "after": "合同的附件与正文具有同等的法律效力。",
+    "reason": "same email-attachment situation as practice"
+  },
+  {
+    "hanzi": "致使",
+    "before": "由于司机疲劳驾驶，致使两辆车相撞。",
+    "after": "司机疲劳驾驶，致使两辆货车在高速公路上相撞。",
+    "reason": "由于…致使 leaves the clause without a subject (病句)"
+  },
+  {
+    "hanzi": "配套",
+    "before": "新买的电脑还送了一套配套的鼠标和键盘。",
+    "after": "新买的电脑还送了配套的鼠标和键盘。",
+    "reason": "redundant 一套配套的"
+  },
+  {
+    "hanzi": "真挚",
+    "before": "他在信中表达了对老师真挚的感谢。",
+    "after": "这首诗感情真挚，读起来让人很感动。",
+    "reason": "诚挚的感谢 is the standard collocation; 诚挚 fits better"
+  },
+  {
+    "hanzi": "狭隘",
+    "before": "他的知识面太狭隘，只了解自己专业的东西。",
+    "after": "认为只有考上名校才算成功，这种想法未免太狭隘了。",
+    "reason": "知识面 collocates with 窄, not 狭隘"
+  },
+  {
+    "hanzi": "气压",
+    "before": "Air pressure often drops before it rains, and people feel a bit stuffy.",
+    "after": "Air pressure often drops before rain, which can make people feel a little stifled.",
+    "reason": "en only: awkward en 'people feel a bit stuffy'"
+  },
+  {
+    "hanzi": "规格",
+    "before": "The reception for these foreign guests was held to a very high standard.",
+    "after": "These foreign guests were received with very high-level protocol.",
+    "reason": "en only: en: 规格高 means level of protocol, not quality standard"
+  }
+]

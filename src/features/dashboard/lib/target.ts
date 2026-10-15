@@ -2,10 +2,25 @@
  * A straight-line plan to know every word a week before the exam (the last
  * days are for revision, not new words): the same number of words each day,
  * from the learner's first flashcard test to the goal date.
+ *
+ * Progress counts learning words too, but only in part: a word earns its
+ * full place once it is known, and a share before that by strength. Seeing
+ * a word once is a start, not the job done.
  */
+import { KNOWN_STRENGTH } from "@/features/flashcards/lib/schedule";
 
 /** Days before the exam by which every word should be known. */
 export const KNOW_BY_DAYS_BEFORE_EXAM = 6;
+
+/** How much one word counts towards the target: ¼ per strength step, 1 once known. */
+export function wordCredit(strength: number): number {
+  return Math.min(1, (strength + 1) / (KNOWN_STRENGTH + 1));
+}
+
+/** Total credit for a learner's words (strengths of the words they have started). */
+export function progressOf(strengths: readonly number[]): number {
+  return Math.round(strengths.reduce((sum, s) => sum + wordCredit(s), 0));
+}
 
 export type DailyTarget = {
   /** "YYYY-MM-DD": the day every word should be known. */
@@ -15,10 +30,11 @@ export type DailyTarget = {
   /** Day of the plan today is: 1 on the first day. */
   day: number;
   planDays: number;
-  /** Words that should be known by the end of today. */
+  /** Progress there should be by the end of today. */
   targetToday: number;
-  known: number;
-  /** Words still to get to "known" today to be on track; 0 when on track. */
+  /** Credit earned so far: known words count 1, learning words ¼–¾. */
+  progress: number;
+  /** Progress still to make today to be on track; 0 when on track. */
   behind: number;
 };
 
@@ -38,13 +54,13 @@ function addDays(iso: string, days: number): string {
  */
 export function dailyTarget({
   total,
-  known,
+  progress,
   startDate,
   today,
   examDate,
 }: {
   total: number;
-  known: number;
+  progress: number;
   startDate: string;
   today: string;
   examDate: string | null;
@@ -57,5 +73,5 @@ export function dailyTarget({
   const day = Math.min(planDays, dayNumber(today) - dayNumber(start) + 1);
   const perDay = Math.ceil(total / planDays);
   const targetToday = Math.min(total, perDay * day);
-  return { goalDate, perDay, day, planDays, targetToday, known, behind: Math.max(0, targetToday - known) };
+  return { goalDate, perDay, day, planDays, targetToday, progress, behind: Math.max(0, targetToday - progress) };
 }

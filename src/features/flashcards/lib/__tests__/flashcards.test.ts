@@ -6,6 +6,7 @@ import { seededRng } from "@/lib/random";
 import { buildDeck } from "../deck";
 import { afterTest, failAt, isLocked, isPass, lockDurationMs, MAX_LOCK_MS } from "../lockout";
 import { isRightAnswer } from "../grade";
+import { areSynonyms } from "../synonyms";
 import { type ChoiceQuestion, type Question, blankedSentence, buildQuestions, pinyinMatches } from "../questions";
 import { KNOWN_STRENGTH, gapFor, nextSchedule, statusOf } from "../schedule";
 
@@ -181,6 +182,16 @@ describe("questions", () => {
         for (let j = i + 1; j < opts.length; j++) {
           const a = senses(opts[i].gloss);
           expect(senses(opts[j].gloss).some((m) => a.includes(m))).toBe(false);
+        }
+      }
+    }
+  });
+
+  it("never offers two words that are true synonyms (立即 / 立刻)", () => {
+    for (const q of choices(all)) {
+      for (let i = 0; i < q.options.length; i++) {
+        for (let j = i + 1; j < q.options.length; j++) {
+          expect(areSynonyms(q.options[i], q.options[j]), `${q.options[i]} / ${q.options[j]}`).toBe(false);
         }
       }
     }

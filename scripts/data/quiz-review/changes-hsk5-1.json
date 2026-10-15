@@ -1,0 +1,434 @@
+[
+  {
+    "hanzi": "正",
+    "before": {
+      "zh": "他进门的时候，我正忙着做饭，没空接电话。",
+      "en": "When he came in, I was busy cooking and had no time to answer the phone."
+    },
+    "after": {
+      "zh": "墙上那幅画挂得不正，你帮我往左边调一下。",
+      "en": "That picture on the wall isn't hanging straight; help me shift it a bit to the left."
+    },
+    "reason": "ambiguous blank: 正在/在 fit 我正忙着 equally"
+  },
+  {
+    "hanzi": "搞",
+    "before": {
+      "zh": "这台电脑我研究了半天，还是没搞懂怎么用。",
+      "en": "I spent ages on this computer and still haven't figured out how to use it."
+    },
+    "after": {
+      "zh": "刚到新公司，最好先和同事们搞好关系。",
+      "en": "When you've just joined a new company, it's best to get on good terms with your colleagues first."
+    },
+    "reason": "ambiguous blank: 弄懂 fits as well as 搞懂; use fixed 搞好关系"
+  },
+  {
+    "hanzi": "杀",
+    "before": {
+      "zh": "农民用这种药杀虫，效果很好，对人也没有害处。",
+      "en": "Farmers use this chemical to kill insects; it works well and is harmless to people."
+    },
+    "after": {
+      "zh": "过年的时候，奶奶总要杀一只鸡给全家炖汤。",
+      "en": "At New Year, Grandma always kills a chicken to make soup for the whole family."
+    },
+    "reason": "too close to practice (chemical kills pests/germs)"
+  },
+  {
+    "hanzi": "以及",
+    "before": {
+      "zh": "这个周末我要打扫房间、洗衣服以及去超市买东西。",
+      "en": "This weekend I need to clean my room, do the laundry, and go grocery shopping."
+    },
+    "after": {
+      "zh": "报名时请带好护照、两张照片以及毕业证书。",
+      "en": "When registering, please bring your passport, two photos and your graduation certificate."
+    },
+    "reason": "register: formal 以及 in a casual chore list"
+  },
+  {
+    "hanzi": "报道",
+    "before": {
+      "zh": "电视新闻报道说，明天会有大风降温。",
+      "en": "The TV news reported that there will be strong winds and a drop in temperature tomorrow."
+    },
+    "after": {
+      "zh": "很多报纸都报道了这位老人免费教孩子画画的事。",
+      "en": "Many newspapers reported on this old man teaching children to paint for free."
+    },
+    "reason": "illogical: weather comes from a forecast (预报), not 新闻报道"
+  },
+  {
+    "hanzi": "造成",
+    "before": {
+      "zh": "大雾造成了高速公路暂时关闭。",
+      "en": "The heavy fog caused the highway to close temporarily."
+    },
+    "after": {
+      "zh": "长时间看手机会对眼睛造成伤害。",
+      "en": "Looking at your phone for long periods can damage your eyes."
+    },
+    "reason": "awkward 造成…关闭; 导致 fits better there"
+  },
+  {
+    "hanzi": "位置",
+    "before": {
+      "zh": "电影院里，我们的位置在第五排中间。",
+      "en": "In the cinema, our seats are in the middle of the fifth row."
+    },
+    "after": {
+      "zh": "这张桌子放在门口不太方便，我们换个位置吧。",
+      "en": "This table is in the way by the door; let's move it somewhere else."
+    },
+    "reason": "ambiguous blank: 座位 fits cinema seats better"
+  },
+  {
+    "hanzi": "方",
+    "before": {
+      "zh": "这个盒子是方的，正好可以放进抽屉里。",
+      "en": "This box is square, so it fits neatly into the drawer."
+    },
+    "after": {
+      "zh": "这种饼干有圆的，也有方的，你喜欢哪种？",
+      "en": "These biscuits come in round and square shapes; which do you prefer?"
+    },
+    "reason": "too close to practice (X是方的 object shape)"
+  },
+  {
+    "hanzi": "参与",
+    "before": {
+      "zh": "这次环保活动有一千多名市民参与。",
+      "en": "More than a thousand citizens took part in this environmental event."
+    },
+    "after": {
+      "zh": "这部电影从写剧本到拍摄，他全程参与了。",
+      "en": "He was involved in this film the whole way, from writing the script to shooting it."
+    },
+    "reason": "ambiguous blank: 参加 fits 市民参与活动 equally"
+  },
+  {
+    "hanzi": "建立",
+    "before": {
+      "zh": "这家医院是五十年前建立的。",
+      "en": "This hospital was established fifty years ago."
+    },
+    "after": {
+      "zh": "老师的鼓励帮他慢慢建立起了自信。",
+      "en": "The teacher's encouragement gradually helped him build up his self-confidence."
+    },
+    "reason": "ambiguous blank: 成立 fits 医院…建立的 equally"
+  },
+  {
+    "hanzi": "恢复",
+    "before": {
+      "zh": "停了两个小时的电终于恢复了。",
+      "en": "After two hours without power, the electricity was finally restored."
+    },
+    "after": {
+      "zh": "大雪停了以后，城里的交通慢慢恢复了正常。",
+      "en": "After the heavy snow stopped, traffic in the city gradually returned to normal."
+    },
+    "reason": "awkward 停了两个小时的电终于恢复了"
+  },
+  {
+    "hanzi": "集中",
+    "before": {
+      "zh": "游客们请在门口集中，九点准时出发。",
+      "en": "Tourists, please gather at the entrance; we leave at nine sharp."
+    },
+    "after": {
+      "zh": "这个城市的大学大多集中在城北。",
+      "en": "Most of this city's universities are concentrated in the north of town."
+    },
+    "reason": "ambiguous blank: 集合 is the natural word for gathering tourists"
+  },
+  {
+    "hanzi": "期待",
+    "before": {
+      "zh": "观众们都在期待这位歌手的新专辑。",
+      "en": "Fans are all looking forward to this singer's new album."
+    },
+    "after": {
+      "zh": "歌迷们都在期待这位歌手的新专辑。",
+      "en": "Fans are all looking forward to this singer's new album."
+    },
+    "reason": "collocation: an album has 歌迷, not 观众"
+  },
+  {
+    "hanzi": "一旦",
+    "before": {
+      "zh": "这种病一旦发现得晚，就很难治好。",
+      "en": "Once this disease is discovered late, it is very hard to cure."
+    },
+    "after": {
+      "zh": "密码一旦忘记，就只能重新设置了。",
+      "en": "Once you forget the password, the only option is to reset it."
+    },
+    "reason": "awkward 一旦发现得晚"
+  },
+  {
+    "hanzi": "身份",
+    "before": {
+      "zh": "坐火车的时候，一定要带上身份证。",
+      "en": "When you take the train, you must bring your ID card."
+    },
+    "after": {
+      "zh": "他一直没有告诉大家自己的真实身份。",
+      "en": "He never told anyone his true identity."
+    },
+    "reason": "tested only inside compound 身份证"
+  },
+  {
+    "hanzi": "满足",
+    "before": {
+      "zh": "这次考了九十分，他对自己的成绩很满足。",
+      "en": "He got ninety points this time and is quite satisfied with his result."
+    },
+    "after": {
+      "zh": "他是个很容易满足的人，有饭吃、有书看就很开心。",
+      "en": "He's easily satisfied; as long as he has food to eat and books to read, he's happy."
+    },
+    "reason": "ambiguous blank: 对成绩很满意 is more natural than 满足"
+  },
+  {
+    "hanzi": "威胁",
+    "before": {
+      "zh": "全球变暖正在威胁很多动物的生存。",
+      "en": "Global warming is threatening the survival of many animals."
+    },
+    "after": {
+      "zh": "这只猫觉得受到了威胁，身上的毛都竖了起来。",
+      "en": "The cat felt threatened, and all its fur stood on end."
+    },
+    "reason": "too close to practice (X正在威胁…生存/健康)"
+  },
+  {
+    "hanzi": "疯狂",
+    "before": {
+      "zh": "他最近疯狂地喜欢上了打篮球，每天都去打。",
+      "en": "He's recently become crazy about basketball and plays every day."
+    },
+    "after": {
+      "zh": "打折第一天，商场里到处都是疯狂购物的人。",
+      "en": "On the first day of the sale, the mall was full of people shopping like crazy."
+    },
+    "reason": "unnatural 疯狂地喜欢上了打篮球"
+  },
+  {
+    "hanzi": "幅",
+    "before": {
+      "zh": "这幅中国地图挂在教室的后面。",
+      "en": "This map of China hangs at the back of the classroom."
+    },
+    "after": {
+      "zh": "他花了三个月才画完这幅山水画。",
+      "en": "It took him three months to finish this landscape painting."
+    },
+    "reason": "too close to practice (picture hanging on a wall)"
+  },
+  {
+    "hanzi": "墙",
+    "before": {
+      "zh": "教室的墙上贴着很多学生的作品。",
+      "en": "Lots of students' work is posted on the classroom wall."
+    },
+    "after": {
+      "zh": "这面墙刚刷过油漆，千万别用手去碰。",
+      "en": "This wall has just been painted, so whatever you do, don't touch it."
+    },
+    "reason": "too close to practice (things hung on the wall)"
+  },
+  {
+    "hanzi": "信号",
+    "before": {
+      "zh": "司机看到红色信号灯就停下了车。",
+      "en": "The driver stopped the car when he saw the red signal light."
+    },
+    "after": {
+      "zh": "他向我做了一个手势，这是让大家出发的信号。",
+      "en": "He made a gesture to me; it was the signal for everyone to set off."
+    },
+    "reason": "stilted 红色信号灯; a driver stops at a 红灯"
+  },
+  {
+    "hanzi": "记忆",
+    "before": {
+      "zh": "年纪大了，奶奶的记忆越来越差了。",
+      "en": "As she gets older, Grandma's memory is getting worse and worse."
+    },
+    "after": {
+      "zh": "童年的很多记忆，现在都已经变得模糊了。",
+      "en": "Many childhood memories have now grown hazy."
+    },
+    "reason": "ambiguous blank: 记性/记忆力 is the natural word for a failing memory"
+  },
+  {
+    "hanzi": "取消",
+    "before": {
+      "zh": "因为天气原因，我们的航班被取消了。",
+      "en": "Our flight was cancelled because of the weather."
+    },
+    "after": {
+      "zh": "因为张老师生病了，明天的汉语课取消了。",
+      "en": "Because Teacher Zhang is ill, tomorrow's Chinese class has been cancelled."
+    },
+    "reason": "too close to practice (cancelled because of weather)"
+  },
+  {
+    "hanzi": "滚",
+    "before": {
+      "zh": "足球滚到了马路中间，他赶紧跑过去捡了回来。",
+      "en": "The football rolled into the middle of the road, and he hurried over to fetch it."
+    },
+    "after": {
+      "zh": "孩子们躺在草坡上，一个接一个地滚了下去。",
+      "en": "Lying on the grassy slope, the children rolled down it one after another."
+    },
+    "reason": "too close to practice (ball rolls somewhere)"
+  },
+  {
+    "hanzi": "撞",
+    "before": {
+      "zh": "我开门的时候不小心撞到了他的头。",
+      "en": "When I opened the door, I accidentally bumped his head."
+    },
+    "after": {
+      "zh": "他走路时一直低头看手机，一头撞在了玻璃门上。",
+      "en": "He kept looking down at his phone while walking and walked straight into a glass door."
+    },
+    "reason": "illogical: the door, not I, hits his head"
+  },
+  {
+    "hanzi": "炒",
+    "before": {
+      "zh": "他把鸡蛋和西红柿炒在一起，做了一道菜。",
+      "en": "He stir-fried the eggs and tomatoes together to make a dish."
+    },
+    "after": {
+      "zh": "西红柿炒鸡蛋是很多中国家庭常做的一道菜。",
+      "en": "Stir-fried tomato and egg is a dish many Chinese families often make."
+    },
+    "reason": "stilted 炒在一起，做了一道菜"
+  },
+  {
+    "hanzi": "微笑",
+    "before": {
+      "zh": "她看着孩子，脸上露出了微笑。",
+      "en": "She looked at the child, and a smile appeared on her face."
+    },
+    "after": {
+      "zh": "看到我进来，她微笑着对我点了点头。",
+      "en": "When she saw me come in, she smiled and nodded at me."
+    },
+    "reason": "ambiguous blank: 露出了笑容 fits equally"
+  },
+  {
+    "hanzi": "权力",
+    "before": {
+      "zh": "经理有权力决定谁可以参加这次培训。",
+      "en": "The manager has the authority to decide who can attend this training."
+    },
+    "after": {
+      "zh": "他是公司的老板，手里的权力很大。",
+      "en": "He's the boss of the company and holds a lot of power."
+    },
+    "reason": "ambiguous blank: 有权利决定 also common"
+  },
+  {
+    "hanzi": "签",
+    "before": {
+      "zh": "这张信用卡需要本人签名才能用。",
+      "en": "This credit card can only be used after the cardholder signs it."
+    },
+    "after": {
+      "zh": "快递到了，快递员让我在单子上签个名。",
+      "en": "The parcel arrived, and the courier asked me to sign the slip."
+    },
+    "reason": "illogical: credit card needs signature to be used"
+  },
+  {
+    "hanzi": "资格",
+    "before": {
+      "zh": "年龄不满十八岁的人没有资格参加这个比赛。",
+      "en": "People under eighteen are not eligible to enter this competition."
+    },
+    "after": {
+      "zh": "他刚工作半年，还没有资格申请出国培训。",
+      "en": "He's only been working for six months, so he isn't yet eligible to apply for training abroad."
+    },
+    "reason": "too close to practice (有资格参加活动/比赛)"
+  },
+  {
+    "hanzi": "命令",
+    "before": {
+      "zh": "医生命令他至少休息一个月。",
+      "en": "The doctor ordered him to rest for at least a month."
+    },
+    "after": {
+      "zh": "听到教练的命令，队员们马上停止了训练。",
+      "en": "Hearing the coach's order, the players stopped training at once."
+    },
+    "reason": "doubtful: a doctor 让/要求, does not 命令"
+  },
+  {
+    "hanzi": "士兵",
+    "before": {
+      "zh": "那位老士兵经常给孩子们讲过去的故事。",
+      "en": "That old soldier often tells the children stories about the past."
+    },
+    "after": {
+      "zh": "士兵们冒着大雨，帮助村民把粮食搬到高处。",
+      "en": "The soldiers braved the heavy rain to help villagers move their grain to higher ground."
+    },
+    "reason": "unnatural 老士兵 (natives say 老兵)"
+  },
+  {
+    "hanzi": "自动",
+    "before": {
+      "zh": "晚上到了七点，路灯就会自动亮起来。",
+      "en": "At seven in the evening, the street lights come on automatically."
+    },
+    "after": {
+      "zh": "到了晚上七点，路灯就会自动亮起来。",
+      "en": "At seven in the evening, the street lights come on automatically."
+    },
+    "reason": "word order 晚上到了七点"
+  },
+  {
+    "hanzi": "合法",
+    "before": {
+      "zh": "在这个国家，十八岁以上开车才合法。",
+      "en": "In this country, it is only legal to drive if you are over eighteen."
+    },
+    "after": {
+      "zh": "遇到这种问题，我们应该通过合法的途径解决。",
+      "en": "When we run into a problem like this, we should solve it through legal channels."
+    },
+    "reason": "awkward 十八岁以上开车才合法"
+  },
+  {
+    "hanzi": "行为",
+    "before": {
+      "zh": "孩子的行为习惯很大程度上受到父母的影响。",
+      "en": "A child's habits of behavior are largely influenced by the parents."
+    },
+    "after": {
+      "zh": "孩子的行为习惯很大程度上受到父母的影响。",
+      "en": "A child's behavior is largely shaped by their parents."
+    },
+    "reason": "awkward en \"habits of behavior\""
+  },
+  {
+    "hanzi": "一致",
+    "before": {
+      "zh": "大家对这个方案的意见很一致。",
+      "en": "Everyone's opinion on this plan is unanimous."
+    },
+    "after": {
+      "zh": "大家对这个方案的意见很一致。",
+      "en": "Everyone is in complete agreement about this plan."
+    },
+    "reason": "awkward en \"Everyone's opinion is unanimous\""
+  }
+]

@@ -1,0 +1,1 @@
+ALTER TABLE "flashcard_tests" ADD COLUMN "answers" jsonb;

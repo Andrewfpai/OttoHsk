@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 const TABS = [
   { href: "/words", label: "Word list" },
   { href: "/words/flashcards", label: "Flashcards" },
+  { href: "/words/history", label: "History" },
 ];
 
 /** Tabs as links, so each tab has its own URL and the back button works. */
