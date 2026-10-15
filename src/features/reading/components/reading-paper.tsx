@@ -91,22 +91,128 @@ function useSaved(paperId: string): [Saved, (change: (prev: Saved) => Saved) => 
 
 /* ───────────────────────────── paper ───────────────────────────── */
 
+type PartKey = "part2" | "part3";
+
+const PARTS: Record<PartKey, { label: string; title: string; how: string }> = {
+  part2: { label: "Part 2", title: "第二部分", how: "pick the sentence that matches the passage" },
+  part3: { label: "Part 3", title: "第三部分", how: "read each passage and answer its questions" },
+};
+
+function questionsOf(items: ReadingItem[]): ReadingQuestion[] {
+  return items.flatMap((item) => item.questions);
+}
+
+function range(items: ReadingItem[]): string {
+  const qs = questionsOf(items);
+  return `${qs[0].number}–${qs.at(-1)!.number}`;
+}
+
 /**
- * A reading paper to do on screen: answer everything, then check. Every
- * word can be tapped (or hovered) for its pinyin and meaning.
+ * A reading paper to do on screen, one part per tab: answer the part, then
+ * check it. Every word can be tapped (or hovered) for its pinyin and meaning.
  */
 export function ReadingPaperView({ paper, tokens }: { paper: ReadingPaper; tokens: Tokens }) {
-  const [saved, update] = useSaved(paper.id);
+  const [part, setPart] = useState<PartKey>("part2");
   const [spot, setSpot] = useState<Spot | null>(null);
+  const saves: Record<PartKey, ReturnType<typeof useSaved>> = {
+    part2: useSaved(`${paper.id}.part2`),
+    part3: useSaved(`${paper.id}.part3`),
+  };
+
+  /** One handler for every word on the page, rather than thousands. */
+  function spotFrom(target: EventTarget | null): Spot | null {
+    const el = target instanceof Element ? target.closest<HTMLElement>("[data-k]") : null;
+    if (!el?.dataset.k) return null;
+    return { key: el.dataset.k, index: Number(el.dataset.i) };
+  }
+
+  const token = spot ? tokens[spot.key]?.[spot.index] : undefined;
+
+  return (
+    <div
+      className="space-y-6 pb-44"
+      onClick={(e) => {
+        const s = spotFrom(e.target);
+        if (s) setSpot(s);
+      }}
+      onPointerOver={(e) => {
+        if (e.pointerType !== "mouse") return;
+        const s = spotFrom(e.target);
+        if (s && (s.key !== spot?.key || s.index !== spot?.index)) setSpot(s);
+      }}
+    >
+      <div role="tablist" aria-label="Part" className="bg-muted flex w-full gap-1 rounded-xl p-1 sm:w-fit">
+        {(Object.keys(PARTS) as PartKey[]).map((key) => {
+          const qs = questionsOf(paper[key]);
+          const { picks, checked } = saves[key][0];
+          const status = checked
+            ? `${qs.filter((q) => picks[q.number] === q.answer).length}/${qs.length} right`
+            : `${qs.filter((q) => picks[q.number] !== undefined).length}/${qs.length} answered`;
+          return (
+            <button
+              key={key}
+              type="button"
+              role="tab"
+              id={`tab-${key}`}
+              aria-selected={part === key}
+              aria-controls="reading-part"
+              onClick={() => {
+                setPart(key);
+                setSpot(null);
+              }}
+              className={cn(
+                "focus-visible:ring-ring flex min-h-11 flex-1 cursor-pointer flex-col items-center justify-center rounded-lg px-4 py-1.5 text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:outline-none sm:flex-none",
+                part === key ? "bg-background shadow-sm" : "text-muted-foreground hover:text-foreground",
+              )}
+            >
+              <span>
+                {PARTS[key].label} <span className="font-numeric">· {range(paper[key])}</span>
+              </span>
+              <span className="text-muted-foreground font-numeric text-xs font-normal">{status}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      <div id="reading-part" role="tabpanel" aria-labelledby={`tab-${part}`}>
+        <PartView
+          key={part}
+          paperId={paper.id}
+          part={part}
+          items={paper[part]}
+          tokens={tokens}
+          spot={spot}
+          saved={saves[part][0]}
+          update={saves[part][1]}
+        />
+      </div>
+
+      {token?.p ? <WordPanel token={token} onClose={() => setSpot(null)} /> : null}
+    </div>
+  );
+}
+
+function PartView({
+  paperId,
+  part,
+  items,
+  tokens,
+  spot,
+  saved,
+  update,
+}: {
+  paperId: string;
+  part: PartKey;
+  items: ReadingItem[];
+  tokens: Tokens;
+  spot: Spot | null;
+  saved: Saved;
+  update: (change: (prev: Saved) => Saved) => void;
+}) {
   const recordMany = useRecordMany();
   const { picks, checked } = saved;
-
-  const questions = useMemo(
-    () => [...paper.part2, ...paper.part3].flatMap((item) => item.questions),
-    [paper],
-  );
+  const questions = useMemo(() => questionsOf(items), [items]);
   const answered = questions.filter((q) => picks[q.number] !== undefined).length;
-  const isRight = (q: ReadingQuestion) => picks[q.number] === q.answer;
 
   function pick(q: ReadingQuestion, option: number) {
     if (checked) return;
@@ -121,7 +227,7 @@ export function ReadingPaperView({ paper, tokens }: { paper: ReadingPaper; token
     update((prev) => ({ ...prev, checked: true, checkedAt: Date.now() }));
     recordMany(
       "reading",
-      questions.map((q) => ({ itemId: questionId(paper.id, q.number), correct: isRight(q) })),
+      questions.map((q) => ({ itemId: questionId(paperId, q.number), correct: picks[q.number] === q.answer })),
     );
     scrollTo("reading-top");
   }
@@ -131,31 +237,11 @@ export function ReadingPaperView({ paper, tokens }: { paper: ReadingPaper; token
     scrollTo("reading-top");
   }
 
-  /** One handler for every word on the page, rather than thousands. */
-  function spotFrom(target: EventTarget | null): Spot | null {
-    const el = target instanceof Element ? target.closest<HTMLElement>("[data-k]") : null;
-    if (!el?.dataset.k) return null;
-    return { key: el.dataset.k, index: Number(el.dataset.i) };
-  }
-
-  const token = spot ? tokens[spot.key]?.[spot.index] : undefined;
-
   return (
-    <div
-      className="space-y-8 pb-44"
-      onClick={(e) => {
-        const s = spotFrom(e.target);
-        if (s) setSpot(s);
-      }}
-      onPointerOver={(e) => {
-        if (e.pointerType !== "mouse") return;
-        const s = spotFrom(e.target);
-        if (s && (s.key !== spot?.key || s.index !== spot?.index)) setSpot(s);
-      }}
-    >
+    <div className="space-y-6">
       <div id="reading-top" className="scroll-mt-20">
         {checked ? (
-          <Score paper={paper} picks={picks} saved={saved} onReset={reset} />
+          <Score questions={questions} saved={saved} onReset={reset} />
         ) : (
           <p className="text-muted-foreground text-sm">
             Answer all {questions.length}, then check: you see what you missed and why. Tap any word
@@ -164,21 +250,9 @@ export function ReadingPaperView({ paper, tokens }: { paper: ReadingPaper; token
         )}
       </div>
 
-      <Part
-        title="第二部分"
-        subtitle={`Questions ${paper.part2[0].numbers}–${paper.part2.at(-1)!.numbers}: pick the sentence that matches the passage.`}
-      >
-        {paper.part2.map((item) => (
-          <ItemCard key={item.id} paperId={paper.id} item={item} tokens={tokens} spot={spot} picks={picks} checked={checked} onPick={pick} />
-        ))}
-      </Part>
-
-      <Part
-        title="第三部分"
-        subtitle={`Questions ${paper.part3[0].questions[0].number}–${paper.part3.at(-1)!.questions.at(-1)!.number}: read each passage and answer its questions.`}
-      >
-        {paper.part3.map((item) => (
-          <ItemCard key={item.id} paperId={paper.id} item={item} tokens={tokens} spot={spot} picks={picks} checked={checked} onPick={pick} />
+      <Part title={PARTS[part].title} subtitle={`Questions ${range(items)}: ${PARTS[part].how}.`}>
+        {items.map((item) => (
+          <ItemCard key={item.id} paperId={paperId} item={item} tokens={tokens} spot={spot} picks={picks} checked={checked} onPick={pick} />
         ))}
       </Part>
 
@@ -192,7 +266,7 @@ export function ReadingPaperView({ paper, tokens }: { paper: ReadingPaper; token
           <>
             <Button size="lg" className="h-11 cursor-pointer px-6" disabled={answered === 0} onClick={check}>
               <Check aria-hidden />
-              Check answers
+              Check {PARTS[part].label}
             </Button>
             <p className="text-muted-foreground text-sm">
               <span className="font-numeric">
@@ -204,8 +278,6 @@ export function ReadingPaperView({ paper, tokens }: { paper: ReadingPaper; token
           </>
         )}
       </div>
-
-      {token?.p ? <WordPanel token={token} onClose={() => setSpot(null)} /> : null}
     </div>
   );
 }
@@ -446,26 +518,17 @@ function WordPanel({ token, onClose }: { token: ReadingToken; onClose: () => voi
 /* ───────────────────────────── score ───────────────────────────── */
 
 function Score({
-  paper,
-  picks,
+  questions,
   saved,
   onReset,
 }: {
-  paper: ReadingPaper;
-  picks: Record<number, number>;
+  questions: ReadingQuestion[];
   saved: Saved;
   onReset: () => void;
 }) {
-  const tally = (items: ReadingItem[]) => {
-    const qs = items.flatMap((i) => i.questions);
-    return { right: qs.filter((q) => picks[q.number] === q.answer).length, total: qs.length };
-  };
-  const p2 = tally(paper.part2);
-  const p3 = tally(paper.part3);
-  const missed = [...paper.part2, ...paper.part3]
-    .flatMap((i) => i.questions)
-    .filter((q) => picks[q.number] !== q.answer)
-    .map((q) => q.number);
+  const { picks } = saved;
+  const right = questions.filter((q) => picks[q.number] === q.answer).length;
+  const missed = questions.filter((q) => picks[q.number] !== q.answer).map((q) => q.number);
   const minutes =
     saved.startedAt && saved.checkedAt ? Math.max(1, Math.round((saved.checkedAt - saved.startedAt) / 60_000)) : null;
 
@@ -475,30 +538,16 @@ function Score({
         <div>
           <p className="text-muted-foreground text-sm">Score</p>
           <p className="font-numeric text-4xl font-semibold">
-            {p2.right + p3.right}
-            <span className="text-muted-foreground text-2xl">/{p2.total + p3.total}</span>
+            {right}
+            <span className="text-muted-foreground text-2xl">/{questions.length}</span>
           </p>
         </div>
-        <dl className="font-numeric flex gap-6 text-sm">
-          <div>
-            <dt className="text-muted-foreground">Part 2</dt>
-            <dd className="font-medium">
-              {p2.right}/{p2.total}
-            </dd>
-          </div>
-          <div>
-            <dt className="text-muted-foreground">Part 3</dt>
-            <dd className="font-medium">
-              {p3.right}/{p3.total}
-            </dd>
-          </div>
-          {minutes ? (
-            <div>
-              <dt className="text-muted-foreground">Time</dt>
-              <dd className="font-medium">{minutes} min</dd>
-            </div>
-          ) : null}
-        </dl>
+        {minutes ? (
+          <dl className="font-numeric text-sm">
+            <dt className="text-muted-foreground">Time</dt>
+            <dd className="font-medium">{minutes} min</dd>
+          </dl>
+        ) : null}
       </div>
       {missed.length > 0 ? (
         <div className="space-y-2">
