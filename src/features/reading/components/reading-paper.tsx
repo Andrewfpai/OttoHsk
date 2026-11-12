@@ -10,7 +10,7 @@ import { questionId } from "@/features/drills/lib/question-id";
 import { formatCountdown, useNow } from "@/hooks/use-now";
 import { cn } from "@/lib/utils";
 
-import { WordPanel } from "./lookup";
+import { WordPanel, useWordSpot } from "./lookup";
 
 const LETTERS = ["A", "B", "C", "D"] as const;
 
@@ -154,35 +154,17 @@ export function ReadingPaperView({
   // Only the parts these papers have: HSK 6 practice is Part 3 alone.
   const parts = (Object.keys(PARTS) as PartKey[]).filter((k) => sets.some((s) => s.paper[k].length > 0));
   const [part, setPart] = useState<PartKey>(parts[0]);
-  const [spot, setSpot] = useState<Spot | null>(null);
+  const { spot, setSpot, handlers } = useWordSpot();
   const saves: Record<PartKey, [Saved, Update]> = {
     part2: useSaved(`${slot}part2`),
     part3: useSaved(`${slot}part3`),
   };
-  /** One handler for every word on the page, rather than thousands. */
-  function spotFrom(target: EventTarget | null): Spot | null {
-    const el = target instanceof Element ? target.closest<HTMLElement>("[data-k]") : null;
-    if (!el?.dataset.k) return null;
-    return { key: el.dataset.k, index: Number(el.dataset.i) };
-  }
-
   // Words are only tappable where lookup is open (an answered question, or
   // a checked part), so a spot can only be set there.
   const token = spot ? tokens[spot.key]?.[spot.index] : undefined;
 
   return (
-    <div
-      className="space-y-6 pb-44"
-      onClick={(e) => {
-        const s = spotFrom(e.target);
-        if (s) setSpot(s);
-      }}
-      onPointerOver={(e) => {
-        if (e.pointerType !== "mouse") return;
-        const s = spotFrom(e.target);
-        if (s && (s.key !== spot?.key || s.index !== spot?.index)) setSpot(s);
-      }}
-    >
+    <div className="space-y-6 pb-44" {...handlers}>
       <div
         role="tablist"
         aria-label="Part"

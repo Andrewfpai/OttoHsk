@@ -1,7 +1,7 @@
 "use client";
 
 import { X } from "lucide-react";
-import { createContext, useContext, useMemo, useState } from "react";
+import { createContext, useContext, useEffect, useMemo, useRef, useState } from "react";
 
 import { useWordBank } from "@/components/level/level-provider";
 
@@ -28,6 +28,43 @@ function spotFrom(target: EventTarget | null): Spot | null {
   return { key: el.dataset.k, index: Number(el.dataset.i) };
 }
 
+/**
+ * How long the mouse must rest on a word before the panel shows it. Without
+ * it, moving the mouse to the panel's star crosses other words, and the
+ * panel switches to them before the star is reached.
+ */
+const HOVER_MS = 250;
+
+/**
+ * Which word the panel shows, and the handlers that set it: a tap or click
+ * shows a word at once; a mouse resting on a word shows it after a moment.
+ */
+export function useWordSpot() {
+  const [spot, setSpot] = useState<Spot | null>(null);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  function cancel() {
+    if (timer.current) clearTimeout(timer.current);
+    timer.current = null;
+  }
+  useEffect(() => cancel, []);
+  const handlers = {
+    onClick(e: React.MouseEvent) {
+      const s = spotFrom(e.target);
+      if (!s) return;
+      cancel();
+      setSpot(s);
+    },
+    onPointerOver(e: React.PointerEvent) {
+      if (e.pointerType !== "mouse") return;
+      cancel();
+      const s = spotFrom(e.target);
+      // Anything but a word (a gap, the panel) just cancels a pending hover.
+      if (s) timer.current = setTimeout(() => setSpot(s), HOVER_MS);
+    },
+  };
+  return { spot, setSpot, handlers };
+}
+
 /** Wraps a drill: catches taps and hovers on words, and shows the word panel. */
 export function LookupRoot({
   tokens,
@@ -38,21 +75,10 @@ export function LookupRoot({
   className?: string;
   children: React.ReactNode;
 }) {
-  const [spot, setSpot] = useState<Spot | null>(null);
+  const { spot, setSpot, handlers } = useWordSpot();
   const token = spot ? tokens[spot.key]?.[spot.index] : undefined;
   return (
-    <div
-      className={cn("pb-40", className)}
-      onClick={(e) => {
-        const s = spotFrom(e.target);
-        if (s) setSpot(s);
-      }}
-      onPointerOver={(e) => {
-        if (e.pointerType !== "mouse") return;
-        const s = spotFrom(e.target);
-        if (s && (s.key !== spot?.key || s.index !== spot?.index)) setSpot(s);
-      }}
-    >
+    <div className={cn("pb-40", className)} {...handlers}>
       <SpotContext.Provider value={spot}>{children}</SpotContext.Provider>
       {token?.p ? <WordPanel token={token} onClose={() => setSpot(null)} /> : null}
     </div>
