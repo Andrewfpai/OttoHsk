@@ -1,6 +1,7 @@
 """
-Draws the app icons: the seal mark (a white 汉 on seal red), as the header
-shows it. Run after changing the brand colour:  python scripts/build-icons.py
+Draws the app icons: the brand mark (a white 汉 on an indigo-to-teal tile,
+with a small spark), as the header shows it. Run after changing the brand
+colours (--brand-from / --brand-to):  python scripts/build-icons.py
 
 - public/icon-192.png, public/icon-512.png: rounded, for "any" purpose.
 - public/icon-maskable-512.png: full bleed, glyph inside the safe zone, so
@@ -28,17 +29,46 @@ def oklch_to_rgb(l, c, h):
     return tuple(round(gamma(x) * 255) for x in lin)
 
 
-SEAL = oklch_to_rgb(0.55, 0.2, 27)  # --seal in globals.css (light theme)
+FROM = oklch_to_rgb(0.5, 0.17, 275)  # --brand-from in globals.css (light theme)
+TO = oklch_to_rgb(0.66, 0.12, 195)  # --brand-to
+
+
+def gradient(size):
+    """A top-left to bottom-right blend from FROM to TO."""
+    img = Image.new("RGBA", (size, size))
+    px = img.load()
+    for y in range(size):
+        for x in range(size):
+            t = (x + y) / (2 * (size - 1))
+            px[x, y] = tuple(round(a + (b - a) * t) for a, b in zip(FROM, TO)) + (255,)
+    return img
+
+
+def sparkle(d, cx, cy, r):
+    """A four-point star with curved sides, as the header's SVG draws it."""
+    pts = []
+    for k in range(64):
+        a = 2 * math.pi * k / 64
+        # Astroid-like curve: sharp points on the axes, pinched between.
+        x, y = math.cos(a) ** 3, math.sin(a) ** 3
+        pts.append((cx + r * x, cy + r * y))
+    d.polygon(pts, fill=(255, 255, 255, 235))
 
 
 def draw(size, radius_ratio, glyph_ratio, path):
+    mask = Image.new("L", (size, size), 0)
+    ImageDraw.Draw(mask).rounded_rectangle([0, 0, size - 1, size - 1], radius=int(size * radius_ratio), fill=255)
     img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    img.paste(gradient(size), (0, 0), mask)
     d = ImageDraw.Draw(img)
-    d.rounded_rectangle([0, 0, size - 1, size - 1], radius=int(size * radius_ratio), fill=SEAL)
     font = ImageFont.truetype(FONT, int(size * glyph_ratio))
     box = d.textbbox((0, 0), "汉", font=font)
     w, h = box[2] - box[0], box[3] - box[1]
-    d.text(((size - w) / 2 - box[0], (size - h) / 2 - box[1]), "汉", font=font, fill="white")
+    d.text(((size - w) / 2 - box[0], (size - h) / 2 - box[1] + size * 0.02), "汉", font=font, fill="white")
+    # The spark sits in the corner margin, scaled with the glyph.
+    r = size * glyph_ratio * 0.18
+    inset = (size - size * glyph_ratio) / 2
+    sparkle(d, size - inset * 0.55 - r * 0.2, inset * 0.55 + r * 0.2, r)
     img.save(path)
     print(path, size)
 
@@ -48,4 +78,4 @@ draw(512, 0.22, 0.6, "public/icon-512.png")
 draw(512, 0.0, 0.42, "public/icon-maskable-512.png")
 draw(180, 0.0, 0.58, "src/app/apple-icon.png")
 draw(64, 0.22, 0.62, "src/app/icon.png")
-print("seal", SEAL)
+print("brand", FROM, TO)

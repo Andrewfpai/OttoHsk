@@ -5,8 +5,9 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
-  Palette: ink indigo for the app, a seal red for the brand mark only, and
-  orange reserved exclusively for Start (practice, test). Green and red are
+  Palette: ink indigo for the app, an indigo-to-teal gradient for the brand
+  mark only, and orange reserved exclusively for Start (practice, test). Green
+  and red are
   kept for right and wrong answers, so neither may be used decoratively.
 */
 
@@ -48,7 +49,8 @@
   --color-cta-foreground: var(--cta-foreground);
 
   /* Brand mark only. */
-  --color-seal: var(--seal);
+  --color-brand-from: var(--brand-from);
+  --color-brand-to: var(--brand-to);
 
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
@@ -103,7 +105,8 @@
   --cta: oklch(0.66 0.2 44);
   --cta-foreground: oklch(0.99 0.01 60);
 
-  --seal: oklch(0.55 0.2 27);
+  --brand-from: oklch(0.5 0.17 275);
+  --brand-to: oklch(0.66 0.12 195);
 
   --border: oklch(0.9 0.012 265);
   --input: oklch(0.9 0.012 265);
@@ -160,7 +163,8 @@
   --cta: oklch(0.75 0.183 55.934);
   --cta-foreground: oklch(0.2 0.04 50);
 
-  --seal: oklch(0.62 0.19 27);
+  --brand-from: oklch(0.56 0.17 275);
+  --brand-to: oklch(0.72 0.12 195);
 
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);

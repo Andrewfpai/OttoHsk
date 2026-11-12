@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 
 import { GoogleSignInButton } from "@/components/auth/google-sign-in-button";
-import { SealMark } from "@/components/layout/brand";
+import { BrandMark } from "@/components/layout/brand";
 import { PasswordSignInForm } from "@/features/account/components/password-sign-in-form";
 import { auth, signIn } from "@/lib/auth";
 
@@ -34,7 +34,7 @@ export default async function SignInPage({ searchParams }: PageProps<"/sign-in">
     <main className="flex min-h-dvh items-center justify-center p-6">
       <div className="w-full max-w-sm">
         <div className="mb-10 space-y-3 text-center">
-          <SealMark className="mx-auto size-12 text-2xl" />
+          <BrandMark className="mx-auto size-12 text-2xl" />
           <h1 className="text-2xl font-semibold tracking-tight">OttoHSK</h1>
           <p className="text-muted-foreground text-sm text-balance">
             Words, flashcards and drills for HSK 5 and HSK 6.

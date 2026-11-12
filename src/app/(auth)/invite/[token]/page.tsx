@@ -4,7 +4,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { GoogleSignInButton } from "@/components/auth/google-sign-in-button";
-import { SealMark } from "@/components/layout/brand";
+import { BrandMark } from "@/components/layout/brand";
 import { INVITE_COOKIE, INVITE_COOKIE_MAX_AGE_S, looksLikeInviteToken } from "@/features/access/lib/invite-links";
 import { peekInvite } from "@/features/access/server/invite-links";
 import { auth, signIn } from "@/lib/auth";
@@ -41,7 +41,7 @@ export default async function InvitePage({ params }: PageProps<"/invite/[token]"
     <main className="flex min-h-dvh items-center justify-center p-6">
       <div className="w-full max-w-sm">
         <div className="mb-8 space-y-3 text-center">
-          <SealMark className="mx-auto size-12 text-2xl" />
+          <BrandMark className="mx-auto size-12 text-2xl" />
           {invite ? (
             <>
               <h1 className="text-2xl font-semibold tracking-tight">You are invited to OttoHSK</h1>
