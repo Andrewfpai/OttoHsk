@@ -1,0 +1,345 @@
+[
+  {
+    "hanzi": "捉",
+    "field": "quiz.zh",
+    "before": "孩子们在公园里玩捉迷藏，笑声不断。",
+    "after": "孩子们拿着小网兜在花丛中捉蝴蝶，玩得可开心了。",
+    "why": "捉迷藏 is a fixed compound and not the \"to catch\" sense; use 捉 as a free verb"
+  },
+  {
+    "hanzi": "捉",
+    "field": "quiz.en",
+    "before": "The children were playing hide-and-seek in the park, laughing nonstop.",
+    "after": "The children were catching butterflies among the flowers with little nets, having a great time.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "沟",
+    "field": "quiz.zh",
+    "before": "他骑车时没看清路，连人带车掉进了路旁的水沟里。",
+    "after": "他骑车时没看清路，连人带车掉进了路旁的沟里。",
+    "why": "hanzi was inside the compound 水沟; use 沟 on its own"
+  },
+  {
+    "hanzi": "过后",
+    "field": "quiz.zh",
+    "before": "这件事你先别急着做决定，过后我们再慢慢商量。",
+    "after": "暴风雨过后，天边出现了一道美丽的彩虹。",
+    "why": "以后/之后 fit 过后我们再商量 equally; N+过后 is the characteristic use"
+  },
+  {
+    "hanzi": "过后",
+    "field": "quiz.en",
+    "before": "Don't rush to decide on this now; we can talk it over later.",
+    "after": "After the storm, a beautiful rainbow appeared in the sky.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "数目",
+    "field": "example.zh",
+    "before": "一百万对普通家庭来说可不是个小数目。",
+    "after": "请你把箱子里的东西数一数，看看数目对不对。",
+    "why": "moved the counting sentence to the example; 数字 fits it as well as 数目, so it is weak as a quiz"
+  },
+  {
+    "hanzi": "数目",
+    "field": "example.en",
+    "before": "A million is no small sum for an ordinary family.",
+    "after": "Please count the things in the box and see if the number is right.",
+    "why": "match new example sentence"
+  },
+  {
+    "hanzi": "数目",
+    "field": "quiz.zh",
+    "before": "请你把箱子里的东西数一数，看看数目对不对。",
+    "after": "五十万对刚工作的年轻人来说，可不是一笔小数目。",
+    "why": "use the fixed collocation 一笔小数目, which only 数目 completes"
+  },
+  {
+    "hanzi": "数目",
+    "field": "quiz.en",
+    "before": "Please count the things in the box and see if the number is right.",
+    "after": "Half a million is no small sum for a young person just starting work.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "棍",
+    "field": "quiz.zh",
+    "before": "他捡起地上的一根棍子，把挡路的树枝拨开了。",
+    "after": "他从地上捡起一根棍，把挡在路中间的树枝拨开了。",
+    "why": "blanking 棍 inside 棍子 gives away the answer; use 棍 on its own"
+  },
+  {
+    "hanzi": "栏",
+    "field": "quiz.zh",
+    "before": "孩子们趴在栏杆上看河里的小鸭子。",
+    "after": "报名表上的“特长”一栏，他想了半天也不知道该填什么。",
+    "why": "hanzi was inside the compound 栏杆; use 栏 on its own (一栏)"
+  },
+  {
+    "hanzi": "栏",
+    "field": "quiz.en",
+    "before": "The children leaned on the railing to watch the ducklings in the river.",
+    "after": "He thought for ages about the \"special skills\" field on the application form but had no idea what to write.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "躲避",
+    "field": "quiz.zh",
+    "before": "他最近总在躲避我，打电话也不接。",
+    "after": "听到警报声后，居民们迅速躲避到附近的地下室里。",
+    "why": "回避/逃避 fit 总在躲避我 equally; physical sheltering points to 躲避"
+  },
+  {
+    "hanzi": "躲避",
+    "field": "quiz.en",
+    "before": "He's been avoiding me lately; he won't even answer my calls.",
+    "after": "When they heard the siren, residents quickly took shelter in a nearby basement.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "物体",
+    "field": "quiz.zh",
+    "before": "禁止从窗户往外扔任何物体，以免砸伤楼下的行人。",
+    "after": "物体从高处落下时，速度会越来越快。",
+    "why": "natural Chinese says 扔东西/物品 out of a window, not 物体; 物体 belongs to the physical-science register"
+  },
+  {
+    "hanzi": "物体",
+    "field": "quiz.en",
+    "before": "Throwing any object out of the window is forbidden, so as not to hurt people walking below.",
+    "after": "When an object falls from a height, it falls faster and faster.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "旅程",
+    "field": "quiz.zh",
+    "before": "人生就像一段旅程，重要的不是终点，而是沿途的风景。",
+    "after": "这次自驾游的旅程全长两千多公里，一路经过五个省。",
+    "why": "旅途 (same batch, same first character) fits 人生就像一段旅程 equally; 全长 rules it out"
+  },
+  {
+    "hanzi": "旅程",
+    "field": "quiz.en",
+    "before": "Life is like a journey: what matters isn't the destination but the scenery along the way.",
+    "after": "This road trip covers more than 2,000 kilometres and passes through five provinces.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "收取",
+    "field": "quiz.zh",
+    "before": "这家博物馆不收取门票，所有人都可以免费参观。",
+    "after": "这家博物馆不收取任何费用，所有人都可以免费参观。",
+    "why": "收取 takes 费用, not 门票 (不收取门票 is a mis-collocation)"
+  },
+  {
+    "hanzi": "收取",
+    "field": "quiz.en",
+    "before": "This museum charges no admission; everyone can visit for free.",
+    "after": "This museum charges no fees at all; everyone can visit for free.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "摄像",
+    "field": "quiz.zh",
+    "before": "这个路口安装了摄像头，闯红灯会被拍下来。",
+    "after": "这次活动由小王负责摄像，小李负责拍照。",
+    "why": "hanzi was inside the noun 摄像头; use the verb sense"
+  },
+  {
+    "hanzi": "摄像",
+    "field": "quiz.en",
+    "before": "Cameras have been installed at this intersection; running a red light will be caught on camera.",
+    "after": "At this event Xiao Wang is in charge of filming and Xiao Li of taking photos.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "捕",
+    "field": "quiz.zh",
+    "before": "猫头鹰白天睡觉，晚上出来捕食老鼠。",
+    "after": "这次出海，渔民们捕到了一条两米多长的大鱼。",
+    "why": "捕食 is a separate compound; use 捕 as a free verb (捕到)"
+  },
+  {
+    "hanzi": "捕",
+    "field": "quiz.en",
+    "before": "Owls sleep during the day and come out at night to hunt mice.",
+    "after": "On this trip out to sea, the fishermen caught a fish over two metres long.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "搜集",
+    "field": "quiz.zh",
+    "before": "他从小就喜欢搜集各个国家的邮票。",
+    "after": "出发前，我在网上搜集了很多关于这座城市的旅游信息。",
+    "why": "stamps are normally 收集 (a likely distractor), not 搜集; searching for information favours 搜集"
+  },
+  {
+    "hanzi": "搜集",
+    "field": "quiz.en",
+    "before": "Since childhood he has loved collecting stamps from all over the world.",
+    "after": "Before setting off, I gathered lots of travel information about the city online.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "来往",
+    "field": "quiz.zh",
+    "before": "自从吵过那一架，他们俩就再也没有来往过。",
+    "after": "妈妈不许我跟那些不三不四的人来往。",
+    "why": "往来 (same batch) fits 再也没有来往过 too; colloquial 跟…来往 favours 来往"
+  },
+  {
+    "hanzi": "来往",
+    "field": "quiz.en",
+    "before": "Since that quarrel, the two of them have had nothing to do with each other.",
+    "after": "Mum won't let me hang around with those shady characters.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "特性",
+    "field": "quiz.zh",
+    "before": "每种动物都有自己的特性，比如猫喜欢在夜里活动。",
+    "after": "每种金属都有自己的特性，比如铜的导电性特别好。",
+    "why": "an animal's night-time habits are 习性, not 特性"
+  },
+  {
+    "hanzi": "特性",
+    "field": "quiz.en",
+    "before": "Every animal has its own traits; cats, for example, like to be active at night.",
+    "after": "Every metal has its own properties; copper, for example, conducts electricity especially well.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "保健",
+    "field": "quiz.zh",
+    "before": "适当做做眼保健操，可以缓解眼睛疲劳。",
+    "after": "人上了年纪，就要更加重视日常的保健。",
+    "why": "hanzi was inside the fixed compound 眼保健操; use 保健 on its own"
+  },
+  {
+    "hanzi": "保健",
+    "field": "quiz.en",
+    "before": "Doing some eye exercises now and then can relieve eye strain.",
+    "after": "As people get older, they need to pay more attention to everyday health care.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "扩展",
+    "field": "quiz.zh",
+    "before": "多读书可以扩展我们的知识面。",
+    "after": "安装了这个插件以后，软件就能扩展出很多新功能。",
+    "why": "知识面 collocates with 扩大/拓宽 (扩大 is a likely distractor); 扩展功能 is the natural pairing"
+  },
+  {
+    "hanzi": "扩展",
+    "field": "quiz.en",
+    "before": "Reading more can broaden our knowledge.",
+    "after": "Once you install this plug-in, the software can be extended with lots of new features.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "后期",
+    "field": "quiz.zh",
+    "before": "这位画家后期的作品风格发生了很大变化。",
+    "after": "比赛进入后期，双方队员的体力都明显下降了。",
+    "why": "前期 (same batch) fit 画家后期的作品 equally; falling stamina points to the late stage"
+  },
+  {
+    "hanzi": "后期",
+    "field": "quiz.en",
+    "before": "The style of this painter's later works changed a great deal.",
+    "after": "As the match entered its later stage, players on both sides were visibly tiring.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "观赏",
+    "field": "quiz.en",
+    "before": "This fish is brightly coloured and is prized as an ornamental fish.",
+    "after": "This fish is brightly coloured and has great ornamental value.",
+    "why": "\"prized as an ornamental fish\" did not render 很有观赏价值 faithfully"
+  },
+  {
+    "hanzi": "艰辛",
+    "field": "quiz.zh",
+    "before": "父母为了把我们养大，付出了很多艰辛。",
+    "after": "他历尽艰辛，终于找到了失散多年的妹妹。",
+    "why": "付出了很多艰辛 is an awkward collocation; 历尽艰辛 is the standard one"
+  },
+  {
+    "hanzi": "艰辛",
+    "field": "quiz.en",
+    "before": "Our parents went through great hardship to raise us.",
+    "after": "After going through countless hardships, he finally found the sister he had lost touch with for years.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "亲属",
+    "field": "quiz.zh",
+    "before": "他在当地没有任何亲属，只能一个人生活。",
+    "after": "这项手续只能由本人或者直系亲属代为办理。",
+    "why": "亲戚/亲人 is more natural in 当地没有任何亲属; formal 直系亲属 requires 亲属"
+  },
+  {
+    "hanzi": "亲属",
+    "field": "quiz.en",
+    "before": "He has no relatives there and has to live on his own.",
+    "after": "This procedure can only be handled by the person themselves or an immediate family member.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "发电",
+    "field": "quiz.zh",
+    "before": "停电的时候，医院会自动启用备用发电机。",
+    "after": "这座大坝建成以后，每年可以发电几十亿度。",
+    "why": "hanzi was inside the noun 发电机; use the verb sense"
+  },
+  {
+    "hanzi": "发电",
+    "field": "quiz.en",
+    "before": "When there's a power cut, the hospital automatically switches to its backup generator.",
+    "after": "Once built, this dam will be able to generate billions of kilowatt-hours of electricity a year.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "前期",
+    "field": "quiz.zh",
+    "before": "这种病前期症状不明显，很多人没有及时发现。",
+    "after": "这个项目前期投入很大，要两三年以后才能赚钱。",
+    "why": "the medical term is 早期症状, not 前期症状; 前期投入 is the standard collocation"
+  },
+  {
+    "hanzi": "前期",
+    "field": "quiz.en",
+    "before": "This disease has no obvious symptoms in its early stage, so many people don't catch it in time.",
+    "after": "This project needs heavy investment in its early stage and will take two or three years to turn a profit.",
+    "why": "match new quiz sentence"
+  },
+  {
+    "hanzi": "姨",
+    "field": "example.zh",
+    "before": "我妈妈有两个妹妹，我叫她们大姨和小姨。",
+    "after": "我妈妈有两个姐姐，我叫她们大姨和二姨。",
+    "why": "mother's younger sisters are not called 大姨 (大姨 is her eldest sister)"
+  },
+  {
+    "hanzi": "姨",
+    "field": "example.en",
+    "before": "My mother has two younger sisters; I call them Big Auntie and Little Auntie.",
+    "after": "My mother has two older sisters; I call them Big Auntie and Second Auntie.",
+    "why": "match new example sentence"
+  },
+  {
+    "hanzi": "入境",
+    "field": "quiz.zh",
+    "before": "今年前十个月，入境旅游人数比去年增长了两成。",
+    "after": "飞机降落以后，乘客要先排队办理入境手续。",
+    "why": "出境 (same batch) fit 入境旅游人数 equally; landing points to 入境"
+  },
+  {
+    "hanzi": "入境",
+    "field": "quiz.en",
+    "before": "In the first ten months of this year, the number of inbound tourists rose by twenty percent over last year.",
+    "after": "After the plane lands, passengers first queue to go through entry formalities.",
+    "why": "match new quiz sentence"
+  }
+]

@@ -1,0 +1,205 @@
+[
+ {
+  "hanzi": "逼",
+  "field": "quiz.zh",
+  "before": "要不是生活所逼，他也不会一个人跑到外地打工。",
+  "after": "要不是被生活所逼，他也不会一个人跑到外地打工。",
+  "why": "\"生活所逼\" needs the passive 被/为 frame; \"被生活所逼\" is the idiomatic form."
+ },
+ {
+  "hanzi": "黄",
+  "field": "quiz.zh",
+  "before": "过马路时看到黄灯，最好停下来等一等。",
+  "after": "开车遇到黄灯时，最好慢慢停下来，别抢着过去。",
+  "why": "Pedestrians crossing the road face red/green signals, not a yellow light; reset the scene to driving."
+ },
+ {
+  "hanzi": "黄",
+  "field": "quiz.en",
+  "before": "When you see a yellow light while crossing the road, it's best to stop and wait.",
+  "after": "When you meet a yellow light while driving, it's best to slow to a stop rather than rush through.",
+  "why": "Matches the rewritten quiz sentence."
+ },
+ {
+  "hanzi": "粉",
+  "field": "example.zh",
+  "before": "把面粉和水搅在一起，就可以开始和面了。",
+  "after": "把面粉和水混在一起，揉成一个光滑的面团。",
+  "why": "Original said \"mix flour and water, then you can start 和面\" — mixing them already is 和面, so the sentence was circular."
+ },
+ {
+  "hanzi": "粉",
+  "field": "example.en",
+  "before": "Mix the flour with water and you can start kneading the dough.",
+  "after": "Mix the flour with water and knead it into a smooth dough.",
+  "why": "Matches the rewritten example."
+ },
+ {
+  "hanzi": "血液",
+  "field": "quiz.zh",
+  "before": "多喝水能促进血液循环，对身体有好处。",
+  "after": "适当运动可以促进血液循环，对身体有好处。",
+  "why": "Drinking water \"promoting blood circulation\" is a dubious claim; exercise is the standard collocation."
+ },
+ {
+  "hanzi": "血液",
+  "field": "quiz.en",
+  "before": "Drinking plenty of water improves blood circulation and is good for your health.",
+  "after": "Moderate exercise improves blood circulation and is good for your health.",
+  "why": "Matches the rewritten quiz."
+ },
+ {
+  "hanzi": "密",
+  "field": "quiz.zh",
+  "before": "这两个城市之间的经济联系非常紧密。",
+  "after": "菜苗种得太密了，得拔掉一些才能长好。",
+  "why": "Quiz tested 密 only inside 紧密; use the standalone adjective \"dense\" so the blank is the word itself."
+ },
+ {
+  "hanzi": "密",
+  "field": "quiz.en",
+  "before": "The economic ties between these two cities are very close.",
+  "after": "The seedlings were planted too densely; some need to be pulled out for the rest to grow well.",
+  "why": "Matches the rewritten quiz."
+ },
+ {
+  "hanzi": "脑子",
+  "field": "quiz.zh",
+  "before": "我昨晚没睡好，今天脑子一片空白，什么都想不起来。",
+  "after": "我这脑子真不好使，刚说过的话转眼就忘了。",
+  "why": "\"脑子一片空白\" also works with the likely distractor 头脑 (\"头脑一片空白\"); \"脑子不好使\" is specific to 脑子."
+ },
+ {
+  "hanzi": "脑子",
+  "field": "quiz.en",
+  "before": "I didn't sleep well last night, and today my mind is a total blank; I can't remember anything.",
+  "after": "My brain really isn't working well; I forget what I've just said in the blink of an eye.",
+  "why": "Matches the rewritten quiz."
+ },
+ {
+  "hanzi": "免",
+  "field": "quiz.zh",
+  "before": "出门前多检查一遍，以免落下什么东西。",
+  "after": "客气话就免了吧，咱们都是老朋友了。",
+  "why": "Quiz tested 免 only inside 以免; use the standalone verb \"dispense with\" so the blank is the word itself."
+ },
+ {
+  "hanzi": "免",
+  "field": "quiz.en",
+  "before": "Check again before you leave so you don't leave anything behind.",
+  "after": "Let's skip the pleasantries; we're old friends.",
+  "why": "Matches the rewritten quiz."
+ },
+ {
+  "hanzi": "热线",
+  "field": "indonesian",
+  "before": "saluran siaga; hotline",
+  "after": "saluran telepon khusus; hotline",
+  "why": "\"saluran siaga\" means an emergency standby line; a service hotline is \"saluran telepon khusus\"."
+ },
+ {
+  "hanzi": "妙",
+  "field": "quiz.zh",
+  "before": "这部电影的结尾设计得非常巧妙，让人意想不到。",
+  "after": "他这步棋走得真妙，一下子就扭转了局面。",
+  "why": "Quiz tested 妙 only inside 巧妙 (and 巧 would also be a plausible fill); use the standalone adjective."
+ },
+ {
+  "hanzi": "妙",
+  "field": "quiz.en",
+  "before": "The ending of this film is very cleverly designed and catches you completely by surprise.",
+  "after": "That was a brilliant move of his; it turned the game around at a stroke.",
+  "why": "Matches the rewritten quiz."
+ },
+ {
+  "hanzi": "货车",
+  "field": "quiz.zh",
+  "before": "这条路上禁止货车通行，只能走小汽车。",
+  "after": "这条路上禁止货车通行，只有小汽车可以走。",
+  "why": "\"只能走小汽车\" is ungrammatical (the road cannot \"walk cars\"); rephrased."
+ },
+ {
+  "hanzi": "中毒",
+  "field": "quiz.zh",
+  "before": "冬天在不通风的房间里烧炭取暖，很容易一氧化碳中毒。",
+  "after": "冬天在不通风的房间里烧炭取暖，很容易发生一氧化碳中毒。",
+  "why": "\"很容易一氧化碳中毒\" lacks a verb; \"发生……中毒\" is the standard collocation."
+ },
+ {
+  "hanzi": "正面",
+  "field": "quiz.zh",
+  "before": "这次活动在社会上产生了很好的正面影响。",
+  "after": "这次活动在社会上产生了很大的正面影响。",
+  "why": "\"很好的正面影响\" is redundant (good + positive); \"很大的正面影响\" is the natural collocation."
+ },
+ {
+  "hanzi": "正面",
+  "field": "quiz.en",
+  "before": "This event had a very good, positive impact on society.",
+  "after": "This event had a big positive impact on society.",
+  "why": "Matches the rewritten quiz."
+ },
+ {
+  "hanzi": "限",
+  "field": "quiz.zh",
+  "before": "这次作文比赛字数限八百字以内，超出的要扣分。",
+  "after": "这次作文比赛每篇限八百字以内，超出的要扣分。",
+  "why": "\"字数限八百字\" repeats 字 awkwardly."
+ },
+ {
+  "hanzi": "限",
+  "field": "quiz.en",
+  "before": "Entries for this essay contest are limited to 800 characters; anything over loses points.",
+  "after": "In this essay contest each entry is limited to 800 characters; anything over loses points.",
+  "why": "Matches the rewritten quiz."
+ },
+ {
+  "hanzi": "赖",
+  "field": "indonesian",
+  "before": "bergantung; berlama-lama, tidak mau beranjak; jelek (dalam 'lumayan')",
+  "after": "bergantung; bermalas-malasan, enggan beranjak; jelek (dalam ungkapan \"tidak jelek\")",
+  "why": "\"jelek (dalam 'lumayan')\" was confusing; also \"berlama-lama\" did not capture lingering in bed."
+ },
+ {
+  "hanzi": "赞同",
+  "field": "quiz.zh",
+  "before": "他的观点我并不完全赞同，但我尊重他。",
+  "after": "对于周末加班的提议，全组只有他一个人举手赞同。",
+  "why": "Original \"我并不完全赞同他的观点\" works equally with the look-alike distractor 认同 (also in this batch); voting by show of hands fits only 赞同."
+ },
+ {
+  "hanzi": "赞同",
+  "field": "quiz.en",
+  "before": "I don't fully agree with his views, but I respect him.",
+  "after": "Of the whole team, he was the only one who raised his hand in favor of the proposal to work weekends.",
+  "why": "Matches the rewritten quiz."
+ },
+ {
+  "hanzi": "预定",
+  "field": "gloss",
+  "before": "to book; to reserve; to schedule",
+  "after": "to schedule, to fix in advance; to book, to reserve",
+  "why": "Standard 预定 means pre-arranged/scheduled (预订 is the strict \"book\"); gloss should cover the core sense."
+ },
+ {
+  "hanzi": "预定",
+  "field": "indonesian",
+  "before": "memesan; mereservasi; menjadwalkan",
+  "after": "menjadwalkan, menetapkan sebelumnya; memesan",
+  "why": "Matches the corrected gloss."
+ },
+ {
+  "hanzi": "预定",
+  "field": "quiz.zh",
+  "before": "国庆节期间酒店很紧张，最好提前一个月预定房间。",
+  "after": "由于天气原因，飞机没能按预定时间起飞。",
+  "why": "Booking quiz was equally answerable with the sound-alike 预订 (the dictionary-standard word for booking rooms); \"预定时间\" is unambiguous."
+ },
+ {
+  "hanzi": "预定",
+  "field": "quiz.en",
+  "before": "Hotels are scarce during the National Day holiday; it's best to book a room a month in advance.",
+  "after": "Because of the weather, the plane couldn't take off at the scheduled time.",
+  "why": "Matches the rewritten quiz."
+ }
+]

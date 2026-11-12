@@ -1,0 +1,163 @@
+[
+ {
+  "hanzi": "日夜",
+  "field": "quiz.zh",
+  "before": "母亲日夜守在病床前，自己却瘦了一大圈。",
+  "after": "母亲日夜守在病床前，人都瘦了一大圈。",
+  "why": "“自己却瘦了”: 却 sets up a contrast that is not there; “人都瘦了一大圈” is the idiomatic way to say someone visibly lost weight from strain."
+ },
+ {
+  "hanzi": "日夜",
+  "field": "quiz.en",
+  "before": "Mother kept watch by the sickbed day and night and lost a lot of weight herself.",
+  "after": "Mother kept watch by the sickbed day and night and grew visibly thinner.",
+  "why": "Matches the revised sentence."
+ },
+ {
+  "hanzi": "余额",
+  "field": "quiz.en",
+  "before": "I checked my bank card and found only two hundred yuan left in the balance.",
+  "after": "I checked my bank card and found the balance was down to just two hundred yuan.",
+  "why": "Smoother, more faithful English."
+ },
+ {
+  "hanzi": "解说",
+  "field": "quiz.en",
+  "before": "This soccer match was given live commentary by a well-known sports commentator.",
+  "after": "A well-known sports commentator provided live commentary for this soccer match.",
+  "why": "Original English passive was awkward."
+ },
+ {
+  "hanzi": "定时",
+  "field": "quiz.zh",
+  "before": "我把空调设置了定时，两个小时以后会自动关掉。",
+  "after": "我给空调设了定时，两个小时以后它会自动关掉。",
+  "why": "“把空调设置了定时” is an awkward 把-construction; “给空调设了定时” is what people say."
+ },
+ {
+  "hanzi": "奶粉",
+  "field": "example.zh",
+  "before": "妈妈每天早上给孩子冲一杯奶粉。",
+  "after": "妈妈每天早上给孩子冲一瓶奶粉。",
+  "why": "Infant formula is made up in a bottle (瓶), not a cup; matches the \"formula\" gloss."
+ },
+ {
+  "hanzi": "奶粉",
+  "field": "example.en",
+  "before": "Every morning, Mom makes the child a cup of formula.",
+  "after": "Every morning, Mom makes the baby a bottle of formula.",
+  "why": "Matches the revised sentence."
+ },
+ {
+  "hanzi": "轮子",
+  "field": "quiz.zh",
+  "before": "自行车的轮子扎了个钉子，没气了。",
+  "after": "这辆玩具车少了一个轮子，跑不起来了。",
+  "why": "A nail punctures the tyre (车胎), not the 轮子; “轮子扎了个钉子” is unidiomatic."
+ },
+ {
+  "hanzi": "轮子",
+  "field": "quiz.en",
+  "before": "The bike wheel picked up a nail and went flat.",
+  "after": "This toy car is missing a wheel and won't run.",
+  "why": "Matches the revised sentence."
+ },
+ {
+  "hanzi": "新兴",
+  "field": "quiz.zh",
+  "before": "随着互联网的普及，很多新兴职业出现了，比如网络主播。",
+  "after": "随着互联网的普及，出现了很多新兴职业，比如网络主播。",
+  "why": "Indefinite new subject is introduced with existential word order (出现了很多…), not “很多…出现了”."
+ },
+ {
+  "hanzi": "宏大",
+  "field": "example.zh",
+  "before": "这座体育馆规模宏大，可以容纳十万名观众。",
+  "after": "这座体育场规模宏大，可以容纳十万名观众。",
+  "why": "体育馆 is an indoor gym/arena that cannot seat 100,000; a stadium is 体育场 (the English already said stadium)."
+ },
+ {
+  "hanzi": "梅花",
+  "field": "quiz.zh",
+  "before": "下了一夜雪，院子里的梅花开得更红了。",
+  "after": "下了一夜雪，院子里的梅花在白雪的映衬下显得更红了。",
+  "why": "Snow does not make the blossoms bloom redder; they look redder against the snow."
+ },
+ {
+  "hanzi": "梅花",
+  "field": "quiz.en",
+  "before": "After a night of snow, the plum blossoms in the courtyard looked even redder.",
+  "after": "After a night of snow, the plum blossoms in the courtyard looked even redder against the white.",
+  "why": "Matches the revised sentence."
+ },
+ {
+  "hanzi": "难点",
+  "field": "example.zh",
+  "before": "这节课的难点是如何区分这两个语法。",
+  "after": "这节课的难点是如何区分这两个语法点。",
+  "why": "“两个语法” is ungrammatical; individual grammar items are 语法点."
+ },
+ {
+  "hanzi": "衣食住行",
+  "field": "quiz.en",
+  "before": "Now that I'm working, I have to cover all my own living costs and can't rely on my parents anymore.",
+  "after": "Now that I'm working, I have to provide my own food, clothing, housing and transport and can't rely on my parents anymore.",
+  "why": "\"Living costs\" lost the literal meaning of the word being tested."
+ },
+ {
+  "hanzi": "分级",
+  "field": "quiz.zh",
+  "before": "这些电影实行分级制度，有些不适合儿童观看。",
+  "after": "很多国家对电影实行分级制度，有些电影不适合儿童观看。",
+  "why": "“这些电影实行分级制度” has films as the agent of a policy; a country or authority 实行 a rating system."
+ },
+ {
+  "hanzi": "分级",
+  "field": "quiz.en",
+  "before": "These films are subject to a rating system, and some aren't suitable for children.",
+  "after": "Many countries have a rating system for films, and some films aren't suitable for children.",
+  "why": "Matches the revised sentence."
+ },
+ {
+  "hanzi": "港口",
+  "field": "example.zh",
+  "before": "上海港口每天都有大量货船进出。",
+  "after": "上海港是世界上最繁忙的港口之一，每天都有大量货船进出。",
+  "why": "“上海港口” is not the standard name (上海港); rewritten so 港口 is used as a common noun."
+ },
+ {
+  "hanzi": "港口",
+  "field": "example.en",
+  "before": "Large numbers of cargo ships come in and out of the port of Shanghai every day.",
+  "after": "The port of Shanghai is one of the busiest in the world, with large numbers of cargo ships coming and going every day.",
+  "why": "Matches the revised sentence."
+ },
+ {
+  "hanzi": "历年",
+  "field": "quiz.en",
+  "before": "This year's number of applicants set a record high over all previous years.",
+  "after": "This year's number of applicants was the highest of any year on record.",
+  "why": "Original English (\"a record high over all previous years\") was clumsy."
+ },
+ {
+  "hanzi": "洗漱",
+  "field": "indonesian",
+  "before": "mencuci muka dan menggosok gigi, bersiap-siap",
+  "after": "mencuci muka dan menggosok gigi",
+  "why": "\"bersiap-siap\" (to get ready) is not a meaning of 洗漱."
+ },
+ {
+  "hanzi": "现存",
+  "field": "quiz.zh",
+  "before": "据统计，野外现存的大熊猫约有一千八百多只。",
+  "after": "据统计，野外现存的大熊猫有一千八百多只。",
+  "why": "约 together with 多 is redundant (“约有一千八百多只”)."
+ },
+ {
+  "hanzi": "现存",
+  "field": "quiz.en",
+  "before": "According to statistics, there are about 1,800 giant pandas left in the wild.",
+  "after": "According to statistics, there are just over 1,800 giant pandas left in the wild.",
+  "why": "Matches the revised sentence."
+ }
+]

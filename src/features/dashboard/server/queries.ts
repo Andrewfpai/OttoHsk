@@ -18,7 +18,8 @@ const DRILL_LINKS: Record<DrillKind, { label: string; href: string }> = {
   confusable: { label: "Confusables", href: "/confusables" },
   cloze: { label: "Fill in", href: "/cloze" },
   ordering: { label: "Sentence order", href: "/ordering" },
-  error: { label: "Find the error", href: "/errors" },
+  error: { label: "Find the error", href: "/dashboard" },
+  sentence: { label: "Sentence fill", href: "/sentences" },
   reading: { label: "Reading", href: "/reading" },
 };
 

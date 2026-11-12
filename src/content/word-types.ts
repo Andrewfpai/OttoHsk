@@ -21,8 +21,10 @@ export type Word = {
   /** Every dictionary sense, for the word list's detail view. May be empty. */
   meanings: string[];
   pos: string[];
-  /** Frequency rank; lower is more common. */
+  /** Study order: frequency rank for HSK 5; for HSK 6, its place in the list. */
   rank: number;
+  /** HSK 6 only: which new HSK list the word comes from. */
+  from?: "HSK 3.0 L5" | "HSK 3.0 L6";
   /** One sentence using the word in the sense its level tests. Shown in practice. */
   example: Example | null;
   /**

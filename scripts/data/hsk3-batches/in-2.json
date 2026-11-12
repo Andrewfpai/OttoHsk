@@ -1,0 +1,2544 @@
+[
+ {
+  "hanzi": "泪",
+  "pinyin": "lèi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "tear",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "货物",
+  "pinyin": "huòwù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "goods",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "群体",
+  "pinyin": "qúntǐ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "group, community",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "提交",
+  "pinyin": "tíjiāo",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to submit, to hand in",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "共享",
+  "pinyin": "gòngxiǎng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to share",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "信用",
+  "pinyin": "xìnyòng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "trustworthiness, credit",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "乡",
+  "pinyin": "xiāng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "countryside, village",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "天上",
+  "pinyin": "tiānshàng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "in the sky, heaven",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "存款",
+  "pinyin": "cúnkuǎn",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "translation": "to deposit money; deposit",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "短期",
+  "pinyin": "duǎnqī",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "translation": "short term; short-term",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "深度",
+  "pinyin": "shēndù",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "translation": "depth; deep",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "停留",
+  "pinyin": "tíngliú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to stay, to remain",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "删",
+  "pinyin": "shān",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to delete",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "如下",
+  "pinyin": "rúxià",
+  "pos": [
+   "verb"
+  ],
+  "translation": "as follows",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "外婆",
+  "pinyin": "wàipó",
+  "pos": [
+   "noun"
+  ],
+  "translation": "grandmother",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "飞行员",
+  "pinyin": "fēixíngyuán",
+  "pos": [
+   "noun"
+  ],
+  "translation": "pilot",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "大力",
+  "pinyin": "dàlì",
+  "pos": [
+   "noun",
+   "adverb"
+  ],
+  "translation": "great strength; vigorously, with great effort",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "长久",
+  "pinyin": "chángjiǔ",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "long-lasting",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "中华民族",
+  "pinyin": "Zhōnghuá Mínzú",
+  "pos": [],
+  "translation": "Chinese nation",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "紧密",
+  "pinyin": "jǐnmì",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "close, tight",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "体力",
+  "pinyin": "tǐlì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "physical strength",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "视为",
+  "pinyin": "shìwéi",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to regard as",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "诗人",
+  "pinyin": "shīrén",
+  "pos": [
+   "noun"
+  ],
+  "translation": "poet",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "打断",
+  "pinyin": "dǎduàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to interrupt",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "语音",
+  "pinyin": "yǔyīn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "pronunciation, voice",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "夜间",
+  "pinyin": "yèjiān",
+  "pos": [
+   "noun"
+  ],
+  "translation": "night, nighttime",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "有助于",
+  "pinyin": "yǒuzhùyú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to help, to contribute to",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "用力",
+  "pinyin": "yònglì",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to exert effort, to use strength",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "拨打",
+  "pinyin": "bōdǎ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to dial",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "行程",
+  "pinyin": "xíngchéng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "itinerary",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "病房",
+  "pinyin": "bìngfáng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "sickroom, ward",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "研发",
+  "pinyin": "yánfā",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to research and develop",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "西装",
+  "pinyin": "xīzhuāng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "suit",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "灰色",
+  "pinyin": "huīsè",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "translation": "gray color; gray, ashen",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "销量",
+  "pinyin": "xiāoliàng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "sales volume",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "分类",
+  "pinyin": "fēnlèi",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to classify",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "外部",
+  "pinyin": "wàibù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "outside, exterior",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "名称",
+  "pinyin": "míngchēng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "name, designation",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "向上",
+  "pinyin": "xiàngshàng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "upward; to go up",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "预约",
+  "pinyin": "yùyuē",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to make an appointment, to reserve",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "更换",
+  "pinyin": "gēnghuàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to replace, to change",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "丢失",
+  "pinyin": "diūshī",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to lose, to be missing",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "近期",
+  "pinyin": "jìnqī",
+  "pos": [
+   "noun"
+  ],
+  "translation": "recent period",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "评",
+  "pinyin": "píng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to judge, to evaluate",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "缓慢",
+  "pinyin": "huǎnmàn",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "slow",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "行走",
+  "pinyin": "xíngzǒu",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to walk",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "出自",
+  "pinyin": "chūzì",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to come from",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "由此",
+  "pinyin": "yóu cǐ",
+  "pos": [],
+  "translation": "from this, thus",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "租金",
+  "pinyin": "zūjīn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "rent",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "总体",
+  "pinyin": "zǒngtǐ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "overall, general",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "应对",
+  "pinyin": "yìngduì",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to deal with, to handle",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "光线",
+  "pinyin": "guāngxiàn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "light, ray",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "强度",
+  "pinyin": "qiángdù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "intensity, strength",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "一次性",
+  "pinyin": "yícìxìng",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "disposable",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "变动",
+  "pinyin": "biàndòng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to change, to fluctuate",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "烧烤",
+  "pinyin": "shāokǎo",
+  "pos": [
+   "noun"
+  ],
+  "translation": "barbecue",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "新型",
+  "pinyin": "xīnxíng",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "new type",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "互动",
+  "pinyin": "hùdòng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to interact",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "赛场",
+  "pinyin": "sàichǎng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "competition venue, arena",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "人力",
+  "pinyin": "rénlì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "manpower, labor",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "低头",
+  "pinyin": "dītóu",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to lower one's head",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "子女",
+  "pinyin": "zǐnǚ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "children, sons and daughters",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "面向",
+  "pinyin": "miànxiàng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to face, to be oriented toward",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "消费者",
+  "pinyin": "xiāofèizhě",
+  "pos": [
+   "noun"
+  ],
+  "translation": "consumer",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "住房",
+  "pinyin": "zhùfáng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "housing",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "此后",
+  "pinyin": "cǐhòu",
+  "pos": [
+   "noun"
+  ],
+  "translation": "after this",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "动人",
+  "pinyin": "dòngrén",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "moving, touching",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "有益",
+  "pinyin": "yǒuyì",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "beneficial",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "户外",
+  "pinyin": "hùwài",
+  "pos": [
+   "noun"
+  ],
+  "translation": "outdoors, outdoor",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "急需",
+  "pinyin": "jíxū",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to urgently need",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "凭借",
+  "pinyin": "píngjiè",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to rely on, to use",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "看作",
+  "pinyin": "kànzuò",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to regard as, to consider as",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "橘子",
+  "pinyin": "júzi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "orange",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "剧场",
+  "pinyin": "jùchǎng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "theater",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "有害",
+  "pinyin": "yǒu hài",
+  "pos": [],
+  "translation": "harmful",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "开业",
+  "pinyin": "kāiyè",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to open for business",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "图书",
+  "pinyin": "túshū",
+  "pos": [
+   "noun"
+  ],
+  "translation": "books",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "泪水",
+  "pinyin": "lèishuǐ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "tears",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "电器",
+  "pinyin": "diànqì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "electrical appliance",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "步行",
+  "pinyin": "bùxíng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to walk",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "彩色",
+  "pinyin": "cǎisè",
+  "pos": [
+   "noun"
+  ],
+  "translation": "color",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "上涨",
+  "pinyin": "shàngzhǎng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to rise, to increase",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "收看",
+  "pinyin": "shōukàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to watch (TV, program)",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "海外",
+  "pinyin": "hǎiwài",
+  "pos": [
+   "noun"
+  ],
+  "translation": "overseas, abroad",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "公务员",
+  "pinyin": "gōngwùyuán",
+  "pos": [
+   "noun"
+  ],
+  "translation": "civil servant",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "热量",
+  "pinyin": "rèliàng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "heat",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "早晚",
+  "pinyin": "zǎowǎn",
+  "pos": [
+   "noun",
+   "adverb"
+  ],
+  "translation": "morning and evening; sooner or later",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "亏",
+  "pinyin": "kuī",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to lose, to suffer a loss",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "长度",
+  "pinyin": "chángdù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "length",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "签订",
+  "pinyin": "qiāndìng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to sign, to conclude a contract",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "迎",
+  "pinyin": "yíng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to welcome",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "鸭子",
+  "pinyin": "yāzi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "duck",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "车主",
+  "pinyin": "chēzhǔ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "vehicle owner",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "赏",
+  "pinyin": "shǎng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to appreciate, to reward",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "引进",
+  "pinyin": "yǐnjìn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to introduce, to bring in",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "充电",
+  "pinyin": "chōngdiàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to charge",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "促销",
+  "pinyin": "cùxiāo",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to promote (sales)",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "加热",
+  "pinyin": "jiārè",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to heat",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "电动",
+  "pinyin": "diàndòng",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "electric, electrically powered",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "番茄",
+  "pinyin": "fānqié",
+  "pos": [
+   "noun"
+  ],
+  "translation": "tomato",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "到期",
+  "pinyin": "dàoqī",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to expire",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "高大",
+  "pinyin": "gāodà",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "tall, lofty",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "动画",
+  "pinyin": "dònghuà",
+  "pos": [
+   "noun"
+  ],
+  "translation": "animation, cartoon",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "研制",
+  "pinyin": "yánzhì",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to research and develop",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "成年",
+  "pinyin": "chéngnián",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to become an adult",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "职工",
+  "pinyin": "zhígōng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "staff, worker",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "长远",
+  "pinyin": "chángyuǎn",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "long-term, far-reaching",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "外形",
+  "pinyin": "wàixíng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "appearance, shape",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "赠",
+  "pinyin": "zèng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to give as a gift",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "大爷",
+  "pinyin": "dàye",
+  "pos": [
+   "noun"
+  ],
+  "translation": "uncle, elderly man",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "熟人",
+  "pinyin": "shúrén",
+  "pos": [
+   "noun"
+  ],
+  "translation": "acquaintance",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "初期",
+  "pinyin": "chūqī",
+  "pos": [
+   "noun"
+  ],
+  "translation": "early period",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "在线",
+  "pinyin": "zàixiàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "online",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "河流",
+  "pinyin": "héliú",
+  "pos": [
+   "noun"
+  ],
+  "translation": "river",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "通行",
+  "pinyin": "tōngxíng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to pass through",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "一代",
+  "pinyin": "yídài",
+  "pos": [
+   "noun"
+  ],
+  "translation": "generation",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "纪念日",
+  "pinyin": "jìniànrì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "anniversary",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "聘请",
+  "pinyin": "pìnqǐng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to hire",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "门诊",
+  "pinyin": "ménzhěn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "outpatient clinic",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "邮票",
+  "pinyin": "yóupiào",
+  "pos": [
+   "noun"
+  ],
+  "translation": "postage stamp",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "开幕",
+  "pinyin": "kāimù",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to open a ceremony or exhibition",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "树木",
+  "pinyin": "shùmù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "trees",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "特有",
+  "pinyin": "tèyǒu",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "characteristic, distinctive",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "领带",
+  "pinyin": "lǐngdài",
+  "pos": [
+   "noun"
+  ],
+  "translation": "neckite",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "闹钟",
+  "pinyin": "nàozhōng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "alarm clock",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "折扣",
+  "pinyin": "zhékòu",
+  "pos": [
+   "noun"
+  ],
+  "translation": "discount",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "先后",
+  "pinyin": "xiānhòu",
+  "pos": [
+   "noun",
+   "adverb"
+  ],
+  "translation": "succession; one after another",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "气球",
+  "pinyin": "qìqiú",
+  "pos": [
+   "noun"
+  ],
+  "translation": "balloon",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "敢于",
+  "pinyin": "gǎnyú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to dare to",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "书房",
+  "pinyin": "shūfáng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "study, den",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "总数",
+  "pinyin": "zǒngshù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "total, sum",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "食用",
+  "pinyin": "shíyòng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to eat, to be edible",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "大于",
+  "pinyin": "dàyú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to be greater than",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "中期",
+  "pinyin": "zhōngqī",
+  "pos": [
+   "noun"
+  ],
+  "translation": "medium term, mid-term",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "里头",
+  "pinyin": "lǐtou",
+  "pos": [
+   "noun"
+  ],
+  "translation": "inside",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "存放",
+  "pinyin": "cúnfàng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to deposit, to store",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "科研",
+  "pinyin": "kēyán",
+  "pos": [
+   "verb"
+  ],
+  "translation": "scientific research",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "高效",
+  "pinyin": "gāoxiào",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "efficient, high-efficiency",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "虫子",
+  "pinyin": "chóngzi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "insect, bug",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "此前",
+  "pinyin": "cǐqián",
+  "pos": [
+   "noun"
+  ],
+  "translation": "before this",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "大米",
+  "pinyin": "dàmǐ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "rice",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "失恋",
+  "pinyin": "shīliàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to lose in love",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "工艺",
+  "pinyin": "gōngyì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "craft, technology",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "领取",
+  "pinyin": "lǐngqǔ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to receive, to collect",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "展出",
+  "pinyin": "zhǎnchū",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to exhibit, to display",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "路人",
+  "pinyin": "lùrén",
+  "pos": [
+   "noun"
+  ],
+  "translation": "passerby",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "优质",
+  "pinyin": "yōuzhì",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "high quality",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "拖鞋",
+  "pinyin": "tuōxié",
+  "pos": [
+   "noun"
+  ],
+  "translation": "slippers",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "山区",
+  "pinyin": "shānqū",
+  "pos": [
+   "noun"
+  ],
+  "translation": "mountain area",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "好评",
+  "pinyin": "hǎopíng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "positive review, praise",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "驾照",
+  "pinyin": "jiàzhào",
+  "pos": [
+   "noun"
+  ],
+  "translation": "driver's license",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "水分",
+  "pinyin": "shuǐfèn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "moisture, water content",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "单一",
+  "pinyin": "dānyī",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "single, singular",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "二手",
+  "pinyin": "èrshǒu",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "second-hand",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "现代化",
+  "pinyin": "xiàndàihuà",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to modernize",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "优良",
+  "pinyin": "yōuliáng",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "excellent, fine",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "儿女",
+  "pinyin": "érnǚ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "children, sons and daughters",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "账号",
+  "pinyin": "zhànghào",
+  "pos": [
+   "noun"
+  ],
+  "translation": "account number",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "住宿",
+  "pinyin": "zhùsù",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to stay, to lodge",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "站台",
+  "pinyin": "zhàntái",
+  "pos": [
+   "noun"
+  ],
+  "translation": "platform",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "跑道",
+  "pinyin": "pǎodào",
+  "pos": [
+   "noun"
+  ],
+  "translation": "runway, track",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "暴雨",
+  "pinyin": "bàoyǔ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "torrential rain, rainstorm",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "原有",
+  "pinyin": "yuán yǒu",
+  "pos": [],
+  "translation": "original, previously existing",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "试用",
+  "pinyin": "shìyòng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to try out, to be on probation",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "雨水",
+  "pinyin": "yǔshuǐ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "rainwater",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "旅行社",
+  "pinyin": "lǚxíngshè",
+  "pos": [
+   "noun"
+  ],
+  "translation": "travel agency",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "柜子",
+  "pinyin": "guìzi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "cupboard, cabinet",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "沙子",
+  "pinyin": "shāzi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "sand",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "学科",
+  "pinyin": "xuékē",
+  "pos": [
+   "noun"
+  ],
+  "translation": "discipline, subject",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "产量",
+  "pinyin": "chǎnliàng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "output, production",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "餐饮",
+  "pinyin": "cānyǐn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "catering",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "舍得",
+  "pinyin": "shěde",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to be willing to",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "大妈",
+  "pinyin": "dàmā",
+  "pos": [
+   "noun"
+  ],
+  "translation": "aunt, middle-aged woman",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "纪录片",
+  "pinyin": "jìlùpiàn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "documentary",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "汗水",
+  "pinyin": "hànshuǐ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "sweat",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "离职",
+  "pinyin": "lízhí",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to resign, to leave a job",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "带动",
+  "pinyin": "dàidòng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to drive, to bring about",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "城区",
+  "pinyin": "chéngqū",
+  "pos": [
+   "noun"
+  ],
+  "translation": "urban area",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "大批",
+  "pinyin": "dàpī",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "large batch",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "正如",
+  "pinyin": "zhèngrú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "just like, as",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "制订",
+  "pinyin": "zhìdìng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to formulate, to work out",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "外观",
+  "pinyin": "wàiguān",
+  "pos": [
+   "noun"
+  ],
+  "translation": "appearance, exterior",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "加深",
+  "pinyin": "jiāshēn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to deepen",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "调研",
+  "pinyin": "diàoyán",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to investigate, to conduct research",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "胆小",
+  "pinyin": "dǎnxiǎo",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "timid, cowardly",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "影视",
+  "pinyin": "yǐngshì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "film and television",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "超速",
+  "pinyin": "chāosù",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to speed, to exceed the speed limit",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "国庆",
+  "pinyin": "guóqìng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "National Day",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "问卷",
+  "pinyin": "wènjuàn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "questionnaire",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "增进",
+  "pinyin": "zēngjìn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to enhance, to promote",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "深远",
+  "pinyin": "shēnyuǎn",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "far-reaching",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "音量",
+  "pinyin": "yīnliàng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "volume of sound",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "年夜饭",
+  "pinyin": "niányèfàn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "New Year's Eve dinner",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "深厚",
+  "pinyin": "shēnhòu",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "deep, profound",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "涨价",
+  "pinyin": "zhǎngjià",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to increase in price, to raise prices",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "亲情",
+  "pinyin": "qīnqíng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "family affection",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "住址",
+  "pinyin": "zhùzhǐ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "address",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "要不是",
+  "pinyin": "yàobúshì",
+  "pos": [
+   "conjunction"
+  ],
+  "translation": "if it were not for",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "近日",
+  "pinyin": "jìnrì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "recently, in recent days",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "图画",
+  "pinyin": "túhuà",
+  "pos": [
+   "noun"
+  ],
+  "translation": "picture, drawing",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "火锅",
+  "pinyin": "huǒguō",
+  "pos": [
+   "noun"
+  ],
+  "translation": "hot pot",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "小于",
+  "pinyin": "xiǎoyú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to be less than",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "丰富多彩",
+  "pinyin": "fēngfù-duōcǎi",
+  "pos": [],
+  "translation": "rich and colorful",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "长处",
+  "pinyin": "chángchù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "strength, strong point",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "升温",
+  "pinyin": "shēngwēn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to heat up",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "学分",
+  "pinyin": "xuéfēn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "credit, academic credit",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "近年来",
+  "pinyin": "jìnnián lái",
+  "pos": [],
+  "translation": "in recent years",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "响声",
+  "pinyin": "xiǎngshēng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "sound",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "物价",
+  "pinyin": "wùjià",
+  "pos": [
+   "noun"
+  ],
+  "translation": "price",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "台灯",
+  "pinyin": "táidēng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "desk lamp",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "一路顺风",
+  "pinyin": "yílù-shùnfēng",
+  "pos": [],
+  "translation": "bon voyage, have a safe trip",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "宽度",
+  "pinyin": "kuāndù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "width",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "亲朋好友",
+  "pinyin": "qīnpéng-hǎoyǒu",
+  "pos": [],
+  "translation": "relatives and friends",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "厚度",
+  "pinyin": "hòudù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "thickness",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "中医",
+  "pinyin": "zhōngyī",
+  "pos": [
+   "noun"
+  ],
+  "translation": "traditional Chinese medicine practitioner",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "年初",
+  "pinyin": "niánchū",
+  "pos": [
+   "noun"
+  ],
+  "translation": "beginning of the year",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "乘务员",
+  "pinyin": "chéngwùyuán",
+  "pos": [
+   "noun"
+  ],
+  "translation": "attendant, crew member",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "售价",
+  "pinyin": "shòujià",
+  "pos": [
+   "noun"
+  ],
+  "translation": "selling price",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "吸管",
+  "pinyin": "xīguǎn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "straw",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "窗台",
+  "pinyin": "chuāngtái",
+  "pos": [
+   "noun"
+  ],
+  "translation": "windowsill",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "中外",
+  "pinyin": "zhōngwài",
+  "pos": [
+   "noun"
+  ],
+  "translation": "China and abroad, domestic and foreign",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "学年",
+  "pinyin": "xuénián",
+  "pos": [
+   "noun"
+  ],
+  "translation": "academic year",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "中级",
+  "pinyin": "zhōngjí",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "intermediate, mid-level",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "首次",
+  "pinyin": "shǒucì",
+  "pos": [
+   "numeral"
+  ],
+  "translation": "first time",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "豆浆",
+  "pinyin": "dòujiāng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "soy milk",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "特产",
+  "pinyin": "tèchǎn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "specialty, local product",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "配送",
+  "pinyin": "pèisòng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to deliver",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "中华",
+  "pinyin": "Zhōnghuá",
+  "pos": [
+   "noun"
+  ],
+  "translation": "China",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "中药",
+  "pinyin": "zhōngyào",
+  "pos": [
+   "noun"
+  ],
+  "translation": "traditional Chinese medicine",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "盒饭",
+  "pinyin": "héfàn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "boxed meal",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "国画",
+  "pinyin": "guóhuà",
+  "pos": [
+   "noun"
+  ],
+  "translation": "traditional Chinese painting",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "保质期",
+  "pinyin": "bǎozhìqī",
+  "pos": [
+   "noun"
+  ],
+  "translation": "shelf life, expiration date",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "话费",
+  "pinyin": "huàfèi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "telephone bill, call charges",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "姥爷",
+  "pinyin": "lǎoye",
+  "pos": [
+   "noun"
+  ],
+  "translation": "grandfather",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "高科技",
+  "pinyin": "gāokējì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "high technology, high-tech",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "读音",
+  "pinyin": "dúyīn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "pronunciation",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "五颜六色",
+  "pinyin": "wǔyán-liùsè",
+  "pos": [],
+  "translation": "colorful",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "夜市",
+  "pinyin": "yèshì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "night market",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "用法",
+  "pinyin": "yòngfǎ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "usage, method of use",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "主食",
+  "pinyin": "zhǔshí",
+  "pos": [
+   "noun"
+  ],
+  "translation": "staple food",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "跳高",
+  "pinyin": "tiàogāo",
+  "pos": [
+   "verb"
+  ],
+  "translation": "high jump",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "家电",
+  "pinyin": "jiādiàn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "household appliances",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "西餐",
+  "pinyin": "xīcān",
+  "pos": [
+   "noun"
+  ],
+  "translation": "Western food",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "短处",
+  "pinyin": "duǎnchù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "shortcoming, weakness",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "酸甜苦辣",
+  "pinyin": "suān-tián-kǔ-là",
+  "pos": [],
+  "translation": "sour / sweet / bitter / hot, the joys and sorrows of life",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "闭幕式",
+  "pinyin": "bìmùshì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "closing ceremony",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "毛笔",
+  "pinyin": "máobǐ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "writing brush",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "跳远",
+  "pinyin": "tiàoyuǎn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "long jump",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "没法儿",
+  "pinyin": "méifǎr",
+  "pos": [
+   "verb"
+  ],
+  "translation": "there is no way",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "电子版",
+  "pinyin": "diànzǐbǎn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "electronic version",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "便利店",
+  "pinyin": "biànlìdiàn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "convenience store",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "二维码",
+  "pinyin": "èrwéimǎ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "QR code",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "安全带",
+  "pinyin": "ānquándài",
+  "pos": [
+   "noun"
+  ],
+  "translation": "seatbelt",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "不符",
+  "pinyin": "bùfú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "not in accordance with",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "橙子",
+  "pinyin": "chéngzi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "orange",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "池",
+  "pinyin": "chí",
+  "pos": [
+   "noun"
+  ],
+  "translation": "pool, pond",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "充值",
+  "pinyin": "chōngzhí",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to recharge, to top up",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "点赞",
+  "pinyin": "diǎnzàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to like, to give a thumbs-up",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "电商",
+  "pinyin": "diànshāng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "e-commerce",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "发音",
+  "pinyin": "fāyīn",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "translation": "to pronounce; pronunciation",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "非洲",
+  "pinyin": "Fēizhōu",
+  "pos": [
+   "noun"
+  ],
+  "translation": "Africa",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "改天",
+  "pinyin": "gǎitiān",
+  "pos": [
+   "adverb"
+  ],
+  "translation": "some other day",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "各行各业",
+  "pinyin": "gèháng-gèyè",
+  "pos": [],
+  "translation": "all trades and professions",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "贵姓",
+  "pinyin": "guìxìng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "your honor surname",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "降水",
+  "pinyin": "jiàngshuǐ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to have precipitation, to precipitate",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "进又",
+  "pinyin": "jìnkǒu",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to import",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "久远",
+  "pinyin": "jiǔyuǎn",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "long, remote, far-reaching",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "客服",
+  "pinyin": "kèfú",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "customer service",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "又袋",
+  "pinyin": "kǒudai",
+  "pos": [
+   "noun"
+  ],
+  "translation": "pocket",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "又味",
+  "pinyin": "kǒuwèi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "taste, flavor",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "派出所",
+  "pinyin": "pàichūsuǒ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "police substation",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "轻重",
+  "pinyin": "qīngzhòng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "importance, degree of seriousness",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "人际",
+  "pinyin": "rénjì",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "interpersonal",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "人又",
+  "pinyin": "rénkǒu",
+  "pos": [
+   "noun"
+  ],
+  "translation": "population",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "商家",
+  "pinyin": "shāngjiā",
+  "pos": [
+   "noun"
+  ],
+  "translation": "business, merchant",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "上传",
+  "pinyin": "shàngchuán",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to upload",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "省份",
+  "pinyin": "shěngfèn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "province",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "甜品",
+  "pinyin": "tiánpǐn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "dessert, sweet snack",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "退还",
+  "pinyin": "tuìhuán",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to refund",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "相册",
+  "pinyin": "xiàngcè",
+  "pos": [
+   "noun"
+  ],
+  "translation": "photo album",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "雪糕",
+  "pinyin": "xuěgāo",
+  "pos": [
+   "noun"
+  ],
+  "translation": "ice cream",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "邮寄",
+  "pinyin": "yóujì",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to send by mail",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "油条",
+  "pinyin": "yóutiáo",
+  "pos": [
+   "noun"
+  ],
+  "translation": "fried dough stick",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "语文",
+  "pinyin": "yǔwén",
+  "pos": [
+   "noun"
+  ],
+  "translation": "Chinese language and literature",
+  "from": "HSK 3.0 L5"
+ }
+]

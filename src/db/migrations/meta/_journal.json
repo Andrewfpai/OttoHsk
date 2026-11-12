@@ -36,6 +36,13 @@
       "when": 1792069932746,
       "tag": "0004_stars_reading",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1794470511005,
+      "tag": "0005_hsk6_new_sections",
+      "breakpoints": true
     }
   ]
 }

@@ -9,7 +9,8 @@ import { z } from "zod";
 
 import type { ChatMessage } from "./fallback";
 
-export type EssayKind = "q99" | "q100" | "retell";
+/** "retell" is the old HSK 6 缩写, kept so past rows still read. */
+export type EssayKind = "q99" | "q100" | "retell" | "practical" | "opinion";
 /** HSK 5's two short essays. */
 export type ShortEssayKind = "q99" | "q100";
 
@@ -31,12 +32,12 @@ export const feedbackSchema = z.object({
     .array(z.string())
     .default([])
     .transform((a) => a.slice(0, 5)),
-  /** Retelling only: which of the story's key points the retelling kept. */
+  /** HSK 6 writing: which points the task asks for were covered. */
   coverage: z
     .array(z.object({ point: z.string(), kept: z.boolean(), note: z.string().default("") }))
     .default([])
     .transform((a) => a.slice(0, 10)),
-  /** Retelling only: a word on the title. */
+  /** Old retellings only: a word on the title. */
   titleNote: z.string().default(""),
 });
 

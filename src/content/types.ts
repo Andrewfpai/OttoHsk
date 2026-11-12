@@ -67,40 +67,6 @@ export type ClozePassage = {
   }[];
 };
 
-/**
- * One HSK 6 Reading Part 1 item (questions 51–60): four sentences, exactly
- * one of which has a grammatical or usage error (病句).
- */
-export type ErrorItem = {
-  /** Stable id, e.g. "err-001". */
-  id: string;
-  /** Four sentences, in A–D order. */
-  sentences: [string, string, string, string];
-  /** Index of the sentence with the error: 0 = A … 3 = D. */
-  wrong: 0 | 1 | 2 | 3;
-  /** The wrong sentence, corrected with the smallest change. */
-  corrected: string;
-  /** The kind of error, e.g. "Redundancy (重复)", "Missing subject". */
-  point: string;
-  /** One or two English sentences on what is wrong and why. */
-  why: string;
-};
-
-/**
- * One HSK 6 writing task (question 101, 缩写): read a story for 10 minutes,
- * then retell it in about 400 characters from memory, with a title.
- */
-export type RetellStory = {
-  /** Stable id, e.g. "story-01". */
-  id: string;
-  /** A title a learner might give it. */
-  title: string;
-  /** The story, 800–1,000 characters. Paragraphs separated by a newline. */
-  text: string;
-  /** The 5–8 points a good retelling keeps, in order, in Chinese. */
-  keyPoints: string[];
-};
-
 /** One question of an HSK reading paper: four options, one right. */
 export type ReadingQuestion = {
   /** The exam question number, e.g. 71. */
@@ -155,3 +121,33 @@ export type ReadingToken = {
 
 /** A paper in the reading section, with the letter it goes by ("A"). */
 export type ReadingSet = { label: string; paper: ReadingPaper };
+
+/**
+ * New HSK 6 Reading Part 2 (questions 51–60): a passage with five gaps and
+ * six sentences, A–F; five fill the gaps and one fits nowhere.
+ */
+export type SentenceFillPassage = {
+  /** Stable id, e.g. "h6-sf-01". */
+  id: string;
+  /** Where it came from, e.g. "HSK 6 practice · 1". */
+  source: string;
+  /** Gaps written as {{51}} … {{55}} with their question numbers. Paragraphs by "\n". */
+  text: string;
+  /** The six sentences, A–F. */
+  options: [string, string, string, string, string, string];
+  /** One per gap, in order. `answer` is the option index, 0 = A … 5 = F. */
+  blanks: { number: number; answer: number; why: string }[];
+};
+
+/** A new HSK 6 writing task: Part 1 practical writing, Part 2 an opinion essay. */
+export type WritingPrompt = {
+  /** Stable id, e.g. "h6-w1-01". */
+  id: string;
+  kind: "practical" | "opinion";
+  /** The task in Chinese, as the exam words it. */
+  prompt: string;
+  /** The same in English, for the learner. */
+  english: string;
+  /** Minimum length in characters: 150 for Part 1, 300 for Part 2. */
+  minChars: number;
+};

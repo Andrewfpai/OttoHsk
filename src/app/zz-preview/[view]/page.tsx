@@ -6,16 +6,17 @@
 import { notFound } from "next/navigation";
 
 import { READING_SETS } from "@/content/reading";
+import { readingHsk6 } from "@/content/reading-hsk6";
 import readingTokens from "@/content/reading-tokens.json";
-import { storiesHsk6 } from "@/content/stories-hsk6";
+import { writingHsk6 } from "@/content/writing-hsk6";
 import type { ReadingToken } from "@/content/types";
 import { ReadingPaperView } from "@/features/reading/components/reading-paper";
 import { QuickReview } from "@/features/stars/components/quick-review";
 import { StarsProvider } from "@/features/stars/components/stars";
 import { StudySettingsForm } from "@/features/account/components/study-settings-form";
-import { ErrorDrill } from "@/features/drills/components/error-drill";
+import { SentenceFillDrill } from "@/features/drills/components/sentence-fill-drill";
 import { DRILLS, drillItemIds } from "@/features/drills/lib/items";
-import { RetellStudio } from "@/features/essays/components/retell-studio";
+import { WritingStudio } from "@/features/essays/components/writing-studio";
 import { toLevel } from "@/lib/levels";
 
 import { AppShell } from "@/components/layout/app-shell";
@@ -116,7 +117,15 @@ export default async function PreviewPage({ params, searchParams }: PageProps<"/
     cloze: (
       <PageContainer>
         <PageHeader title="Fill in 填空" />
-        <ClozeDrill passages={DRILLS[level].cloze} itemIds={drillItemIds(level, "cloze")} stats={{}} seed={s.seed} />
+        <StarsProvider initial={starred} offline>
+          <ClozeDrill
+            passages={DRILLS[level].cloze}
+            itemIds={drillItemIds(level, "cloze")}
+            stats={{}}
+            seed={s.seed}
+            tokens={readingTokens as Record<string, ReadingToken[]>}
+          />
+        </StarsProvider>
       </PageContainer>
     ),
     history: (
@@ -128,17 +137,24 @@ export default async function PreviewPage({ params, searchParams }: PageProps<"/
         </div>
       </PageContainer>
     ),
-    errors: (
+    sentences: (
       <PageContainer>
-        <PageHeader title="Find the error 病句" />
-        <ErrorDrill items={DRILLS[6].error} stats={{}} seed={s.seed} />
+        <PageHeader title="Sentence fill 选句填空" />
+        <StarsProvider initial={starred} offline>
+          <SentenceFillDrill
+            passages={DRILLS[6].sentence}
+            tokens={readingTokens as Record<string, ReadingToken[]>}
+            stats={{}}
+            seed={s.seed}
+          />
+        </StarsProvider>
       </PageContainer>
     ),
-    retell: (
+    writing: (
       <PageContainer>
-        <PageHeader title="Retelling 缩写" />
-        <RetellStudio
-          stories={storiesHsk6}
+        <PageHeader title="Writing 写作" />
+        <WritingStudio
+          prompts={writingHsk6}
           seed={s.seed}
           ai={{ enabled: true, models: ["deepseek-v4-pro", "gpt-6-sol", "claude-opus-4.8", "glm-5.2"] }}
           recent={[]}
@@ -163,7 +179,16 @@ export default async function PreviewPage({ params, searchParams }: PageProps<"/
       <PageContainer>
         <PageHeader title="Reading 阅读" />
         <StarsProvider initial={starred} offline>
-          <ReadingPaperView sets={READING_SETS} tokens={readingTokens as Record<string, ReadingToken[]>} />
+          <ReadingPaperView
+            key={level}
+            sets={
+              level === 5
+                ? READING_SETS
+                : readingHsk6.map((paper, i) => ({ label: String(i + 1), paper: { ...paper, title: "HSK 6 practice" } }))
+            }
+            slot={level === 5 ? "" : "hsk6."}
+            tokens={readingTokens as Record<string, ReadingToken[]>}
+          />
         </StarsProvider>
       </PageContainer>
     ),

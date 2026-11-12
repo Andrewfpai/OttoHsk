@@ -1,6 +1,6 @@
 import {
   BookOpenText,
-  FileWarning,
+  FileText,
   ClipboardCheck,
   Eye,
   GitCompareArrows,
@@ -22,8 +22,9 @@ export type NavItem = {
 };
 
 /**
- * The menu for a level. HSK 6 has no sentence ordering; its reading opens
- * with 病句 (find the error) instead, and its writing is a retelling (缩写).
+ * The menu for a level, following its exam. HSK 5 (HSK 2.0) has sentence
+ * order and two short essays. HSK 6 (new HSK) has sentence fill (Reading
+ * Part 2) and two writing tasks.
  */
 export function navItems(level: Level): NavItem[] {
   return [
@@ -34,9 +35,9 @@ export function navItems(level: Level): NavItem[] {
     { href: "/cloze", label: "Fill in", icon: TextCursorInput },
     level === 5
       ? { href: "/ordering", label: "Sentence order", icon: ListOrdered }
-      : { href: "/errors", label: "Find the error", icon: FileWarning },
-    ...(level === 5 ? [{ href: "/reading", label: "Reading", icon: Newspaper }] : []),
-    { href: "/essays", label: level === 5 ? "Essays" : "Retelling", icon: PenLine },
+      : { href: "/sentences", label: "Sentence fill", icon: FileText },
+    { href: "/reading", label: "Reading", icon: Newspaper },
+    { href: "/essays", label: level === 5 ? "Essays" : "Writing", icon: PenLine },
     { href: "/mocks", label: "Mock tests", icon: ClipboardCheck },
     { href: "/confusables", label: "Confusables", icon: GitCompareArrows },
   ];

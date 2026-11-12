@@ -16,7 +16,7 @@ import { updateStudySettings } from "../server/actions";
 
 const LEVEL_COPY: Record<Level, string> = {
   5: "1,300 words · sentence order · two short essays",
-  6: "2,500 words · find the error · 缩写 retelling",
+  6: "new HSK · 2,547 words in chunks of 100 · sentence fill · two writing tasks",
 };
 
 /** The HSK level every tab follows, and the exam date the countdown uses. */

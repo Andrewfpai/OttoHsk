@@ -10,8 +10,15 @@
  * While unseen words remain, new words keep 30% of the deck. Otherwise a
  * backlog of reviews would stall coverage, and with a fixed exam date
  * reaching every word matters.
+ *
+ * A long list can be studied in chunks (HSK 6: 100 words). New words then
+ * come only from the open chunks: the next one opens once every word of
+ * the ones before has been seen and three in four of them are known. Reviews
+ * still come from every word seen, so old chunks stay mixed in.
  */
 import type { Word } from "@/content/word-types";
+
+import { statusOf } from "./schedule";
 
 export type ProgressLite = { wordId: string; strength: number; dueTest: number };
 
@@ -25,11 +32,56 @@ export function isDue(p: ProgressLite, nextTest: number): boolean {
   return p.dueTest <= nextTest;
 }
 
+/** Share of a chunk that must be known before the next chunk opens. */
+export const CHUNK_OPEN_AT = 0.75;
+
+export type Chunks = {
+  size: number;
+  /** How many chunks are open (1-based count). */
+  open: number;
+  total: number;
+  /** The newest open chunk: its words seen and known so far. */
+  seen: number;
+  known: number;
+  /** Words in the newest open chunk. */
+  inChunk: number;
+};
+
+/**
+ * How far into the list new words may come from. `allWords` is in study
+ * order. Each chunk opens when the one before is fully seen and 75% known.
+ */
+export function chunksOf(allWords: readonly Word[], progress: readonly ProgressLite[], size: number): Chunks {
+  const byId = new Map(progress.map((p) => [p.wordId, p]));
+  const total = Math.ceil(allWords.length / size);
+  const tally = (k: number) => {
+    const chunk = allWords.slice(k * size, (k + 1) * size);
+    let seen = 0;
+    let known = 0;
+    for (const w of chunk) {
+      const p = byId.get(w.id);
+      if (!p) continue;
+      seen++;
+      if (statusOf(p.strength) === "known") known++;
+    }
+    return { seen, known, inChunk: chunk.length };
+  };
+  let open = 1;
+  let t = tally(0);
+  while (open < total && t.seen === t.inChunk && t.known >= Math.ceil(t.inChunk * CHUNK_OPEN_AT)) {
+    t = tally(open);
+    open++;
+  }
+  return { size, open, total, ...t };
+}
+
 export function buildDeck(
   allWords: readonly Word[],
   progress: readonly ProgressLite[],
   nextTest: number,
   size: number,
+  /** New words come only from the first this-many words (open chunks). */
+  newLimit: number = allWords.length,
 ): Deck {
   const byId = new Map(allWords.map((w) => [w.id, w]));
   const seen = new Set(progress.map((p) => p.wordId));
@@ -45,7 +97,7 @@ export function buildDeck(
     );
 
   // allWords is sorted most common first, so new words arrive in that order.
-  const fresh = allWords.filter((w) => !seen.has(w.id));
+  const fresh = allWords.slice(0, newLimit).filter((w) => !seen.has(w.id));
 
   // Every word seen and none due (say, right after a perfect test): the
   // schedule only moves when a test is taken, so take the soonest-due words

@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import { bankHsk5 as bank, wordsHsk5 as words } from "@/content/words-hsk5";
 import { seededRng } from "@/lib/random";
 
-import { buildDeck, buildStarredDeck } from "../deck";
+import { buildDeck, buildStarredDeck, chunksOf } from "../deck";
 import { afterTest, failAt, isLocked, isPass, lockDurationMs, MAX_LOCK_MS } from "../lockout";
 import { isRightAnswer } from "../grade";
 import { areSynonyms } from "../synonyms";
@@ -149,6 +149,30 @@ describe("deck", () => {
     const deck = buildDeck(words, progress, 2, 10);
     expect(deck.reviewCount).toBe(7);
     expect(deck.newCount).toBe(3);
+  });
+
+  it("chunks: new words come only from the open chunk until it is learned", () => {
+    const list = words.slice(0, 250);
+    // Nothing seen: chunk 1 of 3, and a deck's new words are all from it.
+    expect(chunksOf(list, [], 100)).toMatchObject({ open: 1, total: 3, seen: 0, known: 0, inChunk: 100 });
+    const first = buildDeck(list, [], 1, 30, 100);
+    expect(first.words.every((w) => list.indexOf(w) < 100)).toBe(true);
+
+    // All 100 seen but only 74 known: still closed.
+    const seen = (n: number, known: number) =>
+      list.slice(0, n).map((w, i) => ({ wordId: w.id, strength: i < known ? 3 : 1, dueTest: 50 }));
+    expect(chunksOf(list, seen(100, 74), 100).open).toBe(1);
+    // 99 seen, 99 known: still closed (one never seen).
+    expect(chunksOf(list, seen(99, 99), 100).open).toBe(1);
+    // All seen, 75 known: chunk 2 opens, and decks draw new words from it.
+    const progress = seen(100, 75);
+    expect(chunksOf(list, progress, 100)).toMatchObject({ open: 2, seen: 0, inChunk: 100 });
+    const deck = buildDeck(list, progress, 2, 30, 200);
+    const news = deck.words.filter((w) => !progress.some((p) => p.wordId === w.id));
+    expect(news.length).toBeGreaterThan(0);
+    expect(news.every((w) => list.indexOf(w) >= 100 && list.indexOf(w) < 200)).toBe(true);
+    // The last chunk is short.
+    expect(chunksOf(list, seen(200, 200), 100)).toMatchObject({ open: 3, inChunk: 50 });
   });
 
   it("starred-only decks hold starred words alone, due and weakest first", () => {

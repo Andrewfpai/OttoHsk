@@ -8,8 +8,9 @@ import type { ReadingItem, ReadingQuestion, ReadingSet, ReadingToken } from "@/c
 import { useRecord, useRecordMany } from "@/features/drills/components/use-record";
 import { questionId } from "@/features/drills/lib/question-id";
 import { formatCountdown, useNow } from "@/hooks/use-now";
-import { StarButton } from "@/features/stars/components/stars";
 import { cn } from "@/lib/utils";
+
+import { WordPanel } from "./lookup";
 
 const LETTERS = ["A", "B", "C", "D"] as const;
 
@@ -39,7 +40,8 @@ const PASSAGE_MS = 4 * 60_000;
 
 const EMPTY: Saved = { picks: {}, checked: false };
 const listeners = new Set<() => void>();
-const storageKey = (part: PartKey) => `ottohsk.reading.v2.${part}`;
+/** One saved slot per level and part: "part3" (HSK 5, as first shipped) or "hsk6.part3". */
+const storageKey = (slot: string) => `ottohsk.reading.v2.${slot}`;
 
 function subscribe(listener: () => void) {
   listeners.add(listener);
@@ -50,9 +52,9 @@ function subscribe(listener: () => void) {
   };
 }
 
-function readRaw(part: PartKey): string {
+function readRaw(slot: string): string {
   try {
-    return window.localStorage.getItem(storageKey(part)) ?? "";
+    return window.localStorage.getItem(storageKey(slot)) ?? "";
   } catch {
     return "";
   }
@@ -68,10 +70,10 @@ function parse(raw: string): Saved {
   }
 }
 
-function write(part: PartKey, saved: Saved | null) {
+function write(slot: string, saved: Saved | null) {
   try {
-    if (saved) window.localStorage.setItem(storageKey(part), JSON.stringify(saved));
-    else window.localStorage.removeItem(storageKey(part));
+    if (saved) window.localStorage.setItem(storageKey(slot), JSON.stringify(saved));
+    else window.localStorage.removeItem(storageKey(slot));
   } catch {
     // Not kept; the answers still count for this visit.
   }
@@ -86,10 +88,10 @@ type Update = (change: (prev: Saved) => Saved, keep?: boolean) => void;
  * refresh, and then the part starts fresh. Storage can throw (private
  * mode), and then answers live in memory for this visit only.
  */
-function useSaved(part: PartKey): [Saved, Update] {
+function useSaved(slot: string): [Saved, Update] {
   const raw = useSyncExternalStore(
     subscribe,
-    () => readRaw(part),
+    () => readRaw(slot),
     () => "",
   );
   const [memory, setMemory] = useState<Saved | null>(null);
@@ -97,14 +99,14 @@ function useSaved(part: PartKey): [Saved, Update] {
   // Built from what is stored now, not this render's copy, so two quick
   // taps cannot overwrite each other.
   const update: Update = (change, keep = true) => {
-    const next = change(memory ?? parse(readRaw(part)));
+    const next = change(memory ?? parse(readRaw(slot)));
     if (!keep) {
-      write(part, null);
+      write(slot, null);
       setMemory(next);
       return;
     }
-    write(part, next);
-    setMemory(readRaw(part) ? null : next);
+    write(slot, next);
+    setMemory(readRaw(slot) ? null : next);
   };
   return [saved, update];
 }
@@ -139,12 +141,23 @@ function range(items: ReadingItem[]): string {
  * the part, then check it. After checking, every word can be tapped (or
  * hovered) for its pinyin and meaning; before, it is exam conditions.
  */
-export function ReadingPaperView({ sets, tokens }: { sets: ReadingSet[]; tokens: Tokens }) {
-  const [part, setPart] = useState<PartKey>("part2");
+export function ReadingPaperView({
+  sets,
+  tokens,
+  slot = "",
+}: {
+  sets: ReadingSet[];
+  tokens: Tokens;
+  /** Keeps each level's answers apart in this browser: "" for HSK 5, "hsk6." for HSK 6. */
+  slot?: string;
+}) {
+  // Only the parts these papers have: HSK 6 practice is Part 3 alone.
+  const parts = (Object.keys(PARTS) as PartKey[]).filter((k) => sets.some((s) => s.paper[k].length > 0));
+  const [part, setPart] = useState<PartKey>(parts[0]);
   const [spot, setSpot] = useState<Spot | null>(null);
   const saves: Record<PartKey, [Saved, Update]> = {
-    part2: useSaved("part2"),
-    part3: useSaved("part3"),
+    part2: useSaved(`${slot}part2`),
+    part3: useSaved(`${slot}part3`),
   };
   /** One handler for every word on the page, rather than thousands. */
   function spotFrom(target: EventTarget | null): Spot | null {
@@ -170,8 +183,12 @@ export function ReadingPaperView({ sets, tokens }: { sets: ReadingSet[]; tokens:
         if (s && (s.key !== spot?.key || s.index !== spot?.index)) setSpot(s);
       }}
     >
-      <div role="tablist" aria-label="Part" className="bg-muted flex w-full gap-1 rounded-xl p-1 sm:w-fit">
-        {(Object.keys(PARTS) as PartKey[]).map((key) => {
+      <div
+        role="tablist"
+        aria-label="Part"
+        className={cn("bg-muted flex w-full gap-1 rounded-xl p-1 sm:w-fit", parts.length < 2 && "hidden")}
+      >
+        {parts.map((key) => {
           const entries = entriesOf(sets, key);
           const { picks, checked } = saves[key][0];
           const status = checked
@@ -885,36 +902,6 @@ function Text({
           {p}
         </p>
       ))}
-    </div>
-  );
-}
-
-function WordPanel({ token, onClose }: { token: ReadingToken; onClose: () => void }) {
-  return (
-    <div
-      aria-live="polite"
-      className="fixed inset-x-0 bottom-0 z-40 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] lg:inset-x-auto lg:right-6 lg:bottom-6 lg:w-96 lg:p-0"
-    >
-      <div className="bg-popover text-popover-foreground flex items-start gap-3 rounded-2xl border p-4 shadow-lg">
-        <p className="font-hanzi text-3xl leading-tight">{token.t}</p>
-        <div className="min-w-0 flex-1">
-          <p className="text-primary font-medium">{token.p}</p>
-          <p className="text-sm">{token.g ?? "Not in the dictionary (likely a name)."}</p>
-          {token.l ? <p className="text-muted-foreground mt-0.5 text-xs">{token.l}</p> : null}
-        </div>
-        {token.id ? <StarButton wordId={token.id} label={token.t} /> : null}
-        <button
-          type="button"
-          aria-label="Close"
-          onClick={(e) => {
-            e.stopPropagation();
-            onClose();
-          }}
-          className="text-muted-foreground hover:bg-muted hover:text-foreground focus-visible:ring-ring inline-flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-lg focus-visible:ring-2 focus-visible:outline-none"
-        >
-          <X aria-hidden className="size-5" />
-        </button>
-      </div>
     </div>
   );
 }

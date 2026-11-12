@@ -153,7 +153,7 @@ export const mockTests = pgTable(
  * "error" is HSK 6's 病句 drill (find the sentence with an error); "reading"
  * is a reading paper's Parts 2–3, one row per question ("h51329#71").
  */
-export const drillKind = pgEnum("drill_kind", ["confusable", "ordering", "cloze", "error", "reading"]);
+export const drillKind = pgEnum("drill_kind", ["confusable", "ordering", "cloze", "error", "reading", "sentence"]);
 
 /**
  * Every answer in the confusables, ordering and fill-in (cloze) drills.
@@ -173,8 +173,11 @@ export const drillAttempts = pgTable(
   (t) => [index("drill_attempts_user_kind_idx").on(t.userId, t.kind, t.answeredAt)],
 );
 
-/** "retell" is HSK 6's 缩写 (question 101). */
-export const essayKind = pgEnum("essay_kind", ["q99", "q100", "retell"]);
+/**
+ * "practical" and "opinion" are new HSK 6 writing Parts 1 and 2. "retell"
+ * (the HSK 2.0 缩写) is no longer offered; past rows keep it.
+ */
+export const essayKind = pgEnum("essay_kind", ["q99", "q100", "retell", "practical", "opinion"]);
 
 /**
  * Writing Part 2 practice: Q99 (five given words) and Q100 (a picture,
@@ -187,7 +190,7 @@ export const essays = pgTable(
     id: uuid("id").primaryKey().defaultRandom(),
     userId: userId(),
     kind: essayKind("kind").notNull(),
-    /** Q99: the five words joined by "、". Q100: the scene description. Retell: the story id. */
+    /** Q99: the five words joined by "、". Q100: the scene description. HSK 6: the task id. */
     prompt: text("prompt").notNull(),
     body: text("body").notNull(),
     chars: smallint("chars").notNull(),

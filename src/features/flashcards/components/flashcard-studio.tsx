@@ -18,15 +18,16 @@ import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useWordBank } from "@/components/level/level-provider";
+import { useLevel, useWordBank } from "@/components/level/level-provider";
 import type { Word } from "@/content/word-types";
 import { ExampleSentence } from "@/features/words/components/example-sentence";
 import { formatCountdown, useNow } from "@/hooks/use-now";
 import { formatDate } from "@/lib/dates";
 import { EXAM_TIME_ZONE } from "@/lib/exam";
+import { CHUNK_SIZE } from "@/lib/levels";
 import { cn } from "@/lib/utils";
 
-import { DECK_SIZES, buildDeck, buildStarredDeck, isDue } from "../lib/deck";
+import { CHUNK_OPEN_AT, type Chunks, DECK_SIZES, buildDeck, buildStarredDeck, chunksOf, isDue } from "../lib/deck";
 import { FAIL_WRONG_RATIO, GUESS_MS, MAX_ANSWER_MS, MAX_LOCK_MS, failAt, formatLock, lockDurationMs } from "../lib/lockout";
 import { nextPace } from "../lib/practice-pace";
 import { statusOf } from "../lib/schedule";
@@ -63,7 +64,13 @@ export function FlashcardStudio({
   initialSource?: DeckSource;
 }) {
   const bank = useWordBank();
+  const level = useLevel();
   const router = useRouter();
+  const chunkSize = CHUNK_SIZE[level];
+  const chunks = useMemo(
+    () => (chunkSize ? chunksOf(bank.words, progress, chunkSize) : null),
+    [bank, progress, chunkSize],
+  );
   const [phase, setPhase] = useState<Phase>({ name: "setup" });
   const [size, setSize] = useState<number>(20);
   const [chosenSource, setSource] = useState<DeckSource>(initialSource);
@@ -83,7 +90,7 @@ export function FlashcardStudio({
     const deck =
       source === "starred"
         ? buildStarredDeck(bank.words, progress, starredIds, info.nextTest, size)
-        : buildDeck(bank.words, progress, info.nextTest, size);
+        : buildDeck(bank.words, progress, info.nextTest, size, chunks ? chunks.open * chunks.size : undefined);
     if (deck.words.length === 0) {
       toast.info("Nothing to study right now: every word is waiting for its next review.");
       return;
@@ -163,6 +170,7 @@ export function FlashcardStudio({
       onSize={setSize}
       source={source}
       starredCount={starredIds.length}
+      chunks={chunks}
       onSource={setSource}
       onStart={startPractice}
       recentTests={recentTests}
@@ -183,6 +191,7 @@ function Setup({
   onSize,
   source,
   starredCount,
+  chunks,
   onSource,
   onStart,
   recentTests,
@@ -198,6 +207,7 @@ function Setup({
   onSize: (n: number) => void;
   source: DeckSource;
   starredCount: number;
+  chunks: Chunks | null;
   onSource: (s: DeckSource) => void;
   onStart: () => void;
   recentTests: TestSummary[];
@@ -218,6 +228,8 @@ function Setup({
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_20rem]">
       <section className="bg-card space-y-6 rounded-2xl border p-5 sm:p-6">
+        {chunks ? <ChunkStatus chunks={chunks} /> : null}
+
         <dl className="grid grid-cols-3 gap-3">
           <Stat label="Due for review" value={stats.due} />
           <Stat label="Not started" value={stats.fresh} />
@@ -355,6 +367,39 @@ function Setup({
           </section>
         ) : null}
       </aside>
+    </div>
+  );
+}
+
+/** Where the learner is in a chunked list, and what opens the next chunk. */
+function ChunkStatus({ chunks }: { chunks: Chunks }) {
+  const { size, open, total, seen, known, inChunk } = chunks;
+  const first = (open - 1) * size + 1;
+  const last = first + inChunk - 1;
+  const need = Math.ceil(inChunk * CHUNK_OPEN_AT);
+  const done = open === total && seen === inChunk;
+  return (
+    <div className="bg-muted/50 space-y-2 rounded-xl p-4 text-sm">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <p className="font-medium">
+          Chunk <span className="font-numeric">{open}</span> of <span className="font-numeric">{total}</span>
+          <span className="text-muted-foreground font-numeric font-normal">
+            {" "}
+            · words {first}–{last}
+          </span>
+        </p>
+        <p className="text-muted-foreground font-numeric">
+          {seen}/{inChunk} seen · {known} known
+        </p>
+      </div>
+      <div className="bg-background h-1.5 overflow-hidden rounded-full">
+        <div className="bg-primary h-full" style={{ width: `${(known / inChunk) * 100}%` }} />
+      </div>
+      <p className="text-muted-foreground">
+        {done
+          ? "Every chunk is open. Tests mix all the words."
+          : `New words come from this chunk; tests mix in every word before it. The next ${size} open when all ${inChunk} are seen and ${need} are known.`}
+      </p>
     </div>
   );
 }

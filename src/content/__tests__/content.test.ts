@@ -10,12 +10,13 @@ import { clozePassages } from "../cloze";
 import { clozeHsk6 } from "../cloze-hsk6";
 import { confusables } from "../confusables";
 import { confusablesHsk6 } from "../confusables-hsk6";
-import { errorsHsk6 } from "../errors-hsk6";
 import { orderingItems } from "../ordering";
 import { getOrderingNote } from "../ordering-notes";
 import { orderingPapers } from "../ordering-papers";
-import { storiesHsk6 } from "../stories-hsk6";
+import { readingHsk6 } from "../reading-hsk6";
+import { sentenceFillHsk6 } from "../sentence-fill-hsk6";
 import type { ClozePassage, ConfusableSet } from "../types";
+import { writingHsk6 } from "../writing-hsk6";
 import type { Word } from "../word-types";
 import { bankHsk5, wordsHsk5 as words } from "../words-hsk5";
 import { wordsHsk6 } from "../words-hsk6";
@@ -180,7 +181,15 @@ function checkWordList(list: Word[], size: number) {
 
 describe("HSK 6", () => {
   describe("words", () => {
-    checkWordList(wordsHsk6, 2500);
+    checkWordList(wordsHsk6, 2547);
+
+    it("puts the new HSK 5 words first, then the new HSK 6 list", () => {
+      const from = wordsHsk6.map((w) => w.from);
+      const firstL6 = from.indexOf("HSK 3.0 L6");
+      expect(firstL6).toBeGreaterThan(700);
+      expect(from.slice(0, firstL6).every((f) => f === "HSK 3.0 L5")).toBe(true);
+      expect(from.slice(firstL6).every((f) => f === "HSK 3.0 L6")).toBe(true);
+    });
 
     it("shares no word with HSK 5, so progress ids never collide", () => {
       const hsk5 = new Set(words.map((w) => w.id));
@@ -197,34 +206,64 @@ describe("HSK 6", () => {
     });
   });
 
-  describe("cloze", () => checkCloze(clozeHsk6, 61, 70));
+  describe("cloze", () => checkCloze(clozeHsk6, 41, 50));
 
-  describe("find the error", () => {
+  describe("sentence fill", () => {
     it("has unique ids", () => {
-      expect(unique(errorsHsk6.map((i) => i.id))).toBe(true);
+      expect(unique(sentenceFillHsk6.map((p) => p.id))).toBe(true);
     });
 
-    it.each(errorsHsk6.map((i) => [i.id, i] as const))("%s is well-formed", (_, item) => {
-      expect(item.sentences).toHaveLength(4);
-      expect(unique(item.sentences)).toBe(true);
-      expect([0, 1, 2, 3]).toContain(item.wrong);
-      expect(item.corrected).not.toBe(item.sentences[item.wrong]);
-      expect(item.point.trim()).not.toBe("");
-      expect(item.why.trim()).not.toBe("");
+    it.each(sentenceFillHsk6.map((p) => [p.id, p] as const))("%s is well-formed", (_, p) => {
+      const marked = [...p.text.matchAll(/\{\{(\d+)\}\}/g)].map((m) => Number(m[1]));
+      expect(marked).toEqual(p.blanks.map((b) => b.number));
+      expect(marked).toHaveLength(5);
+      expect([51, 56]).toContain(marked[0]);
+      expect(marked).toEqual(marked.map((_, i) => marked[0] + i));
+      expect(p.options).toHaveLength(6);
+      expect(unique(p.options)).toBe(true);
+      const answers = p.blanks.map((b) => b.answer);
+      expect(unique(answers.map(String))).toBe(true);
+      for (const b of p.blanks) {
+        expect([0, 1, 2, 3, 4, 5]).toContain(b.answer);
+        expect(b.why.trim(), `${p.id} #${b.number}`).not.toBe("");
+      }
     });
   });
 
-  describe("retelling stories", () => {
-    it("has unique ids", () => {
-      expect(unique(storiesHsk6.map((s) => s.id))).toBe(true);
+  describe("reading", () => {
+    it("has unique paper ids, none shared with HSK 5", () => {
+      expect(unique(readingHsk6.map((p) => p.id))).toBe(true);
     });
 
-    it.each(storiesHsk6.map((s) => [s.id, s] as const))("%s is exam length with key points", (_, story) => {
-      const han = story.text.match(/[一-鿿]/g)?.length ?? 0;
-      expect(han).toBeGreaterThanOrEqual(700);
-      expect(han).toBeLessThanOrEqual(1100);
-      expect(story.keyPoints.length).toBeGreaterThanOrEqual(5);
-      expect(story.title.trim()).not.toBe("");
+    it.each(readingHsk6.map((p) => [p.id, p] as const))("%s has questions 61–80, four per passage", (_, paper) => {
+      expect(paper.part2).toEqual([]);
+      expect(paper.part3).toHaveLength(5);
+      const qs = paper.part3.flatMap((i) => i.questions);
+      expect(qs.map((q) => q.number)).toEqual(Array.from({ length: 20 }, (_, i) => 61 + i));
+      for (const item of paper.part3) {
+        expect(item.id.startsWith(`${paper.id}-`)).toBe(true);
+        expect(item.questions).toHaveLength(4);
+      }
+      for (const q of qs) {
+        expect(q.prompt?.trim()).toBeTruthy();
+        expect(unique([...q.options])).toBe(true);
+        expect([0, 1, 2, 3]).toContain(q.answer);
+        expect(q.why.trim()).not.toBe("");
+      }
+    });
+  });
+
+  describe("writing", () => {
+    it("has 20 tasks of each part, with unique ids", () => {
+      expect(unique(writingHsk6.map((p) => p.id))).toBe(true);
+      expect(writingHsk6.filter((p) => p.kind === "practical")).toHaveLength(20);
+      expect(writingHsk6.filter((p) => p.kind === "opinion")).toHaveLength(20);
+    });
+
+    it.each(writingHsk6.map((p) => [p.id, p] as const))("%s states its length", (_, p) => {
+      expect(p.minChars).toBe(p.kind === "practical" ? 150 : 300);
+      expect(p.prompt).toContain(`字数不少于${p.minChars}字`);
+      expect(p.english.trim()).not.toBe("");
     });
   });
 });

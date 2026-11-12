@@ -53,7 +53,7 @@ export function FeedbackView({
 
       {feedback.coverage.length > 0 ? (
         <section className="space-y-2">
-          <h3 className="text-sm font-medium">Story points kept</h3>
+          <h3 className="text-sm font-medium">{feedback.titleNote ? "Story points kept" : "What the task asks for"}</h3>
           <ul className="space-y-1.5">
             {feedback.coverage.map((c, i) => (
               // Index keys: a model can repeat an entry.

@@ -1,0 +1,114 @@
+[
+ {
+  "hanzi": "据",
+  "field": "quiz.en",
+  "before": "According to statistics, twice as many people came here as tourists this year as last year.",
+  "after": "According to statistics, the number of visitors here this year is double last year's.",
+  "why": "English was clumsy (\"twice as many people came here as tourists this year as last year\")."
+ },
+ {
+  "hanzi": "传",
+  "field": "quiz.zh",
+  "before": "请把这份文件传给后面的同学。",
+  "after": "请把这些试卷传给后面的同学。",
+  "why": "\"文件传给后面的同学\" is an odd pairing; passing test papers back to classmates is the natural classroom scene."
+ },
+ {
+  "hanzi": "传",
+  "field": "quiz.en",
+  "before": "Please pass this document to the classmate behind you.",
+  "after": "Please pass these test papers back to the classmates behind you.",
+  "why": "Matches revised sentence."
+ },
+ {
+  "hanzi": "宝",
+  "field": "example.zh",
+  "before": "传说这座山洞里藏着很多宝，可是谁也没找到过。",
+  "after": "这孩子是全家人的宝，大家都特别疼他。",
+  "why": "\"山洞里藏着很多宝\" is unnatural; bare 宝 is not used as a countable \"treasure\" with 很多 (would be 宝藏/宝贝). \"是……的宝\" is the idiomatic standalone use."
+ },
+ {
+  "hanzi": "宝",
+  "field": "example.en",
+  "before": "Legend has it that a lot of treasure is hidden in this cave, but no one has ever found it.",
+  "after": "This child is the whole family's treasure; everyone dotes on him.",
+  "why": "Matches revised sentence."
+ },
+ {
+  "hanzi": "结",
+  "field": "example.zh",
+  "before": "他把绳子的两头结在一起，做成了一个圈。",
+  "after": "一只蜘蛛在窗户角上结了一张网。",
+  "why": "\"把绳子的两头结在一起\" is stilted (natural speech uses 系/打结); 结网 is the idiomatic verb use of 结."
+ },
+ {
+  "hanzi": "结",
+  "field": "example.en",
+  "before": "He tied the two ends of the rope together to make a loop.",
+  "after": "A spider has spun a web in the corner of the window.",
+  "why": "Matches revised sentence."
+ },
+ {
+  "hanzi": "拼",
+  "field": "quiz.en",
+  "before": "With five minutes left in the match, the players were all running for their lives.",
+  "after": "With five minutes left in the match, the players were all running as hard as they could.",
+  "why": "拼命地跑 means running all-out, not \"running for their lives\"."
+ },
+ {
+  "hanzi": "围",
+  "field": "quiz.en",
+  "before": "A crowd gathered at the roadside, watching something.",
+  "after": "A crowd had gathered at the roadside; I couldn't tell what they were looking at.",
+  "why": "Translation dropped 不知道在看什么 (\"no idea what they were looking at\")."
+ },
+ {
+  "hanzi": "收集",
+  "field": "quiz.zh",
+  "before": "警方正在收集证据，准备起诉那个人。",
+  "after": "警方正在收集证据，争取早日破案。",
+  "why": "Police do not 起诉 (prosecutors do); factually wrong collocation."
+ },
+ {
+  "hanzi": "收集",
+  "field": "quiz.en",
+  "before": "The police are gathering evidence in preparation for charging that man.",
+  "after": "The police are gathering evidence, hoping to crack the case soon.",
+  "why": "Matches revised sentence."
+ },
+ {
+  "hanzi": "增",
+  "field": "quiz.zh",
+  "before": "这家公司的员工已经从十人增到了一百多人。",
+  "after": "这两年，这个城市的人口猛增，房子越来越难租了。",
+  "why": "\"从十人增到了一百多人\" mixes bookish 增 with colloquial 到了; standalone 增 is natural in compounds like 猛增."
+ },
+ {
+  "hanzi": "增",
+  "field": "quiz.en",
+  "before": "This company's staff has grown from ten to more than a hundred.",
+  "after": "The city's population has surged in the past two years, and flats are getting harder and harder to rent.",
+  "why": "Matches revised sentence."
+ },
+ {
+  "hanzi": "古",
+  "field": "indonesian",
+  "before": "kuno, kuno sekali, lama",
+  "after": "kuno, purba",
+  "why": "\"kuno sekali\" was a redundant intensified duplicate of \"kuno\", and \"lama\" just means \"old/long\"."
+ },
+ {
+  "hanzi": "齐",
+  "field": "quiz.zh",
+  "before": "他把书在书架上放得很整齐。",
+  "after": "他把书架上的书摆得很整齐。",
+  "why": "\"把书在书架上放得很整齐\" has awkward word order; 把书架上的书摆得很整齐 is the natural phrasing."
+ },
+ {
+  "hanzi": "齐",
+  "field": "quiz.en",
+  "before": "He arranged the books very neatly on the shelf.",
+  "after": "He arranged the books on the shelf very neatly.",
+  "why": "Matches revised sentence."
+ }
+]

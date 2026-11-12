@@ -63,7 +63,7 @@ export function sampleData(level: Level = 5) {
       { kind: "cloze", label: "Fill in", href: "/cloze", summary: { total: 150, tried: 30, mastered: 21 } },
       level === 5
         ? { kind: "ordering", label: "Sentence order", href: "/ordering", summary: { total: 211, tried: 12, mastered: 9 } }
-        : { kind: "error", label: "Find the error", href: "/errors", summary: { total: 80, tried: 10, mastered: 6 } },
+        : { kind: "sentence", label: "Sentence fill", href: "/sentences", summary: { total: 80, tried: 10, mastered: 6 } },
     ],
     latestMock: mocks.at(-1) ?? null,
   };

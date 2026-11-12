@@ -42,3 +42,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Source PDFs (vocabulary lists, sample papers) live here locally; not committed.
+/*.pdf

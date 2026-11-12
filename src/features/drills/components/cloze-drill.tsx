@@ -5,6 +5,7 @@ import { Fragment, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import type { ClozePassage } from "@/content/types";
+import { LookupRoot, LookupText, type Tokens, paragraphsOf } from "@/features/reading/components/lookup";
 import { seededRng } from "@/lib/random";
 import { cn } from "@/lib/utils";
 
@@ -40,51 +41,72 @@ function passageStats(
 /**
  * The passage with each {{n}} drawn as a numbered gap. Before checking, a
  * gap shows your pick in a neutral colour; after, the right answer, green
- * if you had it and red if not.
+ * if you had it and red if not. With `tokens`, every word can be looked up
+ * once the passage is checked.
  */
 function PassageText({
   passage,
   picked,
   checked,
+  tokens,
 }: {
   passage: ClozePassage;
   picked: Record<number, string>;
   checked: boolean;
+  tokens?: Tokens;
 }) {
   const byNumber = new Map(passage.blanks.map((b) => [b.number, b]));
+
+  function gaps(text: string) {
+    return text.split(/(\{\{\d+\}\})/).map((part, j) => {
+      const m = part.match(/^\{\{(\d+)\}\}$/);
+      if (!m) return <Fragment key={j}>{part}</Fragment>;
+      const n = Number(m[1]);
+      const blank = byNumber.get(n);
+      const choice = picked[n];
+      const right = blank !== undefined && choice === blank.options[blank.answer];
+      return (
+        <span
+          key={j}
+          className={cn(
+            "mx-1 inline-block min-w-14 border-b-2 px-1 text-center indent-0 leading-normal",
+            !checked && "border-primary text-primary",
+            checked && right && "border-success text-success",
+            checked && !right && "border-destructive text-destructive",
+          )}
+        >
+          {checked && blank ? (
+            blank.options[blank.answer]
+          ) : choice !== undefined ? (
+            choice
+          ) : (
+            <span className="font-numeric text-sm">{n}</span>
+          )}
+        </span>
+      );
+    });
+  }
+
+  const words = tokens?.[passage.id];
   return (
     <div className="font-hanzi space-y-3 text-lg leading-loose">
-      {passage.text.split("\n").map((para, i) => (
-        <p key={i} className="indent-8">
-          {para.split(/(\{\{\d+\}\})/).map((part, j) => {
-            const m = part.match(/^\{\{(\d+)\}\}$/);
-            if (!m) return <Fragment key={j}>{part}</Fragment>;
-            const n = Number(m[1]);
-            const blank = byNumber.get(n);
-            const choice = picked[n];
-            const right = blank !== undefined && choice === blank.options[blank.answer];
-            return (
-              <span
-                key={j}
-                className={cn(
-                  "mx-1 inline-block min-w-14 border-b-2 px-1 text-center indent-0 leading-normal",
-                  !checked && "border-primary text-primary",
-                  checked && right && "border-success text-success",
-                  checked && !right && "border-destructive text-destructive",
-                )}
-              >
-                {checked && blank ? (
-                  blank.options[blank.answer]
-                ) : choice !== undefined ? (
-                  choice
-                ) : (
-                  <span className="font-numeric text-sm">{n}</span>
-                )}
-              </span>
-            );
-          })}
-        </p>
-      ))}
+      {words
+        ? paragraphsOf(words).map((para, i) => (
+            <p key={i} className="indent-8">
+              <LookupText
+                tokens={para.tokens}
+                start={para.start}
+                textKey={passage.id}
+                lookup={checked}
+                renderPlain={gaps}
+              />
+            </p>
+          ))
+        : passage.text.split("\n").map((para, i) => (
+            <p key={i} className="indent-8">
+              {gaps(para)}
+            </p>
+          ))}
     </div>
   );
 }
@@ -95,11 +117,14 @@ export function ClozeDrill({
   itemIds,
   stats,
   seed,
+  tokens,
 }: {
   passages: ClozePassage[];
   itemIds: string[];
   stats: Record<string, ItemStat>;
   seed: number;
+  /** Pre-split texts; with them, words can be looked up after checking. */
+  tokens?: Tokens;
 }) {
   const record = useRecord();
   // Fixed at mount from a server-chosen seed, so server and client agree and a
@@ -167,7 +192,7 @@ export function ClozeDrill({
   ).length;
 
   return (
-    <div className="mx-auto max-w-3xl space-y-5">
+    <LookupRoot tokens={tokens ?? {}} className="mx-auto max-w-3xl space-y-5">
       <DrillHeader summary={summary} session={tally} />
 
       <section className="bg-card space-y-6 rounded-2xl border p-5 sm:p-6">
@@ -179,7 +204,10 @@ export function ClozeDrill({
           </span>
         </div>
 
-        <PassageText passage={passage} picked={picked} checked={checked} />
+        <PassageText passage={passage} picked={picked} checked={checked} tokens={tokens} />
+        {checked && tokens ? (
+          <p className="text-muted-foreground text-xs">Tap any word for its pinyin and meaning, and star it to test later.</p>
+        ) : null}
 
         <ol className="space-y-5 border-t pt-5">
           {passage.blanks.map((b) => {
@@ -194,14 +222,16 @@ export function ClozeDrill({
                   picked={choice}
                   revealed={checked}
                   onPick={(o) => pick(b, o)}
-                  render={(o) => (
-                    <span>
-                      <span className="text-muted-foreground mr-1.5 font-sans text-sm">
-                        {LETTERS[b.options.indexOf(o)]}
+                  render={(o) => {
+                    const i = b.options.indexOf(o);
+                    const key = `${passage.id}#${b.number}.${i}`;
+                    return (
+                      <span>
+                        <span className="text-muted-foreground mr-1.5 font-sans text-sm">{LETTERS[i]}</span>
+                        {tokens?.[key] ? <LookupText tokens={tokens[key]} textKey={key} lookup={checked} /> : o}
                       </span>
-                      {o}
-                    </span>
-                  )}
+                    );
+                  }}
                 />
                 {checked ? (
                   <p className="text-sm">
@@ -253,6 +283,6 @@ export function ClozeDrill({
           </div>
         </div>
       </section>
-    </div>
+    </LookupRoot>
   );
 }

@@ -1,0 +1,2615 @@
+[
+ {
+  "hanzi": "运费",
+  "pinyin": "yùnfèi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "freight, shipping cost",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "职场",
+  "pinyin": "zhíchǎng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "workplace",
+  "from": "HSK 3.0 L5"
+ },
+ {
+  "hanzi": "中",
+  "pinyin": "zhòng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to hit, to be hit by",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "该",
+  "pinyin": "gāi",
+  "pos": [
+   "pronoun"
+  ],
+  "translation": "that, such",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "成",
+  "pinyin": "chéng",
+  "pos": [
+   "measure word"
+  ],
+  "translation": "measure word for one-tenth",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "于",
+  "pinyin": "yú",
+  "pos": [
+   "preposition"
+  ],
+  "translation": "in, at, to",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "地方",
+  "pinyin": "dìfāng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "place, location",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "结果",
+  "pinyin": "jiēguǒ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to bear fruit, to produce a result",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "求",
+  "pinyin": "qiú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to request, to seek",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "转",
+  "pinyin": "zhuàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to turn, to revolve",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "线",
+  "pinyin": "xiàn",
+  "pos": [
+   "noun",
+   "measure word"
+  ],
+  "translation": "thread, line; measure word for lines",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "因",
+  "pinyin": "yīn",
+  "pos": [
+   "preposition",
+   "conjunction"
+  ],
+  "translation": "because; due to",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "特",
+  "pinyin": "tè",
+  "pos": [
+   "adverb"
+  ],
+  "translation": "especially, particularly",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "局",
+  "pinyin": "1 jú, 2 jú",
+  "pos": [
+   "measure word",
+   "noun"
+  ],
+  "translation": "measure word for games, sets; bureau, office, situation",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "未",
+  "pinyin": "wèi",
+  "pos": [
+   "adverb"
+  ],
+  "translation": "not yet, not",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "神",
+  "pinyin": "shén",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "translation": "god, spirit; amazing",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "清",
+  "pinyin": "qīng",
+  "pos": [
+   "adjective",
+   "verb"
+  ],
+  "translation": "clear; to clear",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "轮",
+  "pinyin": "lún",
+  "pos": [
+   "noun",
+   "verb",
+   "measure word"
+  ],
+  "translation": "wheel; to take turns; measure word for rounds",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "逼",
+  "pinyin": "bī",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to force",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "待",
+  "pinyin": "dài",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to stay, to wait",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "尽",
+  "pinyin": "jìn",
+  "pos": [
+   "verb",
+   "adverb"
+  ],
+  "translation": "to exhaust, to use up; (to the utmost)",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "盘",
+  "pinyin": "pán",
+  "pos": [
+   "measure word",
+   "verb"
+  ],
+  "translation": "measure word for plates, coils; (to coil)",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "皮",
+  "pinyin": "pí",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "translation": "skin, leather; tough, pliable",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "落",
+  "pinyin": "là",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to leave behind, to lag behind",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "网",
+  "pinyin": "wǎng",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "translation": "net, network; to net",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "招",
+  "pinyin": "zhāo",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to recruit, to attract",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "科",
+  "pinyin": "kē",
+  "pos": [
+   "noun"
+  ],
+  "translation": "field, branch of study",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "版",
+  "pinyin": "bǎn",
+  "pos": [
+   "noun",
+   "measure word"
+  ],
+  "translation": "edition, version; measure word for editions",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "镇",
+  "pinyin": "zhèn",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "translation": "to guard; town",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "自我",
+  "pinyin": "zìwǒ",
+  "pos": [
+   "pronoun"
+  ],
+  "translation": "self, oneself",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "犯",
+  "pinyin": "fàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to commit a crime, to violate",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "服",
+  "pinyin": "fú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to serve, to obey; clothing",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "样",
+  "pinyin": "yàng",
+  "pos": [
+   "measure word"
+  ],
+  "translation": "measure word for kinds, types",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "理",
+  "pinyin": "lǐ",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "translation": "reason, logic; to manage",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "射",
+  "pinyin": "shè",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to shoot",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "黄",
+  "pinyin": "huáng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "yellow",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "岛",
+  "pinyin": "dǎo",
+  "pos": [
+   "noun"
+  ],
+  "translation": "island",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "混",
+  "pinyin": "hùn",
+  "pos": [
+   "verb",
+   "adverb"
+  ],
+  "translation": "to mix, to blend; carelessly",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "编",
+  "pinyin": "biān",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to weave, to edit, to write",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "学会",
+  "pinyin": "xuéhuì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "learned society, institute",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "部队",
+  "pinyin": "bùduì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "troops, army",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "可怜",
+  "pinyin": "kělián",
+  "pos": [
+   "adjective",
+   "verb"
+  ],
+  "translation": "pitiful; to pity",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "为何",
+  "pinyin": "wèihé",
+  "pos": [
+   "adverb"
+  ],
+  "translation": "why, for what reason",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "爆",
+  "pinyin": "bào",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to explode, to burst",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "毒",
+  "pinyin": "dú",
+  "pos": [
+   "noun",
+   "verb",
+   "adjective"
+  ],
+  "translation": "poison, toxin; to poison; poisonous",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "解",
+  "pinyin": "jiě",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to untie, to solve",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "罪",
+  "pinyin": "zuì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "crime, guilt",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "启动",
+  "pinyin": "qǐdòng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to start",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "一一",
+  "pinyin": "yīyī",
+  "pos": [
+   "adverb"
+  ],
+  "translation": "one by one",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "算是",
+  "pinyin": "suànshì",
+  "pos": [
+   "verb",
+   "adverb"
+  ],
+  "translation": "to be considered as; quite",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "印",
+  "pinyin": "yìn",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "translation": "seal, stamp; to print",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "透",
+  "pinyin": "tòu",
+  "pos": [
+   "verb",
+   "adjective"
+  ],
+  "translation": "to penetrate, to pass through; thorough",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "酷",
+  "pinyin": "kù",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "cool, awesome",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "拖",
+  "pinyin": "tuō",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to drag, to pull",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "为止",
+  "pinyin": "wéizhǐ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "up to, until",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "塞",
+  "pinyin": "sāi",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "translation": "to stuff, to squeeze; cork",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "检测",
+  "pinyin": "jiǎncè",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to test, to examine",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "制",
+  "pinyin": "zhì",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to produce, to manufacture",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "泡",
+  "pinyin": "pào",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "translation": "bubble; to steep",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "户",
+  "pinyin": "hù",
+  "pos": [
+   "measure word"
+  ],
+  "translation": "measure word for households",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "归",
+  "pinyin": "guī",
+  "pos": [
+   "verb",
+   "preposition"
+  ],
+  "translation": "to return; by",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "母",
+  "pinyin": "mǔ",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "female",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "冒",
+  "pinyin": "mào",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to emit, to risk",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "狼",
+  "pinyin": "láng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "wolf",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "挖",
+  "pinyin": "wā",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to dig",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "要么",
+  "pinyin": "yàome",
+  "pos": [
+   "conjunction"
+  ],
+  "translation": "either... or...",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "兵",
+  "pinyin": "bīng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "soldier",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "侧",
+  "pinyin": "cè",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "translation": "side; to lean to one side",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "闭",
+  "pinyin": "bì",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to close",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "粉",
+  "pinyin": "fěn",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "translation": "powder; pink",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "足",
+  "pinyin": "zú",
+  "pos": [
+   "adjective",
+   "adverb"
+  ],
+  "translation": "foot, sufficient; sufficiently, fully",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "曲",
+  "pinyin": "qǔ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "song, tune",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "公",
+  "pinyin": "gōng",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "public, fair",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "肥",
+  "pinyin": "féi",
+  "pos": [
+   "adjective",
+   "verb",
+   "noun"
+  ],
+  "translation": "fat; to become fat; fertilizer",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "患",
+  "pinyin": "huàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to contract, to suffer from",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "害",
+  "pinyin": "hài",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "translation": "harm; to harm",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "立",
+  "pinyin": "lì",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to stand, to set up",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "料",
+  "pinyin": "1 liào, 2 liào",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "translation": "material; to guess, to anticipate",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "公众",
+  "pinyin": "gōngzhòng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "public, the general public",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "撒",
+  "pinyin": "sǎ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to sprinkle",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "露",
+  "pinyin": "lòu, 1 lù",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to expose, to reveal",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "为此",
+  "pinyin": "wèicǐ",
+  "pos": [
+   "conjunction"
+  ],
+  "translation": "for this reason, therefore",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "环",
+  "pinyin": "huán",
+  "pos": [
+   "noun",
+   "measure word",
+   "verb"
+  ],
+  "translation": "ring, loop; measure word for rings; to surround",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "回头",
+  "pinyin": "huítóu",
+  "pos": [
+   "verb",
+   "adverb",
+   "conjunction"
+  ],
+  "translation": "to turn around; later; if",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "法官",
+  "pinyin": "fǎguān",
+  "pos": [
+   "noun"
+  ],
+  "translation": "judge",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "血液",
+  "pinyin": "xuèyè",
+  "pos": [
+   "noun"
+  ],
+  "translation": "blood",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "松",
+  "pinyin": "sōng",
+  "pos": [
+   "adjective",
+   "verb"
+  ],
+  "translation": "loose; to loosen",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "埋",
+  "pinyin": "mái",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to bury",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "率",
+  "pinyin": "lǜ",
+  "pos": [
+   "suffix"
+  ],
+  "translation": "suffix meaning rate, proportion",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "野",
+  "pinyin": "yě",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "wild",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "从未",
+  "pinyin": "cóngwèi",
+  "pos": [
+   "adverb"
+  ],
+  "translation": "never, ever",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "业",
+  "pinyin": "yè",
+  "pos": [
+   "suffix"
+  ],
+  "translation": "suffix meaning industry, trade",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "补",
+  "pinyin": "bǔ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to supplement, to make up",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "自杀",
+  "pinyin": "zìshā",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to commit suicide",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "引",
+  "pinyin": "yǐn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to lead, to guide",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "闪",
+  "pinyin": "shǎn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to flash",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "散",
+  "pinyin": "sǎn, sàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to scatter; to scatter, to disperse",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "就算",
+  "pinyin": "jiùsuàn",
+  "pos": [
+   "conjunction"
+  ],
+  "translation": "even if",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "针",
+  "pinyin": "zhēn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "needle",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "官员",
+  "pinyin": "guānyuán",
+  "pos": [
+   "noun"
+  ],
+  "translation": "official, government official",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "脑子",
+  "pinyin": "nǎozi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "brain",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "肯",
+  "pinyin": "kěn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to be willing",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "原本",
+  "pinyin": "yuánběn",
+  "pos": [
+   "adverb"
+  ],
+  "translation": "originally, at first",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "宫",
+  "pinyin": "gōng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "palace, temple",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "望",
+  "pinyin": "wàng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to look at, to gaze",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "通道",
+  "pinyin": "tōngdào",
+  "pos": [
+   "noun"
+  ],
+  "translation": "passage, channel",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "田",
+  "pinyin": "tián",
+  "pos": [
+   "noun"
+  ],
+  "translation": "field, farmland",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "才能",
+  "pinyin": "cáinéng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "ability, talent",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "创意",
+  "pinyin": "chuàngyì",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "translation": "creativity; creative",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "黑暗",
+  "pinyin": "hēi'àn",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "dark",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "大师",
+  "pinyin": "dàshī",
+  "pos": [
+   "noun"
+  ],
+  "translation": "master, expert",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "得知",
+  "pinyin": "dézhī",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to learn of, to hear about",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "之所以",
+  "pinyin": "zhīsuǒyǐ",
+  "pos": [
+   "conjunction"
+  ],
+  "translation": "the reason why",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "章",
+  "pinyin": "zhāng",
+  "pos": [
+   "measure word"
+  ],
+  "translation": "measure word for chapters",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "纯",
+  "pinyin": "chún",
+  "pos": [
+   "adjective",
+   "adverb"
+  ],
+  "translation": "pure; purely",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "定位",
+  "pinyin": "dìngwèi",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "translation": "to position, to locate; position",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "一阵",
+  "pinyin": "yízhèn",
+  "pos": [
+   "numeral-measure word"
+  ],
+  "translation": "a period of, a burst of",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "撑",
+  "pinyin": "chēng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to prop up, to support",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "遭到",
+  "pinyin": "zāodào",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to suffer, to meet with",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "喷",
+  "pinyin": "pēn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to spray",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "职责",
+  "pinyin": "zhízé",
+  "pos": [
+   "noun"
+  ],
+  "translation": "responsibility, duty",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "改造",
+  "pinyin": "gǎizào",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to transform, to rebuild",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "引发",
+  "pinyin": "yǐnfā",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to trigger, to cause",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "险",
+  "pinyin": "xiǎn",
+  "pos": [
+   "adjective",
+   "adverb"
+  ],
+  "translation": "dangerous; nearly",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "夺",
+  "pinyin": "duó",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to seize, to take",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "供应",
+  "pinyin": "gōngyìng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to supply",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "一时",
+  "pinyin": "yìshí",
+  "pos": [
+   "noun",
+   "adverb"
+  ],
+  "translation": "temporarily; for a moment",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "抛",
+  "pinyin": "pāo",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to throw",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "显",
+  "pinyin": "xiǎn",
+  "pos": [
+   "adjective",
+   "verb"
+  ],
+  "translation": "obvious; to show",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "战胜",
+  "pinyin": "zhànshèng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to defeat",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "密",
+  "pinyin": "mì",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "dense, close",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "播",
+  "pinyin": "bō",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to broadcast",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "社",
+  "pinyin": "shè",
+  "pos": [
+   "noun"
+  ],
+  "translation": "society",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "当天",
+  "pinyin": "dàngtiān",
+  "pos": [
+   "noun"
+  ],
+  "translation": "that very day",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "粘",
+  "pinyin": "zhān",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to stick, to glue",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "钻",
+  "pinyin": "zuān",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to drill, to go into",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "悲剧",
+  "pinyin": "bēijù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "tragedy",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "夹",
+  "pinyin": "jiā",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to press, to squeeze",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "出于",
+  "pinyin": "chūyú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "out of, due to",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "电力",
+  "pinyin": "diànlì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "power, electricity",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "得了",
+  "pinyin": "déle",
+  "pos": [
+   "verb",
+   "particle"
+  ],
+  "translation": "to finish; used after verbs to express possibility",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "悲伤",
+  "pinyin": "bēishāng",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "sad",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "属",
+  "pinyin": "shǔ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to belong to",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "损伤",
+  "pinyin": "sǔnshāng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to harm",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "主角",
+  "pinyin": "zhǔjué",
+  "pos": [
+   "noun"
+  ],
+  "translation": "leading role, protagonist",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "笑容",
+  "pinyin": "xiàoróng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "smile",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "寻求",
+  "pinyin": "xúnqiú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to seek",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "隐藏",
+  "pinyin": "yǐncáng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to hide, to conceal",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "算了",
+  "pinyin": "suànle",
+  "pos": [
+   "verb",
+   "particle"
+  ],
+  "translation": "forget it; that's enough",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "狠",
+  "pinyin": "hěn",
+  "pos": [
+   "adjective",
+   "verb",
+   "adverb"
+  ],
+  "translation": "fierce, cruel; to harden one's heart; fiercely",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "天下",
+  "pinyin": "tiānxià",
+  "pos": [
+   "noun"
+  ],
+  "translation": "the world, under heaven",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "高手",
+  "pinyin": "gāoshǒu",
+  "pos": [
+   "noun"
+  ],
+  "translation": "expert, master",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "暖",
+  "pinyin": "nuǎn",
+  "pos": [
+   "adjective",
+   "verb"
+  ],
+  "translation": "warm; to warm up",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "不许",
+  "pinyin": "bùxǔ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "not allowed, forbidden",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "录像",
+  "pinyin": "lùxiàng",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "translation": "video recording; to record",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "免",
+  "pinyin": "miǎn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to exempt, to avoid",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "转身",
+  "pinyin": "zhuǎnshēn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to turn around",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "会见",
+  "pinyin": "huìjiàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to meet",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "无疑",
+  "pinyin": "wúyí",
+  "pos": [
+   "verb"
+  ],
+  "translation": "undoubtedly",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "救命",
+  "pinyin": "jiùmìng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to save a life",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "联合国",
+  "pinyin": "Liánhéguó",
+  "pos": [
+   "noun"
+  ],
+  "translation": "United Nations",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "持有",
+  "pinyin": "chíyǒu",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to hold, to possess",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "灭",
+  "pinyin": "miè",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to extinguish, to destroy",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "血管",
+  "pinyin": "xuèguǎn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "blood vessel",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "热线",
+  "pinyin": "rèxiàn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "hotline",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "关联",
+  "pinyin": "guānlián",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to be related, to be connected",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "金钱",
+  "pinyin": "jīnqián",
+  "pos": [
+   "noun"
+  ],
+  "translation": "money",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "街头",
+  "pinyin": "jiētóu",
+  "pos": [
+   "noun"
+  ],
+  "translation": "street",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "惊人",
+  "pinyin": "jīngrén",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "astonishing, amazing",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "质疑",
+  "pinyin": "zhìyí",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to question, to doubt",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "泥",
+  "pinyin": "ní",
+  "pos": [
+   "noun"
+  ],
+  "translation": "mud",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "民众",
+  "pinyin": "mínzhòng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "public, populace",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "场景",
+  "pinyin": "chǎngjǐng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "scene",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "救援",
+  "pinyin": "jiùyuán",
+  "pos": [
+   "verb"
+  ],
+  "translation": "rescue, relief",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "败",
+  "pinyin": "bài",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to be defeated, to fail",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "火灾",
+  "pinyin": "huǒzāi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "fire disaster, fire",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "妙",
+  "pinyin": "miào",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "wonderful, excellent",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "头脑",
+  "pinyin": "tóunǎo",
+  "pos": [
+   "noun"
+  ],
+  "translation": "mind, brains",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "倒是",
+  "pinyin": "dàoshì",
+  "pos": [
+   "adverb"
+  ],
+  "translation": "contrary to expectation, but",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "此刻",
+  "pinyin": "cǐkè",
+  "pos": [
+   "noun"
+  ],
+  "translation": "this moment",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "尺",
+  "pinyin": "chǐ",
+  "pos": [
+   "measure word",
+   "noun"
+  ],
+  "translation": "measure word for length; ruler",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "通信",
+  "pinyin": "tōngxìn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "communication by letter, phone, etc.",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "寸",
+  "pinyin": "cùn",
+  "pos": [
+   "measure word"
+  ],
+  "translation": "cun, Chinese inch",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "虽",
+  "pinyin": "suī",
+  "pos": [
+   "conjunction"
+  ],
+  "translation": "although",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "货车",
+  "pinyin": "huòchē",
+  "pos": [
+   "noun"
+  ],
+  "translation": "truck, freight car",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "出场",
+  "pinyin": "chūchǎng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to appear on stage, to enter",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "骗子",
+  "pinyin": "piànzi",
+  "pos": [
+   "noun"
+  ],
+  "translation": "swindler",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "外科",
+  "pinyin": "wàikē",
+  "pos": [
+   "noun"
+  ],
+  "translation": "surgery",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "肿",
+  "pinyin": "zhǒng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to swell",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "康复",
+  "pinyin": "kāngfù",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to recover",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "穿过",
+  "pinyin": "chuānguò",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to go through, to pass through",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "城镇",
+  "pinyin": "chéngzhèn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "town, small city",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "肝",
+  "pinyin": "gān",
+  "pos": [
+   "noun"
+  ],
+  "translation": "liver",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "也好",
+  "pinyin": "yěhǎo",
+  "pos": [
+   "particle"
+  ],
+  "translation": "that's fine, or",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "偷偷",
+  "pinyin": "tōutōu",
+  "pos": [
+   "adverb"
+  ],
+  "translation": "secretly, stealthily",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "酱",
+  "pinyin": "jiàng",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "translation": "sauce, paste; to sauce",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "来临",
+  "pinyin": "láilín",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to come, to arrive",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "浮",
+  "pinyin": "fú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to float",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "奖品",
+  "pinyin": "jiǎngpǐn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "prize",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "内衣",
+  "pinyin": "nèiyī",
+  "pos": [
+   "noun"
+  ],
+  "translation": "underwear",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "困扰",
+  "pinyin": "kùnrǎo",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to trouble, to disturb",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "手臂",
+  "pinyin": "shǒubì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "arm",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "聚集",
+  "pinyin": "jùjí",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to gather",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "融入",
+  "pinyin": "róngrù",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to integrate into",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "高层",
+  "pinyin": "gāocéng",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "translation": "high-level, upper class; high-ranking",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "军人",
+  "pinyin": "jūnrén",
+  "pos": [
+   "noun"
+  ],
+  "translation": "soldier",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "图像",
+  "pinyin": "túxiàng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "image",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "常规",
+  "pinyin": "chángguī",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "translation": "convention, rule; conventional",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "误",
+  "pinyin": "wù",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to mistake, to misunderstand",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "添",
+  "pinyin": "tiān",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to add",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "被迫",
+  "pinyin": "bèipò",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to be forced",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "扫描",
+  "pinyin": "sǎomiáo",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to scan",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "理念",
+  "pinyin": "lǐniàn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "idea, concept",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "排名",
+  "pinyin": "páimíng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to rank",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "逃跑",
+  "pinyin": "táopǎo",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to flee, to run away",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "众人",
+  "pinyin": "zhòngrén",
+  "pos": [
+   "noun"
+  ],
+  "translation": "crowd, everyone",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "尖",
+  "pinyin": "jiān",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "translation": "sharp, pointed; tip",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "箭",
+  "pinyin": "jiàn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "arrow",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "谈论",
+  "pinyin": "tánlùn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to discuss",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "扭",
+  "pinyin": "niǔ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to twist, to turn",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "转换",
+  "pinyin": "zhuǎnhuàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to convert, to transform",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "净",
+  "pinyin": "jìng",
+  "pos": [
+   "adjective",
+   "adverb"
+  ],
+  "translation": "clean, net; merely, only",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "收购",
+  "pinyin": "shōugòu",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to purchase, to acquire",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "重建",
+  "pinyin": "chóngjiàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to rebuild",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "看好",
+  "pinyin": "kànhǎo",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to be optimistic about, to fancy",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "管道",
+  "pinyin": "guǎndào",
+  "pos": [
+   "noun"
+  ],
+  "translation": "pipe, tubing",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "效应",
+  "pinyin": "xiàoyìng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "effect",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "中毒",
+  "pinyin": "zhòngdú",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to be poisoned",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "抑制",
+  "pinyin": "yìzhì",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to suppress, to inhibit",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "理性",
+  "pinyin": "lǐxìng",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "translation": "rational, reasonable; reason",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "服用",
+  "pinyin": "fúyòng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to take (medicine)",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "捐赠",
+  "pinyin": "juānzèng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to donate",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "交谈",
+  "pinyin": "jiāotán",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to chat, to converse",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "取代",
+  "pinyin": "qǔdài",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to replace",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "模拟",
+  "pinyin": "mónǐ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to simulate",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "吞",
+  "pinyin": "tūn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to swallow",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "正面",
+  "pinyin": "zhèngmiàn",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "translation": "front side; positive, direct",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "毫不",
+  "pinyin": "háo bù",
+  "pos": [],
+  "translation": "not at all",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "棉",
+  "pinyin": "mián",
+  "pos": [
+   "noun"
+  ],
+  "translation": "cotton",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "顾",
+  "pinyin": "gù",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to attend to, to look after",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "大使",
+  "pinyin": "dàshǐ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "ambassador",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "打造",
+  "pinyin": "dǎzào",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to create, to build",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "得以",
+  "pinyin": "déyǐ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to be able to, so that",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "上市",
+  "pinyin": "shàngshì",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to go public with shares",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "猜测",
+  "pinyin": "cāicè",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to guess",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "场地",
+  "pinyin": "chǎngdì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "site, location",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "伤亡",
+  "pinyin": "shāngwáng",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "translation": "to be injured; casualties",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "限",
+  "pinyin": "xiàn",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to limit",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "金牌",
+  "pinyin": "jīnpái",
+  "pos": [
+   "noun"
+  ],
+  "translation": "gold medal",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "处罚",
+  "pinyin": "chǔfá",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to punish",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "开启",
+  "pinyin": "kāiqǐ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to open, to start",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "用心",
+  "pinyin": "yòngxīn",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "attentively, with concentration",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "流动",
+  "pinyin": "liúdòng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to flow",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "喜剧",
+  "pinyin": "xǐjù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "comedy",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "视觉",
+  "pinyin": "shìjué",
+  "pos": [
+   "noun"
+  ],
+  "translation": "vision",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "香水",
+  "pinyin": "xiāngshuǐ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "perfume",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "救助",
+  "pinyin": "jiùzhù",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to help, to rescue",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "汇",
+  "pinyin": "huì",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to remit, to converge",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "一同",
+  "pinyin": "yìtóng",
+  "pos": [
+   "adverb"
+  ],
+  "translation": "together, along with",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "珠宝",
+  "pinyin": "zhūbǎo",
+  "pos": [
+   "noun"
+  ],
+  "translation": "jewelry, gems",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "赖",
+  "pinyin": "lài",
+  "pos": [
+   "adjective",
+   "verb"
+  ],
+  "translation": "bad; to rely on, to depend on",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "愁",
+  "pinyin": "chóu",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to worry",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "都市",
+  "pinyin": "dūshì",
+  "pos": [
+   "noun"
+  ],
+  "translation": "city",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "专用",
+  "pinyin": "zhuānyòng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "dedicated, specialized",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "燃料",
+  "pinyin": "ránliào",
+  "pos": [
+   "noun"
+  ],
+  "translation": "fuel",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "认同",
+  "pinyin": "rèntóng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to identify with",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "思路",
+  "pinyin": "sīlù",
+  "pos": [
+   "noun"
+  ],
+  "translation": "train of thought",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "严",
+  "pinyin": "yán",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "strict",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "尺寸",
+  "pinyin": "chǐcùn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "size",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "海岸",
+  "pinyin": "hǎi'àn",
+  "pos": [
+   "noun"
+  ],
+  "translation": "coast, shore",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "通话",
+  "pinyin": "tōnghuà",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to talk on the phone",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "担忧",
+  "pinyin": "dānyōu",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to worry, to be anxious",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "赞同",
+  "pinyin": "zàntóng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to agree, to approve",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "融合",
+  "pinyin": "rónghé",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to blend, to merge",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "焦虑",
+  "pinyin": "jiāolǜ",
+  "pos": [
+   "adjective"
+  ],
+  "translation": "anxious",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "牢",
+  "pinyin": "láo",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "translation": "prison; firm, solid",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "避",
+  "pinyin": "bì",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to avoid",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "肠",
+  "pinyin": "cháng",
+  "pos": [
+   "noun"
+  ],
+  "translation": "intestine",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "预定",
+  "pinyin": "yùdìng",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to book, to reserve",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "家园",
+  "pinyin": "jiāyuán",
+  "pos": [
+   "noun"
+  ],
+  "translation": "homeland",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "清洗",
+  "pinyin": "qīngxǐ",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to wash",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "上台",
+  "pinyin": "shàngtái",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to take the stage",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "气体",
+  "pinyin": "qìtǐ",
+  "pos": [
+   "noun"
+  ],
+  "translation": "gas",
+  "from": "HSK 3.0 L6"
+ },
+ {
+  "hanzi": "渡",
+  "pinyin": "dù",
+  "pos": [
+   "verb"
+  ],
+  "translation": "to cross a river",
+  "from": "HSK 3.0 L6"
+ }
+]

@@ -1,0 +1,269 @@
+[
+ {
+  "hanzi": "乡",
+  "field": "example",
+  "before": {
+   "zh": "他从小在乡下长大，对农村生活很熟悉。",
+   "en": "He grew up in the countryside and knows rural life well."
+  },
+  "after": {
+   "zh": "他在城里工作了十年，最后还是决定回乡种地。",
+   "en": "After ten years working in the city, he finally decided to go back to his village and farm."
+  },
+  "why": "example only showed 乡 inside the separate word 乡下; now uses 乡 itself (回乡)"
+ },
+ {
+  "hanzi": "病房",
+  "field": "quiz",
+  "before": {
+   "zh": "他住的病房里有三张床，都住满了病人。",
+   "en": "The ward he's in has three beds, all occupied by patients."
+  },
+  "after": {
+   "zh": "他住的病房里一共有三张病床，另外两张也都住了人。",
+   "en": "The ward he's in has three beds, and the other two are occupied as well."
+  },
+  "why": "\"有三张床，都住满了病人\" is awkward (a bed is not \"filled up\" with patients)"
+ },
+ {
+  "hanzi": "开业",
+  "field": "example",
+  "before": {
+   "zh": "我们小区门口新开了一家超市，明天正式开业。",
+   "en": "A new supermarket has opened at the entrance to our neighbourhood; it officially opens for business tomorrow."
+  },
+  "after": {
+   "zh": "我们小区门口那家超市装修好了，明天正式开业。",
+   "en": "The supermarket at the entrance to our neighbourhood has finished its fit-out and officially opens tomorrow."
+  },
+  "why": "\"新开了一家超市，明天正式开业\" contradicts itself (already opened vs opens tomorrow)"
+ },
+ {
+  "hanzi": "热量",
+  "field": "example",
+  "before": {
+   "zh": "太阳给地球带来了光和热量。",
+   "en": "The sun brings light and heat to the earth."
+  },
+  "after": {
+   "zh": "穿羽绒服可以减少身体热量的散失。",
+   "en": "Wearing a down jacket reduces the loss of body heat."
+  },
+  "why": "\"光和热量\" is unidiomatic; the set phrase is 光和热, so the sentence taught a wrong collocation"
+ },
+ {
+  "hanzi": "折扣",
+  "field": "example",
+  "before": {
+   "zh": "会员在本店购物可以享受九折的折扣。",
+   "en": "Members get a ten percent discount when shopping in our store."
+  },
+  "after": {
+   "zh": "如果一次买得多，老板一般都会给点折扣。",
+   "en": "If you buy a lot at once, the owner will usually give you a bit of a discount."
+  },
+  "why": "\"享受九折的折扣\" is redundant (九折 already is the discount); natural is 享受九折优惠"
+ },
+ {
+  "hanzi": "大批",
+  "field": "example",
+  "before": {
+   "zh": "每年春节前，都有大批人回老家过年。",
+   "en": "Every year before the Spring Festival, huge numbers of people go home for the holiday."
+  },
+  "after": {
+   "zh": "每年春节前，都有大批在外打工的人回老家过年。",
+   "en": "Every year before the Spring Festival, huge numbers of migrant workers go home for the holiday."
+  },
+  "why": "bare \"大批人\" is unidiomatic; 大批 wants a modified noun phrase"
+ },
+ {
+  "hanzi": "一路顺风",
+  "field": "example",
+  "before": {
+   "zh": "明天你就要出国了，祝你一路顺风！",
+   "en": "You're going abroad tomorrow; have a safe trip!"
+  },
+  "after": {
+   "zh": "你明天就要坐火车回老家了，祝你一路顺风！",
+   "en": "You're taking the train home tomorrow, so have a safe trip!"
+  },
+  "why": "wishing 一路顺风 to someone flying abroad is a known faux pas (planes take off into a headwind); moved to a train trip"
+ },
+ {
+  "hanzi": "西餐",
+  "field": "quiz",
+  "before": {
+   "zh": "情人节那天，他请女朋友去一家高级西餐厅吃饭。",
+   "en": "On Valentine's Day he took his girlfriend to an upmarket Western restaurant."
+  },
+  "after": {
+   "zh": "他吃不惯西餐，总觉得牛排没有中国菜香。",
+   "en": "He can't get used to Western food; he always feels steak isn't as tasty as Chinese dishes."
+  },
+  "why": "blank fell inside the compound 西餐厅 (\"高级＿＿厅\"), so the quiz did not test the word on its own"
+ },
+ {
+  "hanzi": "轻重",
+  "field": "example",
+  "before": {
+   "zh": "工作要分清轻重缓急，先做最重要的事。",
+   "en": "At work you need to prioritise and do the most important things first."
+  },
+  "after": {
+   "zh": "做事要分清轻重，先把最要紧的事办完。",
+   "en": "You need to know what matters most and get the most urgent things done first."
+  },
+  "why": "example only showed 轻重 inside the idiom 轻重缓急; now uses 分清轻重 on its own"
+ },
+ {
+  "hanzi": "研制",
+  "field": "quiz",
+  "before": {
+   "zh": "我国自主研制的大型客机已经成功试飞。",
+   "en": "The large passenger jet developed independently by our country has completed a successful test flight."
+  },
+  "after": {
+   "zh": "一九六四年，中国第一颗原子弹研制成功。",
+   "en": "In 1964, China successfully developed its first atomic bomb."
+  },
+  "why": "ambiguous blank: 研发 (same batch) fits \"自主研发的大型客机\" equally well"
+ },
+ {
+  "hanzi": "制订",
+  "field": "quiz",
+  "before": {
+   "zh": "政府正在制订新的政策，帮助小企业渡过难关。",
+   "en": "The government is drawing up new policies to help small businesses through hard times."
+  },
+  "after": {
+   "zh": "老师根据每个学生的情况，制订了不同的学习计划。",
+   "en": "Based on each student's situation, the teacher drew up a different study plan for each."
+  },
+  "why": "ambiguous blank: 制定 (same sound) is the standard verb for 政策; 制订 belongs with 计划/方案"
+ },
+ {
+  "hanzi": "加深",
+  "field": "quiz",
+  "before": {
+   "zh": "这次旅行加深了我对中国文化的理解。",
+   "en": "This trip deepened my understanding of Chinese culture."
+  },
+  "after": {
+   "zh": "这条河太浅，船过不去，得把河道加深一些。",
+   "en": "This river is too shallow for boats to get through; the channel needs to be deepened."
+  },
+  "why": "ambiguous blank: 增进 (same batch) fits \"增进了我对中国文化的理解\" equally well; also near-duplicate of the example"
+ },
+ {
+  "hanzi": "胆小",
+  "field": "indonesian",
+  "before": "penakut; pemalu",
+  "after": "penakut; pengecut",
+  "why": "\"pemalu\" means shy, not timid/cowardly"
+ },
+ {
+  "hanzi": "有益",
+  "field": "example",
+  "before": {
+   "zh": "适量喝茶对身体是有益的。",
+   "en": "Drinking tea in moderation is good for your health."
+  },
+  "after": {
+   "zh": "适量喝茶对身体是有益的，但不要喝得太浓。",
+   "en": "Drinking tea in moderation is good for you, but don't drink it too strong."
+  },
+  "why": "example was 11 characters, below the 12-character minimum; lengthened naturally"
+ },
+ {
+  "hanzi": "职工",
+  "field": "example",
+  "before": {
+   "zh": "这家工厂有两千多名职工。",
+   "en": "This factory has more than two thousand workers."
+  },
+  "after": {
+   "zh": "这家工厂规模很大，有两千多名职工。",
+   "en": "This is a big factory with more than two thousand workers."
+  },
+  "why": "example was 11 characters, below the 12-character minimum; lengthened naturally"
+ },
+ {
+  "hanzi": "大爷",
+  "field": "example",
+  "before": {
+   "zh": "大爷，请问去火车站怎么走？",
+   "en": "Excuse me, sir, how do I get to the train station?"
+  },
+  "after": {
+   "zh": "大爷，请问去火车站应该怎么走？",
+   "en": "Excuse me, sir, which way is it to the train station?"
+  },
+  "why": "example was 11 characters, below the 12-character minimum; lengthened naturally"
+ },
+ {
+  "hanzi": "树木",
+  "field": "example",
+  "before": {
+   "zh": "山上的树木长得非常茂盛。",
+   "en": "The trees on the mountain are growing very thickly."
+  },
+  "after": {
+   "zh": "这里雨水充足，山上的树木长得非常茂盛。",
+   "en": "There is plenty of rain here, and the trees on the mountain grow very thickly."
+  },
+  "why": "example was 11 characters, below the 12-character minimum; lengthened naturally"
+ },
+ {
+  "hanzi": "特有",
+  "field": "example",
+  "before": {
+   "zh": "大熊猫是中国特有的动物。",
+   "en": "The giant panda is an animal found only in China."
+  },
+  "after": {
+   "zh": "大熊猫是中国特有的珍稀动物。",
+   "en": "The giant panda is a rare animal found only in China."
+  },
+  "why": "example was 11 characters, below the 12-character minimum; lengthened naturally"
+ },
+ {
+  "hanzi": "高效",
+  "field": "example",
+  "before": {
+   "zh": "这种新方法既高效又节能。",
+   "en": "This new method is both efficient and energy-saving."
+  },
+  "after": {
+   "zh": "工厂采用的这种新方法既高效又节能。",
+   "en": "The new method the factory has adopted is both efficient and energy-saving."
+  },
+  "why": "example was 11 characters, below the 12-character minimum; lengthened naturally"
+ },
+ {
+  "hanzi": "窗台",
+  "field": "example",
+  "before": {
+   "zh": "妈妈在窗台上摆了几盆花。",
+   "en": "Mum has put a few pots of flowers on the windowsill."
+  },
+  "after": {
+   "zh": "妈妈在客厅的窗台上摆了几盆花。",
+   "en": "Mum has put a few pots of flowers on the living-room windowsill."
+  },
+  "why": "example was 11 characters, below the 12-character minimum; lengthened naturally"
+ },
+ {
+  "hanzi": "省份",
+  "field": "example",
+  "before": {
+   "zh": "他去过中国的大部分省份。",
+   "en": "He has been to most of China's provinces."
+  },
+  "after": {
+   "zh": "他很喜欢旅游，已经去过中国的大部分省份。",
+   "en": "He loves travelling and has already been to most of China's provinces."
+  },
+  "why": "example was 11 characters, below the 12-character minimum; lengthened naturally"
+ }
+]

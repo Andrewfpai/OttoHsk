@@ -69,11 +69,15 @@ export function Choices({
           <button
             key={o}
             type="button"
-            disabled={shown}
+            // Not `disabled`: words inside stay tappable for lookup once shown.
+            aria-disabled={shown || undefined}
             aria-pressed={!shown ? isPicked : undefined}
-            onClick={() => onPick(o)}
+            onClick={() => {
+              if (!shown) onPick(o);
+            }}
             className={cn(
-              "focus-visible:ring-ring inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-xl border px-4 py-2 transition-colors focus-visible:ring-2 focus-visible:outline-none disabled:cursor-default",
+              "focus-visible:ring-ring inline-flex min-h-11 items-center gap-2 rounded-xl border px-4 py-2 transition-colors focus-visible:ring-2 focus-visible:outline-none",
+              shown ? "cursor-default" : "cursor-pointer",
               hanzi && "font-hanzi text-lg",
               !shown && !isPicked && "hover:border-primary/50 hover:bg-muted/50",
               !shown && isPicked && "border-primary bg-primary/10",
