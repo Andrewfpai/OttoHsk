@@ -13,6 +13,8 @@ import { confusablesHsk6 } from "../confusables-hsk6";
 import { orderingItems } from "../ordering";
 import { getOrderingNote } from "../ordering-notes";
 import { orderingPapers } from "../ordering-papers";
+import audio from "../listening-audio.json";
+import { listeningHsk6 } from "../listening-hsk6";
 import { readingHsk6 } from "../reading-hsk6";
 import { sentenceFillHsk6 } from "../sentence-fill-hsk6";
 import type { ClozePassage, ConfusableSet } from "../types";
@@ -249,6 +251,46 @@ describe("HSK 6", () => {
         expect(unique([...q.options])).toBe(true);
         expect([0, 1, 2, 3]).toContain(q.answer);
         expect(q.why.trim()).not.toBe("");
+      }
+    });
+  });
+
+  describe("listening", () => {
+    it("has unique paper ids", () => {
+      expect(unique(listeningHsk6.map((p) => p.id))).toBe(true);
+    });
+
+    it.each(listeningHsk6.map((p) => [p.id, p] as const))("%s follows the exam: 8, 5 and 3 items, questions 1–40", (_, paper) => {
+      expect(paper.items.map((i) => i.part)).toEqual([...Array(8).fill(1), ...Array(5).fill(2), ...Array(3).fill(3)]);
+      const qs = paper.items.flatMap((i) => i.questions);
+      expect(qs.map((q) => q.number)).toEqual(Array.from({ length: 40 }, (_, i) => 1 + i));
+      expect(unique(paper.items.map((i) => i.id))).toBe(true);
+      for (const item of paper.items) {
+        expect(item.id.startsWith(`${paper.id}-`)).toBe(true);
+        expect(item.lines.length).toBeGreaterThan(0);
+        for (const line of item.lines) expect(line.text.trim()).not.toBe("");
+        expect(item.questions).toHaveLength(item.part === 1 ? 1 : 4);
+        if (item.part === 3) expect(new Set(item.lines.map((l) => l.speaker)).size).toBe(2);
+        for (const q of item.questions) {
+          if (item.part === 1) expect(q.prompt).toBeUndefined();
+          else expect(q.prompt?.trim()).toBeTruthy();
+          expect(unique([...q.options])).toBe(true);
+          expect([0, 1, 2, 3]).toContain(q.answer);
+          expect(q.why.trim()).not.toBe("");
+        }
+      }
+    });
+
+    it("has a recording for every line, intro and spoken question (run scripts/build-listening-audio.ts)", () => {
+      const clips = audio as Record<string, string>;
+      for (const paper of listeningHsk6) {
+        for (const item of paper.items) {
+          item.lines.forEach((_, i) => expect(clips[`${item.id}:L${i}`], `${item.id}:L${i}`).toBeTruthy());
+          if (item.part !== 1) {
+            expect(clips[`${item.id}:intro`]).toBeTruthy();
+            for (const q of item.questions) expect(clips[`${item.id}:Q${q.number}`]).toBeTruthy();
+          }
+        }
       }
     });
   });

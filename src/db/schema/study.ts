@@ -162,7 +162,7 @@ export const mockTests = pgTable(
  * "error" is HSK 6's 病句 drill (find the sentence with an error); "reading"
  * is a reading paper's Parts 2–3, one row per question ("h51329#71").
  */
-export const drillKind = pgEnum("drill_kind", ["confusable", "ordering", "cloze", "error", "reading", "sentence"]);
+export const drillKind = pgEnum("drill_kind", ["confusable", "ordering", "cloze", "error", "reading", "sentence", "listening"]);
 
 /**
  * Every answer in the confusables, ordering and fill-in (cloze) drills.

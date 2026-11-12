@@ -20,6 +20,7 @@ const DRILL_LINKS: Record<DrillKind, { label: string; href: string }> = {
   ordering: { label: "Sentence order", href: "/ordering" },
   error: { label: "Find the error", href: "/dashboard" },
   sentence: { label: "Sentence fill", href: "/sentences" },
+  listening: { label: "Listening", href: "/listening" },
   reading: { label: "Reading", href: "/reading" },
 };
 

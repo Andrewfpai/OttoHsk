@@ -12,11 +12,13 @@ import { confusablesHsk6 } from "@/content/confusables-hsk6";
 import { orderingItems } from "@/content/ordering";
 import { orderingPapers } from "@/content/ordering-papers";
 import { READING_SETS } from "@/content/reading";
+import { listeningHsk6 } from "@/content/listening-hsk6";
 import { readingHsk6 } from "@/content/reading-hsk6";
 import { sentenceFillHsk6 } from "@/content/sentence-fill-hsk6";
 import type {
   ClozePassage,
   ConfusableSet,
+  ListeningPaper,
   OrderingItem,
   ReadingPaper,
   SentenceFillPassage,
@@ -37,6 +39,8 @@ export type LevelDrills = {
   sentence: SentenceFillPassage[];
   /** Long passages: HSK 5 Parts 2–3 of real papers; HSK 6 Part 3 (61–80). */
   reading: ReadingPaper[];
+  /** HSK 6 only: listening practice papers (1–40). */
+  listening: ListeningPaper[];
 };
 
 export const DRILLS: Record<Level, LevelDrills> = {
@@ -46,6 +50,7 @@ export const DRILLS: Record<Level, LevelDrills> = {
     ordering: { papers: orderingPapers, builtIn: orderingItems },
     sentence: [],
     reading: READING_SETS.map((s) => s.paper),
+    listening: [],
   },
   6: {
     confusable: confusablesHsk6,
@@ -53,13 +58,14 @@ export const DRILLS: Record<Level, LevelDrills> = {
     ordering: { papers: [], builtIn: [] },
     sentence: sentenceFillHsk6,
     reading: readingHsk6,
+    listening: listeningHsk6,
   },
 };
 
 /** Which drills each level has, in menu order. */
 export const LEVEL_DRILL_KINDS: Record<Level, DrillKind[]> = {
   5: ["confusable", "cloze", "ordering", "reading"],
-  6: ["confusable", "cloze", "sentence", "reading"],
+  6: ["confusable", "listening", "cloze", "sentence", "reading"],
 };
 
 /** Every question id of one drill at one level. */
@@ -79,6 +85,10 @@ export function drillItemIds(level: Level, kind: DrillKind): string[] {
         [...paper.part2, ...paper.part3].flatMap((item) =>
           item.questions.map((q) => questionId(paper.id, q.number)),
         ),
+      );
+    case "listening":
+      return d.listening.flatMap((paper) =>
+        paper.items.flatMap((item) => item.questions.map((q) => questionId(paper.id, q.number))),
       );
     case "error":
       // The HSK 2.0 病句 drill is gone; past answers stay in the table.

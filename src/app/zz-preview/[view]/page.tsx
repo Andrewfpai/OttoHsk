@@ -5,7 +5,8 @@
  */
 import { notFound } from "next/navigation";
 
-import audioWords from "@/content/audio-test.json";
+import listeningAudio from "@/content/listening-audio.json";
+import { listeningHsk6 } from "@/content/listening-hsk6";
 import { READING_SETS } from "@/content/reading";
 import { readingHsk6 } from "@/content/reading-hsk6";
 import readingTokens from "@/content/reading-tokens.json";
@@ -17,8 +18,8 @@ import { StarsProvider } from "@/features/stars/components/stars";
 import { StudySettingsForm } from "@/features/account/components/study-settings-form";
 import { SentenceFillDrill } from "@/features/drills/components/sentence-fill-drill";
 import { DRILLS, drillItemIds } from "@/features/drills/lib/items";
-import { AudioTest } from "@/features/audio/audio-test";
 import { WritingStudio } from "@/features/essays/components/writing-studio";
+import { ListeningPapers } from "@/features/listening/components/listening-paper";
 import { toLevel } from "@/lib/levels";
 
 import { AppShell } from "@/components/layout/app-shell";
@@ -169,10 +170,16 @@ export default async function PreviewPage({ params, searchParams }: PageProps<"/
         <StudySettingsForm level={level} examDate="2026-11-07" />
       </PageContainer>
     ),
-    audio: (
+    listening: (
       <PageContainer>
-        <PageHeader title="Audio test" />
-        <AudioTest data={audioWords} />
+        <PageHeader title="Listening 听力" />
+        <StarsProvider initial={starred} offline>
+          <ListeningPapers
+            papers={listeningHsk6}
+            audio={listeningAudio}
+            tokens={readingTokens as Record<string, ReadingToken[]>}
+          />
+        </StarsProvider>
       </PageContainer>
     ),
     review: (

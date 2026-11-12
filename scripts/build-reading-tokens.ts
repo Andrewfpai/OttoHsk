@@ -22,6 +22,7 @@ import { pinyin } from "pinyin-pro";
 import { clozePassages } from "../src/content/cloze";
 import { clozeHsk6 } from "../src/content/cloze-hsk6";
 import { READING_SETS } from "../src/content/reading";
+import { listeningHsk6 } from "../src/content/listening-hsk6";
 import { readingHsk6 } from "../src/content/reading-hsk6";
 import { sentenceFillHsk6 } from "../src/content/sentence-fill-hsk6";
 import type { ReadingPaper, ReadingToken as Token } from "../src/content/types";
@@ -634,6 +635,15 @@ for (const paper of PAPERS) {
 for (const passage of [...clozePassages, ...clozeHsk6]) {
   tokens[passage.id] = tokenize(passage.text);
   for (const b of passage.blanks) b.options.forEach((o, i) => (tokens[`${passage.id}#${b.number}.${i}`] = tokenize(o)));
+}
+for (const paper of listeningHsk6) {
+  for (const item of paper.items) {
+    item.lines.forEach((line, i) => (tokens[`${item.id}:L${i}`] = tokenize(line.text)));
+    for (const q of item.questions) {
+      if (q.prompt) tokens[`${paper.id}#${q.number}`] = tokenize(q.prompt);
+      q.options.forEach((o, i) => (tokens[`${paper.id}#${q.number}.${i}`] = tokenize(o)));
+    }
+  }
 }
 for (const passage of sentenceFillHsk6) {
   tokens[passage.id] = tokenize(passage.text);

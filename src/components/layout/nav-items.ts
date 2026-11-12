@@ -4,6 +4,7 @@ import {
   ClipboardCheck,
   Eye,
   GitCompareArrows,
+  Headphones,
   LayoutDashboard,
   ListOrdered,
   Newspaper,
@@ -32,6 +33,7 @@ export function navItems(level: Level): NavItem[] {
     // Covers both tabs: the word list and /words/flashcards.
     { href: "/words", label: "Words", icon: BookOpenText },
     { href: "/review", label: "Quick review", icon: Eye },
+    ...(level === 6 ? [{ href: "/listening", label: "Listening", icon: Headphones }] : []),
     { href: "/cloze", label: "Fill in", icon: TextCursorInput },
     level === 5
       ? { href: "/ordering", label: "Sentence order", icon: ListOrdered }

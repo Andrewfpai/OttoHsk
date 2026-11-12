@@ -9,7 +9,7 @@ import { requireUser } from "@/lib/auth-guard";
 
 import { isDrillItem } from "../lib/items";
 
-const kind = z.enum(["confusable", "ordering", "cloze", "reading", "sentence"]);
+const kind = z.enum(["confusable", "ordering", "cloze", "reading", "sentence", "listening"]);
 
 const schema = z.object({
   kind,

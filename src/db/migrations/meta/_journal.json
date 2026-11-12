@@ -50,6 +50,13 @@
       "when": 1794478502058,
       "tag": "0006_own_starred_words",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1794483340939,
+      "tag": "0007_listening",
+      "breakpoints": true
     }
   ]
 }

@@ -151,3 +151,33 @@ export type WritingPrompt = {
   /** Minimum length in characters: 150 for Part 1, 300 for Part 2. */
   minChars: number;
 };
+
+/** Who says a line of a listening script: it decides the voice. */
+export type ListeningSpeaker = "woman" | "man";
+
+/**
+ * One listening item: a recording (one speaker, or a man and a woman) and
+ * its questions. New HSK 6: Part 1 (1–8) a short passage and one question
+ * with no spoken prompt (pick the matching statement); Part 2 (9–28) a
+ * longer passage, four spoken questions; Part 3 (29–40) an interview or
+ * dialogue, four spoken questions.
+ */
+export type ListeningItem = {
+  /** Stable id, e.g. "h6l1-09". */
+  id: string;
+  part: 1 | 2 | 3;
+  /** "1" or "9–12". */
+  numbers: string;
+  /** The recording, line by line, in order. */
+  lines: { speaker: ListeningSpeaker; text: string }[];
+  /** Part 1: one question, no prompt. Parts 2–3: four, each with its spoken prompt. */
+  questions: ReadingQuestion[];
+};
+
+export type ListeningPaper = {
+  /** Stable id, e.g. "h6l1". */
+  id: string;
+  title: string;
+  /** Part 1 (8 items), Part 2 (5 items), Part 3 (3 items), in order. */
+  items: ListeningItem[];
+};

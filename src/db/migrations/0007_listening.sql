@@ -1,0 +1,1 @@
+ALTER TYPE "public"."drill_kind" ADD VALUE 'listening';
