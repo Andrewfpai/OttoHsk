@@ -1,14 +1,13 @@
 """
 Pre-made audio for words and example sentences, with Microsoft Edge's
-neural voices (the edge-tts package: pip install edge-tts). Words are read
-by Xiaoxiao (female); sentences by Yunyang (male, newsreader), as the HSK
-listening paper mixes a woman's and a man's voice.
+neural voices (the edge-tts package: pip install edge-tts), in several
+voices and speeds so they can be compared on the audio test page.
 
-Files go to public/audio/<sha1 of voice+text, 12 chars>.mp3, so a clip is
-only made once and a changed sentence gets a new file. The list of what was
-made is written to src/content/audio-test.json for the audio test page.
+Files go to public/audio/<sha1 of voice+rate+text, 12 chars>.mp3, so a clip
+is only made once and a changed sentence gets a new file. What was made is
+listed in src/content/audio-test.json.
 
-    python -I scripts/build-audio.py [count]     (default: the first 20 HSK 6 words)
+    python -I scripts/build-audio.py [count]     (default: the first 8 HSK 6 words)
 
 edge-tts uses Microsoft's online read-aloud service. It is free but
 unofficial; if it stops working, the browser voice still works.
@@ -25,20 +24,50 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "public", "audio")
-WORD_VOICE = "zh-CN-XiaoxiaoNeural"
-SENTENCE_VOICE = "zh-CN-YunyangNeural"
+
+# Standard Mandarin voices, plus one Taiwan-accented voice for comparison.
+VOICES = {
+    "xiaoxiao": ("zh-CN-XiaoxiaoNeural", "Xiaoxiao", "female · warm"),
+    "xiaoyi": ("zh-CN-XiaoyiNeural", "Xiaoyi", "female · bright"),
+    "yunyang": ("zh-CN-YunyangNeural", "Yunyang", "male · newsreader"),
+    "yunxi": ("zh-CN-YunxiNeural", "Yunxi", "male · young"),
+    "yunjian": ("zh-CN-YunjianNeural", "Yunjian", "male · deep"),
+    "hsiaochen": ("zh-TW-HsiaoChenNeural", "HsiaoChen", "female · Taiwan accent"),
+}
+# Read-aloud speed: the service slows the reading itself, with natural pauses.
+SPEEDS = {"normal": "+0%", "slower": "-20%", "slowest": "-35%"}
 
 
-def clip_name(voice, text):
-    return hashlib.sha1(f"{voice}|{text}".encode("utf-8")).hexdigest()[:12] + ".mp3"
+def clip_name(voice, rate, text):
+    return hashlib.sha1(f"{voice}|{rate}|{text}".encode("utf-8")).hexdigest()[:12] + ".mp3"
 
 
-async def make(voice, text, rate="+0%"):
-    name = clip_name(voice, text)
+async def make(voice, rate, text):
+    name = clip_name(voice, rate, text)
     path = os.path.join(OUT, name)
     if not os.path.exists(path):
-        await edge_tts.Communicate(text, voice, rate=rate).save(path)
+        # The service drops a request now and then; wait and try again.
+        for attempt in range(5):
+            try:
+                await edge_tts.Communicate(text, voice, rate=rate).save(path)
+                break
+            except edge_tts.exceptions.NoAudioReceived:
+                if os.path.exists(path):
+                    os.remove(path)
+                if attempt == 4:
+                    raise
+                await asyncio.sleep(2 * (attempt + 1))
     return f"/audio/{name}"
+
+
+async def clips(text):
+    """Every voice at every speed: {voice key: {speed key: src}}."""
+    out = {}
+    for key, (voice, _, _) in VOICES.items():
+        out[key] = {}
+        for speed, rate in SPEEDS.items():
+            out[key][speed] = await make(voice, rate, text)
+    return out
 
 
 async def main(count):
@@ -47,18 +76,25 @@ async def main(count):
         words = json.load(f)[:count]
     out = []
     for w in words:
-        # A word alone reads a touch slower, so each syllable's tone is clear.
-        word_src = await make(WORD_VOICE, w["hanzi"], rate="-15%")
         ex = w.get("example")
-        sentence = None
-        if ex:
-            sentence = {"zh": ex["zh"], "en": ex["en"], "src": await make(SENTENCE_VOICE, ex["zh"])}
-        out.append({"id": w["id"], "hanzi": w["hanzi"], "pinyin": w["pinyin"], "gloss": w["gloss"], "src": word_src, "sentence": sentence})
-        print(w["hanzi"], word_src, sentence and sentence["src"])
+        out.append({
+            "id": w["id"],
+            "hanzi": w["hanzi"],
+            "pinyin": w["pinyin"],
+            "gloss": w["gloss"],
+            "clips": await clips(w["hanzi"]),
+            "sentence": {"zh": ex["zh"], "en": ex["en"], "clips": await clips(ex["zh"])} if ex else None,
+        })
+        print(w["hanzi"], "done")
+    data = {
+        "voices": [{"key": k, "name": n, "note": note} for k, (_, n, note) in VOICES.items()],
+        "speeds": list(SPEEDS),
+        "words": out,
+    }
     with open(os.path.join(ROOT, "src", "content", "audio-test.json"), "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=1)
+        json.dump(data, f, ensure_ascii=False, indent=1)
         f.write("\n")
-    print(f"{len(out)} words, {sum(1 for o in out if o['sentence'])} sentences")
+    print(f"{len(out)} words × {len(VOICES)} voices × {len(SPEEDS)} speeds")
 
 
-asyncio.run(main(int(sys.argv[1]) if len(sys.argv) > 1 else 20))
+asyncio.run(main(int(sys.argv[1]) if len(sys.argv) > 1 else 8))

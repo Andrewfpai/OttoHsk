@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { PageContainer, PageHeader } from "@/components/layout/page-header";
-import words from "@/content/audio-test.json";
+import data from "@/content/audio-test.json";
 import { AudioTest } from "@/features/audio/audio-test";
 
 export const metadata: Metadata = { title: "Audio test" };
@@ -12,9 +12,9 @@ export default function AudioTestPage() {
     <PageContainer>
       <PageHeader
         title="Audio test"
-        description="The first 20 HSK 6 words and their sentences, two ways: this device's built-in voice, and recorded clips. Try both on your phone and computer, and pick one."
+        description="The first 8 HSK 6 words and their sentences, recorded in six voices at three speeds, with this device's built-in voice to compare. Pick the voice and speed you like."
       />
-      <AudioTest words={words} />
+      <AudioTest data={data} />
     </PageContainer>
   );
 }

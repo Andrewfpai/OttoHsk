@@ -1,242 +1,633 @@
-[
- {
-  "id": "哦",
-  "hanzi": "哦",
-  "pinyin": "ò",
-  "gloss": "oh (showing understanding); oh? (showing doubt)",
-  "src": "/audio/110690a4fb8d.mp3",
-  "sentence": {
-   "zh": "哦，原来你早就知道这件事了。",
-   "en": "Oh, so you knew about this long ago.",
-   "src": "/audio/19010d516896.mp3"
+{
+ "voices": [
+  {
+   "key": "xiaoxiao",
+   "name": "Xiaoxiao",
+   "note": "female · warm"
+  },
+  {
+   "key": "xiaoyi",
+   "name": "Xiaoyi",
+   "note": "female · bright"
+  },
+  {
+   "key": "yunyang",
+   "name": "Yunyang",
+   "note": "male · newsreader"
+  },
+  {
+   "key": "yunxi",
+   "name": "Yunxi",
+   "note": "male · young"
+  },
+  {
+   "key": "yunjian",
+   "name": "Yunjian",
+   "note": "male · deep"
+  },
+  {
+   "key": "hsiaochen",
+   "name": "HsiaoChen",
+   "note": "female · Taiwan accent"
   }
- },
- {
-  "id": "头",
-  "hanzi": "头",
-  "pinyin": "tou",
-  "gloss": "noun suffix used after some nouns (as in stone, wood, tongue)",
-  "src": "/audio/e1736bb65779.mp3",
-  "sentence": {
-   "zh": "院子里有一块大石头，孩子们喜欢坐在上面玩。",
-   "en": "There's a big stone in the yard, and the kids like to sit on it and play.",
-   "src": "/audio/30afbcfefe32.mp3"
+ ],
+ "speeds": [
+  "normal",
+  "slower",
+  "slowest"
+ ],
+ "words": [
+  {
+   "id": "哦",
+   "hanzi": "哦",
+   "pinyin": "ò",
+   "gloss": "oh (showing understanding); oh? (showing doubt)",
+   "clips": {
+    "xiaoxiao": {
+     "normal": "/audio/2a9dafaf8d42.mp3",
+     "slower": "/audio/28ede1232d2f.mp3",
+     "slowest": "/audio/f0eb8878f287.mp3"
+    },
+    "xiaoyi": {
+     "normal": "/audio/4ee86fab9414.mp3",
+     "slower": "/audio/16eee2aa94e2.mp3",
+     "slowest": "/audio/979c3e5d1bbe.mp3"
+    },
+    "yunyang": {
+     "normal": "/audio/fc617dc45093.mp3",
+     "slower": "/audio/c376160f61bb.mp3",
+     "slowest": "/audio/6a0a30c5eee0.mp3"
+    },
+    "yunxi": {
+     "normal": "/audio/116c41d25d84.mp3",
+     "slower": "/audio/b626ee7eb122.mp3",
+     "slowest": "/audio/9bde0a5c21cb.mp3"
+    },
+    "yunjian": {
+     "normal": "/audio/930208ac5b86.mp3",
+     "slower": "/audio/bc9f7d426de6.mp3",
+     "slowest": "/audio/fc3b83ccdc95.mp3"
+    },
+    "hsiaochen": {
+     "normal": "/audio/8d82c546a06b.mp3",
+     "slower": "/audio/a92e8673a69f.mp3",
+     "slowest": "/audio/0422be271c03.mp3"
+    }
+   },
+   "sentence": {
+    "zh": "哦，原来你早就知道这件事了。",
+    "en": "Oh, so you knew about this long ago.",
+    "clips": {
+     "xiaoxiao": {
+      "normal": "/audio/9174f7fe248e.mp3",
+      "slower": "/audio/d29d571b0078.mp3",
+      "slowest": "/audio/0fb8b6657983.mp3"
+     },
+     "xiaoyi": {
+      "normal": "/audio/27282cff08ee.mp3",
+      "slower": "/audio/dd67de61ca36.mp3",
+      "slowest": "/audio/2f49412ab5fa.mp3"
+     },
+     "yunyang": {
+      "normal": "/audio/7d98dceb0451.mp3",
+      "slower": "/audio/d93d210f4507.mp3",
+      "slowest": "/audio/3708c826588e.mp3"
+     },
+     "yunxi": {
+      "normal": "/audio/f7a64caf037c.mp3",
+      "slower": "/audio/07ead540902a.mp3",
+      "slowest": "/audio/a4074fac2a6a.mp3"
+     },
+     "yunjian": {
+      "normal": "/audio/998dd90e2c81.mp3",
+      "slower": "/audio/13e6efca13ef.mp3",
+      "slowest": "/audio/a762d6fc5d55.mp3"
+     },
+     "hsiaochen": {
+      "normal": "/audio/eab53ef1a9f3.mp3",
+      "slower": "/audio/a6394f90a654.mp3",
+      "slowest": "/audio/045443747fc5.mp3"
+     }
+    }
+   }
+  },
+  {
+   "id": "头",
+   "hanzi": "头",
+   "pinyin": "tou",
+   "gloss": "noun suffix used after some nouns (as in stone, wood, tongue)",
+   "clips": {
+    "xiaoxiao": {
+     "normal": "/audio/2d9fb13f6afe.mp3",
+     "slower": "/audio/5603b197f219.mp3",
+     "slowest": "/audio/7a34cef30f41.mp3"
+    },
+    "xiaoyi": {
+     "normal": "/audio/8462be3dccf9.mp3",
+     "slower": "/audio/b73257851037.mp3",
+     "slowest": "/audio/d4b8bdb6f6bd.mp3"
+    },
+    "yunyang": {
+     "normal": "/audio/4d7847b383cf.mp3",
+     "slower": "/audio/36789bc42005.mp3",
+     "slowest": "/audio/7ccfaa936e5f.mp3"
+    },
+    "yunxi": {
+     "normal": "/audio/d4af2fc02fe8.mp3",
+     "slower": "/audio/a99e1a69d583.mp3",
+     "slowest": "/audio/71e5198483ae.mp3"
+    },
+    "yunjian": {
+     "normal": "/audio/7f8e94322a7c.mp3",
+     "slower": "/audio/24bb667981d3.mp3",
+     "slowest": "/audio/9efc9b05eb23.mp3"
+    },
+    "hsiaochen": {
+     "normal": "/audio/bc7e68ad64fd.mp3",
+     "slower": "/audio/6bd77881f7fe.mp3",
+     "slowest": "/audio/599dbf009fac.mp3"
+    }
+   },
+   "sentence": {
+    "zh": "院子里有一块大石头，孩子们喜欢坐在上面玩。",
+    "en": "There's a big stone in the yard, and the kids like to sit on it and play.",
+    "clips": {
+     "xiaoxiao": {
+      "normal": "/audio/1eda411c89bd.mp3",
+      "slower": "/audio/50dadc94df2b.mp3",
+      "slowest": "/audio/cd937486df04.mp3"
+     },
+     "xiaoyi": {
+      "normal": "/audio/e6aecec2579e.mp3",
+      "slower": "/audio/262fbaa9f920.mp3",
+      "slowest": "/audio/49fc52adfbf9.mp3"
+     },
+     "yunyang": {
+      "normal": "/audio/844aa45fc27c.mp3",
+      "slower": "/audio/d7bc49e16507.mp3",
+      "slowest": "/audio/8a70606b9967.mp3"
+     },
+     "yunxi": {
+      "normal": "/audio/cd27a0f756ba.mp3",
+      "slower": "/audio/308a2dce9d93.mp3",
+      "slowest": "/audio/ded3a0b23106.mp3"
+     },
+     "yunjian": {
+      "normal": "/audio/01e0cb796b93.mp3",
+      "slower": "/audio/bb529d031f4f.mp3",
+      "slowest": "/audio/a81de947b594.mp3"
+     },
+     "hsiaochen": {
+      "normal": "/audio/644d46c3bd42.mp3",
+      "slower": "/audio/a83afa1c4528.mp3",
+      "slowest": "/audio/33d5e02afdb8.mp3"
+     }
+    }
+   }
+  },
+  {
+   "id": "如",
+   "hanzi": "如",
+   "pinyin": "rú",
+   "gloss": "like, as; if",
+   "clips": {
+    "xiaoxiao": {
+     "normal": "/audio/e605fe3a7638.mp3",
+     "slower": "/audio/e77e2c0c38d5.mp3",
+     "slowest": "/audio/c19276108bb8.mp3"
+    },
+    "xiaoyi": {
+     "normal": "/audio/bc26dde2c039.mp3",
+     "slower": "/audio/1098c2ee43ed.mp3",
+     "slowest": "/audio/befdc854e8e4.mp3"
+    },
+    "yunyang": {
+     "normal": "/audio/ef663217267f.mp3",
+     "slower": "/audio/2af8450295d1.mp3",
+     "slowest": "/audio/f96c3df02ab8.mp3"
+    },
+    "yunxi": {
+     "normal": "/audio/d5fa50bb1eac.mp3",
+     "slower": "/audio/342613bea88d.mp3",
+     "slowest": "/audio/d3f589cbe59b.mp3"
+    },
+    "yunjian": {
+     "normal": "/audio/4683de009216.mp3",
+     "slower": "/audio/7b542a3de5e1.mp3",
+     "slowest": "/audio/bf28ae5975f8.mp3"
+    },
+    "hsiaochen": {
+     "normal": "/audio/0c6e2b6aae91.mp3",
+     "slower": "/audio/812d66295a35.mp3",
+     "slowest": "/audio/22c7b0cb1a87.mp3"
+    }
+   },
+   "sentence": {
+    "zh": "如有任何疑问，请随时与我们联系。",
+    "en": "If you have any questions, please feel free to contact us.",
+    "clips": {
+     "xiaoxiao": {
+      "normal": "/audio/5c54450bdff0.mp3",
+      "slower": "/audio/2a130396bb12.mp3",
+      "slowest": "/audio/7695ac5cc169.mp3"
+     },
+     "xiaoyi": {
+      "normal": "/audio/f4974030f92d.mp3",
+      "slower": "/audio/4fac7ebb64cc.mp3",
+      "slowest": "/audio/42b9330261c2.mp3"
+     },
+     "yunyang": {
+      "normal": "/audio/3bf532f3f2bd.mp3",
+      "slower": "/audio/0df8226baaa2.mp3",
+      "slowest": "/audio/c9b545f2ca46.mp3"
+     },
+     "yunxi": {
+      "normal": "/audio/53c2e77b04e6.mp3",
+      "slower": "/audio/c1ecc72a37b8.mp3",
+      "slowest": "/audio/7f358f69d899.mp3"
+     },
+     "yunjian": {
+      "normal": "/audio/c8ff2f5bb1bb.mp3",
+      "slower": "/audio/df70ce9eb525.mp3",
+      "slowest": "/audio/668ef6e3d455.mp3"
+     },
+     "hsiaochen": {
+      "normal": "/audio/b44609339d28.mp3",
+      "slower": "/audio/4265201bbf72.mp3",
+      "slowest": "/audio/85ce5681f9c3.mp3"
+     }
+    }
+   }
+  },
+  {
+   "id": "同",
+   "hanzi": "同",
+   "pinyin": "tóng",
+   "gloss": "same, alike; together; with, and",
+   "clips": {
+    "xiaoxiao": {
+     "normal": "/audio/891f74a5a25f.mp3",
+     "slower": "/audio/8698252c1ce6.mp3",
+     "slowest": "/audio/d2a6c40577a1.mp3"
+    },
+    "xiaoyi": {
+     "normal": "/audio/d8f38ec52ee3.mp3",
+     "slower": "/audio/187b44ba6411.mp3",
+     "slowest": "/audio/a6143a74fb92.mp3"
+    },
+    "yunyang": {
+     "normal": "/audio/f684d81fbfe5.mp3",
+     "slower": "/audio/b74485d9536a.mp3",
+     "slowest": "/audio/b5c27a795ddc.mp3"
+    },
+    "yunxi": {
+     "normal": "/audio/36c5cb9ca6ee.mp3",
+     "slower": "/audio/6fef1742ca57.mp3",
+     "slowest": "/audio/eceda5cca2fd.mp3"
+    },
+    "yunjian": {
+     "normal": "/audio/73417f0806f2.mp3",
+     "slower": "/audio/be92c1f39b08.mp3",
+     "slowest": "/audio/5e03215d811c.mp3"
+    },
+    "hsiaochen": {
+     "normal": "/audio/867779e1009c.mp3",
+     "slower": "/audio/e850de540444.mp3",
+     "slowest": "/audio/d6c608329c34.mp3"
+    }
+   },
+   "sentence": {
+    "zh": "他和我同岁，可是看起来比我大好几岁。",
+    "en": "He and I are the same age, but he looks several years older than me.",
+    "clips": {
+     "xiaoxiao": {
+      "normal": "/audio/dc1cff6e59ab.mp3",
+      "slower": "/audio/1ac933a52c61.mp3",
+      "slowest": "/audio/e19be47a1837.mp3"
+     },
+     "xiaoyi": {
+      "normal": "/audio/147a281db7fc.mp3",
+      "slower": "/audio/e257b8c8f202.mp3",
+      "slowest": "/audio/410d865818ed.mp3"
+     },
+     "yunyang": {
+      "normal": "/audio/4b5c15853033.mp3",
+      "slower": "/audio/eaf8a17da751.mp3",
+      "slowest": "/audio/550f36116b98.mp3"
+     },
+     "yunxi": {
+      "normal": "/audio/714279b7b0ab.mp3",
+      "slower": "/audio/015db267ee8d.mp3",
+      "slowest": "/audio/a56ae47c6551.mp3"
+     },
+     "yunjian": {
+      "normal": "/audio/32081e996437.mp3",
+      "slower": "/audio/15c86e96e455.mp3",
+      "slowest": "/audio/43c69418aced.mp3"
+     },
+     "hsiaochen": {
+      "normal": "/audio/51c07339580f.mp3",
+      "slower": "/audio/b9eef5b174b3.mp3",
+      "slowest": "/audio/39528c899298.mp3"
+     }
+    }
+   }
+  },
+  {
+   "id": "如此",
+   "hanzi": "如此",
+   "pinyin": "rúcǐ",
+   "gloss": "such, so, like this",
+   "clips": {
+    "xiaoxiao": {
+     "normal": "/audio/37365b9223dd.mp3",
+     "slower": "/audio/1ddd4331720c.mp3",
+     "slowest": "/audio/dfb2501c5a58.mp3"
+    },
+    "xiaoyi": {
+     "normal": "/audio/0814d914205a.mp3",
+     "slower": "/audio/edf6fe85c22f.mp3",
+     "slowest": "/audio/63ab91a76313.mp3"
+    },
+    "yunyang": {
+     "normal": "/audio/a2842069d303.mp3",
+     "slower": "/audio/efdefb6591a0.mp3",
+     "slowest": "/audio/1307eed59532.mp3"
+    },
+    "yunxi": {
+     "normal": "/audio/26f2f0bc6031.mp3",
+     "slower": "/audio/9a8d293d78e8.mp3",
+     "slowest": "/audio/f03b5a9f8de9.mp3"
+    },
+    "yunjian": {
+     "normal": "/audio/4a97f066806a.mp3",
+     "slower": "/audio/8cb2591611b0.mp3",
+     "slowest": "/audio/a015eeb7d0ae.mp3"
+    },
+    "hsiaochen": {
+     "normal": "/audio/ff3462c9a24e.mp3",
+     "slower": "/audio/6e5cc3ba6469.mp3",
+     "slowest": "/audio/47d541b21135.mp3"
+    }
+   },
+   "sentence": {
+    "zh": "没想到这次考试竟然如此简单，大家都很快交了卷。",
+    "en": "Nobody expected the exam to be so easy; everyone handed in their papers quickly.",
+    "clips": {
+     "xiaoxiao": {
+      "normal": "/audio/96c8796aaa8c.mp3",
+      "slower": "/audio/6370824ba69c.mp3",
+      "slowest": "/audio/d2bed958f5f6.mp3"
+     },
+     "xiaoyi": {
+      "normal": "/audio/0bfbeeccb79f.mp3",
+      "slower": "/audio/4843d75868bc.mp3",
+      "slowest": "/audio/e7317a75f716.mp3"
+     },
+     "yunyang": {
+      "normal": "/audio/2f9b89916b55.mp3",
+      "slower": "/audio/1121a0e4a4b6.mp3",
+      "slowest": "/audio/c2f172366382.mp3"
+     },
+     "yunxi": {
+      "normal": "/audio/197db8d21173.mp3",
+      "slower": "/audio/c7a01f127dcc.mp3",
+      "slowest": "/audio/c1f56b032c22.mp3"
+     },
+     "yunjian": {
+      "normal": "/audio/81e5132ca8ec.mp3",
+      "slower": "/audio/a4de4942732c.mp3",
+      "slowest": "/audio/18a34656caad.mp3"
+     },
+     "hsiaochen": {
+      "normal": "/audio/7e9a192d2ef8.mp3",
+      "slower": "/audio/b33a7d7cdb13.mp3",
+      "slowest": "/audio/0f4e7c96e41f.mp3"
+     }
+    }
+   }
+  },
+  {
+   "id": "处",
+   "hanzi": "处",
+   "pinyin": "chǔ, chù",
+   "gloss": "to get along with, to handle; place, location",
+   "clips": {
+    "xiaoxiao": {
+     "normal": "/audio/161fcbf56a63.mp3",
+     "slower": "/audio/056a669a79e2.mp3",
+     "slowest": "/audio/5376c7a24612.mp3"
+    },
+    "xiaoyi": {
+     "normal": "/audio/e5d7fea4cdd9.mp3",
+     "slower": "/audio/ac9ce93bd89d.mp3",
+     "slowest": "/audio/6132d172db2f.mp3"
+    },
+    "yunyang": {
+     "normal": "/audio/d926de1078c2.mp3",
+     "slower": "/audio/722fff011fe6.mp3",
+     "slowest": "/audio/55a73ac29c64.mp3"
+    },
+    "yunxi": {
+     "normal": "/audio/4fedae46a2c4.mp3",
+     "slower": "/audio/f2f30636e289.mp3",
+     "slowest": "/audio/376f5ff0a0dc.mp3"
+    },
+    "yunjian": {
+     "normal": "/audio/369259898928.mp3",
+     "slower": "/audio/005dcd50386b.mp3",
+     "slowest": "/audio/bc2181c46665.mp3"
+    },
+    "hsiaochen": {
+     "normal": "/audio/dbb39cf249df.mp3",
+     "slower": "/audio/9132f7f459d0.mp3",
+     "slowest": "/audio/49528143563d.mp3"
+    }
+   },
+   "sentence": {
+    "zh": "他脾气好，跟邻居们一直处得很好。",
+    "en": "He's good-natured and has always got along well with his neighbours.",
+    "clips": {
+     "xiaoxiao": {
+      "normal": "/audio/2827645c4ea9.mp3",
+      "slower": "/audio/3485e7626432.mp3",
+      "slowest": "/audio/3111a6b8a72a.mp3"
+     },
+     "xiaoyi": {
+      "normal": "/audio/f6cf6e3466e9.mp3",
+      "slower": "/audio/0ac25f7b59bd.mp3",
+      "slowest": "/audio/b98db9d350c6.mp3"
+     },
+     "yunyang": {
+      "normal": "/audio/d856ff2db5ff.mp3",
+      "slower": "/audio/e870b9951858.mp3",
+      "slowest": "/audio/b49f58b5fbb5.mp3"
+     },
+     "yunxi": {
+      "normal": "/audio/faa43126f312.mp3",
+      "slower": "/audio/f9b397f09d4a.mp3",
+      "slowest": "/audio/444e7da3de2d.mp3"
+     },
+     "yunjian": {
+      "normal": "/audio/58b38c388fc6.mp3",
+      "slower": "/audio/3fc3fd29556e.mp3",
+      "slowest": "/audio/6550127b123b.mp3"
+     },
+     "hsiaochen": {
+      "normal": "/audio/06b0ad10628b.mp3",
+      "slower": "/audio/55b2d3ab8f8b.mp3",
+      "slowest": "/audio/364f1896beee.mp3"
+     }
+    }
+   }
+  },
+  {
+   "id": "其",
+   "hanzi": "其",
+   "pinyin": "qí",
+   "gloss": "his, her, its, their; that",
+   "clips": {
+    "xiaoxiao": {
+     "normal": "/audio/2e61246d94f9.mp3",
+     "slower": "/audio/0957bc9d5f63.mp3",
+     "slowest": "/audio/f461b15a93ce.mp3"
+    },
+    "xiaoyi": {
+     "normal": "/audio/1ef64d95b421.mp3",
+     "slower": "/audio/d1498cb0ced2.mp3",
+     "slowest": "/audio/8c567bf5a867.mp3"
+    },
+    "yunyang": {
+     "normal": "/audio/791d195b1d4c.mp3",
+     "slower": "/audio/0e289d9dc7ba.mp3",
+     "slowest": "/audio/e49d27c87455.mp3"
+    },
+    "yunxi": {
+     "normal": "/audio/a2701aa4cf5e.mp3",
+     "slower": "/audio/1fe9036504a0.mp3",
+     "slowest": "/audio/91d9ec4b488f.mp3"
+    },
+    "yunjian": {
+     "normal": "/audio/346d314c8c90.mp3",
+     "slower": "/audio/be15d17ff857.mp3",
+     "slowest": "/audio/0e428b09cae3.mp3"
+    },
+    "hsiaochen": {
+     "normal": "/audio/7d44d49fc0cc.mp3",
+     "slower": "/audio/6ba1a3d234e5.mp3",
+     "slowest": "/audio/894f5ebed1ae.mp3"
+    }
+   },
+   "sentence": {
+    "zh": "这家公司的产品质量好，其价格也比较合理。",
+    "en": "This company's products are of good quality, and their prices are also fairly reasonable.",
+    "clips": {
+     "xiaoxiao": {
+      "normal": "/audio/3ef1c2cf2375.mp3",
+      "slower": "/audio/fbc54dda6a0f.mp3",
+      "slowest": "/audio/08051dfc44cf.mp3"
+     },
+     "xiaoyi": {
+      "normal": "/audio/6e03e87c7454.mp3",
+      "slower": "/audio/2eb4a6633397.mp3",
+      "slowest": "/audio/6f34c3494f14.mp3"
+     },
+     "yunyang": {
+      "normal": "/audio/6f1542e882b6.mp3",
+      "slower": "/audio/efab0da16439.mp3",
+      "slowest": "/audio/1ff1fc0d2263.mp3"
+     },
+     "yunxi": {
+      "normal": "/audio/80b38a1732cb.mp3",
+      "slower": "/audio/dcfb05ae20cc.mp3",
+      "slowest": "/audio/c2ca712d31ba.mp3"
+     },
+     "yunjian": {
+      "normal": "/audio/6ed9408bda67.mp3",
+      "slower": "/audio/64596c4dee55.mp3",
+      "slowest": "/audio/d9ba804aebc7.mp3"
+     },
+     "hsiaochen": {
+      "normal": "/audio/e9d0280a4710.mp3",
+      "slower": "/audio/46927044dbcd.mp3",
+      "slowest": "/audio/0740752e473f.mp3"
+     }
+    }
+   }
+  },
+  {
+   "id": "曾",
+   "hanzi": "曾",
+   "pinyin": "céng",
+   "gloss": "once, ever (in the past)",
+   "clips": {
+    "xiaoxiao": {
+     "normal": "/audio/f7c11ec38b5f.mp3",
+     "slower": "/audio/fca2b5090802.mp3",
+     "slowest": "/audio/e0106567e86b.mp3"
+    },
+    "xiaoyi": {
+     "normal": "/audio/2dc7aed6f147.mp3",
+     "slower": "/audio/8362da6db84f.mp3",
+     "slowest": "/audio/94f0376aab95.mp3"
+    },
+    "yunyang": {
+     "normal": "/audio/033dd45a46c6.mp3",
+     "slower": "/audio/2b554d737ed1.mp3",
+     "slowest": "/audio/bceeeb64727c.mp3"
+    },
+    "yunxi": {
+     "normal": "/audio/bf17d27736ce.mp3",
+     "slower": "/audio/7ed74bb4bb51.mp3",
+     "slowest": "/audio/a7c58381db17.mp3"
+    },
+    "yunjian": {
+     "normal": "/audio/a23a00b46a7e.mp3",
+     "slower": "/audio/668ebccfde21.mp3",
+     "slowest": "/audio/5e61d56d4f1f.mp3"
+    },
+    "hsiaochen": {
+     "normal": "/audio/5479793e0b4a.mp3",
+     "slower": "/audio/e733ce392272.mp3",
+     "slowest": "/audio/467a8b14f4f2.mp3"
+    }
+   },
+   "sentence": {
+    "zh": "我曾在北京工作过三年，对那里很熟悉。",
+    "en": "I once worked in Beijing for three years, so I know it well.",
+    "clips": {
+     "xiaoxiao": {
+      "normal": "/audio/30c378243993.mp3",
+      "slower": "/audio/a35f7dcf220e.mp3",
+      "slowest": "/audio/1e19c002411b.mp3"
+     },
+     "xiaoyi": {
+      "normal": "/audio/42909ba48c67.mp3",
+      "slower": "/audio/961fc152763a.mp3",
+      "slowest": "/audio/bc7f69ad14f6.mp3"
+     },
+     "yunyang": {
+      "normal": "/audio/295818eb6c93.mp3",
+      "slower": "/audio/14c56091f6c3.mp3",
+      "slowest": "/audio/2221cb278de8.mp3"
+     },
+     "yunxi": {
+      "normal": "/audio/f736bbf98751.mp3",
+      "slower": "/audio/cc8fc1f135c8.mp3",
+      "slowest": "/audio/20860322900d.mp3"
+     },
+     "yunjian": {
+      "normal": "/audio/25e35acf4980.mp3",
+      "slower": "/audio/e78f83d8073a.mp3",
+      "slowest": "/audio/4fad6e3f8f79.mp3"
+     },
+     "hsiaochen": {
+      "normal": "/audio/0d93b792815c.mp3",
+      "slower": "/audio/0287da6f0e36.mp3",
+      "slowest": "/audio/de5fb8902510.mp3"
+     }
+    }
+   }
   }
- },
- {
-  "id": "如",
-  "hanzi": "如",
-  "pinyin": "rú",
-  "gloss": "like, as; if",
-  "src": "/audio/c15b363ec2ce.mp3",
-  "sentence": {
-   "zh": "如有任何疑问，请随时与我们联系。",
-   "en": "If you have any questions, please feel free to contact us.",
-   "src": "/audio/9fa6503bfb38.mp3"
-  }
- },
- {
-  "id": "同",
-  "hanzi": "同",
-  "pinyin": "tóng",
-  "gloss": "same, alike; together; with, and",
-  "src": "/audio/e0c8641ac051.mp3",
-  "sentence": {
-   "zh": "他和我同岁，可是看起来比我大好几岁。",
-   "en": "He and I are the same age, but he looks several years older than me.",
-   "src": "/audio/423ad58cf912.mp3"
-  }
- },
- {
-  "id": "如此",
-  "hanzi": "如此",
-  "pinyin": "rúcǐ",
-  "gloss": "such, so, like this",
-  "src": "/audio/d9b01d667eed.mp3",
-  "sentence": {
-   "zh": "没想到这次考试竟然如此简单，大家都很快交了卷。",
-   "en": "Nobody expected the exam to be so easy; everyone handed in their papers quickly.",
-   "src": "/audio/ff349ceec0fa.mp3"
-  }
- },
- {
-  "id": "处",
-  "hanzi": "处",
-  "pinyin": "chǔ, chù",
-  "gloss": "to get along with, to handle; place, location",
-  "src": "/audio/4e7220ae4783.mp3",
-  "sentence": {
-   "zh": "他脾气好，跟邻居们一直处得很好。",
-   "en": "He's good-natured and has always got along well with his neighbours.",
-   "src": "/audio/0df175ac9449.mp3"
-  }
- },
- {
-  "id": "其",
-  "hanzi": "其",
-  "pinyin": "qí",
-  "gloss": "his, her, its, their; that",
-  "src": "/audio/824a3b35e660.mp3",
-  "sentence": {
-   "zh": "这家公司的产品质量好，其价格也比较合理。",
-   "en": "This company's products are of good quality, and their prices are also fairly reasonable.",
-   "src": "/audio/fdf8d5fb9ad1.mp3"
-  }
- },
- {
-  "id": "曾",
-  "hanzi": "曾",
-  "pinyin": "céng",
-  "gloss": "once, ever (in the past)",
-  "src": "/audio/a0b093c4abe6.mp3",
-  "sentence": {
-   "zh": "我曾在北京工作过三年，对那里很熟悉。",
-   "en": "I once worked in Beijing for three years, so I know it well.",
-   "src": "/audio/4ed4684a419b.mp3"
-  }
- },
- {
-  "id": "面",
-  "hanzi": "面",
-  "pinyin": "2 miàn",
-  "gloss": "side, aspect; surface",
-  "src": "/audio/2c9281e0f1e3.mp3",
-  "sentence": {
-   "zh": "解决这个问题，我们要考虑经济和环境两个方面。",
-   "en": "To solve this problem, we need to consider both the economic and environmental aspects.",
-   "src": "/audio/6f1c3a49b575.mp3"
-  }
- },
- {
-  "id": "靠@6",
-  "hanzi": "靠",
-  "pinyin": "kào",
-  "gloss": "to depend on; to lean against; to be near",
-  "src": "/audio/e1c17136fe29.mp3",
-  "sentence": {
-   "zh": "他完全靠自己的努力考上了大学。",
-   "en": "He got into university entirely through his own hard work.",
-   "src": "/audio/2a2d7b955062.mp3"
-  }
- },
- {
-  "id": "现场",
-  "hanzi": "现场",
-  "pinyin": "xiànchǎng",
-  "gloss": "scene (of an event); site; on the spot; live",
-  "src": "/audio/6a82c2617c08.mp3",
-  "sentence": {
-   "zh": "演唱会现场来了好几万名观众。",
-   "en": "Tens of thousands of spectators came to the concert venue.",
-   "src": "/audio/d93b3ecd9eb1.mp3"
-  }
- },
- {
-  "id": "超",
-  "hanzi": "超",
-  "pinyin": "chāo",
-  "gloss": "to exceed, to surpass, to go over",
-  "src": "/audio/5657bc19bcf8.mp3",
-  "sentence": {
-   "zh": "这条路限速六十公里，他开到了九十，严重超速了。",
-   "en": "The speed limit on this road is 60 km/h; he was doing 90, seriously speeding.",
-   "src": "/audio/a257f3298046.mp3"
-  }
- },
- {
-  "id": "及",
-  "hanzi": "及",
-  "pinyin": "jí",
-  "gloss": "and, as well as",
-  "src": "/audio/1e0a16aaa1db.mp3",
-  "sentence": {
-   "zh": "会议讨论了教育、医疗及住房等问题。",
-   "en": "The meeting discussed issues such as education, healthcare and housing.",
-   "src": "/audio/12f7ca902cd4.mp3"
-  }
- },
- {
-  "id": "拥有",
-  "hanzi": "拥有",
-  "pinyin": "yōngyǒu",
-  "gloss": "to have; to possess; to own",
-  "src": "/audio/4fdca4c7b5fe.mp3",
-  "sentence": {
-   "zh": "他拥有一家很受欢迎的咖啡店。",
-   "en": "He owns a very popular coffee shop.",
-   "src": "/audio/6bb66d69c7b9.mp3"
-  }
- },
- {
-  "id": "伤",
-  "hanzi": "伤",
-  "pinyin": "shāng",
-  "gloss": "injury, wound; to injure, to hurt",
-  "src": "/audio/a98c159c9065.mp3",
-  "sentence": {
-   "zh": "他在比赛中伤了腿，只好提前下场。",
-   "en": "He hurt his leg during the match and had to leave the field early.",
-   "src": "/audio/7a26c24fb612.mp3"
-  }
- },
- {
-  "id": "眼",
-  "hanzi": "眼",
-  "pinyin": "yǎn",
-  "gloss": "eye; measure word for wells, glances",
-  "src": "/audio/263bed78f5b0.mp3",
-  "sentence": {
-   "zh": "她看了我一眼，什么也没说就走了。",
-   "en": "She glanced at me and left without saying anything.",
-   "src": "/audio/b24a78d26d7e.mp3"
-  }
- },
- {
-  "id": "令",
-  "hanzi": "令",
-  "pinyin": "lìng",
-  "gloss": "to order, to command; order, command",
-  "src": "/audio/de9bfaa9b548.mp3",
-  "sentence": {
-   "zh": "教练一声令下，队员们立刻冲了出去。",
-   "en": "At the coach's command, the players dashed out at once.",
-   "src": "/audio/0bb229c1b9ac.mp3"
-  }
- },
- {
-  "id": "抓@6",
-  "hanzi": "抓",
-  "pinyin": "zhuā",
-  "gloss": "to grab; to catch; to arrest",
-  "src": "/audio/636b505efab0.mp3",
-  "sentence": {
-   "zh": "过马路的时候，孩子紧紧地抓着妈妈的手。",
-   "en": "When crossing the road, the child held tightly onto his mother's hand.",
-   "src": "/audio/2d7792dd9fc8.mp3"
-  }
- },
- {
-  "id": "力",
-  "hanzi": "力",
-  "pinyin": "lì",
-  "gloss": "strength, power, force; suffix for ability or force",
-  "src": "/audio/42d9c1f093a1.mp3",
-  "sentence": {
-   "zh": "他用力推开了那扇沉重的门。",
-   "en": "He pushed open the heavy door with force.",
-   "src": "/audio/ae452d0badc1.mp3"
-  }
- },
- {
-  "id": "数@6",
-  "hanzi": "数",
-  "pinyin": "shǔ",
-  "gloss": "to count; to be counted as (the most)",
-  "src": "/audio/c6f5a3e45591.mp3",
-  "sentence": {
-   "zh": "你数一数，一共来了多少人？",
-   "en": "Count them: how many people came altogether?",
-   "src": "/audio/091f7ec9762b.mp3"
-  }
- }
-]
+ ]
+}

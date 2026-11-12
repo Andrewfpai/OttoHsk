@@ -1,49 +1,95 @@
 "use client";
 
 import { Globe, Volume2 } from "lucide-react";
+import { useState } from "react";
 
 import { cn } from "@/lib/utils";
 
 import { playClip, useSpeech } from "./use-speech";
 
-export type AudioTestWord = {
-  id: string;
-  hanzi: string;
-  pinyin: string;
-  gloss: string;
-  src: string;
-  sentence: { zh: string; en: string; src: string } | null;
+/** Clip paths by voice, then by speed. */
+type Clips = Record<string, Record<string, string>>;
+
+export type AudioTestData = {
+  voices: { key: string; name: string; note: string }[];
+  speeds: string[];
+  words: {
+    id: string;
+    hanzi: string;
+    pinyin: string;
+    gloss: string;
+    clips: Clips;
+    sentence: { zh: string; en: string; clips: Clips } | null;
+  }[];
 };
 
+const SPEED_LABEL: Record<string, string> = { normal: "Normal", slower: "Slower", slowest: "Slowest" };
+/** The browser voice's rate for each speed, to compare like with like. */
+const BROWSER_RATE: Record<string, number> = { normal: 0.95, slower: 0.8, slowest: 0.65 };
+
 /**
- * Compare the two ways the app could speak: the browser's own voice, and
- * pre-made clips (Microsoft neural voices, made by scripts/build-audio.py).
+ * Compare the ways the app could speak: pre-made clips in several voices and
+ * speeds (Microsoft neural voices, made by scripts/build-audio.py), and the
+ * browser's own voice.
  */
-export function AudioTest({ words }: { words: AudioTestWord[] }) {
-  const { voice, speak } = useSpeech();
+export function AudioTest({ data }: { data: AudioTestData }) {
+  const { voice: browserVoice, speak } = useSpeech();
+  const [voice, setVoice] = useState(data.voices[0].key);
+  const [speed, setSpeed] = useState("slower");
+
   return (
     <div className="space-y-5">
-      <div className="bg-card space-y-2 rounded-2xl border p-4 text-sm">
-        <p className="flex flex-wrap items-center gap-2">
-          <Pill tone="browser">Browser</Pill>
-          {voice ? (
-            <span>
-              this device&apos;s voice: <span className="font-medium">{voice.name}</span>
-            </span>
-          ) : (
-            <span className="text-muted-foreground">
-              no Mandarin voice found yet on this device (it may still be loading, or the device has none)
-            </span>
-          )}
+      <section className="bg-card space-y-4 rounded-2xl border p-4">
+        <div className="space-y-2">
+          <h2 className="text-sm font-medium">Recorded voice</h2>
+          <div role="radiogroup" aria-label="Voice" className="flex flex-wrap gap-2">
+            {data.voices.map((v) => (
+              <button
+                key={v.key}
+                type="button"
+                role="radio"
+                aria-checked={voice === v.key}
+                onClick={() => setVoice(v.key)}
+                className={cn(
+                  "focus-visible:ring-ring cursor-pointer rounded-xl border px-3 py-2 text-left text-sm transition-colors focus-visible:ring-2 focus-visible:outline-none",
+                  voice === v.key ? "border-primary bg-primary/10" : "hover:bg-muted",
+                )}
+              >
+                <span className="block font-medium">{v.name}</span>
+                <span className="text-muted-foreground block text-xs">{v.note}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="space-y-2">
+          <h2 className="text-sm font-medium">Speed</h2>
+          <div role="radiogroup" aria-label="Speed" className="bg-muted flex w-fit gap-1 rounded-xl p-1">
+            {data.speeds.map((s) => (
+              <button
+                key={s}
+                type="button"
+                role="radio"
+                aria-checked={speed === s}
+                onClick={() => setSpeed(s)}
+                className={cn(
+                  "focus-visible:ring-ring min-h-9 cursor-pointer rounded-lg px-3 text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:outline-none",
+                  speed === s ? "bg-background shadow-sm" : "text-muted-foreground hover:text-foreground",
+                )}
+              >
+                {SPEED_LABEL[s] ?? s}
+              </button>
+            ))}
+          </div>
+        </div>
+        <p className="text-muted-foreground text-xs">
+          Browser button: this device&apos;s own voice,{" "}
+          {browserVoice ? <span className="text-foreground">{browserVoice.name}</span> : "none found yet"}, at the
+          same speed, for comparison.
         </p>
-        <p className="flex flex-wrap items-center gap-2">
-          <Pill tone="file">Recorded</Pill>
-          <span>pre-made clips: words by Xiaoxiao (female), sentences by Yunyang (male), Microsoft neural voices</span>
-        </p>
-      </div>
+      </section>
 
       <ol className="space-y-3">
-        {words.map((w, i) => (
+        {data.words.map((w, i) => (
           <li key={w.id} className="bg-card space-y-3 rounded-2xl border p-4">
             <div className="flex flex-wrap items-center gap-3">
               <span className="text-muted-foreground font-numeric w-6 text-sm">{i + 1}</span>
@@ -52,7 +98,11 @@ export function AudioTest({ words }: { words: AudioTestWord[] }) {
                 <span className="text-primary font-medium">{w.pinyin}</span>{" "}
                 <span className="text-muted-foreground">· {w.gloss}</span>
               </span>
-              <PlayButtons label={w.hanzi} onBrowser={() => speak(w.hanzi, 0.8)} onFile={() => playClip(w.src)} />
+              <PlayButtons
+                label={w.hanzi}
+                onFile={() => playClip(w.clips[voice][speed])}
+                onBrowser={() => speak(w.hanzi, BROWSER_RATE[speed] * 0.9)}
+              />
             </div>
             {w.sentence ? (
               <div className="bg-muted/40 flex flex-wrap items-center gap-3 rounded-xl p-3">
@@ -62,8 +112,8 @@ export function AudioTest({ words }: { words: AudioTestWord[] }) {
                 </p>
                 <PlayButtons
                   label={`the sentence for ${w.hanzi}`}
-                  onBrowser={() => speak(w.sentence!.zh)}
-                  onFile={() => playClip(w.sentence!.src)}
+                  onFile={() => playClip(w.sentence!.clips[voice][speed])}
+                  onBrowser={() => speak(w.sentence!.zh, BROWSER_RATE[speed])}
                 />
               </div>
             ) : null}
@@ -74,17 +124,9 @@ export function AudioTest({ words }: { words: AudioTestWord[] }) {
   );
 }
 
-function PlayButtons({ label, onBrowser, onFile }: { label: string; onBrowser: () => void; onFile: () => void }) {
+function PlayButtons({ label, onFile, onBrowser }: { label: string; onFile: () => void; onBrowser: () => void }) {
   return (
     <div className="flex gap-2">
-      <button
-        type="button"
-        onClick={onBrowser}
-        aria-label={`Play ${label} with the browser voice`}
-        className="focus-visible:ring-ring hover:bg-muted inline-flex h-10 cursor-pointer items-center gap-1.5 rounded-lg border px-3 text-sm focus-visible:ring-2 focus-visible:outline-none"
-      >
-        <Globe aria-hidden className="size-4" /> Browser
-      </button>
       <button
         type="button"
         onClick={onFile}
@@ -93,19 +135,14 @@ function PlayButtons({ label, onBrowser, onFile }: { label: string; onBrowser: (
       >
         <Volume2 aria-hidden className="size-4" /> Recorded
       </button>
+      <button
+        type="button"
+        onClick={onBrowser}
+        aria-label={`Play ${label} with the browser voice`}
+        className="focus-visible:ring-ring hover:bg-muted inline-flex h-10 cursor-pointer items-center gap-1.5 rounded-lg border px-3 text-sm focus-visible:ring-2 focus-visible:outline-none"
+      >
+        <Globe aria-hidden className="size-4" /> Browser
+      </button>
     </div>
-  );
-}
-
-function Pill({ tone, children }: { tone: "browser" | "file"; children: React.ReactNode }) {
-  return (
-    <span
-      className={cn(
-        "inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-medium",
-        tone === "file" && "border-primary/40 bg-primary/10",
-      )}
-    >
-      {children}
-    </span>
   );
 }

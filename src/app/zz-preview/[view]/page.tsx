@@ -172,7 +172,7 @@ export default async function PreviewPage({ params, searchParams }: PageProps<"/
     audio: (
       <PageContainer>
         <PageHeader title="Audio test" />
-        <AudioTest words={audioWords} />
+        <AudioTest data={audioWords} />
       </PageContainer>
     ),
     review: (
