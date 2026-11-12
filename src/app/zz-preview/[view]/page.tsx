@@ -5,6 +5,7 @@
  */
 import { notFound } from "next/navigation";
 
+import audioWords from "@/content/audio-test.json";
 import { READING_SETS } from "@/content/reading";
 import { readingHsk6 } from "@/content/reading-hsk6";
 import readingTokens from "@/content/reading-tokens.json";
@@ -16,6 +17,7 @@ import { StarsProvider } from "@/features/stars/components/stars";
 import { StudySettingsForm } from "@/features/account/components/study-settings-form";
 import { SentenceFillDrill } from "@/features/drills/components/sentence-fill-drill";
 import { DRILLS, drillItemIds } from "@/features/drills/lib/items";
+import { AudioTest } from "@/features/audio/audio-test";
 import { WritingStudio } from "@/features/essays/components/writing-studio";
 import { toLevel } from "@/lib/levels";
 
@@ -165,6 +167,12 @@ export default async function PreviewPage({ params, searchParams }: PageProps<"/
       <PageContainer className="max-w-3xl">
         <PageHeader title="Settings" />
         <StudySettingsForm level={level} examDate="2026-11-07" />
+      </PageContainer>
+    ),
+    audio: (
+      <PageContainer>
+        <PageHeader title="Audio test" />
+        <AudioTest words={audioWords} />
       </PageContainer>
     ),
     review: (

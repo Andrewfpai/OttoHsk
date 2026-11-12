@@ -1,0 +1,242 @@
+[
+ {
+  "id": "哦",
+  "hanzi": "哦",
+  "pinyin": "ò",
+  "gloss": "oh (showing understanding); oh? (showing doubt)",
+  "src": "/audio/110690a4fb8d.mp3",
+  "sentence": {
+   "zh": "哦，原来你早就知道这件事了。",
+   "en": "Oh, so you knew about this long ago.",
+   "src": "/audio/19010d516896.mp3"
+  }
+ },
+ {
+  "id": "头",
+  "hanzi": "头",
+  "pinyin": "tou",
+  "gloss": "noun suffix used after some nouns (as in stone, wood, tongue)",
+  "src": "/audio/e1736bb65779.mp3",
+  "sentence": {
+   "zh": "院子里有一块大石头，孩子们喜欢坐在上面玩。",
+   "en": "There's a big stone in the yard, and the kids like to sit on it and play.",
+   "src": "/audio/30afbcfefe32.mp3"
+  }
+ },
+ {
+  "id": "如",
+  "hanzi": "如",
+  "pinyin": "rú",
+  "gloss": "like, as; if",
+  "src": "/audio/c15b363ec2ce.mp3",
+  "sentence": {
+   "zh": "如有任何疑问，请随时与我们联系。",
+   "en": "If you have any questions, please feel free to contact us.",
+   "src": "/audio/9fa6503bfb38.mp3"
+  }
+ },
+ {
+  "id": "同",
+  "hanzi": "同",
+  "pinyin": "tóng",
+  "gloss": "same, alike; together; with, and",
+  "src": "/audio/e0c8641ac051.mp3",
+  "sentence": {
+   "zh": "他和我同岁，可是看起来比我大好几岁。",
+   "en": "He and I are the same age, but he looks several years older than me.",
+   "src": "/audio/423ad58cf912.mp3"
+  }
+ },
+ {
+  "id": "如此",
+  "hanzi": "如此",
+  "pinyin": "rúcǐ",
+  "gloss": "such, so, like this",
+  "src": "/audio/d9b01d667eed.mp3",
+  "sentence": {
+   "zh": "没想到这次考试竟然如此简单，大家都很快交了卷。",
+   "en": "Nobody expected the exam to be so easy; everyone handed in their papers quickly.",
+   "src": "/audio/ff349ceec0fa.mp3"
+  }
+ },
+ {
+  "id": "处",
+  "hanzi": "处",
+  "pinyin": "chǔ, chù",
+  "gloss": "to get along with, to handle; place, location",
+  "src": "/audio/4e7220ae4783.mp3",
+  "sentence": {
+   "zh": "他脾气好，跟邻居们一直处得很好。",
+   "en": "He's good-natured and has always got along well with his neighbours.",
+   "src": "/audio/0df175ac9449.mp3"
+  }
+ },
+ {
+  "id": "其",
+  "hanzi": "其",
+  "pinyin": "qí",
+  "gloss": "his, her, its, their; that",
+  "src": "/audio/824a3b35e660.mp3",
+  "sentence": {
+   "zh": "这家公司的产品质量好，其价格也比较合理。",
+   "en": "This company's products are of good quality, and their prices are also fairly reasonable.",
+   "src": "/audio/fdf8d5fb9ad1.mp3"
+  }
+ },
+ {
+  "id": "曾",
+  "hanzi": "曾",
+  "pinyin": "céng",
+  "gloss": "once, ever (in the past)",
+  "src": "/audio/a0b093c4abe6.mp3",
+  "sentence": {
+   "zh": "我曾在北京工作过三年，对那里很熟悉。",
+   "en": "I once worked in Beijing for three years, so I know it well.",
+   "src": "/audio/4ed4684a419b.mp3"
+  }
+ },
+ {
+  "id": "面",
+  "hanzi": "面",
+  "pinyin": "2 miàn",
+  "gloss": "side, aspect; surface",
+  "src": "/audio/2c9281e0f1e3.mp3",
+  "sentence": {
+   "zh": "解决这个问题，我们要考虑经济和环境两个方面。",
+   "en": "To solve this problem, we need to consider both the economic and environmental aspects.",
+   "src": "/audio/6f1c3a49b575.mp3"
+  }
+ },
+ {
+  "id": "靠@6",
+  "hanzi": "靠",
+  "pinyin": "kào",
+  "gloss": "to depend on; to lean against; to be near",
+  "src": "/audio/e1c17136fe29.mp3",
+  "sentence": {
+   "zh": "他完全靠自己的努力考上了大学。",
+   "en": "He got into university entirely through his own hard work.",
+   "src": "/audio/2a2d7b955062.mp3"
+  }
+ },
+ {
+  "id": "现场",
+  "hanzi": "现场",
+  "pinyin": "xiànchǎng",
+  "gloss": "scene (of an event); site; on the spot; live",
+  "src": "/audio/6a82c2617c08.mp3",
+  "sentence": {
+   "zh": "演唱会现场来了好几万名观众。",
+   "en": "Tens of thousands of spectators came to the concert venue.",
+   "src": "/audio/d93b3ecd9eb1.mp3"
+  }
+ },
+ {
+  "id": "超",
+  "hanzi": "超",
+  "pinyin": "chāo",
+  "gloss": "to exceed, to surpass, to go over",
+  "src": "/audio/5657bc19bcf8.mp3",
+  "sentence": {
+   "zh": "这条路限速六十公里，他开到了九十，严重超速了。",
+   "en": "The speed limit on this road is 60 km/h; he was doing 90, seriously speeding.",
+   "src": "/audio/a257f3298046.mp3"
+  }
+ },
+ {
+  "id": "及",
+  "hanzi": "及",
+  "pinyin": "jí",
+  "gloss": "and, as well as",
+  "src": "/audio/1e0a16aaa1db.mp3",
+  "sentence": {
+   "zh": "会议讨论了教育、医疗及住房等问题。",
+   "en": "The meeting discussed issues such as education, healthcare and housing.",
+   "src": "/audio/12f7ca902cd4.mp3"
+  }
+ },
+ {
+  "id": "拥有",
+  "hanzi": "拥有",
+  "pinyin": "yōngyǒu",
+  "gloss": "to have; to possess; to own",
+  "src": "/audio/4fdca4c7b5fe.mp3",
+  "sentence": {
+   "zh": "他拥有一家很受欢迎的咖啡店。",
+   "en": "He owns a very popular coffee shop.",
+   "src": "/audio/6bb66d69c7b9.mp3"
+  }
+ },
+ {
+  "id": "伤",
+  "hanzi": "伤",
+  "pinyin": "shāng",
+  "gloss": "injury, wound; to injure, to hurt",
+  "src": "/audio/a98c159c9065.mp3",
+  "sentence": {
+   "zh": "他在比赛中伤了腿，只好提前下场。",
+   "en": "He hurt his leg during the match and had to leave the field early.",
+   "src": "/audio/7a26c24fb612.mp3"
+  }
+ },
+ {
+  "id": "眼",
+  "hanzi": "眼",
+  "pinyin": "yǎn",
+  "gloss": "eye; measure word for wells, glances",
+  "src": "/audio/263bed78f5b0.mp3",
+  "sentence": {
+   "zh": "她看了我一眼，什么也没说就走了。",
+   "en": "She glanced at me and left without saying anything.",
+   "src": "/audio/b24a78d26d7e.mp3"
+  }
+ },
+ {
+  "id": "令",
+  "hanzi": "令",
+  "pinyin": "lìng",
+  "gloss": "to order, to command; order, command",
+  "src": "/audio/de9bfaa9b548.mp3",
+  "sentence": {
+   "zh": "教练一声令下，队员们立刻冲了出去。",
+   "en": "At the coach's command, the players dashed out at once.",
+   "src": "/audio/0bb229c1b9ac.mp3"
+  }
+ },
+ {
+  "id": "抓@6",
+  "hanzi": "抓",
+  "pinyin": "zhuā",
+  "gloss": "to grab; to catch; to arrest",
+  "src": "/audio/636b505efab0.mp3",
+  "sentence": {
+   "zh": "过马路的时候，孩子紧紧地抓着妈妈的手。",
+   "en": "When crossing the road, the child held tightly onto his mother's hand.",
+   "src": "/audio/2d7792dd9fc8.mp3"
+  }
+ },
+ {
+  "id": "力",
+  "hanzi": "力",
+  "pinyin": "lì",
+  "gloss": "strength, power, force; suffix for ability or force",
+  "src": "/audio/42d9c1f093a1.mp3",
+  "sentence": {
+   "zh": "他用力推开了那扇沉重的门。",
+   "en": "He pushed open the heavy door with force.",
+   "src": "/audio/ae452d0badc1.mp3"
+  }
+ },
+ {
+  "id": "数@6",
+  "hanzi": "数",
+  "pinyin": "shǔ",
+  "gloss": "to count; to be counted as (the most)",
+  "src": "/audio/c6f5a3e45591.mp3",
+  "sentence": {
+   "zh": "你数一数，一共来了多少人？",
+   "en": "Count them: how many people came altogether?",
+   "src": "/audio/091f7ec9762b.mp3"
+  }
+ }
+]
