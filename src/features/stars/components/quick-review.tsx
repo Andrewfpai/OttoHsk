@@ -10,6 +10,7 @@ import { useWordBank } from "@/components/level/level-provider";
 import { seededRng, shuffle } from "@/lib/random";
 import { cn } from "@/lib/utils";
 
+import { type OwnWord, isOwnWord } from "../lib/own-words";
 import { StarButton, useStars } from "./stars";
 
 const SET_SIZE = 10;
@@ -18,14 +19,18 @@ const WAIT_S = 10;
 
 type Source = "all" | "started" | "starred";
 
+/** A card: a list word, or an own word starred while reading. */
+type Card = { id: string; hanzi: string; pinyin: string; gloss: string; own: boolean };
+
 /**
  * Ten random words, hanzi only. The answers unlock after ten seconds of
  * trying to recall them; anything shaky gets a star, which brings it back
- * in the next flashcard test.
+ * in the next flashcard test. Starred also holds own words: words starred
+ * while reading that are in no list.
  */
 export function QuickReview({ startedIds, seed }: { startedIds: string[]; seed: number }) {
   const bank = useWordBank();
-  const { starred } = useStars();
+  const { starred, own } = useStars();
   const [source, setSource] = useState<Source>(startedIds.length >= SET_SIZE ? "started" : "all");
   const [round, setRound] = useState(0);
   const [revealed, setRevealed] = useState(false);
@@ -34,22 +39,33 @@ export function QuickReview({ startedIds, seed }: { startedIds: string[]; seed: 
   // The starred pool is read when a round starts, so unstarring a word
   // does not swap the set out from under you.
   const [starredAtStart, setStarredAtStart] = useState<string[]>(() => [...starred]);
+  const [ownAtStart, setOwnAtStart] = useState<readonly OwnWord[]>(own);
+
+  const cardOf = useMemo(() => {
+    const ownById = new Map(ownAtStart.map((w) => [w.id, w]));
+    return (id: string): Card | null => {
+      const w = bank.getWord(id);
+      if (w) return { id, hanzi: w.hanzi, pinyin: w.pinyin, gloss: w.gloss, own: false };
+      const o = ownById.get(id);
+      return o ? { ...o, own: true } : null;
+    };
+  }, [bank, ownAtStart]);
 
   const pools: Record<Source, string[]> = useMemo(
     () => ({
       all: bank.words.map((w) => w.id),
       started: startedIds.filter((id) => bank.getWord(id)),
-      starred: starredAtStart.filter((id) => bank.getWord(id)),
+      starred: starredAtStart.filter((id) => cardOf(id)),
     }),
-    [bank, startedIds, starredAtStart],
+    [bank, startedIds, starredAtStart, cardOf],
   );
 
   const words = useMemo(
     () =>
       shuffle(pools[source], seededRng(seed + round * 7919))
         .slice(0, SET_SIZE)
-        .map((id) => bank.getWord(id)!),
-    [pools, source, seed, round, bank],
+        .map((id) => cardOf(id)!),
+    [pools, source, seed, round, cardOf],
   );
 
   // One tick a second while the answers are locked.
@@ -62,15 +78,17 @@ export function QuickReview({ startedIds, seed }: { startedIds: string[]; seed: 
   function newRound(next: Source = source) {
     setSource(next);
     setStarredAtStart([...starred]);
+    setOwnAtStart(own);
     setRound((r) => r + 1);
     setRevealed(false);
     setLeft(WAIT_S);
   }
 
+  const starredInList = [...starred].filter((id) => bank.getWord(id)).length;
   const counts: Record<Source, number> = {
     all: bank.total,
     started: pools.started.length,
-    starred: starred.size,
+    starred: starredInList + [...starred].filter(isOwnWord).length,
   };
 
   return (
@@ -102,7 +120,7 @@ export function QuickReview({ startedIds, seed }: { startedIds: string[]; seed: 
             </button>
           ))}
         </div>
-        {starred.size > 0 ? (
+        {starredInList > 0 ? (
           <Button asChild variant="outline" className="cursor-pointer">
             <Link href="/words/flashcards?deck=starred">
               <Star aria-hidden className="text-warning fill-current" />
@@ -130,7 +148,11 @@ export function QuickReview({ startedIds, seed }: { startedIds: string[]; seed: 
             >
               <div className="-mr-2 flex items-center justify-between">
                 <span className="text-muted-foreground font-numeric text-xs">{i + 1}</span>
-                <StarButton wordId={w.id} label={w.hanzi} />
+                <StarButton
+                  wordId={w.own ? undefined : w.id}
+                  own={w.own ? { hanzi: w.hanzi, pinyin: w.pinyin, gloss: w.gloss } : undefined}
+                  label={w.hanzi}
+                />
               </div>
               <p className="font-hanzi text-3xl leading-tight">{w.hanzi}</p>
               {revealed ? (
@@ -170,7 +192,7 @@ export function QuickReview({ startedIds, seed }: { startedIds: string[]; seed: 
           )}
           <p className="text-muted-foreground text-sm">
             {revealed
-              ? "Star the ones you missed. They come back in your next flashcard test."
+              ? "Star the ones you missed. List words come back in your next flashcard test."
               : "Say each one to yourself: reading and meaning."}
           </p>
         </StickyActions>

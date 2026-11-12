@@ -170,7 +170,11 @@ export default async function PreviewPage({ params, searchParams }: PageProps<"/
     review: (
       <PageContainer>
         <PageHeader title="Quick review" />
-        <StarsProvider initial={starred} offline>
+        <StarsProvider
+          initial={starred}
+          initialOwn={[{ id: "+镊子", hanzi: "镊子", pinyin: "nièzi", gloss: "tweezers" }]}
+          offline
+        >
           <QuickReview startedIds={s.progress.map((p) => p.wordId)} seed={s.seed} />
         </StarsProvider>
       </PageContainer>

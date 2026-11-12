@@ -108,8 +108,13 @@ export const flashcardTests = pgTable(
 
 /**
  * Words the learner starred: "I don't get it yet, test me on it". Starring
- * brings a started word back in the next flashcard test, and the flashcards
- * can test the starred words alone. Word ids are unique across levels.
+ * a word from the level's list brings it back in the next flashcard test,
+ * and the flashcards can test the starred words alone. Word ids are unique
+ * across levels.
+ *
+ * Any other word met while reading can be starred too: its id is
+ * "+<hanzi>", and it keeps its own pinyin, meaning and level, since no
+ * word list has them. Quick review tests these.
  */
 export const starredWords = pgTable(
   "starred_words",
@@ -117,6 +122,10 @@ export const starredWords = pgTable(
     userId: userId(),
     wordId: text("word_id").notNull(),
     starredAt: timestamp("starred_at", { mode: "date", withTimezone: true }).notNull().defaultNow(),
+    /** Own words only (id "+<hanzi>"): what the reading showed for it. */
+    pinyin: text("pinyin"),
+    gloss: text("gloss"),
+    level: smallint("level"),
   },
   (t) => [primaryKey({ columns: [t.userId, t.wordId] })],
 );

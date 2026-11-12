@@ -141,10 +141,16 @@ export function WordPanel({ token, onClose }: { token: ReadingToken; onClose: ()
           <p className="text-primary font-medium">{token.p}</p>
           <p className="text-sm">{token.g ?? "Not in the dictionary (likely a name)."}</p>
           <p className="text-muted-foreground mt-0.5 text-xs">
-            {word ? `In your HSK ${bank.level} words` : token.l}
+            {word
+              ? `In your HSK ${bank.level} words: a star brings it back in flashcards`
+              : `${token.l ? `${token.l} · ` : ""}a star saves it for Quick review`}
           </p>
         </div>
-        {word ? <StarButton wordId={word.id} label={token.t} /> : null}
+        {word ? (
+          <StarButton wordId={word.id} label={token.t} />
+        ) : (
+          <StarButton own={{ hanzi: token.t, pinyin: token.p ?? "", gloss: token.g ?? "" }} label={token.t} />
+        )}
         <button
           type="button"
           aria-label="Close"

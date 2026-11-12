@@ -79,6 +79,8 @@ export function WordList({ progress, nextTest }: { progress: WordProgress; nextT
   // Typing stays responsive while 1,300 rows re-filter behind it.
   const deferredQuery = useDeferredValue(query);
 
+  // Own words starred while reading are in no list, so they don't count here.
+  const starredCount = useMemo(() => bank.words.filter((w) => starred.has(w.id)).length, [bank, starred]);
   const counts = useMemo(() => {
     const c: Record<WordStatus, number> = { new: 0, learning: 0, known: 0 };
     for (const w of bank.words) c[statusOf(strengths[w.id])]++;
@@ -140,7 +142,7 @@ export function WordList({ progress, nextTest }: { progress: WordProgress; nextT
               ) : null}
               {f === "all" ? "All" : f === "starred" ? "Starred" : STATUS_LABEL[f]}
               <span className="text-muted-foreground font-numeric text-xs">
-                {f === "all" ? bank.total : f === "starred" ? starred.size : counts[f]}
+                {f === "all" ? bank.total : f === "starred" ? starredCount : counts[f]}
               </span>
             </Button>
           ))}

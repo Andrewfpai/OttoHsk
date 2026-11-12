@@ -320,6 +320,7 @@ const EXTRA: Record<string, [string, string]> = {
   皱眉: ["zhòuméi", "to frown"],
   抗压性: ["kàngyāxìng", "ability to cope with pressure"],
   // HSK 6 practice passages and fill-in texts: rarer words and single characters.
+  老师傅: ["lǎo shīfu", "master craftsman; old hand"],
   蜂: ["fēng", "bee; wasp"],
   蜂群: ["fēngqún", "swarm of bees"],
   蜂巢: ["fēngcháo", "honeycomb; beehive"],

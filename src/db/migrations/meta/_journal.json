@@ -43,6 +43,13 @@
       "when": 1794470511005,
       "tag": "0005_hsk6_new_sections",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1794478502058,
+      "tag": "0006_own_starred_words",
+      "breakpoints": true
     }
   ]
 }

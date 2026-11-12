@@ -6,7 +6,7 @@ import { ClozeDrill } from "@/features/drills/components/cloze-drill";
 import { DRILLS, drillItemIds } from "@/features/drills/lib/items";
 import { drillSeed, getItemStats } from "@/features/drills/server/queries";
 import { StarsProvider } from "@/features/stars/components/stars";
-import { getStarredIds } from "@/features/stars/server/queries";
+import { getStars } from "@/features/stars/server/queries";
 import { requireUser } from "@/lib/auth-guard";
 
 export const metadata: Metadata = { title: "Fill in" };
@@ -16,7 +16,7 @@ export default async function ClozePage() {
     requireUser(),
     getItemStats("cloze"),
     drillSeed(),
-    getStarredIds(),
+    getStars(),
   ]);
   const passages = DRILLS[level].cloze;
   return (
@@ -29,7 +29,7 @@ export default async function ClozePage() {
             : "Reading Part 1 (questions 41–50): short passages with four or five blanks. Pick A–D for each, then see why. Passages with a blank you missed come back first."
         }
       />
-      <StarsProvider initial={starred}>
+      <StarsProvider initial={starred.ids} initialOwn={starred.own}>
         <ClozeDrill
           key={level}
           passages={passages}

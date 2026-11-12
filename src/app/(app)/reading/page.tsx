@@ -7,7 +7,7 @@ import { tokensFor } from "@/content/reading-tokens";
 import type { ReadingSet } from "@/content/types";
 import { ReadingPaperView } from "@/features/reading/components/reading-paper";
 import { StarsProvider } from "@/features/stars/components/stars";
-import { getStarredIds } from "@/features/stars/server/queries";
+import { getStars } from "@/features/stars/server/queries";
 import { requireUser } from "@/lib/auth-guard";
 
 export const metadata: Metadata = { title: "Reading" };
@@ -21,6 +21,7 @@ const HSK6_SETS: ReadingSet[] = readingHsk6.map((paper, i) => ({
 export default async function ReadingPage() {
   const { level } = await requireUser();
   const sets = level === 5 ? READING_SETS : HSK6_SETS;
+  const stars = await getStars();
   return (
     <PageContainer>
       <PageHeader
@@ -31,7 +32,7 @@ export default async function ReadingPage() {
             : `Reading Part 3 (questions 61–80): ${HSK6_SETS.length} practice sets of five long passages, four questions each, 4 minutes a passage. After checking, tap any word for its meaning, and star it to test later.`
         }
       />
-      <StarsProvider initial={await getStarredIds()}>
+      <StarsProvider initial={stars.ids} initialOwn={stars.own}>
         <ReadingPaperView
           key={level}
           sets={sets}
